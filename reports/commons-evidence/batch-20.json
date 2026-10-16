@@ -1,0 +1,3791 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 121438,
+        "ns": 6,
+        "title": "File:Turquoise.pebble.700pix.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Turquoise.pebble.700pix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Turquoise.pebble.700pix.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121438",
+            "sha1": "8fa64a85cc44fec801a416b1268cfc98654cdce4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2005-04-26 15:47:40",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Turquoise.pebble.700pix",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-user|Tumble-polished stones|Turquoise gems",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Turquoise pebble, made by tumbling the rough rock in a rotating drum with abrasive. The process takes many hours. Picture made without a camera by laying the carving on a flat bed scanner",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2003-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/File:Turquoise.pebble.700pix.jpg\" class=\"extiw\" title=\"w:File:Turquoise.pebble.700pix.jpg\">File:Turquoise.pebble.700pix.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Adrian Pingstone",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 2661548,
+        "ns": 6,
+        "title": "File:Ett segelfartyg sover i hamnen.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Ett_segelfartyg_sover_i_hamnen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ett_segelfartyg_sover_i_hamnen.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2661548",
+            "sha1": "3d8d9f6b39644561ee9e686f93882bbc5b51e43b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-08-31 22:03:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ett segelfartyg sover i hamnen",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon PowerShot S2 IS|Bianca Maria Barmen|Stigbergstorget|CC-BY-SA-3.0,2.5,2.0,1.0|Ett segelfartyg sover i hamnen by Bianca Maria Barmen|License migration redundant|Self-published work|Bronze statues in Sweden|FoP-Sweden (artworks)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The sculpture <i>Ett segelfartyg sover i hamnen</i> (A sailing-ship sleeping in the harbour) at Stigbergstorget in Göteborg, Sweden. Sculptor Bianca Maria Barmen. View direction SE.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-08-08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rolf_B\" title=\"User:Rolf B\">Rolf Broberg</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 13182182,
+        "ns": 6,
+        "title": "File:You're welcome, honest...... - geograph.org.uk - 636144.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/You%27re_welcome%2C_honest......_-_geograph.org.uk_-_636144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:You%27re_welcome,_honest......_-_geograph.org.uk_-_636144.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13182182",
+            "sha1": "a5b912fc223db6141c4b5b2bd91096765e86818e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-07 11:06:41",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "You're welcome, honest...... - geograph.org.uk - 636144",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Information field template with formatting|Campsites in Cornwall|Images by David Medcalf|United Kingdom photographs taken on 2007-12-11",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.142450",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-5.432800",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "You're welcome, honest...... The entrance to South Treveneague farm campsite, whose welcome sign is somewhat overshadowed by a howitzer and a bomb.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-12-11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/636144\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/180\">David Medcalf</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "David Medcalf",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 13824471,
+        "ns": 6,
+        "title": "File:I totally agree- it was a LOVELY day for a walk - geograph.org.uk - 1114932.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/I_totally_agree-_it_was_a_LOVELY_day_for_a_walk_-_geograph.org.uk_-_1114932.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:I_totally_agree-_it_was_a_LOVELY_day_for_a_walk_-_geograph.org.uk_-_1114932.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13824471",
+            "sha1": "4108b99a2fbd148cefaf81eb90503277f16f59bd",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-24 21:24:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "I totally agree- it was a LOVELY day for a walk - geograph.org.uk - 1114932",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Rowlands Castle|Information field template with formatting|Images by Basher Eyre|United Kingdom photographs taken on 2009-01-10",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.889100",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.977000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "I totally agree- it was a LOVELY day for a walk Taken within Havant Thicket. If you had really wanted to torment me today you would have made me stay indoors watching TV. As it is I met this charming couple and their pooches. As we crossed he said \"What a lovely day for a walk!\".",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-01-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/1114932\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/17822\">Basher Eyre</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Basher Eyre",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 14025573,
+        "ns": 6,
+        "title": "File:What's that person doing^ - geograph.org.uk - 1296753.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/What%27s_that_person_doing%5E_-_geograph.org.uk_-_1296753.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:What%27s_that_person_doing%5E_-_geograph.org.uk_-_1296753.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=14025573",
+            "sha1": "d542eff3b09b76ac7cbe5657c251c48a905d4b80",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-27 11:32:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "What's that person doing^ - geograph.org.uk - 1296753",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Michelmersh and Timsbury|Information field template with formatting|Media needing category review as of 2 May 2017|Images by David Martin|United Kingdom photographs taken on 2009-05-10",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "51.038020",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.524700",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "What's that person doing? A blindfolded horse senses the photographer, who is taking the photo from the western side of the A3057, looking east",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-05-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/1296753\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/13502\">David Martin</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "David Martin",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 16340254,
+        "ns": 6,
+        "title": "File:Silver and interwoven coloured metals.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Silver_and_interwoven_coloured_metals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Silver_and_interwoven_coloured_metals.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16340254",
+            "sha1": "a95925834ab0edcf1ec06104ceab64c47bbbb733",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-09-05 02:07:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Silver and interwoven coloured metals",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSC-W320|Self-published work|Silver boxes|Boxes in art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "silver and interwoven coloured metals boxes, made by Mauro Cateb, Brazilian jeweler.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-01-13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mauro_Cateb\" title=\"User:Mauro Cateb\">Mauro Cateb</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 24831224,
+        "ns": 6,
+        "title": "File:Thank you very much State Farm Memphis TN 2013-02-23 005.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Thank_you_very_much_State_Farm_Memphis_TN_2013-02-23_005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Thank_you_very_much_State_Farm_Memphis_TN_2013-02-23_005.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24831224",
+            "sha1": "96a78b4fa03decb840fb78334a8af505d3f90b59",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-02-23 21:51:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Thank you very much State Farm Memphis TN 2013-02-23 005",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|License migration redundant|Self-published work|Billboards in Memphis, Tennessee",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Thank you very much State Farm Memphis TN",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-02-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Thomas R Machnitzki (<span class=\"nowrap\">thomas<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"@\"><img alt=\"@\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/At_sign.svg/20px-At_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"15\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/At_sign.svg/40px-At_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"145\" data-file-height=\"145\"></span></span>machnitzki.com</span>)",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Attribution requested if published. Online publication: Please send me a link to the website. Print publication: Please send me a copy of the final product.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 25147866,
+        "ns": 6,
+        "title": "File:Nice to meet you! (3681486315).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nice_to_meet_you%21_%283681486315%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nice_to_meet_you!_(3681486315).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=25147866",
+            "sha1": "e3499a4c3e94a83b1b918592fd73b6f7171ccb08",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-03-16 19:14:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Nice to meet you! (3681486315)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Papaver rhoeas in France|Taken with Olympus SP-560UZ|Unidentified Syrphidae|Flickr images reviewed by File Upload Bot (Magnus Manske)|2 insects|France photographs taken on 2009-07-02|Close-up photographs of insects on flowers|Files with coordinates missing SDC location of creation (50° N, 2° E)|Files uploaded from Flickr by Jacopo Werther via Bot|Red flowers on green background|Photographs by Olivier Bacquet|Syrphidae on Papaver rhoeas flowers|Diptera of Nord-Pas-de-Calais and Picardy",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.306109",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "2.759596",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Deux syrphes au-dessus d'un coquelicot, dans mon jardin.\n<i>Two hoverflies above a poppy, in my garden.</i>\n</p>\n<b><a rel=\"nofollow\" class=\"external text\" href=\"http://bighugelabs.com/onblack.php?id=3681486315&amp;size=large\">Voir en grand sur fond noir / <i>View large on black</i></a></b>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-07-02 07:57",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/olibac/3681486315/\">Nice to meet you!</a>\n</p>\n<ul><li>Uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Jacopo_Werther\" title=\"User:Jacopo Werther\">Jacopo Werther</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/47757737@N00\">OliBac</a> from FRANCE",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 27951118,
+        "ns": 6,
+        "title": "File:Bush Childhood Home Hallway.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bush_Childhood_Home_Hallway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bush_Childhood_Home_Hallway.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=27951118",
+            "sha1": "35e8e3d6461db61c78736e1401fb5b188f43d140",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-08-30 23:42:25",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bush Childhood Home Hallway",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with iPhone 4S|Self-published work|August 2013 in Texas|Bush Family Home",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "31.998667",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-102.091167",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "George W. Bush Childhood Home, Hallway",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-08-09 14:04:32",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Blueag9\" title=\"User:Blueag9\">Blueag9</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 32031696,
+        "ns": 6,
+        "title": "File:Swan 010 Jan 20 How Many Factions How Many Lines.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Swan_010_Jan_20_How_Many_Factions_How_Many_Lines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swan_010_Jan_20_How_Many_Factions_How_Many_Lines.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=32031696",
+            "sha1": "576b127ff4eda5c655c66c13c1e85d1e3511e275",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-04-07 07:55:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swan 010 Jan 20 How Many Factions How Many Lines",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Single line drawings",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Page 010 from Swan- The Intelligent Picture Book, the world’s largest ever collection of Intelligent Single Line Drawings from a single person- a world record. Artist, Script and Design: P.S.Remesh Chandran. Single line drawings are rare. Even those who attempted them in the past have not cared to publish them. In my estimate, after going through various publishing companies’ catalogues and what internet search offers, no book of intelligent single line drawings has ever appeared in print or digital media.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-04-07 13:23:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:P.S.Remesh_Chandran&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:P.S.Remesh Chandran (page does not exist)\">P.S.Remesh Chandran</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 38721144,
+        "ns": 6,
+        "title": "File:Staircase in a home in The Netherlands.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Staircase_in_a_home_in_The_Netherlands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Staircase_in_a_home_in_The_Netherlands.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=38721144",
+            "sha1": "6db04033feafa80e57be8c9ba34b27721b924ca9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-03-04 09:20:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Staircase in a home in The Netherlands",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Staircases in the Netherlands|Blue carpets",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Staircase in a home in The Netherlands",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-03-04",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ellywa\" title=\"User:Ellywa\">Ellywa</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 42118383,
+        "ns": 6,
+        "title": "File:How-could-you-jean-1918.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/How-could-you-jean-1918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:How-could-you-jean-1918.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=42118383",
+            "sha1": "b9506c2a3c824003109658e509ae540927bb4eda",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-08-06 01:15:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "How-could-you-jean-1918",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "How Could You, Jean?|PD US|Mary Pickford in 1918|PD-US missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "July 5, 1918 advertisement for the <a href=\"//commons.wikimedia.org/wiki/Mary_Pickford\" title=\"Mary Pickford\">Mary Pickford</a> film <i><a href=\"https://en.wikipedia.org/wiki/How_Could_You,_Jean%3F\" class=\"extiw\" title=\"en:How Could You, Jean?\">How Could You Jean?</a></i>, Hattiesburg American, Hattiesburg, Mississippi.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1918-07-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<i>Hattiesburg American</i>, Friday, July 5, 1918, Hattiesburg, Mississippi",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Newspaper advertisment",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 42706036,
+        "ns": 6,
+        "title": "File:How often have I got to tell you, by Art Young.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/How_often_have_I_got_to_tell_you%2C_by_Art_Young.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:How_often_have_I_got_to_tell_you,_by_Art_Young.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=42706036",
+            "sha1": "4a5476ce48cf0a04330215b3b787658927ec0ea4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-08-28 02:50:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "How often have I got to tell you, by Art Young",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Russian Soviet Federative Socialist Republic|Good Morning (magazine)|Black and white art|PD-scan (PD-old-auto-expired)|PD-old-80-expired|CC-PD-Mark|Magazines of the United States, 1921|Cartoons by Art Young|1921 political cartoons of the United States|Eggs in art|Hens in art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "«How often have I got to tell you that I won't \"set\" on your bad eggs», abril de 1921, <i><a href=\"https://es.wikipedia.org/wiki/The_Liberator\" class=\"extiw\" title=\"es:The Liberator\">The Liberator</a></i>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1921-04-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<cite style=\"font-style:normal\">(<span class=\"mw-formatted-date\" title=\"1921-04-01\">1 April 1921</span>). \"<a rel=\"nofollow\" class=\"external text\" href=\"https://www.marxists.org/history/usa/culture/pubs/goodmorning/1921/v3n06-apr-01-1921-good-morning.pdf\">How</a>\". <i>Good Morning</i> <b>3</b> (6): 10-11.</cite> (marxists.org)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Art_Young\" class=\"extiw\" title=\"w:en:Art Young\"><span title=\"American cartoonist and writer (1866–1943)\">Art Young</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This file is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"w:public domain\">public domain</a></b> because it is a mere mechanical scan or photocopy of a public domain original, or – from the available evidence – is so similar to such a scan or photocopy that no copyright protection can be expected to arise. The original itself is in the public domain for the following reason:\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1943, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 80 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span>\n<hr>\n<p><small>This tag is designed for use where there may be a need to assert that any enhancements (eg brightness, contrast, colour-matching, sharpening) are in themselves insufficiently creative to generate a new copyright.  It can be used where it is unknown whether any enhancements have been made, as well as when the enhancements are clear but insufficient.  For known raw unenhanced scans you can use an appropriate <a href=\"//commons.wikimedia.org/wiki/Template:PD-old\" title=\"Template:PD-old\">{{PD-old}}</a> tag instead. For usage, see <a href=\"//commons.wikimedia.org/wiki/Commons:When_to_use_the_PD-scan_tag\" title=\"Commons:When to use the PD-scan tag\">Commons:When to use the PD-scan tag</a>.</small>\n</p>\n<hr>\n<figure class=\"mw-halign-left\" typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/40px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/60px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"48\" data-file-height=\"48\"></span><figcaption></figcaption></figure> <small>Note: This tag applies to scans and photocopies only. For photographs of public domain originals taken from afar, <a href=\"//commons.wikimedia.org/wiki/Template:PD-Art\" title=\"Template:PD-Art\">{{PD-Art}}</a> may be applicable. See <a href=\"//commons.wikimedia.org/wiki/Commons:When_to_use_the_PD-Art_tag\" title=\"Commons:When to use the PD-Art tag\">Commons:When to use the PD-Art tag</a>.</small>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 47744116,
+        "ns": 6,
+        "title": "File:I don't understand Rag-time (NYPL Hades-608773-1990427).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/I_don%27t_understand_Rag-time_%28NYPL_Hades-608773-1990427%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:I_don%27t_understand_Rag-time_(NYPL_Hades-608773-1990427).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=47744116",
+            "sha1": "c1172b1a0953e22c34a50b0f89fbdce567ebc3cb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-03-25 09:21:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "I don't understand Rag-time (NYPL Hades-608773-1990427)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Music education|African American musicians|Images uploaded by Fæ|PD-scan (PD-US-expired)|PD US expired|Images from the New York Public Library|Media needing category review as of 25 March 2016|NYPL American popular songs",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "* words and music by Irving Jones ; arr. by W. H. Tyers.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1899",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://digitalcollections.nypl.org/items/93752e75-226b-cb27-e040-e00a18065f3e\">https://digitalcollections.nypl.org/items/93752e75-226b-cb27-e040-e00a18065f3e</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Scan by NYPL",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This image is available from the <a href=\"//commons.wikimedia.org/wiki/New_York_Public_Library\" title=\"New York Public Library\">New York Public Library</a>'s Digital Library under the digital ID ab795650-c594-012f-bb72-58d385a7bc34: <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalgallery.nypl.org/nypldigital/id?ab795650-c594-012f-bb72-58d385a7bc34\">digitalgallery.nypl.org</a> → <a rel=\"nofollow\" class=\"external text\" href=\"https://digitalcollections.nypl.org/search/index?keywords=ab795650-c594-012f-bb72-58d385a7bc34\">digitalcollections.nypl.org</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 49734998,
+        "ns": 6,
+        "title": "File:Børsen dragon spire roofs Copenhagen Denmark.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/B%C3%B8rsen_dragon_spire_roofs_Copenhagen_Denmark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:B%C3%B8rsen_dragon_spire_roofs_Copenhagen_Denmark.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=49734998",
+            "sha1": "bb8afd140ed2cebdfe4694bb00c783624df66b00",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-06-26 18:09:59",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Børsen dragon spire roofs Copenhagen Denmark",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony ILCE-7|CC-Zero|Wall dormers|Taken with Sony FE 24-240mm F3.5-6.3 OSS|Fluting|Self-published work|Green roofs (color)|Copper roofs in Denmark|Featured pictures of Copenhagen|February 2016 Denmark photographs|Files with coordinates missing SDC location of creation|Denmark photographs taken on 2016-02-26|Featured pictures by Jebulon|Dragon Spire of Børsen|Featured photographs in the public domain|Spirals in architecture",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.676057",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "12.582998",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Roof, Attics and \"Dragon Spire\" of the Old Stock Exchange of Copenhagen, Denmark.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-02-26 15:37:27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jebulon\" title=\"User:Jebulon\">Jebulon</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 53843328,
+        "ns": 6,
+        "title": "File:From home balcony, Shanghai - panoramio.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/From_home_balcony%2C_Shanghai_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:From_home_balcony,_Shanghai_-_panoramio.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53843328",
+            "sha1": "8e4765d83a76ee9cac06ad7020ad7463e43d06cb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-12-07 00:20:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "From home balcony, Shanghai - panoramio",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "China photographs taken on 2011-08-05|Yangjing Subdistrict|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "31.244875",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "121.547447",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "From home balcony, Shanghai",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 5 August 2011",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://web.archive.org/web/20161023211031/http://www.panoramio.com/photo/57201192\">https://web.archive.org/web/20161023211031/http://www.panoramio.com/photo/57201192</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023211033/http://www.panoramio.com/user/2332377?with_photo_id=57201192\">Jie Yang</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 Unported</a> license.</div><div class=\"rlicense-attr\" style=\"font-weight: bold;\">Attribution: <div style=\"display:inline;font-size:larger;\" class=\"licensetpl_attr\">Jie Yang</div></div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>\n<style data-mw-deduplicate=\"TemplateStyles:r901585720\">.mw-parser-output .panoramioreview{width:100%;margin:0.5em 0;background-color:var(--background-color-warning-subtle,#fffff0);padding:5px;border:1px solid var(--border-color-warning,#aa8);color:inherit}.mw-parser-output .panoramioreview-failed{background-color:var(--background-color-error-subtle,#fcc);color:inherit}.mw-parser-output .panoramioreview-passed{background-color:var(--background-color-success-subtle,#efe);color:inherit}</style>\n<table class=\"panoramioreview panoramioreview-passed\" lang=\"en\" dir=\"ltr\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Panoramio\" class=\"extiw\" title=\"en:Panoramio\">Panoramio</a></span></b>, was automatically reviewed on 7 December 2016 by <b><a href=\"//commons.wikimedia.org/wiki/User:Panoramio_upload_bot\" title=\"User:Panoramio upload bot\">Panoramio upload bot</a></b>, who confirmed that it was available on Panoramio under the above license on that date.\n</td>\n<td><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Star_and_ring.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/60px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/120px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"75\" data-file-height=\"75\"></a></span>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Jie Yang",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 54910963,
+        "ns": 6,
+        "title": "File:Window shopping in Mexico City.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Window_shopping_in_Mexico_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Window_shopping_in_Mexico_City.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54910963",
+            "sha1": "0f35678dca5f6e4032c1111b9961dbad3c99b602",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-01-09 20:50:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Window shopping in Mexico City",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Personality rights warning|Self-published work|Information field template with formatting|Homeless people of Mexico|Featured pictures of Mexico City|October 2014 in Mexico City|Sidewalks in Mexico City|Mexico photographs taken on 2014-10-13|Female mannequins in Mexico|Shops in Mexico photographed in 2014|Female dresses|Shop windows in Mexico City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A homeless man in front of a store window.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-10-13 17:36:37",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Tomascastelazo\" title=\"User:Tomascastelazo\">Tomascastelazo</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "<link rel=\"mw:PageProp/Category\" href=\"./Category:Information_field_template_with_formatting\">In order to comply with the use and licensing terms of this image, the following text must must be included with the image when published in any medium, failure to do so constitutes a violation of the licensing terms and copyright infringement: <b>© Tomas Castelazo, <a rel=\"mw:ExtLink nofollow\" href=\"http://www.tomascastelazo.com\" class=\"external text\">www.tomascastelazo.com</a><span typeof=\"mw:Entity\"> </span>/<span typeof=\"mw:Entity\"> </span><a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a></b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 58029372,
+        "ns": 6,
+        "title": "File:Ginette Spanier Pierre Balmain Person to Person interview aired 1960.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ginette_Spanier_Pierre_Balmain_Person_to_Person_interview_aired_1960.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ginette_Spanier_Pierre_Balmain_Person_to_Person_interview_aired_1960.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=58029372",
+            "sha1": "d8fc58d4b3729b9e9de17c3a2a8d3aff29fd4a62",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-04-15 00:24:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ginette Spanier Pierre Balmain Person to Person interview aired 1960",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Pierre Balmain|Fashion designers from France|PD US no notice|Person to Person (TV program)|CBS publicity photos|Clothing designed by Pierre Balmain",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Photo of Madame Ginette Spanier, model Marie Teresa and designer Pierre Balmain at Balmain's home in Croissy (Paris suburb).  Balmain was the subject of a CBS-TV <i><a href=\"https://en.wikipedia.org/wiki/Person_to_Person\" class=\"extiw\" title=\"en:Person to Person\">Person to Person</a></i> interview which aired in January 1960.  The interview was filmed for broadcast in the US.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "December 31, 1959-interview aired January 8, 1960",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Original text : <i><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20150621222634/http://www.ebay.com/itm/Vint-1960-French-Designer-Pierre-Balmain-Paris-Model-Marie-Teresa-CBS-TV-Photo-/371327513626?pt=LH_DefaultDomain_0&amp;hash=item5674d8341a\">eBay</a></i>\n<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20150621222640im_/http://sfxarchive.net/ru/ru1220.jpg\">front</a>\n</p>\n<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20150621222640im_/http://sfxarchive.net/ru/ru1219.jpg\">back</a><i>)</i>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "CBS Television",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Pre-1978 no mark",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 61191813,
+        "ns": 6,
+        "title": "File:Viola Panola Golden Yellow 0zz.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Viola_Panola_Golden_Yellow_0zz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Viola_Panola_Golden_Yellow_0zz.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61191813",
+            "sha1": "fc04d57dd364300309a3bbdac985db8ccb64feca",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-07-20 02:28:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Viola Panola Golden Yellow 0zz",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Viola 'Panola Golden Yellow'",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Location taken: American Plant Food Company, 7405 River Road, Bethesda MD.. Names: <i>Viola</i> 'Panola Golden Yellow'  , Panola Golden Yellow Pans Classification: Plantae &gt; Tracheophyta &gt; Spermatopsida &gt; Malpighiales &gt; Violaceae &gt; Violeae &gt; Viola &gt; <i>Viola 'Panola Golden Yellow'</i>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-04-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "source: David Stang.  First published at ZipcodeZoo.com",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Photo by David J. Stang",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 62063775,
+        "ns": 6,
+        "title": "File:Purple Lightning Dee Why (Unsplash).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Purple_Lightning_Dee_Why_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Purple_Lightning_Dee_Why_(Unsplash).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=62063775",
+            "sha1": "c5eebf5074d45d58608f43815f38ce24866842b6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-09-01 03:04:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Purple Lightning Dee Why (Unsplash)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Dee Why, New South Wales|Images uploaded by Fæ|Images from Unsplash|Images from Unsplash (review needed)|Files with coordinates missing SDC location of creation (34° S, 151° E)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.753562",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "151.286140",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Dee Why, Australia",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-03-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://unsplash.com/photos/td7G4W1HSIE\">https://unsplash.com/photos/td7G4W1HSIE</a>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 1 July 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170701190227/https%3A//images.unsplash.com/photo-1457528877294-b48235bdaa68\">Image</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>\n</p>\n<bdi lang=\"en\" dir=\"ltr\" title=\"archived on 3 May 2017 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20170503011155/https%3A//unsplash.com/photos/td7G4W1HSIE\">Gallery</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Jeremy Bishop <a rel=\"nofollow\" class=\"external text\" href=\"https://unsplash.com/@tidesinourveins\">tidesinourveins</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 63307887,
+        "ns": 6,
+        "title": "File:Among the branches of a potted jade plant.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Among_the_branches_of_a_potted_jade_plant.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63307887",
+            "sha1": "6947d95311cb8af1b5f0477adbee63df5cf922fb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-10-11 10:02:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Among the branches of a potted jade plant",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Crassula ovata|Taken with Panasonic Lumix DMC-FZ1000|CC-Zero|Retouched pictures|Self-published work|Images by W.carter|Files with coordinates missing SDC location of creation|Sweden photographs taken on 2017-10-10|Featured pictures of Lysekil Municipality|Featured pictures of Saxifragales|Featured photographs in the public domain|Gåseberg, Lysekil Municipality|Featured pictures taken with compact digital camera|Images by W.carter, my own favorites|Studio photography by W.carter in Lysekil Municipality|Picture of the day by W.carter on various projects|Featured pictures by W.carter",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "58.358861",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.518836",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Inside the branches of a jade plant (<i><a href=\"https://en.wikipedia.org/wiki/Crassula_ovata\" class=\"extiw\" title=\"en:Crassula ovata\">Crassula ovata</a></i>) potted in a teal glazed ceramic jar. The branch on the right side is about 2.6 cm (1.0 in) in diameter. The picture is taken in natural sunlight from a window and it is <a href=\"https://en.wikipedia.org/wiki/Focus_stacking\" class=\"extiw\" title=\"en:Focus stacking\">focus stacked</a> from 25 photos. The camera was fitted with a x2 Hoya clip-on lens and a polarizing filter. Photographed in Gåseberg, Lysekil Municipality, Sweden.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-10-10 12:24:51",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 64035291,
+        "ns": 6,
+        "title": "File:Frank Lloyd Wright Home bathroom DSCN9788.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Frank_Lloyd_Wright_Home_bathroom_DSCN9788.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Frank_Lloyd_Wright_Home_bathroom_DSCN9788.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64035291",
+            "sha1": "3a32d6c2903ca4e93c40f9392055c3f28d7b62d1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-11-12 22:50:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Frank Lloyd Wright Home bathroom DSCN9788",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Bathrooms|Frank Lloyd Wright Home and Studio|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Bathroom of Frank Lloyd Wright's Home in <a href=\"https://en.wikivoyage.org/wiki/Oak_Park\" class=\"extiw\" title=\"wikivoyage:Oak Park\">Oak Park</a>, near Chicago",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-11-01 15:06:53",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:AlasdairW\" title=\"User:AlasdairW\">AlasdairW</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 81059551,
+        "ns": 6,
+        "title": "File:Painted door with a home sign on it.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Painted_door_with_a_home_sign_on_it.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Painted_door_with_a_home_sign_on_it.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81059551",
+            "sha1": "8ea0f7cfe05859d38e70526857265ea57b918617",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-05 17:08:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Painted door with a home sign on it",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Doors in Alpes-de-Haute-Provence|Files with coordinates missing SDC location of creation|Buildings in Saint-Michel-l'Observatoire",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "43.910731",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "5.715333",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Painted door with a 'home' sign on it in one of the streets of Saint-Michel-l'Observatoire, France",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-03-13 12:03:12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Compo\" title=\"User:Compo\">Compo</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 83843531,
+        "ns": 6,
+        "title": "File:November 2019 Spanish general election Ballot - Murcia - Democracia Plural (DPL).png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/November_2019_Spanish_general_election_Ballot_-_Murcia_-_Democracia_Plural_%28DPL%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:November_2019_Spanish_general_election_Ballot_-_Murcia_-_Democracia_Plural_(DPL).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=83843531",
+            "sha1": "93c92b69760a08d60756a82fa4c1ea0d32ce945d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-11-10 20:02:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "November 2019 Spanish general election Ballot - Murcia - Democracia Plural (DPL)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|De minimis|Self-published work|Uploaded via Campaign:bpsge|PD Spain government|All media supported by Wikimedia España in 2019|Ballot papers for Democracia Plural|Ballot papers for the November 2019 Spain general election supported by Wikimedia España|Ballot papers for the November 2019 general election for Murcia",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Papeleta electoral de Democracia Plural (DPL) para el Congreso - Elecciones Generales de España de noviembre de 2019, circunscripción de Murcia.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-11-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:DMzlC&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:DMzlC (page does not exist)\">DMzlC</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 84658111,
+        "ns": 6,
+        "title": "File:Home Kitchen New Orleans - Uptown House Party.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Home_Kitchen_New_Orleans_-_Uptown_House_Party.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_Kitchen_New_Orleans_-_Uptown_House_Party.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=84658111",
+            "sha1": "f00ab91828b30611d34f40aaab1ec0b2d09d3eda",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-12-06 12:21:18",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home Kitchen New Orleans - Uptown House Party",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "May 2016 in New Orleans|Flickr images reviewed by FlickreviewR 2|Home kitchens in 2016|Home kitchens in New Orleans|Gas cooking stoves|Stain-grade kitchen cabinets",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Living Room Foundation party, Uptown New Orleans.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-05-16 19:13:24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/infrogmation/27087276292/\">https://www.flickr.com/photos/infrogmation/27087276292/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Infrogmation of New Orleans",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 85331433,
+        "ns": 6,
+        "title": "File:Depiction of a person who has an irritated throat.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Depiction_of_a_person_who_has_an_irritated_throat.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Depiction_of_a_person_who_has_an_irritated_throat.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=85331433",
+            "sha1": "00b52394b5f3f93bb6407c98d41e25f6159da542",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-12-28 07:05:46",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Depiction of a person who has an irritated throat",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "2019 illustrations|Throat irritation|Self-published work|Items with VRTS permission confirmed|Medical diagrams by myUpchar in English",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Depiction of a person who has an irritated throat. Various symptoms that may occur alongside an irritated throat have been shown.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-12-26",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.myupchar.com/en/disease/itchy-throat\">https://www.myupchar.com/en/disease/itchy-throat</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.myupchar.com/en\">https://www.myupchar.com/en</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<p><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=PermissionTicket 1%3Dhttps%3A%2F%2Fticket.wikimedia.org%2Fotrs%2Findex.pl%3FAction%3DAgentTicketZoom%26TicketNumber%3D2019081910003902 2%3D2019081910003902\"> </span>\n</p>\n<style data-mw-deduplicate=\"TemplateStyles:r1254222110\">.mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--background-color-neutral-subtle,#fbfcff);color:var(--color-base,#202122);box-sizing:border-box;border-inline-start-width:8px}.mw-parser-output .messagebox.mbox-small{font-size:88%;line-height:1.25em}.mw-parser-output .mbox-warning,.mw-parser-output .mbox-speedy{border:2px solid var(--border-color-error,#b22222);background:var(--background-color-error-subtle,#ffdbdb);border-inline-start-width:8px}.mw-parser-output .mbox-serious,.mw-parser-output .mbox-delete,.mw-parser-output .mbox-stop{border:2px solid var(--border-color-error,#b22222);border-inline-start-width:8px}.mw-parser-output .mbox-issue,.mw-parser-output .mbox-content{border:2px solid #f28500;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-query,.mw-parser-output .mbox-style{border:2px solid #f4c430;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-shit{border:2px solid #960;border-inline-start-width:8px}.mw-parser-output .mbox-license{border:2px solid #88a;border-inline-start-width:initial}.mw-parser-output .mbox-legal{border:2px solid var(--border-color-notice,#666);background:var(--background-color-base,#fff);border-inline-start-width:8px}.mw-parser-output .mbox-honor{border:2px solid #ca3;background:var(--background-color-warning-subtle,#fcf4db);border-inline-start-width:8px}.mw-parser-output .mbox-growth{border:2px solid #8d4;background:var(--background-color-success-subtle,#d5fdf4);border-inline-start-width:8px}.mw-parser-output .mbox-move{border:2px solid #93c;border-inline-start-width:8px}.mw-parser-output .mbox-protection,.mw-parser-output .mbox-message{border:2px solid var(--border-color-base,#aaa);border-inline-start-width:8px}.mw-parser-output .messagebox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .messagebox .mbox-image{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0.9em;padding-inline-end:0;text-align:center}.mw-parser-output .messagebox .mbox-imageright{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0;padding-inline-end:0.9em;text-align:center}.mw-parser-output .messagebox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .messagebox .mbox-invalid-type{text-align:center}@media(min-width:720px){.mw-parser-output .messagebox{margin:4px 10%}.mw-parser-output .messagebox.mbox-small{clear:right;float:right;margin:4px 0 4px 1em;width:238px}}body.skin--responsive .mw-parser-output table.messagebox img{max-width:none!important}</style><table class=\"plainlinks messagebox mbox-notice layouttemplate\" role=\"presentation\" style=\"margin:0.3em 0;width:100%;\"><tbody><tr><td class=\"mbox-image\"><span typeof=\"mw:File\"><span title=\"VRT Wikimedia\"><img alt=\"VRT Wikimedia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/120px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/250px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"935\" data-file-height=\"600\"></span></span></td><td class=\"mbox-text\">This work is <a href=\"https://freedomdefined.org/Definition\" class=\"extiw\" title=\"freedomdefined:Definition\">free</a> and may be used by anyone for any purpose. If you wish to <b><a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">use this content</a></b>, you do not need to request permission as long as you follow any licensing requirements mentioned on this page.\n<p>The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page. This correspondence has been <b><span style=\"background:transparent;color:#0f7f1f;font-weight:400;\" title=\"transparent\">reviewed</span></b> by a <a href=\"//commons.wikimedia.org/wiki/Template:PermissionTicket/Users\" title=\"Template:PermissionTicket/Users\">Volunteer Response Team (VRT) member</a> and stored in our <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team\" title=\"Commons:Volunteer Response Team\">permission archive</a>. The correspondence is available to trusted volunteers as <b><a href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019081910003902\" class=\"extiw\" title=\"ticket:2019081910003902\">ticket #2019081910003902</a></b>.\n</p><p><small>If you have questions about the archived correspondence, please use the <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team/Noticeboard\" title=\"Commons:Volunteer Response Team/Noticeboard\">VRT noticeboard</a>.</small>\n<small>Ticket link: <a class=\"external free\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019081910003902\">https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019081910003902</a></small>\n<br><small>Find other files from the same ticket:</small> <span typeof=\"mw:File\"><a href=\"https://wcqs-beta.wmflabs.org/#%23defaultView%3AImageGrid%09%0ASELECT%20%3Fimage%20%20%20%7B%0A%20%20%3Ffile%20wdt%3AP6305%20%222019081910003902%22%20.%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage.%0A%7D%20%0A\" title=\"SDC query (SPARQL)\" rel=\"nofollow\"><img alt=\"SDC query (SPARQL)\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/20px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/40px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"688\"></a></span>\n</p>\n<span id=\"field-otrs\" title=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2019081910003902\"></span></td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 94204096,
+        "ns": 6,
+        "title": "File:Dry-sand Zen garden made of beige stripes a sunny day at Higashiyama Jisho-ji Buddhist temple Ginkaku-ji Kyoto Japan.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Dry-sand_Zen_garden_made_of_beige_stripes_a_sunny_day_at_Higashiyama_Jisho-ji_Buddhist_temple_Ginkaku-ji_Kyoto_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dry-sand_Zen_garden_made_of_beige_stripes_a_sunny_day_at_Higashiyama_Jisho-ji_Buddhist_temple_Ginkaku-ji_Kyoto_Japan.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=94204096",
+            "sha1": "f66cd210823f4e8afd8d35c4371c52272e430e70",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-09-18 11:09:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Dry-sand Zen garden made of beige stripes a sunny day at Higashiyama Jisho-ji Buddhist temple Ginkaku-ji Kyoto Japan",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Vanishing point|Taken with Canon EOS 5D Mark IV and Canon EF 24-70mm F2.8L II USM|One-point perspective|Self-published work|Circular objects|Front views of structures|Sand sculptures in Japan|Featured pictures of landscapes|White sand|Trees in Kyoto prefecture|Beige and white objects|Stripes in architecture|Files with coordinates missing SDC location of creation|Featured pictures by Basile Morin|Featured pictures of Kyoto|Photographs by Basile Morin|Ginshadan (Ginkaku-ji)|Vertical symmetry impressions|Featured pictures of Buddhist temples|Dividing lines|Striped objects in Japan|Striped floors|Kyoto photographs taken on 2019-06-11",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "35.026308",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "135.798455",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Dry-sand <a href=\"https://en.wikipedia.org/wiki/Zen\" class=\"extiw\" title=\"en:Zen\">Zen</a> garden made of long beige stripes, front view with perspective impression, flowers and trees in the background, a sunny day with blue sky, at <i>Higashiyama Jisho-ji</i> enduring Zen <a href=\"https://en.wikipedia.org/wiki/Buddhist_temple\" class=\"extiw\" title=\"en:Buddhist temple\">Buddhist temple</a>, <a href=\"https://en.wikipedia.org/wiki/Ginkaku-ji\" class=\"extiw\" title=\"en:Ginkaku-ji\">Ginkaku-ji</a> (\"Temple of the Silver Pavilion\"), <a href=\"https://en.wikipedia.org/wiki/Saky%C5%8D-ku,_Kyoto\" class=\"extiw\" title=\"en:Sakyō-ku, Kyoto\">Sakyo Ward</a>, <a href=\"https://en.wikipedia.org/wiki/Kyoto\" class=\"extiw\" title=\"en:Kyoto\">Kyoto</a>, <a href=\"https://en.wikipedia.org/wiki/Kyoto_Prefecture\" class=\"extiw\" title=\"en:Kyoto Prefecture\">Kyoto Prefecture</a>, <a href=\"https://en.wikipedia.org/wiki/Japan\" class=\"extiw\" title=\"en:Japan\">Japan</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "11 June 2019, 16:17:46",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 96451332,
+        "ns": 6,
+        "title": "File:Living Room in Henderson House.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Living_Room_in_Henderson_House.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Living_Room_in_Henderson_House.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=96451332",
+            "sha1": "857f226ffc8286cd5bc295da04abbbeb44dd9337",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-11-21 15:40:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Living Room in Henderson House",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Houses in Nevada|Self-published work|Buildings in Henderson, Nevada|Living rooms in Nevada|Kitchen peninsulas|November 2017 in Henderson",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The living room of a house in Henderson, Nevada.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-11-22 11:15:23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Noah_Wulf\" title=\"User:Noah Wulf\">Noah Wulf</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 98077345,
+        "ns": 6,
+        "title": "File:Mistakes when creating categories on Wikinews 1.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Mistakes_when_creating_categories_on_Wikinews_1.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Mistakes_when_creating_categories_on_Wikinews_1.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=98077345",
+            "sha1": "4b305a7aff9cb2f0d11ad54547eaed2432214d5e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-12-26 06:47:55",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Mistakes when creating categories on Wikinews 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Mistakes when creating categories on Wikinews",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Mistakes when creating categories on Wikinews 1",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-12-26",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Krassotkin\" title=\"User:Krassotkin\">Krassotkin</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 116710649,
+        "ns": 6,
+        "title": "File:Bedroom of guesthouse.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Bedroom_of_guesthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bedroom_of_guesthouse.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=116710649",
+            "sha1": "d337eea61721f92fda4edb4d46a6abb61f8e759e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-04-06 13:51:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bedroom of guesthouse",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Images from Wiki Loves Africa 2022|Bedrooms in Ghana|Furniture in Ghana|Images from Wiki Loves Africa 2022 to check|Uploaded via Campaign:wlafrica|Images from Wiki Loves Africa 2022 in Ghana",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This is an image with the theme \"<i>Home + Habitat in Africa</i>\" from:",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-03-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Fquasie\" title=\"User:Fquasie\">Fquasie</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 123832197,
+        "ns": 6,
+        "title": "File:Homelessness in Downtown Los Angeles, where an unhoused person sleeps on the sidewalk.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Homelessness_in_Downtown_Los_Angeles%2C_where_an_unhoused_person_sleeps_on_the_sidewalk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Homelessness_in_Downtown_Los_Angeles,_where_an_unhoused_person_sleeps_on_the_sidewalk.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=123832197",
+            "sha1": "41d5360088b8347d30d1e5a7687d703ef4f0bf1a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-10-06 03:02:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Homelessness in Downtown Los Angeles, where an unhoused person sleeps on the sidewalk",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Downtown Los Angeles|Self-published work|Homeless people of the United States|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "34.050369",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-118.258881",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Homelessness in Downtown Los Angeles. An unhoused person sleeps on the sidewalk.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-10-02 10:46:17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:LeviMeirClancy\" title=\"User:LeviMeirClancy\">Levi Meir Clancy</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 127499764,
+        "ns": 6,
+        "title": "File:What is your name^ What is your quest^ - geograph.org.uk - 4250223.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/What_is_your_name%5E_What_is_your_quest%5E_-_geograph.org.uk_-_4250223.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:What_is_your_name%5E_What_is_your_quest%5E_-_geograph.org.uk_-_4250223.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=127499764",
+            "sha1": "f9fe28743a6d1160cf88a7dff947cb3f859b7b6a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-01-07 14:50:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "What is your name^ What is your quest^ - geograph.org.uk - 4250223",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Kenmore, Scotland (civil parish)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "56.563375",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-4.022945",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "What is your name? What is your quest? <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:What_is_your_name%5E_What_is_your_quest%5E_-_geograph.org.uk_-_4250223.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-11-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/4250223\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:What_is_your_name%5E_What_is_your_quest%5E_-_geograph.org.uk_-_4250223.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/196\">Richard Webb</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:What_is_your_name%5E_What_is_your_quest%5E_-_geograph.org.uk_-_4250223.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>What is your name? What is your quest?</i> by Richard Webb",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 128555727,
+        "ns": 6,
+        "title": "File:How much more?.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/How_much_more%3F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:How_much_more%3F.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128555727",
+            "sha1": "f8905eeaf8dba05448f6c8059046c4d228679cda",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-02-09 15:01:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "How much more?",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Men of Czechia|Personality rights warning|Images from Wiki Loves Folklore 2023 in the Czech Republic|Self-published work|Images from Wiki Loves Folklore 2023|Images from Wiki Loves Folklore 2023 to check|Uploaded via Campaign:wlf 2023",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<table cellspacing=\"0\" style=\"width:600px; text-align:start; color:#000; background:#ddd; border:1px solid #bbb; margin:1px;\" lang=\"en\" dir=\"ltr\" class=\"layouttemplate\">\n<tbody><tr>\n<td style=\"width:22px; height:22px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Wiki-Loves-Love-logo.svg\" class=\"mw-file-description\" title=\"Logo Wiki Loves Folklore\"><img alt=\"Logo Wiki Loves Folklore\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Wiki-Loves-Love-logo.svg/40px-Wiki-Loves-Love-logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"22\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Wiki-Loves-Love-logo.svg/60px-Wiki-Loves-Love-logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1024\" data-file-height=\"1024\"></a></span>\n</td>\n<td style=\"padding:1pt; line-height:1.1em;\">This media has been taken in the country: <b>Czech Republic</b>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-05-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Brebentator&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Brebentator (page does not exist)\">Brebentator</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 129549788,
+        "ns": 6,
+        "title": "File:Caricature 1908 - Where Some Careless Person Dropped a Banana Peel.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Caricature_1908_-_Where_Some_Careless_Person_Dropped_a_Banana_Peel.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Caricature_1908_-_Where_Some_Careless_Person_Dropped_a_Banana_Peel.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129549788",
+            "sha1": "9ab04450971431f0663b1fdb2e501ef15bcd87ed",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-13 04:25:26",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Caricature 1908 - Where Some Careless Person Dropped a Banana Peel",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US expired|Caricature; Wit and Humor of a Nation in Picture, Song and Story (1908)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Illustration from \"Caricature (Thirteenth Edition): Wit and Humor of a Nation in Picture, Song and Story.\" (<a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/details/carricature-1908\">https://archive.org/details/carricature-1908</a>)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1908",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "\"Caricature (Thirteenth Edition): Wit and Humor of a Nation in Picture, Song and Story.\" (<a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/details/carricature-1908\">https://archive.org/details/carricature-1908</a>)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "published by Leslie-Judge Company",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 133620243,
+        "ns": 6,
+        "title": "File:How To Know Wild Flowers 1905 28.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/How_To_Know_Wild_Flowers_1905_28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:How_To_Know_Wild_Flowers_1905_28.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=133620243",
+            "sha1": "29b16419c358b3552d0df205d6887918dc2c15c3",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-06-26 16:41:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "How To Know Wild Flowers 1905 28",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Books from Canada|How to know the wildflowers",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "1905 How to Know The Wildflowers",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1905",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Manual about wildflowers from 1905",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "M. Parkinson",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 135073555,
+        "ns": 6,
+        "title": "File:Er, I think it's that way, Sir... - geograph.org.uk - 5180233.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Er%2C_I_think_it%27s_that_way%2C_Sir..._-_geograph.org.uk_-_5180233.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Er,_I_think_it%27s_that_way,_Sir..._-_geograph.org.uk_-_5180233.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=135073555",
+            "sha1": "9c1bceb8e8a7a8ec1e62c9c648be213bad2acdd8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-07-27 11:11:58",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Er, I think it's that way, Sir... - geograph.org.uk - 5180233",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Borough of King's Lynn and West Norfolk",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.753542",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "0.392889",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Er, I think it's that way, Sir... <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Er,_I_think_it%27s_that_way,_Sir..._-_geograph.org.uk_-_5180233.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-10-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/5180233\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Er,_I_think_it%27s_that_way,_Sir..._-_geograph.org.uk_-_5180233.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/17822\">Basher Eyre</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Er,_I_think_it%27s_that_way,_Sir..._-_geograph.org.uk_-_5180233.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>Er, I think it's that way, Sir...</i> by Basher Eyre",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 150686038,
+        "ns": 6,
+        "title": "File:C. 1035 France Lorraine and Burgundy.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/C._1035_France_Lorraine_and_Burgundy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:C._1035_France_Lorraine_and_Burgundy.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=150686038",
+            "sha1": "ad3cd124b4147e1002bfe81a961edebd3e83d46f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-08-09 23:12:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "C. 1035 France Lorraine and Burgundy",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Historical Atlas by William R. Shepherd|CC-PD-Mark|PD-old-90-expired|Maps showing 1035|Uses PD-old-90|Maps of France in the 11th century|Maps of Burgundy in the 11th century|Maps of France from Historical Atlas by William R. Shepherd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Map of France, Lotharingia (Lorraine) and Burgundy circa 1035 CE",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1911<div style=\"display: none;\">date QS:P,+1911-00-00T00:00:00Z/9,P1480,Q5727902</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ty%27s_Commons\" title=\"User:Ty's Commons\">Ty's Commons'</a> digitally-enhanced derivative of a public domain map by William R. Shepherd (1871-1934), Professor of History at Columbia University in New York and cartographer, published in \"Historical Atlas\" (Henry Holt &amp; Co., NY 1911), <a rel=\"nofollow\" class=\"external text\" href=\"https://maps.lib.utexas.edu/maps/historical/shepherd_1911/shepherd-c-061.jpg\">original map entitled \"<i>France about 1035</i>\"</a> available from the <a rel=\"nofollow\" class=\"external text\" href=\"https://maps.lib.utexas.edu/maps/index.html\">Perry-Castañeda Library Map Collection</a> of the University of Texas at Austin.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:William_Robert_Shepherd\" class=\"extiw\" title=\"w:en:William Robert Shepherd\"><span title=\"American cartographer and historian (1871–1934)\">William Robert Shepherd</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 153194305,
+        "ns": 6,
+        "title": "File:Helen Tamiris, scene from How Long, Brethren?.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Helen_Tamiris%2C_scene_from_How_Long%2C_Brethren%3F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Helen_Tamiris,_scene_from_How_Long,_Brethren%3F.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=153194305",
+            "sha1": "27bf068531c312394fcaea112027bf5c95e25e94",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-09-26 16:29:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Helen Tamiris, scene from How Long, Brethren?",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Helen Tamiris|Images from the New York Public Library|PD US WPA|Template Unknown (artist)|How Long Brethren (Federal Dance Theatre)|Federal Theatre Project photographs",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A scene from <i>How Long, Brethren?</i>, a full-length concert dance piece choreographed by Helen Tamiris, 1937",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1937",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This image is available from the <a href=\"//commons.wikimedia.org/wiki/New_York_Public_Library\" title=\"New York Public Library\">New York Public Library</a>'s Digital Library under the digital ID 58621716: <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalgallery.nypl.org/nypldigital/id?58621716\">digitalgallery.nypl.org</a> → <a rel=\"nofollow\" class=\"external text\" href=\"https://digitalcollections.nypl.org/search/index?keywords=58621716\">digitalcollections.nypl.org</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://digitalcollections.nypl.org/items/15cadde0-288b-013b-026a-0242ac110003\">permalink</a>)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown photographer",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 187559166,
+        "ns": 6,
+        "title": "File:A community gathering where a person in the center is playing a wind instrument for a crowd.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/A_community_gathering_where_a_person_in_the_center_is_playing_a_wind_instrument_for_a_crowd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_community_gathering_where_a_person_in_the_center_is_playing_a_wind_instrument_for_a_crowd.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=187559166",
+            "sha1": "6fd2b7fcbfa305db0fd6becfd18e35f270141bad",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-03-31 16:44:33",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "A community gathering where a person in the center is playing a wind instrument for a crowd",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Images from Wiki Loves Folklore 2026|Images from Wiki Loves Folklore 2026 in Ghana|Images from Wiki Loves Folklore 2026 to check|Uploaded via Campaign:wlf 2026|Images from Wiki Loves Folklore 2026 in Ghana by Ghanaian Educators Wikimedia Community",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A community gathering where a person in the center is playing a wind instrument for a crowd.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-03-29 13:21:05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Alhassan_Mohammed_Awal\" title=\"User:Alhassan Mohammed Awal\">Alhassan Mohammed Awal</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 189725044,
+        "ns": 6,
+        "title": "File:Queensland Railway Signal Example - Repeat Signal.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Queensland_Railway_Signal_Example_-_Repeat_Signal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Queensland_Railway_Signal_Example_-_Repeat_Signal.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=189725044",
+            "sha1": "01104cae31d442c0a8a0646b46673126ce3472e5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-04-19 13:17:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Queensland Railway Signal Example - Repeat Signal",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Files with coordinates missing SDC location of creation|Railway signals in Queensland|Photographs by User:Aebion",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-27.426881",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "153.041594",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "An example of a railway signal used in Queensland, Australia. The 'P' plate indicates that this is a repeat signal, which can only show yellow or green.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-08-29 08:03:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Aebion\" title=\"User:Aebion\">Aebion</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

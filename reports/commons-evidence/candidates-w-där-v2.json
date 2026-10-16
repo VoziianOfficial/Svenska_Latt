@@ -1,0 +1,914 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 28548542,
+        "ns": 6,
+        "title": "File:Girl Posing at Glacier Point Yosemite 2013.jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 5221087,
+            "width": 4438,
+            "height": 2611,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/960px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 471,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/1920px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/960px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 471,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg/1920px-Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Girl_Posing_at_Glacier_Point_Yosemite_2013.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=28548542",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-12-23 23:29:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Girl Posing at Glacier Point Yosemite 2013",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Glacier Point|Taken with Nikon D7000|Personality rights warning|Self-published work|Sitting with legs horizontally|Featured pictures by Tuxyso|Selection WikiCon 2013|Information field template with formatting|Images by Tuxyso|People in Yosemite National Park|Featured pictures of people of the United States|Images of USA by Tuxyso|Featured pictures of mountains|Files with coordinates missing SDC location of creation|Featured pictures of Yosemite National Park|Featured pictures of women|United States photographs taken on 2013-09-16|Half Dome in September 2013|Half Dome seen from Glacier Point|Women sitting on rocks",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "37.728123",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-119.573207",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Posing girl at <a href=\"https://en.wikipedia.org/wiki/Glacier_Point\" class=\"extiw\" title=\"w:Glacier Point\">Glacier Point</a> in <a href=\"https://en.wikipedia.org/wiki/Yosemite_National_Park\" class=\"extiw\" title=\"w:Yosemite National Park\">Yosemite National Park</a> with <a href=\"https://en.wikipedia.org/wiki/Half_Dome\" class=\"extiw\" title=\"w:Half Dome\">Half Dome</a> in the background",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 16 September 2013, 13:22:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Tuxyso\" title=\"User:Tuxyso\">Tuxyso</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Tuxyso / <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 86001844,
+        "ns": 6,
+        "title": "File:Album amicorum Jacob Heyblocq KB131H26 - p289 - Unknown contributor - Drawing - Man pointing to his arm (Caption Enumerat miles vulnera).jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 341991,
+            "width": 1500,
+            "height": 875,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg/960px-Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 467,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg/960px-Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 467,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_%28Caption_Enumerat_miles_vulnera%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Album_amicorum_Jacob_Heyblocq_KB131H26_-_p289_-_Unknown_contributor_-_Drawing_-_Man_pointing_to_his_arm_(Caption_Enumerat_miles_vulnera).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=86001844",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-01-17 13:09:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">Dutch:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"nl\"><i>Tekening van N.N. voor het album amicorum van Jacob Heyblocq (1623-1690), rector van de Latijnse school te Amsterdam <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q105528562#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>AAJH-191 Contribution of N. N. AAJH-191</i></div></div><div style=\"display: none;\">title QS:P1476,nl:\"Tekening van N.N. voor het album amicorum van Jacob Heyblocq (1623-1690), rector van de Latijnse school te Amsterdam <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q105528562#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Lnl,\"Tekening van N.N. voor het album amicorum van Jacob Heyblocq (1623-1690), rector van de Latijnse school te Amsterdam <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q105528562#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>\"</div><div style=\"display: none;\">label QS:Len,\"AAJH-191 Contribution of N. N. AAJH-191\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Media contributed by Koninklijke Bibliotheek|PD-old-100-expired|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|CC-PD-Mark|Artworks with accession number from Wikidata|Album amicorum van Jacobus Heyblocq|Artworks with Wikidata item missing genre|Artworks digital representation of unknown type of work|Artworks with digital representation of different depicts|Artworks digital representation of both 2D and 3D work|Non-textual contributions in the album amicorum Jacobus Heyblocq|Anonymous contributions in the album amicorum Jacobus Heyblocq",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "DateTimeOriginal": {
+                "value": "after 1666<div style=\"display: none;\">date QS:P,+1666-00-00T00:00:00Z/7,P1319,+1666-00-00T00:00:00Z/9</div> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q105528562#P571\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This digital media file - and/or the physical objects depicted on it - originates from the digital and/or physical collections of the <a rel=\"nofollow\" class=\"external text\" href=\"https://www.kb.nl/\">Koninklijke Bibliotheek</a>, national library of the Netherlands.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 128516210,
+        "ns": 6,
+        "title": "File:Surprised Person pointing.png",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 164748,
+            "width": 1383,
+            "height": 2351,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Surprised_Person_pointing.png/960px-Surprised_Person_pointing.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1360,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/1/14/Surprised_Person_pointing.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Surprised_Person_pointing.png/960px-Surprised_Person_pointing.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1360,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/1/14/Surprised_Person_pointing.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Surprised_Person_pointing.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Surprised_Person_pointing.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128516210",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-02-08 09:35:18",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Surprised Person pointing",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sketchnote|Flickr images reviewed by FlickreviewR 2",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This figure is pointing at something in amazement.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-02-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/194963989@N07/52673178280/\">https://www.flickr.com/photos/194963989@N07/52673178280/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "sOER Frank",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      },
+      {
+        "pageid": 128516212,
+        "ns": 6,
+        "title": "File:Surprised Person pointing and calling.png",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 161140,
+            "width": 1807,
+            "height": 2120,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Surprised_Person_pointing_and_calling.png/960px-Surprised_Person_pointing_and_calling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 939,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Surprised_Person_pointing_and_calling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Surprised_Person_pointing_and_calling.png/960px-Surprised_Person_pointing_and_calling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 939,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Surprised_Person_pointing_and_calling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Surprised_Person_pointing_and_calling.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Surprised_Person_pointing_and_calling.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=128516212",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-02-08 09:35:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Surprised Person pointing and calling",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sketchnote|Flickr images missing SDC creator|Flickr images reviewed by FlickreviewR 2",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Surprised Person pointing and calling for someone",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-02-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/194963989@N07/52673240278/\">https://www.flickr.com/photos/194963989@N07/52673240278/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "sOER Frank",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      },
+      {
+        "pageid": 134083594,
+        "ns": 6,
+        "title": "File:Person in NEURODIVERSITY shirt pointing at AutismSpeaks poster (WalkInRed 2015).jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 79812,
+            "width": 1024,
+            "height": 768,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg/960px-Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg/960px-Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_%28WalkInRed_2015%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_(WalkInRed_2015).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=134083594",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-07-08 00:08:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Person in NEURODIVERSITY shirt pointing at AutismSpeaks poster (WalkInRed 2015)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Heart symbols|Neurodiversity|Autism activism|Flickr images reviewed by FlickreviewR 2|Red instead",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "#WalkInRed is an online/virtual social media campaign that takes place each year during the month of April. The idea is for #ActuallyAutistic individuals and allies to post selfies wearing red shoes, socks, lipstick, nail polish, other clothing or anything else red like food, toys, printed signs, etc. These images are meant to act as a positive beacon; making a typically blue month much happier through #love. 2015 is the first of many flashblogs and tweetstorms in the name of equality, understanding and #acceptance.\n<p>walkinred.weebly.comhttp://facebook.com/walkinredhttp://t...\n</p>\nWalkInRed, WalkInRed2015, redINSTEAD, LIUR, acceptanceNOTawareness, LoveNotFear, PeopleNotPuzzles, BoycottAutismSpeaks, AcceptanceIs, ActuallyAutistic, Autistic, Autism, AutismAcceptanceMonth, AutismAcceptanceDay, WAAD, LIUB, lightitupblue, AAM, lightitupRED, positivity, inclusion, understanding, love, strength, passion, red, shoe, selfie, converse, hashtag, running shoe, crimson, scarlet, rouge, MarcheEnRouge, ROLLinRED, WriteInRed, MarchInRed, Neurodiversity, AutismPositivity2015, WalkInRed2016, flashblog, tweetstorm, social, online, movement, cause, AutisticApril",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-04-30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/131264413@N03/17136830038/\">Flickr</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_(WalkInRed_2015).jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/131264413@N03/\">Walk InRed</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Person_in_NEURODIVERSITY_shirt_pointing_at_AutismSpeaks_poster_(WalkInRed_2015).jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 141804454,
+        "ns": 6,
+        "title": "File:'No unauthorised person allowed past this point' - geograph.org.uk - 5876519.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 700157,
+            "width": 1024,
+            "height": 768,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg/960px-%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/c/c1/%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg/960px-%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/c/c1/%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=141804454",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-12-06 07:18:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "'No unauthorised person allowed past this point' - geograph.org.uk - 5876519",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Corris|Images from Geograph Britain and Ireland",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.636306",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-3.849249",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "'No unauthorised person allowed past this point'<span typeof=\"mw:Entity\"> </span><span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\" data-mw='{\"caption\":\"Edit this at Structured Data on Commons\"}'><a href=\"https://commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#ooui-php-4\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img resource=\"https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_edit-ltr-progressive.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" alt=\"Edit this at Structured Data on Commons\" data-file-width=\"20\" data-file-height=\"20\" data-file-type=\"drawing\" height=\"10\" width=\"10\" class=\"mw-file-element\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-08-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.geograph.org.uk/photo/5876519\" class=\"external text\">Geograph Britain and Ireland</a><span typeof=\"mw:Entity\"> </span><span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\" data-mw='{\"caption\":\"Edit this at Structured Data on Commons\"}'><a href=\"https://commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#P7482\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img resource=\"https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_edit-ltr-progressive.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" alt=\"Edit this at Structured Data on Commons\" data-file-width=\"20\" data-file-height=\"20\" data-file-type=\"drawing\" height=\"10\" width=\"10\" class=\"mw-file-element\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.geograph.org.uk/profile/14997\" class=\"external text\">John Lucas</a><span typeof=\"mw:Entity\"> </span><span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\" data-mw='{\"caption\":\"Edit this at Structured Data on Commons\"}'><a href=\"https://commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#P170\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:%27No_unauthorised_person_allowed_past_this_point%27_-_geograph.org.uk_-_5876519.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img resource=\"https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_edit-ltr-progressive.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" alt=\"Edit this at Structured Data on Commons\" data-file-width=\"20\" data-file-height=\"20\" data-file-type=\"drawing\" height=\"10\" width=\"10\" class=\"mw-file-element\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i><span typeof=\"mw:Entity\">'</span>No unauthorised person allowed past this point<span typeof=\"mw:Entity\">'</span></i> by<span typeof=\"mw:Entity\"> </span>John Lucas",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 146236057,
+        "ns": 6,
+        "title": "File:Cape Town (ZA), Sea Point, Nachtansicht -- 2024 -- 1867-70 - 2.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 7041337,
+            "width": 4665,
+            "height": 3499,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg/960px-Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg/1920px-Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg/960px-Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg/1920px-Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Cape_Town_%28ZA%29%2C_Sea_Point%2C_Nachtansicht_--_2024_--_1867-70_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Sea_Point,_Nachtansicht_--_2024_--_1867-70_-_2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146236057",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-03-11 04:52:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cape Town (ZA), Sea Point, Nachtansicht -- 2024 -- 1867-70 - 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sea Point|Multiple exposure|Intentional camera movement|Photographs with aspect ratio of 4:3|Taken with Canon PowerShot G7 X Mark III|Self-published work|Commons featured desktop backgrounds|ISO speed rating 320|Exposure time 1/5 sec|Featured pictures of buildings|Photographs by Dietmar Rabich/Featured pictures|Photographs by Dietmar Rabich/Quality images|Featured night photography|Information field template with formatting|Photographs by Dietmar Rabich/Quality images of buildings|Featured pictures of South Africa|F-number f/3.2|Night in Cape Town|Changes of XRay's photographs of the recent weeks|Images by XRay (flat list)|Photographs by Dietmar Rabich/Quality images of South Africa|Featured pictures with motion blur|Featured pictures with intentional camera movement|Photographs by Dietmar Rabich/Featured pictures of South Africa|Uploaded with LrMediaWiki|Abstract architecture photography|Long exposure photographs of South Africa|South Africa photographs taken on 2024-03-04|Buildings at night|Long exposure photography in architecture|Photographs by Dietmar Rabich/South Africa|Buildings in South Africa photographed in 2024|Photographs by Dietmar Rabich/Architectural photography|Photographs by Dietmar Rabich/Multiple exposure|Photographs by Dietmar Rabich/Featured pictures on Wikimedia Commons|Featured pictures taken with compact digital camera|Photographs by Dietmar Rabich/Available light photography/Night|Photographs by Dietmar Rabich/Year/2024|Photographs by Dietmar Rabich/Quality images of photo art|Photographs by Dietmar Rabich/Intentional camera movement|Lens focal length 24.078 mm|Photo art in South Africa|Quality night photography in South Africa",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-33.915278",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "18.392500",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Fine-art_photography\" class=\"extiw\" title=\"en:Fine-art photography\">Photographic art</a> based on a view towards Signal Hill at night, <a href=\"https://en.wikipedia.org/wiki/Cape_Town\" class=\"extiw\" title=\"en:Cape Town\">Cape Town</a>, <a href=\"https://en.wikipedia.org/wiki/Western_Cape\" class=\"extiw\" title=\"en:Western Cape\">Western Cape</a>, South Africa<br><small>The photograph was composed of two shots. One was created by deliberately moving the camera (ICM, <a href=\"https://en.wikipedia.org/wiki/Intentional_camera_movement\" class=\"extiw\" title=\"en:Intentional camera movement\">Intentional Camera Movement</a>) horizontally, the other by moving it vertically.</small>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 4 March 2024, 19:39",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q34788025\" class=\"extiw\" title=\"d:Q34788025\"><span title=\"German photographer and mathematician\">Dietmar Rabich</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"layouttemplate navigation-not-searchable\" style=\"margin:.25em;padding:.25em .5em;background-color:var(--background-color-base,#ffffff);color:inherit;border:1px solid var(--background-color-disabled,#eeeeee)\" data-nosnippet=\"\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/40px-Flag_of_Germany.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"14\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/60px-Flag_of_Germany.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1000\" data-file-height=\"600\"></span></span>\n</td>\n<td>Dieser Text und viele andere auch sind ebenso in deutscher Sprache verfügbar. Um diese sehen zu können, wähle bitte auf dieser Webseite die Spracheinstellung „Deutsch“.\n</td></tr></tbody></table><div style=\"clear:both;border:1px solid var(--background-color-disabled,#eeeeee);margin:.25em;padding:.25em .5em;background-color:var(--background-color-base,#ffffff);color:inherit;font-size:90%;\" class=\"searchaux\" data-nosnippet=\"\">\n<figure class=\"mw-halign-right\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:HSSection_sign.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/120px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"100\" height=\"100\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/250px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"156\" data-file-height=\"156\"></a><figcaption></figcaption></figure><figure class=\"mw-halign-right\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Cc_by-sa_(1).svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cc_by-sa_%281%29.svg/120px-Cc_by-sa_%281%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"100\" height=\"35\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cc_by-sa_%281%29.svg/250px-Cc_by-sa_%281%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"120\" data-file-height=\"42\"></a><figcaption></figcaption></figure><div><b>I. Licence</b></div>\n<div style=\"margin-top:0.5em;\">This photograph is protected by copyright law. However, it may be used for free by anyone, provided it is used in accordance with the license <b>Creative Commons License <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed\">“Attribution-ShareAlike 4.0 International”</a></b> (CC BY-SA 4.0). These include, among other things, the naming of the author and the license, as well as the setting of a link to the license text or its complete imprint. The attribution should be done as follows:</div>\n<div style=\"margin-top:0.5em; text-align:center;\"><i><a href=\"//commons.wikimedia.org/wiki/User:XRay\" title=\"User:XRay\">Dietmar Rabich</a> / <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a> / <span class=\"plainlinks noprint\"><a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Sea_Point,_Nachtansicht_--_2024_--_1867-70_-_2.jpg\" href=\"https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Sea_Point,_Nachtansicht_--_2024_--_1867-70_-_2.jpg\">“Cape Town (ZA), Sea Point, Nachtansicht -- 2024 -- 1867-70 - 2”</a></span> / <span class=\"plainlinks noprint\"><a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a></span></i></div>\n<div style=\"margin-top:0.5em;\">Please read the text of the license carefully before using the photograph. If you do not agree with the conditions of the license or if you do not understand these conditions, please refrain from using the photo. If you have any questions regarding the license or the reuse of the image, please contact me before using it. If you do not comply with the terms of the license, you do not acquire any right to use the image. If you need another license to use, please contact the author <b>before</b> using.</div>\n<div style=\"margin-top:0.5em;\">For informations about the licence see section <a class=\"mw-selflink-fragment\" href=\"#ImgLic\">Licensing</a> or as <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">human-readable summary</a> or as <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\">full licence text</a> at Creative Commons. In addition to the above, a link to the source - so this page with the descriptions and license terms - is appreciated. More information or examples of use can be found at <a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">re-use (with example file)</a>. The <a rel=\"nofollow\" class=\"external text\" href=\"https://lizenzhinweisgenerator.de/?lang=en&amp;url=https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Sea_Point,_Nachtansicht_--_2024_--_1867-70_-_2.jpg\">Attribution Generator</a> is helpful in licensing matters.</div>\n<div style=\"margin:0.5em auto 1em;text-align:center;\" class=\"plainlinks\"><span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://lizenzhinweisgenerator.de/?lang=en&amp;url=https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Sea_Point,_Nachtansicht_--_2024_--_1867-70_-_2.jpg\"><span class=\"submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary ui-button-blue\" role=\"button\"><span class=\"ui-button-text\">Generate License <b>Attribution</b></span><span class=\"ui-button-icon-secondary ui-icon ui-icon-extlink\"> </span></span></a></span></div>\n<div style=\"margin-top:0.5em;\">As an alternative to the Creative Commons License <i>CC BY-SA 4.0</i>, the <i><a href=\"https://en.wikipedia.org/wiki/Free_Art_License\" class=\"extiw\" title=\"en:Free Art License\">Free Art License</a></i> (<a rel=\"nofollow\" class=\"external text\" href=\"http://artlibre.org/licence/lal/en/\">from version 1.3</a>) may also be used.</div>\n<div style=\"margin-top:0.75em;\"><b>II. Fairness</b></div>\n<div style=\"margin-top:0.5em;\">From printed materials and other tangible products that use that work, the user is asked to send a copy to the author as thank you. However, this is not a condition for the use of the photo, but a voluntary service. The mailing address can be requested via the contact options.</div>\n<div style=\"margin-top:0.5em;\">Please note that the author had quite considerable effort to draw up this file. Thus, it is only fair to comply with the conditions of <a href=\"https://en.wikipedia.org/wiki/Free_license\" class=\"extiw\" title=\"en:Free license\">free licenses</a> listed here. In the case of violation of the license conditions, the rights granted hereunder will expire automatically.</div>\n<div style=\"margin-top:0.75em; clear: both;\"><b>III. Disclaimer</b></div>\n<div style=\"margin-top:0.5em;\">Please note that the rights granted under the license apply exclusively to the photograph itself, but not to the rights of third parties — such as copyrights or property rights in the object depicted or the personal rights of any individuals who may be depicted. (See <a href=\"//commons.wikimedia.org/wiki/Commons:L\" class=\"mw-redirect\" title=\"Commons:L\">licences</a> and <a href=\"//commons.wikimedia.org/wiki/Commons:SOSUMI\" class=\"mw-redirect\" title=\"Commons:SOSUMI\">non-copyright restrictions</a>.) I do not grant any warranty that the subsequent use of the photograph is legally possible concerning the object or person shown in the photograph. You are responsible to check and respect these rights in the publication in the respective medium or country.</div>\n<div style=\"margin-top:0.5em;\">The author is not responsible for the accuracy of the information contained herein (description, title, etc.). Likewise, the author assumes no liability for further use. Please note the <a href=\"//commons.wikimedia.org/wiki/Commons:General_disclaimer\" title=\"Commons:General disclaimer\">general disclaimer</a> and please read <a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">reusing content outside Wikimedia</a> too.</div>\n<div style=\"margin-top:0.75em;\"><b>IV. Contact</b></div>\n<div style=\"margin-top:0.5em;\"><b><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:UserIconMail.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/40px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/60px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"700\" data-file-height=\"700\"></a></span> <a href=\"//commons.wikimedia.org/wiki/Special:EmailUser/XRay\" title=\"Special:EmailUser/XRay\">E-mail to the author</a></b> or the <a href=\"//commons.wikimedia.org/wiki/User_talk:XRay\" title=\"User talk:XRay\">author's talk page</a> <small>or the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.rabich.de/\">author's website</a></small></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<b><a href=\"//commons.wikimedia.org/wiki/User:XRay\" title=\"User:XRay\">Dietmar Rabich</a></b>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 187613159,
+        "ns": 6,
+        "title": "File:Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 12845089,
+            "width": 6016,
+            "height": 4016,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/960px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 534,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/1920px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/960px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 534,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/1920px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_person_pointing_on_the_world_map._Camera,_book_and_a_cup_of_coffee_on_the_map.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=187613159",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-04-01 09:19:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Travel|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-02-07 12:30:35",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

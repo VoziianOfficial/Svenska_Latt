@@ -13,9 +13,10 @@ ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = '''.nojekyll LICENSE index.html style.css studio.css atelier.css learning-polish.css
 app.js atelier.js learning-polish.js flashcard-media.js word-icons.js locale-content.js
 supabase-config.js words.json lessons.json books.json favicon.svg manifest.webmanifest
-privacy.html terms.html cookies.html sw.js server.py run.command'''.split()
+privacy.html terms.html cookies.html photo-credits.html sw.js server.py run.command'''.split()
 IMAGE_EXTENSIONS = {'.webp', '.png', '.jpg', '.jpeg', '.svg', '.gif'}
 ASSET_METADATA = {'assets/flashcards/photo-credits-imported.json',
+                  'assets/flashcards/photo-credits-added.json',
                   'assets/word-icons/LICENSE', 'assets/word-icons/README.md',
                   'assets/word-icons/manifest.json', 'assets/avatars/README.md'}
 

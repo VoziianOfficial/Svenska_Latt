@@ -53,5 +53,5 @@ for(const word of words){
  }
  if(receipts[word.id]?.status==='reviewed')assert.equal(decodeURIComponent(url).normalize('NFC'),decodeURIComponent(receipts[word.id].path).normalize('NFC'));
 }
-assert.equal(covered,991,'preserve the existing photo coverage');
+assert.equal(covered,1006,'all cards must have a local photo');
 console.log('PASS: exact images, neutral fallback, loading state and late responses');

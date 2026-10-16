@@ -1,0 +1,213 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 23539006,
+        "ns": 6,
+        "title": "File:Magnus Enckell - Kansakoulu.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 525818,
+            "width": 2000,
+            "height": 1429,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Magnus_Enckell_-_Kansakoulu.jpg/960px-Magnus_Enckell_-_Kansakoulu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 572,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Magnus_Enckell_-_Kansakoulu.jpg/1920px-Magnus_Enckell_-_Kansakoulu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Magnus_Enckell_-_Kansakoulu.jpg/960px-Magnus_Enckell_-_Kansakoulu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 572,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Magnus_Enckell_-_Kansakoulu.jpg/1920px-Magnus_Enckell_-_Kansakoulu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Magnus_Enckell_-_Kansakoulu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Magnus_Enckell_-_Kansakoulu.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=23539006",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-01-02 18:00:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">Swedish:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"sv\"><i>Folkskolan <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"https://www.wikidata.org/wiki/Q20785060#P1476\" title=\"Edit this at Wikidata\"><img alt=\"Edit this at Wikidata\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span></i></div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Elementary School</i></div></div><div style=\"display: none;\">label QS:Lsv,\"Folkskolan\"</div><div style=\"display: none;\">label QS:Lfi,\"Kansakoulu\"</div><div style=\"display: none;\">label QS:Len,\"Elementary School\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1899 paintings|Images from Bridgemanart Library|PD-old-100-expired|PD-Art (PD-old-auto-expired)|Artworks with Wikidata item|Artworks with known accession number|Group portrait paintings|CC-PD-Mark|Objects with inscriptions (language unspecified)|Classrooms in art|Artworks with Wikidata item missing genre|PD-Art missing SDC copyright status|PD-old missing SDC copyright status|Artworks digital representation of 2D work|Paintings by Magnus Enckell in the Finnish National Gallery",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Magnus_Enckell\" class=\"extiw\" title=\"w:en:Magnus Enckell\"><span title=\"Symbolist painter (1870-1925)\">Magnus Enckell</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1899<div style=\"display: none;\">date QS:P571,+1899-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/en:Bridgeman_Images\" class=\"extiw\" title=\"w:en:Bridgeman Images\"><span title=\"library\">Bridgeman Art Library</span></a>:  Object <a rel=\"nofollow\" class=\"external text\" href=\"https://www.bridgemanimages.co.uk/en/asset/476600\">476600</a><br>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 62374629,
+        "ns": 6,
+        "title": "File:Korridor på Plan 3.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1618088,
+            "width": 3024,
+            "height": 4032,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Korridor_p%C3%A5_Plan_3.jpg/960px-Korridor_p%C3%A5_Plan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Korridor_p%C3%A5_Plan_3.jpg/1920px-Korridor_p%C3%A5_Plan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Korridor_p%C3%A5_Plan_3.jpg/960px-Korridor_p%C3%A5_Plan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Korridor_p%C3%A5_Plan_3.jpg/1920px-Korridor_p%C3%A5_Plan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Korridor_p%C3%A5_Plan_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Korridor_p%C3%A5_Plan_3.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=62374629",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-09-12 11:09:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Korridor på Plan 3",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Swedish language|Zinkendammsskolan|Self-published work|Corridors in Sweden",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Classroom corridor",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-01-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:12345678Ka&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:12345678Ka (page does not exist)\">12345678Ka</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

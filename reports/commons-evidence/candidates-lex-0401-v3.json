@@ -1,0 +1,852 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 256127,
+        "ns": 6,
+        "title": "File:STS-114 Steve Robinson on Canadarm2.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1278019,
+            "width": 3032,
+            "height": 2000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/STS-114_Steve_Robinson_on_Canadarm2.jpg/960px-STS-114_Steve_Robinson_on_Canadarm2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 528,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/STS-114_Steve_Robinson_on_Canadarm2.jpg/1920px-STS-114_Steve_Robinson_on_Canadarm2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/STS-114_Steve_Robinson_on_Canadarm2.jpg/960px-STS-114_Steve_Robinson_on_Canadarm2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 528,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/STS-114_Steve_Robinson_on_Canadarm2.jpg/1920px-STS-114_Steve_Robinson_on_Canadarm2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/STS-114_Steve_Robinson_on_Canadarm2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:STS-114_Steve_Robinson_on_Canadarm2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=256127",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2006-07-16 20:40:26",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "STS-114 Steve Robinson on Canadarm2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD NASA|Stephen Robinson|Featured pictures from NASA|Featured pictures of Earth from space|Featured pictures on Wikipedia, Vietnamese|Featured pictures of people of the United States|Featured pictures of the International Space Station|Featured photographs in the public domain|Files from NASA with known IDs|Astronauts on the end of the Canadarm2|Astronaut photography during STS-114|STS-114 EVAs|ISS photographs taken on 2005-08-03|Robot arms",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Astronaut Stephen K. Robinson, STS-114 mission specialist, anchored to a foot restraint on the International Space Station’s Canadarm2, participates in the mission’s third session of extravehicular activity (EVA). The blackness of space and Earth’s horizon form the backdrop for the image (3 August 2005).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 3 August 2005",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://spaceflight.nasa.gov/gallery/images/shuttle/sts-114/html/s114e6647.html\" href=\"https://spaceflight.nasa.gov/gallery/images/shuttle/sts-114/html/s114e6647.html\">http://spaceflight.nasa.gov/gallery/images/shuttle/sts-114/html/s114e6647.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "NASA",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 4827994,
+        "ns": 6,
+        "title": "File:STS-125 and STS-400 on Launch Pads.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3582790,
+            "width": 3000,
+            "height": 2000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/STS-125_and_STS-400_on_Launch_Pads.jpg/960px-STS-125_and_STS-400_on_Launch_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/STS-125_and_STS-400_on_Launch_Pads.jpg/1920px-STS-125_and_STS-400_on_Launch_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/STS-125_and_STS-400_on_Launch_Pads.jpg/960px-STS-125_and_STS-400_on_Launch_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/STS-125_and_STS-400_on_Launch_Pads.jpg/1920px-STS-125_and_STS-400_on_Launch_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/STS-125_and_STS-400_on_Launch_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:STS-125_and_STS-400_on_Launch_Pads.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4827994",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-09-20 22:32:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "STS-125 and STS-400 on Launch Pads",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "STS-400|Taken with Canon EOS 40D|PD NASA|STS-125|Featured pictures from NASA|Rainbows in Florida|September 2008 in Florida|Files with coordinates missing SDC location of creation|United States photographs taken on 2008-09-20|Kennedy Space Center in 2008|Featured pictures of Kennedy Space Center|Featured pictures of Space Shuttles|Featured photographs in the public domain|Files from NASA with known IDs|Assessment tagged pages marked as POTY candidates|Images from NASA with known IDs and broken source|Fixed Service Structure at Kennedy Space Center Launch Complex 39A|Rotating Service Structure at Kennedy Space Center Launch Complex 39A|Space Shuttle Atlantis at the Kennedy Space Center Launch Complex 39|Photographs by Jack Pfaller|Fixed Service Structure at Kennedy Space Center Launch Complex 39B|Rotating Service Structure at Kennedy Space Center Launch Complex 39B|Aerial photographs of Kennedy Space Center Launch Complex 39A|Aerial photographs of Kennedy Space Center Launch Complex 39B|Space Shuttle Endeavour at the Kennedy Space Center Launch Complex 39",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd|poty",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "28.552183",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-80.590382",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "With a rainbow serving as a backdrop in the sky, space shuttle <a href=\"https://en.wikipedia.org/wiki/Space_Shuttle_Atlantis\" class=\"extiw\" title=\"en:Space Shuttle Atlantis\">Atlantis</a> (foreground) sits on Launch Pad A and <a href=\"https://en.wikipedia.org/wiki/Space_Shuttle_Endeavour\" class=\"extiw\" title=\"en:Space Shuttle Endeavour\">Endeavour</a> on Launch Pad B in this September 2008 photograph. This was the first time since July 2001 that two shuttles were on the launch pads at the same time at the <a href=\"https://en.wikipedia.org/wiki/Kennedy_Space_Center\" class=\"extiw\" title=\"en:Kennedy Space Center\">Kennedy Space Center</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 20 September 2008",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://mediaarchive.ksc.nasa.gov/detail.cfm?mediaid=37479\" href=\"https://mediaarchive.ksc.nasa.gov/detail.cfm?mediaid=37479\">http://mediaarchive.ksc.nasa.gov/detail.cfm?mediaid=37479</a>\n</p>\n<ul><li><a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://www.nasa.gov/images/content/271560main_08pd2730.jpg\" href=\"https://www.nasa.gov/images/content/271560main_08pd2730.jpg\">http://www.nasa.gov/images/content/271560main_08pd2730.jpg</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "NASA/Jack Pfaller",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 15873619,
+        "ns": 6,
+        "title": "File:STS-135 Atlantis' final tow back.jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2870260,
+            "width": 3000,
+            "height": 1996,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/STS-135_Atlantis%27_final_tow_back.jpg/960px-STS-135_Atlantis%27_final_tow_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 532,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/STS-135_Atlantis%27_final_tow_back.jpg/1920px-STS-135_Atlantis%27_final_tow_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/STS-135_Atlantis%27_final_tow_back.jpg/960px-STS-135_Atlantis%27_final_tow_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 532,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/STS-135_Atlantis%27_final_tow_back.jpg/1920px-STS-135_Atlantis%27_final_tow_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/STS-135_Atlantis%27_final_tow_back.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:STS-135_Atlantis%27_final_tow_back.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15873619",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-07-23 01:16:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "STS-135 Atlantis' final tow back",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD NASA|Clouds and blue sky in Florida|Front views of vehicles|United States photographs taken on 2011-07-21|Featured pictures of Space Shuttles|Featured photographs in the public domain|Files from NASA with known IDs|Photographs by Kim Shiflett|Landing of STS-135",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "CAPE CANAVERAL, Fla. – Workers accompany space shuttle Atlantis as it makes its slow trek from the Shuttle Landing Facility to Orbiter Processing Facility-2 for the last time. Atlantis' final return to Earth on Runway 15 at NASA's Kennedy Space Center in Florida occurred at 5:57 a.m. EDT July 21, 2011. Securing the space shuttle fleet's place in history, Atlantis marks the 26th nighttime landing of NASA's Space Shuttle Program and the 78th landing at Kennedy. Atlantis and its crew delivered to the International Space Station the Raffaello multi-purpose logistics module packed with more than 9,400 pounds of spare parts, equipment and supplies that will sustain station operations for the next year. STS-135 is the 33rd and final flight for Atlantis and the final mission of the Space Shuttle Program. For more information, visit <a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://www.nasa.gov/mission_pages/shuttle/shuttlemissions/sts135/index.html\" href=\"https://www.nasa.gov/mission_pages/shuttle/shuttlemissions/sts135/index.html\">http://www.nasa.gov/mission_pages/shuttle/shuttlemissions/sts135/index.html</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 21 July 2011",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<ul><li><a rel=\"nofollow\" class=\"external free\" href=\"https://images.nasa.gov/details/KSC-2011-5779\">https://images.nasa.gov/details/KSC-2011-5779</a></li>\n<li><bdi lang=\"en\" dir=\"ltr\" title=\"archived on 5 March 2016 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20160305195902/http://mediaarchive.ksc.nasa.gov/detail.cfm?mediaid=54981\">http://mediaarchive.ksc.nasa.gov/detail.cfm?mediaid=54981 on the Wayback Machine</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q117448892\" class=\"extiw\" title=\"d:Q117448892\"><span title=\"NASA photographer\">Kim Shiflett</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 48496159,
+        "ns": 6,
+        "title": "File:Swedish Sign Language Alphabet Symbols.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 17060,
+            "width": 236,
+            "height": 150,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Swedish_Sign_Language_Alphabet_Symbols.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 508,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Swedish_Sign_Language_Alphabet_Symbols.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 508
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Swedish_Sign_Language_Alphabet_Symbols.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swedish_Sign_Language_Alphabet_Symbols.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48496159",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-01 23:28:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swedish Sign Language Alphabet Symbols",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Swedish Sign Language|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Swedish Sign Language Alphabet Symbols",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-05-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jazz_Davis&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jazz Davis (page does not exist)\">Jazz Davis</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 48496224,
+        "ns": 6,
+        "title": "File:Swedish Sign Language Alphabet.png",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 11542,
+            "width": 278,
+            "height": 181,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Swedish_Sign_Language_Alphabet.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 521,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Swedish_Sign_Language_Alphabet.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 521
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Swedish_Sign_Language_Alphabet.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swedish_Sign_Language_Alphabet.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48496224",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-01 23:37:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swedish Sign Language Alphabet",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Swedish Sign Language|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Swedish Sign Language Symbols",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-05-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Jazz_Davis&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Jazz Davis (page does not exist)\">Jazz Davis</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      },
+      {
+        "pageid": 55947647,
+        "ns": 6,
+        "title": "File:Isabella Lövin signing climate law referral.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 4993147,
+            "width": 5942,
+            "height": 3761,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Isabella_L%C3%B6vin_signing_climate_law_referral.jpg/960px-Isabella_L%C3%B6vin_signing_climate_law_referral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 506,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Isabella_L%C3%B6vin_signing_climate_law_referral.jpg/1920px-Isabella_L%C3%B6vin_signing_climate_law_referral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Isabella_L%C3%B6vin_signing_climate_law_referral.jpg/960px-Isabella_L%C3%B6vin_signing_climate_law_referral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 506,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Isabella_L%C3%B6vin_signing_climate_law_referral.jpg/1920px-Isabella_L%C3%B6vin_signing_climate_law_referral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Isabella_L%C3%B6vin_signing_climate_law_referral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Isabella_L%C3%B6vin_signing_climate_law_referral.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=55947647",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-02-20 12:50:25",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Isabella Lövin signing climate law referral",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Secretaries of state of Sweden|Signing ceremonies|Ulrika Modéer|Images with extracted images|Featured pictures of Stockholm|Group photographs of women|People of Sweden in 2017|Flickr images verified by UploadWizard|Featured pictures of people of Sweden|Sweden photographs taken on 2017-02-01|Featured pictures of women|Pregnant women in Sweden|Isabella Lövin in 2017|Eva Svedling|Featured photographs in the public domain|Featured pictures from Flickr|Objekt av masurbjörk",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The referral of the Swedish climate law is signed by Deputy Prime Minister and Minister for International Development Cooperation and Climate <a href=\"https://en.wikipedia.org/wiki/en:Isabella_L%C3%B6vin\" class=\"extiw\" title=\"w:en:Isabella Lövin\">Isabella Lövin</a>. All future governments will be obliged to reduce greenhouse gas emissions. For a better planet and a better future.<br>\n<p>From left to right: Isabella Lövin, Deputy Prime Minister; Ulrika Modéer, State Secretary; Eva Svedling, State Secretary; Annika Flensburg, Press Secretary; Mikaela Kotschack, Press Secretary; Katarina Hellström, Political Advisor;\nJulia Hector, Coordinator; Alexandra von Linde, Coordinator<br>\n</p>\nPhoto: <a href=\"//commons.wikimedia.org/wiki/User:Schyffel\" title=\"User:Schyffel\">Johan Schiff</a>/Miljöpartiet de gröna",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-02-01 16:19:49",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/miljopartiet/31867532003/\">https://www.flickr.com/photos/miljopartiet/31867532003/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Schyffel\" title=\"User:Schyffel\">Johan Schiff</a>/Miljöpartiet de gröna",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 147852592,
+        "ns": 6,
+        "title": "File:Swedish Sign Language family.png",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 68864,
+            "width": 747,
+            "height": 556,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Swedish_Sign_Language_family.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 595,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Swedish_Sign_Language_family.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 595
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Swedish_Sign_Language_family.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swedish_Sign_Language_family.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147852592",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-04-29 07:23:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swedish Sign Language family",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Swedish Sign Language|Self-published work|Linguistic maps of sign languages",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sources: <a rel=\"mw:ExtLink nofollow\" href=\"https://viittomakielinenkirjasto.fi/sv/video/suomenruotsalainen-viittomakieli-osa-2/\" class=\"external free\">https://viittomakielinenkirjasto.fi/sv/video/suomenruotsalainen-viittomakieli-osa-2/</a>\n<p><a rel=\"mw:ExtLink nofollow\" href=\"https://www.kotus.fi/kielitieto/kielet/suomen_viittomakielet\" class=\"external free\">https://www.kotus.fi/kielitieto/kielet/suomen_viittomakielet</a>\nMoges, Rezenet Tsegay (2015). It's a Small World. International Deaf Spaces and Encounters. Washington, DC: Gallaudet University Press. pp. 114–125.\n<a rel=\"mw:ExtLink nofollow\" href=\"https://www.startasl.com/swedish-sign-language/\" class=\"external free\">https://www.startasl.com/swedish-sign-language/</a>\n<a rel=\"mw:ExtLink nofollow\" href=\"https://deafhistory.eu/index.php/component/zoo/item/1997-portugal-legal-recognition-of-portuguese-sign-language\" class=\"external free\">https://deafhistory.eu/index.php/component/zoo/item/1997-portugal-legal-recognition-of-portuguese-sign-language</a></p>\n<a rel=\"mw:ExtLink nofollow\" href=\"https://www.startasl.com/swedish-sign-language/\" class=\"external free\">https://www.startasl.com/swedish-sign-language/</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-04-29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:ValtteriLahti12\" title=\"User:ValtteriLahti12\">ValtteriLahti12</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      },
+      {
+        "pageid": 148316795,
+        "ns": 6,
+        "title": "File:Swedish Sign Language Family updated.png",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 69666,
+            "width": 747,
+            "height": 556,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swedish_Sign_Language_Family_updated.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 595,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swedish_Sign_Language_Family_updated.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 595
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Swedish_Sign_Language_Family_updated.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swedish_Sign_Language_Family_updated.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=148316795",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-05-13 20:46:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swedish Sign Language Family updated",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Swedish Sign Language|Self-published work|Linguistic maps of sign languages",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sources: <a rel=\"nofollow\" class=\"external free\" href=\"https://viittomakielinenkirjasto.fi/sv/video/suomenruotsalainen-viittomakieli-osa-2/\">https://viittomakielinenkirjasto.fi/sv/video/suomenruotsalainen-viittomakieli-osa-2/</a>\n<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.kotus.fi/kielitieto/kielet/suomen_viittomakielet\">https://www.kotus.fi/kielitieto/kielet/suomen_viittomakielet</a> Moges, Rezenet Tsegay (2015). It's a Small World. International Deaf Spaces and Encounters. Washington, DC: Gallaudet University Press. pp. 114–125. <a rel=\"nofollow\" class=\"external free\" href=\"https://www.startasl.com/swedish-sign-language/\">https://www.startasl.com/swedish-sign-language/</a> <a rel=\"nofollow\" class=\"external free\" href=\"https://deafhistory.eu/index.php/component/zoo/item/1997-portugal-legal-recognition-of-portuguese-sign-language\">https://deafhistory.eu/index.php/component/zoo/item/1997-portugal-legal-recognition-of-portuguese-sign-language</a>\n</p><p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.startasl.com/swedish-sign-language/\">https://www.startasl.com/swedish-sign-language/</a>\n</p>\n<a rel=\"nofollow\" class=\"external free\" href=\"https://africansignlanguagesresourcecenter.com/cape-verde/\">https://africansignlanguagesresourcecenter.com/cape-verde/</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-05-13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:ValtteriLahti12\" title=\"User:ValtteriLahti12\">ValtteriLahti12</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "w-där": {
+    "evidence": "candidates-w-där-v2.json",
+    "candidate_index": 7
+  },
+  "w-regnar": {
+    "evidence": "candidates-w-regnar.json",
+    "candidate_index": 4
+  },
+  "w-snöar": {
+    "evidence": "candidates-w-snöar.json",
+    "candidate_index": 5
+  },
+  "w-medicin": {
+    "evidence": "candidates-w-medicin.json",
+    "candidate_index": 4
+  },
+  "w-fågel": {
+    "evidence": "candidates-w-fågel.json",
+    "candidate_index": 6
+  },
+  "lex-0015": {
+    "evidence": "candidates-lex-0015.json",
+    "candidate_index": 2
+  },
+  "lex-0032": {
+    "evidence": "candidates-lex-0032.json",
+    "candidate_index": 2
+  },
+  "lex-0183": {
+    "evidence": "candidates-lex-0183-v2.json",
+    "candidate_index": 0
+  },
+  "lex-0310": {
+    "evidence": "candidates-lex-0310.json",
+    "candidate_index": 0
+  },
+  "lex-0318": {
+    "evidence": "candidates-lex-0318.json",
+    "candidate_index": 5
+  },
+  "lex-0384": {
+    "evidence": "candidates-lex-0384-v2.json",
+    "candidate_index": 0
+  },
+  "lex-0391": {
+    "evidence": "candidates-lex-0391.json",
+    "candidate_index": 5
+  },
+  "lex-0395": {
+    "evidence": "candidates-lex-0395.json",
+    "candidate_index": 2
+  },
+  "lex-0027": {
+    "evidence": "candidates-lex-0027-v2.json",
+    "candidate_index": 7
+  },
+  "lex-0401": {
+    "evidence": "candidates-lex-0401-v4.json",
+    "candidate_index": 2
+  }
+}

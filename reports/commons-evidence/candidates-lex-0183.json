@@ -1,0 +1,925 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 31858600,
+        "ns": 6,
+        "title": "File:The blue moon night. (4322085689).jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 5363102,
+            "width": 4256,
+            "height": 2832,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/The_blue_moon_night._%284322085689%29.jpg/960px-The_blue_moon_night._%284322085689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 532,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/The_blue_moon_night._%284322085689%29.jpg/1920px-The_blue_moon_night._%284322085689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/The_blue_moon_night._%284322085689%29.jpg/960px-The_blue_moon_night._%284322085689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 532,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/The_blue_moon_night._%284322085689%29.jpg/1920px-The_blue_moon_night._%284322085689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/The_blue_moon_night._%284322085689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_blue_moon_night._(4322085689).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31858600",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-03-29 05:07:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The blue moon night. (4322085689)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D700|Night|Flickr images reviewed by FlickreviewR|Photographs by Takeshi Kuboki",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "From the hotel in Hamamatsucho, Tokyo.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-01-30 05:55",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/kuboki/4322085689/\">The blue moon night.</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40802894@N02\">Takeshi Kuboki</a> from Amagasaki, Japan",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 33147443,
+        "ns": 6,
+        "title": "File:Blue Moon Hypothetical representation.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 151541,
+            "width": 697,
+            "height": 568,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Blue_Moon_Hypothetical_representation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 652,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Blue_Moon_Hypothetical_representation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 652
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Blue_Moon_Hypothetical_representation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Blue_Moon_Hypothetical_representation.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33147443",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-05-27 04:47:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Blue Moon Hypothetical representation",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Moon in fiction|Blue moon|Self-published work|Blue moon (color)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A hypothetical representation of a literal Blue Moon (yes, those are real). A Literal Blue Moon is actually the rarest type of Lunar event; they only occur in a region that has experienced a major wildfire or a volcanic eruption. For example, Blue Moons were seen after Krakatoa's 1983 eruption and Mount St. Helens' 1980 eruption. Also, a \"Lavender\" Moon was seen during the September 1950 Alberta Muskeg Fires, wherever the sky was clear. Whenever a major smoke event is large enough to make the Sun appear to be blue or violet, there is bound to be a literal Blue Moon that night (assuming the sky is clear enough for it to be seen). The image on <a rel=\"nofollow\" class=\"external text\" href=\"https://phys.org/news/2015-07-year-sun-blue.html\">an article at Phys.org</a> was used as a reference for the shading in this image.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-06-02 00:27:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:BlueHypercane761\" title=\"User:BlueHypercane761\">BlueHypercane761</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 66185487,
+        "ns": 6,
+        "title": "File:Super moon over City of London from Tate Modern 2018-01-31 4.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 5726400,
+            "width": 4558,
+            "height": 2564,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/960px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 450,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/1920px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/960px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 450,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg/1920px-Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Super_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66185487",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-02-07 18:04:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Super moon over City of London from Tate Modern 2018-01-31 4",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Views from Tate Modern|Featured pictures of London|Views of the City of London|Images with annotations|Featured pictures by User:Colin|Picture of week on the Czech Wikipedia|Information field template with formatting|Featured pictures of cityscapes|Uploaded with LrMediaWiki|Files with coordinates missing SDC location of creation (51° N, 1° W)|Buildings during blue hour in England|Blue hour in London|Photographs by User:Colin|Blue sky with the Moon in London|Supermoon of January 2018",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "51.507186",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.100372",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Supermoon\" class=\"extiw\" title=\"en:Supermoon\">Supermoon</a> over the <a href=\"https://en.wikipedia.org/wiki/City_of_London\" class=\"extiw\" title=\"en:City of London\">City of London</a> viewed from <a href=\"https://en.wikipedia.org/wiki/Tate_Modern\" class=\"extiw\" title=\"en:Tate Modern\">Tate Modern</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-01-31 18:19:48",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Colin\" title=\"User:Colin\">Colin</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "© <a href=\"//commons.wikimedia.org/wiki/User:Colin\" title=\"User:Colin\">User:Colin</a> / <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 67868409,
+        "ns": 6,
+        "title": "File:Maximilianeum Munich at Night, March 2018.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 12670895,
+            "width": 5361,
+            "height": 2693,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maximilianeum_Munich_at_Night%2C_March_2018.jpg/960px-Maximilianeum_Munich_at_Night%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 402,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maximilianeum_Munich_at_Night%2C_March_2018.jpg/1920px-Maximilianeum_Munich_at_Night%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maximilianeum_Munich_at_Night%2C_March_2018.jpg/960px-Maximilianeum_Munich_at_Night%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 402,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maximilianeum_Munich_at_Night%2C_March_2018.jpg/1920px-Maximilianeum_Munich_at_Night%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Maximilianeum_Munich_at_Night%2C_March_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Maximilianeum_Munich_at_Night,_March_2018.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=67868409",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-04-03 14:33:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Maximilianeum Munich at Night, March 2018",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sky with the Moon from Germany|Germany photographs taken on 2018-03-30|Taken with Canon EOS 5D Mark III|Maximiliansbrücke in München|Self-published work|Featured Pictures by Martin Falbisoner|Featured pictures of Munich|Cultural heritage monuments in Bavaria with known IDs|Exposure time 15 sec|Train light trails in Germany|West facade of the Maximilianeum|Buildings during blue hour in Bavaria|Blue hour in Munich|Trams in Munich|Taken with Canon EF 16–35mm F4L IS USM",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|valued|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "48.136867",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.592172",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The <a href=\"https://en.wikipedia.org/wiki/Maximilianeum\" class=\"extiw\" title=\"en:Maximilianeum\">Maximilianeum</a>, seat of the <a href=\"https://en.wikipedia.org/wiki/Landtag_of_Bavaria\" class=\"extiw\" title=\"en:Landtag of Bavaria\">Bavarian State Legislature</a>, at night with light trails created by a passing <a href=\"https://en.wikipedia.org/wiki/Trams_in_Munich\" class=\"extiw\" title=\"en:Trams in Munich\">streetcar</a> (Line 19).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-03-30 20:24:47",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi>Martin Falbisoner</bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 82991013,
+        "ns": 6,
+        "title": "File:Waxing half moon over Brofjorden 1.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 6806850,
+            "width": 4949,
+            "height": 3140,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Waxing_half_moon_over_Brofjorden_1.jpg/960px-Waxing_half_moon_over_Brofjorden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 508,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Waxing_half_moon_over_Brofjorden_1.jpg/1920px-Waxing_half_moon_over_Brofjorden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Waxing_half_moon_over_Brofjorden_1.jpg/960px-Waxing_half_moon_over_Brofjorden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 508,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Waxing_half_moon_over_Brofjorden_1.jpg/1920px-Waxing_half_moon_over_Brofjorden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Waxing_half_moon_over_Brofjorden_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Waxing_half_moon_over_Brofjorden_1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=82991013",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-10-11 19:19:16",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Waxing half moon over Brofjorden 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Panasonic Lumix DMC-FZ1000|CC-Zero|Waxing half moon|Self-published work|Night sky in Sweden|Featured night photography|Dusk in Sweden|Featured pictures on Wikipedia, Vietnamese|Clouds at sunset|Featured pictures of reflections|Blue hour in Sweden|Exposure time 10 sec|Moonlight in Sweden|Water reflections of clouds in Sweden|Images by W.carter|Featured pictures of bodies of water|Long exposure photographs of Sweden|Files with coordinates missing SDC location of creation|Featured pictures of Lysekil Municipality|September 2019 in Västra Götaland County|Clouds and blue sky in Sweden|Sweden photographs taken on 2019-09-05|Blue sky with the Moon|Conjunctions of the Moon - Jupiter|Featured pictures of the Moon|Long exposures (water reflections)|Featured photographs in the public domain|Sandvik, Brastad|Featured pictures taken with compact digital camera|Images by W.carter, my own favorites|Night in Brastad|Clouds in Lysekil Municipality|Reused images by W.carter|Picture of the day by W.carter on various projects|Featured pictures by W.carter|Mångata",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "58.388944",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.453265",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Waxing half moon over Brofjorden as seen from Sandvik, Lysekil Municipality, Sweden. In addition to the <i><a class=\"external text\" href=\"https://en.wiktionary.org/wiki/m%C3%A5ngata\">mångata</a></i> (\"moon street\") there is a reflection of the moon right at the mouth of the fjord. A bright planet to the left of the moon is also creating a reflection in the water. According to <a rel=\"nofollow\" class=\"external text\" href=\"http://www.astroinfo.se/pa-himlen-i-september-2019-en-overblick/\">this page</a>, it is most likely Jupiter. I keep my camera set to astronomical time, I don't use <a href=\"https://en.wikipedia.org/wiki/daylight_saving_time\" class=\"extiw\" title=\"w:daylight saving time\">daylight saving time</a> for it.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-09-05 20:03:56",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 136679044,
+        "ns": 6,
+        "title": "File:Blue Moon Singapore.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1076727,
+            "width": 4288,
+            "height": 2848,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_Moon_Singapore.jpg/960px-Blue_Moon_Singapore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 531,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_Moon_Singapore.jpg/1920px-Blue_Moon_Singapore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_Moon_Singapore.jpg/960px-Blue_Moon_Singapore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 531,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_Moon_Singapore.jpg/1920px-Blue_Moon_Singapore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Blue_Moon_Singapore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Blue_Moon_Singapore.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=136679044",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-08-31 05:22:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Blue Moon Singapore",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Blue moon|Self-published work|Night in Singapore",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This is a picture of the Blue Moon that happened in August 2023. I shot this from an apartment in Singapore.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-08-30 20:39:35",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Xradicon\" title=\"User:Xradicon\">Xradicon</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 140048360,
+        "ns": 6,
+        "title": "File:Once in a blue moon - geograph.org.uk - 5670636.jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2375735,
+            "width": 3072,
+            "height": 4608,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg/960px-Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1200,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg/1920px-Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg/960px-Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1200,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg/1920px-Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=140048360",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-11-03 17:01:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Once in a blue moon - geograph.org.uk - 5670636",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Airedale, Castleford|Blue moon|Moon photographs from the United Kingdom|Night in the City of Wakefield",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.724236",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.302818",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Once in a blue moon <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-01-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/5670636\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/116135\">derek dye</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Once_in_a_blue_moon_-_geograph.org.uk_-_5670636.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>Once in a blue moon</i> by derek dye",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 193138766,
+        "ns": 6,
+        "title": "File:Blue moon night.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2054461,
+            "width": 4080,
+            "height": 3060,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_moon_night.jpg/960px-Blue_moon_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_moon_night.jpg/1920px-Blue_moon_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_moon_night.jpg/960px-Blue_moon_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Blue_moon_night.jpg/1920px-Blue_moon_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Blue_moon_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Blue_moon_night.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=193138766",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-05-31 19:26:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Blue moon night",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Photographs of the Moon",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Blue moon in the sky",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-06-01 01:03:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Md.Nurul_Islam_Firoz&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Md.Nurul Islam Firoz (page does not exist)\">Md.Nurul Islam Firoz</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,3720 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 37986,
+        "ns": 6,
+        "title": "File:DVD-Video bottom-side.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/DVD-Video_bottom-side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:DVD-Video_bottom-side.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=37986",
+            "sha1": "fe3b80669af3b06c834202065535aff2840f72f9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2005-01-04 22:40:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "DVD-Video bottom-side",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Files with no machine-readable source|Media missing infobox template|Self-published work|PD-self|DVD icons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 84642,
+        "ns": 6,
+        "title": "File:Canon S520 ink jet printer.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Canon_S520_ink_jet_printer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Canon_S520_ink_jet_printer.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=84642",
+            "sha1": "0462e91cbdf3148006b3bf376fcb1f4e95c0f2eb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2005-03-21 20:11:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Canon S520 ink jet printer",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Canon inkjet printers",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This image shows a canon S520 ink jet printer.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "<p>20 March 2005\n</p>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><span class=\"int-own-work\" lang=\"en\">Own work</span>\n</p>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>André Karwath aka <a href=\"//commons.wikimedia.org/wiki/User:Aka\" title=\"User:Aka\">Aka</a>\n</p>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"share alike\"><img alt=\"share alike\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by-sa/2.5/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/2.5/deed.en\">Attribution-Share Alike 2.5 Generic</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>\n<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href=\"https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses\" class=\"extiw\" title=\"ccorg:share-your-work/licensing-considerations/compatible-licenses\">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by-sa/2.5</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY-SA 2.5 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution-Share Alike 2.5 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.5",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.5",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.5",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.5",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1721612,
+        "ns": 6,
+        "title": "File:Headphones 1.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Headphones_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Headphones_1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1721612",
+            "sha1": "30429078c022ba713a441a15f5f382e6b8b647b6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-02-26 22:20:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Headphones 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon EOS 300D|CC-BY-SA-2.5,2.0,1.0|Files with no machine-readable source|License migration redundant|Self-published work|Assumed own work|Photographs taken on 2006-12-02|Circumaural headphones",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "White <a href=\"https://en.wikipedia.org/wiki/headphones\" class=\"extiw\" title=\"w:headphones\">headphones</a> from the 1970's, model \"C525\". Brand: ?. Picture created by <a href=\"//commons.wikimedia.org/wiki/User:PJ\" title=\"User:PJ\">User:PJ</a> and <a href=\"https://en.wikipedia.org/wiki/sv:Anv%C3%A4ndare:Piko\" class=\"extiw\" title=\"w:sv:Användare:Piko\">User:Piko</a> using Canon EOS 300D camera with Tamron 28-75 mm f/2.8 lens.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2 December 2006 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:PJ\" title=\"User:PJ\">PJ</a> assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1913962,
+        "ns": 6,
+        "title": "File:2007-04-07 07 Achilles-Sport 175, Bj. 1955, front (Foto Spu).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/2007-04-07_07_Achilles-Sport_175%2C_Bj._1955%2C_front_%28Foto_Spu%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:2007-04-07_07_Achilles-Sport_175,_Bj._1955,_front_(Foto_Spu).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1913962",
+            "sha1": "d24ebec6a85820aa2ad99484d9004387c16d1da7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-10-22 16:25:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "2007-04-07 07 Achilles-Sport 175, Bj. 1955, front (Foto Spu)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Achilles-Sport|Location withheld",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Achilles-Sport 175 cm³, Baujahr 1955; Originallackierung",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-04-07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Spurzem\" title=\"User:Spurzem\">Lothar Spurzem</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0 de",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0 de",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0-de",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 4420601,
+        "ns": 6,
+        "title": "File:BMW 700 sport BW 1.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/BMW_700_sport_BW_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:BMW_700_sport_BW_1.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4420601",
+            "sha1": "542ba3fe58266927f66ad64f18e1d18aeaaca3a4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-07-23 06:49:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "BMW 700 sport BW 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Pentax K10D|Self-published work|PD-self|BMW 119|White BMW coupes|Files with coordinates missing SDC location of creation (49° N, 6° E)|24. Internationales Konzer Old- und Youngtimertreffen|Photographs by User:Berthold Werner/Autos/BMW",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.706900",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "6.580200",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "BMW 700 sport, zum Aufnahmezeitpunkt war das Fahrzeug in Luxemburg zugelassen",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-07-20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Berthold_Werner\" title=\"User:Berthold Werner\">Berthold Werner</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 7171216,
+        "ns": 6,
+        "title": "File:Ea f20 microphone.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ea_f20_microphone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ea_f20_microphone.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=7171216",
+            "sha1": "eabbe8d9112ba999a456949ed8bbbf54fc28f5a9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-06-30 20:13:19",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ea f20 microphone",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon EOS-1Ds Mark II|Microphone pop filters|Condenser microphones|License migration redundant|Self-published work|Microphones in 2009|Equation Audio",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Studio microphone Equation Audio F.20",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-01-20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Equationaudio&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Equationaudio (page does not exist)\">Equationaudio</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 9278315,
+        "ns": 6,
+        "title": "File:Wrexham Swimming Bath - geograph.org.uk - 155712.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Wrexham_Swimming_Bath_-_geograph.org.uk_-_155712.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Wrexham_Swimming_Bath_-_geograph.org.uk_-_155712.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9278315",
+            "sha1": "2a93a90289fb06559b6ac829d9eab1ca0330a954",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-08-03 11:40:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Wrexham Swimming Bath - geograph.org.uk - 155712",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rhosddu|Images from Geograph Britain and Ireland|Images with extracted images|Swimming pools in Wrexham County Borough|United Kingdom photographs taken on 2006-04-19|Images from Geograph Britain and Ireland missing SDC coordinates of the point of view|Images by Mark Evison",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.048000",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-2.990000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Wrexham Swimming Bath",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-04-19",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/155712\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/2305\">Mark Evison</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Mark Evison",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 9481644,
+        "ns": 6,
+        "title": "File:Ansel Adams and camera.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ansel_Adams_and_camera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ansel_Adams_and_camera.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9481644",
+            "sha1": "d1fb25805e161ff438b11c8288bac77994967bec",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-03-06 15:49:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ansel Adams and camera",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1950 in California|PD US Government|Ansel Adams|Sierra Club|Personality rights warning|J. Malcolm Greany|Black and white photographs of California in the 1950s|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, Persian|CC-PD-Mark|People of the United States in 1950|Black and white portrait photographs of men of the United States|Historical images of Yosemite National Park|20th-century black and white portrait photographs of men at three-quarter length|Photographs taken on film|Posted to Wikimedia Foundation Pinterest|Featured pictures of Yosemite National Park|Featured black and white photographs|1950 black and white portrait photographs of men|Featured photographs in the public domain|Men photographing|Black and white portrait photographs of men with beards wearing hats|Template Unknown (source)|Black and white photographs of men wearing hats in the United States|Featured analogue photographs|People with cameras on tripods|Black and white portrait photographs of men with beards|1950s beards|Weston light meters",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Photographic portrait of nature photographer <b><a href=\"//commons.wikimedia.org/wiki/Category:Ansel_Adams\" title=\"Category:Ansel Adams\">Ansel Adams</a></b>  — which first appeared in the 1950 Yosemite Field School yearbook. The camera is probably a Zeiss Ikon Universal Juwel.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1950<div style=\"display: none;\">date QS:P,+1950-00-00T00:00:00Z/9,P1480,Q5727902</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Unknown source<span style=\"display: none;\">Unknown source</span>\n</p>\n<ul><li>See <a rel=\"nofollow\" class=\"external text\" href=\"https://www.nps.gov/yose/learn/historyculture/ansel-adams.htm\">Ansel Adams</a>. <i>Yosemite National Park</i>. U.S. National Park Service. Retrieved on <span class=\"mw-formatted-date\" title=\"2019-02-28\">February 28, 2019</span>.</li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:J._Malcolm_Greany\" class=\"extiw\" title=\"w:en:J. Malcolm Greany\"><span title=\"American photographer (1915-1999)\">J. Malcolm Greany</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 17585475,
+        "ns": 6,
+        "title": "File:Ice Hockey sharks ducks.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ice_Hockey_sharks_ducks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ice_Hockey_sharks_ducks.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=17585475",
+            "sha1": "aa7ef142933560b7153ad212ddb30a015fd0c4b7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-12-05 18:19:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ice Hockey sharks ducks",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS-1D|2007-08 San Jose Sharks season|2007-08 Anaheim Ducks season|Flickr images reviewed by FlickreviewR|Files with coordinates missing SDC location of creation|Professional ice hockey images to be checked by SecretName101|Files from pointnshoot Flickr stream",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "37.332733",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-121.901142",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The San Jose Sharks vs. the Anaheim Ducks",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-09-21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/pointnshoot/1426010816/\">https://www.flickr.com/photos/pointnshoot/1426010816/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Elliot",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 27893543,
+        "ns": 6,
+        "title": "File:Link at Igromir 2012.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Link_at_Igromir_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Link_at_Igromir_2012.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=27893543",
+            "sha1": "db3fcd1f0d0e3a0d7bd55aace1b219d1b0258584",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-08-26 18:07:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Link at Igromir 2012",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D5100|Flickr images reviewed by FlickreviewR|Photographs by Sergiy Galyonkin|Moscow Oblast photographs taken on 2012-10-04|Cosplay of Link|Cosplayers with swords|IgroMir 2012|Files from Sergiy Galyonkin Flickr stream",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Taken on October 4, 2012\nNikon D5100",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 4 October 2012, 15:03:46",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/sergesegal/8059102276/\">https://www.flickr.com/photos/sergesegal/8059102276/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Sergey Galyonkin",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29153949,
+        "ns": 6,
+        "title": "File:Cabinet Network Rear Close.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cabinet_Network_Rear_Close.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cabinet_Network_Rear_Close.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29153949",
+            "sha1": "d3c36d2b5e39166a040ff3a996b30bff4b168073",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-10-23 17:56:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cabinet Network Rear Close",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon PowerShot SX110 IS|Self-published work|Data center networking",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Server Cabinet Networking Cross Connect Panels",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-10-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Robert.Harker\" title=\"User:Robert.Harker\">Robert.Harker</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29257219,
+        "ns": 6,
+        "title": "File:Embarrassed Face.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Embarrassed_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Embarrassed_Face.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29257219",
+            "sha1": "309b453208abeedda60e2c53938c2056de53f51e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-10-28 19:26:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Embarrassed Face",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|JPG images that should use vector graphics|Other images that should use vector graphics|Line drawings of facial expressions",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Line drawing of a face showing the emotion matching the file name.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-10-23 03:19:06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Wilmot\" title=\"User:Wilmot\">Barry Langdon-Lassagne</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29257384,
+        "ns": 6,
+        "title": "File:Nervous Face.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Nervous_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nervous_Face.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29257384",
+            "sha1": "602321093f2bd21e6f4dd3286c3526a2f9853cba",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-10-28 19:35:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Nervous Face",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Line drawings of facial expressions",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Line drawing of a face showing the emotion matching the file name.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-10-23 03:19:10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Wilmot\" title=\"User:Wilmot\">Barry Langdon-Lassagne</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29257451,
+        "ns": 6,
+        "title": "File:Worried Face.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Worried_Face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Worried_Face.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29257451",
+            "sha1": "f2eff1191bab5a8fc90712822ae8b10a5d293a11",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-10-28 19:35:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Worried Face",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Line drawings of facial expressions",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Line drawing of a face showing the emotion matching the file name.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-10-23 03:19:12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Wilmot\" title=\"User:Wilmot\">Barry Langdon-Lassagne</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 31527545,
+        "ns": 6,
+        "title": "File:IPhone Text Message Amber Alert 1882467856 o.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/IPhone_Text_Message_Amber_Alert_1882467856_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:IPhone_Text_Message_Amber_Alert_1882467856_o.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31527545",
+            "sha1": "fa98c2b59f0bb184638797b73701a4f73e7e3f25",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-03-10 00:10:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "IPhone Text Message Amber Alert 1882467856 o",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "AMBER Alert|Self-published work|Texting (screen close-ups or captures)|SMS messages",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A text message (SMS) Amber Alert is displayed on a first-generation Apple iPhone in Saint Paul, Minnesota.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-11-05 22:06:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Tony_Webster\" title=\"User:Tony Webster\">Tony Webster</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 33364527,
+        "ns": 6,
+        "title": "File:Sport Festival 2014 HN-Ams DSC02068.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sport_Festival_2014_HN-Ams_DSC02068.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sport_Festival_2014_HN-Ams_DSC02068.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33364527",
+            "sha1": "82879228237a02a90cf6035db4c70df24675ac35",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-06-13 03:25:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sport Festival 2014 HN-Ams DSC02068",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSC-P200|Self-published work|Sport Festival 2014 (Hanoi – Amsterdam High School)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sport Festival 2014 HN-Ams",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-03-26 10:25:23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "M.I.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 36094834,
+        "ns": 6,
+        "title": "File:Experiments in physiology. Facial expressions; surprise Wellcome L0040073.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Experiments_in_physiology._Facial_expressions%3B_surprise_Wellcome_L0040073.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Experiments_in_physiology._Facial_expressions;_surprise_Wellcome_L0040073.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36094834",
+            "sha1": "20dc14550fed40c318c1acb878138a49065be951",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-13 01:59:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nExperiments in physiology. Facial expressions; surprise</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|Experiments in physiology. Facial expressions|Files from Wellcome Images",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>The facial expression of surprise on the human face being induced by electrical currents.\n</p>\n<p>General Collections</p>\nKeywords: Guillaume Benjamin Amand Duchenne de Boulogne; Physiognomy; Elasticity; Face; Stimulation; Muscles; Electrophysiology; Neurology; Hôpital Salpêtrière (Paris, France); Muscle; Expression; Physiology</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/ab/71/4454f442762590bd18c7528879e6.jpg\">https://wellcomeimages.org/indexplus/obf_images/ab/71/4454f442762590bd18c7528879e6.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/L0040073.html\">https://wellcomeimages.org/indexplus/image/L0040073.html</a></li>\n<li>Wellcome Collection gallery (2018-03-29): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/yvs5wbwy\">https://wellcomecollection.org/works/yvs5wbwy</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 36367560,
+        "ns": 6,
+        "title": "File:Title page of Buxton, Herman Boerhaave, An Account... Wellcome M0014839.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Title_page_of_Buxton%2C_Herman_Boerhaave%2C_An_Account..._Wellcome_M0014839.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Title_page_of_Buxton,_Herman_Boerhaave,_An_Account..._Wellcome_M0014839.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36367560",
+            "sha1": "48a701b790c078cf19d151e171d240d58f1887aa",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-24 17:56:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nTitle page of Buxton, Herman Boerhaave, An Account...</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|1719 books|Images uploaded by Fæ|Artworks without Wikidata item|Files from Wellcome Images|Works by Herman Boerhaave|Title pages in the Wellcome Collection",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>-\n</p>\n<p>Wellcome Images</p>\nKeywords: William Buxton</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/c2/69/25d45dbbd744f7a74f6406bb082c.jpg\">https://wellcomeimages.org/indexplus/obf_images/c2/69/25d45dbbd744f7a74f6406bb082c.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/M0014839.html\">https://wellcomeimages.org/indexplus/image/M0014839.html</a></li>\n<li>Wellcome Collection gallery (2018-04-05): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/bkdh7w74\">https://wellcomecollection.org/works/bkdh7w74</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 53473757,
+        "ns": 6,
+        "title": "File:Ducks go for a walk - panoramio.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Ducks_go_for_a_walk_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ducks_go_for_a_walk_-_panoramio.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53473757",
+            "sha1": "6850dc89506b6a8350e2b1c9f3f623c3a6812385",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-11-24 11:38:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ducks go for a walk - panoramio",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Taken with Palm Pre|Mills River",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "35.388448",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-82.566789",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Ducks go for a walk",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "26 December 2010 (original upload date)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://web.archive.org/web/20161017165205/http://www.panoramio.com/photo/45566341\">https://web.archive.org/web/20161017165205/http://www.panoramio.com/photo/45566341</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161017165207/http://www.panoramio.com/user/5358332?with_photo_id=45566341\">rita873able1</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"share alike\"><img alt=\"share alike\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/40px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Cc-sa_white.svg/60px-Cc-sa_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by-sa/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by-sa/3.0/deed.en\">Attribution-Share Alike 3.0 Unported</a> license.</div><div class=\"rlicense-attr\" style=\"font-weight: bold;\">Attribution: <div style=\"display:inline;font-size:larger;\" class=\"licensetpl_attr\">rita873able1</div></div><div class=\"rlicense-desc\" style=\"text-align:start;\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li>\n<li><b>share alike</b> – If you remix, transform, or build upon the material, you must distribute your contributions under the <a href=\"https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses\" class=\"extiw\" title=\"ccorg:share-your-work/licensing-considerations/compatible-licenses\">same or compatible license</a> as the original.</li></ul></dd></dl></div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by-sa/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY-SA 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution-Share Alike 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>\n<style data-mw-deduplicate=\"TemplateStyles:r901585720\">.mw-parser-output .panoramioreview{width:100%;margin:0.5em 0;background-color:var(--background-color-warning-subtle,#fffff0);padding:5px;border:1px solid var(--border-color-warning,#aa8);color:inherit}.mw-parser-output .panoramioreview-failed{background-color:var(--background-color-error-subtle,#fcc);color:inherit}.mw-parser-output .panoramioreview-passed{background-color:var(--background-color-success-subtle,#efe);color:inherit}</style>\n<table class=\"panoramioreview panoramioreview-passed\" lang=\"en\" dir=\"ltr\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Panoramio\" class=\"extiw\" title=\"en:Panoramio\">Panoramio</a></span></b>, was automatically reviewed on 24 November 2016 by <b><a href=\"//commons.wikimedia.org/wiki/User:Panoramio_upload_bot\" title=\"User:Panoramio upload bot\">Panoramio upload bot</a></b>, who confirmed that it was available on Panoramio under the above license on that date.\n</td>\n<td><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Star_and_ring.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/60px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/120px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"75\" data-file-height=\"75\"></a></span>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "rita873able1",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 61507701,
+        "ns": 6,
+        "title": "File:Strip photo of San Francisco Cable Car 10.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Strip_photo_of_San_Francisco_Cable_Car_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Strip_photo_of_San_Francisco_Cable_Car_10.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61507701",
+            "sha1": "541e8a2586184fa3ba2bc64074b2c4cb8f2ae9fc",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-08-06 05:55:59",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Strip photo of San Francisco Cable Car 10",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Featured pictures on Wikipedia, English|Featured pictures of San Francisco|San Francisco cable car surfing|Featured pictures of trams|Featured pictures by dllu|Side views of trams|Panning of trams|Files with coordinates missing SDC location of creation|Photo challenge winners|San Francisco Municipal Railway in 2017|San Francisco cable car no. 10|Line scan photos by dllu|Strip photography of trains",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "37.792287",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-122.409345",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Car 10 of the <a href=\"https://en.wikipedia.org/wiki/San_Francisco_cable_car_system\" class=\"extiw\" title=\"w:San Francisco cable car system\">San Francisco cable car system</a> photographed using <a href=\"https://en.wikipedia.org/wiki/Strip_photography\" class=\"extiw\" title=\"w:Strip photography\">strip photography</a>, a photographic technique of capturing a 2-dimensional image as a sequence of 1-dimensional images over time, rather than a single 2-dimensional at one point in time.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-08-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dllu\" title=\"User:Dllu\">Dllu</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 64838747,
+        "ns": 6,
+        "title": "File:Portrait of man with sport fish (AM 85499-1).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Portrait_of_man_with_sport_fish_%28AM_85499-1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Portrait_of_man_with_sport_fish_(AM_85499-1).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64838747",
+            "sha1": "c6bbe1d51fc1b84def2ddbcb6369702fc643284e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-12-15 22:05:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n(Portrait of man with sport fish)</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images uploaded by Fæ|Artworks without Wikidata item|Images from Auckland Museum|Artworks with known accession number|Photographs of boats or fishing by Tudor Washington Collins",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nCollins, Tudor Washington, 1898-1970, photographer</div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "High angle portrait of a man on-board a fishing boat, with a caught billfish.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1945<div style=\"display: none;\">date QS:P571,+1945-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"http://api.aucklandmuseum.com/id/library/photography/85499\">API data</a><br>\n<a rel=\"nofollow\" class=\"external text\" href=\"https://www.aucklandmuseum.com/collection/object/am_library-photography-85499\">Catalogue record</a>\n</p>\n<a rel=\"nofollow\" class=\"external text\" href=\"https://api.aucklandmuseum.com/id/media/p/ffe0d291121cb4dfbceb0f0a203e6342d29faa4b\">Photo</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This image has been released as \"CCBY\" by Auckland Museum. For details refer to the <a href=\"//commons.wikimedia.org/wiki/Commons:Batch_uploading/AucklandMuseumCCBY\" title=\"Commons:Batch uploading/AucklandMuseumCCBY\">Commons project page</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Auckland Museum",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 75879908,
+        "ns": 6,
+        "title": "File:Ambigram Body Yoga, mirror symmetry.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ambigram_Body_Yoga%2C_mirror_symmetry.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ambigram_Body_Yoga,_mirror_symmetry.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=75879908",
+            "sha1": "660dc8de63668f1be6b3eefd558f2c5dd706da01",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-01-16 01:34:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ambigram Body Yoga, mirror symmetry",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Ambigrams in English|Body in art|Ambigrams by Basile Morin|Black and white text logos|Letters with flourish|Mirror ambigrams (horizontal axis)|Shadow logos|Outlined text logos|Yoga logos",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/ambigram\" class=\"extiw\" title=\"en:ambigram\">Ambigram</a> <b><a href=\"https://en.wikipedia.org/wiki/Human_body\" class=\"extiw\" title=\"en:Human body\">Body</a> / <a href=\"https://en.wikipedia.org/wiki/Yoga\" class=\"extiw\" title=\"en:Yoga\">Yoga</a></b>. Mirror symmetry (horizontal axis).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-11-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Basile_Morin\" title=\"User:Basile Morin\">Basile Morin</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 76452807,
+        "ns": 6,
+        "title": "File:Homme et sport du basket-ball.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Homme_et_sport_du_basket-ball.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Homme_et_sport_du_basket-ball.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=76452807",
+            "sha1": "b9a4a2eb218f057de0a4fc409bb6346de14b750f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-02-09 18:23:12",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Homme et sport du basket-ball",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Streetball in Benin|Images from Wiki Loves Africa 2019 in Benin|Wiki Loves Africa 2019 Events in Benin PhotoHunt|Wiki Loves Africa 2019 Events in Benin PhotoWalk",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "homme et sport du basket-ball",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-02-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Davissilva846\" title=\"User:Davissilva846\">Davissilva846</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 76452809,
+        "ns": 6,
+        "title": "File:Homme et sport au tennis au stade de l'amitié.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Homme_et_sport_au_tennis_au_stade_de_l%27amiti%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Homme_et_sport_au_tennis_au_stade_de_l%27amiti%C3%A9.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=76452809",
+            "sha1": "0a56c7c79b5ac7b0f18c2c0d9cf82fee9dc7ffcf",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-02-09 18:23:12",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Homme et sport au tennis au stade de l'amitié",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Tennis in Benin|Taken with itel S32|Self-published work|Images from Wiki Loves Africa 2019 in Benin|Stade de l'Amitié Général Mathieu Kérékou|Wiki Loves Africa 2019 Events in Benin PhotoHunt|Wiki Loves Africa 2019 Events in Benin PhotoWalk",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "man and sport in tennis at friendship stadium",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-02-09 13:43:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Davissilva846\" title=\"User:Davissilva846\">Davissilva846</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 77296803,
+        "ns": 6,
+        "title": "File:Boys playing street football in Egypt.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Boys_playing_street_football_in_Egypt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Boys_playing_street_football_in_Egypt.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=77296803",
+            "sha1": "b48efc9ed23c2f9245f6b3ac197552f8a0bfb888",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-01 09:19:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Boys playing street football in Egypt",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Street football in Egypt|Muizz Street|Personality rights warning|Al-Hakim Mosque|Boys playing|Self-published work|Featured pictures by others nominated by Yann Forget|Children playing in Egypt|October 2017 in Egypt|Images from Wiki Loves Africa 2019|Best images from Wiki Loves Africa 2019|Featured pictures of Cairo|Adolescent boys of Egypt|Photographs taken on 2013-10-17|Featured pictures on Wikipedia, Bengali|Uploaded via Campaign:wlafrica|Featured pictures of children|Files with coordinates missing SDC location of creation|Images from Wiki Loves Africa 2019 in Egypt|Featured pictures from Wiki Loves Africa 2019|Wiki Loves Africa 2019 winning pictures",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "30.054859",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "31.263158",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Children playing street football in Egypt, one of the most famous games in Africa. Location: Al-Mu'izz Street, at the exterior of Al-Hakim mosque - <table class=\"toccolours layouttemplate commons-file-information-table\" style=\"width: 100%;\" dir=\"ltr\" lang=\"en\">\n<tbody><tr><th class=\"type fileinfo-paramfield\">Camera location</th><td style=\"border:none;\"><span class=\"plainlinks\"><span class=\"plainlinksneverexpand\"><a class=\"external text\" href=\"https://geohack.toolforge.org/geohack.php?pagename=File:Boys_playing_street_football_in_Egypt.jpg&amp;params=030.054859_N_0031.263158_E_globe:Earth_type:camera__&amp;language=en\">30° 03′ 17.49″ N, 31° 15′ 47.37″ E</a></span></span> <a class=\"mw-kartographer-maplink no-icon\" data-mw-kartographer=\"maplink\" data-style=\"osm-intl\" href=\"//commons.wikimedia.org/wiki/Special:Map/13/30.054859/31.263158/en\" data-zoom=\"13\" data-lat=\"30.054859\" data-lon=\"31.263158\" data-overlays='[\"_1bd819b2167095887d090e486682ea6b68720c9c\"]'><span typeof=\"mw:File\"><span title=\"Kartographer map based on OpenStreetMap.\"><img alt=\"Kartographer map based on OpenStreetMap.\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/20px-Openstreetmap_logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"20\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/40px-Openstreetmap_logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"256\" data-file-height=\"256\"></span></span></a></td><td style=\"border:none;\">View this and other nearby images on: <a class=\"external text\" href=\"https://wikimap.toolforge.org/?wp=false&amp;cluster=false&amp;zoom=16&amp;lat=030.054859&amp;lon=0031.263158\">OpenStreetMap</a></td><td style=\"border:none;\"><span class=\"skin-invert\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/Commons:Geocoding\" title=\"Commons:Geocoding\"><img alt=\"info\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/OOjs_UI_icon_help.svg/20px-OOjs_UI_icon_help.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"18\" height=\"18\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/OOjs_UI_icon_help.svg/40px-OOjs_UI_icon_help.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"24\" data-file-height=\"24\"></a></span><span class=\"geo\" style=\"display:none\"> 30.054859;   31.263158</span></td></tr>\n</tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-10-13 00:29:05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hozyen\" title=\"User:Hozyen\">Mohamed Hozyen Ahmed </a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 79775884,
+        "ns": 6,
+        "title": "File:Commons Android app Nearby feature.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Commons_Android_app_Nearby_feature.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Commons_Android_app_Nearby_feature.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=79775884",
+            "sha1": "4c4d99745a1793fa1f49eae749e111b6dda9d766",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-06-18 09:36:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Commons Android app Nearby feature",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|ODbL OpenStreetMap|Commons Android App screenshots|English-language screenshots of Android|Commons app map|Commons Android App screenshots with OpenStreetMap maps",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Commons Android app Nearby feature",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-07-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Syced\" title=\"User:Syced\">Syced</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 88146501,
+        "ns": 6,
+        "title": "File:Harvett Fox - Six Facial Expressions (separated).png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Harvett_Fox_-_Six_Facial_Expressions_%28separated%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Harvett_Fox_-_Six_Facial_Expressions_(separated).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=88146501",
+            "sha1": "5531ad32a92aa5ba37a0909baeaa2813cf03a848",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-03-16 06:02:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Harvett Fox - Six Facial Expressions (separated)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Model sheets|Self-published work|PNG created with GIMP|Facial expressions in art|Supersedes|2020 drawings|Facial expression mosaics|2x3 arrays|Files uploaded by Jayvee Enaguas (The Harvett Vault)|Fox heads in art|Blue, green, orange, purple, red, yellow|Facial expressions of animals in art|Harvett Fox",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A redrawn version of the facial expression artwork featuring a male character with <a href=\"//commons.wikimedia.org/wiki/File:Harvett_Fox.png\" title=\"File:Harvett Fox.png\">Harvett Fox</a> after redrawing and separating apart from raw version.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "<ul><li><b>Original:</b> 22 February 2020</li>\n<li><b>Redrawn and separated:</b> 16 March 2020</li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:HarvettFox96&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:HarvettFox96 (page does not exist)\">Jayvee Enaguas (HarvettFox96)</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:The_Harvett_Vault\" title=\"User:The Harvett Vault\">Jayvee Enaguas (The Harvett Vault)</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 89882364,
+        "ns": 6,
+        "title": "File:Update-Bildschirm Windows 10 20200505.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Update-Bildschirm_Windows_10_20200505.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Update-Bildschirm_Windows_10_20200505.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89882364",
+            "sha1": "2558275672aa20cb6b79d9470347847bee360568",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-05 14:04:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Update-Bildschirm Windows 10 20200505",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|PD ineligible|PD text|Self-published work|Windows 10 screenshots|CC0 files by PantheraLeo1359531",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Update-Bildschirm unter Windows 10.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-05-05 16:02:29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:PantheraLeo1359531\" title=\"User:PantheraLeo1359531\">PantheraLeo1359531</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 90261663,
+        "ns": 6,
+        "title": "File:Exemple WI-Fi IEEE 802.11ac @ 5GHz.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Exemple_WI-Fi_IEEE_802.11ac_%40_5GHz.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Exemple_WI-Fi_IEEE_802.11ac_@_5GHz.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90261663",
+            "sha1": "46ff0b2e1cc954ee922c5367ba4f9d32cf165444",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-16 07:54:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Exemple WI-Fi IEEE 802.11ac @ 5GHz",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Network routers|Modems|Wi-Fi|Wireless LAN|Self-published work|WMIT Wiki-imparare ITIS Urbino by 2020|Images by User:Galessandroni",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Example of WI-Fi using with IEEE 802.11ac protocol at 5GHz",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-05-16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q61601315\" class=\"extiw\" title=\"d:Q61601315\"><span title=\"Italian teacher\">Giacomo Alessandroni</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 90892896,
+        "ns": 6,
+        "title": "File:Gorges Areuse hiking tunnel 20200529.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gorges_Areuse_hiking_tunnel_20200529.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gorges_Areuse_hiking_tunnel_20200529.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90892896",
+            "sha1": "46e648728c4d80ebd89f6967d9609d3ba6126522",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-06-03 13:05:18",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Gorges Areuse hiking tunnel 20200529",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Hiking trails in Switzerland|Self-published work|Pedestrian tunnels in Switzerland|Files with coordinates missing SDC location of creation|May 2020 Switzerland photographs|Light at the end of the tunnel|Sentier de randonnée des gorges de l'Areuse|Files by Domob in Switzerland",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "46.960114",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "6.781266",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Pedenstrian tunnel along the Gorges de l'Areuse hiking path between Noiraigue and Boudry, Switzerland.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-05-29 11:17:13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Domob\" title=\"User:Domob\">Daniel Kraft</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 99565159,
+        "ns": 6,
+        "title": "File:Finnish Dance Sport Federation Salopino 2.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Finnish_Dance_Sport_Federation_Salopino_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Finnish_Dance_Sport_Federation_Salopino_2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=99565159",
+            "sha1": "2ede69f1fecc78a1c1a4076a2c98157b5b8be291",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-02-04 12:30:16",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Finnish Dance Sport Federation Salopino 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Dancing|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "60.169403",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "24.939965",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Pyörätuolitanssipari kisalattialla.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-11-02 22:13:40",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Finnish Dance Sport Federation",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Jari Salopino",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 102490469,
+        "ns": 6,
+        "title": "File:Adam Pizurny Faces Projected at FILE Electronic Language International Festival 2017 São Paulo Brazil.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Adam_Pizurny_Faces_Projected_at_FILE_Electronic_Language_International_Festival_2017_S%C3%A3o_Paulo_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Adam_Pizurny_Faces_Projected_at_FILE_Electronic_Language_International_Festival_2017_S%C3%A3o_Paulo_Brazil.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=102490469",
+            "sha1": "649c2849743b314ab6a917d01ca654384b2313ed",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-03-28 12:20:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Adam Pizurny Faces Projected at FILE Electronic Language International Festival 2017 São Paulo Brazil",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Contemporary art|21st-century art|Electronic Language International Festival|New media art|Digital art|Projection mapping|Art festivals in Brazil|Self-published work|Items with VRTS permission confirmed|FoP-Brazil|Adam Pizurny",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Adam Pizurny Faces Projected at FILE Electronic Language International Festival 2017 São Paulo Brazil",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-09-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Adam_Pizurny_Faces_Projected_at_FILE_Electronic_Language_International_Festival_2017_S%C3%A3o_Paulo_Brazil.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:ArtistAmyKarle1\" class=\"mw-redirect\" title=\"User:ArtistAmyKarle1\">ArtistAmyKarle1</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "The photographical reproduction of this work is covered under the article 48 of the <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20110604224823/http://www.wipo.int/wipolex/en/text.jsp?file_id=125392\">Brazil copyright law</a>, which states: Works permanently located in public places may be freely represented by painting, drawing, photography and audiovisual processes.\n<p><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Dialog-warning.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/40px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"30\" height=\"30\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/60px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"48\" data-file-height=\"48\"></a></span> <b>Warning:</b> FoP is allowed in Brazil, including commercial use, to some extent. Artworks placed in locations with access to the public can be freely represented by photography, painting, drawing and audiovisual means. Commercial use is allowed, as long as the artist's work is <u>properly attributed</u>, the representation <u>does not consist in a reproduction</u>. The existing jurisprudence consistently allows commercial use of artworks under FoP, <u>as long as the artwork is accessory</u>, and <u>not detached from its surrounding elements</u>, and therefore not unfairly used to produce revenue that by law belongs to the artist. <b>Violation of those rights is frequently punished by Brazilian courts with pecuniary indemnisations to the offended party.</b>\n</p>\nSee <a href=\"//commons.wikimedia.org/wiki/Commons:CRT/Brazil#Freedom_of_panorama\" class=\"mw-redirect\" title=\"Commons:CRT/Brazil\">COM:CRT/Brazil#Freedom of panorama</a> for more information.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 110584987,
+        "ns": 6,
+        "title": "File:Karen Demirchyan Sports and Concerts Complex shot from air, May 2019.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Karen_Demirchyan_Sports_and_Concerts_Complex_shot_from_air%2C_May_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Karen_Demirchyan_Sports_and_Concerts_Complex_shot_from_air,_May_2019.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=110584987",
+            "sha1": "6e65ec8b594f43456d2fb56980075ec248eff808",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-09-30 10:31:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Karen Demirchyan Sports and Concerts Complex shot from air, May 2019",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Retouched pictures|Karen Demirchyan Complex|Self-published work|Uploaded via Campaign:wlm-am|Cultural heritage monuments in Armenia with known IDs|Files with coordinates missing SDC location of creation|Images from Wiki Loves Monuments missing SDC location of creation|Cultural heritage monuments in Armenia missing SDC location of creation|Images from Wiki Loves Monuments 2021|Images from Wiki Loves Monuments 2021 in Armenia",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "40.189890",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "44.480892",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This is a photo of a monument in Armenia identified by the <a href=\"https://www.wikidata.org/wiki/Property:P3170\" class=\"extiw\" title=\"d:Property:P3170\">ID</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-05-28 11:53:22",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Xelgen\" title=\"User:Xelgen\">Aleksey Chalabyan a.k.a Xelgen</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 112271474,
+        "ns": 6,
+        "title": "File:Folder-dynamic-clay.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Folder-dynamic-clay.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Folder-dynamic-clay.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=112271474",
+            "sha1": "37108c055f6ee7d50b8693c63276602a3b485640",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-11-04 02:52:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Folder-dynamic-clay",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|3dicons.co dynamic icons|3dicons.co clay icons|3dicons.co folder icons|Generic filesystem directory icons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "3-D folder clay dynamic icon",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-10-14",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://3dicons.co/\">https://3dicons.co/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Vijay Verma",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 125911441,
+        "ns": 6,
+        "title": "File:The Paint Shop - Amusement Centre - Auto Sport - geograph.org.uk - 4043932.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Paint_Shop_-_Amusement_Centre_-_Auto_Sport_-_geograph.org.uk_-_4043932.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Paint_Shop_-_Amusement_Centre_-_Auto_Sport_-_geograph.org.uk_-_4043932.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=125911441",
+            "sha1": "19ca9acc212e123176aeaf6ba58ee5a25d664861",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-11-25 04:39:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The Paint Shop - Amusement Centre - Auto Sport - geograph.org.uk - 4043932",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Armagh (city)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "54.346500",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-6.649531",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The Paint Shop / Amusement Centre / Auto Sport <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:The_Paint_Shop_-_Amusement_Centre_-_Auto_Sport_-_geograph.org.uk_-_4043932.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-06-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/4043932\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:The_Paint_Shop_-_Amusement_Centre_-_Auto_Sport_-_geograph.org.uk_-_4043932.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/2282\">Kenneth  Allen</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:The_Paint_Shop_-_Amusement_Centre_-_Auto_Sport_-_geograph.org.uk_-_4043932.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>The Paint Shop / Amusement Centre / Auto Sport</i> by Kenneth  Allen",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 131910645,
+        "ns": 6,
+        "title": "File:Maree Electrónica Video Sport (Hobby Kit) - Internals.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Maree_Electr%C3%B3nica_Video_Sport_%28Hobby_Kit%29_-_Internals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Maree_Electr%C3%B3nica_Video_Sport_(Hobby_Kit)_-_Internals.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=131910645",
+            "sha1": "5fd15029cec4aa2993479484a54f3e51c3646578",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-05-14 07:43:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Maree Electrónica Video Sport (Hobby Kit) - Internals",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Maree Electrónica Video Sport (Hobby Kit)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Maree Electrónica Video Sport (Hobby Kit) - Internals",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-01-27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://retroordenadoresorty.blogspot.com/2023/01/consola-pong-hobby-kit-video-sport.html\">https://retroordenadoresorty.blogspot.com/2023/01/consola-pong-hobby-kit-video-sport.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "José Antonio Ortigueira Amor",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 138459473,
+        "ns": 6,
+        "title": "File:6Heures-VTT-La-Romaine-Corseul-206-ClubAndelVeloSport-01-10-2023-byRundvald.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/6Heures-VTT-La-Romaine-Corseul-206-ClubAndelVeloSport-01-10-2023-byRundvald.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:6Heures-VTT-La-Romaine-Corseul-206-ClubAndelVeloSport-01-10-2023-byRundvald.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=138459473",
+            "sha1": "fad8b9980ffe298839719b34e9cc05d52d95670e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-10-04 10:15:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "6Heures-VTT-La-Romaine-Corseul-206-ClubAndelVeloSport-01-10-2023-byRundvald",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Cycling in Côtes-d'Armor|Mountain biking in France|Corseul|Single tracks (mountain biking)|2023 in cycling (sport)|2023 in Côtes-d'Armor|Self-published work|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "48.477768",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-2.175937",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Competitor of the \"Club <a href=\"https://en.wikipedia.org/wiki/Andel,_C%C3%B4tes-d%27Armor\" class=\"extiw\" title=\"w:Andel, Côtes-d'Armor\">Andel</a> <a href=\"https://en.wikipedia.org/wiki/Bicycle\" class=\"extiw\" title=\"w:Bicycle\">Velo</a> <a href=\"https://en.wikipedia.org/wiki/Sport\" class=\"extiw\" title=\"w:Sport\">Sport</a>\" duo with <a href=\"https://en.wikipedia.org/wiki/Number_(sports)\" class=\"extiw\" title=\"w:Number (sports)\">bib number</a> 206 during the 6 Hours of <a href=\"https://en.wikipedia.org/wiki/Mountain_bike\" class=\"extiw\" title=\"w:Mountain bike\">MTB</a> \"<a href=\"https://en.wikipedia.org/wiki/Roman_Gaul\" class=\"extiw\" title=\"w:Roman Gaul\">La Romaine</a>\" in <a href=\"https://en.wikipedia.org/wiki/Corseul\" class=\"extiw\" title=\"w:Corseul\">Corseul</a> in the <a href=\"https://en.wikipedia.org/wiki/C%C3%B4tes_d%27Armor\" class=\"extiw\" title=\"w:Côtes d'Armor\">Côtes d'Armor</a>, <a href=\"https://en.wikipedia.org/wiki/France\" class=\"extiw\" title=\"w:France\">France</a>, on October 1, <a href=\"https://en.wikipedia.org/wiki/2023\" class=\"extiw\" title=\"w:2023\">2023</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-10-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rundvald\" title=\"User:Rundvald\">Rundvald</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 145979110,
+        "ns": 6,
+        "title": "File:Leisure time in Namibia.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Leisure_time_in_Namibia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Leisure_time_in_Namibia.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=145979110",
+            "sha1": "d7afe0c59ed7ef0a04432b4f5682e09772b7ff86",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-03-01 14:41:00",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Leisure time in Namibia",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Namibia|Recreation|Self-published work|Images from Wiki Loves Africa 2024|Uploaded via Campaign:wlafrica|Images from Wiki Loves Africa 2024 to check|Images from Wiki Loves Africa 2024 in Namibia",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This image represents young boys playing soccer during their free time.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-02-23 18:29:00",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Shikoha_Tautiko\" title=\"User:Shikoha Tautiko\">Shikoha Tautiko</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 163232905,
+        "ns": 6,
+        "title": "File:Sports team riding bus.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sports_team_riding_bus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sports_team_riding_bus.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=163232905",
+            "sha1": "a2a8decd214e53bfa11612650ad68099bea5a1fc",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-04-06 08:59:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sports team riding bus",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Hino Selega HD (2nd)|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Buses in Japan photographed in 2025|Coaches in Japan|Kita-Aoyama|Tokyo photographs taken on 2025-04-06|April 2025 in transport in Tokyo|Buses in Minato, Tokyo",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "35.670506",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "139.716897",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sports team riding bus<span typeof=\"mw:Entity\"> </span><span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\" data-mw='{\"caption\":\"Edit this at Structured Data on Commons\"}'><a href=\"https://commons.wikimedia.org/wiki/File:Sports_team_riding_bus.jpg#ooui-php-4\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:Sports_team_riding_bus.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img resource=\"https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_edit-ltr-progressive.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" alt=\"Edit this at Structured Data on Commons\" data-file-width=\"20\" data-file-height=\"20\" data-file-type=\"drawing\" height=\"10\" width=\"10\" class=\"mw-file-element\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "<span class=\"mw-empty-elt\"><link rel=\"mw:PageProp/Category\" href=\"./Category:Tokyo_photographs_taken_on_2025-04-06\"></span>\n6 April 2025, 17:07",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Syced\" title=\"User:Syced\">Syced</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 177394002,
+        "ns": 6,
+        "title": "File:Website layout structure german.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Website_layout_structure_german.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Website_layout_structure_german.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177394002",
+            "sha1": "4c8a8698427d3d57afdbef3936d607843a501957",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-10-26 11:28:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Website layout structure german",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Web design|Self-published work|Website wireframes|Moritz Dunkel|Infographics in German",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This graphic illustrates the basic structure of a typical business website homepage. It highlights common sections such as logo, navigation, headline/hero section, information blocks, USP (unique selling proposition), benefits, trust elements (social proof), images/videos and a clear call-to-action.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-10-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Moritz_Dunkel\" title=\"User:Moritz Dunkel\">Moritz Dunkel</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

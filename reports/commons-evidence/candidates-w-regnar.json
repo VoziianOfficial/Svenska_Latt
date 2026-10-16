@@ -1,0 +1,908 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 1557354,
+        "ns": 6,
+        "title": "File:Rain Umbrella 01.JPG",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 748442,
+            "width": 3008,
+            "height": 2000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rain_Umbrella_01.JPG/960px-Rain_Umbrella_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 532,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rain_Umbrella_01.JPG/1920px-Rain_Umbrella_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rain_Umbrella_01.JPG/960px-Rain_Umbrella_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 532,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rain_Umbrella_01.JPG/1920px-Rain_Umbrella_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Rain_Umbrella_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rain_Umbrella_01.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1557354",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-01-13 06:19:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Rain Umbrella 01",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Nikon D70|Files with no machine-readable source|People of Vancouver|License migration redundant|Self-published work|Assumed own work|People with umbrellas|Photographs taken on 2005-10-06|Rain in Vancouver",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "rain robson street Vancouver, Al Safrata",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "6 October 2005 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/w/index.php?title=User:Alsafrata&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Alsafrata (page does not exist)\">Alsafrata</a> assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.5",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.5",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.5",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.5",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 12510373,
+        "ns": 6,
+        "title": "File:Oxford Street in the Rain - geograph.org.uk - 336737.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 130034,
+            "width": 640,
+            "height": 480,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Oxford_Street_in_the_Rain_-_geograph.org.uk_-_336737.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Oxford_Street_in_the_Rain_-_geograph.org.uk_-_336737.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Oxford_Street_in_the_Rain_-_geograph.org.uk_-_336737.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oxford_Street_in_the_Rain_-_geograph.org.uk_-_336737.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=12510373",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-12-30 22:14:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Oxford Street in the Rain - geograph.org.uk - 336737",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon Coolpix P3|Oxford Street|Images from Geograph Britain and Ireland|Information field template with formatting|Rain in London|Images by Stephen McKay|People in the City of Westminster|London photographs taken on 2007-02-12|Black umbrellas in London",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "51.515600",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.142800",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Oxford Street in the Rain A sudden downpour has shoppers dashing for cover. Looking along the north side of Oxford Street just west of Oxford Circus.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-02-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/336737\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/1621\">Stephen McKay</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Stephen McKay",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 20066001,
+        "ns": 6,
+        "title": "File:HK Sheung Wan Tai Ping Shan Street Man-made Rain Umbrella action June-2012.JPG",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1133570,
+            "width": 1944,
+            "height": 2592,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG/960px-HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG/1920px-HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG/960px-HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG/1920px-HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:HK_Sheung_Wan_Tai_Ping_Shan_Street_Man-made_Rain_Umbrella_action_June-2012.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=20066001",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-06-29 01:23:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "HK Sheung Wan Tai Ping Shan Street Man-made Rain Umbrella action June-2012",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Rain showers|Taken with Ricoh R10|Files with no machine-readable source|Self-published work|Assumed own work|Film production in Hong Kong|Tai Ping Shan Kwun Yum Tong|People with umbrellas in Hong Kong|Hong Kong photographs taken on 2012-06-28|Photographs by Anonymous Hong Kong Photographer 1|Rain in the Northern Hemisphere in June 2012|Location shooting in Hong Kong|2012 in Tai Ping Shan Street|2012 in Tai Shan House|2012 in Upper Station Street|June 2012 in Tai Ping Shan Street|Man-made rain",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://zh.wikipedia.org/wiki/%E4%B8%8A%E7%92%B0\" class=\"extiw\" title=\"zh:上環\">zh:上環</a> <a href=\"https://zh.wikipedia.org/wiki/%E5%A4%AA%E5%B9%B3%E5%B1%B1%E8%A1%97\" class=\"extiw\" title=\"zh:太平山街\">太平山街</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "28 June 2012 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/w/index.php?title=User:Harconerfel&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Harconerfel (page does not exist)\">Harconerfel</a> assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 58144880,
+        "ns": 6,
+        "title": "File:Les Parapluies de Viborg.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 11036341,
+            "width": 5013,
+            "height": 3889,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Les_Parapluies_de_Viborg.jpg/960px-Les_Parapluies_de_Viborg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 621,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Les_Parapluies_de_Viborg.jpg/1920px-Les_Parapluies_de_Viborg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Les_Parapluies_de_Viborg.jpg/960px-Les_Parapluies_de_Viborg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 621,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Les_Parapluies_de_Viborg.jpg/1920px-Les_Parapluies_de_Viborg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Les_Parapluies_de_Viborg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Les_Parapluies_de_Viborg.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=58144880",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-04-19 09:27:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Les Parapluies de Viborg",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Buildings in Viborg|Self-published work|PD-self|Featured pictures of objects|Rain in Denmark|Featured pictures of Viborg|Images by W.carter|Files with coordinates missing SDC location of creation|Denmark photographs taken on 2017-04-15|Featured pictures of rain|Umbrella streets|Featured photographs in the public domain|Featured pictures taken with compact digital camera|Images by W.carter, my own favorites|Featured pictures by W.carter",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "56.450538",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "9.408055",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Umbrellas of various colours hanging over Vestergade, Viborg, Denmark. The photo was taken during heavy rain. It was composed from three photos to achieve a balance of light, exposure as well as size.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-04-15 13:18:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 84352522,
+        "ns": 6,
+        "title": "File:Man with umbrella crossing road in the rain.jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1478722,
+            "width": 2409,
+            "height": 1645,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/960px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 546,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/1920px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/960px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 546,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/1920px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Man_with_umbrella_crossing_road_in_the_rain.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=84352522",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-11-25 13:53:12",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Man with umbrella crossing road in the rain",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Streets in the City of Manchester|Self-published work|Rain in England|Male people with umbrellas",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Man with umbrella crossing road in the rain, Ducie Street, Manchester",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-11-25 12:25:41",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Benjamin_Shaw&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Benjamin Shaw (page does not exist)\">Benjamin Shaw</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 103780361,
+        "ns": 6,
+        "title": "File:Umbrellas on Oxford Street - geograph.org.uk - 1885072.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 307198,
+            "width": 1079,
+            "height": 1600,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg/960px-Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1186,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg/960px-Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1186,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=103780361",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-04-17 00:41:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Umbrellas on Oxford Street - geograph.org.uk - 1885072",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Oxford Street|Images from Geograph Britain and Ireland|Rain in London|London photographs taken on 2010-05-29|2010 in the City of Westminster|Black umbrellas in London|Blue umbrellas in London|Pink umbrellas in London|White umbrellas in London|People with umbrellas in London",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "51.514953",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.144767",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Umbrellas on Oxford Street <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-05-29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/1885072\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/4942\">Martin Addison</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Umbrellas_on_Oxford_Street_-_geograph.org.uk_-_1885072.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>Umbrellas on Oxford Street</i> by Martin Addison",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 141974624,
+        "ns": 6,
+        "title": "File:Man taking shelter from rain in Colombo.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1507447,
+            "width": 1063,
+            "height": 1600,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Man_taking_shelter_from_rain_in_Colombo.jpg/960px-Man_taking_shelter_from_rain_in_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1204,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Man_taking_shelter_from_rain_in_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Man_taking_shelter_from_rain_in_Colombo.jpg/960px-Man_taking_shelter_from_rain_in_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1204,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Man_taking_shelter_from_rain_in_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Man_taking_shelter_from_rain_in_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Man_taking_shelter_from_rain_in_Colombo.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=141974624",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-12-10 11:09:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Man taking shelter from rain in Colombo",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Streets in Colombo|Self-published work|People with umbrellas|Rain in Sri Lanka",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "SRI LANKA. Colombo, 18 May, 2010 - A man is seen taking refuge under an umbrella in the rain-soaked city of Colombo. Major roads were flooded causing heavy traffic jams and displacement of people from their houses, as the drainage systems of the city and its suburbs failed amidst heavy downpour during pre-monsoon rains.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-05-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Chilawprawn&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Chilawprawn (page does not exist)\">Chilawprawn</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 195220960,
+        "ns": 6,
+        "title": "File:Umbrella in Wellington.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3478202,
+            "width": 4000,
+            "height": 3000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Umbrella_in_Wellington.jpg/960px-Umbrella_in_Wellington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Umbrella_in_Wellington.jpg/1920px-Umbrella_in_Wellington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Umbrella_in_Wellington.jpg/960px-Umbrella_in_Wellington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Umbrella_in_Wellington.jpg/1920px-Umbrella_in_Wellington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Umbrella_in_Wellington.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Umbrella_in_Wellington.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=195220960",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-07-06 07:26:40",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Umbrella in Wellington",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Lambton Quay|Self-published work|Umbrellas in New Zealand|Bowen Street, Wellington|Images by Panamitsu|Rain in Wellington",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Rain and an umbrella in Wellington, at the corner of Lambton Quay and Bowen Street",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-07-06 16:18:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Panamitsu\" title=\"User:Panamitsu\">Panamitsu</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

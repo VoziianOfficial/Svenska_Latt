@@ -1,0 +1,887 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 43634710,
+        "ns": 6,
+        "title": "File:Qian Xuesen - Appointment 1957.JPG",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 323321,
+            "width": 2447,
+            "height": 1687,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Qian_Xuesen_-_Appointment_1957.JPG/960px-Qian_Xuesen_-_Appointment_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 552,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Qian_Xuesen_-_Appointment_1957.JPG/1920px-Qian_Xuesen_-_Appointment_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Qian_Xuesen_-_Appointment_1957.JPG/960px-Qian_Xuesen_-_Appointment_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 552,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Qian_Xuesen_-_Appointment_1957.JPG/1920px-Qian_Xuesen_-_Appointment_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Qian_Xuesen_-_Appointment_1957.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Qian_Xuesen_-_Appointment_1957.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43634710",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-09-25 14:22:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Qian Xuesen - Appointment 1957",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Qian Xuesen|PD-PRC-exempt|Qian Xuesen Library, Shanghai|Zhou Enlai in 1957|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "31.202931",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "121.430817",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Appointment signed by Zhou Enlai, in which Qian Xuesen was appointed as president of the 5th Research Institute of the Ministry of National Defense of China. The original copy is owned by Qian Xuesen Library of Shanghai Jiao Tong University, where the photo was taken.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1957-02-18, photo taken on 2015-09-25 16:13:35",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Original copy owned by Qian Xuesen Library of Shanghai Jiao Tong University",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "​中华人民共和国国务院",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 43738001,
+        "ns": 6,
+        "title": "File:Calendar 1902-1904 (1904) (14772730475).jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2055431,
+            "width": 2428,
+            "height": 3998,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Calendar_1902-1904_%281904%29_%2814772730475%29.jpg/960px-Calendar_1902-1904_%281904%29_%2814772730475%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1317,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Calendar_1902-1904_%281904%29_%2814772730475%29.jpg/1920px-Calendar_1902-1904_%281904%29_%2814772730475%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Calendar_1902-1904_%281904%29_%2814772730475%29.jpg/960px-Calendar_1902-1904_%281904%29_%2814772730475%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1317,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Calendar_1902-1904_%281904%29_%2814772730475%29.jpg/1920px-Calendar_1902-1904_%281904%29_%2814772730475%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Calendar_1902-1904_%281904%29_%2814772730475%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Calendar_1902-1904_(1904)_(14772730475).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43738001",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-09-28 04:34:40",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Calendar 1902-1904 (1904) (14772730475)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Media needing category review as of 28 September 2015|The Calendar of the University of Toronto",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<br>\n<p><b>Identifier</b>: calendar0204univ (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Fcalendar0204univ%2F\">find matches</a>)<br>\n<b>Title</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidcalendar0204univ\">Calendar 1902-1904</a><br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookyear1904\">1904</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookdecade1900\">1900s</a>)<br>\n<b>Authors</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorUniversity_of_Toronto\">University of Toronto</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorUniversity_of_Toronto__Calendar_of_the_University_of_Toronto_and_University_College\">University of Toronto. Calendar of the University of Toronto and University College</a><br>\n<b>Subjects</b>: <br>\n<b>Publisher</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookpublisherToronto\">Toronto</a><br>\n<b>Contributing Library</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookcontributorRobarts___University_of_Toronto\">Robarts - University of Toronto</a><br>\n<b>Digitizing Sponsor</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksponsorUniversity_of_Toronto\">University of Toronto</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n425/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/calendar0204univ\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidcalendar0204univ\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n425/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image:</b><br>\n<i>of the Senate andby-laws, rules and regulations of the Board of Trustees.Appointments in the University (as well as in UniversityCollege) are made by the Crown, after such examination, in-quiry and report as are considered necessary. 2. The Board op Trustees.—The Board of Trustees con-sists of nine members, viz., the Chancellor, the Vice Chancel-lor, the President of the University, the Principal of Univer-sity College, and five persons appointed by the LieutenantGovernor in Council. The Board of Trustees is a body corpo-rate with a common seal and power to hold lands for thepurposes of the University and University College. All theproperty and effects of the University (as well as of Univer-sity College) are vested in the Board of Trustees in trust. TheBoard has general powers with regard to the management,control and government of the property, endowments andincome of the University and College, subject to the control ofthe Crown. In the discharge of its functions the Board makes</i><br>\n<b>Text Appearing After Image:</b><br>\n<i>Calendar for 1903—1904. 87 by-laws, rules and regulations regarding the investment ofthe funds, the selling and leasing of University properties,the letting of contracts, the appointment and removal of theBursar and his assistants, clerks and other officers and ser-vants of the University, the fixing of salaries, the fees to bepaid by students, the annual appropriations and the transac-tion of other business. 3. The Senate.—The Senate consists of three classes ofmembers: (1) Er, officio members; (2) Appointed members;and (3) Elected members. The ex officio members are theMinister of Education, the Chancellor, the President of theUniversity, the Principal of University College, the Chairmanof the Board of Trustees, the president or head of each feder-ated university or college, the deans of the faculties of Arts,Law, Medicine, and Applied Science and Engineering, and allpast Chancellors and Vice Chancellors. The appointed mem-bers consist of three representatives appointed by the p</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1904",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/14772730475/\">https://www.flickr.com/photos/internetarchivebookimages/14772730475/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n425/mode/1up\">https://archive.org/stream/calendar0204univ/calendar0204univ#page/n425/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>University of Toronto;\n</p>\nUniversity of Toronto. Calendar of the University of Toronto and University College",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 43738471,
+        "ns": 6,
+        "title": "File:Calendar 1902-1904 (1904) (14792585363).jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2362168,
+            "width": 4112,
+            "height": 2362,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Calendar_1902-1904_%281904%29_%2814792585363%29.jpg/960px-Calendar_1902-1904_%281904%29_%2814792585363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 460,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Calendar_1902-1904_%281904%29_%2814792585363%29.jpg/1920px-Calendar_1902-1904_%281904%29_%2814792585363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Calendar_1902-1904_%281904%29_%2814792585363%29.jpg/960px-Calendar_1902-1904_%281904%29_%2814792585363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 460,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Calendar_1902-1904_%281904%29_%2814792585363%29.jpg/1920px-Calendar_1902-1904_%281904%29_%2814792585363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Calendar_1902-1904_%281904%29_%2814792585363%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Calendar_1902-1904_(1904)_(14792585363).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43738471",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-12-13 12:02:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Calendar 1902-1904 (1904) (14792585363)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Media needing category review as of 28 September 2015|The Calendar of the University of Toronto",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<br>\n<p><b>Identifier</b>: calendar0204univ (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Fcalendar0204univ%2F\">find matches</a>)<br>\n<b>Title</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidcalendar0204univ\">Calendar 1902-1904</a><br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookyear1904\">1904</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookdecade1900\">1900s</a>)<br>\n<b>Authors</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorUniversity_of_Toronto\">University of Toronto</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorUniversity_of_Toronto__Calendar_of_the_University_of_Toronto_and_University_College\">University of Toronto. Calendar of the University of Toronto and University College</a><br>\n<b>Subjects</b>: <br>\n<b>Publisher</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookpublisherToronto\">Toronto</a><br>\n<b>Contributing Library</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookcontributorRobarts___University_of_Toronto\">Robarts - University of Toronto</a><br>\n<b>Digitizing Sponsor</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksponsorUniversity_of_Toronto\">University of Toronto</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n41/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/calendar0204univ\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidcalendar0204univ\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n41/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image:</b><br>\n<i>of the Senate andby-laws, rules and regulations of the Board of Trustees.Appointments in the University (as well as in UniversityCollege) are made by the Crown, after such examination, in-quiry and report as are considered necessary. 2. The Board of Trustees.—The Board of Trustees con-sists of nine members, viz., the Chancellor, the Vice-Chancel-lor, the President of the University, the Principal of Univers-ity College, and five persons appointed by the Lieutenant-Governor in Council. The Board of Trustees is a body corpo-rate with a common seal and power to hold lands for thepurposes of the University and University College. All theproperty and effects of the University (as well as of Univers-ity College) are vested in the Board of Trustees in trust. TheBoard has general powers with regard to the management,control and government of the property, endowments andincome of the University and College, subject to the control ofthe Crown. In the discharge of its functions the Board makes</i><br>\n<b>Text Appearing After Image:</b><br>\n<i>Calendar for 1902—1903. 29 by-laws, rules and regulations regarding the investment ofthe funds, the selling and leasing of University properties,the letting of contracts, the appointment and removal of theBursar and his assistants, clerks, and other officers and ser-vants of the University, the fixing of salaries, the fees to bepaid by students, the annual appropriations and the transac-tion of other business. 3. The Senate.—The Senate consists of three classes ofmembers: (1) Ex officio members; (2) Appointed members;and (3) Elected members. The ex officio members are theMinister of Education, the Chancellor, the President of theUniversity, the Principal of University College, the presidentor head of each federated university or college, the deans ofthe faculties of Arts, Law, Medicine, and Applied Science andEngineering, the Chairman of the Board of Trustees, and allpast Chancellors and Vice-Chancellors. The appointed mem-bers consist of three representatives appointed by the pro</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1904",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/14792585363/\">https://www.flickr.com/photos/internetarchivebookimages/14792585363/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/calendar0204univ/calendar0204univ#page/n41/mode/1up\">https://archive.org/stream/calendar0204univ/calendar0204univ#page/n41/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>University of Toronto;\n</p>\nUniversity of Toronto. Calendar of the University of Toronto and University College",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 52236783,
+        "ns": 6,
+        "title": "File:リアルシンプルダイアリー (1755128997).jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 905669,
+            "width": 1536,
+            "height": 2048,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg/960px-%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/3/3b/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg/960px-%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/3/3b/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_%281755128997%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B7%E3%83%B3%E3%83%97%E3%83%AB%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AA%E3%83%BC_(1755128997).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=52236783",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-10-13 11:07:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "リアルシンプルダイアリー (1755128997)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Diaries|Appointment books|Flickr images reviewed by FlickreviewR|Calendars of Japan|Stationery in Japan",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "月毎のカレンダーもあるよ。Monthly To Doを書く場所もある",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-10-26 16:53",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/noplans/1755128997/\">リアルシンプルダイアリー</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/13810961@N08\">Fumitake Taniguchi</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 114115912,
+        "ns": 6,
+        "title": "File:John Martin Honigberger's appointment letter as Court Physician.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 184149,
+            "width": 1221,
+            "height": 2109,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg/960px-John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1382,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/9/99/John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg/960px-John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1382,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/9/99/John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:John_Martin_Honigberger%27s_appointment_letter_as_Court_Physician.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=114115912",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-01-08 19:52:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "John Martin Honigberger's appointment letter as Court Physician",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sikh Empire|PD India|Images by pratishkhedekar|PD-old missing SDC copyright status|Früchte aus dem Morgenlande (1851)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fac smile of the Badela (document) re- appointing the Author of this work Physician to the Court of Lahore, also, Superintendent to the Gunpowder and to the Gunstock Manufactories, delivered by the Vizier (Wuzeer) Jowahar Sing, under Dulleep Sing's government. A copy of the document is exhibited on account of its peculiarities. It is headed with the Signature of the Vizier, and stamped with three seals ; the innermost of which, like the document itself, is in the Persian language ; the other two, together with the Vizier's signature, are in the Goormukee character, similar to the Grunth ( holy-book ) of the Sikhs; and which characters are already known in Europe. On the margin of the page is a Signature, which may serve as a specimen of the many signatures with which the back of the document is covered.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1851",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Früchte aus dem Morgenlande, oder, Reise-Erlebnisse : nebst naturhistorisch-medizinischen Erfahrungen, einigen hundert erprobten Arzneimitteln und einer neuen Heilart dem Medial-Systeme \nby Honigberger, John Martin, 1795-1869 \nPublication date 1851 \n</p>\n<a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/details/frchteausdemmorg00honi/\">https://archive.org/details/frchteausdemmorg00honi/</a> with UploadWizard",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<span lang=\"en\">Anonymous</span><span style=\"display:none\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 127462856,
+        "ns": 6,
+        "title": "File:Ilham Aliyev received in a video format Jabrayilov due to his appointment as head of Nizami DEA, Habibullayev due to his appointment as head of Narimanov DEA, Baku, and Ibrahimov due to his appointment as head of Kurdamir DEA 02.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 123445,
+            "width": 1802,
+            "height": 1292,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA%2C_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA%2C_Baku%2C_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 574,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA%2C_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA%2C_Baku%2C_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA%2C_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA%2C_Baku%2C_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 574,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA%2C_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA%2C_Baku%2C_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA%2C_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA%2C_Baku%2C_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ilham_Aliyev_received_in_a_video_format_Jabrayilov_due_to_his_appointment_as_head_of_Nizami_DEA,_Habibullayev_due_to_his_appointment_as_head_of_Narimanov_DEA,_Baku,_and_Ibrahimov_due_to_his_appointment_as_head_of_Kurdamir_DEA_02.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=127462856",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-01-06 18:44:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ilham Aliyev received in a video format Jabrayilov due to his appointment as head of Nizami DEA, Habibullayev due to his appointment as head of Narimanov DEA, Baku, and Ibrahimov due to his appointment as head of Kurdamir DEA 02",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "President.az, 2017|Ilham Aliyev received in a video format Jabrayilov due to his appointment as head of Nizami DEA, Habibullayev due to his appointment as head of Narimanov DEA, Baku, and Ibrahimov due to his appointment as head of Kurdamir DEA",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Ilham Aliyev received in a video format Joshgun Jabrayilov due to his appointment as head of Nizami District Executive Authority, Elgin Habibullayev due to his appointment as head of Narimanov District Executive Authority, Baкu, and Elкhan Ibrahimov due to his appointment as head of Kurdamir District Executive Authority",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-02-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://president.az/en/articles/view/55470\">Ilham Aliyev received in a video format Joshgun Jabrayilov due to his appointment as head of Nizami District Executive Authority, Elgin Habibullayev due to his appointment as head of Narimanov District Executive Authority, Baкu, and Elкhan Ibrahimov due to his appointment as head of Kurdamir District Executive Authority</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<table class=\"layouttemplate sourcetemplate\" style=\"width:100%; clear:both; text-align:center; margin:0.5em auto; box-sizing: border-box; padding: 0; border-spacing: 8px; background-color: var(--background-color-neutral-subtle, #f6f7f5); color: var(--color-base, #202122); border: var(--border-subtle, 1px solid #555555);\" dir=\"ltr\" lang=\"en\">\n<tbody><tr>\n<td style=\"text-align:center;\"><figure class=\"mw-halign-left mw-image-border\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:The_Presidential_Press_and_Information_Office_of_Azerbaijan_(official_logo).png\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Presidential_Press_and_Information_Office_of_Azerbaijan_%28official_logo%29.png/120px-The_Presidential_Press_and_Information_Office_of_Azerbaijan_%28official_logo%29.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"70\" height=\"52\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Presidential_Press_and_Information_Office_of_Azerbaijan_%28official_logo%29.png/250px-The_Presidential_Press_and_Information_Office_of_Azerbaijan_%28official_logo%29.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"395\" data-file-height=\"295\"></a><figcaption></figcaption></figure>\n</td>\n<td><b>Press Service of the President of the Republic of Azerbaijan</b>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<i>This file comes from the <b><a rel=\"nofollow\" class=\"external text\" href=\"http://president.az/\">website</a></b> of the <b><a href=\"https://en.wikipedia.org/wiki/President_of_Azerbaijan\" class=\"extiw\" title=\"w:President of Azerbaijan\">President of Azerbaijan</a></b>.</i><br>\n<p>Photographs of architectural works, sculptures or other works of art may be restricted by the copyright of the artist; see <a href=\"//commons.wikimedia.org/wiki/Commons:Azerbaijan#FOP\" class=\"mw-redirect\" title=\"Commons:Azerbaijan\">COM:Azerbaijan#FOP</a> for more information.<br>\n</p>\n<small>The permission letter from the Press Secretary for the President of Azerbaijan is available <a rel=\"nofollow\" class=\"external text\" href=\"http://en.president.az/site_info/about\">here</a>.</small>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://president.az/\">President.az</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 141008182,
+        "ns": 6,
+        "title": "File:Appointment of Senior Officials at the President’s Office, Maldives in November 2023 (15).jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1442189,
+            "width": 5568,
+            "height": 3712,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg/960px-Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg/1920px-Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg/960px-Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg/1920px-Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office%2C_Maldives_in_November_2023_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Appointment_of_Senior_Officials_at_the_President%E2%80%99s_Office,_Maldives_in_November_2023_(15).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=141008182",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-11-18 05:39:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Appointment of Senior Officials at the President’s Office, Maldives in November 2023 (15)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Appointment of Senior Officials at the President’s Office, Maldives in November 2023|Media from Presidency of Maldives (CC-BY-4.0)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Appointment of Senior Officials at the President’s Office in November 2023",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "17 November 2023",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://presidency.mv/PhotoGallery/View/7331\">https://presidency.mv/PhotoGallery/View/7331</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "The President's Office, Maldives",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://presidency.gov.mv\">The President's Office of the Republic of Maldives</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 147658807,
+        "ns": 6,
+        "title": "File:Health Center Appointment card in Nigeria.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2903682,
+            "width": 3024,
+            "height": 4032,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/960px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/1920px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/960px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/1920px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Health_Center_Appointment_card_in_Nigeria.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147658807",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-04-23 13:27:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Health Center Appointment card in Nigeria",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Appointment books|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Health Center  Appointment  card in Nigeria",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-04-23 11:25:29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Beendy234\" title=\"User:Beendy234\">Beendy234</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

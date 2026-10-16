@@ -60,7 +60,7 @@ class ServerTests(unittest.TestCase):
   self.assertEqual(err.exception.code,401)
   err.exception.close()
  def test_all_static_resources_and_photo_urls(self):
-  paths=['/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json']
+  paths=['/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/photo-credits.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json','/assets/flashcards/photo-credits-added.json']
   urls=re.findall(r'"[^"\n]+": "(\./assets/flashcards/[^"\n]+)"',(ROOT/'flashcard-media.js').read_text())
   paths += ['/'+url.removeprefix('./') for url in urls]
   paths += ['/'+quote(str(p.relative_to(ROOT))) for p in (ROOT/'assets/word-icons').glob('*.webp')]

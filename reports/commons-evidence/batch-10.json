@@ -1,0 +1,3857 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 525760,
+        "ns": 6,
+        "title": "File:Afternoon.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Afternoon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Afternoon.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=525760",
+            "sha1": "adc11fc408c8b2c8285dab760aca500847544bec",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-06-08 19:26:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Afternoon",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Fujifilm FinePix A330|Afternoon|Files with no machine-readable source|Self-published work|PD-self|Assumed own work|Photographs taken on 2005-12-19|Sunsets in unidentified locations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Afternoon.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "19 December 2005 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "No machine-readable author provided. <a href=\"//commons.wikimedia.org/wiki/User:MHV\" title=\"User:MHV\">MHV</a> assumed (based on copyright claims).",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1567763,
+        "ns": 6,
+        "title": "File:THSR one-way ticket front and back 20070110.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/THSR_one-way_ticket_front_and_back_20070110.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:THSR_one-way_ticket_front_and_back_20070110.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1567763",
+            "sha1": "4a8de01ba5747175b37896b120a9cc5e71ce9e52",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-08-07 12:32:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "THSR one-way ticket front and back 20070110",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon Coolpix S10|2007-01-10|Front and back|Self-published work|Rail tickets of Taiwan High Speed Rail",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Front and back of Taiwan High Speed Rail one-way tickets from Hsinchu to Taichung.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-01-10 15:19",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Vegafish\" title=\"User:Vegafish\">vegafish</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Creative Commons Attribution ShareAlike 2.5",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.5",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.5",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.5",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.5",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1878375,
+        "ns": 6,
+        "title": "File:Early flight 02562u.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Early_flight_02562u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Early_flight_02562u.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1878375",
+            "sha1": "1766ef801a8bb1a0a24f4791ccbfe4323aca1c23",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-01-28 09:29:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Early flight 02562u",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Jean-François Pilâtre de Rozier|Images from the Library of Congress|François Laurent d'Arlandes|Montgolfier brothers|PD Old|Featured pictures on Wikipedia, English|Commons featured widescreen desktop backgrounds|Featured pictures on Wikipedia, Turkish|1783 in Paris|CC-PD-Mark|Featured pictures in the public domain|Featured pictures of history of France|Featured pictures from the Library of Congress|Assessment tagged pages marked as POTY candidates|Collecting cards of balloons|Uncut card sheets|Featured pictures of art of France",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd|poty",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Les frères Montgolfier (1784) <b>N°. 1</b><br>\n1<sup><small>re</small></sup> expérience aérostatique a Annonay (1783) <b>N°. 2</b><br>\nCharles lance à Paris le premier aérostat (1783) <b>N°. 3</b><br>\nPremier voyage aérien Pilâtre de Rozier et d'Arlandes (1783) <b>N°. 4</b><br>\nPremier voyage aérien par Charles et Robert (1783) <b>N°. 5</b><br>\n<br>\nThe <a href=\"https://en.wikipedia.org/wiki/Montgolfier_brothers\" class=\"extiw\" title=\"w:Montgolfier brothers\">Montgolfier brothers</a> (1784) <b>N°. 1</b><br>\n1st <a href=\"https://en.wikipedia.org/wiki/aerostatics\" class=\"extiw\" title=\"w:aerostatics\">aerostatics</a> flight demonstration at <a href=\"https://en.wikipedia.org/wiki/Annonay\" class=\"extiw\" title=\"w:Annonay\">Annonay</a> (1783) <b>N°. 2</b><br>\n<a href=\"https://en.wikipedia.org/wiki/Jacques_Charles\" class=\"extiw\" title=\"w:Jacques Charles\">Charles</a> launches the first balloon in Paris (1783) <b>N°. 3</b><br>\nFirst aerial trip <a href=\"https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Pil%C3%A2tre_de_Rozier\" class=\"extiw\" title=\"w:Jean-François Pilâtre de Rozier\">Pilâtre de Rozier</a> and <a href=\"https://en.wikipedia.org/wiki/Fran%C3%A7ois_Laurent_d%27Arlandes\" class=\"extiw\" title=\"w:François Laurent d'Arlandes\">d'Arlandes</a> (1783) <b>N°. 4</b><br>\nFirst flight by <a href=\"https://en.wikipedia.org/wiki/Jacques_Charles\" class=\"extiw\" title=\"w:Jacques Charles\">Charles</a> and <a href=\"https://en.wikipedia.org/wiki/Nicolas-Louis_Robert\" class=\"extiw\" title=\"w:Nicolas-Louis Robert\">Robert</a> (1783) <b>N°. 5</b>\n</p><p><b>N°. 6</b> 1<sup>er</sup> essai de direction de ballons, Guyton de Morveau (1784)<br>\n<b>N°. 7</b> Traversée en ballon du Pas-de-Calais par Blanchard et Jefferies (1785)<br>\n<b>N°. 8</b> Mort de Pilâtre de Rozier et de Romain (1785)<br>\n<b>N°. 9</b> Transport de l'Entreprenant de Maubeuge à Charleroi (1794)<br>\n<b>N°. 10</b> L'Entreprenant, ballon monté par Coutelle, bataille de Fleurus (1794)<br>\n<br>\n<b>N°. 6</b> 1st navigation test of balloons, <a href=\"https://en.wikipedia.org/wiki/Louis-Bernard_Guyton_de_Morveau\" class=\"extiw\" title=\"w:Louis-Bernard Guyton de Morveau\">Guyton de Morveau</a> (1784)<br>\n<b>N°. 7</b> Balloon crossing of <a href=\"https://en.wikipedia.org/wiki/Strait_of_Dover\" class=\"extiw\" title=\"w:Strait of Dover\">Strait of Dover</a> by <a href=\"https://en.wikipedia.org/wiki/Jean-Pierre_Blanchard\" class=\"extiw\" title=\"w:Jean-Pierre Blanchard\">Blanchard</a> and <a href=\"https://en.wikipedia.org/wiki/John_Jeffries\" class=\"extiw\" title=\"w:John Jeffries\">Jeffries</a> (1785)<br>\n<b>N°. 8</b> Death of <a href=\"https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Pil%C3%A2tre_de_Rozier\" class=\"extiw\" title=\"w:Jean-François Pilâtre de Rozier\">Pilâtre de Rozier</a> and Pierre Romain (1785)<br>\n<b>N°. 9</b> Moving <i><a href=\"https://en.wikipedia.org/wiki/French_Aerostatic_Corps#Battle_of_Fleurus\" class=\"extiw\" title=\"w:French Aerostatic Corps\">L'Entreprenant</a></i> balloon from <a href=\"https://en.wikipedia.org/wiki/Maubeuge\" class=\"extiw\" title=\"w:Maubeuge\">Maubeuge</a> to <a href=\"https://en.wikipedia.org/wiki/Charleroi\" class=\"extiw\" title=\"w:Charleroi\">Charleroi</a> (1794)<br>\n</p>\n<b>N°. 10</b> <i>L'Entreprenant</i> balloon manned by <a href=\"https://en.wikipedia.org/wiki/Jean-Marie-Joseph_Coutelle\" class=\"extiw\" title=\"w:Jean-Marie-Joseph Coutelle\">Coutelle</a>, <a href=\"https://en.wikipedia.org/wiki/Battle_of_Fleurus_(1794)\" class=\"extiw\" title=\"w:Battle of Fleurus (1794)\">Battle of Fleurus</a> (1794)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "between 1890 and 1900<div style=\"display: none;\">date QS:P,+1500-00-00T00:00:00Z/6,P1319,+1890-00-00T00:00:00Z/9,P1326,+1900-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://hdl.loc.gov/loc.pnp/ppmsca.02562\">ppmsca.02562</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Created/published: Paris : Romanet &amp; Cie., imp. edit.,",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 2130979,
+        "ns": 6,
+        "title": "File:Melbourne Old Post Office (Shopping Mall Interior).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Melbourne_Old_Post_Office_%28Shopping_Mall_Interior%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Melbourne_Old_Post_Office_(Shopping_Mall_Interior).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2130979",
+            "sha1": "d3e2fb0136465b27532fdc77977266535ce0e6c8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-01-11 13:20:59",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Melbourne Old Post Office (Shopping Mall Interior)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon EOS 60D|General Post Office, Melbourne|License migration redundant|Self-published work|May 2007 in Melbourne|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-37.813589",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "144.963328",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Melboiurne\" class=\"extiw\" title=\"en:Melboiurne\">Melbourne</a> old <a href=\"https://en.wikipedia.org/wiki/General_Post_Office,_Melbourne\" class=\"extiw\" title=\"en:General Post Office, Melbourne\">GPO</a> postal hall converted to a shopping mall complex.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-05-20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Donaldytong\" title=\"User:Donaldytong\">Donaldytong</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Attribution of this image author is required.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 3198877,
+        "ns": 6,
+        "title": "File:Late Island.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Late_Island.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Late_Island.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3198877",
+            "sha1": "8a19ea687049aa20308c3544fbf99d27f865e25c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-04-27 13:53:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Late Island",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD NASA|Late Island|Satellite pictures of Tonga|Stratovolcanoes in Tonga|Volcanoes in Tonga in 2004|Andesite volcanoes in Tonga|Basaltic andesite volcanoes in Tonga|ISS Expedition 8 Crew Earth Observations|Files from NASA with known IDs|Aerial photographs of Vavaʻu Islands",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "TONGA/LATE ISLAND",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2004-02-02",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" data-mw-original-href=\"http://nix.larc.nasa.gov/info;jsessionid=2enqkuauu0smw?id=ISS008-E-14031&amp;orgid=3\" href=\"https://nix.larc.nasa.gov/info;jsessionid=2enqkuauu0smw?id=ISS008-E-14031&amp;orgid=3\">http://nix.larc.nasa.gov/info;jsessionid=2enqkuauu0smw?id=ISS008-E-14031&amp;orgid=3</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "NASA Johnson Space Center - Earth Sciences and Image Analysis",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 3806417,
+        "ns": 6,
+        "title": "File:Narita Airport Transport 604 Polar Star.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Narita_Airport_Transport_604_Polar_Star.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Narita_Airport_Transport_604_Polar_Star.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3806417",
+            "sha1": "c3d82c0c04264ad7871b1fe103df47cb79858a40",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-03-31 15:33:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Narita Airport Transport 604 Polar Star",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Olympus E-300|CC-BY-SA-3.0,2.5,2.0,1.0|Narita Airport Transport|License migration redundant|Self-published work|Buses in Japan photographed in 2008|Fuso Aero Bus MS8|Buses at Narita International Airport|Buses at Narita International Airport Terminal 1",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fleet of Narita Airport Transport, overnight highway bus \"Polar Star\" bound for Sendai.\n<ul><li>Model: Mitsubishi Fuso Aero Bus PJ-MS86JP</li>\n<li>License Plate: CBC200 KA1662</li>\n<li>Place: Narita International Airport: Narita City, Chiba Japan</li></ul>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-03-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Comyu",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "GFDL",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 7295324,
+        "ns": 6,
+        "title": "File:Shishkin, Ivan - Morning in a Pine Forest.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Shishkin%2C_Ivan_-_Morning_in_a_Pine_Forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shishkin,_Ivan_-_Morning_in_a_Pine_Forest.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=7295324",
+            "sha1": "a079370b302f09ac68efe1621b11056b80337292",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-09-04 21:28:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">Russian:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"ru\">«Утро в сосновом лесу»</div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>A Morning in a Pine Forest</i></div></div><div style=\"display: none;\">title QS:P1476,ru:\"Утро в сосновом лесу\"</div><div style=\"display: none;\">label QS:Lru,\"Утро в сосновом лесу\"</div><div style=\"display: none;\">label QS:Lde,\"Ein Morgen in einem Kiefernwald\"</div><div style=\"display: none;\">label QS:Lbn,\"মর্নিং ইন এ পাইন ফরেস্ট\"</div><div style=\"display: none;\">label QS:Lfr,\"Un matin dans une forêt de pins\"</div><div style=\"display: none;\">label QS:Lpl,\"Poranek w sosnowym lesie\"</div><div style=\"display: none;\">label QS:Len,\"A Morning in a Pine Forest\"</div><div style=\"display: none;\">label QS:Luk,\"Ранок у сосновому лісі\"</div><div style=\"display: none;\">label QS:Lhe,\"בוקר ביער אורנים\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD-old-100-expired|PD-Art (PD-old-100-expired)|Artworks with Wikidata item|Artworks with known accession number|Hermitage hi-res from a .torrent|CC-PD-Mark|Artworks with accession number from Wikidata|Artworks digital representation of 2D work|Assessment tagged pages marked as POTY candidates|Morning in a Pine Forest",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd|poty",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Ivan_Shishkin\" class=\"extiw\" title=\"w:en:Ivan Shishkin\"><span title=\"Russian landscape painter (1832-1898)\">Ivan Shishkin</span></a></bdi> / <bdi><a href=\"https://en.wikipedia.org/wiki/en:Konstantin_Savitsky\" class=\"extiw\" title=\"w:en:Konstantin Savitsky\"><span title=\"Russian artist (1844-1905)\">Konstantin Savitsky</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1889<div style=\"display: none;\">date QS:P571,+1889-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/Hermitage_Paintings\">Hermitage Torrent</a><br><a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/Hermitage_Paintings\">Hermitage Torrent</a> (<a href=\"https://en.wikipedia.org/wiki/.torrent\" class=\"extiw\" title=\"w:.torrent\">.torrent</a> with <a href=\"https://en.wikipedia.org/wiki/Magnet_URI_scheme\" class=\"extiw\" title=\"w:Magnet URI scheme\">info-hash</a>)",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 10273279,
+        "ns": 6,
+        "title": "File:Date City Hall.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Date_City_Hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Date_City_Hall.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=10273279",
+            "sha1": "36b875dc18d208e40d6d5f50839c209b70fbe92a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-05-08 06:11:41",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Date City Hall",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Olympus E-P1|Date, Hokkaido|Self-published work|PD-self|Town halls in Hokkaido",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Date city hall, Date, Hokkaido, Japan",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-05-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Ozizo's file",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Ozizo",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 13202464,
+        "ns": 6,
+        "title": "File:Delivery entrances at Clyde Shopping Centre - geograph.org.uk - 667477.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Delivery_entrances_at_Clyde_Shopping_Centre_-_geograph.org.uk_-_667477.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Delivery_entrances_at_Clyde_Shopping_Centre_-_geograph.org.uk_-_667477.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13202464",
+            "sha1": "11068bae827a5d71daabfac819faa3357981a28e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-07 18:12:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Delivery entrances at Clyde Shopping Centre - geograph.org.uk - 667477",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Information field template with formatting|Photographs by Stephen Sweeney|United Kingdom photographs taken on 2008-01-21|Clyde Shopping Centre goods delivery",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.905090",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-4.401700",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Delivery entrances at Clyde Shopping Centre Looking along Sutherland Road.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-01-21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/667477\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/9409\">Stephen Sweeney</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Stephen Sweeney",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 13236967,
+        "ns": 6,
+        "title": "File:Get off my land - geograph.org.uk - 690285.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Get_off_my_land_-_geograph.org.uk_-_690285.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Get_off_my_land_-_geograph.org.uk_-_690285.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13236967",
+            "sha1": "4c52d92b9ebb3e1e25404f1e4ae1f70dfb393dcd",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-08 05:03:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Get off my land - geograph.org.uk - 690285",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Fujifilm FinePix F20|Appleby Magna|Images from Geograph Britain and Ireland|Images from Geograph Britain and Ireland needing category review|Information field template with formatting|Roads in Leicestershire|United Kingdom photographs taken on 2007-04-05|Images by John Poyser",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.686900",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.531800",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Get of f my land Whilst not blocking the path, it could be dangerous walking past the machinery.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-04-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/690285\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/8681\">John Poyser</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "John Poyser",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 13555448,
+        "ns": 6,
+        "title": "File:Approaching the final curve on the return trip - geograph.org.uk - 877141.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Approaching_the_final_curve_on_the_return_trip_-_geograph.org.uk_-_877141.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Approaching_the_final_curve_on_the_return_trip_-_geograph.org.uk_-_877141.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=13555448",
+            "sha1": "9d4f21dfc2414d4f522cc7b4ca942f6f4d16259a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-02-21 08:14:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Approaching the final curve on the return trip - geograph.org.uk - 877141",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Geograph Britain and Ireland|Holyhead Breakwater|Information field template with formatting|Images by Eric Jones",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.325740",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-4.642000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Approaching the final curve on the return trip",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-07-04",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/877141\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/7056\">Eric Jones</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Eric Jones",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 15631263,
+        "ns": 6,
+        "title": "File:Water ferry transport venice.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Water_ferry_transport_venice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Water_ferry_transport_venice.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15631263",
+            "sha1": "33eb5be45535aae7a9f165f02de4e1c3273dda42",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-06-27 08:05:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Water ferry transport venice",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Panasonic Lumix DMC-TZ10|Self-published work|Files with coordinates missing SDC location of creation|Car ferries in Venice|Gesuati (Venice) - Facade",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "45.425972",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "12.326442",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Truck ferry in Venice",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-05-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Abxbay\" title=\"User:Abxbay\">Abxbay</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 19695491,
+        "ns": 6,
+        "title": "File:Weekday Cross - geograph.org.uk - 1911543.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Weekday_Cross_-_geograph.org.uk_-_1911543.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Weekday_Cross_-_geograph.org.uk_-_1911543.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=19695491",
+            "sha1": "fe7def26b3a4bdce00fa49b8252f71505ed201fc",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-06-01 12:45:46",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Weekday Cross - geograph.org.uk - 1911543",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Weekday Cross, Nottingham|Images from Geograph Britain and Ireland|United Kingdom photographs taken on 2010-06-12|Images by Lambert",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.951521",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.146220",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Weekday Cross, \n<dl><dd>Data from Geograph:\n<ul><li>Description: The site of the original daily market in Nottingham.</li>\n<li><a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/ICBM%20address\" title=\"en:ICBM address\" class=\"extiw\">ICBM</a>: 52.951521414339, -1.1462197828825</li>\n<li>Location: (about 0 km from) near to Nottingham, Great Britain.</li></ul></dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-06-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"mw:ExtLink nofollow\" href=\"https://www.geograph.org.uk/photo/1911543\" class=\"external text\">geograph.org.uk</a>; transferred by <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Andrewrabbott\" title=\"User:Andrewrabbott\">User:andrewrabbott</a> using <a rel=\"mw:ExtLink\" href=\"https://tools.wmflabs.org/geograph2commons/\" class=\"external text\">geograph_org2commons</a>.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.geograph.org.uk/profile/45714\" class=\"external text\">Lambert</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Creative Commons Attribution Share-alike license 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Lambert",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 22353933,
+        "ns": 6,
+        "title": "File:Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22353933",
+            "sha1": "a078fa2d5cc89396cf19f5c9e0d227985c8e23ee",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-10-25 02:55:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\">The Return of the Prodigal Son\n<div style=\"display: none;\">label QS:Lit,\"Ritorno del figliol prodigo\"</div>\n<div style=\"display: none;\">label QS:Lfr,\"Le Retour du fils prodigue\"</div>\n<div style=\"display: none;\">label QS:Let,\"Kadunud poja tagasitulek\"</div>\n<div style=\"display: none;\">label QS:Lpl,\"Powrót syna marnotrawnego\"</div>\n<div style=\"display: none;\">label QS:Lhe,\"שובו של הבן האובד\"</div>\n<div style=\"display: none;\">label QS:Lnl,\"De terugkeer van de verloren zoon\"</div>\n<div style=\"display: none;\">label QS:Lru,\"Возвращение блудного сына\"</div>\n<div style=\"display: none;\">label QS:Lde,\"Die Rückkehr des verlorenen Sohnes\"</div>\n<div style=\"display: none;\">label QS:Len,\"The Return of the Prodigal Son\"</div>\n<div style=\"display: none;\">label QS:Luk,\"Повернення блудного сина\"</div>\n<div style=\"display: none;\">label QS:Lmk,\"Враќањето на блудниот син\"</div>\n<div style=\"display: none;\">label QS:Les,\"El retorno del hijo pródigo\"</div></div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Return of the Prodigal Son by Rembrandt|Gigapixel images from the Google Art Project|PD-old-100-expired|Featured pictures on Wikipedia, English|PD-Art (PD-old-auto-expired)|Objects with inscriptions in Latin needing translation|Artworks with Wikidata item|Artworks with known accession number|Large images|CC-PD-Mark|Featured pictures in the public domain|Featured pictures of Christian paintings|Featured pictures of paintings by Rembrandt|Artworks digital representation of 2D work|Files from Google Arts & Culture|Artworks with digital representation of different main subject|Featured pictures from the Google Art Project",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|valued|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "59.941670",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "30.315860",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/en:Rembrandt\" title=\"w:en:Rembrandt\" class=\"extiw\"><span title=\"Dutch painter and printmaker (1606–1669)\">Rembrandt</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<a rel=\"mw:WikiLink/Interwiki\" href=\"https://www.wikidata.org/wiki/Q65477437\" title=\"d:Q65477437\" class=\"extiw\"><span title=\"artistic Biblical theme of the prodigal son returning home and being welcomed by his father\">Return of the Prodigal Son</span></a><span typeof=\"mw:Entity\"> </span><span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\" data-mw='{\"caption\":\"Edit this at Wikidata\"}'><a href=\"https://commons.wikimedia.org/wiki/d:Q512755#P180\" title=\"Edit this at Wikidata\"><img resource=\"https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_edit-ltr-progressive.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" alt=\"Edit this at Wikidata\" data-file-width=\"20\" data-file-height=\"20\" data-file-type=\"drawing\" height=\"10\" width=\"10\" class=\"mw-file-element\"></a></span></div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "circa 1668<div style=\"display: none;\">date QS:P571,+1668-00-00T00:00:00Z/9,P1480,Q5727902</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/en:Google%20Arts%20&amp;%20Culture\" title=\"w:en:Google Arts &amp; Culture\" class=\"extiw\"><span title=\"app and website exploring partner museums\">Google Arts <span typeof=\"mw:Entity\">&amp;</span> Culture</span></a> <link rel=\"mw:PageProp/Category\" href=\"./Category:Files_from_Google_Arts_&amp;_Culture\"> — <a rel=\"mw:ExtLink nofollow\" href=\"//www.google.com/culturalinstitute/asset-viewer/5QFIEhic3owZ-A\" class=\"external text\">5QFIEhic3owZ-A</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 28568628,
+        "ns": 6,
+        "title": "File:Weekend (21).JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Weekend_%2821%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Weekend_(21).JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=28568628",
+            "sha1": "d0eab994e7af0cc373d5c918a5acad2fc7c0d149",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-09-25 21:22:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Weekend (21)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D90|Personality rights warning|Media lacking a description|Supported by Wikimedia Deutschland|Festivalsommer 2013|Men with microphones|Items with ticket accreditation|Spack! Festival 2013|Weekend (rapper)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "DateTimeOriginal": {
+                "value": "2013-08-16 17:20:37",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span> (<span lang=\"en\" dir=\"ltr\">Original text: <i><bdi lang=\"\">Selfmade</bdi></i></span>)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "JoeJoeJoe93",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "For taking this photo and licensing it under a free licence a (press) accreditation was required. The photographer had a valid accreditation and has sent it to the <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Volunteer_Response_Team\" title=\"Special:MyLanguage/Commons:Volunteer Response Team\">email response team</a>, it has been archived in the VRTS system. Users with VRTS account can access it <span class=\"plainlinksneverexpand\"><b><a class=\"external text\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2013020410007547\">here</a></b></span>.\nPlease be aware that (press) accreditations are a permission to generally take photos only and do <b>not</b> make any statement about the copyright status of this photo!",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29874371,
+        "ns": 6,
+        "title": "File:Welcome to Midnight.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Welcome_to_Midnight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Welcome_to_Midnight.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29874371",
+            "sha1": "f8f21be785d8a7a095846a036083696afbb39ff9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-11-26 23:40:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Welcome to Midnight",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon PowerShot SX100 IS|September 2008 in Mississippi|Signs in Mississippi (state)|Flickr images reviewed by FlickreviewR|Photographs by Natalie Maynor|Midnight (text)|Midnight, Mississippi",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "I don't know the function of this building.  The door appeared to be locked.  Midnight (Humphreys County), Mississippi.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-09-05 12:02",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/nataliemaynor/2832136884/\">Welcome to Midnight</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/93178668@N00\">NatalieMaynor</a> from Jackson, Mississippi, USA",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 35600855,
+        "ns": 6,
+        "title": "File:EarthQuaker Devices Disaster Transport SR - Advanced Modulated Delay & Reverb Machine - Knobcon 2014.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/EarthQuaker_Devices_Disaster_Transport_SR_-_Advanced_Modulated_Delay_%26_Reverb_Machine_-_Knobcon_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:EarthQuaker_Devices_Disaster_Transport_SR_-_Advanced_Modulated_Delay_%26_Reverb_Machine_-_Knobcon_2014.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=35600855",
+            "sha1": "aeb604ab194013c3fca39b1a53826f657280ee2d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-09-24 02:50:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "EarthQuaker Devices Disaster Transport SR - Advanced Modulated Delay & Reverb Machine - Knobcon 2014",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 550D|EarthQuaker Devices|Flickr images reviewed by FlickreviewR|Digital delay (effects unit)|Digital reverb|Modulation effects (effects unit)|Files from Steve Castellano Flickr stream|Knobcon 2014",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "EarthQuaker Devices <a rel=\"nofollow\" class=\"external text\" href=\"http://earthquakerdevices.com/shop/disastertransportsr/#tab-description\">Disaster Transport SR</a> - Advanced Modulated Delay &amp; Reverb Machine",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-09-13 13:00",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/steveoftheweb/15046126179/\">IMG_2488</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8094600@N02\">Steve Castellano</a> from Toronto",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 37662557,
+        "ns": 6,
+        "title": "File:Public transport timetable od Třebíč public transport at celebrate of 60 years of public transport in Třebíč, Třebíč District.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Public_transport_timetable_od_T%C5%99eb%C3%AD%C4%8D_public_transport_at_celebrate_of_60_years_of_public_transport_in_T%C5%99eb%C3%AD%C4%8D%2C_T%C5%99eb%C3%AD%C4%8D_District.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Public_transport_timetable_od_T%C5%99eb%C3%AD%C4%8D_public_transport_at_celebrate_of_60_years_of_public_transport_in_T%C5%99eb%C3%AD%C4%8D,_T%C5%99eb%C3%AD%C4%8D_District.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=37662557",
+            "sha1": "4db378b49bafbb5b182539750587b095ceeb73b5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-01-04 02:22:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Public transport timetable od Třebíč public transport at celebrate of 60 years of public transport in Třebíč, Třebíč District",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 1000D|Public transport timetables|60 years of public transport in Třebíč|Self-published work|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.215959",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "15.879273",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Public transport timetable od Třebíč public transport at celebrate of 60 years of public transport in Třebíč, Třebíč District.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-09-20 14:27:24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Frettie\" title=\"User:Frettie\">Jiří Sedláček</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 44314570,
+        "ns": 6,
+        "title": "File:Cummins diesel engines, National Road Transport Hall of Fame, 2015.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cummins_diesel_engines%2C_National_Road_Transport_Hall_of_Fame%2C_2015.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cummins_diesel_engines,_National_Road_Transport_Hall_of_Fame,_2015.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=44314570",
+            "sha1": "840f0908a98c8c7166ce7e0d27ddf2a397e81cc7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-10-18 16:10:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cummins diesel engines, National Road Transport Hall of Fame, 2015",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D5100|Cummins diesel engines|Self-published work|Images by Bahnfrend|July 2015 in the Northern Territory|Files with coordinates missing SDC location of creation|Australia photographs taken on 2015-07-05|Interiors of museums in Australia|Collections of the National Road Transport Hall of Fame",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-23.777222",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "133.867750",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A lineup of Cummins diesel engines, on display at the <a href=\"https://en.wikipedia.org/wiki/National_Road_Transport_Hall_of_Fame\" class=\"extiw\" title=\"w:National Road Transport Hall of Fame\">National Road Transport Hall of Fame</a>, Alice Springs, NT, Australia.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-07-05 14:28:13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Bahnfrend\" title=\"User:Bahnfrend\">Bahnfrend</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 52694472,
+        "ns": 6,
+        "title": "File:HP Petrol Bunk 31102016.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/HP_Petrol_Bunk_31102016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:HP_Petrol_Bunk_31102016.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=52694472",
+            "sha1": "9b3ae7d3a180a695d91024b89cddc43baafc2922",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-11-01 12:39:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "HP Petrol Bunk 31102016",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Transport in Telangana|Attribution only license|Self-published work|Hindustan Petroleum petrol stations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A petrol filling station belonging to Hindustan Petroleum",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-10-31 16:56:37",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nikhilb239\" class=\"mw-redirect\" title=\"User:Nikhilb239\">Nikhilb239</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"layouttemplate licensetpl\" lang=\"en\" dir=\"ltr\" cellpadding=\"0\" style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-success-subtle, #dff2eb); color: var(--color-base, #202122); border-width: var(--border-width-thick, 2px); border-style: solid; border-color: var(--border-color-success, #099979); border-spacing: 8px; box-sizing: border-box;\">\n<tbody><tr>\n<td style=\"width:90px;\" rowspan=\"3\"><span typeof=\"mw:File\"><span title=\"©\"><img alt=\"©\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/120px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/250px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"197\" data-file-height=\"197\"></span></span>\n</td>\n<td>The copyright holder of this file, <a href=\"//commons.wikimedia.org/wiki/User:Nikhilb239\" class=\"mw-redirect\" title=\"User:Nikhilb239\">Nikhil B/Wikimedia Commons</a>, allows anyone to use it <b>for any purpose, provided that</b> the copyright holder is properly attributed. Redistribution, derivative work, commercial use, and all other use is permitted.\n</td></tr>\n<tr style=\"text-align:center;\">\n<td><div style=\"font-weight: bold;display:inline;\">Attribution: <div style=\"font-size: larger;display:inline;\" class=\"licensetpl_attr\">Nikhil B/Wikimedia Commons</div></div>\n<p><span class=\"licensetpl_short\" style=\"display:none;\">Attribution</span>\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 53545993,
+        "ns": 6,
+        "title": "File:THE DAY AFTER TOMORROW - panoramio.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/THE_DAY_AFTER_TOMORROW_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:THE_DAY_AFTER_TOMORROW_-_panoramio.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53545993",
+            "sha1": "f501e4a00aec36910d08c3fa270371027b1a617c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-11-26 20:33:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "THE DAY AFTER TOMORROW - panoramio",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Maykop|Panoramio files uploaded by Panoramio upload bot|Panoramio images reviewed by trusted users|Photos from Panoramio|Files with coordinates missing SDC location of creation|Russia photographs taken on 2011-05-22",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.609749",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "40.095162",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "THE DAY AFTER TOMORROW",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 22 May 2011",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://web.archive.org/web/20161023205638/http://www.panoramio.com/photo/53838264\">https://web.archive.org/web/20161023205638/http://www.panoramio.com/photo/53838264</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20161023205639/http://www.panoramio.com/user/5964216?with_photo_id=53838264\">NJCHCI</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 Unported</a> license.</div><div class=\"rlicense-attr\" style=\"font-weight: bold;\">Attribution: <div style=\"display:inline;font-size:larger;\" class=\"licensetpl_attr\">NJCHCI</div></div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>\n<style data-mw-deduplicate=\"TemplateStyles:r901585720\">.mw-parser-output .panoramioreview{width:100%;margin:0.5em 0;background-color:var(--background-color-warning-subtle,#fffff0);padding:5px;border:1px solid var(--border-color-warning,#aa8);color:inherit}.mw-parser-output .panoramioreview-failed{background-color:var(--background-color-error-subtle,#fcc);color:inherit}.mw-parser-output .panoramioreview-passed{background-color:var(--background-color-success-subtle,#efe);color:inherit}</style>\n<table class=\"panoramioreview panoramioreview-passed\" lang=\"en\" dir=\"ltr\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img alt=\"\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Panoramio\" class=\"extiw\" title=\"en:Panoramio\">Panoramio</a></span></b>, was automatically reviewed on 26 November 2016 by <b><a href=\"//commons.wikimedia.org/wiki/User:Panoramio_upload_bot\" title=\"User:Panoramio upload bot\">Panoramio upload bot</a></b>, who confirmed that it was available on Panoramio under the above license on that date.\n</td>\n<td><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Star_and_ring.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/60px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Star_and_ring.svg/120px-Star_and_ring.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"75\" data-file-height=\"75\"></a></span>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "NJCHCI",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 53992487,
+        "ns": 6,
+        "title": "File:Flashing yellow traffic light 3086.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flashing_yellow_traffic_light_3086.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flashing_yellow_traffic_light_3086.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=53992487",
+            "sha1": "1ef5d816723a09ef6d88562fe692bfbd8fb01113",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-12-11 20:07:58",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Flashing yellow traffic light 3086",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 650D|ISO speed rating 800|Uploaded with VicuñaUploader|Self-published work|Exposure time 1/500 sec|Crimea photographs taken on 2016-11-19|Lens focal length 55 mm|2016 in Saky|Traffic signals in Crimea|Traffic signals with light-emitting diodes|F-number f/13|Road signs equipped with flashing signals|Solar panel-powered devices|Pedestrian crossing signs with yellow fluorescent borders in Crimea",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Flashing yellow traffic light powered with a solar panel in front of a pedestian crossing near a school",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "19 November 2016 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Well-Informed_Optimist\" title=\"User:Well-Informed Optimist\">Well-Informed Optimist</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 71768960,
+        "ns": 6,
+        "title": "File:MOTC Driving Licence (cars) 20180819.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/MOTC_Driving_Licence_%28cars%29_20180819.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:MOTC_Driving_Licence_(cars)_20180819.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=71768960",
+            "sha1": "5076f9a303a78483f3a1180ce83c11b7c4eceeb6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-08-19 14:42:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "MOTC Driving Licence (cars) 20180819",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Driver's licenses of Taiwan|Highway Bureau, MOTC|Official text of the Republic of China|PD-ROC-official",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Driving Licence (cars) from Directorate General of Highways, MOTC, ROC. Version: December 2012.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-08-19 22:27:46",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Ch3690&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ch3690 (page does not exist)\">Ch3690</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 80974983,
+        "ns": 6,
+        "title": "File:Circular knitted clothing pieces - Body shaping shirt and tights - tights described as opaque - Emjay Rosso.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Circular_knitted_clothing_pieces_-_Body_shaping_shirt_and_tights_-_tights_described_as_opaque_-_Emjay_Rosso.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Circular_knitted_clothing_pieces_-_Body_shaping_shirt_and_tights_-_tights_described_as_opaque_-_Emjay_Rosso.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=80974983",
+            "sha1": "41774ce4418381df3a4677921fe77be60a3819e9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-02 20:51:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Circular knitted clothing pieces - Body shaping shirt and tights - tights described as opaque - Emjay Rosso",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony ILCE-7M3|Emjay Rosso|Pantyhose|Personality rights warning|Knit fabrics|Taken with Sony FE 50mm F1.4 ZA|Self-published work|Images with extracted images|Women with tattoos|Full consent|Black tights|Pictures by Tobias \"ToMar\" Maier|Body shaping garments|Women wearing tights|Lace clothing|Clothing with integrated brassieres|Hygienic gussets|Body shaping tights",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Both pieces are constructed to usually require no addition underwear under them. Meaning neither bra or panties and thus worn without for this photograph. The shirt consists of three circular knitted parts. The sleeves have a open work lace pattern. The torso an wide area around the belly to suck it in and additional support under the breast. At least the two legs of the tights are circular knitted. They offer leg support and a additional support band to lift the button. The gusset is lined with cotton on the inside to provide wear comfort on the skin. - Image take with gridded 1.5m Oktabox. Modelled by Emjay Rosso.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-07-14 18:08:18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Tobias_ToMar_Maier\" title=\"User:Tobias ToMar Maier\">Tobias ToMar Maier</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Tobias \"ToMar\" Maier, the copyright holder of this work, hereby publishes it under the following license:",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Tobias \"ToMar\" Maier",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 81191698,
+        "ns": 6,
+        "title": "File:250 Gloucester Courts and a bus stop, Christchurch, New Zealand.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/250_Gloucester_Courts_and_a_bus_stop%2C_Christchurch%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:250_Gloucester_Courts_and_a_bus_stop,_Christchurch,_New_Zealand.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81191698",
+            "sha1": "5a7ca00d44e724c4ef1131f413ece9a2bb64f93a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-10 09:35:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "250 Gloucester Courts and a bus stop, Christchurch, New Zealand",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Gloucester Street, Christchurch|Buildings in Christchurch|Self-published work|Supported by Wikimedia Deutschland|Images by User:Podzemnik|Files with coordinates missing SDC location of creation|Images of New Zealand by User:Podzemnik|New Zealand photographs taken on 2019-08-08|Images by User:Podzemnik (supported by Wikimedia Germany)|Bus transport in Christchurch",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-43.529942",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "172.644822",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "250 Gloucester Courts and a bus stop, Christchurch, New Zealand",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-08-08 16:34:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Podzemnik\" title=\"User:Podzemnik\">Michal Klajban</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 87676515,
+        "ns": 6,
+        "title": "File:Traffic in Dar es Salaa City.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Traffic_in_Dar_es_Salaa_City.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Traffic_in_Dar_es_Salaa_City.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=87676515",
+            "sha1": "743993f47c78f4cbf7b5137337ed1bf03c55d2c6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-03-04 15:47:09",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Traffic in Dar es Salaa City",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Transport in Dar es Salaam|Images from Wiki Loves Africa 2020|Self-published work|Images from Wiki Loves Africa 2020 to check|Uploaded via Campaign:wlafrica|Maintenance for Wiki Loves Africa 2020|Images from Wiki Loves Africa 2020 in Tanzania",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Traffic congestion is one of the major problems facing Dar es Salaam City and is attributed by a number of factors including rapid population increase, inadequate and poor road infrastructure, city structure, rapid increase in number of cars and lack of physical plan to control city development. The city is already implementing a number of strategies in order to minimize traffic congestion. However, many of the strategies are focusing on improving the capacity of roads in terms of increasing number of lanes, proposing new overpasses and underpasses at the main road intersections and improving public transport. These strategies cannot fully overcome the congestion problems in Dar es Salaam on their own unless efforts are made to redistribute services and community infrastructure. The latter can be achieved through physical planning, which has the potential of influencing trip generation and travel patterns and traffic volume in specific roads. Therefore to minimize traffic congestion in the Dar es Salaam both strategies for improving road capacity, public transport and physical planning solutions ought to be applied together.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-07-26 00:55:20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Erasmus_Kamugisha\" title=\"User:Erasmus Kamugisha\">Erasmus Kamugisha</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 88210810,
+        "ns": 6,
+        "title": "File:Taxi de transport à N'Djamena.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Taxi_de_transport_%C3%A0_N%27Djamena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Taxi_de_transport_%C3%A0_N%27Djamena.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=88210810",
+            "sha1": "d7478fd484ef625b4360426b7c1ad29d02789f0d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-03-17 13:44:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Taxi de transport à N'Djamena",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Wiki Loves Africa 2020|Self-published work|Taxis in Chad|Images from Wiki Loves Africa 2020 to check|Uploaded via Campaign:wlafrica|Maintenance for Wiki Loves Africa 2020|Images from Wiki Loves Africa 2020 in Chad|Transport in N'Djamena",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Taxi de transport à farcha, N'djamena",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-03-16 11:51:54",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Aze_Aboulmali?action=edit&amp;redlink=1\" title=\"User:Aze Aboulmali (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Aze Aboulmali\"]}}'>Aze Aboulmali</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 92164692,
+        "ns": 6,
+        "title": "File:Transport Arrival at STP 6080.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Transport_Arrival_at_STP_6080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Transport_Arrival_at_STP_6080.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92164692",
+            "sha1": "4a42c01d93f2237b43ca0997cb08deb26e780722",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-07-12 14:01:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Transport Arrival at STP 6080",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|London photographs taken on 2020-07-01|Railway photographs taken on 2020-07-01|July 2020 in rail transport in London|Trains of Southeastern (Govia) on High Speed 1|British Rail Class 395s of Southeastern (Govia)|British Rail Class 395s in Southeastern (Govia) Highspeed livery|British Rail Class 395s at St Pancras railway station|2020 at St Pancras railway station",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "July 8th  HS1 Javelin from Faversham with 23 passengers arriving at St Pancras Station",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-07-01 09:41:36",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:ClemRutter\" title=\"User:ClemRutter\">ClemRutter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 106767426,
+        "ns": 6,
+        "title": "File:UK Pedestrian Crossing Button.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/UK_Pedestrian_Crossing_Button.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:UK_Pedestrian_Crossing_Button.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=106767426",
+            "sha1": "f89e0de814536aa0f6c4ed83cc2d9548b333dd02",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-06-19 19:05:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "UK Pedestrian Crossing Button",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Pedestrian crossings in the United Kingdom|June 2021 in Norfolk, England|Files with coordinates missing SDC location of creation (52° N, 1° E)|Street furniture in Norwich|Mile End Road, Norwich",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.619044",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "1.269325",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A pedestrian crossing button seen on Mile End Road in Norwich, United Kingdom.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-06-19 17:41:46",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Sebastiandoe5\" title=\"User:Sebastiandoe5\">Sebastiandoe5</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 113329327,
+        "ns": 6,
+        "title": "File:039 Bahnhof Winterthur - railway station departure board in Winterthur, Switzerland.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/039_Bahnhof_Winterthur_-_railway_station_departure_board_in_Winterthur%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:039_Bahnhof_Winterthur_-_railway_station_departure_board_in_Winterthur,_Switzerland.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=113329327",
+            "sha1": "ebdcd9733a3d84172b688fc096fb2e10b431e09b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-12-13 16:01:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "039 Bahnhof Winterthur - railway station departure board in Winterthur, Switzerland",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Winterthur railway station|Self-published work|Main train departure boards in Switzerland|Images by Tupungato|Split-flap displays at train stations in Switzerland|2008 in rail transport in Switzerland|2008 in Winterthur|Switzerland photographs taken on 2008-08-11|August 2008 in the canton of Zürich",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Railway station in Winterthur, Switzerland. Train departure board. Split-flap display.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-08-11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Marek Ślusarczyk (<a href=\"//commons.wikimedia.org/wiki/User:Tupungato\" title=\"User:Tupungato\">Tupungato</a>) <a rel=\"nofollow\" class=\"external text\" href=\"https://www.pond5.com/artist/citylife#1/2176\">Photo portfolio</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Outside Wikipedia projects you <b>must</b> attribute the work to the author: <b>Marek Ślusarczyk</b> or <a rel=\"nofollow\" class=\"external text\" href=\"http://www.microstock.pl\"><b>www.microstock.pl</b></a>. In case of any doubts feel free to e-mail me: <i>marek (at) microstock pl</i>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Tupungato\" title=\"User:Tupungato\">Marek Slusarczyk</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 113439291,
+        "ns": 6,
+        "title": "File:12 Months of the Year in Thai Sign Language Written in Sutton SignWriting.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/12_Months_of_the_Year_in_Thai_Sign_Language_Written_in_Sutton_SignWriting.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:12_Months_of_the_Year_in_Thai_Sign_Language_Written_in_Sutton_SignWriting.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=113439291",
+            "sha1": "5c2f250de7090aa4c2f2e113215ea4a43b9cf16f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-12-18 00:44:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "12 Months of the Year in Thai Sign Language Written in Sutton SignWriting",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Months|Self-published work|ปฏิทินสุริยคติไทย|Thai Sign Language in SignWriting",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The names of the twelve months in Thai sign language are represented by unique hand gestures, with one hand showing a D (ด) sign from the initial consonant of the word เดือน (month) in Thai spoken language, and the other showing the ordinal number sign of each month.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-12-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Sutthikhun.pha&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Sutthikhun.pha (page does not exist)\">Sutthikhun Phaengphongsai</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 114538991,
+        "ns": 6,
+        "title": "File:National Western Stock Show transport bus at 5680 Franklins Street parking lot.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/National_Western_Stock_Show_transport_bus_at_5680_Franklins_Street_parking_lot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:National_Western_Stock_Show_transport_bus_at_5680_Franklins_Street_parking_lot.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=114538991",
+            "sha1": "90bf28541a061932d7b6083a63e1a34d0462286c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-01-22 19:37:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "National Western Stock Show transport bus at 5680 Franklins Street parking lot",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Transport in Adams County, Colorado|Buses in Colorado|Brown buses|Parking lots in Colorado|Flickr images missing SDC creator|Flickr images missing SDC source of file|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|National Western Stock Show|Shuttle buses in the United States",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "39.780590",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-104.972305",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "National Western Stock Show transport bus at 5680 Franklins Street parking lot",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-01-25 15:28:51",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/siberianluck/2219426617/\">https://www.flickr.com/photos/siberianluck/2219426617/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Ben Mason",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 129329765,
+        "ns": 6,
+        "title": "File:How to get away with murder in Banbury - geograph.org.uk - 4492763.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/How_to_get_away_with_murder_in_Banbury_-_geograph.org.uk_-_4492763.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:How_to_get_away_with_murder_in_Banbury_-_geograph.org.uk_-_4492763.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129329765",
+            "sha1": "8f1cd6d5b32dbb331a15ab89dbd4609c73ad2bc0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-06 21:58:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "How to get away with murder in Banbury - geograph.org.uk - 4492763",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Banbury|Images from Geograph Britain and Ireland",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "52.061058",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.329143",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "How to get away with murder in Banbury <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:How_to_get_away_with_murder_in_Banbury_-_geograph.org.uk_-_4492763.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-10-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/4492763\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:How_to_get_away_with_murder_in_Banbury_-_geograph.org.uk_-_4492763.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/39302\">Jaggery</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:How_to_get_away_with_murder_in_Banbury_-_geograph.org.uk_-_4492763.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>How to get away with murder in Banbury</i> by Jaggery",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 144044170,
+        "ns": 6,
+        "title": "File:Poland of to-day and yesterday 1913 (117808678).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Poland_of_to-day_and_yesterday_1913_%28117808678%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Poland_of_to-day_and_yesterday_1913_(117808678).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=144044170",
+            "sha1": "e8e424e3d4e84ccaa7693f9e0affadc0d5c50359",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-01-15 23:19:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nPoland of to-day and yesterday : a review of its history, past and present, and of the causes which resulted in its partition, together with a survey of its social, political, and economic conditions, to-day</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images contributed by the National Library in Warsaw|Patrimonium (project)|PD-old-100-expired|CC-PD-Mark|Files from Polona|PD-old missing SDC copyright status|Poland of to-day and yesterday (1913)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nNevin O Winter</div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<i>Adres wydawniczy</i>: Boston : L. C. Page, 1913 [rz.]<br><i>Opis fizyczny</i>: XII, 349 s., [48] k. tabl. : mapa ; 23 cm",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This file comes from <a rel=\"nofollow\" class=\"external text\" href=\"https://polona.pl/\">Polona Digital Library</a> and is available under the URL: <a rel=\"nofollow\" class=\"external text\" href=\"https://polona2.pl/item/poland-of-to-day-and-yesterday-a-review-of-its-history-past-and-present-and-of-the,MTE3NDM3OTIz/88/\">https://polona2.pl/item/poland-of-to-day-and-yesterday-a-review-of-its-history-past-and-present-and-of-the,MTE3NDM3OTIz/88/</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>The author died in 1913, so this work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 100 years or fewer</b>.\n</p>\n<hr>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.\n</p>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 146230597,
+        "ns": 6,
+        "title": "File:Tram transport in camagüey scheme small.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Tram_transport_in_camag%C3%BCey_scheme_small.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tram_transport_in_camag%C3%BCey_scheme_small.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146230597",
+            "sha1": "052cd426330065cd8d2af0b292919812295065a5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-03-12 01:59:19",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Tram transport in camagüey scheme small",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Tram transport in Camagüey|Schemes by Nord794ub|History of Camagüey",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "tram transport in camagüey scheme small",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-03-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nord794ub\" title=\"User:Nord794ub\">Nord794ub</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 146886525,
+        "ns": 6,
+        "title": "File:Hardwick Clothes is an American clothing manufacturer headquartered in Cleveland, Tennessee.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Hardwick_Clothes_is_an_American_clothing_manufacturer_headquartered_in_Cleveland%2C_Tennessee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hardwick_Clothes_is_an_American_clothing_manufacturer_headquartered_in_Cleveland,_Tennessee.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146886525",
+            "sha1": "933cc06392948e8f5dbc2ab8bd973fc94745a970",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-03-29 15:50:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hardwick Clothes is an American clothing manufacturer headquartered in Cleveland, Tennessee",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Clothing manufacturers|Economy of Tennessee|Cleveland, Tennessee|Self-published work|Signs in Bradley County, Tennessee|March 2024 in Tennessee",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Hardwick Clothes is an American clothing manufacturer headquartered in Cleveland, Tennessee",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-03-29 11:45:00",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hkeely\" title=\"User:Hkeely\">Harrison Keely</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 163163624,
+        "ns": 6,
+        "title": "File:Reco transport platform at redevelopment site - geograph.org.uk - 7513080.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Reco_transport_platform_at_redevelopment_site_-_geograph.org.uk_-_7513080.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Reco_transport_platform_at_redevelopment_site_-_geograph.org.uk_-_7513080.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=163163624",
+            "sha1": "f31bece6c4e91aa7d71a3f3aba7cea9875b44cfa",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-04-04 08:31:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Reco transport platform at redevelopment site - geograph.org.uk - 7513080",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Stoke-upon-Trent|Images from Geograph Britain and Ireland",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.006315",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-2.180876",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Reco transport platform at redevelopment site <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Reco_transport_platform_at_redevelopment_site_-_geograph.org.uk_-_7513080.jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-05-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/7513080\">Geograph Britain and Ireland</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Reco_transport_platform_at_redevelopment_site_-_geograph.org.uk_-_7513080.jpg#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/41405\">Christine Johnstone</a> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Reco_transport_platform_at_redevelopment_site_-_geograph.org.uk_-_7513080.jpg#P170\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<i>Reco transport platform at redevelopment site</i> by Christine Johnstone",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 174775921,
+        "ns": 6,
+        "title": "File:HK KTD KW 觀塘 Kwun Tong Apm shopping mall cinema Palace apm ticket order machine September 2025 Px3 01.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/HK_KTD_KW_%E8%A7%80%E5%A1%98_Kwun_Tong_Apm_shopping_mall_cinema_Palace_apm_ticket_order_machine_September_2025_Px3_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:HK_KTD_KW_%E8%A7%80%E5%A1%98_Kwun_Tong_Apm_shopping_mall_cinema_Palace_apm_ticket_order_machine_September_2025_Px3_01.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=174775921",
+            "sha1": "888348ca2cbaa5b7239f3f84970dd73cbab7a4c7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-09-09 23:52:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "HK KTD KW 觀塘 Kwun Tong Apm shopping mall cinema Palace apm ticket order machine September 2025 Px3 01",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Files with coordinates missing SDC location of creation|Photographs by Anonymous Hong Kong Photographer 1|Hong Kong photographs taken on 2025-09-07|September 2025 in Kwun Tong|Shopping malls in Kwun Tong|2025 in Apm, Hong Kong|Cinemas in Hong Kong in 2025|Exit 8|Palace APM in 2025|2025 films in Hong Kong",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "22.312553",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "114.225158",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "File:HK KTD KW 觀塘 Kwun Tong Apm shopping mall cinema Palace apm ticket order machine in September 2025",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-09-07 12:35:23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:SZeKim_YimmutAPM\" title=\"User:SZeKim YimmutAPM\">SZeKim YimmutAPM</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 196212083,
+        "ns": 6,
+        "title": "File:Australia Post Parcel Lockers in Indooroopilly Shopping Centre, Queensland, Australia, 2026.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Australia_Post_Parcel_Lockers_in_Indooroopilly_Shopping_Centre%2C_Queensland%2C_Australia%2C_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Australia_Post_Parcel_Lockers_in_Indooroopilly_Shopping_Centre,_Queensland,_Australia,_2026.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=196212083",
+            "sha1": "3179bb03c2f806cffb48f6bfe37cecd01108f95b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-07-26 01:03:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Australia Post Parcel Lockers in Indooroopilly Shopping Centre, Queensland, Australia, 2026",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Indooroopilly Shopping Centre|Self-published work|Files with coordinates missing SDC location of creation|Photographs by Kgbo taken in 2026|Photos by User:Kgbo|Australia Post Parcel Lockers in Australia|July 2026 in Brisbane|Australia photographs taken on 2026-07-13",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-27.499081",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "152.972458",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Australia Post Parcel Lockers in Indooroopilly Shopping Centre, Queensland, Australia, 2026",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-07-13 17:08:17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kgbo\" title=\"User:Kgbo\">Chris Olszewski</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 199692864,
+        "ns": 6,
+        "title": "File:Moscow Metro 8535 2026-09 Moscow transport museum 1789490359.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Moscow_Metro_8535_2026-09_Moscow_transport_museum_1789490359.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Moscow_Metro_8535_2026-09_Moscow_transport_museum_1789490359.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=199692864",
+            "sha1": "749ea0ac5472812802b438ade343a009a4a001f5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-09-17 18:47:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Moscow Metro 8535 2026-09 Moscow transport museum 1789490359",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|ISO speed rating 80|Creative Commons Attribution 4.0 missing SDC copyright license|Creative Commons Attribution missing SDC copyright status|Self-published work missing SDC copyright license|Taken on missing SDC inception|81-717/714 in Moscow Metro|Number 8535 on rail vehicles|F-number f/2|Uploaded with Placejpg|Lens focal length 5 mm|Photographs by Artem Svetlov/Moscow/Rail vehicles|Moscow photographs taken on 2026-09-15|Railway photographs taken on 2026-09-15|Moscow transport museum|September 2026 in rail transport in Moscow|Photographs by Artem Svetlov/2026-09-15 Moscow transport museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.772192",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "37.667023",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Moscow Metro 8535 at Moscow transport museum <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Moscow_Metro_8535_2026-09_Moscow_transport_museum_1789490359.JPG#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 15 September 2026, 16:39:19 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span> <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Moscow_Metro_8535_2026-09_Moscow_transport_museum_1789490359.JPG#P7482\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q110446558\" class=\"extiw\" title=\"d:Q110446558\">Artyom Svetlov</a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Artem Svetlov",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

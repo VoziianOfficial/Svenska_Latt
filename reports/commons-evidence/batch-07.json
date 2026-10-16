@@ -1,0 +1,3563 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 5057005,
+        "ns": 6,
+        "title": "File:Brain injury with herniation MRI.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Brain_injury_with_herniation_MRI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Brain_injury_with_herniation_MRI.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5057005",
+            "sha1": "6e62e4f18cd87d010f2af48e4e452fd2b2b16e9b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-10-24 07:07:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Brain injury with herniation MRI",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Pages using PMID magic links|MRI of traumatic brain injuries|MRI of brain herniation|MRI of cerebral infarction",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "MRI of patient with brain trauma and resultant brain herniation.  Caption reads, \"Postoperative MRI showing evidence of injury due to herniation.\" Accompanying text reads, \"Post-operative magnetic resonance imaging (MRI) was performed on admission day five that confirmed an acute infarct in the posterolateral left temporal lobe with expected evolution of parenchymal contusions as well as infarcts in the splenium of the corpus callosum, thalami (left thalamus) and medial right occipital lobe.\"",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Published: \t2 October 2008",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Rehman T, Ali R, Tawil I, Yonas H (2008). \"Rapid progression of traumatic bifrontal contusions to transtentorial herniation: A case report\". Cases journal 1 (1): 203. doi:10.1186/1757-1626-1-203. <a class=\"external mw-magiclink-pmid\" rel=\"nofollow\" href=\"//www.ncbi.nlm.nih.gov/pubmed/18831756?dopt=Abstract\">PMID 18831756</a>.  <a rel=\"nofollow\" class=\"external free\" href=\"http://www.casesjournal.com/content/1/1/203\">http://www.casesjournal.com/content/1/1/203</a> PMC 2566562",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Rehman T, Ali R, Tawil I, Yonas H",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/2.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.0/deed.en\">Attribution 2.0 Generic</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/2.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 2.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 2.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 8400611,
+        "ns": 6,
+        "title": "File:Lip Lift Before & After.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Lip_Lift_Before_%26_After.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lip_Lift_Before_%26_After.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8400611",
+            "sha1": "dbe28948404e6167a427149e72a16b7f7cfe4780",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-11-10 23:49:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lip Lift Before & After",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Plastic surgery|License migration redundant|Self-published work|Before-and-after photographs of human body parts|Human lips",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Bull Horn's Lip Lift",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Otto_Placik\" title=\"User:Otto Placik\">Otto Placik</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Otto J. Placik",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 8544683,
+        "ns": 6,
+        "title": "File:Male forehead-01 ies.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Male_forehead-01_ies.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Male_forehead-01_ies.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8544683",
+            "sha1": "20487d9fda5b7231d058a5635b7166bb5430a5fa",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-14 22:14:19",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Male forehead-01 ies",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Foreheads|License migration redundant|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Forehead of a 27-year-old man",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-11-20 15:55:09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Frank Vincentz",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "GFDL (self made)",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 16128569,
+        "ns": 6,
+        "title": "File:Tooth and Face Section Page 81.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Tooth_and_Face_Section_Page_81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tooth_and_Face_Section_Page_81.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16128569",
+            "sha1": "930a999fc1dfd8d353ab4a274e35a8c47f7511f7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-08-17 05:28:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Tooth and Face Section Page 81",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Medical illustrations|PD US expired|Flickr images uploaded by Faebot|The Human Body and Health|Images by Sue Clark",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": " \n<p>From the book, \"The Human Body and Health Revised\" by Alvin Davison, published in 1908 by Alvin Davison.  This book has a copyright of 1908 by Alvin Davison and one in 1924 by American Book Company.  The first copyright was pre-1923 and the copyright was never renewed; therefore, the book should be in the public domain\n</p><p>Flickr data on 2011-08-17:\n</p>\n<ul><li>Tags: vintage, book, medical, image, illustration, drawing, public domain, copyright free</li>\n<li>License: CC BY 2.0</li>\n<li>User: perpetualplum Sue Clark</li></ul>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-09-25 10:29:42",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/Flickr\" class=\"mw-redirect\" title=\"Flickr\">Flickr</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/14277117@N03/3953866948\">Tooth and Face Section Page 81</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/14277117@N03\">Sue Clark</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Public domain works must be out of copyright in both the United States and in the source country of the work in order to be hosted on the Commons. If the work is not a U.S. work, the file <b>must</b> have an additional <a href=\"//commons.wikimedia.org/wiki/Commons:Copyright_tags\" title=\"Commons:Copyright tags\">copyright tag</a> indicating the copyright status in the source country.<br><b>Note:</b> This tag should <i>not</i> be used for sound recordings.<span style=\"display:none;\"><span class=\"licensetpl_short\">PD-1923</span><span class=\"licensetpl_long\"><a href=\"//commons.wikimedia.org/wiki/Public_domain\" class=\"mw-redirect\" title=\"Public domain\">Public domain</a> in the United States</span><span class=\"licensetpl_link\">//commons.wikimedia.org/wiki/File:Tooth_and_Face_Section_Page_81.jpg</span></span>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 16964864,
+        "ns": 6,
+        "title": "File:Anterior view of human male, retouched.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Anterior_view_of_human_male%2C_retouched.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Anterior_view_of_human_male,_retouched.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16964864",
+            "sha1": "95872f6de0c9c351b8d87eea4021f8917732c60b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-02-25 04:41:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Anterior view of human male, retouched",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Personality rights warning|Barefoot men|Self-published work|Images with extracted images|Nude men with brown hair|Nude men with white background|Photographs of the male human body|Nude men in anatomical position|Nude men in Sweden|Nude standing men, anatomy|Nude men in the 2010s|Nude young men with flaccid penis|Portrait photographs of nude men with white background|Fully nude men",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Model name: Michael Hellman\n<p><br>At time of photograph:\n</p>\n<ul><li>Age: 34</li>\n<li>Height: 178 cm</li>\n<li>Weight: 65 kg</li>\n<li>BMI: 20.5</li></ul>\nBlemishes: Bruise at left part of chin, <a href=\"https://en.wikipedia.org/wiki/Belt_(clothing)\" class=\"extiw\" title=\"en:Belt (clothing)\">belt</a> mark.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-09-29",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Taken at City Studios in Stockholm (www.stockholmsfotografen.se), September 29, 2011, with assistance from KYO (The organisation of life models) in Stockholm. Both models have consented to the licence of the image, and its usage in Wikipedia. Image uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Mikael_H%C3%A4ggstr%C3%B6m\" title=\"User:Mikael Häggström\">Mikael Häggström</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 17880211,
+        "ns": 6,
+        "title": "File:Anterior view of human female, retouched - transparent.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Anterior_view_of_human_female%2C_retouched_-_transparent.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Anterior_view_of_human_female,_retouched_-_transparent.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=17880211",
+            "sha1": "452a1110845c6c949d26a4b7e2143c942b85bbbe",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-01-02 09:59:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Anterior view of human female, retouched - transparent",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Personality rights warning|Self-published work|Nude standing women with shaved genitalia|Nude women in anatomical position|Nude women with blond hair|Derivative versions|Nude women with transparent background|Red toe nail polish|Nude women wearing nail polish|Photographs of the female human body|Nude standing women, anatomy|Barefoot nude women",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Model name: (preferred not to be stated)\n<p><br>At time of photograph:\n</p>\n<ul><li>Age: 40</li>\n<li>Height: 166 cm</li>\n<li>Weight: 47 kg</li>\n<li>BMI: 17.1</li></ul>\nOrnaments: Ear piercing, ring on left ring finger (not in retouched images), nail polish on toe nails. There is some tilting of the upper trunk towards the left of the body, which may be positional or anatomical.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-01-02",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>. This file was derived from:  <a href=\"//commons.wikimedia.org/wiki/File:Front_view_of_a_woman.jpg\" title=\"File:Front view of a woman.jpg\">Front view of a woman.jpg</a><br>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Taken at City Studios in Stockholm (www.stockholmsfotografen.se), September 29, 2011, with assistance from KYO (The organisation of life models) in Stockholm. Both models have consented to the licence of the image, and its usage in Wikipedia. Image uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Mikael_H%C3%A4ggstr%C3%B6m\" title=\"User:Mikael Häggström\">Mikael Häggström</a>.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 23369777,
+        "ns": 6,
+        "title": "File:Hip bone - close-up - lateral view (right hip bone).png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hip_bone_-_close-up_-_lateral_view_%28right_hip_bone%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hip_bone_-_close-up_-_lateral_view_(right_hip_bone).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=23369777",
+            "sha1": "8d5c10d67ef20d88fa24851ca42b556014d6c055",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-12-27 22:41:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hip bone - close-up - lateral view (right hip bone)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Human hip bone",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Male right <a href=\"https://en.wikipedia.org/wiki/Hip_bone\" class=\"extiw\" title=\"en:Hip bone\">hip bone</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-12-28",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Anatomography\" class=\"extiw\" title=\"en:Anatomography\">en:Anatomography</a> (<a rel=\"nofollow\" class=\"external text\" href=\"http://lifesciencedb.jp/bp3d/?tp_ap=av%3D09051901%26iw%3D900%26ih%3D900%26bcl%3DFFFFFF%26cf%3D0%26hf%3D0%26model%3Dbp3d%26bv%3D3.0%26tn%3Dconventional%26dt%3D20121228073509%26cx%3D0.3325%26cy%3D-971.0515%26cz%3D863.0695%26tx%3D0.3325%26ty%3D-82.9955%26tz%3D863.0695%26ux%3D0%26uy%3D0%26uz%3D1%26zm%3D2.4%26cm%3DN%26oid001%3DFMA16586%26ocl001%3Df0d2a0%26osz001%3DZ%26oop001%3D1.0%26orp001%3DS%26odcp001%3D0%26oid002%3DFMA16587%26ocl002%3Df0d2a0%26osz002%3DZ%26oop002%3D1.0%26orp002%3DS%26odcp002%3D0%26dpl%3D0%26dpod%3D1%26dpol%3D0%26crd%3Dbp3ddd\">setting page</a> of this image)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Anatomography",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.1 jp",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.1 jp",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.1-jp",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 23603548,
+        "ns": 6,
+        "title": "File:Chiseled eyebrows.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chiseled_eyebrows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chiseled_eyebrows.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=23603548",
+            "sha1": "10e22281fc51db300156eded64581af9467ee571",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-01-05 08:23:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Chiseled eyebrows",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Eyebrows|GFDL|Taken with iPhone 4S|License migration redundant|Self-published work|Male human faces|Uploaded with en.wp upload wizard",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Well sculpted eyebrows can be used to convey powerful emotions through body language and thus can be be a very attractive personal quality.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-09-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Spain, hiking with my friend.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Barker_Mark&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Barker Mark (page does not exist)\">Barker Mark</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 27585503,
+        "ns": 6,
+        "title": "File:Accident Relief train at Shoranur Railway Station.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Accident_Relief_train_at_Shoranur_Railway_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Accident_Relief_train_at_Shoranur_Railway_Station.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=27585503",
+            "sha1": "a6d48fc5e41e74491ec43a90d61a9e741901efd9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-08-06 04:25:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Accident Relief train at Shoranur Railway Station",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSC-W70|Healthcare in Kerala|Disasters and accidents in Kerala|Shoranur Junction railway station|Flickr images reviewed by FlickreviewR|Flickr images missing SDC source of file|Ambulance trains of India|Flickr images missing SDC Flickr photo ID|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Accident Relief train at Shoranur Railway Station, Kerala",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-12-14 16:22:26",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/srikumar/398173087/sizes/o/in/photostream/\">https://www.flickr.com/photos/srikumar/398173087/sizes/o/in/photostream/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "sri_the_quack",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 35786374,
+        "ns": 6,
+        "title": "File:Heart body far.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Heart_body_far.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Heart_body_far.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=35786374",
+            "sha1": "442e8f16aef601385086c84a8a165e431073242d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-09-30 07:34:43",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Heart body far",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Anatomy of the human heart",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Stationary view of the heart and skeleton of the human body",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-09-30 09:36:31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Anatomography",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "BodyParts3D/Anatomography",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.1 jp",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.1 jp",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.1-jp",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 36210087,
+        "ns": 6,
+        "title": "File:Terracotta tongue and tonsils, Roman, 400 BCE-200 CE Wellcome L0058431.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Terracotta_tongue_and_tonsils%2C_Roman%2C_400_BCE-200_CE_Wellcome_L0058431.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Terracotta_tongue_and_tonsils,_Roman,_400_BCE-200_CE_Wellcome_L0058431.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36210087",
+            "sha1": "906e4ca43e657716b65a0bdc705c9d863b23ba2b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-17 13:48:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nTerracotta tongue and tonsils, Roman, 400 BCE-200 CE</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Incubation|Images uploaded by Fæ|Artworks without Wikidata item|Files from Wellcome Images (check needed)|Files from Wellcome Images|Human tongues in art|Human tonsils",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Objects like these were left at healing sanctuaries and other religious sites as offerings to gods such as Asklepios, the Greco-Roman god of medicine. They were intended either as an indication of the part of the body that needed help or as thanks for a cure.\n</p><p>Made from bronze or terracotta, as in this case, a large range of different votive body parts were made and offered up in their thousands. Although it originated in earlier cultures, this practice became very popular in Roman Italy &amp;#150; particularly between the 400s and 100s BCE.\n</p><p>maker: Unknown maker\n</p><p>Place made: Roman Republic and Empire\n</p>\n<p>Wellcome Images</p>\nKeywords: votive offering; incubation; tonsils</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/f2/25/0137c4210e21caf4acdf9aaa7f01.jpg\">https://wellcomeimages.org/indexplus/obf_images/f2/25/0137c4210e21caf4acdf9aaa7f01.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/L0058431.html\">https://wellcomeimages.org/indexplus/image/L0058431.html</a></li>\n<li>Wellcome Collection gallery (2018-04-03): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/xwj5xf5g\">https://wellcomecollection.org/works/xwj5xf5g</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 36441768,
+        "ns": 6,
+        "title": "File:Blood vessels of the human body, viewed as if standing in a Wellcome V0008039.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Blood_vessels_of_the_human_body%2C_viewed_as_if_standing_in_a_Wellcome_V0008039.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Blood_vessels_of_the_human_body,_viewed_as_if_standing_in_a_Wellcome_V0008039.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36441768",
+            "sha1": "a3f6273473dd3ee2db111d1acda15910b930b555",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-28 01:16:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nBlood vessels of the human body, viewed as if standing in a</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|German text|Files from Wellcome Images|Anatomy of the human cardiovascular system|Anatomical engravings",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Blood vessels of the human body, viewed as if standing in a domed glass case. Coloured line engraving, 17--?.\n</p>\n<p>Iconographic Collections</p></div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/af/f8/5fee0464d1f6d4b64dec60338eff.jpg\">https://wellcomeimages.org/indexplus/obf_images/af/f8/5fee0464d1f6d4b64dec60338eff.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/V0008039.html\">https://wellcomeimages.org/indexplus/image/V0008039.html</a></li>\n<li>Wellcome Collection gallery (2018-03-24): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/ecqxv8pn\">https://wellcomecollection.org/works/ecqxv8pn</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 36442320,
+        "ns": 6,
+        "title": "File:Proportions of the human body; six figures showing the face, Wellcome V0008198.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Proportions_of_the_human_body%3B_six_figures_showing_the_face%2C_Wellcome_V0008198.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Proportions_of_the_human_body;_six_figures_showing_the_face,_Wellcome_V0008198.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36442320",
+            "sha1": "fa9af6e839aa34c5a2fb03c96e5cd33b81f9749f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-28 01:49:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nProportions of the human body: six figures showing the face,</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|Files from Wellcome Images|Lithographs of nudes in the Wellcome Collection|Anatomical lithographs in the Wellcome Collection",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Proportions of the human body: six figures showing the face, hand, leg and entire body, with proportions marked. Lithograph by Battistelli after C. Squanquerillo, ca. 1840.\n</p>\n<p>Iconographic Collections</p>\nKeywords: Battistelli; Costantino Squanquerillo</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/c5/4c/acbf04ebe5fa3e646024f041628e.jpg\">https://wellcomeimages.org/indexplus/obf_images/c5/4c/acbf04ebe5fa3e646024f041628e.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/V0008198.html\">https://wellcomeimages.org/indexplus/image/V0008198.html</a></li>\n<li>Wellcome Collection gallery (2018-04-01): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/cprkyt33\">https://wellcomecollection.org/works/cprkyt33</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 38761534,
+        "ns": 6,
+        "title": "File:Bill Ward - A Good Gag will make you Feel Better! -Joker Magazine - 1952.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bill_Ward_-_A_Good_Gag_will_make_you_Feel_Better%21_-Joker_Magazine_-_1952.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bill_Ward_-_A_Good_Gag_will_make_you_Feel_Better!_-Joker_Magazine_-_1952.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=38761534",
+            "sha1": "5860031da3a73794a419f067e28b6881aa282deb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-03-06 17:42:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bill Ward - A Good Gag will make you Feel Better! -Joker Magazine - 1952",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US not renewed|Pin-up-art|Good girl art|Illustrations by Bill Ward",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "\"A Good Gag will make you Feel Better!\" by <a href=\"https://en.wikipedia.org/wiki/Bill_Ward_(cartoonist)\" class=\"extiw\" title=\"en:Bill Ward (cartoonist)\">Bill Ward</a> (William Hess Ward), 1952.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1952",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Humorama\" class=\"extiw\" title=\"en:Humorama\">Humorama</a> Joker Magazine",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Bill_Ward_(cartoonist)\" class=\"extiw\" title=\"en:Bill Ward (cartoonist)\">Bill Ward</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 39772738,
+        "ns": 6,
+        "title": "File:Human body hair with pulp.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Human_body_hair_with_pulp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_body_hair_with_pulp.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=39772738",
+            "sha1": "022f44837de6e62934062be8208a58414d77c4c4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-04-25 13:55:33",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human body hair with pulp",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Human hair|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Strand of human body hair with pulp",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-10-30 13:48:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Daniel_Souza\" title=\"User:Daniel Souza\">Daniel Souza</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 41995242,
+        "ns": 6,
+        "title": "File:Neck-though Stratocaster - body back, neck trough - Sir Theo, Belgaum, India (2011-11-23 08.08.21 by julian correa).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Neck-though_Stratocaster_-_body_back%2C_neck_trough_-_Sir_Theo%2C_Belgaum%2C_India_%282011-11-23_08.08.21_by_julian_correa%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Neck-though_Stratocaster_-_body_back,_neck_trough_-_Sir_Theo,_Belgaum,_India_(2011-11-23_08.08.21_by_julian_correa).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=41995242",
+            "sha1": "ad08c1323f7a14e56900299837ead7b303175a27",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-07-31 23:16:48",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Neck-though Stratocaster - body back, neck trough - Sir Theo, Belgaum, India (2011-11-23 08.08.21 by julian correa)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon PowerShot A3100 IS|Neck-through|Flickr images reviewed by FlickreviewR|Guitar backs|Stratocaster descendants|Custom made guitars|Files from julian correa Flickr stream|Sir Theo's studio, Belgaum, India|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>fgzdf 094<br>\nFlickr Tags: <code>guitar</code> <code>sound</code> <code>music</code> <code>teach</code> <code>teacher</code> <code>acoustic</code> <code>steel</code> <code>string</code>.\n</p>\n<hr>\nfrom Flickr album \"<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/juliancorrea/sets/72157628114790301\">sir theo</a> by <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/58703716@N03\">julian correa</a> from Belgaum Cantonment, India",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-11-23 08:08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/juliancorrea/6389670399/\">fgzdf 094</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/58703716@N03\">julian correa</a> from belgaum cantonement, india",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 57459094,
+        "ns": 6,
+        "title": "File:Fight back during allergy awareness month 160512-F-AR942-009.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Fight_back_during_allergy_awareness_month_160512-F-AR942-009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fight_back_during_allergy_awareness_month_160512-F-AR942-009.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=57459094",
+            "sha1": "99869f2a62dc3369db1b409d53b88fd22196d7e5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-03-27 20:09:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Fight back during allergy awareness month 160512-F-AR942-009",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US Air Force|Files created by the United States Air Force with known IDs|2016 works in the United States|Images from DoD uploaded by Fæ|United States photographs taken on 2016-05-12|633rd Healthcare Operations Squadron",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "U.S. Air Force Staff Sgt. Lucretia Cunningham, an allergy and immunization technician assigned to the 633rd Medical Operations Squadron, prepares a patient for an allergy skin test at Langley Air Force Base, Va., May 12, 2016. Along with skin testing, the allergy and immunization clinic offers asthma, venom and medication testing. (U.S. Air Force photo by Airman 1st Class Kaylee Dubois)\n<dl><dd>Unit: 633rd Air Base Wing</dd>\n<dd>DVIDS Tags: immunization; Langley Air Force Base; Fort Eustis; Joint Base Langley-Eustis; 633rd Medical Operations Squadron; Allergy season; fight back</dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on<span typeof=\"mw:Entity\"> </span>12 May 2016<link rel=\"mw:PageProp/Category\" href=\"./Category:United_States_photographs_taken_on_2016-05-12\">",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.dvidshub.net/image/3043816/fight-back-during-allergy-awareness-month\" class=\"external free\">https://www.dvidshub.net/image/3043816/fight-back-during-allergy-awareness-month</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Airman 1st Class Kaylee Dubois",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 63961382,
+        "ns": 6,
+        "title": "File:Physical exercise at Witley Camp - MIKAN 3194480.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Physical_exercise_at_Witley_Camp_-_MIKAN_3194480.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Physical_exercise_at_Witley_Camp_-_MIKAN_3194480.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63961382",
+            "sha1": "cea05fb48527633992e7d7d6bcd58f6423a4059d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-11-09 16:22:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Physical exercise at Witley Camp</i></div></div><div style=\"display: none;\">label QS:Len,\"Physical exercise at Witley Camp\"</div><div style=\"display: none;\">label QS:Lfr,\"Exercise physique au Camp Witley\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from Library and Archives Canada|PD Canada|Witley Camp|Uploaded with pattypan|Calisthenics|GLAM BAC-LAC|Template Unknown (author)|Military training in the United Kingdom|Military people exercising|Military people of Canada in 1916",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nUnknown author<span style=\"display: none;\">Unknown author</span></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "Physical exercise at Witley Camp",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1916<div style=\"display: none;\">date QS:P571,+1916-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Library and Archives Canada <u>does not</u> allow free use of its copyrighted works. <small>See <a href=\"//commons.wikimedia.org/wiki/Category:Images_from_Library_and_Archives_Canada\" title=\"Category:Images from Library and Archives Canada\">Category:Images from Library and Archives Canada</a>.</small>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 64275793,
+        "ns": 6,
+        "title": "File:Human body without skin - 4657.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Human_body_without_skin_-_4657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_body_without_skin_-_4657.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64275793",
+            "sha1": "9a8efba18e02a797d1d24821e569e6cf3329e264",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-11-23 07:56:50",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human body without skin - 4657",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Human dissection|Self-published work|People with white background|Collection of the Anatomisches Museum, Basel|Anatomy of the human muscular system|Files with coordinates missing SDC location of creation|Images by Amada44",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "47.568138",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "7.581528",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Human body without skin",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-09-03 10:43:56",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Amada44\" title=\"User:Amada44\">Amada44</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 70350023,
+        "ns": 6,
+        "title": "File:Hennepin Healthcare - HCMC EMS Ambulance - Twin Cities Pride Parade 2018 (28212249107).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Hennepin_Healthcare_-_HCMC_EMS_Ambulance_-_Twin_Cities_Pride_Parade_2018_%2828212249107%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hennepin_Healthcare_-_HCMC_EMS_Ambulance_-_Twin_Cities_Pride_Parade_2018_(28212249107).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=70350023",
+            "sha1": "a176646375fe559bfcd60d9caccf11e45a24fa14",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-06-29 15:45:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hennepin Healthcare - HCMC EMS Ambulance - Twin Cities Pride Parade 2018 (28212249107)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Ambulances in Minnesota|Twin Cities Pride 2018|Blue and white ambulances|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|United States photographs taken on 2018-06-24|Ford E-450 (2008-2015)|LGBT pride colors in vehicles|Ford E-Series (2008-2015) ambulances|Photographs by Tony Webster|Ambulances in parades|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.978969",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-93.273523",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Twin Cities Pride Parade in Downtown Minneapolis, Minnesota, on June 24, 2018.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 24 June 2018, 13:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/diversey/28212249107/\">Hennepin Healthcare - HCMC EMS Ambulance - Twin Cities Pride Parade 2018</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/87296837@N00\">Tony Webster</a> from Minneapolis, Minnesota, United States",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 80979004,
+        "ns": 6,
+        "title": "File:Human throat showing windpipes and epiglottis.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Human_throat_showing_windpipes_and_epiglottis.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_throat_showing_windpipes_and_epiglottis.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=80979004",
+            "sha1": "b1e75733969114ba657f33274e1ff12876b6994d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-03 02:57:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human throat showing windpipes and epiglottis",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Throats|PD-author|PD-ScottForesman|Pearson Scott Foresman publisher|Items with VRTS permission confirmed|Extracted images|English-language medical diagrams",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Human throats showing windpipes and epiglottis",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-08-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This image has been <b>extracted</b> from another file",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Pearson_Scott_Foresman\" class=\"extiw\" title=\"en:Pearson Scott Foresman\">Pearson Scott Foresman</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>This work has been released into the <b><a href=\"https://en.wikipedia.org/wiki/en:public_domain\" class=\"extiw\" title=\"w:en:public domain\">public domain</a></b> by its author, <b><a href=\"//commons.wikimedia.org/wiki/Commons:Pearson_Scott_Foresman\" title=\"Commons:Pearson Scott Foresman\">Pearson Scott Foresman</a></b>. This applies worldwide.<br><small>In some countries this may not be legally possible; if so:</small><br><i><a href=\"//commons.wikimedia.org/wiki/Commons:Pearson_Scott_Foresman\" title=\"Commons:Pearson Scott Foresman\">Pearson Scott Foresman</a> grants anyone the right to use this work <b>for any purpose</b>, without any conditions, unless such conditions are required by law.</i>\n<p><span class=\"licensetpl_short\" style=\"display:none;\">Public domain</span><span class=\"licensetpl_long\" style=\"display:none;\">Public domain</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span>\n</p>\n</td></tr></tbody></table><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=PermissionTicket 1%3Dhttps%3A%2F%2Fticket.wikimedia.org%2Fotrs%2Findex.pl%3FAction%3DAgentTicketZoom%26TicketNumber%3D2010061110041093 2%3D2010061110041093\"> </span>\n<style data-mw-deduplicate=\"TemplateStyles:r1254222110\">.mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--background-color-neutral-subtle,#fbfcff);color:var(--color-base,#202122);box-sizing:border-box;border-inline-start-width:8px}.mw-parser-output .messagebox.mbox-small{font-size:88%;line-height:1.25em}.mw-parser-output .mbox-warning,.mw-parser-output .mbox-speedy{border:2px solid var(--border-color-error,#b22222);background:var(--background-color-error-subtle,#ffdbdb);border-inline-start-width:8px}.mw-parser-output .mbox-serious,.mw-parser-output .mbox-delete,.mw-parser-output .mbox-stop{border:2px solid var(--border-color-error,#b22222);border-inline-start-width:8px}.mw-parser-output .mbox-issue,.mw-parser-output .mbox-content{border:2px solid #f28500;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-query,.mw-parser-output .mbox-style{border:2px solid #f4c430;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-shit{border:2px solid #960;border-inline-start-width:8px}.mw-parser-output .mbox-license{border:2px solid #88a;border-inline-start-width:initial}.mw-parser-output .mbox-legal{border:2px solid var(--border-color-notice,#666);background:var(--background-color-base,#fff);border-inline-start-width:8px}.mw-parser-output .mbox-honor{border:2px solid #ca3;background:var(--background-color-warning-subtle,#fcf4db);border-inline-start-width:8px}.mw-parser-output .mbox-growth{border:2px solid #8d4;background:var(--background-color-success-subtle,#d5fdf4);border-inline-start-width:8px}.mw-parser-output .mbox-move{border:2px solid #93c;border-inline-start-width:8px}.mw-parser-output .mbox-protection,.mw-parser-output .mbox-message{border:2px solid var(--border-color-base,#aaa);border-inline-start-width:8px}.mw-parser-output .messagebox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .messagebox .mbox-image{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0.9em;padding-inline-end:0;text-align:center}.mw-parser-output .messagebox .mbox-imageright{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0;padding-inline-end:0.9em;text-align:center}.mw-parser-output .messagebox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .messagebox .mbox-invalid-type{text-align:center}@media(min-width:720px){.mw-parser-output .messagebox{margin:4px 10%}.mw-parser-output .messagebox.mbox-small{clear:right;float:right;margin:4px 0 4px 1em;width:238px}}body.skin--responsive .mw-parser-output table.messagebox img{max-width:none!important}</style><table class=\"plainlinks messagebox mbox-notice layouttemplate\" role=\"presentation\" style=\"margin:0.3em 0;width:100%;\"><tbody><tr><td class=\"mbox-image\"><span typeof=\"mw:File\"><span title=\"VRT Wikimedia\"><img alt=\"VRT Wikimedia\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/120px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"48\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/250px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"935\" data-file-height=\"600\"></span></span></td><td class=\"mbox-text\">This work is <a href=\"https://freedomdefined.org/Definition\" class=\"extiw\" title=\"freedomdefined:Definition\">free</a> and may be used by anyone for any purpose. If you wish to <b><a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">use this content</a></b>, you do not need to request permission as long as you follow any licensing requirements mentioned on this page.\n<p>The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page. This correspondence has been <b><span style=\"background:transparent;color:#0f7f1f;font-weight:400;\" title=\"transparent\">reviewed</span></b> by a <a href=\"//commons.wikimedia.org/wiki/Template:PermissionTicket/Users\" title=\"Template:PermissionTicket/Users\">Volunteer Response Team (VRT) member</a> and stored in our <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team\" title=\"Commons:Volunteer Response Team\">permission archive</a>. The correspondence is available to trusted volunteers as <b><a href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2010061110041093\" class=\"extiw\" title=\"ticket:2010061110041093\">ticket #2010061110041093</a></b>.\n</p><p><small>If you have questions about the archived correspondence, please use the <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team/Noticeboard\" title=\"Commons:Volunteer Response Team/Noticeboard\">VRT noticeboard</a>.</small>\n<small>Ticket link: <a class=\"external free\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2010061110041093\">https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2010061110041093</a></small>\n<br><small>Find other files from the same ticket:</small> <span typeof=\"mw:File\"><a href=\"https://wcqs-beta.wmflabs.org/#%23defaultView%3AImageGrid%09%0ASELECT%20%3Fimage%20%20%20%7B%0A%20%20%3Ffile%20wdt%3AP6305%20%222010061110041093%22%20.%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage.%0A%7D%20%0A\" title=\"SDC query (SPARQL)\" rel=\"nofollow\"><img alt=\"SDC query (SPARQL)\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/20px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"20\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/40px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"688\"></a></span>\n</p>\n<span id=\"field-otrs\" title=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2010061110041093\"></span></td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 88011985,
+        "ns": 6,
+        "title": "File:Symptoms of coronavirus disease 2019 2.0-id.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Symptoms_of_coronavirus_disease_2019_2.0-id.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0-id.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=88011985",
+            "sha1": "4cea14bfef6aad656b927c35631e2cf6ad6877b1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-03-13 13:55:12",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Symptoms of coronavirus disease 2019 2.0-id",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Symptoms of COVID-19|Self-published work|Indonesian-language SVG diagrams",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Symptoms of <a href=\"https://en.wikipedia.org/wiki/coronavirus_disease_2019\" class=\"extiw\" title=\"w:coronavirus disease 2019\">coronavirus disease 2019</a> (COVID-19), the disease seen in the <a href=\"https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic\" class=\"extiw\" title=\"w:2019–20 coronavirus pandemic\">2019–20 coronavirus outbreak</a>, and is caused by the <a href=\"https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2\" class=\"extiw\" title=\"w:Severe acute respiratory syndrome coronavirus 2\">Severe acute respiratory syndrome coronavirus 2</a> (SARS-CoV-2).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-03-13",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Own work based on: <a href=\"//commons.wikimedia.org/wiki/File:Symptoms_of_coronavirus_disease_2019_2.0.svg\" title=\"File:Symptoms of coronavirus disease 2019 2.0.svg\">Symptoms of coronavirus disease 2019 2.0.svg</a> <i>by</i> <a href=\"//commons.wikimedia.org/wiki/User:Mikael_H%C3%A4ggstr%C3%B6m\" title=\"User:Mikael Häggström\">Mikael Häggström</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:S_Rifqi&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:S Rifqi (page does not exist)\">S Rifqi</a> (terjemahan awal oleh <a href=\"//commons.wikimedia.org/wiki/User:RianHS\" title=\"User:RianHS\">RianHS</a>)",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 104914541,
+        "ns": 6,
+        "title": "File:Back-Pain-Specialist-Lafayette copy.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Back-Pain-Specialist-Lafayette_copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Back-Pain-Specialist-Lafayette_copy.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=104914541",
+            "sha1": "b3bb24711726492440b3200576af97c35e48f5ad",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-05-04 19:04:06",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Back-Pain-Specialist-Lafayette copy",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Healthcare in Indiana|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "CFC Lafayette Medical Building",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-08-28",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Cfazio4&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Cfazio4 (page does not exist)\">Cfazio4</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 118005156,
+        "ns": 6,
+        "title": "File:Reading Wikipedia in the Classroom in Morocco 2022-task post.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Reading_Wikipedia_in_the_Classroom_in_Morocco_2022-task_post.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Reading_Wikipedia_in_the_Classroom_in_Morocco_2022-task_post.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=118005156",
+            "sha1": "0303ce5f9b34507e82a878610964bce2d9979bc3",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-05-14 22:49:08",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Reading Wikipedia in the Classroom in Morocco 2022-task post",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|RWC Morocco Online Training 2022",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Reading Wikipedia in the Classroom in Morocco 2022-task post",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-05-14",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rachidourkia\" title=\"User:Rachidourkia\">Rachidourkia</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 121375719,
+        "ns": 6,
+        "title": "File:Human chest x-ray, adult male, with central venous catheter.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Human_chest_x-ray%2C_adult_male%2C_with_central_venous_catheter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_chest_x-ray,_adult_male,_with_central_venous_catheter.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121375719",
+            "sha1": "8edcb6d8a96171abe911773d5e3d706810349481",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-08-03 14:37:06",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human chest x-ray, adult male, with central venous catheter",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "X-rays of the chest|Central venous catheter|PD medical",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A chest of a 37 year old male. <a href=\"https://en.wikipedia.org/wiki/Central_venous_catheter\" class=\"extiw\" title=\"w:Central venous catheter\">Central venous catheter</a> visible: the in upper left, going down, entering body over the heart, going back under the skin towards the neck, entering <a href=\"https://en.wikipedia.org/wiki/Jugular_vein\" class=\"extiw\" title=\"w:Jugular vein\">jugular vein</a>. <a href=\"https://en.wikipedia.org/wiki/Large_intestine\" class=\"extiw\" title=\"w:Large intestine\">Large intestine</a> filled with gasses visible in the lower right. <a href=\"https://en.wikipedia.org/wiki/Small_intestine\" class=\"extiw\" title=\"w:Small intestine\">Small intestine</a> entirely missing in the patient and therefore not visible.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-08-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "A medical image produced in the course of obtaining a diagnosis. Not a copyrightable work in the country of origin (Poland).",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 125367134,
+        "ns": 6,
+        "title": "File:Reading Wikipedia in the Classroom for Secondary School Student Closing Session GSS Adeta 04.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Reading_Wikipedia_in_the_Classroom_for_Secondary_School_Student_Closing_Session_GSS_Adeta_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Reading_Wikipedia_in_the_Classroom_for_Secondary_School_Student_Closing_Session_GSS_Adeta_04.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=125367134",
+            "sha1": "d14063b06d87745cd3889936c6d3dbb4a840d3cc",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-11-13 07:03:33",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Reading Wikipedia in the Classroom for Secondary School Student Closing Session GSS Adeta 04",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Reading Wikipedia in the classroom|Reading Wikipedia in the Classroom in Nigeria 2022|Reading Wikipedia in the Classroom for Secondary School Students Kwara",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Reading Wikipedia in the Classroom for Secondary School Student Closing Session GSS Adeta",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-11-11 10:52:20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:James_Rhoda&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:James Rhoda (page does not exist)\">James Rhoda</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 127720259,
+        "ns": 6,
+        "title": "File:Human body - censored.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Human_body_-_censored.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_body_-_censored.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=127720259",
+            "sha1": "9457a16a550252dea62d34585140ea3c49486856",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-01-12 21:37:22",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human body - censored",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Personality rights warning|Self-published work|Derivative versions|Nude men and women with white background|Photographs of the human body|Nude men in Sweden|Nude standing couples, anatomy|Nude men in the 2010s|Human standard anatomical position, with labels|Fully nude men|Media censored for nudity-related reasons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Naked female and male <a href=\"https://en.wikipedia.org/wiki/human_body\" class=\"extiw\" title=\"en:human body\">human body</a> with labels.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-01-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Model name: Michael Hellman\n<p><br>At time of photograph:\n</p>\n<ul><li>Age: 34</li>\n<li>Height: 178 cm</li>\n<li>Weight: 65 kg</li>\n<li>BMI: 20.5</li></ul>\nBlemishes: Bruise at left part of chin, <a href=\"https://en.wikipedia.org/wiki/Belt_(clothing)\" class=\"extiw\" title=\"en:Belt (clothing)\">belt</a> mark.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Taken at City Studios in Stockholm (www.stockholmsfotografen.se), September 29, 2011, with assistance from KYO (The organisation of life models) in Stockholm. Both models have consented to the licence of the image, and its usage in Wikipedia. Images uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Mikael_H%C3%A4ggstr%C3%B6m\" title=\"User:Mikael Häggström\">Mikael Häggström</a>.\n<b>Derivative work</b>:\n</p>\n<ul><li><a href=\"//commons.wikimedia.org/w/index.php?title=User:Weirdtard&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Weirdtard (page does not exist)\">Weirdtard</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 127720260,
+        "ns": 6,
+        "title": "File:Human body - transgender.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Human_body_-_transgender.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_body_-_transgender.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=127720260",
+            "sha1": "bce6349ea64135b31210ff4ef4a00a5e8924db35",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-01-12 21:37:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human body - transgender",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Personality rights warning|Self-published work|Derivative versions|Nude men and women with white background|Nude transgender people|Photographs of the human body|Nude men in Sweden|Nude standing couples, anatomy|Nude men in the 2010s|Human standard anatomical position, with labels|Fully nude men|Media censored for nudity-related reasons|Anatomical diptychs",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Naked female and male <a href=\"https://en.wikipedia.org/wiki/human_body\" class=\"extiw\" title=\"en:human body\">human body</a> with labels.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-01-12",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Model name: Michael Hellman\n<p><br>At time of photograph:\n</p>\n<ul><li>Age: 34</li>\n<li>Height: 178 cm</li>\n<li>Weight: 65 kg</li>\n<li>BMI: 20.5</li></ul>\nBlemishes: Bruise at left part of chin, <a href=\"https://en.wikipedia.org/wiki/Belt_(clothing)\" class=\"extiw\" title=\"en:Belt (clothing)\">belt</a> mark.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Taken at City Studios in Stockholm (www.stockholmsfotografen.se), September 29, 2011, with assistance from KYO (The organisation of life models) in Stockholm. Both models have consented to the licence of the image, and its usage in Wikipedia. Images uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Mikael_H%C3%A4ggstr%C3%B6m\" title=\"User:Mikael Häggström\">Mikael Häggström</a>.\n<b>Derivative work</b>:\n</p>\n<ul><li><a href=\"//commons.wikimedia.org/w/index.php?title=User:Weirdtard&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Weirdtard (page does not exist)\">Weirdtard</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 135337706,
+        "ns": 6,
+        "title": "File:Closed human eye, superior view.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Closed_human_eye%2C_superior_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Closed_human_eye,_superior_view.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=135337706",
+            "sha1": "a076e2344d2ed42e2bf3a0280015aad85531ceaf",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-07-31 13:01:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Closed human eye, superior view",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Eyelashes|Human eyes|Human eyelashes|Self-published work|Human eyelids",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Superior view of a closed eye of an Asian male adult human, displaying eyelashes growing from the eyelid margins. He has long lashes in a case of trichomegaly as an isolated trait (i.e. not caused by any disorders or drugs). Notably, the upper lashes were measured to be 14 mm in length, exceptionally longer than the 10 mm generally regarded to be significantly long.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-07-30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Rapidreflex&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Rapidreflex (page does not exist)\">Rapidreflex</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 137953128,
+        "ns": 6,
+        "title": "File:Male right shoulder, photographed when arm stretched out to side.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Male_right_shoulder%2C_photographed_when_arm_stretched_out_to_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Male_right_shoulder,_photographed_when_arm_stretched_out_to_side.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=137953128",
+            "sha1": "f2e5780f74ffbcbd2a4996011eb0dc1d06992da7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-09-22 17:07:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Male right shoulder, photographed when arm stretched out to side",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Muscles of the human shoulder|Underlying muscle structure visible on human skin|Selfies of body parts, without head of photographer|Male shoulders",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Male right shoulder, photographed when arm stretched out to side",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-09-21 14:41:15",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pittigrilli\" title=\"User:Pittigrilli\">Pittigrilli</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 142149556,
+        "ns": 6,
+        "title": "File:Human Anatomy Model-Mouth to Waist.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Human_Anatomy_Model-Mouth_to_Waist.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_Anatomy_Model-Mouth_to_Waist.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=142149556",
+            "sha1": "7951bdc59bae695ea3017e73ab487c2be9f8c361",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-12-14 10:06:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human Anatomy Model-Mouth to Waist",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Images from Wiki Science Competition 2023 in the Igbo Community|Image sets from Wiki Science Competition 2023|Uploaded via Campaign:wsc-ng|Images from Wiki Science Competition 2023 in Nigeria",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Detailed view from the Mouth to the Waist showcasing vital organs and internal structures.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-12-12 12:52:59",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Edeh Sophia",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 146172037,
+        "ns": 6,
+        "title": "File:White House hosts a Roundtable on Lowering Healthcare Costs and Bringing Transparency to Prescription Drug Middlemen Monday, March 4, 2024.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/White_House_hosts_a_Roundtable_on_Lowering_Healthcare_Costs_and_Bringing_Transparency_to_Prescription_Drug_Middlemen_Monday%2C_March_4%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:White_House_hosts_a_Roundtable_on_Lowering_Healthcare_Costs_and_Bringing_Transparency_to_Prescription_Drug_Middlemen_Monday,_March_4,_2024.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146172037",
+            "sha1": "4e629c652b53346ce3940f9f0e0954d44b6aea38",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-03-08 04:04:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "White House hosts a Roundtable on Lowering Healthcare Costs and Bringing Transparency to Prescription Drug Middlemen Monday, March 4, 2024",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Neera Tanden|Executive Office of the President files|Pharmacy in the United States|Flickr images reviewed by FlickreviewR 2|White House in 2024|Photographs taken on 2024-03-04|Health expenditure in the United States|Photographs by Carlos Fyfe",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The White House hosts a Roundtable on Lowering Healthcare Costs and Bringing Transparency to Prescription Drug Middlemen Monday, March 4, 2024, in the South Court Auditorium of the Eisenhower Executive Office Building at the White House. (Official White House Photo by Carlos Fyfe)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-03-04 12:09:08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/191819781@N02/53572354768/\">https://www.flickr.com/photos/191819781@N02/53572354768/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "The White House",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 147318272,
+        "ns": 6,
+        "title": "File:Human development neoteny body and head proportions pedomorphy maturation aging growth + Betty + Pioneer10 plaque.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth_%2B_Betty_%2B_Pioneer10_plaque.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth_%2B_Betty_%2B_Pioneer10_plaque.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147318272",
+            "sha1": "0d517c85bfde7389adf56d2141ff86f5a98524a0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-01-03 10:17:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Human development neoteny body and head proportions pedomorphy maturation aging growth + Betty + Pioneer10 plaque",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Kawaii-kei|Retouched pictures|Pages with non-numeric formatnum arguments|Human development|Anthropology diagrams|Derivative versions|Male human proportions|Neoteny|Neoteny in humans|Human penis (medical) in art|Media uploaded for Public Domain Day 2026",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Collaged <a href=\"//commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png\" title=\"File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png\">File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png</a> with <a href=\"https://en.wikipedia.org/wiki/Betty_Boop\" class=\"extiw\" title=\"w:Betty Boop\">Betty Boop</a> &amp; <a href=\"https://en.wikipedia.org/wiki/Pioneer_10#Pioneer_plaque\" class=\"extiw\" title=\"w:Pioneer 10\">Pioneer 10 plaque</a>.\n</p>\n<dl><dt>Original description of <small><a href=\"//commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png\" title=\"File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png\">File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png</a></small></dt>\n<dd>This file is a redrawn and colored version of a sketchy, colorless diagram from the Journal of Heredity (1921) Volume 12, pg 421. It depicts human body proportions changing as the subject matures. The diagram shows that the head becomes proportionately smaller and the limbs become proportionately longer as the subject matures.<br>The link below goes to the original diagram.<br><a href=\"//commons.wikimedia.org/wiki/File:Neoteny_body_proportion_heterochrony_human.png\" class=\"mw-redirect\" title=\"File:Neoteny body proportion heterochrony human.png\">File:Neoteny_body_proportion_heterochrony_human.png</a></dd>\n<dt>Original description of <a href=\"//commons.wikimedia.org/wiki/File:Betty_Boop_colored_patent.png\" title=\"File:Betty Boop colored patent.png\">File:Betty Boop colored patent.png</a></dt>\n<dd><a href=\"//commons.wikimedia.org/wiki/Betty_Boop\" title=\"Betty Boop\">Betty Boop</a> character design, figure 1 from U.S. patent application D86224 \"Design for a Doll or Similar Article\". The original drawing was published on 9/24/1931, but my colored and modified version of the drawing was done on 2/4/2015.<br>I colored the original black and white drawing, and I also altered the drawing a little bit. I lengthened the dress. I made the eyes more symmetrical. I shortened the lengthy eyelashes to model them after a more recent drawing of Betty Boop. I added green irises to the eyes which I modeled after a more recent drawing of Betty Boop. I fixed the unrealistic thicknesses of the knee joints. Lastly, I changed the thigh accessory to make it a heart design.</dd>\n<dt>Original description of <a href=\"//commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg\" title=\"File:Pioneer10-plaque.jpg\">File:Pioneer10-plaque.jpg</a></dt>\n<dd><a href=\"//commons.wikimedia.org/wiki/NASA\" title=\"NASA\">NASA</a> image of Pioneer 10's famed <a href=\"https://en.wikipedia.org/wiki/Pioneer_plaque\" class=\"extiw\" title=\"w:Pioneer plaque\">Pioneer plaque</a> features a design engraved into a gold-anodized aluminum plate, 152 by 229 millimeters (6 by 9 inches), attached to the spacecraft's antenna support struts to help shield it from erosion by interstellar dust.</dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-04-24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>This file was derived from: \n</p>\n<ul><li> <a href=\"//commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png\" title=\"File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png\">Human development neoteny body and head proportions pedomorphy maturation aging growth.png</a>: <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png/20px-Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"16\" height=\"11\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png/40px-Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"527\" data-file-height=\"362\"></a></span></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Betty_Boop_colored_patent.png\" title=\"File:Betty Boop colored patent.png\">Betty Boop colored patent.png</a>: <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Betty_Boop_colored_patent.png\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Betty_Boop_colored_patent.png/20px-Betty_Boop_colored_patent.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"16\" height=\"19\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Betty_Boop_colored_patent.png/40px-Betty_Boop_colored_patent.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"427\" data-file-height=\"515\"></a></span></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg\" title=\"File:Pioneer10-plaque.jpg\">Pioneer10-plaque.jpg</a>: <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Pioneer10-plaque.jpg/20px-Pioneer10-plaque.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"16\" height=\"13\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Pioneer10-plaque.jpg/40px-Pioneer10-plaque.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"2891\" data-file-height=\"2290\"></a></span><br></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:Human_development_neoteny_body_and_head_proportions_pedomorphy_maturation_aging_growth.png\" title=\"File:Human development neoteny body and head proportions pedomorphy maturation aging growth.png\">Human development neoteny body and head proportions pedomorphy maturation aging growth.png</a>: <a href=\"//commons.wikimedia.org/w/index.php?title=User:Ephert&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Ephert (page does not exist)\">Ephert</a></li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Betty_Boop_colored_patent.png\" title=\"File:Betty Boop colored patent.png\">Betty Boop colored patent.png</a>: <a href=\"https://en.wikipedia.org/wiki/Max_Fleischer\" class=\"extiw\" title=\"w:Max Fleischer\">Max Fleischer</a> (<span><a rel=\"nofollow\" class=\"external text\" href=\"https://patents.google.com/patent/USD86224\">U.S. Patent D86,224</a></span> filed 1931-09-24, PD-US-patent)</li>\n<li><a href=\"//commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg\" title=\"File:Pioneer10-plaque.jpg\">Pioneer10-plaque.jpg</a>:\n<ul><li>Designed by <a href=\"https://en.wikipedia.org/wiki/Carl_Sagan\" class=\"extiw\" title=\"w:Carl Sagan\">Carl Sagan</a> and <a href=\"https://en.wikipedia.org/wiki/Frank_Drake\" class=\"extiw\" title=\"w:Frank Drake\">Frank Drake</a>.</li>\n<li>Artwork prepared by <a href=\"https://en.wikipedia.org/wiki/Linda_Salzman_Sagan\" class=\"extiw\" title=\"w:Linda Salzman Sagan\">Linda Salzman Sagan</a>.</li>\n<li>Photograph by <a rel=\"nofollow\" class=\"external text\" data-mw-original-href=\"http://ails.arc.nasa.gov/\" href=\"https://ails.arc.nasa.gov/\">NASA Ames Research Center (NASA-ARC)</a> (1972-02-25, PD-USGov-NASA)</li></ul></li>\n<li>derivative work: <a href=\"//commons.wikimedia.org/wiki/User:Clusternote\" title=\"User:Clusternote\">User:Clusternote</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 150771522,
+        "ns": 6,
+        "title": "File:Khutning Saapa - gesture of making elbow - one of the Hakchaang Saapa (Laipou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance & music ritualistic performances.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Khutning_Saapa_-_gesture_of_making_elbow_-_one_of_the_Hakchaang_Saapa_%28Laipou_Khutthek%29_group_of_gestures_of_creating_human_body_-_in_Lai_Haraoba_classical_dance_%26_music_ritualistic_performances.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Khutning_Saapa_-_gesture_of_making_elbow_-_one_of_the_Hakchaang_Saapa_(Laipou_Khutthek)_group_of_gestures_of_creating_human_body_-_in_Lai_Haraoba_classical_dance_%26_music_ritualistic_performances.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=150771522",
+            "sha1": "1877dc742972b82887d9bd1012b5139d6167fc1d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-07-25 06:46:17",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Khutning Saapa - gesture of making elbow - one of the Hakchaang Saapa (Laipou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance & music ritualistic performances",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Elbows|CC-Zero|Women in art|Dancers in art|Dance in art of India|Drawings of hands|Lai Haraoba|Meitei Jagoi Khutthek (double hand gestures)|Maibi|Maibi Jagoi",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Khutning Saapa / Khuning Saaba - gesture of making elbow - one of the Hakchaang Saapa / Hakchang Sapa / Hakchaang Saaba / Hakchang Saba / Hakchaang Shaapa / Hakchang Shapa / Hakchaang Shaaba / Hakchang Shaba (Laipou Khutthek / Laibou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance &amp; music ritualistic performances - It is a gesture (Khut-thek) of classical Meitei dance forms (Meitei Jagoi); In Meiteilon, alias Meitei or Meetei or Manipuri or Kanglei or Meithei language, the word \"Khut-thek\" (or Khutthek or Khuthek) means hand gesture. Here, \"khut\" means hand and \"thek\" means gestural movement in Meitei language. There are numerous khut-thek hand gestures, which are used in classical Meitei dance forms like those of Lai Haraoba (alias Umang Lai Harauba) of the traditional Meitei religion (Sanamahism) from the land of Kangleipak (today known as Manipur state).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1963",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/in.ernet.dli.2015.465533/page/n55/mode/thumbMeitei\">Lai Haraoba by Kullachandra Singh, Ngariyambam</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Kullachandra Singh, Ngariyambam",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 150771530,
+        "ns": 6,
+        "title": "File:Khucheng Saapa - gesture of making wrist of hand - one of the Hakchaang Saapa (Laipou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance & music ritualistic performances.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Khucheng_Saapa_-_gesture_of_making_wrist_of_hand_-_one_of_the_Hakchaang_Saapa_%28Laipou_Khutthek%29_group_of_gestures_of_creating_human_body_-_in_Lai_Haraoba_classical_dance_%26_music_ritualistic_performances.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Khucheng_Saapa_-_gesture_of_making_wrist_of_hand_-_one_of_the_Hakchaang_Saapa_(Laipou_Khutthek)_group_of_gestures_of_creating_human_body_-_in_Lai_Haraoba_classical_dance_%26_music_ritualistic_performances.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=150771530",
+            "sha1": "03702bb3ad130f9602752ca852c55b19235c73c4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-07-25 06:46:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Khucheng Saapa - gesture of making wrist of hand - one of the Hakchaang Saapa (Laipou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance & music ritualistic performances",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Wrists|CC-Zero|Women in art|Dancers in art|Dance in art of India|Drawings of hands|Lai Haraoba|Meitei Jagoi Khutthek (double hand gestures)|Maibi|Maibi Jagoi",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Khucheng Saapa / Khujeng Saaba / Khutcheng Saapa / Khutjeng Saaba - gesture of making wrist of hand - one of the Hakchaang Saapa / Hakchang Sapa / Hakchaang Saaba / Hakchang Saba / Hakchaang Shaapa / Hakchang Shapa / Hakchaang Shaaba / Hakchang Shaba (Laipou Khutthek / Laibou Khutthek) group of gestures of creating human body - in Lai Haraoba classical dance &amp; music ritualistic performances - It is a gesture (Khut-thek) of classical Meitei dance forms (Meitei Jagoi); In Meiteilon, alias Meitei or Meetei or Manipuri or Kanglei or Meithei language, the word \"Khut-thek\" (or Khutthek or Khuthek) means hand gesture. Here, \"khut\" means hand and \"thek\" means gestural movement in Meitei language. There are numerous khut-thek hand gestures, which are used in classical Meitei dance forms like those of Lai Haraoba (alias Umang Lai Harauba) of the traditional Meitei religion (Sanamahism) from the land of Kangleipak (today known as Manipur state).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1963",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/in.ernet.dli.2015.465533/page/n55/mode/thumbMeitei\">Lai Haraoba by Kullachandra Singh, Ngariyambam</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Kullachandra Singh, Ngariyambam",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 152035026,
+        "ns": 6,
+        "title": "File:Graduation badge for the course \"Reading Wikipedia in the Classroom\".png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Graduation_badge_for_the_course_%22Reading_Wikipedia_in_the_Classroom%22.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Graduation_badge_for_the_course_%22Reading_Wikipedia_in_the_Classroom%22.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=152035026",
+            "sha1": "4008fe76393bc2200752200ef1d13148940c9314",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-08-31 16:03:47",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Graduation badge for the course \"Reading Wikipedia in the Classroom\"",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Reading Wikipedia in the classroom|Barnstars 2.0 by WikiProject",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "وسام التخرج من مساق \"قراءة ويكيبيديا في الفصل الدراسي\"",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-08-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mounir_Neddi\" title=\"User:Mounir Neddi\">Mounir Neddi</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 157435035,
+        "ns": 6,
+        "title": "File:SHAPE Healthcare Facility commander receives COVID-19 vaccination (6475947).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/SHAPE_Healthcare_Facility_commander_receives_COVID-19_vaccination_%286475947%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:SHAPE_Healthcare_Facility_commander_receives_COVID-19_vaccination_(6475947).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=157435035",
+            "sha1": "f061b5d51a3426cec82e159ea8ff0fd7e4909f03",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-01-02 01:06:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "SHAPE Healthcare Facility commander receives COVID-19 vaccination (6475947)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US Army|COVID-19 vaccination|Files created by the United States Army with known IDs|Belgium photographs taken on 2021-01-08|DVIDS files uploaded by OptimusPrimeBot|Milimedia files, Belgium (review needed)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "MONS, Belgium – Col. Kathy Spangler, left, commander of the SHAPE Healthcare Facility and Brussels Army Health Clinic, receives a COVID-19 vaccination Jan. 8 at the SHAPE clinic at Mons, Belgium. The SHAPE Healthcare Facility and Brussels Army Health Clinic conducted their first inoculations of healthcare workers with the Moderna COVID-19 vaccine Jan. 7. (U.S. Army photo by Christophe Morel, U.S. Army Garrison Benelux Public Affairs Office)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 8 January 2021",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<table class=\"layouttemplate sourcetemplate\" style=\"width:100%; clear:both; text-align:center; margin:0.5em auto; box-sizing: border-box; padding: 0; border-spacing: 8px; background-color: var(--background-color-neutral-subtle, #f6f7f5); color: var(--color-base, #202122); border: var(--border-subtle, 1px solid #555555);\" dir=\"ltr\" lang=\"en\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Emblem_of_the_United_States_Department_of_the_Army.svg/120px-Emblem_of_the_United_States_Department_of_the_Army.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"80\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Emblem_of_the_United_States_Department_of_the_Army.svg/250px-Emblem_of_the_United_States_Department_of_the_Army.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"900\" data-file-height=\"900\"></span></span>\n</td>\n<td align=\"center\">\n<p><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=ID-USMil 1%3D210108-A-WZ351-255 2%3DArmy url%3Dhttps%3A%2F%2Fwww.dvidshub.net%2Fimage%2F6475947\"> </span>\nThis image was released by the United States Army with the <a href=\"//commons.wikimedia.org/wiki/Commons:VIRIN\" title=\"Commons:VIRIN\">ID</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.dvidshub.net/image/6475947\">210108-A-WZ351-255</a> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/w/index.php?title=Category:Files_created_by_the_United_States_Army_with_known_IDs&amp;filefrom=210108-A-WZ351-255#mw-category-media\" href=\"https://commons.wikimedia.org/w/index.php?title=Category:Files_created_by_the_United_States_Army_with_known_IDs&amp;filefrom=210108-A-WZ351-255#mw-category-media\"><small>(next)</small></a>.<br>\n<small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>\n</p>\n<hr>\n<p><span style=\"font-size:small;line-height:1.4\" class=\"plainlinks noprint\"><a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ar\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ar\"><bdi class=\"language lang-ar\" lang=\"ar\">العربية</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/bn\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/bn\"><bdi class=\"language lang-bn\" lang=\"bn\">বাংলা</bdi></a> <b>∙</b> \n<a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/id\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/id\"><bdi class=\"language lang-id\" lang=\"id\">Bahasa Indonesia</bdi></a> <b>∙</b> \n<a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/jax\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/jax\"><bdi class=\"language lang-jax\" lang=\"jax\">Bahaso Jambi</bdi></a> <b>∙</b> \n<a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/de\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/de\"><bdi class=\"language lang-de\" lang=\"de\">Deutsch</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/de-formal\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/de-formal\"><bdi class=\"language lang-de-formal\" lang=\"de-formal\">Deutsch (Sie-Form)</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/en\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/en\"><bdi class=\"language lang-en\" lang=\"en\">English</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/es\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/es\"><bdi class=\"language lang-es\" lang=\"es\">español</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/eu\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/eu\"><bdi class=\"language lang-eu\" lang=\"eu\">euskara</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/fa\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/fa\"><bdi class=\"language lang-fa\" lang=\"fa\">فارسی</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/fr\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/fr\"><bdi class=\"language lang-fr\" lang=\"fr\">français</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/it\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/it\"><bdi class=\"language lang-it\" lang=\"it\">italiano</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ja\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ja\"><bdi class=\"language lang-ja\" lang=\"ja\">日本語</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ko\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ko\"><bdi class=\"language lang-ko\" lang=\"ko\">한국어</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/mk\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/mk\"><bdi class=\"language lang-mk\" lang=\"mk\">македонски</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ml\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ml\"><bdi class=\"language lang-ml\" lang=\"ml\">മലയാളം</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/nds\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/nds\"><bdi class=\"language lang-nds\" lang=\"nds\">Plattdüütsch</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/nl\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/nl\"><bdi class=\"language lang-nl\" lang=\"nl\">Nederlands</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/pl\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/pl\"><bdi class=\"language lang-pl\" lang=\"pl\">polski</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ps\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ps\"><bdi class=\"language lang-ps\" lang=\"ps\">پښتو</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/pt\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/pt\"><bdi class=\"language lang-pt\" lang=\"pt\">português</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/ru\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/ru\"><bdi class=\"language lang-ru\" lang=\"ru\">русский</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/sl\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/sl\"><bdi class=\"language lang-sl\" lang=\"sl\">slovenščina</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/sv\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/sv\"><bdi class=\"language lang-sv\" lang=\"sv\">svenska</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/tr\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/tr\"><bdi class=\"language lang-tr\" lang=\"tr\">Türkçe</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/uk\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/uk\"><bdi class=\"language lang-uk\" lang=\"uk\">українська</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/zh-hans\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/zh-hans\"><bdi class=\"language lang-zh-hans\" lang=\"zh-hans\">简体中文</bdi></a> <b>∙</b> <a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/Template:ID-USMil/zh-hant\" href=\"https://commons.wikimedia.org/wiki/Template:ID-USMil/zh-hant\"><bdi class=\"language lang-zh-hant\" lang=\"zh-hant\">繁體中文</bdi></a> <b>∙</b> <small class=\"plainlinks\"><a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/w/index.php?title=Template:ID-USMil/lang&amp;action=edit\" href=\"https://commons.wikimedia.org/w/index.php?title=Template:ID-USMil/lang&amp;action=edit\">+/−</a></small></span>\n</p>\n</td>\n<td><span class=\"mw-image-border\" typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/120px-Flag_of_the_United_States.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"47\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/250px-Flag_of_the_United_States.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1235\" data-file-height=\"650\"></span></span>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "U.S. Army photo by <a rel=\"nofollow\" class=\"external text\" href=\"https://www.dvidshub.net/portfolio/1517083\">Christophe Morel</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 182805734,
+        "ns": 6,
+        "title": "File:Arthrolith from human knee DSC6274.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Arthrolith_from_human_knee_DSC6274.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Arthrolith_from_human_knee_DSC6274.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=182805734",
+            "sha1": "3b2aa2600bb277618abc6f3ed64110ebfea3cbad",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-01-31 13:44:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Arthrolith from human knee DSC6274",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D7500|Self-published work|Files by Bullenwächter|Human cartilages",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Loose body (Joint mouse, lat. <i>Corpus liberum</i>. Free piece of cartilage from a human knee joint on a 1-cm grid. Specimen removed in the 1990s and preserved using wet techniques. Disal.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-01-31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<span class=\"int-own-work\">Self-photographed</span> by Andreas Franzkowiak (<a href=\"//commons.wikimedia.org/wiki/User:Bullenw%C3%A4chter\" title=\"User:Bullenwächter\">User:Bullenwächter</a>)",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 184888392,
+        "ns": 6,
+        "title": "File:2025-11-08 Inauguration of Dhulhaheyo Dhiriulhun, Ufaaveri Mujuthamau healthcare campaign (14).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/2025-11-08_Inauguration_of_Dhulhaheyo_Dhiriulhun%2C_Ufaaveri_Mujuthamau_healthcare_campaign_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:2025-11-08_Inauguration_of_Dhulhaheyo_Dhiriulhun,_Ufaaveri_Mujuthamau_healthcare_campaign_(14).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=184888392",
+            "sha1": "917fd9e06d3c810a4db975606e8079bbddb013a7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-02-24 03:25:31",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "2025-11-08 Inauguration of Dhulhaheyo Dhiriulhun, Ufaaveri Mujuthamau healthcare campaign (14)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Media from Presidency of Maldives (CC-BY-4.0)|Inauguration of Dhulhaheyo Dhiriulhun, Ufaaveri Mujuthamau healthcare campaign",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "2025-11-08 Inauguration of Dhulhaheyo Dhiriulhun, Ufaaveri Mujuthamau healthcare campaign",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "08 November 2025",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://presidency.gov.mv/PhotoGallery/View/9863\">https://presidency.gov.mv/PhotoGallery/View/9863</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "The President's Office, Maldives",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://presidency.gov.mv\">The President's Office of the Republic of Maldives</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 186239744,
+        "ns": 6,
+        "title": "File:Child receiving medical examination for knee discomfort at home during daytime.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Child_receiving_medical_examination_for_knee_discomfort_at_home_during_daytime.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Child_receiving_medical_examination_for_knee_discomfort_at_home_during_daytime.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=186239744",
+            "sha1": "f1b969feb77df05ac0cfe031fa9d26da7a1bc9f0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-03-15 20:10:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Child receiving medical examination for knee discomfort at home during daytime",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Children|Self-published work|Pediatric physical examinations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A healthcare professional is gently examining a child's knee in a home setting. The adult checks the knee for any signs of injury or discomfort while the child appears relaxed and calm.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-06-15 10:51:36",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

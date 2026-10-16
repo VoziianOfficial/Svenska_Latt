@@ -1,0 +1,907 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 361,
+        "ns": 6,
+        "title": "File:Vulpes vulpes laying in snow.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 579242,
+            "width": 3072,
+            "height": 2040,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vulpes_vulpes_laying_in_snow.jpg/960px-Vulpes_vulpes_laying_in_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 531,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vulpes_vulpes_laying_in_snow.jpg/1920px-Vulpes_vulpes_laying_in_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vulpes_vulpes_laying_in_snow.jpg/960px-Vulpes_vulpes_laying_in_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 531,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vulpes_vulpes_laying_in_snow.jpg/1920px-Vulpes_vulpes_laying_in_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Vulpes_vulpes_laying_in_snow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Vulpes_vulpes_laying_in_snow.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=361",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-09-09 17:54:46",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Vulpes vulpes laying in snow",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Vulpes vulpes schrencki|Attribution only license|Items with VRTS permission confirmed|Formerly featured pictures on Wikimedia Commons|Images with extracted images|Files with derivative versions|Orange mammals|Vulpes vulpes in snow|Vulpes vulpes sleeping|Front views of Vulpes vulpes",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Red fox (<i><a href=\"https://en.wikipedia.org/wiki/Vulpes_vulpes\" class=\"extiw\" title=\"en:Vulpes vulpes\">Vulpes vulpes</a> schrencki</i>) native to Hokkaido lying in the snow.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2004-09-11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://web.archive.org/web/20040831070853/http://www.all-hokkaido.net/marugoto/photo/07.htm\">https://web.archive.org/web/20040831070853/http://www.all-hokkaido.net/marugoto/photo/07.htm</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Shiretoko-Shari Tourist Association",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://www.all-hokkaido.net/marugoto/photo/07.htm\">http://www.all-hokkaido.net/marugoto/photo/07.htm</a> (link to the page the image come from and the mention the terms of conditon to free use)",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Attribution",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Shiretoko-Shari Tourist Association",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 28739,
+        "ns": 6,
+        "title": "File:Snow in Holland.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 520183,
+            "width": 1200,
+            "height": 900,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Snow_in_Holland.jpg/960px-Snow_in_Holland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_in_Holland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Snow_in_Holland.jpg/960px-Snow_in_Holland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_in_Holland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Snow_in_Holland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snow_in_Holland.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=28739",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-02-05 17:23:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Snow in Holland",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Canals in the Netherlands|License migration completed|Commons featured desktop backgrounds|Formerly featured pictures on Wikimedia Commons|Snow in the Netherlands",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A Dutch canal in winter.",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "photo taken by <a href=\"//commons.wikimedia.org/wiki/User:Quistnix\" title=\"User:Quistnix\">Quistnix</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Quistnix\" title=\"User:Quistnix\">Quistnix</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Quistnix\" title=\"User:Quistnix\">Quistnix</a> released it under GFDL",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 22731534,
+        "ns": 6,
+        "title": "File:Falling snow in front of a railway wheel.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 4363730,
+            "width": 4752,
+            "height": 3168,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Falling_snow_in_front_of_a_railway_wheel.jpg/960px-Falling_snow_in_front_of_a_railway_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Falling_snow_in_front_of_a_railway_wheel.jpg/1920px-Falling_snow_in_front_of_a_railway_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Falling_snow_in_front_of_a_railway_wheel.jpg/960px-Falling_snow_in_front_of_a_railway_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Falling_snow_in_front_of_a_railway_wheel.jpg/1920px-Falling_snow_in_front_of_a_railway_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Falling_snow_in_front_of_a_railway_wheel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Falling_snow_in_front_of_a_railway_wheel.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22731534",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-11-17 02:26:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Falling snow in front of a railway wheel",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 500D|Images with annotations|Taken with Canon EF-S 18-135mm F3.5-5.6 IS|Self-published work|Uploaded with Commonist|Unassessed QI candidates|Railway wagons of Austria|Images by Ximeg|Snowing in Austria|Trains in snow in Austria",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div style=\"display:table;width:;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Commonist.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Commonist.svg/40px-Commonist.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"22\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Commonist.svg/60px-Commonist.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"512\"></a></span> This   file was uploaded  with <a href=\"//commons.wikimedia.org/wiki/Commons:Commonist\" title=\"Commons:Commonist\">Commonist</a>.</div>\nPhoto of a railway wheelset of a freight train during the snowfall. Exposure time of 1/10 s was used to blur snowflakes and visualize their tracks.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-12-29 11:44:32",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Ximeg",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 67092836,
+        "ns": 6,
+        "title": "File:Snow crystals glittering in strong direct sunlight 42 - wide crop - high contrast.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 7707897,
+            "width": 4546,
+            "height": 2557,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg/960px-Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 450,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg/1920px-Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg/960px-Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 450,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg/1920px-Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snow_crystals_glittering_in_strong_direct_sunlight_42_-_wide_crop_-_high_contrast.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=67092836",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-03-05 20:38:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Snow crystals glittering in strong direct sunlight 42 - wide crop - high contrast",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Featured pictures of ice|Images by W.carter|Files with coordinates missing SDC location of creation|Close-up photographs of snow crystals glittering in light|Featured pictures of Lysekil Municipality|Featured photographs in the public domain|Featured pictures taken with compact digital camera|Images by W.carter, my own favorites|Snow in Lysekil Municipality|Featured pictures by W.carter",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "58.358779",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.518020",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Newly fallen snow crystals glittering in strong direct sunlight on a window sill in Gåseberg, Lysekil Municipality, Sweden. The clear, transparent ice crystals act like little prisms and refracts the sunlight into small rainbows.\n<p>On the day with the heaviest snowfall this winter (2017/2018), high humidity and −8 °C (18 °F), making for formation of big spectacular crystals, about 3-4 mm. The weather was <a href=\"//commons.wikimedia.org/wiki/File:Strong_winds_stirring_up_newly_fallen_snow_from_the_fields_during_snowfall_2.jpg\" title=\"File:Strong winds stirring up newly fallen snow from the fields during snowfall 2.jpg\">changing constantly</a> with patches of blue sky alternating with clouds and snowfall. This made it possible to photograph good quality crystals in strong light. Camera zoomed in on the most “glittery” flakes, the strong reflected glints in the snow you can see with the naked eye. Due to wind and flakes falling on the window sill, <a href=\"https://en.wikipedia.org/wiki/Focus_stacking\" class=\"extiw\" title=\"en:Focus stacking\">focus stacking</a> was not really an option and only a few of the shots were eventually stacked.\n</p>\nThree external Hoya macro lenses were used, x1, x2, x4, all simultaneously for maximum effect. Camera had to be hand-held to track down the glints which was ok, given the amount of light on the crystal and the resulting time of exposure.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-03-01 09:26:55",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 98274397,
+        "ns": 6,
+        "title": "File:DSC00013 Snow falling from trees on way to Parashar.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 11395177,
+            "width": 5472,
+            "height": 3648,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg/960px-DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg/1920px-DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg/960px-DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg/1920px-DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:DSC00013_Snow_falling_from_trees_on_way_to_Parashar.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=98274397",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-12-30 18:58:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "DSC00013 Snow falling from trees on way to Parashar",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Snowing|Prashar Lake|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Snowfall at Parashar",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-01-19 11:42:38",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:PortiaSingh\" title=\"User:PortiaSingh\">PortiaSingh</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 106500873,
+        "ns": 6,
+        "title": "File:Snowing in Šiška.jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 13527210,
+            "width": 6596,
+            "height": 4397,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/960px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/1920px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/960px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/1920px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snowing_in_%C5%A0i%C5%A1ka.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=106500873",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-06-12 04:57:54",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Snowing in Šiška",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Snowing in the Šiška District|Files with coordinates missing SDC location of creation|Snowy roads in Ljubljana|Images by User:Miha Peče",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "46.069370",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "14.492890",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Heavy snowing in Šiška district, Ljubljana.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-04-06 08:28:06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<table class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n<tbody><tr class=\"plainlinks\">\n<td><a href=\"https://upload.wikimedia.org/wikipedia/commons/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=api&amp;utm_content=original\" class=\"internal\" title=\"Snowing in Šiška.jpg\">This Photo</a> was taken by <i><b><a href=\"//commons.wikimedia.org/wiki/User:Miha_Pe%C4%8De\" title=\"User:Miha Peče\">Miha Peče</a></b></i>.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email <a rel=\"nofollow\" class=\"external text\" href=\"mailto:pc.osx.linux@gmail.com\">pc.osx.linux@gmail.com</a> or write on <a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=User_talk:Miha_Pe%C4%8De&amp;action=edit&amp;section=new\">my talk page</a>, for my information.\n</td></tr></tbody></table>\n<div style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n<table><tbody><tr><td style=\"padding:4px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"159\" data-file-height=\"142\"></a></span>\n</td><td style=\"padding:4px;\"><div style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.<br>Otherwise you may upload an edited image with a new name. Please use one of the templates <a href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative</a> or <a href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract</a>.</div>\n</td></tr></tbody></table></div>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 167609153,
+        "ns": 6,
+        "title": "File:Snowing on the Glass.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2883550,
+            "width": 3024,
+            "height": 4032,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Snowing_on_the_Glass.jpg/960px-Snowing_on_the_Glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Snowing_on_the_Glass.jpg/1920px-Snowing_on_the_Glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Snowing_on_the_Glass.jpg/960px-Snowing_on_the_Glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Snowing_on_the_Glass.jpg/1920px-Snowing_on_the_Glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Snowing_on_the_Glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snowing_on_the_Glass.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=167609153",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-06-14 02:29:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Snowing on the Glass",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Winter|Self-published work|Files with coordinates missing SDC location of creation|Snowing in December",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "39.466667",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-76.202111",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "English",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-02-22 08:24:47",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gracemontse&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gracemontse (page does not exist)\">Gracemontse</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 177496640,
+        "ns": 6,
+        "title": "File:Sudden snow in Copenhagen.jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 815235,
+            "width": 2048,
+            "height": 1536,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sudden_snow_in_Copenhagen.jpg/960px-Sudden_snow_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sudden_snow_in_Copenhagen.jpg/1920px-Sudden_snow_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sudden_snow_in_Copenhagen.jpg/960px-Sudden_snow_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Sudden_snow_in_Copenhagen.jpg/1920px-Sudden_snow_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sudden_snow_in_Copenhagen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sudden_snow_in_Copenhagen.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177496640",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-10-28 14:46:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sudden snow in Copenhagen",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Øksnehallen|Snow in Copenhagen|Self-published work|Snowing in Denmark|Files with coordinates missing SDC location of creation|Snowing in February|Files by User:Rose Abrams",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "55.669425",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "12.563628",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "plötsligt snöfall i Köpenhamn",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2025-02-15 11:59:31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rose_Abrams\" title=\"User:Rose Abrams\">Rose Abrams</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

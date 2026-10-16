@@ -992,7 +992,22 @@
   "extra-125": "./assets/flashcards/extra-125.webp",
   "extra-126": "./assets/flashcards/extra-126.webp",
   "extra-prep-bland": "./assets/flashcards/extra-prep-bland.webp",
-  "extra-prep-intill": "./assets/flashcards/extra-prep-intill.webp"
+  "extra-prep-intill": "./assets/flashcards/extra-prep-intill.webp",
+  "w-där": "./assets/flashcards/w-d%C3%A4r.webp",
+  "w-regnar": "./assets/flashcards/w-regnar.webp",
+  "w-snöar": "./assets/flashcards/w-sn%C3%B6ar.webp",
+  "w-medicin": "./assets/flashcards/w-medicin.webp",
+  "w-fågel": "./assets/flashcards/w-f%C3%A5gel.webp",
+  "lex-0015": "./assets/flashcards/lex-0015.webp",
+  "lex-0032": "./assets/flashcards/lex-0032.webp",
+  "lex-0183": "./assets/flashcards/lex-0183.webp",
+  "lex-0310": "./assets/flashcards/lex-0310.webp",
+  "lex-0318": "./assets/flashcards/lex-0318.webp",
+  "lex-0384": "./assets/flashcards/lex-0384.webp",
+  "lex-0391": "./assets/flashcards/lex-0391.webp",
+  "lex-0395": "./assets/flashcards/lex-0395.webp",
+  "lex-0027": "./assets/flashcards/lex-0027.webp",
+  "lex-0401": "./assets/flashcards/lex-0401.webp"
 });
  window.svFlashPhotoForWord = word => photos[word?.id] || null;
 })();

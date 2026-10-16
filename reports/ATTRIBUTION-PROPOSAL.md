@@ -1,3 +1,5 @@
+> Историческое предложение этапа 1. Реализовано 17 октября 2026: `../photo-credits.html`. Актуальные результаты — `PHOTO-COMPLETION.md` и `photo-license-audit.json`.
+
 # Предложение страницы атрибуции — без изменения интерфейса
 
 Проверен исходный `assets/flashcards/photo-credits-imported.json`; файл оставлен
