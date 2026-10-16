@@ -1,29 +1,33 @@
-/* Svenska Lätt v12: cache application shell and previously-viewed photographs.
-   External images remain third-party content. A picture has to load once online
-   before it can be available offline. */
-const APP_CACHE='svenska-latt-v45-shell';
-const PHOTO_CACHE='svenska-latt-v23-photos';
+/* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
+   the complete deployment content, so each changed publication gets new caches. */
+const RELEASE='2026-10-16-prep-1';
+const APP_CACHE=`svenska-latt-${RELEASE}-shell`;
+const PHOTO_CACHE=`svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT=150;
-const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./flashcard-media.js','./assets/flashcards/work.webp','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./words.json','./lessons.json','./books.json','./favicon.svg','./favicon.svg?v=42','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
-self.addEventListener('install',e=>{
- e.waitUntil(caches.open(APP_CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()));
+const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
+const SHELL_URLS=new Set(FILES.map(file=>new URL(file,self.registration.scope).href));
+let photoWrites=Promise.resolve();
+self.addEventListener('install',event=>{
+ event.waitUntil(caches.open(APP_CACHE).then(cache=>cache.addAll(FILES.map(file=>new Request(new URL(file,self.registration.scope),{cache:'reload'})))).then(()=>self.skipWaiting()));
 });
-self.addEventListener('activate',e=>{
- e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('svenska-latt-')&&!([APP_CACHE,PHOTO_CACHE].includes(k))).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+self.addEventListener('activate',event=>{
+ event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('svenska-latt-')&&![APP_CACHE,PHOTO_CACHE].includes(key)).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));
 });
-async function cachePhoto(request,event){
+async function cachePhoto(request){
  const store=await caches.open(PHOTO_CACHE);
  const cached=await store.match(request);
  if(cached)return cached;
  try{
-  const response=await fetch(request);
+  const response=await fetch(request,{cache:'no-cache'});
   if(response.ok||response.type==='opaque'){
-   // Never hold up the first paint while saving the photograph to disk.
-   event.waitUntil((async()=>{
-    await store.put(request,response.clone());
+   const copy=response.clone();
+   // Serialize writes and eviction: concurrent image loads cannot exceed the cap.
+   photoWrites=photoWrites.catch(()=>{}).then(async()=>{
+    await store.put(request,copy);
     const keys=await store.keys();
-    if(keys.length>PHOTO_LIMIT){for(const k of keys.slice(0,keys.length-PHOTO_LIMIT))await store.delete(k)}
-   })().catch(()=>{}));
+    for(const key of keys.slice(0,Math.max(0,keys.length-PHOTO_LIMIT)))await store.delete(key);
+   });
+   await photoWrites.catch(()=>{});
   }
   return response;
  }catch(_){return new Response('',{status:504,statusText:'Offline image unavailable'})}
@@ -32,12 +36,28 @@ self.addEventListener('fetch',event=>{
  const request=event.request;
  if(request.method!=='GET')return;
  const url=new URL(request.url);
- if(request.destination==='image'&&(['images.pexels.com','upload.wikimedia.org'].includes(url.hostname))){
-  event.respondWith(cachePhoto(request,event));return;
+ const local=url.origin===self.location.origin;
+ const photoRoot=new URL('./assets/flashcards/',self.registration.scope);
+ if((local&&url.pathname.startsWith(photoRoot.pathname)&&url.pathname.endsWith('.webp'))||
+    (request.destination==='image'&&['images.pexels.com','upload.wikimedia.org'].includes(url.hostname))){
+  event.respondWith(cachePhoto(request));return;
  }
- if(url.origin!==self.location.origin||url.pathname.includes('/api/'))return;
- event.respondWith(fetch(request).then(response=>{
-  if(response.ok){const copy=response.clone();event.waitUntil(caches.open(APP_CACHE).then(c=>c.put(request,copy)).catch(()=>{}))}
-  return response;
- }).catch(()=>caches.match(request)));
+ if(!local)return;
+ // Match versioned shell requests to the precached canonical URL. Only known
+ // public shell resources may enter this cache; API and arbitrary files bypass it.
+ url.search='';url.hash='';
+ const iconRoot=new URL('./assets/word-icons/',self.registration.scope).pathname;
+ const avatarRoot=new URL('./assets/avatars/',self.registration.scope).pathname;
+ const staticImage=request.destination==='image'&&
+  ((url.pathname.startsWith(iconRoot)&&url.pathname.endsWith('.webp'))||
+   (url.pathname.startsWith(avatarRoot)&&/\.(png|jpe?g|webp)$/.test(url.pathname)));
+ if(!SHELL_URLS.has(url.href)&&!staticImage)return;
+ event.respondWith((async()=>{
+  const cache=await caches.open(APP_CACHE);
+  try{
+   const response=await fetch(request,{cache:'no-cache'});
+   if(response.ok){const copy=response.clone();event.waitUntil(cache.put(url.href,copy).catch(()=>{}))}
+   return response;
+  }catch(_){return await cache.match(url.href)||new Response('',{status:504,statusText:'Offline resource unavailable'})}
+ })());
 });

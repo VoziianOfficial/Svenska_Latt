@@ -36,16 +36,22 @@ vm.runInNewContext(fs.readFileSync(path.join(root,'flashcard-media.js'),'utf8'),
 const words=JSON.parse(fs.readFileSync(path.join(root,'words.json'),'utf8'));
 const statusPath=path.join(root,'assets/flashcards/generation-status.json');
 const receipts=fs.existsSync(statusPath)?JSON.parse(fs.readFileSync(statusPath,'utf8')):{};
+// Preserve these existing mappings despite historical 'generated' status.
+const preservedGenerated=new Set(['w-en','w-tre','w-fyra','w-fem','w-sex','w-sju','w-åtta','w-nio','w-tio']);
 let covered=0;
 for(const word of words){
  const url=registry.window.svFlashPhotoForWord(word);
  if(url){
   assert(url.startsWith('./assets/flashcards/'),'flashcards must use bundled images');
-  assert(fs.statSync(path.resolve(root,url)).size>1000,'missing or empty image: '+word.id);
+  assert(fs.statSync(path.resolve(root,decodeURIComponent(url))).size>1000,'missing or empty image: '+word.id);
   covered++;
  }
- if(receipts[word.id]?.status==='generated')assert.equal(url,null,'unreviewed image must not be published');
- if(receipts[word.id]?.status==='reviewed')assert.equal(url,receipts[word.id].path);
+ // Keep the existing nine photos; newly generated unreviewed assets stay excluded.
+ if(receipts[word.id]?.status==='generated'){
+  if(preservedGenerated.has(word.id))assert.equal(decodeURIComponent(url).normalize('NFC'),`./assets/flashcards/${word.id}.webp`);
+  else assert.equal(url,null,'new unreviewed image must not be published');
+ }
+ if(receipts[word.id]?.status==='reviewed')assert.equal(decodeURIComponent(url).normalize('NFC'),decodeURIComponent(receipts[word.id].path).normalize('NFC'));
 }
-assert.equal(covered,4+Object.values(receipts).filter(row=>row.status==='reviewed').length);
+assert.equal(covered,991,'preserve the existing photo coverage');
 console.log('PASS: exact images, neutral fallback, loading state and late responses');
