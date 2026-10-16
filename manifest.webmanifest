@@ -1,0 +1,19 @@
+{
+  "name": "Svenska Lätt — Swedish made simple",
+  "short_name": "Svenska Lätt",
+  "id": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f8ff",
+  "theme_color": "#4868f5",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "scope": "./"
+}

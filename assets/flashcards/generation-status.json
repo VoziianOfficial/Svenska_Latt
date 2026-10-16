@@ -1,0 +1,586 @@
+{
+  "v-prata": {
+    "path": "./assets/flashcards/v-prata.webp",
+    "status": "reviewed"
+  },
+  "v-betala": {
+    "path": "./assets/flashcards/v-betala.webp",
+    "status": "reviewed"
+  },
+  "v-studera": {
+    "path": "./assets/flashcards/v-studera.webp",
+    "status": "reviewed"
+  },
+  "v-handla": {
+    "path": "./assets/flashcards/v-handla.webp",
+    "status": "reviewed"
+  },
+  "v-fråga": {
+    "path": "./assets/flashcards/v-fråga.webp",
+    "status": "reviewed"
+  },
+  "v-svara": {
+    "path": "./assets/flashcards/v-svara.webp",
+    "status": "reviewed"
+  },
+  "v-laga": {
+    "path": "./assets/flashcards/v-laga.webp",
+    "status": "reviewed"
+  },
+  "v-lyssna": {
+    "path": "./assets/flashcards/v-lyssna.webp",
+    "status": "reviewed"
+  },
+  "v-använda": {
+    "path": "./assets/flashcards/v-använda.webp",
+    "status": "reviewed"
+  },
+  "v-tända": {
+    "path": "./assets/flashcards/v-tända.webp",
+    "status": "reviewed"
+  },
+  "v-titta": {
+    "path": "./assets/flashcards/v-titta.webp",
+    "status": "reviewed"
+  },
+  "v-sy": {
+    "path": "./assets/flashcards/v-sy.webp",
+    "status": "reviewed"
+  },
+  "v-börja": {
+    "path": "./assets/flashcards/v-börja.webp",
+    "status": "reviewed"
+  },
+  "v-vänta": {
+    "path": "./assets/flashcards/v-vänta.webp",
+    "status": "reviewed"
+  },
+  "v-fylla": {
+    "path": "./assets/flashcards/v-fylla.webp",
+    "status": "reviewed"
+  },
+  "v-sluta": {
+    "path": "./assets/flashcards/v-sluta.webp",
+    "status": "reviewed"
+  },
+  "v-nå": {
+    "path": "./assets/flashcards/v-nå.webp",
+    "status": "reviewed"
+  },
+  "v-bygga": {
+    "path": "./assets/flashcards/v-bygga.webp",
+    "status": "reviewed"
+  },
+  "v-vakna": {
+    "path": "./assets/flashcards/v-vakna.webp",
+    "status": "reviewed"
+  },
+  "v-vara": {
+    "path": "./assets/flashcards/v-vara.webp",
+    "status": "reviewed"
+  },
+  "v-träna": {
+    "path": "./assets/flashcards/v-träna.webp",
+    "status": "reviewed"
+  },
+  "v-läsa": {
+    "path": "./assets/flashcards/v-läsa.webp",
+    "status": "reviewed"
+  },
+  "v-spela": {
+    "path": "./assets/flashcards/v-spela.webp",
+    "status": "reviewed"
+  },
+  "v-ha": {
+    "path": "./assets/flashcards/v-ha.webp",
+    "status": "reviewed"
+  },
+  "v-tvätta": {
+    "path": "./assets/flashcards/v-tvätta.webp",
+    "status": "reviewed"
+  },
+  "v-öppna": {
+    "path": "./assets/flashcards/v-öppna.webp",
+    "status": "reviewed"
+  },
+  "v-stanna": {
+    "path": "./assets/flashcards/v-stanna.webp",
+    "status": "reviewed"
+  },
+  "v-köpa": {
+    "path": "./assets/flashcards/v-köpa.webp",
+    "status": "reviewed"
+  },
+  "v-gå": {
+    "path": "./assets/flashcards/v-gå.webp",
+    "status": "reviewed"
+  },
+  "v-stänga": {
+    "path": "./assets/flashcards/v-stänga.webp",
+    "status": "reviewed"
+  },
+  "v-resa": {
+    "path": "./assets/flashcards/v-resa.webp",
+    "status": "reviewed"
+  },
+  "v-komma": {
+    "path": "./assets/flashcards/v-komma.webp",
+    "status": "reviewed"
+  },
+  "v-ringa": {
+    "path": "./assets/flashcards/v-ringa.webp",
+    "status": "reviewed"
+  },
+  "v-åka": {
+    "path": "./assets/flashcards/v-åka.webp",
+    "status": "reviewed"
+  },
+  "v-göra": {
+    "path": "./assets/flashcards/v-göra.webp",
+    "status": "reviewed"
+  },
+  "v-söka": {
+    "path": "./assets/flashcards/v-söka.webp",
+    "status": "reviewed"
+  },
+  "v-få": {
+    "path": "./assets/flashcards/v-få.webp",
+    "status": "reviewed"
+  },
+  "v-se": {
+    "path": "./assets/flashcards/v-se.webp",
+    "status": "reviewed"
+  },
+  "v-leka": {
+    "path": "./assets/flashcards/v-leka-v2.webp",
+    "status": "reviewed"
+  },
+  "v-ta": {
+    "path": "./assets/flashcards/v-ta-v2.webp",
+    "status": "reviewed"
+  },
+  "v-tänka": {
+    "path": "./assets/flashcards/v-tänka.webp",
+    "status": "reviewed"
+  },
+  "v-skriva": {
+    "path": "./assets/flashcards/v-skriva.webp",
+    "status": "reviewed"
+  },
+  "v-tycka": {
+    "path": "./assets/flashcards/v-tycka-v2.webp",
+    "status": "reviewed"
+  },
+  "v-dricka": {
+    "path": "./assets/flashcards/v-dricka.webp",
+    "status": "reviewed"
+  },
+  "v-äta": {
+    "path": "./assets/flashcards/v-äta.webp",
+    "status": "reviewed"
+  },
+  "v-hjälpa": {
+    "path": "./assets/flashcards/v-hjälpa.webp",
+    "status": "reviewed"
+  },
+  "v-sova": {
+    "path": "./assets/flashcards/v-sova.webp",
+    "status": "reviewed"
+  },
+  "v-bo": {
+    "path": "./assets/flashcards/v-bo.webp",
+    "status": "reviewed"
+  },
+  "v-tro": {
+    "path": "./assets/flashcards/v-tro.webp",
+    "status": "reviewed"
+  },
+  "v-springa": {
+    "path": "./assets/flashcards/v-springa.webp",
+    "status": "reviewed"
+  },
+  "v-veta": {
+    "path": "./assets/flashcards/v-veta.webp",
+    "status": "reviewed"
+  },
+  "v-må": {
+    "path": "./assets/flashcards/v-må.webp",
+    "status": "reviewed"
+  },
+  "v-kunna": {
+    "path": "./assets/flashcards/v-kunna.webp",
+    "status": "reviewed"
+  },
+  "v-vilja": {
+    "path": "./assets/flashcards/v-vilja.webp",
+    "status": "reviewed"
+  },
+  "v-säga": {
+    "path": "./assets/flashcards/v-säga.webp",
+    "status": "reviewed"
+  },
+  "v-ge": {
+    "path": "./assets/flashcards/v-ge.webp",
+    "status": "reviewed"
+  },
+  "v-ligga": {
+    "path": "./assets/flashcards/v-ligga.webp",
+    "status": "reviewed"
+  },
+  "v-sitta": {
+    "path": "./assets/flashcards/v-sitta.webp",
+    "status": "reviewed"
+  },
+  "v-stå": {
+    "path": "./assets/flashcards/v-stå.webp",
+    "status": "reviewed"
+  },
+  "n-bil": {
+    "path": "./assets/flashcards/n-bil.webp",
+    "status": "reviewed"
+  },
+  "n-hus": {
+    "path": "./assets/flashcards/n-hus.webp",
+    "status": "reviewed"
+  },
+  "n-bok": {
+    "path": "./assets/flashcards/n-bok.webp",
+    "status": "reviewed"
+  },
+  "n-stol": {
+    "path": "./assets/flashcards/n-stol.webp",
+    "status": "reviewed"
+  },
+  "n-flicka": {
+    "path": "./assets/flashcards/n-flicka.webp",
+    "status": "reviewed"
+  },
+  "n-pojke": {
+    "path": "./assets/flashcards/n-pojke.webp",
+    "status": "reviewed"
+  },
+  "n-kvinna": {
+    "path": "./assets/flashcards/n-kvinna.webp",
+    "status": "reviewed"
+  },
+  "n-man": {
+    "path": "./assets/flashcards/n-man.webp",
+    "status": "reviewed"
+  },
+  "n-skola": {
+    "path": "./assets/flashcards/n-skola.webp",
+    "status": "reviewed"
+  },
+  "n-bord": {
+    "path": "./assets/flashcards/n-bord.webp",
+    "status": "reviewed"
+  },
+  "n-fönster": {
+    "path": "./assets/flashcards/n-fönster.webp",
+    "status": "reviewed"
+  },
+  "n-rum": {
+    "path": "./assets/flashcards/n-rum.webp",
+    "status": "reviewed"
+  },
+  "n-dörr": {
+    "path": "./assets/flashcards/n-dörr.webp",
+    "status": "reviewed"
+  },
+  "n-dator": {
+    "path": "./assets/flashcards/n-dator.webp",
+    "status": "reviewed"
+  },
+  "n-mobil": {
+    "path": "./assets/flashcards/n-mobil.webp",
+    "status": "reviewed"
+  },
+  "n-äpple": {
+    "path": "./assets/flashcards/n-äpple.webp",
+    "status": "reviewed"
+  },
+  "n-banan": {
+    "path": "./assets/flashcards/n-banan.webp",
+    "status": "reviewed"
+  },
+  "n-katt": {
+    "path": "./assets/flashcards/n-katt.webp",
+    "status": "reviewed"
+  },
+  "n-hund": {
+    "path": "./assets/flashcards/n-hund.webp",
+    "status": "reviewed"
+  },
+  "n-familj": {
+    "path": "./assets/flashcards/n-familj.webp",
+    "status": "reviewed"
+  },
+  "n-vän": {
+    "path": "./assets/flashcards/n-vän.webp",
+    "status": "reviewed"
+  },
+  "n-dag": {
+    "path": "./assets/flashcards/n-dag.webp",
+    "status": "reviewed"
+  },
+  "n-vecka": {
+    "path": "./assets/flashcards/n-vecka-v2.webp",
+    "status": "reviewed"
+  },
+  "n-år": {
+    "path": "./assets/flashcards/n-år.webp",
+    "status": "reviewed"
+  },
+  "n-lärare": {
+    "path": "./assets/flashcards/n-lärare.webp",
+    "status": "reviewed"
+  },
+  "n-språk": {
+    "path": "./assets/flashcards/n-språk.webp",
+    "status": "reviewed"
+  },
+  "n-fråga": {
+    "path": "./assets/flashcards/n-fråga.webp",
+    "status": "reviewed"
+  },
+  "n-svar": {
+    "path": "./assets/flashcards/n-svar.webp",
+    "status": "reviewed"
+  },
+  "n-penna": {
+    "path": "./assets/flashcards/n-penna.webp",
+    "status": "reviewed"
+  },
+  "n-barn": {
+    "path": "./assets/flashcards/n-barn.webp",
+    "status": "reviewed"
+  },
+  "n-fisk": {
+    "path": "./assets/flashcards/n-fisk.webp",
+    "status": "reviewed"
+  },
+  "n-cykel": {
+    "path": "./assets/flashcards/n-cykel.webp",
+    "status": "reviewed"
+  },
+  "n-klocka": {
+    "path": "./assets/flashcards/n-klocka.webp",
+    "status": "reviewed"
+  },
+  "w-hej": {
+    "path": "./assets/flashcards/w-hej.webp",
+    "status": "reviewed"
+  },
+  "w-hejdå": {
+    "path": "./assets/flashcards/w-hejdå.webp",
+    "status": "reviewed"
+  },
+  "w-tack": {
+    "path": "./assets/flashcards/w-tack.webp",
+    "status": "reviewed"
+  },
+  "w-snälla": {
+    "path": "./assets/flashcards/w-snälla.webp",
+    "status": "reviewed"
+  },
+  "w-ursäkta": {
+    "path": "./assets/flashcards/w-ursäkta.webp",
+    "status": "reviewed"
+  },
+  "w-förlåt": {
+    "path": "./assets/flashcards/w-förlåt.webp",
+    "status": "reviewed"
+  },
+  "w-ja": {
+    "path": "./assets/flashcards/w-ja.webp",
+    "status": "reviewed"
+  },
+  "w-nej": {
+    "path": "./assets/flashcards/w-nej.webp",
+    "status": "reviewed"
+  },
+  "w-kanske": {
+    "path": "./assets/flashcards/w-kanske.webp",
+    "status": "reviewed"
+  },
+  "w-alltid": {
+    "path": "./assets/flashcards/w-alltid.webp",
+    "status": "reviewed"
+  },
+  "w-aldrig": {
+    "path": "./assets/flashcards/w-aldrig.webp",
+    "status": "reviewed"
+  },
+  "w-ibland": {
+    "path": "./assets/flashcards/w-ibland.webp",
+    "status": "reviewed"
+  },
+  "w-ofta": {
+    "path": "./assets/flashcards/w-ofta.webp",
+    "status": "reviewed"
+  },
+  "w-nu": {
+    "path": "./assets/flashcards/w-nu.webp",
+    "status": "reviewed"
+  },
+  "w-sedan": {
+    "path": "./assets/flashcards/w-sedan.webp",
+    "status": "reviewed"
+  },
+  "w-snart": {
+    "path": "./assets/flashcards/w-snart.webp",
+    "status": "reviewed"
+  },
+  "w-tidigt": {
+    "path": "./assets/flashcards/w-tidigt.webp",
+    "status": "reviewed"
+  },
+  "w-sent": {
+    "path": "./assets/flashcards/w-sent.webp",
+    "status": "reviewed"
+  },
+  "w-i-dag": {
+    "path": "./assets/flashcards/w-i-dag-v2.webp",
+    "status": "reviewed"
+  },
+  "w-i-går": {
+    "path": "./assets/flashcards/w-i-går.webp",
+    "status": "reviewed"
+  },
+  "w-i-morgon": {
+    "path": "./assets/flashcards/w-i-morgon.webp",
+    "status": "reviewed"
+  },
+  "w-morgon": {
+    "path": "./assets/flashcards/w-morgon.webp",
+    "status": "reviewed"
+  },
+  "w-middag": {
+    "path": "./assets/flashcards/w-middag.webp",
+    "status": "reviewed"
+  },
+  "w-kväll": {
+    "path": "./assets/flashcards/w-kväll.webp",
+    "status": "reviewed"
+  },
+  "w-natt": {
+    "path": "./assets/flashcards/w-natt.webp",
+    "status": "reviewed"
+  },
+  "w-måndag": {
+    "path": "./assets/flashcards/w-måndag.webp",
+    "status": "reviewed"
+  },
+  "w-tisdag": {
+    "path": "./assets/flashcards/w-tisdag.webp",
+    "status": "reviewed"
+  },
+  "w-onsdag": {
+    "path": "./assets/flashcards/w-onsdag.webp",
+    "status": "reviewed"
+  },
+  "w-torsdag": {
+    "path": "./assets/flashcards/w-torsdag.webp",
+    "status": "reviewed"
+  },
+  "w-fredag": {
+    "path": "./assets/flashcards/w-fredag.webp",
+    "status": "reviewed"
+  },
+  "w-lördag": {
+    "path": "./assets/flashcards/w-lördag.webp",
+    "status": "reviewed"
+  },
+  "w-söndag": {
+    "path": "./assets/flashcards/w-söndag.webp",
+    "status": "reviewed"
+  },
+  "w-januari": {
+    "path": "./assets/flashcards/w-januari.webp",
+    "status": "reviewed"
+  },
+  "w-februari": {
+    "path": "./assets/flashcards/w-februari.webp",
+    "status": "reviewed"
+  },
+  "w-mars": {
+    "path": "./assets/flashcards/w-mars.webp",
+    "status": "reviewed"
+  },
+  "w-april": {
+    "path": "./assets/flashcards/w-april.webp",
+    "status": "reviewed"
+  },
+  "w-maj": {
+    "path": "./assets/flashcards/w-maj.webp",
+    "status": "reviewed"
+  },
+  "w-juni": {
+    "path": "./assets/flashcards/w-juni.webp",
+    "status": "reviewed"
+  },
+  "w-juli": {
+    "path": "./assets/flashcards/w-juli.webp",
+    "status": "reviewed"
+  },
+  "w-augusti": {
+    "path": "./assets/flashcards/w-augusti.webp",
+    "status": "reviewed"
+  },
+  "w-september": {
+    "path": "./assets/flashcards/w-september.webp",
+    "status": "reviewed"
+  },
+  "w-oktober": {
+    "path": "./assets/flashcards/w-oktober.webp",
+    "status": "reviewed"
+  },
+  "w-november": {
+    "path": "./assets/flashcards/w-november.webp",
+    "status": "reviewed"
+  },
+  "w-december": {
+    "path": "./assets/flashcards/w-december.webp",
+    "status": "reviewed"
+  },
+  "w-två": {
+    "path": "./assets/flashcards/w-två.webp",
+    "status": "reviewed"
+  },
+  "w-en": {
+    "path": "./assets/flashcards/w-en.webp",
+    "status": "generated"
+  },
+  "w-tre": {
+    "path": "./assets/flashcards/w-tre.webp",
+    "status": "generated"
+  },
+  "w-fyra": {
+    "path": "./assets/flashcards/w-fyra.webp",
+    "status": "generated"
+  },
+  "w-fem": {
+    "path": "./assets/flashcards/w-fem.webp",
+    "status": "generated"
+  },
+  "w-sex": {
+    "path": "./assets/flashcards/w-sex.webp",
+    "status": "generated"
+  },
+  "w-sju": {
+    "path": "./assets/flashcards/w-sju.webp",
+    "status": "generated"
+  },
+  "w-åtta": {
+    "path": "./assets/flashcards/w-åtta.webp",
+    "status": "generated"
+  },
+  "w-nio": {
+    "path": "./assets/flashcards/w-nio.webp",
+    "status": "generated"
+  },
+  "w-tio": {
+    "path": "./assets/flashcards/w-tio.webp",
+    "status": "generated"
+  }
+}
