@@ -68,8 +68,11 @@ class Handler(BaseHTTPRequestHandler):
   self.send_header('X-Content-Type-Options','nosniff')
   self.send_header('Referrer-Policy','strict-origin-when-cross-origin')
   self.send_header('X-Frame-Options','DENY')
-  self.send_header('Content-Security-Policy',"default-src 'self'; img-src 'self' data: https://images.pexels.com; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co; media-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'")
-  self.send_header('Cache-Control','no-cache' if self.path.split('?')[0] in {'/','/index.html','/sw.js'} else ('no-store' if mime.startswith('application/json') else 'public, max-age=300'))
+  self.send_header('Content-Security-Policy',"default-src 'self'; img-src 'self' data: https://images.pexels.com https://upload.wikimedia.org; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://images.pexels.com https://upload.wikimedia.org; media-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'")
+  # Revalidate runtime code on every local reload; image bytes remain cacheable.
+  runtime_path=urlparse(self.path).path
+  runtime=runtime_path in {'/','/index.html','/sw.js'} or Path(runtime_path).suffix.lower() in {'.js','.css'}
+  self.send_header('Cache-Control','no-cache' if runtime else ('no-store' if mime.startswith('application/json') else 'public, max-age=300'))
   if length is not None:self.send_header('Content-Length',str(length))
  def send_json(self,payload,status=200,cookie=None):
   b=json.dumps(payload,ensure_ascii=False,separators=(',',':')).encode()
@@ -88,7 +91,7 @@ class Handler(BaseHTTPRequestHandler):
   if path=='/':path='/index.html'
   relative=path.lstrip('/')
   if '\\' in path or '\x00' in path or any(part in {'.','..'} for part in relative.split('/')):return self.error(404,'Not found')
-  public_files={'index.html','style.css','studio.css','atelier.css','learning-polish.css','app.js','atelier.js','learning-polish.js','flashcard-media.js','word-icons.js','locale-content.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js','supabase-client.js','supabase-auth.js','supabase-rpc.js','privacy.html','terms.html','cookies.html','photo-credits.html'}
+  public_files={'index.html','style.css','studio.css','atelier.css','learning-polish.css','app.js','atelier.js','learning-polish.js','flashcard-media.js','word-icons.js','locale-content.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js','supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','privacy.html','terms.html','cookies.html','photo-credits.html'}
   public_asset=relative.startswith('assets/') and Path(relative).suffix.lower() in {'.webp','.png','.jpg','.jpeg','.svg','.gif','.woff','.woff2','.mp3','.ogg','.wav'}
   public_asset=public_asset or relative in {'assets/flashcards/photo-credits-imported.json','assets/flashcards/photo-credits-added.json','assets/word-icons/manifest.json','assets/word-icons/LICENSE'}
   if relative not in public_files and not public_asset:return self.error(404,'Not found')
@@ -174,6 +177,11 @@ class Handler(BaseHTTPRequestHandler):
 def current_user_with_id(uid):
  with conn() as c:return dict(c.execute('SELECT id,name,email,state FROM users WHERE id=?',(uid,)).fetchone())
 if __name__=='__main__':
- init_db();print(f'Svenska Lätt running at http://{HOST}:{PORT}',flush=True)
- try:ThreadingHTTPServer((HOST,PORT),Handler).serve_forever()
- except KeyboardInterrupt:print('Stopped')
+ try:server=ThreadingHTTPServer((HOST,PORT),Handler)
+ except OSError as error:
+  sys.exit(f'Cannot start http://{HOST}:{PORT}: {error}. Check the process already listening on this port.')
+ with server:
+  init_db()
+  print(f'Svenska Lätt running at http://{HOST}:{PORT}/\nProject: {ROOT}\nPID: {os.getpid()}',flush=True)
+  try:server.serve_forever()
+  except KeyboardInterrupt:print('Stopped')

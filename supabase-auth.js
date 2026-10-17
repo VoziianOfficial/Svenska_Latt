@@ -2,10 +2,27 @@
 'use strict';
 (() => {
  let initializing=null,client=null,session=null,subscription=null,identityRevision=0;
- let status='idle',lastEvent=null;
+ let status='idle',lastEvent=null,callbackError=null;
+ // Capture and scrub credentials before app.js reads the hash router.
+ const callback=(() => {
+  const url=new URL(location.origin+location.pathname+(location.search||'')+(location.hash||''));
+  const hash=new URLSearchParams(url.hash.slice(1));
+  const keys=['access_token','refresh_token','expires_in','expires_at','token_type','type','provider_token','provider_refresh_token','error','error_code','error_description'];
+  const isHash=keys.some(key=>hash.has(key));
+  const code=url.searchParams.get('code');
+  const queryError=url.searchParams.get('error')||url.searchParams.get('error_code');
+  if(!isHash&&!code&&!queryError)return null;
+  const value={access_token:hash.get('access_token'),refresh_token:hash.get('refresh_token'),code,
+   error:hash.get('error')||hash.get('error_code')||queryError};
+  for(const key of [...keys,'code','sb_flow_id'])url.searchParams.delete(key);
+  if(isHash)url.hash='profile';
+  else if(!url.hash)url.hash='profile';
+  history.replaceState(history.state,'',url.pathname+url.search+url.hash);
+  return value;
+ })();
  const listeners=new Set();
  const error=code=>Object.assign(new Error(code),{code});
- function snapshot(){return Object.freeze({status,event:lastEvent,user:session?.user||null,identityRevision})}
+ function snapshot(){return Object.freeze({status,event:lastEvent,user:session?.user||null,identityRevision,callbackError})}
  function update(next,event){
   if((session?.user?.id||null)!==(next?.user?.id||null))identityRevision++;
   session=next||null;status=session?'signed_in':'signed_out';lastEvent=event;
@@ -24,10 +41,23 @@
      const result=client.auth.onAuthStateChange((event,next)=>{receivedEvent=true;update(next,event)});
      subscription=result.data.subscription;
     }
+    if(callback&&!callback.processed){
+     callback.processed=true;
+     try{
+      if(callback.error)throw error('AUTH_CALLBACK_FAILED');
+      let result;
+      if(callback.code)result=await client.auth.exchangeCodeForSession(callback.code);
+      else if(callback.access_token&&callback.refresh_token)result=await client.auth.setSession({access_token:callback.access_token,refresh_token:callback.refresh_token});
+      else throw error('AUTH_CALLBACK_FAILED');
+      if(result.error)throw result.error;
+      callbackError=null;update(result.data.session,'EMAIL_CONFIRMED');receivedEvent=true;
+     }catch(_){callbackError='AUTH_CALLBACK_FAILED'}
+     finally{callback.access_token=null;callback.refresh_token=null;callback.code=null}
+    }
     const result=await client.auth.getSession();
     if(result.error)throw result.error;
     if(!receivedEvent)update(result.data.session,'INITIAL_SESSION');
-   }catch(_){status='unavailable';initializing=null}
+   }catch(_){if(callback)callbackError='AUTH_CALLBACK_FAILED';status='unavailable';initializing=null}
    return snapshot();
   })();
   // If initialization failed synchronously, allow a later explicit retry.

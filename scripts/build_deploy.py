@@ -4,6 +4,7 @@ Existing output directories are refused to avoid accidental loss of local work.
 """
 import hashlib
 import json
+import re
 from pathlib import Path
 import shutil
 import sys
@@ -12,7 +13,7 @@ import unicodedata
 ROOT = Path(__file__).resolve().parents[1]
 RUNTIME = '''.nojekyll LICENSE index.html style.css studio.css atelier.css learning-polish.css
 app.js atelier.js learning-polish.js flashcard-media.js word-icons.js locale-content.js
-supabase-config.js supabase-client.js supabase-auth.js supabase-rpc.js words.json lessons.json books.json favicon.svg manifest.webmanifest
+supabase-config.js supabase-client.js supabase-auth.js supabase-rpc.js supabase-progress.js words.json lessons.json books.json favicon.svg manifest.webmanifest
 privacy.html terms.html cookies.html photo-credits.html sw.js server.py run.command'''.split()
 IMAGE_EXTENSIONS = {'.webp', '.png', '.jpg', '.jpeg', '.svg', '.gif'}
 ASSET_METADATA = {'assets/flashcards/photo-credits-imported.json',
@@ -41,7 +42,7 @@ def build(destination):
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     sw = destination / 'sw.js'
-    sw.write_text(sw.read_text().replace("const RELEASE='2026-10-16-prep-1';", f"const RELEASE='{release}';"))
+    sw.write_text(re.sub(r"const RELEASE='[^']+';", f"const RELEASE='{release}';", sw.read_text(), count=1))
     inventory['sw.js'] = hashlib.sha256(sw.read_bytes()).hexdigest()
     print(json.dumps({'directory': str(destination), 'release': release,
                       'files': len(inventory),

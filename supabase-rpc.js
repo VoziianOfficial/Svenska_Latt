@@ -1,4 +1,4 @@
-/* Explicit RPC adapters only. Nothing invokes these on boot, login or learning. */
+/* RPC adapters. Only getProgress is connected to Auth; mutations remain explicit. */
 'use strict';
 (() => {
  const error=code=>Object.assign(new Error(code),{code});

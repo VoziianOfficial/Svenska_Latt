@@ -8,7 +8,7 @@ const A='10000000-0000-0000-0000-000000000001',B='10000000-0000-0000-0000-000000
 const eid='20000000-0000-0000-0000-000000000001';
 const token=id=>({user:{id},access_token:'test-jwt-'+id});
 const config={url:'https://preparation-test.supabase.co',publishableKey:'sb_publishable_test_only'};
-function harness({conf=config,initial=null,failSdk=false,failSession=false}={}){
+function harness({conf=config,initial=null,failSdk=false,failSession=false,hash='#profile',search='',callbackFails=false,progress=false,hostname='example.github.io'}={}){
  const records={scripts:[],clients:[],rpc:[],storageWrites:[],fetch:[],sdkSubscriptions:0};
  const data=new Map([['sv-guest-v2','original-guest'],['sv-cloud-backup-'+A,'original-backup']]);
  let current=initial,handler=null,nextRpc=null;
@@ -16,6 +16,8 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false}={}){
   auth:{
    onAuthStateChange(fn){records.sdkSubscriptions++;handler=fn;return {data:{subscription:{unsubscribe(){handler=null}}}}},
    async getSession(){return {data:{session:current},error:failSession?{code:'NETWORK_ERROR'}:null}},
+   async setSession(input){records.callback=input;if(callbackFails)return {error:{code:'bad_token'}};current=token(A);return {data:{session:current},error:null}},
+   async exchangeCodeForSession(code){records.code=code;return this.setSession({})},
    async getUser(jwt){return {data:{user:{id:jwt.replace('test-jwt-','')}},error:null}},
    async signUp(input){records.signup=input;return {data:{user:{id:A},session:null},error:null}},
    async signInWithPassword(input){records.signin=input;current=token(A);handler?.('SIGNED_IN',current);return {data:{session:current,user:current.user},error:null}},
@@ -29,9 +31,9 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false}={}){
    return builder;
   }
  };
- const ctx={console,URL,Response,Math,Date,setTimeout,clearTimeout,queueMicrotask,
-  location:{origin:'https://example.test',pathname:'/svenska/',hostname:'example.github.io',protocol:'https:',hash:'#profile'},
-  navigator:{},Image:function(){},SV_SUPABASE:conf,
+ const ctx={console,URL,URLSearchParams,Response,Math,Date,setTimeout,clearTimeout,queueMicrotask,
+  location:{origin:'https://example.test',pathname:'/svenska/',hostname,protocol:'https:',hash,search},
+  history:{state:null,replaceState(state,title,path){records.cleanedUrl=path;const url=new URL(path,ctx.location.origin);ctx.location.hash=url.hash;ctx.location.search=url.search}},navigator:{},Image:function(){},SV_SUPABASE:conf,
   localStorage:{getItem:key=>data.get(key)||null,setItem(key,value){records.storageWrites.push(key);data.set(key,value)},removeItem(){throw Error('storage removal forbidden')},clear(){throw Error('storage clear forbidden')}},
   document:{addEventListener(){},createElement(){return {dataset:{},remove(){this.removed=true}}},
    head:{appendChild(node){records.scripts.push(node);queueMicrotask(()=>{
@@ -42,7 +44,7 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false}={}){
   }
  };
  ctx.window=ctx;ctx.addEventListener=()=>{};vm.createContext(ctx);
- for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js',...(progress?['supabase-progress.js']:[])])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
  return {ctx,records,data,client,emit(event,value){current=value;handler?.(event,value)},rpcResult(fn){nextRpc=fn}};
 }
 const rejectCode=(code)=>err=>err.code===code;
@@ -140,8 +142,11 @@ test('account change while RPC pending discards response; request retains origin
 });
 
 async function bootGuest(options){
- const h=harness(options);const saved={known:['v-arbeta'],favorites:['v-prata'],xp:91,settings:{language:'ru',level:'A'}};
+ const h=harness(options);
+ if(options?.cloudSnapshot)h.rpcResult(()=>({data:options.cloudSnapshot,error:null}));
+ const saved={known:['v-arbeta'],favorites:['v-prata'],xp:91,settings:{language:'ru',level:'A'}};
  h.data.set('sv-guest-v2',JSON.stringify(saved));
+ if(options?.accountState)h.data.set('sv-account-local-v1-'+A,JSON.stringify(options.accountState));
  h.ctx.fetch=async url=>{h.records.fetch.push(url);assert.ok(['./words.json','./lessons.json','./books.json'].includes(url));
   return new Response(fs.readFileSync(path.join(root,url),'utf8'),{headers:{'Content-Type':'application/json'}})};
  const source=fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,'');
@@ -152,7 +157,7 @@ async function bootGuest(options){
 }
 test('configured boot restores Auth independently, keeps guest state and all backups unchanged',async()=>{
  const {h,saved}=await bootGuest({initial:token(A)});
- assert.equal(vm.runInContext('user',h.ctx),null);assert.equal(vm.runInContext('state.xp',h.ctx),91);
+ assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),0);
  assert.equal(h.ctx.SVAuth.getState().user.id,A);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));
  assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');
@@ -167,9 +172,195 @@ test('guest boot works with absent configuration and with SDK outage',async()=>{
 test('no legacy cloud requests; modules included in page, build, server and worker',()=>{
  const app=fs.readFileSync(path.join(root,'app.js'),'utf8');assert.doesNotMatch(app,/learning_progress|cloudClient/);
  const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
- for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js']){
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js']){
   for(const target of ['index.html','scripts/build_deploy.py','server.py','sw.js'])assert.ok(fs.readFileSync(path.join(root,target),'utf8').includes(file),target+' includes '+file);
   assert.ok(html.indexOf(file)<html.indexOf('./app.js?'));
  }
  const rpc=fs.readFileSync(path.join(root,'supabase-rpc.js'),'utf8');assert.doesNotMatch(rpc,/localStorage|\.from\(/);
+});
+
+test('implicit email callback is scrubbed before initialize and restores Auth without progress calls',async()=>{
+ const h=harness({hash:'#access_token=secret-access&refresh_token=secret-refresh&type=signup&expires_in=3600'});
+ assert.equal(h.ctx.location.hash,'#profile');assert.equal(h.records.cleanedUrl,'/svenska/#profile');
+ await h.ctx.SVAuth.initialize();
+ assert.equal(h.records.callback.access_token,'secret-access');assert.equal(h.ctx.SVAuth.getState().user.id,A);
+ assert.equal(h.ctx.SVAuth.getState().callbackError,null);assert.deepEqual(h.records.rpc,[]);assert.deepEqual(h.records.storageWrites,[]);
+});
+test('PKCE callback removes code, preserves normal route and unrelated query',async()=>{
+ const h=harness({search:'?code=test-code&lang=sv',hash:'#profile'});
+ assert.equal(h.records.cleanedUrl,'/svenska/?lang=sv#profile');
+ await h.ctx.SVAuth.initialize();assert.equal(h.records.code,'test-code');assert.equal(h.ctx.SVAuth.getState().user.id,A);
+});
+test('expired, incomplete and rejected callbacks leave no credentials and preserve guest data',async()=>{
+ for(const options of [{hash:'#error=access_denied&error_code=otp_expired&error_description=Expired'},{hash:'#access_token=incomplete'},{hash:'#access_token=a&refresh_token=b',callbackFails:true}]){
+  const h=harness(options);await h.ctx.SVAuth.initialize();
+  assert.equal(h.ctx.location.hash,'#profile');assert.equal(h.ctx.SVAuth.getState().callbackError,'AUTH_CALLBACK_FAILED');
+  assert.equal(h.data.get('sv-guest-v2'),'original-guest');assert.deepEqual(h.records.storageWrites,[]);
+ }
+});
+test('account switches and signout keep guest, each account and backups isolated',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A)});
+ vm.runInContext('state.xp=25;save()',h.ctx);
+ assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+A)).xp,25);
+ h.emit('SIGNED_IN',token(B));await new Promise(r=>setTimeout(r,5));
+ assert.equal(vm.runInContext('state.xp',h.ctx),0);
+ vm.runInContext('state.xp=8;save()',h.ctx);
+ h.emit('SIGNED_IN',token(A));await new Promise(r=>setTimeout(r,5));
+ assert.equal(vm.runInContext('state.xp',h.ctx),25);
+ await h.ctx.SVAuth.signOut();await new Promise(r=>setTimeout(r,5));
+ assert.equal(vm.runInContext('user',h.ctx),null);assert.equal(vm.runInContext('state.xp',h.ctx),91);
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');
+ assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+B)).xp,8);assert.deepEqual(h.records.rpc,[]);
+});
+
+function formHarness(h,mode='register'){
+ const nodes={};
+ for(const [selector,value] of Object.entries({'#auth-email':'person@example.test','#auth-pass':'test-password','#auth-name':'Test person','#auth-submit':'','#auth-error':'','#auth-status':''}))nodes[selector]={value,textContent:'',disabled:false};
+ nodes['#auth-submit'].textContent='Submit';
+ const form={dataset:{mode},querySelector:selector=>nodes[selector],busy:false,setAttribute(){this.busy=true},removeAttribute(){this.busy=false}};
+ h.ctx.formNodes=nodes;h.ctx.testForm=form;
+ h.ctx.document.querySelector=selector=>nodes[selector];
+ vm.runInContext("closeAuth=()=>{window.closed=true};toast=msg=>{window.notice=msg};navigate=()=>{};",h.ctx);
+ return {nodes,form};
+}
+test('existing signup handler shows confirmation persistently, clears password and resets loading',async()=>{
+ const {h}=await bootGuest();const {nodes,form}=formHarness(h);
+ let finish;h.client.auth.signUp=()=>new Promise(resolve=>finish=resolve);
+ const pending=vm.runInContext('authSubmit(testForm)',h.ctx);
+ await new Promise(r=>setTimeout(r,0));
+ assert.equal(nodes['#auth-submit'].disabled,true);assert.equal(form.busy,true);
+ finish({data:{session:null,user:{id:A}},error:null});await pending;
+ assert.match(nodes['#auth-status'].textContent,/письмо|почт/);
+ assert.equal(nodes['#auth-pass'].value,'');assert.equal(nodes['#auth-submit'].disabled,false);assert.equal(form.busy,false);
+ assert.equal(vm.runInContext('user',h.ctx),null);assert.notEqual(h.ctx.closed,true);assert.deepEqual(h.records.rpc,[]);
+});
+test('login form uses prepared Auth, displays safe errors and clears loading after failure',async()=>{
+ const {h}=await bootGuest();const {nodes}=formHarness(h,'login');
+ h.client.auth.signInWithPassword=async()=>({error:{code:'invalid_credentials',message:'internal details should not appear'}});
+ await vm.runInContext('authSubmit(testForm)',h.ctx);
+ assert.equal(nodes['#auth-error'].textContent,'Неверная почта или пароль.');assert.equal(nodes['#auth-submit'].disabled,false);
+ h.client.auth.signInWithPassword=async()=>({data:{session:token(A),user:token(A).user},error:null});
+ await vm.runInContext('authSubmit(testForm)',h.ctx);
+ assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(h.ctx.closed,true);
+ assert.equal(vm.runInContext('state.xp',h.ctx),0);assert.deepEqual(h.records.rpc,[]);
+});
+test('logout handler preserves identity and progress on failure and restores guest on success',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A)});formHarness(h,'login');
+ h.ctx.document.querySelectorAll=()=>[];vm.runInContext('state.xp=12;save()',h.ctx);
+ const original=h.client.auth.signOut;
+ h.client.auth.signOut=async()=>({error:{code:'unexpected_failure'}});
+ await vm.runInContext('logout()',h.ctx);assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),12);
+ h.client.auth.signOut=original;await vm.runInContext('logout()',h.ctx);
+ assert.equal(vm.runInContext('user',h.ctx),null);assert.equal(vm.runInContext('state.xp',h.ctx),91);
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');
+});
+
+test('reload restores existing local account progress without taking guest progress',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A),accountState:{xp:34,known:['v-prata']}});
+ assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),34);
+ assert.equal(vm.runInContext('state.known[0]',h.ctx),'v-prata');
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);assert.deepEqual(h.records.rpc,[]);
+});
+test('email return during SDK outage is scrubbed and reports callback failure',async()=>{
+ const h=harness({failSdk:true,hash:'#access_token=a&refresh_token=b'});
+ assert.equal(h.ctx.location.hash,'#profile');
+ const auth=await h.ctx.SVAuth.initialize();assert.equal(auth.status,'unavailable');assert.equal(auth.callbackError,'AUTH_CALLBACK_FAILED');
+});
+
+function cloudSnapshot(overrides={}){
+ return {revision:7,content_version:'test-manifest-v1',state:{known:['v-arbeta','v-prata'],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:42,answered:2,correct:1,
+  settings:{language:'ru',level:'A',speechSpeed:'slow',timezone:'Europe/Stockholm'},profile:{name:'',avatarPath:null}},...overrides};
+}
+async function progressHarness(options={}){
+ const h=harness({initial:token(A),progress:true,hostname:'127.0.0.1',...options});
+ h.rpcResult(()=>({data:cloudSnapshot(),error:null}));
+ await h.ctx.SVAuth.initialize();return h;
+}
+test('cloud read uses only sl_get_progress, validates and keeps a detached snapshot in memory',async()=>{
+ const h=await progressHarness(),source=cloudSnapshot();h.rpcResult(()=>({data:source,error:null}));
+ await h.ctx.SVProgress.initialize();const result=h.ctx.SVProgressDebug.status();
+ assert.equal(result.status,'ready');assert.equal(result.revision,7);assert.equal(result.content_version,'test-manifest-v1');assert.equal(result.knownWords,2);assert.equal(result.xp,42);
+ source.state.known.push('other');source.state.xp=999;
+ assert.equal(h.ctx.SVProgressDebug.status().xp,42);assert.equal(h.ctx.SVProgressDebug.status().knownWords,2);
+ assert.deepEqual(h.records.rpc.map(r=>r.name),['sl_get_progress']);assert.equal(h.records.rpc[0].retry,false);
+ assert.equal(h.data.get('sv-guest-v2'),'original-guest');assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');assert.deepEqual(h.records.storageWrites,[]);
+ assert.doesNotMatch(JSON.stringify(result),/test-jwt|access_token|userId|avatarPath|Authorization/);
+});
+test('duplicate init, token refresh, repeated sign-in events and pending reads share one request',async()=>{
+ const h=await progressHarness();let finish,started;
+ const seen=new Promise(resolve=>started=resolve);
+ h.rpcResult(()=>new Promise(resolve=>{finish=resolve;started()}));
+ const one=h.ctx.SVProgress.initialize(),two=h.ctx.SVProgress.initialize();await seen;
+ h.emit('TOKEN_REFRESHED',token(A));h.emit('SIGNED_IN',token(A));
+ const three=h.ctx.SVProgressDebug.retry();await new Promise(r=>setTimeout(r,5));
+ assert.equal(h.records.rpc.length,1);finish({data:cloudSnapshot(),error:null});
+ await Promise.all([one,two,three]);
+ await h.ctx.SVProgressDebug.retry();assert.equal(h.records.rpc.length,1);assert.equal(h.ctx.SVProgressDebug.status().status,'ready');
+});
+test('invalid cloud envelopes and state are rejected without storage writes',async()=>{
+ const bad=[null,[],{},cloudSnapshot({revision:-1}),cloudSnapshot({revision:1.5}),cloudSnapshot({revision:Number.MAX_SAFE_INTEGER+1}),
+  cloudSnapshot({content_version:''}),cloudSnapshot({content_version:42}),cloudSnapshot({state:null}),cloudSnapshot({state:[]})];
+ for(const change of [{known:'wrong'},{known:['duplicate','duplicate']},{xp:'42'},{xp:-1},{correct:8},{reviews:[]},{activity:[]},{settings:{}},{profile:{name:'',avatarPath:7}}])bad.push(cloudSnapshot({state:{...cloudSnapshot().state,...change}}));
+ for(const value of bad){
+  const h=await progressHarness(),errors=[];h.rpcResult(()=>({data:value,error:null}));await h.ctx.SVProgress.initialize({onError:msg=>errors.push(msg)});
+  assert.equal(h.ctx.SVProgressDebug.status().status,'error');assert.equal(h.ctx.SVProgressDebug.status().errorCode,'INVALID_PROGRESS_RESPONSE');
+  assert.equal(errors.length,1);assert.equal(h.ctx.SVAuth.getState().user.id,A);assert.deepEqual(h.records.storageWrites,[]);
+ }
+});
+test('RPC failure has safe diagnostics, no automatic retries and one explicit recovery',async()=>{
+ const h=await progressHarness(),errors=[];
+ h.rpcResult(()=>({error:{code:'42501',message:'secret-test-jwt',details:'private-data'}}));
+ await h.ctx.SVProgress.initialize({onError:msg=>errors.push(msg)});
+ assert.equal(h.ctx.SVProgressDebug.status().errorCode,'42501');assert.match(errors[0],/authenticated/);assert.doesNotMatch(JSON.stringify(h.ctx.SVProgressDebug.status()),/secret|private-data/);
+ h.emit('TOKEN_REFRESHED',token(A));await new Promise(r=>setTimeout(r,5));assert.equal(h.records.rpc.length,1);
+ h.rpcResult(()=>({data:cloudSnapshot(),error:null}));await h.ctx.SVProgressDebug.retry();
+ assert.equal(h.ctx.SVProgressDebug.status().status,'ready');assert.equal(h.ctx.SVProgressDebug.status().attempts,2);assert.equal(h.records.rpc.length,2);assert.deepEqual(h.records.storageWrites,[]);
+});
+test('account change discards pending old cloud data and reads new identity once',async()=>{
+ const h=await progressHarness();let finish,started;
+ const seen=new Promise(resolve=>started=resolve);
+ h.rpcResult(()=>new Promise(resolve=>{finish=resolve;started()}));
+ const pending=h.ctx.SVProgress.initialize();await seen;
+ h.rpcResult(()=>({data:cloudSnapshot({revision:11}),error:null}));h.emit('SIGNED_IN',token(B));
+ await new Promise(r=>setTimeout(r,10));
+ assert.equal(h.ctx.SVProgressDebug.status().revision,11);
+ finish({data:cloudSnapshot({revision:99}),error:null});await pending;
+ assert.equal(h.ctx.SVProgressDebug.status().revision,11);assert.equal(h.records.rpc.length,2);
+ await h.ctx.SVAuth.signOut();assert.equal(h.ctx.SVProgressDebug.status().status,'idle');
+ await new Promise(r=>setTimeout(r,5));assert.equal(h.ctx.SVProgressDebug.status().xp,null);assert.deepEqual(h.records.storageWrites,[]);
+});
+test('logout then login to same user reads a new snapshot; stale failure never notifies',async()=>{
+ const h=await progressHarness(),errors=[];let finish,started;
+ const seen=new Promise(resolve=>started=resolve);h.rpcResult(()=>new Promise(resolve=>{finish=resolve;started()}));
+ const pending=h.ctx.SVProgress.initialize({onError:msg=>errors.push(msg)});await seen;
+ await h.ctx.SVAuth.signOut();h.rpcResult(()=>({data:cloudSnapshot({revision:12}),error:null}));
+ await h.ctx.SVAuth.signIn({email:'test@example.test',password:'test-password'});await new Promise(r=>setTimeout(r,10));
+ finish({error:{code:'42501'}});await pending;
+ assert.equal(h.ctx.SVProgressDebug.status().revision,12);assert.equal(errors.length,0);assert.equal(h.records.rpc.length,2);
+});
+test('guests and Auth outages send no progress RPC; debug API only exists on loopback HTTP',async()=>{
+ for(const options of [{initial:null},{initial:null,failSdk:true},{initial:null,conf:{url:'',publishableKey:''}}]){
+  const h=await progressHarness(options);await h.ctx.SVProgress.initialize();assert.equal(h.records.rpc.length,0);assert.equal(h.ctx.SVProgressDebug.status().status,'idle');
+ }
+ const h=await progressHarness({hostname:'example.github.io'});assert.equal(h.ctx.SVProgressDebug,undefined);await h.ctx.SVProgress.initialize();assert.equal(h.records.rpc.length,1);
+});
+test('application boot automatically reads cloud once and profile renders never repeat it',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A),progress:true,hostname:'127.0.0.1',accountState:{xp:23}});
+ await h.ctx.SVProgress.initialize(); // boot's default RPC mock is intentionally malformed
+ assert.equal(h.ctx.SVProgressDebug.status().status,'error');assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),23);
+ h.rpcResult(()=>({data:cloudSnapshot(),error:null}));await h.ctx.SVProgressDebug.retry();
+ for(let i=0;i<5;i++)vm.runInContext("route='profile';renderProfile()",h.ctx);
+ h.emit('TOKEN_REFRESHED',token(A));await new Promise(r=>setTimeout(r,5));
+ assert.equal(h.records.rpc.length,2);assert.equal(h.ctx.SVProgressDebug.status().xp,42);assert.equal(vm.runInContext('state.xp',h.ctx),23);
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
+});
+
+test('successful automatic read on restored login never replaces local account progress',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['local-only']},cloudSnapshot:cloudSnapshot()});
+ await h.ctx.SVProgress.initialize();
+ assert.equal(h.ctx.SVProgressDebug.status().status,'ready');assert.equal(h.ctx.SVProgressDebug.status().xp,42);
+ assert.equal(vm.runInContext('state.xp',h.ctx),23);assert.equal(vm.runInContext('state.known[0]',h.ctx),'local-only');
+ for(let i=0;i<5;i++)vm.runInContext("route='profile';renderProfile()",h.ctx);
+ await new Promise(r=>setTimeout(r,5));assert.equal(h.records.rpc.length,1);
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
 });
