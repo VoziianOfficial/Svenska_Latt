@@ -90,7 +90,7 @@
 /* Small, tidy review/word cards: 3/2/1 columns depending on available space. */
 .words-grid { display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; align-items:start!important; gap:11px!important; }
 /* Soft colours inspired by Pippi's clothes and Villa Villekulla. */
-.word-row { --word-tint:#fff2d4; --word-edge:#edcf87; grid-template-columns:46px minmax(0,1fr)!important; grid-template-rows:auto auto!important; gap:7px 10px!important; min-height:0!important; height:auto!important; padding:11px!important; border-radius:17px!important; background:linear-gradient(145deg,#fffaf0,var(--word-tint))!important; border:1px solid var(--word-edge)!important; }
+.word-row { --word-tint:#fff2d4; --word-edge:#edcf87; grid-template-columns:46px minmax(0,1fr) auto!important; grid-template-rows:auto!important; gap:7px 10px!important; min-height:0!important; height:auto!important; padding:11px!important; border-radius:17px!important; background:linear-gradient(145deg,#fffaf0,var(--word-tint))!important; border:1px solid var(--word-edge)!important; }
 .word-row:nth-child(6n+2) { --word-tint:#e4f1e5; --word-edge:#b6d6bd; }
 .word-row:nth-child(6n+3) { --word-tint:#fce5dc; --word-edge:#e9bdab; }
 .word-row:nth-child(6n+4) { --word-tint:#e1eef9; --word-edge:#b6cee4; }
@@ -99,12 +99,13 @@
 .words-grid .word-row[data-word-link] { cursor:pointer; transition:box-shadow .18s ease,border-color .18s ease; }
 .words-grid .word-row[data-word-link]:hover { box-shadow:0 5px 16px #55452b18!important; border-color:#a39579!important; }
 .words-grid .word-row[data-word-link]:focus-visible { outline:3px solid #387c84; outline-offset:3px; }
-.word-visual { grid-column:1!important; grid-row:1!important; width:46px!important; height:46px!important; min-width:46px!important; max-width:46px!important; border-radius:13px!important; }
+.word-visual { grid-column:1!important; grid-row:1!important; align-self:center!important; width:46px!important; height:46px!important; min-width:46px!important; max-width:46px!important; border-radius:13px!important; }
 .words-grid .word-visual { background:#ffffff80!important; border:1px solid #ffffffb3!important; overflow:visible!important; }
 .words-grid .word-visual .word-icon { position:static!important; width:100%!important; height:100%!important; object-fit:contain!important; padding:3px; filter:drop-shadow(0 2px 2px #493e2920); }
 .words-grid .word-icon-fallback { font-size:30px; line-height:1; }
 .word-info { grid-column:2!important; grid-row:1!important; align-self:center!important; min-width:0!important; }
-.word-actions { grid-column:1/-1!important; grid-row:2!important; flex-direction:row!important; justify-content:flex-end!important; align-items:center!important; gap:7px!important; }
+.words-grid .word-info strong,.words-grid .word-info small { white-space:normal; overflow-wrap:anywhere; }
+.word-actions { grid-column:3!important; grid-row:1!important; flex-direction:row!important; justify-content:flex-end!important; align-items:center!important; gap:7px!important; }
 .word-actions button { width:34px!important; height:34px!important; min-width:34px!important; border-radius:11px!important; }
 /* Two-to-four week consecutive calendar; future days show their dates without false checkins. */
 .daily-bar { display:grid!important; grid-template-columns:repeat(7,minmax(0,1fr))!important; gap:7px!important; max-width:none!important; overflow:visible!important; padding:6px 0!important; }
