@@ -26,3 +26,13 @@ assert.equal(photos+missing.length,words.length);
 assert.equal(missing.length,0);
 assert.equal(photos,1006);
 console.log(`PASS: ${photos} photo links, ${unicode} Swedish filenames, ${missing.length} documented gaps`);
+
+// Decorative topic/lesson photos must also resolve to bundled files when local.
+const atelier=fs.readFileSync(path.join(root,'atelier.js'),'utf8');
+const decorations=[...atelier.matchAll(/['"](\.\/assets\/flashcards\/[^'"\n]+)['"]/g)].map(match=>match[1]);
+for(const url of decorations){
+ const relative=decodeURIComponent(url).replace(/^\.\//,'');
+ assert(tracked.has(relative),`Missing decorative photograph: ${url}`);
+ assert(fs.statSync(path.join(root,relative)).size>1000,relative);
+}
+console.log(`PASS: ${decorations.length} local decorative photo references`);
