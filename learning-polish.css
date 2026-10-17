@@ -373,3 +373,82 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
  transform:translateY(1px);box-shadow:inset 0 2px 5px #8495c51a,0 2px 6px #6577af0d;
 }
 @media(prefers-reduced-motion:reduce){#menu-toggle.hamburger{transition:none}}
+
+/* Reading header and playback controls share one measured rhythm. */
+.book-reader .reader-heading{margin:0 0 25px;padding:2px 0 0;min-width:0}
+.book-reader .reader-kicker{
+ display:inline-flex;align-items:center;gap:8px;min-height:30px;padding:5px 10px;
+ border:1px solid #e7e9f6;border-radius:9px;background:#f5f5fc;
+ color:#6670a5;font-size:11px;font-weight:750;line-height:1.4;letter-spacing:.025em;
+}
+.reader-kicker-dot{width:3px;height:3px;border-radius:50%;background:#a4accb}
+.book-reader .reader-heading h1{
+ margin:15px 0 9px;color:#233b50;font-size:clamp(27px,3.4vw,36px);
+ font-weight:800;line-height:1.2;letter-spacing:-.035em;overflow-wrap:anywhere;
+}
+.book-reader .reader-sub{margin:0;color:#8490a4;font-size:15px;line-height:1.6;font-weight:500}
+.book-reader .reader-toolbar{
+ display:grid!important;grid-template-columns:minmax(0,1fr) auto;
+ align-items:center!important;gap:12px!important;margin:0 0 26px;padding:12px;
+ background:linear-gradient(135deg,#fafbff,#f6f8fc);border:1px solid #e7ebf3;border-radius:17px;
+ box-shadow:inset 0 1px 0 #fff;
+}
+.reader-playback{display:flex;align-items:center;flex-wrap:wrap;gap:10px;min-width:0}
+.book-reader .reader-toolbar .btn{
+ display:inline-flex;align-items:center;justify-content:center;gap:9px;
+ min-height:44px!important;width:auto;padding:10px 14px!important;border-radius:11px!important;
+ font-size:13px!important;font-weight:700!important;line-height:1.4!important;margin:0;
+}
+.book-reader .reader-toolbar svg{flex-shrink:0}
+.book-reader .reader-toolbar .reader-listen{
+ background:linear-gradient(135deg,#f0edff,#eae9fb)!important;color:#6254a1!important;
+ border:1px solid #dcd8f1!important;box-shadow:0 2px 5px #7669a408,inset 0 1px 0 #ffffffb3!important;
+}
+.book-reader .reader-toolbar .reader-read{
+ background:#fff!important;border:1px solid #e1e6ef!important;color:#697b92!important;
+ box-shadow:0 2px 4px #253b5204!important;white-space:nowrap!important;
+}
+.book-reader .reader-toolbar .reader-read.is-read{
+ background:#eef8f3!important;color:#398469!important;border-color:#d8ebdf!important;
+}
+.book-reader .reader-playback .speech-speed{
+ display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0;min-width:0;width:auto;
+}
+.book-reader .reader-playback .speech-speed label{
+ display:flex;align-items:center;flex-wrap:nowrap;gap:8px;flex:0 1 auto;min-width:0;
+ font-size:11px;font-weight:600;color:#8a95a8;line-height:1.4;
+}
+.book-reader .reader-playback .speech-speed select,
+.book-reader .reader-playback .speech-speed .custom-select{
+ min-height:44px!important;height:44px;max-width:180px;min-width:105px;
+ padding:10px 32px 10px 12px!important;border-radius:11px!important;
+ background-color:#fff!important;border:1px solid #e1e6ef!important;
+ color:#4d607c!important;font-size:12px!important;font-weight:650!important;box-shadow:none!important;
+}
+.book-reader .reader-playback .speech-speed .speech-voice-select{max-width:160px}
+.book-reader .reader-playback .speech-stop{
+ width:44px;height:44px;flex:0 0 44px;border-radius:11px;
+ border:1px solid #e1e6ef;background:#fff;color:#8492aa;font-size:12px;
+ box-shadow:0 2px 4px #253b5204;
+}
+@media(hover:hover){
+ .book-reader .reader-toolbar .reader-listen:hover{border-color:#c4bce6!important;background:#e8e4fa!important}
+ .book-reader .reader-playback .speech-stop:hover{border-color:#c7d1e4;color:#526a94;background:#f7f9fd}
+}
+@media(max-width:700px){
+ .book-reader .reader-toolbar{grid-template-columns:minmax(0,1fr);gap:10px!important}
+ .book-reader .reader-toolbar .reader-read{justify-self:end}
+ .reader-playback{gap:12px}
+}
+@media(max-width:460px){
+ .book-reader .reader-heading{margin-bottom:20px}
+ .book-reader .reader-heading h1{font-size:27px;margin-top:13px}
+ .book-reader .reader-sub{font-size:14px}
+ .book-reader .reader-toolbar{padding:10px;border-radius:15px}
+ .book-reader .reader-toolbar .reader-listen{width:100%;flex:1 1 100%}
+ .book-reader .reader-playback .speech-speed{flex:1 1 100%;width:100%}
+ .book-reader .reader-playback .speech-speed label{flex:1 1 140px}
+ .book-reader .reader-playback .speech-speed .custom-select,
+ .book-reader .reader-playback .speech-speed select{flex:1;max-width:100%;min-width:0}
+ .book-reader .reader-toolbar .reader-read{width:100%;justify-self:stretch}
+}
