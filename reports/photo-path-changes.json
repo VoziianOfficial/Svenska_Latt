@@ -1,0 +1,212 @@
+[
+  {
+    "id": "v-fråga",
+    "before": "./assets/flashcards/v-fråga.webp",
+    "after": "./assets/flashcards/v-fr%C3%A5ga.webp"
+  },
+  {
+    "id": "v-använda",
+    "before": "./assets/flashcards/v-använda.webp",
+    "after": "./assets/flashcards/v-anv%C3%A4nda.webp"
+  },
+  {
+    "id": "v-tända",
+    "before": "./assets/flashcards/v-tända.webp",
+    "after": "./assets/flashcards/v-t%C3%A4nda.webp"
+  },
+  {
+    "id": "v-börja",
+    "before": "./assets/flashcards/v-börja.webp",
+    "after": "./assets/flashcards/v-b%C3%B6rja.webp"
+  },
+  {
+    "id": "v-vänta",
+    "before": "./assets/flashcards/v-vänta.webp",
+    "after": "./assets/flashcards/v-v%C3%A4nta.webp"
+  },
+  {
+    "id": "v-nå",
+    "before": "./assets/flashcards/v-nå.webp",
+    "after": "./assets/flashcards/v-n%C3%A5.webp"
+  },
+  {
+    "id": "v-träna",
+    "before": "./assets/flashcards/v-träna.webp",
+    "after": "./assets/flashcards/v-tr%C3%A4na.webp"
+  },
+  {
+    "id": "v-läsa",
+    "before": "./assets/flashcards/v-läsa.webp",
+    "after": "./assets/flashcards/v-l%C3%A4sa.webp"
+  },
+  {
+    "id": "v-tvätta",
+    "before": "./assets/flashcards/v-tvätta.webp",
+    "after": "./assets/flashcards/v-tv%C3%A4tta.webp"
+  },
+  {
+    "id": "v-öppna",
+    "before": "./assets/flashcards/v-öppna.webp",
+    "after": "./assets/flashcards/v-%C3%B6ppna.webp"
+  },
+  {
+    "id": "v-köpa",
+    "before": "./assets/flashcards/v-köpa.webp",
+    "after": "./assets/flashcards/v-k%C3%B6pa.webp"
+  },
+  {
+    "id": "v-gå",
+    "before": "./assets/flashcards/v-gå.webp",
+    "after": "./assets/flashcards/v-g%C3%A5.webp"
+  },
+  {
+    "id": "v-stänga",
+    "before": "./assets/flashcards/v-stänga.webp",
+    "after": "./assets/flashcards/v-st%C3%A4nga.webp"
+  },
+  {
+    "id": "v-åka",
+    "before": "./assets/flashcards/v-åka.webp",
+    "after": "./assets/flashcards/v-%C3%A5ka.webp"
+  },
+  {
+    "id": "v-göra",
+    "before": "./assets/flashcards/v-göra.webp",
+    "after": "./assets/flashcards/v-g%C3%B6ra.webp"
+  },
+  {
+    "id": "v-söka",
+    "before": "./assets/flashcards/v-söka.webp",
+    "after": "./assets/flashcards/v-s%C3%B6ka.webp"
+  },
+  {
+    "id": "v-få",
+    "before": "./assets/flashcards/v-få.webp",
+    "after": "./assets/flashcards/v-f%C3%A5.webp"
+  },
+  {
+    "id": "v-tänka",
+    "before": "./assets/flashcards/v-tänka.webp",
+    "after": "./assets/flashcards/v-t%C3%A4nka.webp"
+  },
+  {
+    "id": "v-äta",
+    "before": "./assets/flashcards/v-äta.webp",
+    "after": "./assets/flashcards/v-%C3%A4ta.webp"
+  },
+  {
+    "id": "v-hjälpa",
+    "before": "./assets/flashcards/v-hjälpa.webp",
+    "after": "./assets/flashcards/v-hj%C3%A4lpa.webp"
+  },
+  {
+    "id": "v-må",
+    "before": "./assets/flashcards/v-må.webp",
+    "after": "./assets/flashcards/v-m%C3%A5.webp"
+  },
+  {
+    "id": "v-säga",
+    "before": "./assets/flashcards/v-säga.webp",
+    "after": "./assets/flashcards/v-s%C3%A4ga.webp"
+  },
+  {
+    "id": "v-stå",
+    "before": "./assets/flashcards/v-stå.webp",
+    "after": "./assets/flashcards/v-st%C3%A5.webp"
+  },
+  {
+    "id": "n-fönster",
+    "before": "./assets/flashcards/n-fönster.webp",
+    "after": "./assets/flashcards/n-f%C3%B6nster.webp"
+  },
+  {
+    "id": "n-dörr",
+    "before": "./assets/flashcards/n-dörr.webp",
+    "after": "./assets/flashcards/n-d%C3%B6rr.webp"
+  },
+  {
+    "id": "n-äpple",
+    "before": "./assets/flashcards/n-äpple.webp",
+    "after": "./assets/flashcards/n-%C3%A4pple.webp"
+  },
+  {
+    "id": "n-vän",
+    "before": "./assets/flashcards/n-vän.webp",
+    "after": "./assets/flashcards/n-v%C3%A4n.webp"
+  },
+  {
+    "id": "n-år",
+    "before": "./assets/flashcards/n-år.webp",
+    "after": "./assets/flashcards/n-%C3%A5r.webp"
+  },
+  {
+    "id": "n-lärare",
+    "before": "./assets/flashcards/n-lärare.webp",
+    "after": "./assets/flashcards/n-l%C3%A4rare.webp"
+  },
+  {
+    "id": "n-språk",
+    "before": "./assets/flashcards/n-språk.webp",
+    "after": "./assets/flashcards/n-spr%C3%A5k.webp"
+  },
+  {
+    "id": "n-fråga",
+    "before": "./assets/flashcards/n-fråga.webp",
+    "after": "./assets/flashcards/n-fr%C3%A5ga.webp"
+  },
+  {
+    "id": "w-hejdå",
+    "before": "./assets/flashcards/w-hejdå.webp",
+    "after": "./assets/flashcards/w-hejd%C3%A5.webp"
+  },
+  {
+    "id": "w-snälla",
+    "before": "./assets/flashcards/w-snälla.webp",
+    "after": "./assets/flashcards/w-sn%C3%A4lla.webp"
+  },
+  {
+    "id": "w-ursäkta",
+    "before": "./assets/flashcards/w-ursäkta.webp",
+    "after": "./assets/flashcards/w-urs%C3%A4kta.webp"
+  },
+  {
+    "id": "w-förlåt",
+    "before": "./assets/flashcards/w-förlåt.webp",
+    "after": "./assets/flashcards/w-f%C3%B6rl%C3%A5t.webp"
+  },
+  {
+    "id": "w-i-går",
+    "before": "./assets/flashcards/w-i-går.webp",
+    "after": "./assets/flashcards/w-i-g%C3%A5r.webp"
+  },
+  {
+    "id": "w-kväll",
+    "before": "./assets/flashcards/w-kväll.webp",
+    "after": "./assets/flashcards/w-kv%C3%A4ll.webp"
+  },
+  {
+    "id": "w-måndag",
+    "before": "./assets/flashcards/w-måndag.webp",
+    "after": "./assets/flashcards/w-m%C3%A5ndag.webp"
+  },
+  {
+    "id": "w-lördag",
+    "before": "./assets/flashcards/w-lördag.webp",
+    "after": "./assets/flashcards/w-l%C3%B6rdag.webp"
+  },
+  {
+    "id": "w-söndag",
+    "before": "./assets/flashcards/w-söndag.webp",
+    "after": "./assets/flashcards/w-s%C3%B6ndag.webp"
+  },
+  {
+    "id": "w-två",
+    "before": "./assets/flashcards/w-två.webp",
+    "after": "./assets/flashcards/w-tv%C3%A5.webp"
+  },
+  {
+    "id": "w-åtta",
+    "before": "./assets/flashcards/w-a%CC%8Atta.webp",
+    "after": "./assets/flashcards/w-%C3%A5tta.webp"
+  }
+]

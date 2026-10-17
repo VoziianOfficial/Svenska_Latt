@@ -36,7 +36,7 @@ const TOPIC_PHOTOS={
  'Досуг':pex(1386604),'Природа':PH.nature,'Животные':PH.animals,
  'Школа и SFI':PH.school,'Дом и комнаты':PH.room,'Еда и напитки':PH.drink,
  'Магазин и покупки':pex(4386431),'Дни и календарь':PH.calendar,'Работа':PH.work,
- 'Город и места':PH.city,'Цвета и формы':pex(5303566),'Быт и дела':pex(6238130),
+ 'Город и места':PH.city,'Цвета и формы':'./assets/flashcards/w-r%C3%B6d.webp','Быт и дела':pex(6238130),
  'Досуг и спорт':PH.sport,'Общение и чувства':pex(7092613),'Общество':pex(7092359),
  'Счёт и количество':pex(5427860),'Путешествия':PH.travel
 };
@@ -44,14 +44,14 @@ const LEVELS=[pex(5212330),pex(6238130),pex(3184298),pex(7092613)];
 const LESSONS=[
   pex(5212330),pex(5428010),pex(5940831),pex(4262425),pex(5212345),pex(1640774),pex(264507),
   pex(7088484),pex(210182),pex(3764164),pex(7679863),pex(3184465),pex(1118873),pex(106399),
-  pex(4386467),pex(5303566),pex(3184298),pex(5428004),pex(5905709),pex(1118873),pex(4386370),
+  pex(4386467),'./assets/flashcards/w-r%C3%B6d.webp',pex(3184298),pex(5428004),pex(5905709),pex(1118873),pex(4386370),
   pex(6238297),pex(3155666),pex(1181244),pex(34950),pex(159711),pex(5905483),pex(5212700),
   pex(7088484),pex(5905555),pex(6238048),pex(5427860),pex(5427891),pex(6147369),pex(845451),
   pex(4386431),pex(3769021),pex(5428263),pex(7092359),pex(4386467),pex(6238130),pex(5212695),
   pex(7679863),pex(7092613),pex(271618),pex(5905568),pex(5212331),pex(4262423),pex(1571460),pex(34950)
 ];
 const VIDEOS=[
-  pex(845451),pex(1386604),pex(5303566),pex(7092359),pex(6147369),pex(4386467),
+  pex(845451),pex(1386604),'./assets/flashcards/w-r%C3%B6d.webp',pex(7092359),pex(6147369),pex(4386467),
   pex(7991579),pex(3184298),pex(5212345),pex(210182),pex(7088484),pex(5905709)
 ];
 const CHEATS=[pex(5905483),pex(5428004),pex(5212695),pex(5427662),pex(5212700),pex(5905568),pex(6238297),pex(5428010),pex(5212345),pex(5905555),pex(5940831),pex(4386370)];
@@ -172,7 +172,7 @@ function decorateSlider(track){
  const section=track.previousElementSibling;
  let header=section?.classList?.contains('section-head')?section:null;
  if(!header && track.classList.contains('premium-topics')) { header=document.createElement('div');header.className='section-head topic-slider-head';const label=document.createElement('h2');label.textContent=({en:'Browse all topics',sv:'Bläddra bland ämnen',uk:'Переглянути всі теми',ru:'Листай все темы'})[document.documentElement.lang]||'Листай все темы';header.appendChild(label);track.parentElement.insertBefore(header,track); }
- if(header){const holder=document.createElement('div');holder.className='slider-tools';holder.innerHTML='<span class="slider-hint" aria-hidden="true">‹ ›</span><button class="slider-arrow" type="button" aria-label="Previous cards">‹</button><button class="slider-arrow" type="button" aria-label="Next cards">›</button>';
+ if(header){const holder=document.createElement('div');holder.className='slider-tools';holder.innerHTML='<button class="slider-arrow" type="button" aria-label="Previous cards">‹</button><button class="slider-arrow" type="button" aria-label="Next cards">›</button>';
  header.appendChild(holder);
  const [prev,next]=holder.querySelectorAll('button');
  const update=()=>{prev.disabled=!circular&&track.scrollLeft<5;next.disabled=!circular&&track.scrollLeft+track.clientWidth>=track.scrollWidth-5};

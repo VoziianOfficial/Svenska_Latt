@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+svenska.sqlite3*
+deploy/

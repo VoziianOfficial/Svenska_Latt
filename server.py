@@ -5,7 +5,8 @@ import base64, datetime, hashlib, hmac, json, mimetypes, os, re, secrets, sqlite
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from http.cookies import SimpleCookie
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote
+import unicodedata
 from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parent
 DB=Path(os.environ.get('SVENSKA_DB',str(ROOT/'svenska.sqlite3')))
@@ -68,7 +69,7 @@ class Handler(BaseHTTPRequestHandler):
   self.send_header('Referrer-Policy','strict-origin-when-cross-origin')
   self.send_header('X-Frame-Options','DENY')
   self.send_header('Content-Security-Policy',"default-src 'self'; img-src 'self' data: https://images.pexels.com; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co; media-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'")
-  self.send_header('Cache-Control','no-store' if mime.startswith('application/json') else 'public, max-age=300')
+  self.send_header('Cache-Control','no-cache' if self.path.split('?')[0] in {'/','/index.html','/sw.js'} else ('no-store' if mime.startswith('application/json') else 'public, max-age=300'))
   if length is not None:self.send_header('Content-Length',str(length))
  def send_json(self,payload,status=200,cookie=None):
   b=json.dumps(payload,ensure_ascii=False,separators=(',',':')).encode()
@@ -83,11 +84,17 @@ class Handler(BaseHTTPRequestHandler):
    if not user:return self.send_json({'ok':True,'user':None,'state':None})
    return self.send_json({'ok':True,'user':{'id':user['id'],'email':user['email'],'name':user['name']},'state':json.loads(user['state'])})
   if path=='/api/health':return self.send_json({'ok':True,'service':'Svenska Lätt'})
+  path=unicodedata.normalize('NFC',unquote(path))
   if path=='/':path='/index.html'
-  path=path.lstrip('/')
-  if path not in {'index.html','style.css','app.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js'}:return self.error(404,'Not found')
-  f=ROOT/path
-  if not f.is_file():return self.error(404,'Not found')
+  relative=path.lstrip('/')
+  if '\\' in path or '\x00' in path or any(part in {'.','..'} for part in relative.split('/')):return self.error(404,'Not found')
+  public_files={'index.html','style.css','studio.css','atelier.css','learning-polish.css','app.js','atelier.js','learning-polish.js','flashcard-media.js','word-icons.js','locale-content.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js','supabase-client.js','supabase-auth.js','supabase-rpc.js','privacy.html','terms.html','cookies.html','photo-credits.html'}
+  public_asset=relative.startswith('assets/') and Path(relative).suffix.lower() in {'.webp','.png','.jpg','.jpeg','.svg','.gif','.woff','.woff2','.mp3','.ogg','.wav'}
+  public_asset=public_asset or relative in {'assets/flashcards/photo-credits-imported.json','assets/flashcards/photo-credits-added.json','assets/word-icons/manifest.json','assets/word-icons/LICENSE'}
+  if relative not in public_files and not public_asset:return self.error(404,'Not found')
+  f=(ROOT/relative).resolve()
+  if not f.is_relative_to(ROOT) or not f.is_file():return self.error(404,'Not found')
+  path=relative
   b=f.read_bytes();mime=mimetypes.guess_type(path)[0] or 'application/octet-stream'
   if path.endswith('.js'):mime='text/javascript'
   if path.endswith('.webmanifest'):mime='application/manifest+json'

@@ -1,0 +1,831 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 8722009,
+        "ns": 6,
+        "title": "File:Hej Matematik.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 41506,
+            "width": 722,
+            "height": 314,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Hej_Matematik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 348,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Hej_Matematik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 348
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Hej_Matematik.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hej_Matematik.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8722009",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-12-11 18:52:40",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hej Matematik",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD ineligible|Literature of Sweden|Location not applicable",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Title of Swedish primary school math textbook \"Hej Matematik\" (1970)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1970",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Scanned from the title page of the 2nd edition (1970)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Cover and layout by artist Inger Wulff",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<p>Just a text logotype, not covered by copyright \n</p>\n<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td><i>This work is <b>ineligible for <a href=\"https://en.wikipedia.org/wiki/copyrights\" class=\"extiw\" title=\"w:copyrights\">copyright</a></b> and therefore in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"w:public domain\">public domain</a></b> because it consists entirely of information that is <a href=\"//commons.wikimedia.org/wiki/Commons:Threshold_of_originality\" title=\"Commons:Threshold of originality\">common property and contains no original authorship</a>.</i>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 17276713,
+        "ns": 6,
+        "title": "File:Torpson, Nils i Svenskt porträttgalleri.jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 78764,
+            "width": 294,
+            "height": 384,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Torpson%2C_Nils_i_Svenskt_portr%C3%A4ttgalleri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 1045,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/3/35/Torpson%2C_Nils_i_Svenskt_portr%C3%A4ttgalleri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1045
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Torpson%2C_Nils_i_Svenskt_portr%C3%A4ttgalleri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Torpson,_Nils_i_Svenskt_portr%C3%A4ttgalleri.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=17276713",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-11-08 11:59:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Torpson, Nils i Svenskt porträttgalleri",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Male writers from Sweden|1855 births|1920 deaths|Educators from Sweden|PD US expired|Black and white portrait photographs of men|Template Unknown (author)|PD-US missing SDC copyright status|Images from Svenskt porträttgalleri",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://sv.wikipedia.org/wiki/Nils_Torpson\" class=\"extiw\" title=\"sv:Nils Torpson\">sv:Nils Torpson</a> (1855-1920), Swedish teacher and headmaster at <a href=\"https://sv.wikipedia.org/wiki/Folkskoleseminarium\" class=\"extiw\" title=\"sv:Folkskoleseminarium\">sv:Folkskoleseminarium</a>, writer of textbooks, mainly in geography.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1898",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<i>Svenskt porträttgalleri</i>, vol XII, part 1 (Stockholm 1898)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in the <a href=\"https://en.wikipedia.org/wiki/United_States\" class=\"extiw\" title=\"en:United States\">United States</a> because it was <a href=\"//commons.wikimedia.org/wiki/Commons:Publication\" title=\"Commons:Publication\">published</a> (or registered with the <a href=\"https://en.wikipedia.org/wiki/United_States_Copyright_Office\" class=\"extiw\" title=\"en:United States Copyright Office\">U.S. Copyright Office</a>) before January 1, 1931.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 21673864,
+        "ns": 6,
+        "title": "File:Rodhe abc.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 59393,
+            "width": 323,
+            "height": 409,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rodhe_abc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 1013,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rodhe_abc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1013
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rodhe_abc.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Rodhe_abc.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=21673864",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-09-27 08:39:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Rodhe abc",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Education in Sweden|Bengt Carl Rodhe|Textbooks|PD Old|CC-PD-Mark|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Advertisment for textbooks by B. C. Rodhe",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1893",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://runeberg.org/svlartid/1893/0028.html\">https://runeberg.org/svlartid/1893/0028.html</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "B C Rodhe (1834-1897)",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 41523257,
+        "ns": 6,
+        "title": "File:Forshæll, Johan Henrik (ur Sparbanken i Lund 1833-1933).jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 197520,
+            "width": 620,
+            "height": 859,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Forsh%C3%A6ll%2C_Johan_Henrik_%28ur_Sparbanken_i_Lund_1833-1933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 1108,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Forsh%C3%A6ll%2C_Johan_Henrik_%28ur_Sparbanken_i_Lund_1833-1933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1108
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Forsh%C3%A6ll%2C_Johan_Henrik_%28ur_Sparbanken_i_Lund_1833-1933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Forsh%C3%A6ll,_Johan_Henrik_(ur_Sparbanken_i_Lund_1833-1933).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=41523257",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-07-12 07:44:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Forshæll, Johan Henrik (ur Sparbanken i Lund 1833-1933)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1799 births|1877 deaths|People of Lund|Non-fiction writers from Sweden|Pharmacists from Sweden|PD Sweden|Template Unknown (author)|PD-old missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://sv.wikipedia.org/wiki/Johan_Henrik_Forsh%C3%A6ll\" class=\"extiw\" title=\"sv:Johan Henrik Forshæll\">sv:Johan Henrik Forshæll</a> (1799-1877), Swedish pharmacist and textbook writer.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1877",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<i>Sparbanken i Lund 1833-1933</i> (Lund 1933)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 42085608,
+        "ns": 6,
+        "title": "File:Bourbon and Vasa; a textbook of European history, 1610-1715, with a summary of the events immediately preceding (1914) (14781616371).jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 487150,
+            "width": 1380,
+            "height": 2590,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg/960px-Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1501,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg/960px-Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1501,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Bourbon_and_Vasa%3B_a_textbook_of_European_history%2C_1610-1715%2C_with_a_summary_of_the_events_immediately_preceding_%281914%29_%2814781616371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bourbon_and_Vasa;_a_textbook_of_European_history,_1610-1715,_with_a_summary_of_the_events_immediately_preceding_(1914)_(14781616371).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=42085608",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-08-04 18:15:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bourbon and Vasa; a textbook of European history, 1610-1715, with a summary of the events immediately preceding (1914) (14781616371)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1914 books|Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Media needing category review as of 4 August 2015|Flickr images missing SDC published in",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<br>\n<p><b>Identifier</b>: bourbonvasatextb00sacr (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Fbourbonvasatextb00sacr%2F\">find matches</a>)<br>\n<b>Title</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidbourbonvasatextb00sacr\">Bourbon and Vasa ; a textbook of European history, 1610-1715, with a summary of the events immediately preceding</a><br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookyear1914\">1914</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookdecade1910\">1910s</a>)<br>\n<b>Authors</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorSacret__Joseph_Humphrey\">Sacret, Joseph Humphrey</a><br>\n<b>Subjects</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksubjectEurope____History_1517_1648\">Europe -- History 1517-1648</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksubjectEurope____History_1648_1715\">Europe -- History 1648-1715</a><br>\n<b>Publisher</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookpublisherOxford___Clarendon\">Oxford : Clarendon</a><br>\n<b>Contributing Library</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookcontributorUniversity_of_California_Libraries\">University of California Libraries</a><br>\n<b>Digitizing Sponsor</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksponsorMSN\">MSN</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/bourbonvasatextb00sacr/bourbonvasatextb00sacr#page/n340/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/bourbonvasatextb00sacr\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidbourbonvasatextb00sacr\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/bourbonvasatextb00sacr/bourbonvasatextb00sacr#page/n340/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image:</b><br>\n<i>B.V.cSQjJ&gt;^s^u&gt;t^ (Si^^tttA, iqi3</i><br>\n<b>Text Appearing After Image:</b><br>\n<i>Acquisitions ofSwedenFrance (r^ Brandenburg EM Saxony Bavaria ^nm Extent of the Empire C^J B.Y&gt;Taxl^.1,</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1914",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/14781616371/\">https://www.flickr.com/photos/internetarchivebookimages/14781616371/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/bourbonvasatextb00sacr/bourbonvasatextb00sacr#page/n340/mode/1up\">https://archive.org/stream/bourbonvasatextb00sacr/bourbonvasatextb00sacr#page/n340/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 42395934,
+        "ns": 6,
+        "title": "File:Berlin, Mac (ur Svenskt porträttgalleri XII;2).jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 77757,
+            "width": 261,
+            "height": 349,
+            "thumburl": "https://upload.wikimedia.org/wikipedia/commons/5/58/Berlin%2C_Mac_%28ur_Svenskt_portr%C3%A4ttgalleri_XII%3B2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "thumbwidth": 800,
+            "thumbheight": 1070,
+            "thumbattribs": {
+              "src": "https://upload.wikimedia.org/wikipedia/commons/5/58/Berlin%2C_Mac_%28ur_Svenskt_portr%C3%A4ttgalleri_XII%3B2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1070
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Berlin%2C_Mac_%28ur_Svenskt_portr%C3%A4ttgalleri_XII%3B2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Berlin,_Mac_(ur_Svenskt_portr%C3%A4ttgalleri_XII;2).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=42395934",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-08-16 11:10:20",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Berlin, Mac (ur Svenskt porträttgalleri XII;2)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Male writers from Sweden|1902 deaths|1845 births|Mathematicians from Sweden|Educators from Sweden|PD Sweden|PD US expired|Template Unknown (author)|PD-old missing SDC copyright status|PD-US missing SDC copyright status",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://sv.wikipedia.org/wiki/Mac_Berlin\" class=\"extiw\" title=\"sv:Mac Berlin\">sv:Mac Berlin</a> (1845-1902), Swedish mathematician, teacher and textbook author.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1901",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://runeberg.org/spg/12-2/0087.html\"><i>Svenskt porträttgalleri</i>, vol XII:2 (Lärarekåren i Skara, Strängnäs, Västerås och Växjö stift) (Stockholm 1901)</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 130845821,
+        "ns": 6,
+        "title": "File:Ifvar Kraak by Martin David Roth 1792.tif",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 60092896,
+            "width": 5056,
+            "height": 7328,
+            "pagecount": 1,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ifvar_Kraak_by_Martin_David_Roth_1792.tif/lossy-page1-960px-Ifvar_Kraak_by_Martin_David_Roth_1792.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1159,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ifvar_Kraak_by_Martin_David_Roth_1792.tif/lossy-page1-1920px-Ifvar_Kraak_by_Martin_David_Roth_1792.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ifvar_Kraak_by_Martin_David_Roth_1792.tif/lossy-page1-960px-Ifvar_Kraak_by_Martin_David_Roth_1792.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1159,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ifvar_Kraak_by_Martin_David_Roth_1792.tif/lossy-page1-1920px-Ifvar_Kraak_by_Martin_David_Roth_1792.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Ifvar_Kraak_by_Martin_David_Roth_1792.tif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Ifvar_Kraak_by_Martin_David_Roth_1792.tif",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=130845821",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-04-18 09:16:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Ifvar Kraak by Martin David Roth 1792",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Martin David Roth|Ifvar Kraak|PD-Art (PD-old-70)|CC-PD-Mark|People of Sweden in 1792|18th-century oval portrait miniatures of men at bust length|1792 portrait paintings of men|1790s portrait paintings from Sweden (male)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://sv.wikipedia.org/wiki/Ifvar_Kraak\" class=\"extiw\" title=\"sv:Ifvar Kraak\">sv:Ifvar Kraak</a> (1708-1795), Danish-born Swedish translator, textbook writer and master of languages at <a href=\"https://en.wikipedia.org/wiki/Lund_University\" class=\"extiw\" title=\"en:Lund University\">en:Lund University</a>. Miniature painting by <a href=\"https://sv.wikipedia.org/wiki/Martin_David_Roth\" class=\"extiw\" title=\"sv:Martin David Roth\">sv:Martin David Roth</a>, made as a gift to Kraak's stepdaughter Christina Fridlezia in 1792.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1792",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Lunds University Library through the database Alvin: <a rel=\"nofollow\" class=\"external free\" href=\"http://urn.kb.se/resolve?urn=urn:nbn:se:alvin:portal:record-503718\">http://urn.kb.se/resolve?urn=urn:nbn:se:alvin:portal:record-503718</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q26240512\" class=\"extiw\" title=\"d:Q26240512\">Martin David Roth</a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/tiff"
+          }
+        ]
+      },
+      {
+        "pageid": 194278304,
+        "ns": 6,
+        "title": "File:Sweden & Norway. (to accompany) A New Universal Atlas Containing Maps of the various Empires, Kingdoms (IA dr sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056).jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 16161465,
+            "width": 8029,
+            "height": 9576,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Sweden_%26_Norway._%28to_accompany%29_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires%2C_Kingdoms_%28IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 954,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Sweden_%26_Norway._%28to_accompany%29_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires%2C_Kingdoms_%28IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056%29.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Sweden_%26_Norway._%28to_accompany%29_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires%2C_Kingdoms_%28IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 954,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Sweden_%26_Norway._%28to_accompany%29_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires%2C_Kingdoms_%28IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056%29.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sweden_%26_Norway._%28to_accompany%29_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires%2C_Kingdoms_%28IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sweden_%26_Norway._(to_accompany)_A_New_Universal_Atlas_Containing_Maps_of_the_various_Empires,_Kingdoms_(IA_dr_sweden-norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=194278304",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-09-14 07:16:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nSweden &amp; Norway. (to accompany) A New Universal Atlas Containing Maps of the various Empires, Kingdoms, States and Republics Of The World.</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "David Rumsey Historical Map Collection|PD-old-100-expired|Scans from the Internet Archive/unverified|CC-PD-Mark|Scans from the Internet Archive|Books uploaded by Fæ|PD-old missing SDC copyright status|Images dezoomed by Fæ",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<dl><dd>Mitchell, Samuel Augustus.</dd>\n<dd>Knight, J.</dd></dl></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Zoomable full resolution image available at <a rel=\"nofollow\" class=\"external text\" href=\"https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~316532~90085115\">davidrumsey.com</a>.</p><p>This image <a rel=\"nofollow\" class=\"external text\" href=\"//www.davidrumsey.com/luna/servlet/view/search?q=list_no=%223697.056%22\">3697.056</a> is a part of image group <a rel=\"nofollow\" class=\"external text\" href=\"https://www.davidrumsey.com/luna/servlet/view/search?q=pub_list_no=%223697.000%22\">3697.000</a>.</p><p>Color copper lithograph map. Shows political and administrative divisions, capitals, important towns, roads, railroads, canals, mountains and rivers. Includes explanations and numbered key to District and Prefecture. Prime meridian is Greenwich. Relief shown by hachures.</p><p>1848 edition, known as Mitchell's new Universal atlas, without Tanner's name on the title page. Tanner issued this atlas first in 1836 with engraved maps, then it was taken over by Carey and Hart in 1843 and converted by them to lithographic maps in 1845. In 1846 Mitchell took over the publishing of this atlas and continued until 1849. This atlas is important in American printing history in that it was the first American atlas to be converted from engraved map plates to lithographic map plates. The maps are in full color, lithographic, covering the World, North America, and Mexico. Oregon and Upper California maps show the new boundary of Mexico and the United States resulting from the Mexican War, for the first time. Title page by K. Knight, includes a view of \"The first landing of Columbus in the new world\". Print showing Christopher Columbus and crew praying after landing in the New World for the first time on October 12 1492. Atlas is bound in half leather green marbled paper covered boards with \"Mitchell's Universal Atlas\" stamped in gilt on front label. Mitchell was born in 1792 in Connecticut and spent some of his early working years as a teacher. During his teaching years, he became quite dissatisfied with the available textbooks, and this led him to become a writer and publisher. He moved to Philadelphia, a major center for publishing at the time.</p><p>P6106.</p>\n<br>Subjects:</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<dl><dd><a href=\"//archive.org/details/dr_sweden--norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056\" class=\"extiw\" title=\"iarchive:dr sweden--norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056\"><bdi class=\"description en\" lang=\"en\" dir=\"ltr\">Internet Archive identifier</bdi>: dr_sweden--norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056</a></dd>\n<dd><a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/download/dr_sweden--norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056/3697056.jpg\">https://archive.org/download/dr_sweden--norway-to-accompany-a-new-universal-atlas-containing-maps-of-th-3697056/3697056.jpg</a></dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Images may be downloaded and used following Creative Commons CC BY-NC-SA 3.0 license. Image credit should be given to \"David Rumsey Map Collection, David Rumsey Map Center, Stanford Libraries.\"  Please contact the David Rumsey Map Collection for commercial use. <a rel=\"nofollow\" class=\"external text\" href=\"https://www.davidrumsey.com/about/copyright-and-permissions\">https://www.davidrumsey.com/about/copyright-and-permissions</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

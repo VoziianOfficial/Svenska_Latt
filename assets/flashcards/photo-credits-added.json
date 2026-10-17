@@ -1,0 +1,2021 @@
+{
+  "w-där": {
+    "word": "där",
+    "translation": "there",
+    "photo_file": "assets/flashcards/w-där.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_person_pointing_on_the_world_map._Camera,_book_and_a_cup_of_coffee_on_the_map.jpg",
+    "author": "Shixart1985",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "commons_title": "File:Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map.jpg",
+    "pageid": 187613159,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/960px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "0d5022687b2efe63902cee2913e25de702581c538a9ed096c9f10de8059eb0ca",
+    "sha256": "7bd5e40fb591945dde5539fa7af9baf730a8e87ef0e24dc19872469df2c0cb2f",
+    "selection_evidence": {
+      "evidence": "candidates-w-där-v2.json",
+      "candidate_index": 7
+    },
+    "commons_evidence": {
+      "pageid": 187613159,
+      "ns": 6,
+      "title": "File:Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map.jpg",
+      "index": 8,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 12845089,
+          "width": 6016,
+          "height": 4016,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/960px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 534,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/1920px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/960px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 534,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg/1920px-Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Close-up_of_a_person_pointing_on_the_world_map._Camera%2C_book_and_a_cup_of_coffee_on_the_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_person_pointing_on_the_world_map._Camera,_book_and_a_cup_of_coffee_on_the_map.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=187613159",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2026-04-01 09:19:04",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Travel|Self-published work",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Close-up of a person pointing on the world map. Camera, book and a cup of coffee on the map",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2021-02-07 12:30:35",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY 2.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution 2.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by/2.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-2.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "w-regnar": {
+    "word": "regnar",
+    "translation": "is raining",
+    "photo_file": "assets/flashcards/w-regnar.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Man_with_umbrella_crossing_road_in_the_rain.jpg",
+    "author": "Benjamin Shaw",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:Man with umbrella crossing road in the rain.jpg",
+    "pageid": 84352522,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/960px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "baf473d20cb1b76111a30e7856785cb054023ce826685dd151e38bb26e899c1d",
+    "sha256": "b4f37bf2a7aac7987478e34505b94044cdacf5eb0ef042e2a5075766e6799446",
+    "selection_evidence": {
+      "evidence": "candidates-w-regnar.json",
+      "candidate_index": 4
+    },
+    "commons_evidence": {
+      "pageid": 84352522,
+      "ns": 6,
+      "title": "File:Man with umbrella crossing road in the rain.jpg",
+      "index": 7,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 1478722,
+          "width": 2409,
+          "height": 1645,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/960px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 546,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/1920px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/960px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 546,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg/1920px-Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Man_with_umbrella_crossing_road_in_the_rain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Man_with_umbrella_crossing_road_in_the_rain.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=84352522",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2019-11-25 13:53:12",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Man with umbrella crossing road in the rain",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Streets in the City of Manchester|Self-published work|Rain in England|Male people with umbrellas",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Man with umbrella crossing road in the rain, Ducie Street, Manchester",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2019-11-25 12:25:41",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Benjamin_Shaw&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Benjamin Shaw (page does not exist)\">Benjamin Shaw</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "w-snöar": {
+    "word": "snöar",
+    "translation": "is snowing",
+    "photo_file": "assets/flashcards/w-snöar.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Snowing_in_%C5%A0i%C5%A1ka.jpg",
+    "author": "Miha Peče",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:Snowing in Šiška.jpg",
+    "pageid": 106500873,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/960px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "b17be021ec5b19d718d3f3e48c78bf98d43b3ad1098771b88f1dc9550d084498",
+    "sha256": "7eb1a965affa6e04cad368922785dc284278b6955cec4ab02f29710ed8a520d9",
+    "selection_evidence": {
+      "evidence": "candidates-w-snöar.json",
+      "candidate_index": 5
+    },
+    "commons_evidence": {
+      "pageid": 106500873,
+      "ns": 6,
+      "title": "File:Snowing in Šiška.jpg",
+      "index": 4,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 13527210,
+          "width": 6596,
+          "height": 4397,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/960px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 533,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/1920px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/960px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 533,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg/1920px-Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snowing_in_%C5%A0i%C5%A1ka.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=106500873",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2021-06-12 04:57:54",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Snowing in Šiška",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Self-published work|Snowing in the Šiška District|Files with coordinates missing SDC location of creation|Snowy roads in Ljubljana|Images by User:Miha Peče",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "46.069370",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "14.492890",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Heavy snowing in Šiška district, Ljubljana.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2021-04-06 08:28:06",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<table class=\"toccolours\" style=\"width:100%; margin-top:10px;\" cellpadding=\"2\">\n\n<tbody><tr class=\"plainlinks\">\n<td><a href=\"https://upload.wikimedia.org/wikipedia/commons/2/29/Snowing_in_%C5%A0i%C5%A1ka.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=api&amp;utm_content=original\" class=\"internal\" title=\"Snowing in Šiška.jpg\">This Photo</a> was taken by <i><b><a href=\"//commons.wikimedia.org/wiki/User:Miha_Pe%C4%8De\" title=\"User:Miha Peče\">Miha Peče</a></b></i>.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email <a rel=\"nofollow\" class=\"external text\" href=\"mailto:pc.osx.linux@gmail.com\">pc.osx.linux@gmail.com</a> or write on <a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=User_talk:Miha_Pe%C4%8De&amp;action=edit&amp;section=new\">my talk page</a>, for my information.\n</td></tr></tbody></table>\n<div style=\"clear:both; border:2px solid #00cc00; background-color:#f7f7f7; margin-top:6px;\">\n<table><tbody><tr><td style=\"padding:4px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Upload-problem2.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/120px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"57\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Upload-problem2.svg/250px-Upload-problem2.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"159\" data-file-height=\"142\"></a></span>\n</td><td style=\"padding:4px;\"><div style=\"margin-top:0.5em;\">Please do not upload an edited image here without consulting me.  I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.<br>Otherwise you may upload an edited image with a new name. Please use one of the templates <a href=\"//commons.wikimedia.org/wiki/Template:Derived_from\" title=\"Template:Derived from\">derivative</a> or <a href=\"//commons.wikimedia.org/wiki/Template:Extracted_from\" title=\"Template:Extracted from\">extract</a>.</div>\n</td></tr></tbody></table></div>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "w-medicin": {
+    "word": "medicin",
+    "translation": "medicine",
+    "photo_file": "assets/flashcards/w-medicin.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Gfp-medicine-container-and-medicine-tablet.jpg",
+    "author": "Yinan Chen",
+    "license": "Public Domain",
+    "license_url": "https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/",
+    "commons_title": "File:Gfp-medicine-container-and-medicine-tablet.jpg",
+    "pageid": 33633622,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/960px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "14ef6d19b9fae4e0f95a96e303f9b421d53749c91cbc0f5ea35b49c75796c484",
+    "sha256": "4eccb33b5d45272dc601d3aa365e0376d23f8e706c136315f041e86b233597ef",
+    "selection_evidence": {
+      "evidence": "candidates-w-medicin.json",
+      "candidate_index": 4
+    },
+    "commons_evidence": {
+      "pageid": 33633622,
+      "ns": 6,
+      "title": "File:Gfp-medicine-container-and-medicine-tablet.jpg",
+      "index": 5,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 772236,
+          "width": 3456,
+          "height": 2304,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/960px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 533,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/1920px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/960px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 533,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/1920px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gfp-medicine-container-and-medicine-tablet.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33633622",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2014-06-28 18:42:10",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Gfp-medicine-container-and-medicine-tablet",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Taken with Canon EOS 550D|Chloroquine|Images from goodfreephotos.com|Import by User:Slick-o-bot/Images from goodfreephotos.com/Other-photos|Pill bottles and pills",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Free public domain stock photo of medicine container and medicine tablet",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2014-05-15",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com\">www.goodfreephotos.com</a> (<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com/other-photos/page/3/\">gallery</a>, <a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com/other-photos/medicine-container-and-medicine-tablet.jpg.php\">image</a>)",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com\">Yinan Chen</a>",
+              "source": "commons-desc-page"
+            },
+            "Permission": {
+              "value": "<table style=\"width:100%; clear:both; text-align:center; margin:0.5em auto; background-color:var(--background-color-neutral-subtle, #f8f9fa); border:var(--border-subtle, 2px solid #c8ccd1); padding: 0; border-spacing: 8px; color:var(--color-base, #202122);\" dir=\"ltr\" class=\"layouttemplate licensetpl\" lang=\"\">\n<tbody><tr>\n<td style=\"width:90px;\"><span class=\"skin-invert-image\" typeof=\"mw:File\"><span title=\"Creative Commons\"><img alt=\"Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"28\" height=\"28\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/60px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/40px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"28\" height=\"28\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/60px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td><i>This file has been released explicitly into the public domain by its author, using the <a href=\"https://en.wikipedia.org/wiki/Creative_Commons\" class=\"extiw\" title=\"w:Creative Commons\">Creative Commons</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/\">Public Domain Dedication</a> formerly <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/publicdomain/\">here</a></i>\n<p><i>This file may be used <b>for any purpose</b> including unrestricted redistribution, commercial use, and modification.</i>\n</p>\n<hr>\n<div style=\"font-size:10px\"> <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Ambox_warning_pn.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ambox_warning_pn.svg/20px-Ambox_warning_pn.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"20\" height=\"17\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ambox_warning_pn.svg/40px-Ambox_warning_pn.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"445\"></a></span> Note: Creative Commons has retired this legal tool and does not recommend that it be applied to works. It is recommended you use <a href=\"//commons.wikimedia.org/wiki/Template:Cc-zero\" title=\"Template:Cc-zero\"><span style=\"font-family:monospace,monospace;\">{{Cc-zero}}</span></a> instead.<br><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:PDmaybe-icon.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/PDmaybe-icon.svg/20px-PDmaybe-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"20\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/PDmaybe-icon.svg/40px-PDmaybe-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"200\" data-file-height=\"200\"></a></span> This legal tool may not be effective or applicable in non-US jurisdictions.</div><span class=\"licensetpl_long\" style=\"display: none\">Creative Commons Public Domain Dedication</span><span class=\"licensetpl_short\" style=\"display: none\">Public Domain</span><span class=\"licensetpl_link\" style=\"display: none\">https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/</span><span class=\"licensetpl_attr_req licensetpl_link_req\" style=\"display: none\">false</span>\n</td></tr></tbody></table>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseShortName": {
+              "value": "Public Domain",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Public Domain Dedication",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "false",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "pd",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "w-fågel": {
+    "word": "fågel",
+    "translation": "bird",
+    "photo_file": "assets/flashcards/w-fågel.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Passer_domesticus_(male)_version_2,_Geneve,_Switzerland.jpg",
+    "author": "Terragio67",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:Passer domesticus (male) version 2, Geneve, Switzerland.jpg",
+    "pageid": 177944869,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg/960px-Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "23538753b9fea07a97b72c7b24c41e5b5911a67b03d5f54d4f17751aa16c07da",
+    "sha256": "97bc682e70e4a2064f357c9d9bd2a7f96e170d69dc15f1f13a9da4ea5c006f72",
+    "selection_evidence": {
+      "evidence": "candidates-w-fågel.json",
+      "candidate_index": 6
+    },
+    "commons_evidence": {
+      "pageid": 177944869,
+      "ns": 6,
+      "title": "File:Passer domesticus (male) version 2, Geneve, Switzerland.jpg",
+      "index": 4,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 11479140,
+          "width": 5894,
+          "height": 3929,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg/960px-Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 533,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg/1920px-Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg/960px-Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 533,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg/1920px-Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Passer_domesticus_%28male%29_version_2%2C_Geneve%2C_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Passer_domesticus_(male)_version_2,_Geneve,_Switzerland.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=177944869",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2025-11-06 16:16:17",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Passer domesticus (male) version 2, Geneve, Switzerland",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Self-published work|Featured pictures of the canton of Geneva|Birds of the canton of Geneva|Passer domesticus in Switzerland (male)|Files with coordinates missing SDC location of creation|Featured pictures by Terragio67|Jetée des Eaux-Vives|Bokeh photographs of Passeridae|April 2025 in the canton of Geneva",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "quality|featured",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "46.207980",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "6.155970",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Passer domesticus (male), Geneve, Switzerland.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2025-04-04 18:02:54",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Terragio67\" title=\"User:Terragio67\">Terragio67</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0015": {
+    "word": "sambo",
+    "translation": "cohabiting partner",
+    "photo_file": "assets/flashcards/lex-0015.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Living_room,_interior,_couple,_bookshelf,_drinking_Fortepan_60521.jpg",
+    "author": "FOTO:Fortepan — ID 60521 : Adományozó/Donor: Gárdos György. archive copy at the Wayback Machine",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "commons_title": "File:Living room, interior, couple, bookshelf, drinking Fortepan 60521.jpg",
+    "pageid": 50619440,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg/960px-Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "f65a1734c8ecc389705338f0db58c4bd8b8eaa20b9cb14d3d3b3a3c2e5bbef4d",
+    "sha256": "4d4c28a05461002c65f210abe047d466cbd9349bcc7883b58d6b1aeabbcebe85",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0015.json",
+      "candidate_index": 2
+    },
+    "commons_evidence": {
+      "pageid": 50619440,
+      "ns": 6,
+      "title": "File:Living room, interior, couple, bookshelf, drinking Fortepan 60521.jpg",
+      "index": 7,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 7511311,
+          "width": 5632,
+          "height": 3666,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg/960px-Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 521,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg/1920px-Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg/960px-Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 521,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg/1920px-Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Living_room%2C_interior%2C_couple%2C_bookshelf%2C_drinking_Fortepan_60521.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Living_room,_interior,_couple,_bookshelf,_drinking_Fortepan_60521.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=50619440",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2016-08-11 16:03:29",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Living room, interior, couple, bookshelf, drinking Fortepan 60521",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Images from Fortepan|Images uploaded by Fæ|1981 photographs|Media needing category review as of 11 August 2016",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "<ul><li>Tags: living room, interior, couple, bookshelf, drinking</li></ul>",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "1981",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.fortepan.hu/_photo/download/fortepan_60521.jpg\">https://www.fortepan.hu/_photo/download/fortepan_60521.jpg</a> <bdi lang=\"en\" dir=\"ltr\" title=\"archived on 21 January 2019 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20190121191148/http%3A//www.fortepan.hu/_photo/download/fortepan_60521.jpg\">archive copy</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "FOTO:Fortepan — <b>ID 60521</b>: <span typeof=\"mw:File\"><a href=\"https://fortepan.hu/\" rel=\"nofollow\"><img alt=\"Home page\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Nuvola_filesystems_folder_home.svg/40px-Nuvola_filesystems_folder_home.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Nuvola_filesystems_folder_home.svg/60px-Nuvola_filesystems_folder_home.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"128\" data-file-height=\"128\"></a></span><span typeof=\"mw:File\"><a href=\"https://www.fortepan.hu/_photo/download/fortepan_60521.jpg\" rel=\"nofollow\"><img alt=\"Picture\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Inkscape.svg/40px-Inkscape.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Inkscape.svg/60px-Inkscape.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"60\" data-file-height=\"60\"></a></span><span typeof=\"mw:File\"><a href=\"http://www.fortepan.hu/?lang=en&amp;img=60521\" rel=\"nofollow\"><img alt=\"Information page\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Information_icon.svg/40px-Information_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Information_icon.svg/60px-Information_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"620\" data-file-height=\"620\"></a></span><br>Adományozó/Donor: Gárdos György. <br><bdi lang=\"en\" dir=\"ltr\" title=\"archived on 26 January 2019 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20190126084037/http%3A//www.fortepan.hu/%3Fimg%3D60521\">archive copy</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 3.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 3.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Attribution": {
+              "value": "FOTO:FORTEPAN / Gárdos György",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/3.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-3.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0032": {
+    "word": "må dåligt",
+    "translation": "feel unwell",
+    "photo_file": "assets/flashcards/lex-0032.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Headache-1557872_960_720.jpg",
+    "author": "Phee",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "commons_title": "File:Headache-1557872 960 720.jpg",
+    "pageid": 52233006,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Headache-1557872_960_720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "source_download_sha256": "0da6af3ca951ec9daf9672dabc1bc869e146e1b491e7072d3d94ca32738047ab",
+    "sha256": "c2f1dbd96917bd883618ce5fde1f8b5f60b878f4af485cebad4560168588b47b",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0032.json",
+      "candidate_index": 2
+    },
+    "commons_evidence": {
+      "pageid": 52233006,
+      "ns": 6,
+      "title": "File:Headache-1557872 960 720.jpg",
+      "index": 2,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 228228,
+          "width": 720,
+          "height": 720,
+          "thumburl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Headache-1557872_960_720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "thumbwidth": 800,
+          "thumbheight": 800,
+          "thumbattribs": {
+            "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Headache-1557872_960_720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 800
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Headache-1557872_960_720.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Headache-1557872_960_720.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=52233006",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2016-10-13 05:49:22",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Headache-1557872 960 720",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "CC-Zero|Stress|Headaches|Images from Pixabay",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Stressed person",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2016-07-28 18:31:14",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://pixabay.com/p-1557872\">Pixabay</a>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "Phee",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Zero, Public Domain Dedication",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "false",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0183": {
+    "word": "sällan",
+    "translation": "rarely",
+    "photo_file": "assets/flashcards/lex-0183.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_eclipse_1999_4.jpg",
+    "author": "Luc Viatour",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "commons_title": "File:Solar eclipse 1999 4.jpg",
+    "pageid": 60793,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/960px-Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "a3fd8e411d6fe7c25ddd12e3445586796dc761ade63e58609cb0831a74665e0b",
+    "sha256": "76161302be264c75216480ce85b3557f2b8576f9374ef4c884aa36f5881ea3f2",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0183-v2.json",
+      "candidate_index": 0
+    },
+    "commons_evidence": {
+      "pageid": 60793,
+      "ns": 6,
+      "title": "File:Solar eclipse 1999 4.jpg",
+      "index": 1,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 3245156,
+          "width": 3543,
+          "height": 3489,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/960px-Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 788,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/1920px-Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/960px-Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 788,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Solar_eclipse_1999_4.jpg/1920px-Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Solar_eclipse_1999_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Solar_eclipse_1999_4.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=60793",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2006-10-27 04:41:48",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Solar eclipse 1999 4",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "GFDL|Taken with Nikon FE2|CC-BY-SA-2.5,2.0,1.0|Solar corona|License migration completed|Self-published work|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, German|Files with derivative versions|Featured pictures on Wikipedia, Chinese|Featured pictures on Wikipedia, Persian|Taken on Fuji Velvia|Solar eclipse of 1999 August 11 in France|Featured pictures of solar eclipses|Featured pictures taken on film|Files with Assessments template missing SDC Commons valued image assessment",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "quality|featured|valued|potd",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Total Solar eclipse in France.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "1999-08-11",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>, <a rel=\"nofollow\" class=\"external text\" href=\"http://www.lucnix.be\">www.lucnix.be</a>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Lviatour\" title=\"User:Lviatour\">Luc Viatour</a>",
+              "source": "commons-desc-page"
+            },
+            "Permission": {
+              "value": "<p>See below.\n</p>\n<table style=\"margin: 1.5em auto; width:60%; background-color:#CCCCCC; border:2px solid #aaaaaa; padding:1px;\" cellspacing=\"10\">\n\n\n<tbody><tr>\n<td align=\"center\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Lviatour.jpg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Lviatour.jpg/120px-Lviatour.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"80\" height=\"69\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Lviatour.jpg/250px-Lviatour.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"899\" data-file-height=\"773\"></a></span>\n</td>\n<td><b><i>This image</i> is the work of <i><a href=\"//commons.wikimedia.org/wiki/User:Lviatour\" title=\"User:Lviatour\">Luc Viatour</a></i></b>\n<p>Please credit it with: <b>Luc Viatour / <a rel=\"nofollow\" class=\"external free\" href=\"https://Lucnix.be\">https://Lucnix.be</a></b> in the immediate vicinity of the image. A link to my website <a rel=\"nofollow\" class=\"external free\" href=\"https://lucnix.be\">https://lucnix.be</a> is much appreciated but not mandatory.\n</p><p>An email to\n<span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:UserIconMail.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/40px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/60px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"700\" data-file-height=\"700\"></a></span>\n<a href=\"//commons.wikimedia.org/wiki/Special:EmailUser/Lviatour\" title=\"Special:EmailUser/Lviatour\">Viatour Luc</a> would be appreciated too.\n</p><p>Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain.\nIf you would like special permission to use, license, or purchase the image please contact me <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:UserIconMail.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/40px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/60px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"700\" data-file-height=\"700\"></a></span><a href=\"//commons.wikimedia.org/wiki/Special:EmailUser/Lviatour\" title=\"Special:EmailUser/Lviatour\">Viatour Luc</a> to negotiate terms.\n</p><p>More free pictures in my <a rel=\"nofollow\" class=\"external text\" href=\"https://lucnix.be\">personal gallery</a>\n</p>\n</td></tr></tbody></table>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 3.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 3.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Attribution": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Lviatour\" title=\"User:Lviatour\">Luc Viatour</a>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-3.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0310": {
+    "word": "miljö",
+    "translation": "environment",
+    "photo_file": "assets/flashcards/lex-0310.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Tarvasj%C3%B5gi.jpg",
+    "author": "Ireen Trummer",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "commons_title": "File:Tarvasjõgi.jpg",
+    "pageid": 18000554,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tarvasj%C3%B5gi.jpg/960px-Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "7c06f656a67739d5747c449e3a129eab42384164ea64b2025de89351d85dc59e",
+    "sha256": "bbe45a4ec14bf8869a0355fb2bdb10dc4d26c7f82102acf44fcba2fcac8dfb1d",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0310.json",
+      "candidate_index": 0
+    },
+    "commons_evidence": {
+      "pageid": 18000554,
+      "ns": 6,
+      "title": "File:Tarvasjõgi.jpg",
+      "index": 5,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 12156995,
+          "width": 4288,
+          "height": 2848,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tarvasj%C3%B5gi.jpg/960px-Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 531,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tarvasj%C3%B5gi.jpg/1920px-Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tarvasj%C3%B5gi.jpg/960px-Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 531,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tarvasj%C3%B5gi.jpg/1920px-Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tarvasj%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tarvasj%C3%B5gi.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=18000554",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2012-12-28 16:05:15",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Tarvasjõgi",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Taken with Pentax K-x|Vetla|Kõrvemaa Nature Park|Tarvasjõgi|Self-published work|Featured pictures on Wikipedia, English|Featured pictures on Wikipedia, Persian|Riparian forests in Estonia|Water reflections in Estonia|Water reflections of trees in Estonia|Files with coordinates missing SDC location of creation|Estonia photographs taken on 2011-08-24|Featured pictures of forests|Featured pictures of landscapes in Estonia|Featured pictures of Harju County|Pictures of the Year/2012 (finalist)",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "quality|featured|potd|poty",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "59.217664",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "25.521881",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Tarvasjõgi at Kõrvemaa Nature Park in Estonia.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "Taken on 24 August 2011",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ireena\" title=\"User:Ireena\">Ireen Trummer</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 3.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 3.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/3.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-3.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0318": {
+    "word": "rund",
+    "translation": "round",
+    "photo_file": "assets/flashcards/lex-0318.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:Orange -- 2022 -- 9718.jpg",
+    "pageid": 114345661,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Orange_--_2022_--_9718.jpg/960px-Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "aca2c18154ac646f6f12780771db3a655d45c9dd8d6db184495e720eab95d2c8",
+    "sha256": "356042e0128d80b45068a499e6bb66017748cf6cbb2786b74d3fa60cda2a2e80",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0318.json",
+      "candidate_index": 5
+    },
+    "commons_evidence": {
+      "pageid": 114345661,
+      "ns": 6,
+      "title": "File:Orange -- 2022 -- 9718.jpg",
+      "index": 7,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 6581966,
+          "width": 4480,
+          "height": 4480,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Orange_--_2022_--_9718.jpg/960px-Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 800,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Orange_--_2022_--_9718.jpg/1920px-Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Orange_--_2022_--_9718.jpg/960px-Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 800,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Orange_--_2022_--_9718.jpg/1920px-Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Orange_--_2022_--_9718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=114345661",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2022-01-16 10:49:45",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Orange -- 2022 -- 9718",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Square photos of food in Germany|Taken with Canon EOS 5D Mark IV|Oranges as food|ISO speed rating 100|Tabletop photography|Taken with Sigma 105mm F2.8 EX DG OS HSM Macro|Self-published work|Photographs by Dietmar Rabich/Long exposure|Photographs by Dietmar Rabich/Close-ups|Photographs by Dietmar Rabich/Dülmen|Photographs by Dietmar Rabich/Quality images|Information field template with formatting|Photographs by Dietmar Rabich/Quality images of plants|Close-up photographs of food|Food with black background|Photographs by Dietmar Rabich/Quality images of food|Exposure time 6 sec|Changes of XRay's photographs of the recent weeks|Images by XRay (flat list)|Uploaded with LrMediaWiki|Lens focal length 105 mm|Oranges in Germany|Location rounded|Objects in Dülmen|Dülmen photographs taken on 2022-01-16|Photographs by Dietmar Rabich/Still-life photography|Top views of food|Long exposure photographs of Dülmen|Photographs by Dietmar Rabich/Quality images of North Rhine-Westphalia|F-number f/18|Photographs by Dietmar Rabich/Year/2022|Photo art in Dülmen|Square photos of Dülmen|Close-up photographs in North Rhine-Westphalia",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "quality",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "51.810149",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "7.247607",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "<a href=\"https://en.wikipedia.org/wiki/Orange_(fruit)\" class=\"extiw\" title=\"en:Orange (fruit)\">Orange</a> (top view)",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "Taken on 16 January 2022, 11:30",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q34788025\" class=\"extiw\" title=\"d:Q34788025\"><span title=\"German photographer and mathematician\">Dietmar Rabich</span></a></bdi>",
+              "source": "commons-desc-page"
+            },
+            "Permission": {
+              "value": "<table class=\"layouttemplate navigation-not-searchable\" style=\"margin:.25em;padding:.25em .5em;background-color:var(--background-color-base,#ffffff);color:inherit;border:1px solid var(--background-color-disabled,#eeeeee)\" data-nosnippet=\"\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/40px-Flag_of_Germany.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"14\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/60px-Flag_of_Germany.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"1000\" data-file-height=\"600\"></span></span>\n</td>\n<td>Dieser Text und viele andere auch sind ebenso in deutscher Sprache verfügbar. Um diese sehen zu können, wähle bitte auf dieser Webseite die Spracheinstellung „Deutsch“.\n</td></tr></tbody></table><div style=\"clear:both;border:1px solid var(--background-color-disabled,#eeeeee);margin:.25em;padding:.25em .5em;background-color:var(--background-color-base,#ffffff);color:inherit;font-size:90%;\" class=\"searchaux\" data-nosnippet=\"\">\n<figure class=\"mw-halign-right\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:HSSection_sign.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/120px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"100\" height=\"100\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/HSSection_sign.svg/250px-HSSection_sign.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"156\" data-file-height=\"156\"></a><figcaption></figcaption></figure><figure class=\"mw-halign-right\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Cc_by-sa_(1).svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cc_by-sa_%281%29.svg/120px-Cc_by-sa_%281%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"100\" height=\"35\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Cc_by-sa_%281%29.svg/250px-Cc_by-sa_%281%29.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"120\" data-file-height=\"42\"></a><figcaption></figcaption></figure><div><b>I. Licence</b></div>\n<div style=\"margin-top:0.5em;\">This photograph is protected by copyright law. However, it may be used for free by anyone, provided it is used in accordance with the license <b>Creative Commons License <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed\">“Attribution-ShareAlike 4.0 International”</a></b> (CC BY-SA 4.0). These include, among other things, the naming of the author and the license, as well as the setting of a link to the license text or its complete imprint. The attribution should be done as follows:</div>\n<div style=\"margin-top:0.5em; text-align:center;\"><i><a href=\"//commons.wikimedia.org/wiki/User:XRay\" title=\"User:XRay\">Dietmar Rabich</a> / <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a> / <span class=\"plainlinks noprint\"><a class=\"external text\" data-mw-original-href=\"//commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg\" href=\"https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg\">“Orange -- 2022 -- 9718”</a></span> / <span class=\"plainlinks noprint\"><a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a></span></i></div>\n<div style=\"margin-top:0.5em;\">Please read the text of the license carefully before using the photograph. If you do not agree with the conditions of the license or if you do not understand these conditions, please refrain from using the photo. If you have any questions regarding the license or the reuse of the image, please contact me before using it. If you do not comply with the terms of the license, you do not acquire any right to use the image. If you need another license to use, please contact the author <b>before</b> using.</div>\n<div style=\"margin-top:0.5em;\">For informations about the licence see section <a class=\"mw-selflink-fragment\" href=\"#ImgLic\">Licensing</a> or as <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">human-readable summary</a> or as <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/legalcode\">full licence text</a> at Creative Commons. In addition to the above, a link to the source - so this page with the descriptions and license terms - is appreciated. More information or examples of use can be found at <a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">re-use (with example file)</a>. The <a rel=\"nofollow\" class=\"external text\" href=\"https://lizenzhinweisgenerator.de/?lang=en&amp;url=https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg\">Attribution Generator</a> is helpful in licensing matters.</div>\n<div style=\"margin:0.5em auto 1em;text-align:center;\" class=\"plainlinks\"><span class=\"plainlinks\"><a rel=\"nofollow\" class=\"external text\" href=\"https://lizenzhinweisgenerator.de/?lang=en&amp;url=https://commons.wikimedia.org/wiki/File:Orange_--_2022_--_9718.jpg\"><span class=\"submit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-secondary ui-button-blue\" role=\"button\"><span class=\"ui-button-text\">Generate License <b>Attribution</b></span><span class=\"ui-button-icon-secondary ui-icon ui-icon-extlink\"> </span></span></a></span></div>\n<div style=\"margin-top:0.5em;\">As an alternative to the Creative Commons License <i>CC BY-SA 4.0</i>, the <i><a href=\"https://en.wikipedia.org/wiki/Free_Art_License\" class=\"extiw\" title=\"en:Free Art License\">Free Art License</a></i> (<a rel=\"nofollow\" class=\"external text\" href=\"http://artlibre.org/licence/lal/en/\">from version 1.3</a>) may also be used.</div>\n<div style=\"margin-top:0.75em;\"><b>II. Fairness</b></div>\n<div style=\"margin-top:0.5em;\">From printed materials and other tangible products that use that work, the user is asked to send a copy to the author as thank you. However, this is not a condition for the use of the photo, but a voluntary service. The mailing address can be requested via the contact options.</div>\n<div style=\"margin-top:0.5em;\">Please note that the author had quite considerable effort to draw up this file. Thus, it is only fair to comply with the conditions of <a href=\"https://en.wikipedia.org/wiki/Free_license\" class=\"extiw\" title=\"en:Free license\">free licenses</a> listed here. In the case of violation of the license conditions, the rights granted hereunder will expire automatically.</div>\n<div style=\"margin-top:0.75em; clear: both;\"><b>III. Disclaimer</b></div>\n<div style=\"margin-top:0.5em;\">Please note that the rights granted under the license apply exclusively to the photograph itself, but not to the rights of third parties — such as copyrights or property rights in the object depicted or the personal rights of any individuals who may be depicted. (See <a href=\"//commons.wikimedia.org/wiki/Commons:L\" class=\"mw-redirect\" title=\"Commons:L\">licences</a> and <a href=\"//commons.wikimedia.org/wiki/Commons:SOSUMI\" class=\"mw-redirect\" title=\"Commons:SOSUMI\">non-copyright restrictions</a>.) I do not grant any warranty that the subsequent use of the photograph is legally possible concerning the object or person shown in the photograph. You are responsible to check and respect these rights in the publication in the respective medium or country.</div>\n<div style=\"margin-top:0.5em;\">The author is not responsible for the accuracy of the information contained herein (description, title, etc.). Likewise, the author assumes no liability for further use. Please note the <a href=\"//commons.wikimedia.org/wiki/Commons:General_disclaimer\" title=\"Commons:General disclaimer\">general disclaimer</a> and please read <a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">reusing content outside Wikimedia</a> too.</div>\n<div style=\"margin-top:0.75em;\"><b>IV. Contact</b></div>\n<div style=\"margin-top:0.5em;\"><b><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:UserIconMail.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/40px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/UserIconMail.svg/60px-UserIconMail.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"700\" data-file-height=\"700\"></a></span> <a href=\"//commons.wikimedia.org/wiki/Special:EmailUser/XRay\" title=\"Special:EmailUser/XRay\">E-mail to the author</a></b> or the <a href=\"//commons.wikimedia.org/wiki/User_talk:XRay\" title=\"User talk:XRay\">author's talk page</a> <small>or the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.rabich.de/\">author's website</a></small></div></div>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Attribution": {
+              "value": "<b><a href=\"//commons.wikimedia.org/wiki/User:XRay\" title=\"User:XRay\">Dietmar Rabich</a></b>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0384": {
+    "word": "pigg",
+    "translation": "energetic / alert",
+    "photo_file": "assets/flashcards/lex-0384.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Jogging_Woman_in_Grass.jpg",
+    "author": "Mike Baird",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "commons_title": "File:Jogging Woman in Grass.jpg",
+    "pageid": 11219680,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Jogging_Woman_in_Grass.jpg/960px-Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "50eb21657561f4ff7cab419573d8ae5ae5bc1b03ae6f9d86878b33537951fd38",
+    "sha256": "ac864846e9eb2eff1acfaf05c3dfcb08d5d671b8ba4fee3ab2ad2f4f1ed63f4b",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0384-v2.json",
+      "candidate_index": 0
+    },
+    "commons_evidence": {
+      "pageid": 11219680,
+      "ns": 6,
+      "title": "File:Jogging Woman in Grass.jpg",
+      "index": 2,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 1165979,
+          "width": 1726,
+          "height": 1381,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Jogging_Woman_in_Grass.jpg/960px-Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 640,
+          "responsiveUrls": {
+            "2": "https://upload.wikimedia.org/wikipedia/commons/4/45/Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Jogging_Woman_in_Grass.jpg/960px-Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 640,
+            "srcset": "https://upload.wikimedia.org/wikipedia/commons/4/45/Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Jogging_Woman_in_Grass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Jogging_Woman_in_Grass.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=11219680",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2010-08-19 03:11:05",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Jogging Woman in Grass",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Taken with Canon EOS 20D|Morro Bay|Flickr images reviewed by trusted users|Files with coordinates missing SDC location of creation|Jogging in the United States|Running women in the United States|Women wearing sports bras|Women wearing black leggings|Photographs by Mike Baird",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "35.371957",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "-120.861926",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Female Jogger on Coleman Avenue in Morro Bay, CA",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2007-05-02 09:41",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/mikebaird/482031103/\">female-jogger-morro-bay-coleman-avenue</a>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/72825507@N00\">Mike Baird</a> from Morro Bay, USA<br>Mike Baird <a rel=\"nofollow\" class=\"external text\" href=\"http://bairdphotos.com\">bairdphotos.com</a> Canon 20D 100-400mm IS lens handheld from an outrigger canoe.",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY 2.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution 2.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Attribution": {
+              "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://flickr.bairdphotos.com\">\"Mike\" Michael L. Baird</a>",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by/2.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-2.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0391": {
+    "word": "tillsammans",
+    "translation": "together",
+    "photo_file": "assets/flashcards/lex-0391.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:A_European_couple_having_a_picnic_in_a_park_(P050783-732214).jpg",
+    "author": "Claudio Centonze / European Commission Audiovisual Service",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "commons_title": "File:A European couple having a picnic in a park (P050783-732214).jpg",
+    "pageid": 118334521,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg/960px-A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "dc2dea136eb206e3d3437b227d919f970a44ede981e32691e856bf0abc4b6966",
+    "sha256": "057669fdf489948fe217ad16aaf18662a72798cd61bd91212c4bec0ed4965a21",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0391.json",
+      "candidate_index": 5
+    },
+    "commons_evidence": {
+      "pageid": 118334521,
+      "ns": 6,
+      "title": "File:A European couple having a picnic in a park (P050783-732214).jpg",
+      "index": 6,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 2553310,
+          "width": 4000,
+          "height": 2667,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg/960px-A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 533,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg/1920px-A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg/960px-A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 533,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg/1920px-A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/A_European_couple_having_a_picnic_in_a_park_%28P050783-732214%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_European_couple_having_a_picnic_in_a_park_(P050783-732214).jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=118334521",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2022-05-25 22:23:09",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "A European couple having a picnic in a park (P050783-732214)",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "March 2021 in Brussels|Interracial groups of people|Admin reviewed EC-Audiovisual Center images|Media from the European Commission",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "This report provides illustrative photos of a couple spending time together in a park with European Union merchandise.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2021-03-05 13:54:35",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://audiovisual.ec.europa.eu/en/photo/P-050783~2F00-30\">https://audiovisual.ec.europa.eu/en/photo/P-050783~2F00-30</a>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "Claudio Centonze / European Commission Audiovisual Service",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Attribution": {
+              "value": "© European Union, 2026",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0395": {
+    "word": "förstå",
+    "translation": "understand",
+    "photo_file": "assets/flashcards/lex-0395.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:DVFS_teacher-student.jpg",
+    "author": "Dave Jackson (photo); Delaware Valley Friends School (copyright); DVFSMarketing (licensing account)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:DVFS teacher-student.jpg",
+    "pageid": 46936602,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/DVFS_teacher-student.jpg/960px-DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "765c639c210850529b64b9a2038c1b2eb83df04483f94e5d874f2517023ba82e",
+    "sha256": "81be06d08a44275eaf33eb1dfaa34b2a0c3436eb0ea378aaa290645d6f3a6a1a",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0395.json",
+      "candidate_index": 2
+    },
+    "commons_evidence": {
+      "pageid": 46936602,
+      "ns": 6,
+      "title": "File:DVFS teacher-student.jpg",
+      "index": 4,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 3424105,
+          "width": 1800,
+          "height": 2400,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/DVFS_teacher-student.jpg/960px-DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 1067,
+          "responsiveUrls": {
+            "2": "https://upload.wikimedia.org/wikipedia/commons/2/2d/DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/DVFS_teacher-student.jpg/960px-DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 1067,
+            "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/2d/DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/DVFS_teacher-student.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:DVFS_teacher-student.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=46936602",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2016-02-12 18:11:32",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "DVFS teacher-student",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Dyslexia|Learning disabilities|Self-published work|Disability in Pennsylvania|July 2013 in Pennsylvania|Delaware Valley Friends' School",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "DVFS teacher and student\nPhoto by Dave Jackson. Copyright Delaware Valley Friends School.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2016-02-12",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:DVFSMarketing&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:DVFSMarketing (page does not exist)\">DVFSMarketing</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0027": {
+    "word": "tidbokning",
+    "translation": "appointment booking",
+    "photo_file": "assets/flashcards/lex-0027.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Health_Center_Appointment_card_in_Nigeria.jpg",
+    "author": "Beendy234",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "commons_title": "File:Health Center Appointment card in Nigeria.jpg",
+    "pageid": 147658807,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/960px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "fc2218d073e3cb569bf5ae20a6a145065c494562834ae93f93ac3cf13dbbb1e2",
+    "sha256": "e68eea228ec23dbc04bebc3acdc58dc88a858144274388ec3c7784fdd8f7b3ce",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0027-v2.json",
+      "candidate_index": 7
+    },
+    "commons_evidence": {
+      "pageid": 147658807,
+      "ns": 6,
+      "title": "File:Health Center Appointment card in Nigeria.jpg",
+      "index": 3,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 2903682,
+          "width": 3024,
+          "height": 4032,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/960px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 1067,
+          "responsiveUrls": {
+            "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/1920px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/960px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 1067,
+            "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg/1920px-Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Health_Center_Appointment_card_in_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:Health_Center_Appointment_card_in_Nigeria.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=147658807",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2024-04-23 13:27:08",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Health Center Appointment card in Nigeria",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "CC-Zero|Appointment books|Self-published work",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Health Center  Appointment  card in Nigeria",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2024-04-23 11:25:29",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/wiki/User:Beendy234\" title=\"User:Beendy234\">Beendy234</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Zero, Public Domain Dedication",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "false",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  },
+  "lex-0401": {
+    "word": "svenska",
+    "translation": "Swedish language",
+    "photo_file": "assets/flashcards/lex-0401.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:V%C3%A4lkommen_till_Gimo_2.jpg",
+    "author": "Dobfisher",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "commons_title": "File:Välkommen till Gimo 2.jpg",
+    "pageid": 79110598,
+    "saved_at": "2026-10-17",
+    "changes": "Downloaded Commons thumbnail; EXIF orientation applied, resized and centre-cropped to 640 × 640, converted to WebP (quality 82). The app additionally crops the photo as a card background.",
+    "source_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg/960px-V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "source_download_sha256": "4d24401e109a0942e4755ebc7c097bae050aef3960de5e45c5f61f923e8322ad",
+    "sha256": "e0c34609a846ad31a916fe7aa1c7ebc6a881720bdcea2b92a034ceb983651587",
+    "selection_evidence": {
+      "evidence": "candidates-lex-0401-v4.json",
+      "candidate_index": 2
+    },
+    "commons_evidence": {
+      "pageid": 79110598,
+      "ns": 6,
+      "title": "File:Välkommen till Gimo 2.jpg",
+      "index": 4,
+      "imagerepository": "local",
+      "imageinfo": [
+        {
+          "size": 1097261,
+          "width": 1000,
+          "height": 667,
+          "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg/960px-V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "thumbwidth": 800,
+          "thumbheight": 534,
+          "responsiveUrls": {
+            "2": "https://upload.wikimedia.org/wikipedia/commons/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+          },
+          "thumbattribs": {
+            "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg/960px-V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "decoding": "async",
+            "loading": "lazy",
+            "width": 800,
+            "height": 534,
+            "srcset": "https://upload.wikimedia.org/wikipedia/commons/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+          },
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/V%C3%A4lkommen_till_Gimo_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "descriptionurl": "https://commons.wikimedia.org/wiki/File:V%C3%A4lkommen_till_Gimo_2.jpg",
+          "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=79110598",
+          "extmetadata": {
+            "DateTime": {
+              "value": "2019-05-21 12:07:28",
+              "source": "mediawiki-metadata",
+              "hidden": ""
+            },
+            "ObjectName": {
+              "value": "Välkommen till Gimo 2",
+              "source": "mediawiki-metadata"
+            },
+            "CommonsMetadataExtension": {
+              "value": 1.2,
+              "source": "extension",
+              "hidden": ""
+            },
+            "Categories": {
+              "value": "Gimo|Self-published work|May 2019 in Uppsala County|2019 in Östhammar Municipality|Files with coordinates missing SDC location of creation|Sweden photographs taken on 2019-05-17",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "Assessments": {
+              "value": "",
+              "source": "commons-categories",
+              "hidden": ""
+            },
+            "GPSLatitude": {
+              "value": "60.173039",
+              "source": "commons-desc-page"
+            },
+            "GPSLongitude": {
+              "value": "18.185069",
+              "source": "commons-desc-page"
+            },
+            "GPSMapDatum": {
+              "value": "WGS-84",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "ImageDescription": {
+              "value": "Skylt med text \"Välkommen till Gimo\", Östhammars kommun.",
+              "source": "commons-desc-page"
+            },
+            "DateTimeOriginal": {
+              "value": "2019-05-17 12:10:41",
+              "source": "commons-desc-page"
+            },
+            "Credit": {
+              "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+              "source": "commons-desc-page"
+            },
+            "Artist": {
+              "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Dobfisher&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Dobfisher (page does not exist)\">Dobfisher</a>",
+              "source": "commons-desc-page"
+            },
+            "LicenseShortName": {
+              "value": "CC BY-SA 4.0",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "UsageTerms": {
+              "value": "Creative Commons Attribution-Share Alike 4.0",
+              "source": "commons-desc-page"
+            },
+            "AttributionRequired": {
+              "value": "true",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "LicenseUrl": {
+              "value": "https://creativecommons.org/licenses/by-sa/4.0",
+              "source": "commons-desc-page"
+            },
+            "Copyrighted": {
+              "value": "True",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "Restrictions": {
+              "value": "",
+              "source": "commons-desc-page",
+              "hidden": ""
+            },
+            "License": {
+              "value": "cc-by-sa-4.0",
+              "source": "commons-templates",
+              "hidden": ""
+            }
+          },
+          "mime": "image/jpeg"
+        }
+      ]
+    }
+  }
+}

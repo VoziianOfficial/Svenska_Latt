@@ -1,0 +1,3722 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 256624,
+        "ns": 6,
+        "title": "File:Snow crystals 2b.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Snow_crystals_2b.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Snow_crystals_2b.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=256624",
+            "sha1": "cc8f1e71ee54a75183f7f1957934f654ff598627",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2005-08-06 16:27:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Snow crystals 2b",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Featured pictures from the United States Government|PD USDA ARS|PNGs with JPEG versions|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Malay|Colorized photographs|Colorized images|Featured photographs in the public domain|Scanning electron microscopic images of snow crystals",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Ordinary hexagonal dendrite snowflake, highly magnified by a low-temperature <a href=\"https://en.wikipedia.org/wiki/scanning_electron_microscope\" class=\"extiw\" title=\"w:scanning electron microscope\">scanning electron microscope</a>.  This version has been artificially colorized to emphasize the central flake.",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"http://emu.arsusda.gov/snowsite/\">http://emu.arsusda.gov/snowsite/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p>Electron and Confocal Microscopy Laboratory, Agricultural Research Service, U. S. Department of Agriculture \n</p>\n<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://emu.arsusda.gov/default.html\">[1]</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Public Domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1302075,
+        "ns": 6,
+        "title": "File:The Favorite by Georgios Iakovidis.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/The_Favorite_by_Georgios_Iakovidis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Favorite_by_Georgios_Iakovidis.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1302075",
+            "sha1": "e3c674a142d08cc38b288b898b9706e9008f1f20",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2006-10-23 01:46:59",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The Favorite by Georgios Iakovidis",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Georgios Jakobides|Artworks without Wikidata item|PD-Art (PD-old-auto-expired)|Grandfathers in art|PD-old-80-expired|Genre paintings from Greece|CC-PD-Mark|People facing right in art|Grandsons|Men holding babies|PD-Art missing SDC copyright status|PD-old missing SDC copyright status|Template Unknown (source)|Blond hair in paintings",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Georgios_Jakobides\" class=\"extiw\" title=\"w:en:Georgios Jakobides\"><span title=\"Greek painter (1853-1932)\">Georgios Jakobides</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n\"The Favorite\" - Grandfather and Grandson - <i>\"Ο Αγαπημένος του Παππού\"</i></div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1890<div style=\"display: none;\">date QS:P571,+1890-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Unknown source<span style=\"display: none;\">Unknown source</span>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 2809539,
+        "ns": 6,
+        "title": "File:Cold Weather Is Coming, Beware!.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cold_Weather_Is_Coming%2C_Beware%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cold_Weather_Is_Coming,_Beware!.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2809539",
+            "sha1": "39e7d9942540d95799d50f71047f638f771ae688",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-09-25 09:09:42",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cold Weather Is Coming, Beware!",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSC-H1|Families of Iran|Personality rights warning|Cold weather clothing|Hamed Saber|Flickr images uploaded by Flickr upload bot|Information field template with formatting|Photographs by Hamed Saber",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Cold Weather Is Coming, Beware!<br>Cold Weather Is Coming, Beware!",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-10-08 15:23:48",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/44124425616@N01/263773916\">Flickr</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/44124425616@N01\">Hamed Saber</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table id=\"FlickrReview\" style=\"width:100%; margin:0.3em auto; text-align:start; background-color:var(--background-color-success-subtle,#d5fdf4); padding: 3px; border:1px solid var(--border-color-base,#a2a9b1); color:inherit;\" dir=\"ltr\" lang=\"en\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><a href=\"https://en.wikipedia.org/wiki/Flickr\" class=\"extiw\" title=\"en:Flickr\">Flickr</a></b>, was uploaded to Commons using <b><a href=\"//commons.wikimedia.org/wiki/User:Flickr_upload_bot\" title=\"User:Flickr upload bot\">Flickr upload bot</a></b> on 25 September 2007, 09:09 by <span id=\"flickr_upload_bot_reviewer\"><b><a href=\"//commons.wikimedia.org/wiki/User:Dongio\" title=\"User:Dongio\">Dongio</a></b></span>. On that date, it was confirmed to be licensed under the terms of the license indicated.\n</td>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/60px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/120px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"512\"></span></span>\n</td></tr></tbody></table>\n<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/2.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.0/deed.en\">Attribution 2.0 Generic</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/2.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 2.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 2.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 8624236,
+        "ns": 6,
+        "title": "File:Sister Family Cookbook.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Sister_Family_Cookbook.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sister_Family_Cookbook.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8624236",
+            "sha1": "4259e2262d8e0e70de7cc02b10b6d89634751cf4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-11-28 14:45:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sister Family Cookbook",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Sisters|GFDL|License migration redundant|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This picture is of the seven sisters who created the Sisters Family Cookbook and their mother on one of their Sister Gatherings.",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:CREWSGSU&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:CREWSGSU (page does not exist)\">CREWSGSU</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 10083513,
+        "ns": 6,
+        "title": "File:Weather station rain gauge.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Weather_station_rain_gauge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Weather_station_rain_gauge.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=10083513",
+            "sha1": "7992d2c175bda94b7f52b5e374535b66d3a56fb0",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-04-21 07:42:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Weather station rain gauge",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with HP PhotoSmart 318|License migration redundant|CC-BY-SA-4.0,3.0,2.5,2.0,1.0|Self-published work|Scientific instruments in the Ladd Observatory|Files with coordinates missing SDC location of creation|Tipping bucket rain gauges|Rain gauges in the United States|Davis Instruments weather stations",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "41.826111",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-71.397778",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Davis Instruments Wireless Vantage Pro2 Plus weather station. Closeup showing the rain gauge with the cover removed.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-02-04",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Ladd_Observatory\" class=\"extiw\" title=\"w:en:Ladd Observatory\"><span title=\"astronomical observatory at Brown University\">Ladd Observatory</span></a>\n</bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Mu301\" title=\"User:Mu301\">Michael L. Umbricht</a> / <a href=\"//commons.wikimedia.org/wiki/Commons:Ladd_Observatory\" title=\"Commons:Ladd Observatory\">Ladd Observatory</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 16147109,
+        "ns": 6,
+        "title": "File:Stormy weather Vezere river Dordogne.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Stormy_weather_Vezere_river_Dordogne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Stormy_weather_Vezere_river_Dordogne.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16147109",
+            "sha1": "b68ca081fc9c3a17a677dbf4ef2fd5e0ab9818be",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-08-18 23:09:41",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Stormy weather Vezere river Dordogne",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony DSLR-A550|CC-Zero|Vézère|Self-published work|Landscapes of Dordogne|2011 in Dordogne|Clouds in Dordogne|Files with coordinates missing SDC location of creation|France photographs taken on 2011-08-06",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "44.982139",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "1.057417",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Stormy weather over the Vézère River, in Dordogne, France",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-08-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jebulon\" title=\"User:Jebulon\">Jebulon</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 17110528,
+        "ns": 6,
+        "title": "File:ONCF DH 370 with a Casablanca - Oujda train at the Barrage Idriss 1er.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/ONCF_DH_370_with_a_Casablanca_-_Oujda_train_at_the_Barrage_Idriss_1er.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:ONCF_DH_370_with_a_Casablanca_-_Oujda_train_at_the_Barrage_Idriss_1er.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=17110528",
+            "sha1": "888d5c4260dd4cc90a656506f0a4436904c26200",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-10-26 18:28:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "ONCF DH 370 with a Casablanca - Oujda train at the Barrage Idriss 1er",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Trains on bridges in Morocco|GFDL|Taken with Canon EOS 50D|Images with annotations|CC-BY-SA-3.0,2.5,2.0,1.0|Featured pictures of Morocco|License migration redundant|Railway coaches of Morocco|Idriss I Dam|Self-published work|Featured pictures of bridges|Featured pictures of rail vehicles|Featured pictures by User:Kabelleger|Bahnbilder.ch|Featured pictures on Wikipedia, Vietnamese|October 2011 in Morocco|Blue sky in Morocco|Files with coordinates missing SDC location of creation|2011 in rail transport in Morocco|Railway photographs taken on 2011-10-09|Morocco photographs taken on 2011-10-09|Featured pictures on Wikipedia, Arabic|Trains on curves|ONCF Class DH 350|Trains nearby lakes|Featured pictures of Morocco by Kabelleger",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "34.090740",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-4.620683",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "An ONCF DH 370 (EMD GT26CW-2) with the daytime train from Casablanca to Oujda, between Et-Touabaâ and Matmata. An electric locomotive brought the train to Fes, where it was swapped for the DH 370. The lake in the background is the Barrage (\"dam\") Idriss 1er.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-10-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>: <a rel=\"nofollow\" class=\"external free\" href=\"http://bahnbilder.ch/picture/9369\">http://bahnbilder.ch/picture/9369</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kabelleger\" title=\"User:Kabelleger\">Kabelleger</a> / David Gubler (<a rel=\"nofollow\" class=\"external free\" href=\"http://www.bahnbilder.ch\">http://www.bahnbilder.ch</a>)",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 22385128,
+        "ns": 6,
+        "title": "File:Flickr - ronsaunders47 - Waiting for the warm weather.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flickr_-_ronsaunders47_-_Waiting_for_the_warm_weather.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Flickr_-_ronsaunders47_-_Waiting_for_the_warm_weather.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=22385128",
+            "sha1": "1e157d3e48bf64fbddfccf269468614924597805",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-10-26 00:05:23",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Flickr - ronsaunders47 - Waiting for the warm weather",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon Digital IXUS 500|Isle of Wight|Flickr images reviewed by FlickreviewR|Photographs by Ronald Saunders|Files with coordinates missing SDC location of creation (50° N, 2° W)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.754812",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.336469",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Coastal beach huts still waiting to be occupied. Taken just outside of Gurnard on the Isle of Wight. UK.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-09-15 16:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/ronsaunders47/7797181908/\">Waiting for the warm weather ?</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/46781500@N00\">Ronald Saunders</a> from Warrington, UK",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29839709,
+        "ns": 6,
+        "title": "File:Home 21 sofa 2.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Home_21_sofa_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_21_sofa_2.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29839709",
+            "sha1": "1348b103db8f268c2f7da5a9924899dced8c8013",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-11-25 05:25:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home 21 sofa 2",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Canon EOS 60D|License migration redundant|Self-published work|Home 21|Photographs by Anonymous Hong Kong Photographer 1",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Home 21 Sofa Display",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2013-11-25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:MightyPeggy1227&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:MightyPeggy1227 (page does not exist)\">MightyPeggy1227</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 31754402,
+        "ns": 6,
+        "title": "File:Younger family siblings cph.3b05693.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Younger_family_siblings_cph.3b05693.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Younger_family_siblings_cph.3b05693.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31754402",
+            "sha1": "75f4c0ee2ffc6589d6f4b01d42f60d3952b86936",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-03-23 03:04:55",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Younger family siblings cph.3b05693",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Bob Younger|Images from the Library of Congress|Cole Younger|PD US expired|Template Unknown (author)|3 brothers|PD-US missing SDC copyright status|Portraits of siblings",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sitting left-to-right: <a href=\"https://en.wikipedia.org/wiki/Bob_Younger\" class=\"extiw\" title=\"en:Bob Younger\">Bob Younger</a>, <a href=\"https://en.wikipedia.org/wiki/Cole_Younger\" class=\"extiw\" title=\"en:Cole Younger\">Cole Younger</a>, <a href=\"https://en.wikipedia.org/wiki/Jim_Younger\" class=\"extiw\" title=\"en:Jim Younger\">Jim Younger</a>, members of the <a href=\"https://en.wikipedia.org/wiki/James%E2%80%93Younger_Gang\" class=\"extiw\" title=\"en:James–Younger Gang\">James–Younger Gang</a>. Standing: Henrietta Younger.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "copyrighted 5 September 1889",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/cph.3b05693\">cph.3b05693</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author<span style=\"display: none;\">Unknown author</span>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "No known restrictions on publication",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 31952396,
+        "ns": 6,
+        "title": "File:Lascar The weather quickly changes as sunlight shines on the Kilimanjaro's glaciers (4464001925).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Lascar_The_weather_quickly_changes_as_sunlight_shines_on_the_Kilimanjaro%27s_glaciers_%284464001925%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lascar_The_weather_quickly_changes_as_sunlight_shines_on_the_Kilimanjaro%27s_glaciers_(4464001925).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31952396",
+            "sha1": "e9d1960e6b69f70e6bf11c5402412db08b43786f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-04-02 09:27:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lascar The weather quickly changes as sunlight shines on the Kilimanjaro's glaciers (4464001925)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D90|Flickr images reviewed by FlickreviewR|Weather of Tanzania|Kilimanjaro in 2009|Files with coordinates missing SDC location of creation|Tanzania photographs taken on 2009-03-20|Files from Jorge Láscar Flickr stream|Deserts at Kilimanjaro",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "-3.078809",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "37.354202",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Within minutes everything around is surrounded by thick and cold fog",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-03-20 10:56",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/jlascar/4464001925/\">The weather quickly changes as sunlight shines on the Kilimanjaro's glaciers</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8721758@N06\">Jorge Láscar</a> from Australia",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 37258249,
+        "ns": 6,
+        "title": "File:Telangana State Road Transport Corporation bus.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Telangana_State_Road_Transport_Corporation_bus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Telangana_State_Road_Transport_Corporation_bus.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=37258249",
+            "sha1": "49222c1345bcc79d84b48dd2e79be759669d5f4f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-12-12 13:52:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Telangana State Road Transport Corporation bus",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Roads in Telangana|Attribution only license|Self-published work|Ashok Leyland buses|Buses of the Telangana State Road Transport Corporation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A passenger bus belonging to Telangana State Road Transport Corporation, India",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-12-07 10:26:14",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nikhilb239\" class=\"mw-redirect\" title=\"User:Nikhilb239\">Nikhilb239</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"layouttemplate licensetpl\" lang=\"en\" dir=\"ltr\" cellpadding=\"0\" style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-success-subtle, #dff2eb); color: var(--color-base, #202122); border-width: var(--border-width-thick, 2px); border-style: solid; border-color: var(--border-color-success, #099979); border-spacing: 8px; box-sizing: border-box;\">\n<tbody><tr>\n<td style=\"width:90px;\" rowspan=\"3\"><span typeof=\"mw:File\"><span title=\"©\"><img alt=\"©\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/120px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/250px-Green_copyright.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"197\" data-file-height=\"197\"></span></span>\n</td>\n<td>The copyright holder of this file, <a href=\"//commons.wikimedia.org/wiki/User:Nikhilb239\" class=\"mw-redirect\" title=\"User:Nikhilb239\">Nikhil B/Wikimedia Commons</a>, allows anyone to use it <b>for any purpose, provided that</b> the copyright holder is properly attributed. Redistribution, derivative work, commercial use, and all other use is permitted.\n</td></tr>\n<tr style=\"text-align:center;\">\n<td><div style=\"font-weight: bold;display:inline;\">Attribution: <div style=\"font-size: larger;display:inline;\" class=\"licensetpl_attr\">Nikhil B/Wikimedia Commons</div></div>\n<p><span class=\"licensetpl_short\" style=\"display:none;\">Attribution</span>\n</p>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 38003227,
+        "ns": 6,
+        "title": "File:Home Ownership Scheme 2014 Flat Model.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Home_Ownership_Scheme_2014_Flat_Model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_Ownership_Scheme_2014_Flat_Model.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=38003227",
+            "sha1": "69f87654c3c0598bd2debecd75849416b2579c13",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-01-24 02:01:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home Ownership Scheme 2014 Flat Model",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Home Ownership Scheme|Self-published work|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "22.338694",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "114.186517",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Home Ownership Scheme 2014 Flat Model",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-12-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wing1990hk&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wing1990hk (page does not exist)\">Wing1990hk</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 39740407,
+        "ns": 6,
+        "title": "File:Katsushika Hokusai, published by Nishimuraya Yohachi (Eijudō) - Fine Wind, Clear Weather (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views o... - Google Art Project - Cropped.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Katsushika_Hokusai%2C_published_by_Nishimuraya_Yohachi_%28Eijud%C5%8D%29_-_Fine_Wind%2C_Clear_Weather_%28Gaif%C5%AB_kaisei%29%2C_also_known_as_Red_Fuji%2C_from_the_series_Thirty-six_Views_o..._-_Google_Art_Project_-_Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai,_published_by_Nishimuraya_Yohachi_(Eijud%C5%8D)_-_Fine_Wind,_Clear_Weather_(Gaif%C5%AB_kaisei),_also_known_as_Red_Fuji,_from_the_series_Thirty-six_Views_o..._-_Google_Art_Project_-_Cropped.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=39740407",
+            "sha1": "c7a913799c2627ffdcb74f44ebaa68351cb59c3e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-04-23 14:25:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i><a href=\"https://en.wikipedia.org/wiki/Fine_Wind,_Clear_Morning\" class=\"extiw\" title=\"w:Fine Wind, Clear Morning\">Fine Wind, Clear Weather</a> (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</i></div></div><div style=\"display: none;\">title QS:P1476,en:\"<a href=\"https://en.wikipedia.org/wiki/Fine_Wind,_Clear_Morning\" class=\"extiw\" title=\"w:Fine Wind, Clear Morning\">Fine Wind, Clear Weather</a> (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)\"</div><div style=\"display: none;\">label QS:Len,\"<a href=\"https://en.wikipedia.org/wiki/Fine_Wind,_Clear_Morning\" class=\"extiw\" title=\"w:Fine Wind, Clear Morning\">Fine Wind, Clear Weather</a> (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Featured pictures of Japan|Retouched pictures|South Wind, Clear Sky|Artworks without Wikidata item|PD-old-100-expired|Featured pictures by others nominated by Yann Forget|PD-Art (PD-old-100-expired)|Artworks with known accession number|Featured pictures of Boston|CC-PD-Mark|Google Art Project works by Katsushika Hokusai|PD-Art missing SDC copyright status|Featured pictures in the public domain|PD-old missing SDC copyright status|Featured pictures of prints|Files from Google Arts & Culture|Art of Japan in the Museum of Fine Arts, Boston|Featured pictures from the Google Art Project|Engravings in the Museum of Fine Arts, Boston|Google Art Project works in Museum of Fine Arts, Boston",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\nKatsushika Hokusai, published by Nishimuraya Yohachi (Eijudō) (1760 - 1849) – Artist (Japanese)<br> <a rel=\"nofollow\" class=\"external text\" href=\"http://www.googleartproject.com/artist/hokusai-katsushika/4131027/\">Details on Google Art Project</a></div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "(about 1830 (Tenpō 1) - 1831 (Tenpō 2))",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"//www.google.com/culturalinstitute/asset-viewer/JgGlXuCNoGIpzg\">JgGlXuCNoGIpzg at Google Cultural Institute</a> maximum zoom level",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 41061568,
+        "ns": 6,
+        "title": "File:Family Portrait - detail Artists Brother 1965.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Family_Portrait_-_detail_Artists_Brother_1965.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Family_Portrait_-_detail_Artists_Brother_1965.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=41061568",
+            "sha1": "512e8b88e6edc448d9eba863056000ce1cde238a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-06-19 10:21:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Family Portrait - detail Artists Brother 1965",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Richard Rappaport|Self-published work|Items with VRTS permission confirmed|Portrait paintings of artist's brother",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "1965 - Family Portrait - detail Artist’s Brother",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2000-01-01 00:00:25",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Www3cubed\" title=\"User:Www3cubed\">Richard Rappaport</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<p><span class=\"layouttemplateargs\" style=\"display:none;speak:none;\" title=\"template=PermissionTicket 1%3Dhttps%3A%2F%2Fticket.wikimedia.org%2Fotrs%2Findex.pl%3FAction%3DAgentTicketZoom%26TicketNumber%3D2015061910013377 2%3D2015061910013377\"> </span>\n</p>\n<style data-mw-deduplicate=\"TemplateStyles:r1254222110\">.mw-parser-output .messagebox{margin:4px 0;width:auto;border-collapse:collapse;border:2px solid var(--border-color-progressive,#6485d1);background-color:var(--background-color-neutral-subtle,#fbfcff);color:var(--color-base,#202122);box-sizing:border-box;border-inline-start-width:8px}.mw-parser-output .messagebox.mbox-small{font-size:88%;line-height:1.25em}.mw-parser-output .mbox-warning,.mw-parser-output .mbox-speedy{border:2px solid var(--border-color-error,#b22222);background:var(--background-color-error-subtle,#ffdbdb);border-inline-start-width:8px}.mw-parser-output .mbox-serious,.mw-parser-output .mbox-delete,.mw-parser-output .mbox-stop{border:2px solid var(--border-color-error,#b22222);border-inline-start-width:8px}.mw-parser-output .mbox-issue,.mw-parser-output .mbox-content{border:2px solid #f28500;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-query,.mw-parser-output .mbox-style{border:2px solid #f4c430;background:var(--background-color-warning-subtle,#ffe);border-inline-start-width:8px}.mw-parser-output .mbox-shit{border:2px solid #960;border-inline-start-width:8px}.mw-parser-output .mbox-license{border:2px solid #88a;border-inline-start-width:initial}.mw-parser-output .mbox-legal{border:2px solid var(--border-color-notice,#666);background:var(--background-color-base,#fff);border-inline-start-width:8px}.mw-parser-output .mbox-honor{border:2px solid #ca3;background:var(--background-color-warning-subtle,#fcf4db);border-inline-start-width:8px}.mw-parser-output .mbox-growth{border:2px solid #8d4;background:var(--background-color-success-subtle,#d5fdf4);border-inline-start-width:8px}.mw-parser-output .mbox-move{border:2px solid #93c;border-inline-start-width:8px}.mw-parser-output .mbox-protection,.mw-parser-output .mbox-message{border:2px solid var(--border-color-base,#aaa);border-inline-start-width:8px}.mw-parser-output .messagebox .mbox-text{border:none;padding:0.25em 0.9em;width:100%}.mw-parser-output .messagebox .mbox-image{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0.9em;padding-inline-end:0;text-align:center}.mw-parser-output .messagebox .mbox-imageright{border:none;padding-top:2px;padding-bottom:2px;padding-inline-start:0;padding-inline-end:0.9em;text-align:center}.mw-parser-output .messagebox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .messagebox .mbox-invalid-type{text-align:center}@media(min-width:720px){.mw-parser-output .messagebox{margin:4px 10%}.mw-parser-output .messagebox.mbox-small{clear:right;float:right;margin:4px 0 4px 1em;width:238px}}body.skin--responsive .mw-parser-output table.messagebox img{max-width:none!important}</style><table class=\"plainlinks messagebox mbox-notice layouttemplate\" role=\"presentation\" style=\"margin:0.3em 0;width:100%;\"><tbody><tr><td class=\"mbox-image\"><span typeof=\"mw:File\"><span title=\"VRT Wikimedia\"><img alt=\"VRT Wikimedia\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/120px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"75\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Permission_logo_2021.svg/250px-Permission_logo_2021.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"935\" data-file-height=\"600\"></span></span></td><td class=\"mbox-text\">This work is <a href=\"https://freedomdefined.org/Definition\" class=\"extiw\" title=\"freedomdefined:Definition\">free</a> and may be used by anyone for any purpose. If you wish to <b><a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">use this content</a></b>, you do not need to request permission as long as you follow any licensing requirements mentioned on this page.\n<p>The Wikimedia Foundation has received an e-mail confirming that the copyright holder has approved publication under the terms mentioned on this page. This correspondence has been <b><span style=\"background:transparent;color:#0f7f1f;font-weight:400;\" title=\"transparent\">reviewed</span></b> by a <a href=\"//commons.wikimedia.org/wiki/Template:PermissionTicket/Users\" title=\"Template:PermissionTicket/Users\">Volunteer Response Team (VRT) member</a> and stored in our <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team\" title=\"Commons:Volunteer Response Team\">permission archive</a>. The correspondence is available to trusted volunteers as <b><a href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2015061910013377\" class=\"extiw\" title=\"ticket:2015061910013377\">ticket #2015061910013377</a></b>.\n</p><p><small>If you have questions about the archived correspondence, please use the <a href=\"//commons.wikimedia.org/wiki/Commons:Volunteer_Response_Team/Noticeboard\" title=\"Commons:Volunteer Response Team/Noticeboard\">VRT noticeboard</a>.</small>\n<small>Ticket link: <a class=\"external free\" href=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2015061910013377\">https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2015061910013377</a></small>\n<br><small>Find other files from the same ticket:</small> <span typeof=\"mw:File\"><a href=\"https://wcqs-beta.wmflabs.org/#%23defaultView%3AImageGrid%09%0ASELECT%20%3Fimage%20%20%20%7B%0A%20%20%3Ffile%20wdt%3AP6305%20%222015061910013377%22%20.%0A%20%20%3Ffile%20schema%3Aurl%20%3Fimage.%0A%7D%20%0A\" title=\"SDC query (SPARQL)\" rel=\"nofollow\"><img alt=\"SDC query (SPARQL)\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/20px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"15\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Wikimedia_Commons_Query_Service_Logo.svg/40px-Wikimedia_Commons_Query_Service_Logo.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"688\"></a></span>\n</p>\n<span id=\"field-otrs\" title=\"https://ticket.wikimedia.org/otrs/index.pl?Action=AgentTicketZoom&amp;TicketNumber=2015061910013377\"></span></td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 48804030,
+        "ns": 6,
+        "title": "File:Good weather autumn time.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Good_weather_autumn_time.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Good_weather_autumn_time.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=48804030",
+            "sha1": "a07f0211394db36947f3c6ceed904809f209171d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-05-15 22:11:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Good weather autumn time",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Media lacking a description|Self-published work|Sunsets of Iraq|Images from Wiki Loves Earth 2016 in Iraq|Images from Wiki Loves Earth 2016|Trees at sunset in Iraq|Images from Wiki Loves Earth missing SDC depicts|Images from Wiki Loves Earth missing SDC location of creation|Uploaded via Campaign:wle-iq",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "DateTimeOriginal": {
+                "value": "2016-02-16 13:12:54",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Hamodyfaroqalsaadawi&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Hamodyfaroqalsaadawi (page does not exist)\">Hamodyfaroqalsaadawi</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 49212728,
+        "ns": 6,
+        "title": "File:Overall view, as installed in a home bathroom, prototype model.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Overall_view%2C_as_installed_in_a_home_bathroom%2C_prototype_model.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Overall_view,_as_installed_in_a_home_bathroom,_prototype_model.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=49212728",
+            "sha1": "3525dd53ec47912d1a359af1ab1075e8f87190ef",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-06-03 10:52:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Overall view, as installed in a home bathroom, prototype model",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US DOE|Flickr images reviewed by trusted users|Bathroom sinks|Flickr images missing SDC creator|Flickr images missing SDC source of file|Photographs by the U.S. Department of Energy",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This modular unit recirculates water from the hot water tap back into the cold water tap until it reaches the desired temperature from the <a href=\"https://en.wikipedia.org/wiki/Water_heating\" class=\"extiw\" title=\"en:Water heating\">hot water heater</a>, thus saving water. <a rel=\"nofollow\" class=\"external text\" href=\"http://www.maxi-therm.net\">vertical steam heat exchanger</a>\nA photo by <a href=\"https://en.wikipedia.org/wiki/United_States_Department_of_Energy\" class=\"extiw\" title=\"en:United States Department of Energy\">Department of Energy</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-08-15",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/departmentofenergy/14739808517/\">https://www.flickr.com/photos/departmentofenergy/14739808517/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "ENERGY.GOV",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 49573598,
+        "ns": 6,
+        "title": "File:Roof tiles packed in crate 1.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Roof_tiles_packed_in_crate_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Roof_tiles_packed_in_crate_1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=49573598",
+            "sha1": "eadd292879c9c15ac0aac47efc6064893ccb3991",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-06-19 15:24:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Roof tiles packed in crate 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon Digital IXUS 155|Self-published work|Featured pictures of Västra Götaland County|Images by W.carter|Files with coordinates missing SDC location of creation|Featured pictures of objects in Sweden|Featured pictures taken with compact digital camera|Bundles|Red clay roof tiles|Buildings in Smögen|Images by W.carter, my own favorites|Reused images by W.carter|Featured pictures by W.carter",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "58.355722",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.225111",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Red <a href=\"https://sv.wikipedia.org/wiki/Vittinge_tegelbruk\" class=\"extiw\" title=\"sv:Vittinge tegelbruk\">Vittinge Tegel</a> clay roof tiles at a construction site by <a href=\"https://en.wikipedia.org/wiki/Sm%C3%B6gen\" class=\"extiw\" title=\"en:Smögen\">Smögen</a> Church, Smögen, Sweden.<br>File is not altered except for size. Original file is 5152 x 3864 px.<br>I saw the tiles while taking <a href=\"//commons.wikimedia.org/wiki/File:Sm%C3%B6gen_church_unedited.jpg\" title=\"File:Smögen church unedited.jpg\">this picture</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-06-05 13:47:05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 54624928,
+        "ns": 6,
+        "title": "File:Lamps EM Belysning Viborg Denmark 2016-12-30-.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lamps_EM_Belysning_Viborg_Denmark_2016-12-30-.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=54624928",
+            "sha1": "1c78729873b0663dce7f6526169c200bb6bba2b7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-12-30 19:34:06",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lamps EM Belysning Viborg Denmark 2016-12-30-",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 600D and Canon EF-S 18-55mm f/3.5-5.6 IS II|Self-published work|Featured pictures of objects|Photographs by User:Slaunger|Featured pictures by User:Slaunger|Featured pictures of Viborg|Lighting displays|Files with coordinates missing SDC location of creation|Denmark photographs taken on 2016-12-30|EM Belysning (shop, Viborg)|Tone-mapped HDR images of functional objects|Lamp shops",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "56.464244",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "9.401844",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Lamps in the lamp shop, EM Belysning Aps in Viborg, Denmark",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 30 December 2016, 15:02:19",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Slaunger\" title=\"User:Slaunger\">Slaunger</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 56036672,
+        "ns": 6,
+        "title": "File:Iridescent clouds during snowfall 1.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Iridescent_clouds_during_snowfall_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Iridescent_clouds_during_snowfall_1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=56036672",
+            "sha1": "0ea7538155a80963992acc746d2c61234bb7e544",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-02-08 12:39:38",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Iridescent clouds during snowfall 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Iridescent clouds|Self-published work|Snowing in Sweden|Images by W.carter|February 2017 Sweden photographs|Files with coordinates missing SDC location of creation|Photographs taken on 2017-02-07|Featured pictures of Lysekil Municipality|Sunlight through clouds|Sunlight through clouds in Sweden|Featured pictures of clouds|Gåseberg, Lysekil Municipality|Featured pictures taken with compact digital camera|Clouds in Lysekil Municipality|Featured pictures by W.carter",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "58.358889",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.518889",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Rainbow-colored/<a href=\"https://en.wikipedia.org/wiki/Cloud_iridescence\" class=\"extiw\" title=\"en:Cloud iridescence\">iridescent clouds</a> during a snowfall over Gåseberg, <a href=\"https://en.wikipedia.org/wiki/Lysekil_Municipality\" class=\"extiw\" title=\"en:Lysekil Municipality\">Lysekil Municipality</a>, Sweden. The fringes of the clouds are so thin the water droplets in them produce rainbows. The photo is taken during some interesting weather in the afternoon so it is the sun you see and the dots are snowflakes.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-02-07 15:48:38",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:W.carter\" title=\"User:W.carter\">W.carter</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 59217692,
+        "ns": 6,
+        "title": "File:Home Care Bed Back-lying Position.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Home_Care_Bed_Back-lying_Position.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_Care_Bed_Back-lying_Position.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=59217692",
+            "sha1": "fd7ee85c3b7f3e72eda49d96f18c832497ed9db4",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-05-23 14:27:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home Care Bed Back-lying Position",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Bed-ridden care|Self-published work|Medical illustrations|2017 illustrations|Recumbent women (supine)|Home care clinical skills|Images from Blausen Medical Communications with labels in English",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "An illustration depicting",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-05-23",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:BruceBlaus\" title=\"User:BruceBlaus\">BruceBlaus</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 64139005,
+        "ns": 6,
+        "title": "File:Socks with a hole.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Socks_with_a_hole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Socks_with_a_hole.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64139005",
+            "sha1": "2580140c1fb5cdab4aac596fb8d4ec6c535e34ae",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-11-17 23:41:25",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Socks with a hole",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Socks|Clothing on gray background|Images from Pixabay",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Black socks with a hole in the toe",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2016-04-11 17:14:20",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://pixabay.com/en/socks-hole-toe-hoax-greeting-card-1322489/\">https://pixabay.com/en/socks-hole-toe-hoax-greeting-card-1322489/</a> <bdi lang=\"en\" dir=\"ltr\" title=\"archived on 18 January 2019 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20190118231547/https%3A//pixabay.com/en/socks-hole-toe-hoax-greeting-card-1322489/\">archive copy</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://pixabay.com/users/congerdesign-509903/\">congerdesign</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 65152008,
+        "ns": 6,
+        "title": "File:Girl runs to welcome home dad with family. (26946669629).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Girl_runs_to_welcome_home_dad_with_family._%2826946669629%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Girl_runs_to_welcome_home_dad_with_family._(26946669629).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=65152008",
+            "sha1": "428729f4288ccd6deb0f915a723398dbec30a650",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-12-31 07:35:35",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Girl runs to welcome home dad with family. (26946669629)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Marine Corps Air Station Iwakuni|PD US Marines|Flickr images missing SDC creator|Flickr images reviewed by FlickreviewR 2|Photographs by the United States Navy",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>IWAKUNI, Japan (Nov. 28, 2017) A young girl runs to greet her family after the arrival of Strike Fighter Squadron (VFA) 115, VFA-195 and Electronic Attack Squadron (VAQ) 141 at Marine Corps Air Station (MCAS) Iwakuni, Japan. VFA-115, VFA-195 and VAQ 141 arrived at MCAS Iwakuni as part Carrier Air Wing (CVW) 5’s relocation from Naval Air Facility (NAF) Atsugi, Japan. The relocation from NAF Atsugi to MCAS Iwakuni fulfills the final Defense Policy Review Initiative objective. The relocation is in accordance with the United States’ strategic vision for the rebalance in the Indo-Asia Pacific Region and helps to further strengthen the U.S.-Japan security alliance. (U.S. Marine Corps photo by Cpl. Joseph Abrego/Released) 171128-M-ON157-0009\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://www.navy.mil/viewGallery.asp\">www.navy.mil/viewGallery.asp</a> \n</p><p><a rel=\"nofollow\" class=\"external text\" data-mw-original-href=\"http://www.facebook.com/USNavy\" href=\"https://www.facebook.com/USNavy\">www.facebook.com/USNavy</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"https://twitter.com/USNavy\">www.twitter.com/USNavy</a>\n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"http://navylive.dodlive.mil\">navylive.dodlive.mil</a>\n</p>\n<a rel=\"nofollow\" class=\"external text\" data-mw-original-href=\"http://pinterest.com\" href=\"https://pinterest.com\">pinterest.com</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-11-28 08:27",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/usnavy/26946669629/\">Girl runs to welcome home dad with family.</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/56594044@N06\">Official U.S. Navy Page</a> from United States of America\n</p>\nCpl. Joseph Abrego/U.S. Navy",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div>\n<p><a rel=\"nofollow\" class=\"external text\" href=\"http://wikipedia.ramselehof.de/flinfo.php\">Flinfo</a> has extracted the license below from the metadata of the image (tag \"XMP-dc:Description\" contained \"U.S. Marine Corps photo\"). The license visible at Flickr was \"Attribution License\".\n</p>\n</div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 65217617,
+        "ns": 6,
+        "title": "File:Family Portrait. N. M. Schekotov with His Wife by Aristarkh Lentulov (1919).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Family_Portrait._N._M._Schekotov_with_His_Wife_by_Aristarkh_Lentulov_%281919%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Family_Portrait._N._M._Schekotov_with_His_Wife_by_Aristarkh_Lentulov_(1919).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=65217617",
+            "sha1": "421b42ddf4ceaa444bcf5d8654f05ff938518f1d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-01-05 12:22:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<div style=\"font-size:0.9em;display:inline-block;\">Russian:  <div style=\"display:inline-block\" dir=\"ltr\" lang=\"ru\">«Семейный портрет. Н. М. Щёкотов с женой»</div></div><br><div style=\"font-weight:bold;display:inline-block;\"><div style=\"display:inline-block\" dir=\"ltr\" lang=\"en\"><i>Family Portrait. N. M. Schyokotov with His Wife</i></div></div><div style=\"display: none;\">title QS:P1476,ru:\"Семейный портрет. Н. М. Щёкотов с женой\"</div><div style=\"display: none;\">label QS:Lru,\"Семейный портрет. Н. М. Щёкотов с женой\"</div><div style=\"display: none;\">label QS:Len,\"Family Portrait. N. M. Schyokotov with His Wife\"</div></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1919 paintings in Russia|PD-Art (PD-Russia-expired)|Artworks with Wikidata item|Artworks with known accession number|Artworks with Wikidata item missing dimensions|Paintings of sitting couples|20th-century portrait paintings in Russia|20th-century oil portraits of sitting men at three-quarter length|20th-century oil portraits of sitting women at three-quarter length|1919 oil on canvas paintings|1910s oil on canvas paintings in Russia|1919 portrait paintings from Russia|20th-century three-quarter view portrait paintings of men, facing left|20th-century portrait paintings of wedded couples|1919 portrait paintings of women|1919 portrait paintings of men|Men wearing red neckties|Artworks with Wikidata item missing genre|PD-Art missing SDC copyright status|Artworks digital representation of 2D work|1919 paintings by Aristarkh Lentulov|Portrait paintings by Aristarkh Lentulov|Paintings by Aristarkh Lentulov in the Radishchev Art Museum",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Aristarkh_Lentulov\" class=\"extiw\" title=\"w:en:Aristarkh Lentulov\"><span title=\"Russian artist (1882-1943)\">Aristarkh Lentulov</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1919<div style=\"display: none;\">date QS:P571,+1919-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"http://artkatalog.radmuseumart.ru/ru/fullsearch/48664\">http://artkatalog.radmuseumart.ru/ru/fullsearch/48664</a> (<a rel=\"nofollow\" class=\"external text\" href=\"http://artkatalog.radmuseumart.ru/files/src/48664_98.jpg\">image</a>)\n</p>\n<a rel=\"nofollow\" class=\"external free\" href=\"http://radmuseumart.ru/collection/foreign-art/catalog/index.php/367/4709/\">http://radmuseumart.ru/collection/foreign-art/catalog/index.php/367/4709/</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 68034358,
+        "ns": 6,
+        "title": "File:Louisa McCauley, Rosa Parks' paternal grandmother LCCN2015650572.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Louisa_McCauley%2C_Rosa_Parks%27_paternal_grandmother_LCCN2015650572.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Louisa_McCauley,_Rosa_Parks%27_paternal_grandmother_LCCN2015650572.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=68034358",
+            "sha1": "f7a9a4b6cd1af52d84993d16a9e8c7f56b9d5d55",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-07-21 06:59:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Louisa McCauley, Rosa Parks' paternal grandmother LCCN2015650572",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from the Library of Congress|PD-old-70-expired|Images uploaded by Fæ|McCauley (surname)|CC-PD-Mark|Miscellaneous Items in High Demand, PPOC, Library of Congress|Rosa Parks Papers",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Title:</i> Louisa McCauley, Rosa Parks' paternal grandmother\n<i>Abstract/medium:</i> 1 photograph : airbrushed hand-colored gelatin silver print ; sheet 26  x 20 cm.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1910",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Library of Congress\n</p>\n<ul><li><i>Catalog:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://lccn.loc.gov/2015650572\">https://lccn.loc.gov/2015650572</a></li>\n<li><i>Image download:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://cdn.loc.gov/service/pnp/ppmsca/49300/49335v.jpg\">https://cdn.loc.gov/service/pnp/ppmsca/49300/49335v.jpg</a></li>\n<li><i>Original url:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://www.loc.gov/pictures/item/2015650572/\">https://www.loc.gov/pictures/item/2015650572/</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsca.49335\">ppmsca.49335</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 68034378,
+        "ns": 6,
+        "title": "File:Anderson McCauley, Rosa Parks' paternal grandfather LCCN2015650606.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Anderson_McCauley%2C_Rosa_Parks%27_paternal_grandfather_LCCN2015650606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Anderson_McCauley,_Rosa_Parks%27_paternal_grandfather_LCCN2015650606.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=68034378",
+            "sha1": "e56be39ae5ece25d52a02962b3940dab0de23161",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-04-09 10:48:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Anderson McCauley, Rosa Parks' paternal grandfather LCCN2015650606",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from the Library of Congress|PD-old-70-expired|Images uploaded by Fæ|McCauley (surname)|CC-PD-Mark|Miscellaneous Items in High Demand, PPOC, Library of Congress|PD-old missing SDC copyright status|Rosa Parks Papers",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<i>Title:</i> Anderson McCauley, Rosa Parks' paternal grandfather\n<i>Abstract/medium:</i> 1 photograph : print ; sheet 26 x 20 cm.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1900",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Library of Congress\n</p>\n<ul><li><i>Catalog:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://lccn.loc.gov/2015650606\">https://lccn.loc.gov/2015650606</a></li>\n<li><i>Image download:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://cdn.loc.gov/service/pnp/ppmsca/48300/48318v.jpg\">https://cdn.loc.gov/service/pnp/ppmsca/48300/48318v.jpg</a></li>\n<li><i>Original url:</i> <a rel=\"nofollow\" class=\"external free\" href=\"https://www.loc.gov/pictures/item/2015650606/\">https://www.loc.gov/pictures/item/2015650606/</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/ppmsca.48318\">ppmsca.48318</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 73447678,
+        "ns": 6,
+        "title": "File:Sun Temple Main Structure, Konark, Orissa.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sun_Temple_Main_Structure,_Konark,_Orissa.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=73447678",
+            "sha1": "1b28a8e1585e24f18f2aa95f2ed2197f605dd21f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-10-09 02:49:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sun Temple Main Structure, Konark, Orissa",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D3200|Taken with AF-S DX Zoom-Nikkor 17-55mm f/2.8G IF-ED|Self-published work|Images with extracted images|Construction in Odisha|ASI monuments with known IDs|India photographs taken on 2018-09-22|Mandapa of Konark Sun Temple|Images by User:Subhrajyoti07",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "19.887868",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "86.094536",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Konark Sun Temple is a 13th century Sun Temple (also known as the Black Pagoda), at Konark, in Orissa. It was constructed from oxidized and weathered ferruginous sandstone by King Narasimhadeva I (1238-1250 CE) of the Eastern Ganga Dynasty. The temple is an example of architecture of Orissa from Ganga dynasty . The temple is one of the most renowned temples in India and is a World Heritage Site.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-09-22 16:24:47",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Subhrajyoti07\" title=\"User:Subhrajyoti07\">Subhrajyoti07</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 81355886,
+        "ns": 6,
+        "title": "File:Key (72103325).jpeg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Key_%2872103325%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Key_(72103325).jpeg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81355886",
+            "sha1": "00e4a1934fe038dbe3e4da3ba260c6690aa98c22",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-15 17:42:29",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nKey</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Keys|Photos imported with import-500px|Files with coordinates missing SDC location of creation (49° N, 10° E)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.866317",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "10.230331",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/hjnitschke\">Hjnitschke</a></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n500px provided description: Key [#macro ,#vintage ,#key]</div>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "26 March 2014, 14:41:58",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Imported from <a rel=\"nofollow\" class=\"external text\" href=\"https://500px.com/photo/72103325/key-by-hjnitschke\">500px</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/201807id_/https://drscdn.500px.org/photo/72103325/m%3D2048/v2?webp=true&amp;sig=6c6b9d869aa9b18c65574794aea21150f01269f2aaaebd504a72f9e1768e0e9e\">archived version</a>) by <a rel=\"nofollow\" class=\"external text\" href=\"https://www.archiveteam.org/index.php?title=500px\">the Archive Team</a>. (<a href=\"https://iw.toolforge.org/import-500px/photo/72103325\" class=\"extiw\" title=\"toolforge:import-500px/photo/72103325\">detail page</a>)",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/3.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/3.0/deed.en\">Attribution 3.0 Unported</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/3.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 3.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 3.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 81377924,
+        "ns": 6,
+        "title": "File:Home Kitchen in Belize City, 1975 Stove.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Home_Kitchen_in_Belize_City%2C_1975_Stove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_Kitchen_in_Belize_City,_1975_Stove.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81377924",
+            "sha1": "7964bb56422c3cbf569f0f6182ed37f4d9530da7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-16 14:33:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home Kitchen in Belize City, 1975 Stove",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Building interiors in Belize|Kitchens in Belize|Flickr images reviewed by FlickreviewR 2|Men cooking in the 1970s|1975 in Belize City|Topless men standing|Home kitchens in the 1970s|Men in home kitchens|Topless people in kitchens|Houses in Belize City|Barracks Road, Belize City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Dad cooking in the kitchen of our house on Barracks Road, Belize City, 1975.\nPhoto by my mother.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1975",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/infrogmation/3102985491/\">https://www.flickr.com/photos/infrogmation/3102985491/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Infrogmation of New Orleans",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 82607715,
+        "ns": 6,
+        "title": "File:Home cooking oven set to 200 Celsius.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Home_cooking_oven_set_to_200_Celsius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Home_cooking_oven_set_to_200_Celsius.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=82607715",
+            "sha1": "72c15446df51a0cf5ad7b253cf2ee7da52e43953",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-09-28 01:30:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Home cooking oven set to 200 Celsius",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Baking ovens|Flickr images reviewed by FlickreviewR 2",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Self portrait of an American women cooking in London, with the oven set to 200 Celsius.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-06-02 13:01:39",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/saragoldsmith/2542758990\">https://www.flickr.com/photos/saragoldsmith/2542758990</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/saragoldsmith/\">saragoldsmith</a> from USA",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 89046296,
+        "ns": 6,
+        "title": "File:Living room of a typical rural house in northeast Brazil.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Living_room_of_a_typical_rural_house_in_northeast_Brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Living_room_of_a_typical_rural_house_in_northeast_Brazil.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=89046296",
+            "sha1": "99b2293977c608111f3941cd1cad9a252cde058a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-04-19 22:12:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Living room of a typical rural house in northeast Brazil",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Featured pictures by User:Wilfredor|Living rooms in Brazil|Images of Brazil by User:Wilfredor|Featured pictures of Pernambuco|Featured pictures of museums|Brazil photographs taken on 2020-01-09|Featured photographs in the public domain|Houses interiors by Wilfredor|Old Houses of Brazil by Wilfredor|Museums by Wilfredor|Memorial Luiz Gonzaga",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Reconstruction of the living room of a typical rural house of the Brazilian sertão, in the Memorial Luiz Gonzaga at the Pátio de São Pedro, Recife, Pernambuco, Brazil.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-01-09 11:52:18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a rel=\"mw:WikiLink/Interwiki\" href=\"https://www.wikidata.org/wiki/Q115464159\" title=\"d:Q115464159\" class=\"extiw\"><span title=\"developer analyst and photographer from Venezuela\">Wilfredor</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 92880548,
+        "ns": 6,
+        "title": "File:Bedroom, wealthy Cuban home, Havana - 1898.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Bedroom%2C_wealthy_Cuban_home%2C_Havana_-_1898.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bedroom,_wealthy_Cuban_home,_Havana_-_1898.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=92880548",
+            "sha1": "c9bb3aeb3ce50eaf20f96cc81a34b5311ae37546",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-08-04 20:38:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bedroom, wealthy Cuban home, Havana - 1898",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US expired|Bedrooms in Cuba|Houses in Havana|Bedrooms in the 1890s|1898 in Havana",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Albumen photograph <br> Bed chamber in a wealthy Cuban's home on the Prado, Havana, Cuba",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1898",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Digital scan of photograph",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Unknown author",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 98289620,
+        "ns": 6,
+        "title": "File:Annual Red Mountain Family Services Treatment Foster Parent Appreciation Lunch, Rio Rancho, New Mexico 01.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Annual_Red_Mountain_Family_Services_Treatment_Foster_Parent_Appreciation_Lunch%2C_Rio_Rancho%2C_New_Mexico_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Annual_Red_Mountain_Family_Services_Treatment_Foster_Parent_Appreciation_Lunch,_Rio_Rancho,_New_Mexico_01.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=98289620",
+            "sha1": "417d138facea508c058b21d69cc49ac1af469f66",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-12-30 23:51:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Annual Red Mountain Family Services Treatment Foster Parent Appreciation Lunch, Rio Rancho, New Mexico 01",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Personality rights warning|PD US Congress|Deb Haaland with law enforcement officials|Deb Haaland facing left|Deb Haaland wearing blazers|Deb Haaland wearing dresses|Deb Haaland walking|Annual Red Mountain Family Services Treatment Foster Parent Appreciation Lunch, Rio Rancho, New Mexico (2019-05-03)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Every child deserves a family who loves them. But many kids in our state are face insecure home environments. Today we honored foster parents who are making a difference.  #FosterCareMonth",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-05-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://twitter.com/RepDebHaaland/status/1124410636954427392\">https://twitter.com/RepDebHaaland/status/1124410636954427392</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Deb_Haaland\" class=\"extiw\" title=\"w:en:Deb Haaland\"><span title=\"American politician (born 1960)\">Deb Haaland</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "personality",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 104570610,
+        "ns": 6,
+        "title": "File:Winter Storm Viola weather alerts.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Winter_Storm_Viola_weather_alerts.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Winter_Storm_Viola_weather_alerts.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=104570610",
+            "sha1": "3125019dd14ec8aae6d1e928d74e45b9cf743cf9",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-04-28 18:41:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Winter Storm Viola weather alerts",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Winter Storm Viola|Self-published work|Weather maps of the United States",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "All winter weather alerts issued in the United States due to Winter Storm Viola",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-04-28",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:HurricaneCovid\" class=\"mw-redirect\" title=\"User:HurricaneCovid\">HurricaneCovid</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 107617878,
+        "ns": 6,
+        "title": "File:Samsung fridge ice build up.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Samsung_fridge_ice_build_up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Samsung_fridge_ice_build_up.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=107617878",
+            "sha1": "ba88b8de429f6722916e7641082976a0d79b0f2c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-07-16 23:39:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Samsung fridge ice build up",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Fridge freezers|Samsung refrigerators",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Ice Build Up Block Airflow and Fridge Stop Cooling, This is a common issue for Samsung Fridge causing Class Action lawsuit in US",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2019-12-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://howtofixit.net/samsung-fridge-not-cooling/\">https://howtofixit.net/samsung-fridge-not-cooling/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Eugene Smith",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 112426261,
+        "ns": 6,
+        "title": "File:Osprey family Mum and the Kids (6926385933).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Osprey_family_Mum_and_the_Kids_%286926385933%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Osprey_family_Mum_and_the_Kids_(6926385933).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=112426261",
+            "sha1": "b80e0aed59d09a1b1adca36f98f23bb027f01b80",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-11-10 23:41:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Osprey family Mum and the Kids (6926385933)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Pandion haliaetus|Images with watermarks|Files with coordinates missing SDC location of creation|Flickr images reviewed by FlickreviewR 2|Photographs by Andy Morffew|Birds of Marco Island, Florida",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "25.949979",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-81.744718",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This Osprey family was captured on Tigertail Beach, Marco Island, Florida on 24 February 2012. A closer look at the two chicks.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-02-24 10:45",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/andymorffew/6926385933/\">Mum and the Kids</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/66020093@N03\">Andy  Morffew</a> from Itchen Abbas, Hampshire, UK",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 129910698,
+        "ns": 6,
+        "title": "File:The Summer Weather at Wikki Spring Bauchi Northeast Nigeria.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/The_Summer_Weather_at_Wikki_Spring_Bauchi_Northeast_Nigeria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Summer_Weather_at_Wikki_Spring_Bauchi_Northeast_Nigeria.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=129910698",
+            "sha1": "c0bebc9118ce4e363ae942206acca6b64aa16a9e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-03-23 16:02:37",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The Summer Weather at Wikki Spring Bauchi Northeast Nigeria",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Springs of Nigeria|Self-published work|Images from Wiki Loves Africa 2023|Uploaded via Campaign:wlafrica|Images from Wiki Loves Africa 2023 to check|Images from Wiki Loves Africa 2023 in Nigeria|Images from Wiki Loves Africa 2023 by Fulfulde Wikimedians Community",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Wiki Loves Africa 2023",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-03-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Ibrahim442\" title=\"User:Ibrahim442\">Ibrahim442</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 139570581,
+        "ns": 6,
+        "title": "File:Optical illusion on the floor of the Duomo Firenze (61458).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Optical_illusion_on_the_floor_of_the_Duomo_Firenze_%2861458%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Optical_illusion_on_the_floor_of_the_Duomo_Firenze_(61458).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=139570581",
+            "sha1": "bbe7649672a6e524eb8aaf9642e14889871274e1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-10-26 11:28:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Optical illusion on the floor of the Duomo Firenze (61458)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Optical illusions|Self-published work|Files uploaded by Rhododendrites (all)|Featured pictures by Rhododendrites|Files with coordinates missing SDC location of creation|Featured pictures of floors|Floors in Santa Maria del Fiore (Florence)|F-number f/1.7|Taken with Panasonic Lumix G 20mm F1.7 II|Files by Rhododendrites - 2023-10|Photographs taken by Rhododendrites - Italy|Featured pictures of churches in Florence",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "43.773091",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.255942",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Optical illusion on the floor of the Florence Cathedral",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-10-06 11:07:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Rhododendrites\" title=\"User:Rhododendrites\">Rhododendrites</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 150952974,
+        "ns": 6,
+        "title": "File:Boats & other watercrafts - Inland water navigation or inland waterway transport (IWT) activities in the Loktak Lake (alias \"Meitei Sea\") - world's only floating lake - in Kangleipak (Manipur) 03.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Boats_%26_other_watercrafts_-_Inland_water_navigation_or_inland_waterway_transport_%28IWT%29_activities_in_the_Loktak_Lake_%28alias_%22Meitei_Sea%22%29_-_world%27s_only_floating_lake_-_in_Kangleipak_%28Manipur%29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Boats_%26_other_watercrafts_-_Inland_water_navigation_or_inland_waterway_transport_(IWT)_activities_in_the_Loktak_Lake_(alias_%22Meitei_Sea%22)_-_world%27s_only_floating_lake_-_in_Kangleipak_(Manipur)_03.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=150952974",
+            "sha1": "64c0af12c60dacd3b76aa3167e0f9d217868b347",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-07-29 05:12:53",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Boats & other watercrafts - Inland water navigation or inland waterway transport (IWT) activities in the Loktak Lake (alias \"Meitei Sea\") - world's only floating lake - in Kangleipak (Manipur) 03",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Water transport|Boats|Boating|Watercraft|Kayaking|Canoeing|Freight|Loktak Lake|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Boating, canoeing, kayaking, shipping &amp; other watercraft vessels sailing - Inland water navigation or inland waterway transport (IWT) activities in the Loktak Lake alias \"Meitei Sea\" (known as \"Loktaak Paat\" / \"Loktak Pat\" in Classical Meitei language / Literary Meetei / Manipuri / Meithei / Kanglei / Poirei language) - world's only floating lake - in Kangleipak (Manipur)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-02-04 10:02:31",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Haoreima\" title=\"User:Haoreima\">Haoreima</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 197223129,
+        "ns": 6,
+        "title": "File:My Yoruba Maternal grandmother in her religion attire.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/My_Yoruba_Maternal_grandmother_in_her_religion_attire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:My_Yoruba_Maternal_grandmother_in_her_religion_attire.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=197223129",
+            "sha1": "448f37351a702c4cfe6ee560398101a733f008ab",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-08-11 09:10:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "My Yoruba Maternal grandmother in her religion attire",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Idanre|Art of Yoruba people|Yoruba women|Self-published work|Images from Wiki Loves Yoruba Heritage 2026|Uploaded via Campaign:wlyh|Images from Wiki Loves Yoruba Heritage 2026 in Ondo State",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This is an image I took of my Yoruba maternal grandmother in 2002. She is wearing a white religion attire made out of local fabric. She adorned the attire with a handmade titled cap. That attire and cap describes her position and title within her religion. Image is a little blur, I have the Ai enhanced clearer version but I didn't post it because of the rules.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2002-08-05",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:NocontextLizzy\" title=\"User:NocontextLizzy\">NocontextLizzy</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 31403871,
+        "ns": 6,
+        "title": "File:Woman tuning radio 1923.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 249437,
+            "width": 1060,
+            "height": 1457,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Woman_tuning_radio_1923.jpg/960px-Woman_tuning_radio_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1100,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Woman_tuning_radio_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Woman_tuning_radio_1923.jpg/960px-Woman_tuning_radio_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1100,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Woman_tuning_radio_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Woman_tuning_radio_1923.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woman_tuning_radio_1923.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31403871",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-03-02 03:02:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Woman tuning radio 1923",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Kadel & Herbert|PD US not renewed|1923 in radio|People listening to radios|People with horn loudspeakers|Radio World, 1923",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Woman tuning early radio, from 1923 radio magazine.  Broadcasting had just begun in 1920 and <a href=\"https://en.wikipedia.org/wiki/vacuum_tube\" class=\"extiw\" title=\"en:vacuum tube\">vacuum tube</a> <a href=\"https://en.wikipedia.org/wiki/radio_receiver\" class=\"extiw\" title=\"en:radio receiver\">radio receivers</a> like this had just come on the market..  They ran off batteries, usually a 3-6V storage battery to power the vacuum tubes' <a href=\"https://en.wikipedia.org/wiki/electrical_filament\" class=\"extiw\" title=\"en:electrical filament\">filaments</a> and a 30-90V \"B\" battery to provide the plate voltage.  This woman kept forgetting to turn off the set, running the battery down, so she has wired a small indicator lamp <i>(on top of radio)</i> in the filament circuit to remind her.  The early vacuum tubes could not produce much audio power, so early radios used <a href=\"https://en.wikipedia.org/wiki/horn_loudspeaker\" class=\"extiw\" title=\"en:horn loudspeaker\">horn loudspeakers</a>, like the one on top of the set.  The horn coupled sound from the speaker's diaphragm to the outside air better, and so could produce 10 times (10 dB) more sound power from a given audio signal than a cone speaker.<br><br>\n<p>Caption: <i>A fair fan's idea that saves a lot of worry when she shuts off for the evening.  Miss Margie O'Neil found that she sometimes went to her downy and forgot to turn the current off her Magnavox, with the result that her battery was run down the next morning.  So she placed a small 6V lamp in series with the battery line, which warns her to \"turn off\". <br><br></i>\n</p>\nAlterations to image: Removed aliasing artifacts (crosshatched lines) introduced when the original halftone photo was scanned, using Gimp FFT filter.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1923-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Retrieved March 1, 2014 from <a rel=\"nofollow\" class=\"external text\" href=\"https://books.google.com/books?id=yV4nAQAAMAAJ&amp;pg=RA2-PA129&amp;lpg=RA2-PA129\"><i>Radio World</i>, Hennessey Radio Publications Corp., New York, Vol. 2, No. 26, March 24, 1923, p. 17</a> on Google Books",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Credited to Kadel and Herbert",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "This 1923 issue of <i>Radio World</i> magazine would have the copyright renewed in 1951. Online page scans of the Catalog of Copyright Entries, published by the US Copyright Office can be found here. <a rel=\"nofollow\" class=\"external autonumber\" href=\"http://onlinebooks.library.upenn.edu/cce/\">[1]</a>  Search of the Renewals for Periodicals for 1950, 1951 and 1952 show no renewal entries for <i>Radio World</i>.  Therefore the magazine's copyright was not renewed and it is in the public domain.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 43616704,
+        "ns": 6,
+        "title": "File:Outdoor sports for women, 1906 - golf and tennis.jpg",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1642748,
+            "width": 3536,
+            "height": 2248,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg/960px-Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 509,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg/1920px-Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg/960px-Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 509,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg/1920px-Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Outdoor_sports_for_women%2C_1906_-_golf_and_tennis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Outdoor_sports_for_women,_1906_-_golf_and_tennis.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=43616704",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-09-26 18:09:27",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Outdoor sports for women, 1906 - golf and tennis",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Female golfers|Photos uploaded from Flickr by Fæ using a script|Fashion in 1906|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Shirt waists|Women wearing long skirts|Woman in girlhood, wifehood, motherhood... (1906)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Outdoor Sports for Women: \"Lawn tennis, as shown in the figure at the left, and golf, as indicated in the figure at the right, are two of the best sports for women, giving needed exercise and developing the figure.\"\n<p><b>Identifier</b>: womaningirlhoodw00soli (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Fwomaningirlhoodw00soli%2F\">find matches</a>)<br>\n<b>Title</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidwomaningirlhoodw00soli\">... Woman in girlhood, wifehood, motherhood; her responsibilities and her duties at all periods of life; a guide in the maintenance of her health and that of her children</a><br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookyear1906\">1906</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookdecade1900\">1900s</a>)<br>\n<b>Authors</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorSolis_Cohen__Myer\">Solis-Cohen, Myer</a><br>\n<b>Subjects</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksubjectWomen\">Women</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksubjectChild_care\">Child care</a><br>\n<b>Publisher</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookpublisherPhiladelphia__Chicago__etc___The_J_C__Winston_co\">Philadelphia, Chicago (etc.) The J.C. Winston co</a><br>\n<b>Contributing Library</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookcontributorThe_Library_of_Congress\">The Library of Congress</a><br>\n<b>Digitizing Sponsor</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksponsorThe_Library_of_Congress\">The Library of Congress</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/womaningirlhoodw00soli/womaningirlhoodw00soli#page/n205/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/womaningirlhoodw00soli\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidwomaningirlhoodw00soli\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/womaningirlhoodw00soli/womaningirlhoodw00soli#page/n205/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image:</b><br>\n<i>ation. Coming events cast their shadow before.—Campbell.DETERMINATION OF THE EXISTENCE OF PREGNANCY. S a rule, it is not a difficult matter to determinewhether a woman is pregnant, although cases haveoccurred in which mistakes were made. Physicianshave operated on a supposed abdominal tumor only to find a pregnant uterus. There are certain symptoms, however, which are us-ually present in a woman who is with child. But they mayoccur in conditions other than pregnancy, and they maybe absent, though the woman be in a family way. Thephysician is the only person who is competent to decide. The Commonest Symptoms of Pregnancy.—The mostcommon symptoms of pregnancy experienced by the motherare (i) cessation of menstruation, (2) morning sickness,(3) changes in the size, shape and appearance of the ab-domen, (4) changes in the breasts, and (5) quickening. THE CESSATION OF MENSTRUATION. As soon as a woman becomes pregnant, menstruationusually ceases. But its absence may depend upon other 156</i><br>\n<b>Text Appearing After Image:</b><br>\n<i>THE SYMPTOMS OF PBEGNANCY 157 causes, as in the condition known as amenorrhea, which isdescribed in Chapter XXXIV on Disorders of Menstrua-tion. In some few cases there is a slight bloody dischargeduring the first three months of pregnancy. It will thus beseen that the sign is not an invariable one. THE MORNING SICKNESS. At the sixth or seventh week of pregnancy nausea andvomiting appear, usually lasting to the third month, beingworse when the woman first arises from bed in the morn-ing, whence it derives the name morning sickness. It isnot always present and may exist in many other conditions. THE APPEARANCE OF THE FACE. After conception has occurred, dark, irregular splotches,resembling freckles, called chloasmata or liver marks, mayappear in the brow and cheeks, sometimes running so closelytogether as to form .the so-called mask of pregnancy.Dark rings also often form under the eyes. These, too,occur in other conditions and cannot be regarded asdiagnostic. CHANGES IN THE BREASTS. D</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1906",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/14750784516/\">https://www.flickr.com/photos/internetarchivebookimages/14750784516/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/womaningirlhoodw00soli/womaningirlhoodw00soli#page/n205/mode/1up\">https://archive.org/stream/womaningirlhoodw00soli/womaningirlhoodw00soli#page/n205/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Solis-Cohen, Myer",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 44520927,
+        "ns": 6,
+        "title": "File:Sarah Bernhardt at work on her 'Medée'.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 625208,
+            "width": 1586,
+            "height": 2386,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg/960px-Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1204,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg/960px-Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1204,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Sarah_Bernhardt_at_work_on_her_%27Med%C3%A9e%27.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=44520927",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-10-27 00:34:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Sarah Bernhardt at work on her 'Medée'",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Photos uploaded from Flickr by Fæ using a script|Flickr images reviewed by FlickreviewR|Files from Internet Archive Book Images Flickr stream|Files from Flickr's 'The Commons'|Memories of my life - being my personal, professional, and social recollections as woman and artist (1907)|Sarah Bernhardt as sculptor|Sculptures by Sarah Bernhardt",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Sarah Bernhardt at work on her 'Medée'<br>\n<p><b>Identifier</b>: memoriesofmylife00bern (<a class=\"external text\" href=\"https://commons.wikimedia.org/w/index.php?title=Special%3ASearch&amp;profile=default&amp;fulltext=Search&amp;search=insource%3A%2Fmemoriesofmylife00bern%2F\">find matches</a>)<br>\n<b>Title</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidmemoriesofmylife00bern\">Memories of my life : being my personal, professional, and social recollections as woman and artist</a><br>\n<b>Year</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookyear1907\">1907</a> (<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookdecade1900\">1900s</a>)<br>\n<b>Authors</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookauthorBernhardt__Sarah__1844_1923\">Bernhardt, Sarah, 1844-1923</a><br>\n<b>Subjects</b>: <br>\n<b>Publisher</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookpublisherNew_York___D__Appleton\">New York : D. Appleton</a><br>\n<b>Contributing Library</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookcontributorUniversity_of_California_Libraries\">University of California Libraries</a><br>\n<b>Digitizing Sponsor</b>:  <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/booksponsorMSN\">MSN</a><br>\n<br>\n<b>View Book Page</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/memoriesofmylife00bern/memoriesofmylife00bern#page/n336/mode/1up\">Book Viewer</a><br>\n<b>About This Book</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/details/memoriesofmylife00bern\">Catalog Entry</a><br>\n<b>View All Images</b>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/internetarchivebookimages/tags/bookidmemoriesofmylife00bern\">All Images From Book</a><br>\nClick here to <a rel=\"nofollow\" class=\"external text\" href=\"https://archive.org/stream/memoriesofmylife00bern/memoriesofmylife00bern#page/n336/mode/1up\"><b>view book online</b></a> to see this illustration in context in a browseable online version of this book.<br>\n<br>\n<b>Text Appearing Before Image:</b><br>\n<i>f seven years, but wholooked more like nine. I had already had the workmen in to putup the scaffolding required to make it sufficiently stable to sus-tain the necessary weight. Enormous iron supports were fixedinto the plaster by bolts, and pillars of wood and iron whereverneeded. The skeleton of a large piece of sculpture looks likea giant trap put up to catch rats and mice by the thousand. I gave myself up to this enormous work with the courage ofignorance. Nothing discouraged me. Often I worked on tillmidnight, sometimes till four oclock in the morning. And asone, humble gas-burner was totally insufficient for working by.I had a crown or rather a silver circlet made, each bud of whichwas a candlestick with a candle burning, those of the backrow a little higher than those of the front; and with this help Iwas able to work almost without ceasing. I had no watch orclock in the room, as I wished to ignore time altogether. Thenmy maid wouldcome to seek me. How many times I have gone 288</i><br>\n<b>Text Appearing After Image:</b><br>\n<i>SARAH BERNHARDT AT WORK ON HER MEDEE. BUSY DAYS without lunch or dinner! Then I would perhaps faint and sobe compelled to send for something to eat to restore my strength. I had almost finished my group, but I had done neither thefeet nor the hands of the grandmother. She was holding herlittle dead grandson on her knees, but her arms had no hands andher legs had no feet. I looked in vain for the hands and the feetof my ideal, large and bony. One day when my friend Martelcame to see me at my studio and to look at this group which wasmuch talked of, I had an inspiration: Martel was big, and thinenough to make Death jealous. I watched him walking roundmy work. He was looking at it as a connoisseur. But / waslooking at him. Suddenly I said: My dear Martel, I beg you ... I beseech you ... topose for the hands and feet of my grandmother. He burst out laughing, and with perfectly good grace tookoff his shoes and took the place of my model. He came ten days running and gave me three hours eac</i><br>\n<br>\n<b>Note About Images</b><br>\n</p>\n<i>Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.</i>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1907",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/internetarchivebookimages/14804332673/\">https://www.flickr.com/photos/internetarchivebookimages/14804332673/</a>\n</p>\n<ul><li>Source book page: <a rel=\"nofollow\" class=\"external free\" href=\"https://archive.org/stream/memoriesofmylife00bern/memoriesofmylife00bern#page/n336/mode/1up\">https://archive.org/stream/memoriesofmylife00bern/memoriesofmylife00bern#page/n336/mode/1up</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/126377022@N07\">Internet Archive Book Images</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "At the time of upload, the image license was automatically confirmed using the Flickr <a href=\"https://en.wikipedia.org/wiki/API\" class=\"extiw\" title=\"en:API\">API</a>. For more information see <a href=\"//commons.wikimedia.org/wiki/User:F%C3%A6/Flickr_API_detail\" title=\"User:Fæ/Flickr API detail\">Flickr API detail</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "No restrictions",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "No known copyright restrictions",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://www.flickr.com/commons/usage/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 90083844,
+        "ns": 6,
+        "title": "File:A morning ramble, or - The Milliners Shop (BM 1935,0522.1.31).jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 421519,
+            "width": 1142,
+            "height": 1600,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1121,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1121,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_morning_ramble,_or_-_The_Milliners_Shop_(BM_1935,0522.1.31).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90083844",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-11 02:24:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nA morning ramble, or - The Milliners Shop</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Artworks without Wikidata item|PD Old|PD-scan (PD-old-70)|Artworks with known accession number|CC-PD-Mark|Fashion in 1782|1782 in commerce|Satirical prints in the British Museum|Uploads by copyfraud|Milliners in art|Works after Robert Dighton",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<p>After: Robert Dighton\n</p>\n<dl><dd>Published by: Carington Bowles</dd></dl></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "Interior of a milliner's shop, the counter running across the print, behind it are three milliners, dressed in the fashion of the day with elaborately frilled muslin caps on their high-dressed hair. Two fashionably dressed men are on the near side of the counter, intent on a flirtation. One, wearing riding-dress, sits on the edge of the counter, his legs dangling, while he leans on his elbow and looks over his right shoulder towards a pretty young woman who is sewing, seated in profile to the right. The other visitor (right) lounges against the counter as he hands a \"Masquerade Ticket\" to a young milliner. The third milliner stands; she is sewing at one of the elaborately frilled muslin head-dresses of the day. \n<p><br>The print shows the arrangement of a shop at this period. The shop-window is partly visible on the left, with wares for sale suspended across it on cords. On the wall is an oval mirror in a carved frame, while on the right shelves fill a recess in the wall and support boxes, inscribed \"Feathers, Love Coxcomb, Mode\". An arched-top coffer, such as milliners in street scenes are depicted as carrying, stands open on the counter, a piece of lace hanging from it. On the near side of the counter is a tall circular stool for customers. In the foreground is a Pomeranian dog.  1782\n</p>\n<br>Hand-coloured mezzotint",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1782<div style=\"display: none;\">date QS:P571,+1782-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.britishmuseum.org/collection/object/P_1935-0522-1-31\">https://www.britishmuseum.org/collection/object/P_1935-0522-1-31</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "© The Trustees of the British Museum, released as CC BY-NC-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 90083862,
+        "ns": 6,
+        "title": "File:A morning ramble, or - The Milliners Shop (BM 1935,0522.1.31 1).jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 309371,
+            "width": 1206,
+            "height": 1600,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1061,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/2/26/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1061,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/2/26/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_1935%2C0522.1.31_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_morning_ramble,_or_-_The_Milliners_Shop_(BM_1935,0522.1.31_1).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90083862",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-11 02:25:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nA morning ramble, or - The Milliners Shop</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Artworks without Wikidata item|PD Old|PD-scan (PD-old-70)|Artworks with known accession number|CC-PD-Mark|Fashion in 1782|1782 in commerce|Satirical prints in the British Museum|Uploads by copyfraud|Milliners in art|Works after Robert Dighton",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<p>After: Robert Dighton\n</p>\n<dl><dd>Published by: Carington Bowles</dd></dl></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "Interior of a milliner's shop, the counter running across the print, behind it are three milliners, dressed in the fashion of the day with elaborately frilled muslin caps on their high-dressed hair. Two fashionably dressed men are on the near side of the counter, intent on a flirtation. One, wearing riding-dress, sits on the edge of the counter, his legs dangling, while he leans on his elbow and looks over his right shoulder towards a pretty young woman who is sewing, seated in profile to the right. The other visitor (right) lounges against the counter as he hands a \"Masquerade Ticket\" to a young milliner. The third milliner stands; she is sewing at one of the elaborately frilled muslin head-dresses of the day. \n<p><br>The print shows the arrangement of a shop at this period. The shop-window is partly visible on the left, with wares for sale suspended across it on cords. On the wall is an oval mirror in a carved frame, while on the right shelves fill a recess in the wall and support boxes, inscribed \"Feathers, Love Coxcomb, Mode\". An arched-top coffer, such as milliners in street scenes are depicted as carrying, stands open on the counter, a piece of lace hanging from it. On the near side of the counter is a tall circular stool for customers. In the foreground is a Pomeranian dog.  1782\n</p>\n<br>Hand-coloured mezzotint",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1782<div style=\"display: none;\">date QS:P571,+1782-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.britishmuseum.org/collection/object/P_1935-0522-1-31\">https://www.britishmuseum.org/collection/object/P_1935-0522-1-31</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "© The Trustees of the British Museum, released as CC BY-NC-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 90213361,
+        "ns": 6,
+        "title": "File:A morning ramble, or - The Milliners Shop (BM Heal,Portraits.245).jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1350926,
+            "width": 1768,
+            "height": 2500,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1131,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg/960px-A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1131,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/A_morning_ramble%2C_or_-_The_Milliners_Shop_%28BM_Heal%2CPortraits.245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_morning_ramble,_or_-_The_Milliners_Shop_(BM_Heal,Portraits.245).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=90213361",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-05-15 13:01:21",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nA morning ramble, or - The Milliners Shop</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Artworks without Wikidata item|PD-old-100-expired|PD-scan (PD-old-100-expired)|Artworks with known accession number|CC-PD-Mark|Fashion in 1782|Satirical prints in the British Museum|Uploads by copyfraud|Milliners in art|Works after Robert Dighton",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<div class=\"fn value\">\n<p>After: Robert Dighton\n</p>\n<dl><dd>Published by: Carington Bowles</dd></dl></div>",
+                "source": "commons-desc-page"
+              },
+              "ImageDescription": {
+                "value": "Interior of a milliner's shop, the counter running across the print, behind it are three milliners, dressed in the fashion of the day with elaborately frilled muslin caps on their high-dressed hair. Two fashionably dressed men are on the near side of the counter, intent on a flirtation. One, wearing riding-dress, sits on the edge of the counter, his legs dangling, while he leans on his elbow and looks over his right shoulder towards a pretty young woman who is sewing, seated in profile to the right. The other visitor (right) lounges against the counter as he hands a \"Masquerade Ticket\" to a young milliner. The third milliner stands; she is sewing at one of the elaborately frilled muslin head-dresses of the day. \n<p><br>The print shows the arrangement of a shop at this period. The shop-window is partly visible on the left, with wares for sale suspended across it on cords. On the wall is an oval mirror in a carved frame, while on the right shelves fill a recess in the wall and support boxes, inscribed \"Feathers, Love Coxcomb, Mode\". An arched-top coffer, such as milliners in street scenes are depicted as carrying, stands open on the counter, a piece of lace hanging from it. On the near side of the counter is a tall circular stool for customers. In the foreground is a Pomeranian dog.  1782\n</p>\n<br>Mezzotint",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1782<div style=\"display: none;\">date QS:P571,+1782-00-00T00:00:00Z/9</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.britishmuseum.org/collection/object/P_Heal-Portraits-245\">https://www.britishmuseum.org/collection/object/P_Heal-Portraits-245</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "© The Trustees of the British Museum, released as CC BY-NC-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 141087552,
+        "ns": 6,
+        "title": "File:Kathrine Switzer, Boston Marathon.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1115281,
+            "width": 2503,
+            "height": 1381,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kathrine_Switzer%2C_Boston_Marathon.jpg/960px-Kathrine_Switzer%2C_Boston_Marathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 441,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kathrine_Switzer%2C_Boston_Marathon.jpg/1920px-Kathrine_Switzer%2C_Boston_Marathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kathrine_Switzer%2C_Boston_Marathon.jpg/960px-Kathrine_Switzer%2C_Boston_Marathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 441,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Kathrine_Switzer%2C_Boston_Marathon.jpg/1920px-Kathrine_Switzer%2C_Boston_Marathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Kathrine_Switzer%2C_Boston_Marathon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kathrine_Switzer,_Boston_Marathon.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=141087552",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-11-19 19:08:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Kathrine Switzer, Boston Marathon",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Kathrine Switzer|Harry A. Trask|Iconic photographs|PD US no notice|1967 Boston Marathon|Men fighting men|The only woman (sports)|Jock Semple",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Runner <a href=\"https://en.wikipedia.org/wiki/Kathrine_Switzer\" class=\"extiw\" title=\"w:Kathrine Switzer\">Kathrine Switzer</a> attacked by race official <a href=\"https://en.wikipedia.org/wiki/Jock_Semple\" class=\"extiw\" title=\"w:Jock Semple\">Jock Semple</a> while running in the 1967 <a href=\"https://en.wikipedia.org/wiki/Boston_Marathon\" class=\"extiw\" title=\"w:Boston Marathon\">Boston Marathon</a>.\n<p>Original caption:\n</p>\nWho Said Chivalry Is Dead? ... A girl listed only as \"K. Switzer of Syracuse\" found herself about to be thrown out of the normally all-male Boston Marathon Wednesday when a husky companion Thomas Miller of Syracuse, threw block that tossed race official out of the running instead. Sequence shows Jock Semple, official, moving in to intercept Miss Switzer, then being bounced himself by Miller.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1967-04-19",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://www.bostonherald.com/2022/04/13/from-the-archives-kathrine-switzers-1967-boston-marathon-day-in-history/\">https://www.bostonherald.com/2022/04/13/from-the-archives-kathrine-switzers-1967-boston-marathon-day-in-history/</a>\n</p>\nOriginally published in the <i><a href=\"https://en.wikipedia.org/wiki/Boston_Herald\" class=\"extiw\" title=\"w:Boston Herald\">Boston Herald</a></i> and distributed by the <a href=\"https://en.wikipedia.org/wiki/Associated_Press\" class=\"extiw\" title=\"w:Associated Press\">Associated Press</a> and published in numerous newspapers on April 20, 1967.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Harry_Trask\" class=\"extiw\" title=\"w:Harry Trask\">Harry Trask</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 197626767,
+        "ns": 6,
+        "title": "File:Woman tying running shoes on front steps.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1123084,
+            "width": 2940,
+            "height": 4380,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Woman_tying_running_shoes_on_front_steps.jpg/960px-Woman_tying_running_shoes_on_front_steps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1192,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Woman_tying_running_shoes_on_front_steps.jpg/1920px-Woman_tying_running_shoes_on_front_steps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Woman_tying_running_shoes_on_front_steps.jpg/960px-Woman_tying_running_shoes_on_front_steps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1192,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Woman_tying_running_shoes_on_front_steps.jpg/1920px-Woman_tying_running_shoes_on_front_steps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Woman_tying_running_shoes_on_front_steps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woman_tying_running_shoes_on_front_steps.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=197626767",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2026-08-16 20:38:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Woman tying running shoes on front steps",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Running shoes|Self-published work|Creative Commons Attribution 4.0 missing SDC copyright license|Creative Commons Attribution missing SDC copyright status|Self-published work missing SDC copyright license",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "hydration, water, drinking water, kitchen, morning routine, healthy lifestyle, wellness, self care, health, glass bottle, kitchen sink, natural light, home, daily routine, hydrate, clean living, wellbeing, fresh, lifestyle, candid",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2026-08-16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Femivaco&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Femivaco (page does not exist)\">Femivaco</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

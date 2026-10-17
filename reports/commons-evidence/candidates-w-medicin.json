@@ -1,0 +1,853 @@
+{
+  "batchcomplete": true,
+  "continue": {
+    "gsroffset": 8,
+    "continue": "gsroffset||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 8707786,
+        "ns": 6,
+        "title": "File:Tablets pills medicine medical waste.jpg",
+        "index": 1,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 5230050,
+            "width": 3648,
+            "height": 2736,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Tablets_pills_medicine_medical_waste.jpg/960px-Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 600,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Tablets_pills_medicine_medical_waste.jpg/1920px-Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Tablets_pills_medicine_medical_waste.jpg/960px-Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 600,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Tablets_pills_medicine_medical_waste.jpg/1920px-Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tablets_pills_medicine_medical_waste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tablets_pills_medicine_medical_waste.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8707786",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-12-09 18:15:06",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Tablets pills medicine medical waste",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon Coolpix L100|Self-published work|Assorted pills|Yellow textures|White pills|Yellow pills|Pill textures|Drug take-back",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Various unused tablets collected to be treated as medical waste.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-12-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:P%C3%B6ll%C3%B6\" title=\"User:Pöllö\">Pöllö</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 8711678,
+        "ns": 6,
+        "title": "File:Medicine cocktail tablets and pills in glass.jpg",
+        "index": 2,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 3056139,
+            "width": 2736,
+            "height": 3648,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg/960px-Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1067,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg/1920px-Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg/960px-Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1067,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg/1920px-Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Medicine_cocktail_tablets_and_pills_in_glass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Medicine_cocktail_tablets_and_pills_in_glass.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8711678",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-12-10 10:13:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Medicine cocktail tablets and pills in glass",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon Coolpix L100|Polypharmacy|Self-published work|Assorted pills|White pills|Yellow pills|Glasses filled with various materials",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A glass half-filled with various medicinal tablets and pills.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-12-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:P%C3%B6ll%C3%B6\" title=\"User:Pöllö\">Pöllö</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 30181524,
+        "ns": 6,
+        "title": "File:Medicine Drug Pills on Plate.png",
+        "index": 4,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 19027143,
+            "width": 4100,
+            "height": 3084,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Medicine_Drug_Pills_on_Plate.png/960px-Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 602,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Medicine_Drug_Pills_on_Plate.png/1920px-Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Medicine_Drug_Pills_on_Plate.png/960px-Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 602,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Medicine_Drug_Pills_on_Plate.png/1920px-Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Medicine_Drug_Pills_on_Plate.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Medicine_Drug_Pills_on_Plate.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=30181524",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-12-16 03:55:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Medicine Drug Pills on Plate",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Polypharmacy|Flickr images uploaded by Flickr upload bot|Pink and white objects|Pink pills|White pills",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>Picture of placebo medicine tablets and real drug pills on a white, plate from the table of pharmaceutical companies that make drugs that help the pharma industry to heal narcotic drug addiction with pharmaceutical.\n</p><p>This picture was created by &lt;a href=\"<a rel=\"nofollow\" class=\"external free\" href=\"http://epSos.de\">http://epSos.de</a>\" rel=\"nofollow\"&gt;my conscious friend epSos.de&lt;/a&gt; and <b>can be used for free, if you link</b> epSos.de as the original author of the image.\n</p><p>This image is a metaphor for medical drug abuse and overconsumption of medicine as a form of sickness.\n</p><p>epSos.de is strongly against drug abuse.\n</p>\nThank you for sharing this picture <b>with your friends !</b>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-05-06 01:22:49",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/Flickr\" class=\"mw-redirect\" title=\"Flickr\">Flickr</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/36495803@N05/4582789354\">Medicine Drug Pills on Plate</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//www.flickr.com/people/36495803@N05\" class=\"extiw\" title=\"flickruser:36495803@N05\">epSos .de</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table id=\"FlickrReview\" style=\"width:100%; margin:0.3em auto; text-align:start; background-color:var(--background-color-success-subtle,#d5fdf4); padding: 3px; border:1px solid var(--border-color-base,#a2a9b1); color:inherit;\" dir=\"ltr\" lang=\"en\">\n\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"48\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/120px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"160\" data-file-height=\"153\"></span></span>\n</td>\n<td>This image, which was originally posted to <b><a href=\"https://en.wikipedia.org/wiki/Flickr\" class=\"extiw\" title=\"en:Flickr\">Flickr</a></b>, was uploaded to Commons using <b><a href=\"//commons.wikimedia.org/wiki/User:Flickr_upload_bot\" title=\"User:Flickr upload bot\">Flickr upload bot</a></b> on 16 December 2013, 03:55 by <span id=\"flickr_upload_bot_reviewer\"><b><a href=\"//commons.wikimedia.org/w/index.php?title=User:Katefreedman&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Katefreedman (page does not exist)\">Katefreedman</a></b></span>. On that date, it was confirmed to be licensed under the terms of the license indicated.\n</td>\n<td><span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/60px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"50\" height=\"50\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/120px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"512\"></span></span>\n</td></tr></tbody></table>\n<div class=\"responsive-license-cc layouttemplate licensetpl\" dir=\"ltr\" lang=\"en\"><div class=\"rlicense-icons\"><span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"w:en:Creative Commons\"><img alt=\"w:en:Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/120px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"90\" height=\"36\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/250px-CC_some_rights_reserved.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"744\" data-file-height=\"300\"></span></span><br>\n<span class=\"skin-invert\" typeof=\"mw:File\"><span title=\"attribution\"><img alt=\"attribution\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/40px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/60px-Cc-by_new_white.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span></div><div class=\"rlicense-text\"><div class=\"rlicense-declaration\">This file is licensed under the <a href=\"https://en.wikipedia.org/wiki/en:Creative_Commons\" class=\"extiw\" title=\"w:en:Creative Commons\">Creative Commons</a> <a href=\"//creativecommons.org/licenses/by/2.0/deed.en\" class=\"extiw\" title=\"creativecommons:by/2.0/deed.en\">Attribution 2.0 Generic</a> license.</div><div class=\"rlicense-desc\" style=\"text-align:start;\" dir=\"ltr\" lang=\"en\">\n<dl><dd>You are free:\n<ul><li><b>to share</b> – to copy, distribute and transmit the work</li>\n<li><b>to remix</b> – to adapt the work</li></ul></dd>\n<dd>Under the following conditions:\n<ul><li><b>attribution</b> – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</li></ul></dd></dl>\n</div><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/licenses/by/2.0</span><span class=\"licensetpl_short\" style=\"display:none;\">CC BY 2.0 </span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Attribution 2.0 </span><span class=\"licensetpl_link_req\" style=\"display:none;\">true</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">true</span></div></div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/png"
+          }
+        ]
+      },
+      {
+        "pageid": 31233991,
+        "ns": 6,
+        "title": "File:A black man buying some of J. Morison's pills, hoping they will make him white. Wellcome V0011130.jpg",
+        "index": 8,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 2956451,
+            "width": 2496,
+            "height": 3049,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg/960px-A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 977,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg/1920px-A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg/960px-A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 977,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg/1920px-A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/A_black_man_buying_some_of_J._Morison%27s_pills%2C_hoping_they_will_make_him_white._Wellcome_V0011130.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:A_black_man_buying_some_of_J._Morison%27s_pills,_hoping_they_will_make_him_white._Wellcome_V0011130.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=31233991",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-25 16:25:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nA black man buying some of J. Morison's pills, hoping they will make him white. Coloured lithograph.</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Confidence tricksters|Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|Men of the United Kingdom in art|Files from Wellcome Images|19th-century lithographs|Men holding hats|Historic racist caricatures of African Americans|Etchings in the United Kingdom|2 men in art|Men standing indoors|Caricatures of men|19th-century etchings of men|Morison's pills|Racist lithographs in the Wellcome Collection",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Topic-LCSH: Tablets (Medicine) Drugstores. Racism. Costume -- History -- 19th century.\n</p>\nGenre/Technique: Caricatures. Lithographs.</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/V0011130.html\">https://wellcomeimages.org/indexplus/image/V0011130.html</a>\n</p>\n<ul><li>Wellcome Collection gallery (2018-03-21): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/b8978fmf\">https://wellcomecollection.org/works/b8978fmf</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 33633622,
+        "ns": 6,
+        "title": "File:Gfp-medicine-container-and-medicine-tablet.jpg",
+        "index": 5,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 772236,
+            "width": 3456,
+            "height": 2304,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/960px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 533,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/1920px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/960px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 533,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg/1920px-Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Gfp-medicine-container-and-medicine-tablet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gfp-medicine-container-and-medicine-tablet.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=33633622",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-06-28 18:42:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Gfp-medicine-container-and-medicine-tablet",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 550D|Chloroquine|Images from goodfreephotos.com|Import by User:Slick-o-bot/Images from goodfreephotos.com/Other-photos|Pill bottles and pills",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Free public domain stock photo of medicine container and medicine tablet",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2014-05-15",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com\">www.goodfreephotos.com</a> (<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com/other-photos/page/3/\">gallery</a>, <a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com/other-photos/medicine-container-and-medicine-tablet.jpg.php\">image</a>)",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://www.goodfreephotos.com\">Yinan Chen</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table style=\"width:100%; clear:both; text-align:center; margin:0.5em auto; background-color:var(--background-color-neutral-subtle, #f8f9fa); border:var(--border-subtle, 2px solid #c8ccd1); padding: 0; border-spacing: 8px; color:var(--color-base, #202122);\" dir=\"ltr\" class=\"layouttemplate licensetpl\" lang=\"\">\n<tbody><tr>\n<td style=\"width:90px;\"><span class=\"skin-invert-image\" typeof=\"mw:File\"><span title=\"Creative Commons\"><img alt=\"Creative Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"28\" height=\"28\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/60px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"64\" data-file-height=\"64\"></span></span> <span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/40px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"28\" height=\"28\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/60px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td><i>This file has been released explicitly into the public domain by its author, using the <a href=\"https://en.wikipedia.org/wiki/Creative_Commons\" class=\"extiw\" title=\"w:Creative Commons\">Creative Commons</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/\">Public Domain Dedication</a> formerly <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/publicdomain/\">here</a></i>\n<p><i>This file may be used <b>for any purpose</b> including unrestricted redistribution, commercial use, and modification.</i>\n</p>\n<hr>\n<div style=\"font-size:10px\"> <span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Ambox_warning_pn.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ambox_warning_pn.svg/20px-Ambox_warning_pn.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"20\" height=\"17\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ambox_warning_pn.svg/40px-Ambox_warning_pn.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"445\"></a></span> Note: Creative Commons has retired this legal tool and does not recommend that it be applied to works. It is recommended you use <a href=\"//commons.wikimedia.org/wiki/Template:Cc-zero\" title=\"Template:Cc-zero\"><span style=\"font-family:monospace,monospace;\">{{Cc-zero}}</span></a> instead.<br><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:PDmaybe-icon.svg\" class=\"mw-file-description\"><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/PDmaybe-icon.svg/20px-PDmaybe-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"20\" height=\"20\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/PDmaybe-icon.svg/40px-PDmaybe-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"200\" data-file-height=\"200\"></a></span> This legal tool may not be effective or applicable in non-US jurisdictions.</div><span class=\"licensetpl_long\" style=\"display: none\">Creative Commons Public Domain Dedication</span><span class=\"licensetpl_short\" style=\"display: none\">Public Domain</span><span class=\"licensetpl_link\" style=\"display: none\">https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/</span><span class=\"licensetpl_attr_req licensetpl_link_req\" style=\"display: none\">false</span>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public Domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 35938959,
+        "ns": 6,
+        "title": "File:W. Brockedon's pills Wellcome L0007312.jpg",
+        "index": 6,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 672751,
+            "width": 1254,
+            "height": 1506,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/W._Brockedon%27s_pills_Wellcome_L0007312.jpg/960px-W._Brockedon%27s_pills_Wellcome_L0007312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 961,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/b/b4/W._Brockedon%27s_pills_Wellcome_L0007312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/W._Brockedon%27s_pills_Wellcome_L0007312.jpg/960px-W._Brockedon%27s_pills_Wellcome_L0007312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 961,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b4/W._Brockedon%27s_pills_Wellcome_L0007312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/W._Brockedon%27s_pills_Wellcome_L0007312.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:W._Brockedon%27s_pills_Wellcome_L0007312.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=35938959",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-06 12:48:45",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nW. Brockedon's pills</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "William Brockedon|Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|Tablets (pharmacy)|Files from Wellcome Images|Medicine advertising",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>W. Brockedon's pills: pills, pill-box, and leaflet advertising Brockedon's Patent Compressed Pills of Pure Chlorate of Potass and of Pure Bicarbonate of Potass. From the Wellcome Institute\n</p>\n<p>Wellcome Images</p>\nKeywords: Tablets; William Brockedon</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/a5/cf/52885aaa0789817a944929397dd6.jpg\">https://wellcomeimages.org/indexplus/obf_images/a5/cf/52885aaa0789817a944929397dd6.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/L0007312.html\">https://wellcomeimages.org/indexplus/image/L0007312.html</a></li>\n<li>Wellcome Collection gallery (2018-04-06): <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomecollection.org/works/cxweg45h\">https://wellcomecollection.org/works/cxweg45h</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 36208331,
+        "ns": 6,
+        "title": "File:Dr Williams' 'Pink Pills', London, England, 1850-1920 Wellcome A627306.jpg",
+        "index": 3,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1331854,
+            "width": 2694,
+            "height": 4036,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg/960px-Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 1199,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg/1920px-Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg/960px-Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 1199,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg/1920px-Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Dr_Williams%27_%27Pink_Pills%27%2C_London%2C_England%2C_1850-1920_Wellcome_A627306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dr_Williams%27_%27Pink_Pills%27,_London,_England,_1850-1920_Wellcome_A627306.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=36208331",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-17 12:38:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nDr Williams' 'Pink Pills', London, England, 1850-1920</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Files with no machine-readable author|Images uploaded by Fæ|Artworks without Wikidata item|Dr. Williams' Pink Pills for Pale People|Featured pictures on Wikipedia, English|Images with extracted images|Files from Wellcome Images|History of psychiatry and mental health in the Wellcome Collection|Files with Assessments template missing SDC Commons no value quality assessment",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Dr Williams' 'Pink Pills' were advertised as an iron rich tonic for the blood and nerves to treat anaemia, clinical depression, poor appetite and lack of energy. The tablets were originally advertised as <a class=\"external text\" href=\"https://en.wikipedia.org/wiki/Dr._Williams%27_Pink_Pills_for_Pale_People\">'Pink Pills for Pale People'</a>. Users of the product claimed the pills could even cure paralysis.\n</p><p>The patent for the pills was bought by an American politician, Senator George T Fulford (1852-1905) in 1890. Fulford made the product an international success.\n</p><p>maker: G T Fulford and Company Limited, maker: Dr Williams Medicine Company\n</p><p>Place made: London, Greater London, England, United Kingdom\n</p>\n<p>Wellcome Images</p>\nKeywords: medicinal tonic; Paralysis; anaemia; Depression</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/ed/7b/3b6984a03303ea351ccb108e250a.jpg\">https://wellcomeimages.org/indexplus/obf_images/ed/7b/3b6984a03303ea351ccb108e250a.jpg</a>\n</p>\n<ul><li>Gallery: <s><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/L0058211.html\">https://wellcomeimages.org/indexplus/image/L0058211.html</a></s></li>\n<li>Wellcome Collection gallery (2018-03-29): <a rel=\"nofollow\" class=\"external free\" href=\"https://collection.sciencemuseumgroup.org.uk/objects/co180626/dr-williams-pink-pills\">https://collection.sciencemuseumgroup.org.uk/objects/co180626/dr-williams-pink-pills</a>  <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY-4.0</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      },
+      {
+        "pageid": 109760070,
+        "ns": 6,
+        "title": "File:Alex Jones Made of Pills.jpg",
+        "index": 7,
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 1537212,
+            "width": 2484,
+            "height": 3000,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Alex_Jones_Made_of_Pills.jpg/960px-Alex_Jones_Made_of_Pills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 800,
+            "thumbheight": 966,
+            "responsiveUrls": {
+              "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Alex_Jones_Made_of_Pills.jpg/1920px-Alex_Jones_Made_of_Pills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Alex_Jones_Made_of_Pills.jpg/960px-Alex_Jones_Made_of_Pills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 800,
+              "height": 966,
+              "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Alex_Jones_Made_of_Pills.jpg/1920px-Alex_Jones_Made_of_Pills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Alex_Jones_Made_of_Pills.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Alex_Jones_Made_of_Pills.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=109760070",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-09-06 16:12:48",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Alex Jones Made of Pills",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Alex Jones (conspiracy theorist)|Blue pills|Self-published work|Caricatures of people of the United States",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Alex Jones, textured with, appropriately, pills. I made them blue in reference to Super Male Vitality. Screen print style.\n<p>Source photos:\n</p><p><a href=\"//commons.wikimedia.org/wiki/File:Alex_Jones_Portrait.jpg\" title=\"File:Alex Jones Portrait.jpg\">File:Alex_Jones_Portrait.jpg</a>\n</p>\n<a href=\"//commons.wikimedia.org/wiki/File:Tablets_pills_medicine_medical_waste.jpg\" title=\"File:Tablets pills medicine medical waste.jpg\">File:Tablets_pills_medicine_medical_waste.jpg</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-09-06 08:23:33",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Whythealgarve\" title=\"User:Whythealgarve\">Whythealgarve</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

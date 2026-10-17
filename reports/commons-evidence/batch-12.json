@@ -1,0 +1,3787 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 175365,
+        "ns": 6,
+        "title": "File:Central Park New York City New York 23 cropped.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Central_Park_New_York_City_New_York_23_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Central_Park_New_York_City_New_York_23_cropped.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175365",
+            "sha1": "10c7e05df0fa3cbdc7143ba5bef1574abbaf8aa1",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2005-06-03 20:10:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Central Park New York City New York 23 cropped",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Featured pictures of New York City|Historic American Engineering Record|Images from the Library of Congress|PD US NPS|Featured pictures on Wikipedia, Vietnamese|Trees of Central Park|Gothic Bridge (Central Park)|Color photographs from the Historic American Buildings Survey|Files with coordinates missing SDC location of creation|Central Park in 2005|Featured photographs in the public domain|Featured pictures from the Library of Congress|Photographs by Jet Lowe|Locations of Fantastic Beasts in New York City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "40.789194",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-73.961694",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Central Park Bridges (view from Bridlepath looking southwest), Gothic Arch, Spanning bridlepath south of tennis courts, north of reservoir, New York City, New York County, NY",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "3 June 2005 (original upload date)",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/hhh.ny1586\">hhh.ny1586</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Jet_Lowe\" class=\"extiw\" title=\"w:en:Jet Lowe\"><span title=\"American photographer\">Jet Lowe</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td><i>This image or media file contains material based on a work of a <a href=\"https://en.wikipedia.org/wiki/National_Park_Service\" class=\"extiw\" title=\"w:National Park Service\">National Park Service</a> employee, created as part of that person's official duties. As a <a href=\"https://en.wikipedia.org/wiki/Work_of_the_United_States_Government\" class=\"extiw\" title=\"w:Work of the United States Government\">work</a> of the <a href=\"https://en.wikipedia.org/wiki/Federal_Government_of_the_United_States\" class=\"extiw\" title=\"w:Federal Government of the United States\">U.S. federal government</a>, such work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"w:public domain\">public domain</a></b> in the United States. See the <a rel=\"nofollow\" class=\"external text\" href=\"https://www.nps.gov/\">NPS website</a> and <a rel=\"nofollow\" class=\"external text\" href=\"https://www.nps.gov/aboutus/disclaimer.htm\">NPS copyright policy</a> for more information.</i>\n</td>\n<td><figure class=\"mw-halign-right\" typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_of_the_United_States_National_Park_Service.svg/60px-Logo_of_the_United_States_National_Park_Service.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"52\" height=\"68\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_of_the_United_States_National_Park_Service.svg/120px-Logo_of_the_United_States_National_Park_Service.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"553\" data-file-height=\"720\"></span><figcaption></figcaption></figure>\n</td></tr></tbody></table>\n<table style=\"width:100%; clear:both; margin:0.5em auto; border-spacing:8px; background-color:var(--background-color-neutral-subtle,#f7f8ff); border:2px solid #8888aa;color: inherit;\" lang=\"en\" dir=\"ltr\" class=\"layouttemplate restrictiontemplate\">\n<tbody><tr>\n<td>\n<ul><li><b>Creator:</b> U.S. Department of the Interior, National Park Service, <a href=\"https://en.wikipedia.org/wiki/Historic_American_Engineering_Record\" class=\"extiw\" title=\"w:Historic American Engineering Record\">Historic American Engineering Record</a>. Survey number HAER NY-194-7</li>\n<li><b>Source:</b> U.S. Library of Congress, Prints and Photographs Division, <a rel=\"nofollow\" class=\"external text\" href=\"https://www.loc.gov/pictures/collection/hh/\">\"Built in America\" Collection</a>.</li>\n<li><b>Copyright:</b> <a rel=\"nofollow\" class=\"external text\" href=\"https://www.loc.gov/rr/print/res/114_habs.html\">\"The original measured drawings and most of the photographs and data pages in HABS/HAER/HALS were created for the U.S. Government and are considered to be in the public domain.\"</a></li></ul>\n</td></tr></tbody></table>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 1248112,
+        "ns": 6,
+        "title": "File:USS Bon Homme Richard (CV-31) anchored in New York harbor on 9 January 1945.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/USS_Bon_Homme_Richard_%28CV-31%29_anchored_in_New_York_harbor_on_9_January_1945.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:USS_Bon_Homme_Richard_(CV-31)_anchored_in_New_York_harbor_on_9_January_1945.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=1248112",
+            "sha1": "1ddb30ac2de21a0eb58dbf0bcd0c8ba5a3036e3c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-02-06 10:11:55",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "USS Bon Homme Richard (CV-31) anchored in New York harbor on 9 January 1945",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "1945 in New York City|USS Bon Homme Richard (CV-31)|New York Harbor|Aerial photographs of New York City|PD US Navy|Watercraft photographed in January 1945|CC-PD-Mark|Photographs taken on 1945-01-09|Aerial photographs of naval ships of the United States|1945 aerial photographs|January 1945 United States photographs|Black and white photographs of New York City in the 1940s|Black and white photographs of ships of World War II|United States Navy in January 1945|Camouflage Design 17A-2",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The U.S. Navy aircraft carrier USS <i>Bon Homme Richard</i> (CV-31) anchored in New York harbor (USA), with supply barges alongside, on 9 January 1945. Photographed from a Naval Air Station New York, aircraft, flying at an altitude of 90 meters.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1945-01-09",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Official U.S. Navy photo <a rel=\"nofollow\" class=\"external text\" href=\"https://www.history.navy.mil/our-collections/photography/numerical-list-of-images/nhhc-series/nh-series/NH-97000/NH-97341.html\">NH 97341</a> from the U.S. Navy <a rel=\"nofollow\" class=\"external text\" href=\"http://www.history.navy.mil\">Naval History and Heritage Command</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "U.S. Navy",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 2065989,
+        "ns": 6,
+        "title": "File:St Peter's Square, Vatican City - April 2007.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:St_Peter%27s_Square,_Vatican_City_-_April_2007.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2065989",
+            "sha1": "d061e97f616ea0b9cd9bc9662cefd6bf8659464e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-05-06 14:06:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "St Peter's Square, Vatican City - April 2007",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Featured pictures of the Vatican City|GFDL|CC-BY-SA-2.5,2.0,1.0|License migration redundant|Self-published work|Featured pictures on Wikipedia, English|Saint Peter's Square view from the dome of Saint Peter's Basilica|Featured pictures on Wikipedia, German|Media with locations/Panorama|Featured pictures on Wikipedia, Azeri|Featured pictures on Wikipedia, Hebrew|Featured pictures on Wikipedia, Persian|Featured pictures on Wikipedia, Turkish|Featured pictures of cityscapes|Photographs by User:Diliff|Featured pictures by User:Diliff|April 2007 in Rome|Italy photographs taken on 2007-04-29|Vatican City photographs taken on 2007-04-29|Featured pictures on Wikipedia, Arabic",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "41.902139",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "12.453694",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "A 5x6 segment panoramic image taken by myself with a Canon 5D and 70-200mm f/2.8L lens from the dome of St Peter's in Vatican City in Rome.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on<span typeof=\"mw:Entity\"> </span>29 April 2007<link rel=\"mw:PageProp/Category\" href=\"./Category:Italy_photographs_taken_on_2007-04-29\">",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Diliff\" title=\"User:Diliff\">Diliff</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div dir=\"ltr\"><b><span style=\"font-size:x-large;\">Summary:</span><div style=\"clear:both;\"></div><div style=\"clear:both;\"></div>In using this image or any subsequent derivatives of it, you are required to release the image under the same license. As such, any reproduction of this image, in any medium, must appear with a copy of, or full URL of the license.<div style=\"clear:both;\"></div>Attribution of this image to the author (DAVID ILIFF) is also required, preferably in a prominent location near the image.<div style=\"clear:both;\"></div>No other conditions may be added to, or removed from this license without the permission of the author and copyright holder.<div style=\"clear:both;\"></div><div style=\"clear:both;\"></div>Suggested attribution: \"Photo by DAVID ILIFF. License: <a rel=\"mw:ExtLink nofollow\" href=\"https://creativecommons.org/licenses/by-sa/3.0/\" class=\"external free\">https://creativecommons.org/licenses/by-sa/3.0/</a>\"</b><div style=\"clear:both;\"></div><div style=\"clear:both;\"></div>Please review the full license requirements carefully before using this image. If you would like to clarify the terms of the license or negotiate less restrictive commercial licensing outside of the bounds of GFDL/CC-BY-SA, please <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/Special:EmailUser/Diliff\" title=\"Special:EmailUser/Diliff\">contact me by email</a>, or if you don't have a Wikipedia account you can either <a rel=\"mw:ExtLink\" href=\"https://en.wikipedia.org/w/index.php?title=User_talk:Diliff&amp;action=edit&amp;section=new\" class=\"external text\" data-mw-original-href=\"http://en.wikipedia.org/w/index.php?title=User_talk:Diliff&amp;action=edit&amp;section=new\">leave a message on my talk page</a> with your contact details and your request, or you can <a rel=\"mw:ExtLink nofollow\" href=\"https://www.facebook.com/diliff\" class=\"external text\">contact me on Facebook</a>. Please also send a 'friend request' to ensure that I am aware of your message.</div><span class=\"mw-empty-elt\"><link rel=\"mw:PageProp/Category\" href=\"./Category:CC-BY-SA-3.0\"></span>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 2408170,
+        "ns": 6,
+        "title": "File:Cinema City, Ramat Hasharon.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cinema_City%2C_Ramat_Hasharon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cinema_City,_Ramat_Hasharon.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2408170",
+            "sha1": "b6ae42b2f9357729b49892fd135bba15267614bf",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-07-14 14:54:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Cinema City, Ramat Hasharon",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|License migration redundant|Cinema City, Ramat Hasharon|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Cinema City, Ramat Hasharon",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-07-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:David_Shay\" title=\"User:David Shay\">user:David Shay</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "I, <a href=\"//commons.wikimedia.org/wiki/User:David_Shay\" title=\"User:David Shay\">David Shay</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 3032228,
+        "ns": 6,
+        "title": "File:Nagoya Port Authority Central Government Office.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Nagoya_Port_Authority_Central_Government_Office.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nagoya_Port_Authority_Central_Government_Office.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3032228",
+            "sha1": "7cf5515808dc8033b6e97f3a91141996da9c6eee",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2007-11-06 14:28:10",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Nagoya Port Authority Central Government Office",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with Panasonic Lumix DMC-FZ50|Port of Nagoya|License migration redundant|Port authorities|Garden Pier, Nagoya|Buildings in Minato-ku, Nagoya|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Nagoya Authority Central Government Office. takes a photograph at the Observatory of Nagoya Port bldg.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2007-07-18",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gnsin&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gnsin (page does not exist)\">Gnsin</a> takes a photograph",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Gnsin&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Gnsin (page does not exist)\">Gnsin</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 3582806,
+        "ns": 6,
+        "title": "File:Tshwane.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Tshwane.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Tshwane.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=3582806",
+            "sha1": "02dfb4b0f850008cb6e201bc10951e5d202c0eef",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-11-21 23:13:46",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Tshwane",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|User-created GFDL images|Tshwane|License migration completed|Self-published work|City signs in South Africa",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Logo of <a href=\"https://en.wikipedia.org/wiki/City_of_Tshwane_Metropolitan_Municipality\" class=\"extiw\" title=\"en:City of Tshwane Metropolitan Municipality\">City of Tshwane</a> depicting the Union Buildings in <a href=\"https://en.wikipedia.org/wiki/Pretoria\" class=\"extiw\" title=\"en:Pretoria\">Pretoria</a>, with slogan \"We are the same\".",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2005-02-19",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Originally photographed and uploaded to the <a class=\"external text\" data-mw-original-href=\"http://de.wikipedia.org\" href=\"https://de.wikipedia.org\">German Wikipedia</a> by <a href=\"https://de.wikipedia.org/wiki/User:Zakysant\" class=\"extiw\" title=\"de:User:Zakysant\">Zakysant</a>.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"https://de.wikipedia.org/wiki/User:Zakysant\" class=\"extiw\" title=\"de:User:Zakysant\">Zakysant</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Licensed under the <a href=\"//commons.wikimedia.org/wiki/GFDL\" class=\"mw-redirect\" title=\"GFDL\">GFDL</a> by the author.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "<a href=\"https://de.wikipedia.org/wiki/User:Zakysant\" class=\"extiw\" title=\"de:User:Zakysant\">Zakysant</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/licenses/by-sa/3.0/",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 4995640,
+        "ns": 6,
+        "title": "File:Woman worker in the Douglas Aircraft Company plant1942.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Woman_worker_in_the_Douglas_Aircraft_Company_plant1942.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Woman_worker_in_the_Douglas_Aircraft_Company_plant1942.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=4995640",
+            "sha1": "1f5ad851d2989f1a143299e5462f363138ac764b",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-09-08 22:40:49",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Woman worker in the Douglas Aircraft Company plant1942",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Images from the Library of Congress|Retouched pictures|Rosie the Riveter|Women at work in California|Standing women in California|Boeing B-17F|Featured pictures by others nominated by Yann Forget|Fashion in 1942|Number 3 on objects|Flickr images reviewed by File Upload Bot (Magnus Manske)|PD US FSA/OWI|Red female clothing|Featured pictures of Los Angeles|Featured pictures on Wikipedia, Vietnamese|Featured pictures of people of the United States|Featured pictures of women|Women looking down in the United States|Douglas Aircraft Company photographs by Alfred T. Palmer|Featured pictures of military aircraft|Featured photographs in the public domain|Featured pictures of World War II|Featured pictures taken on slide film|Featured pictures from the Library of Congress|Assessment tagged pages marked as POTY candidates|Color photographs from the Office of War Information|Featured pictures from Flickr|Boeing B-17 noses|Women aircraft production workers in World War II from the United States|Number 3007 on signs|Production of Boeing B-17|Featured pictures of history of California",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd|poty",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This image  is available from the United States <a href=\"//commons.wikimedia.org/wiki/Library_of_Congress\" title=\"Library of Congress\">Library of Congress</a>'s <a rel=\"nofollow\" class=\"external text\" href=\"//www.loc.gov/rr/print/\">Prints and Photographs division</a><br> under the digital ID <a rel=\"nofollow\" class=\"external text\" href=\"https://hdl.loc.gov/loc.pnp/fsac.1a35360\">fsac.1a35360</a>.<br><small>This tag does not indicate the copyright status of the attached work. <span style=\"white-space:nowrap\">A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required.</span> <span style=\"white-space:nowrap\">See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a>.</span></small>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1942-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p>Photo by Alfred T. Palmer \nVia <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/8623220@N02\">The Library of Congress</a>: \n</p><p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/8623220@N02/2179137591/\">This girl in a glass house is putting finishing touches on the bombardier nose section of a B-17F navy bomber, Long Beach, Calif. She's one of many capable women workers in the Douglas Aircraft Company plant. Better known as the \"Flying Fortress,\" the B-1</a>\n</p>\n<ul><li>Uploaded to Wikimedia Commons by <a href=\"//commons.wikimedia.org/wiki/User:Nesnad\" title=\"User:Nesnad\">nesnad</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Alfred T. Palmer.",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 5524691,
+        "ns": 6,
+        "title": "File:Oulu City Theatre 20081206.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Oulu_City_Theatre_20081206.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Oulu_City_Theatre_20081206.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=5524691",
+            "sha1": "f9963d4047deb4e18a51a8b4abaafdde007bb867",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2008-12-18 17:14:41",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Oulu City Theatre 20081206",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Fujifilm FinePix S9500|Self-published work|PD-self|Photographs by Estormiz|Finland photographs taken on 2008-12-06|December 2008 in Oulu|Oulu City Theatre at night",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The <b>Oulu City Theatre</b> building in December night.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Taken on 6 December 2008",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Estormiz\" title=\"User:Estormiz\">Estormiz</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 7030188,
+        "ns": 6,
+        "title": "File:Lewis Carroll - Henry Holiday - Hunting of the Snark - Plate 1.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lewis_Carroll_-_Henry_Holiday_-_Hunting_of_the_Snark_-_Plate_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Lewis_Carroll_-_Henry_Holiday_-_Hunting_of_the_Snark_-_Plate_1.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=7030188",
+            "sha1": "57cf09cc0375c0678f8013ee073de664f8d55e88",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-06-24 03:54:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Lewis Carroll - Henry Holiday - Hunting of the Snark - Plate 1",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "The Hunting of the Snark|Retouched pictures|PD Old|Featured pictures on Wikipedia, English|Images used in valued image sets|CC-PD-Mark|Featured pictures in the public domain|Featured pictures of book illustrations in black and white|Henry Holiday illustrations for Hunting of the Snark|Bells in art|Assessment tagged pages marked as POTY candidates|Carrying in art|Town criers in art",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|poty",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>First of Henry Holiday's original ilustrations to \"The Hunting of the Snark\" by Lewis Carroll. \n</p><p>This illustrates the opening of  Fit the First: The Landing.\n</p>\n<dl><dd>\"Just the place for a Snark!\" the Bellman cried,</dd>\n<dd>    As he landed his crew with care;</dd>\n<dd>Supporting each man on the top of the tide</dd>\n<dd>    By a finger entwined in his hair.</dd></dl>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "Originally 1876, this edition 1931.",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<i>The Hunting of the Snark: An Agony in Eight Fits</i> by Lewis Carroll, MacMillan and Co, Limited, St. Martin's Street, London, 1931.",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Henry Holiday (1839-1927) after Lewis Carroll [Real name: Charles Lutwidge Dodgson] (1832-1896)",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<table class=\"licensetpl\" style=\"display:none\">\n<tbody><tr>\n<td><span class=\"licensetpl_short\">Public domain</span><span class=\"licensetpl_long\">Public domain</span><span class=\"licensetpl_link_req\">false</span><span class=\"licensetpl_attr_req\">false</span>\n</td></tr></tbody></table>\n<table style=\"width: 100%; clear: both; margin: 0.5em auto; background-color: var(--background-color-progressive-subtle, #f7f8ff); color: var(--color-base, #202122); border: var(--border-subtle, 2px solid #8888aa); border-spacing: 8px; padding: 0px;\" dir=\"ltr\" class=\"layouttemplate\" lang=\"en\">\n<tbody><tr>\n<td rowspan=\"2\"><span typeof=\"mw:File\"><span title=\"Public domain\"><img alt=\"Public domain\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/120px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"64\" height=\"64\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/PD-icon.svg/250px-PD-icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"196\" data-file-height=\"196\"></span></span>\n</td>\n<td>\n<p>This work is in the <b><a href=\"https://en.wikipedia.org/wiki/public_domain\" class=\"extiw\" title=\"en:public domain\">public domain</a></b> in its country of origin and other countries and areas where the <a href=\"https://en.wikipedia.org/wiki/List_of_countries%27_copyright_lengths\" class=\"extiw\" title=\"w:List of countries' copyright lengths\">copyright term</a> is the author's <b>life plus 70 years or fewer</b>.\n</p>\n<hr>\n<span typeof=\"mw:File\"><span><img src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/40px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"25\" height=\"25\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Dialog-warning.svg/60px-Dialog-warning.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"48\" data-file-height=\"48\"></span></span> <small>You must also include a <a href=\"//commons.wikimedia.org/wiki/Commons:Copyright_tags/Country-specific_tags#United_States_of_America\" title=\"Commons:Copyright tags/Country-specific tags\">United States public domain tag</a> to indicate why this work is in the public domain in the United States.<div class=\"navigation-not-searchable\"> Note that a few countries have copyright terms longer than 70 years: Mexico has 100 years, Jamaica has 95 years, Colombia has 80 years, and Guatemala and Samoa have 75 years. This image may <i>not</i> be in the public domain in these countries, which moreover do <i>not</i> implement the <a href=\"https://en.wikipedia.org/wiki/rule_of_the_shorter_term\" class=\"extiw\" title=\"w:rule of the shorter term\">rule of the shorter term</a>. Honduras has a general copyright term of 75 years, but it <i>does</i> implement the rule of the shorter term. Copyright may extend on works created by French who died for France in <a href=\"https://en.wikipedia.org/wiki/World_War_II\" class=\"extiw\" title=\"w:World War II\">World War II</a> (<a href=\"//commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/France\" title=\"Commons:Copyright rules by territory/France\">more information</a>), Russians who served in <a href=\"https://en.wikipedia.org/wiki/Eastern_Front_(World_War_II)\" class=\"extiw\" title=\"w:Eastern Front (World War II)\">the Eastern Front of World War II</a> (known as the Great Patriotic War in Russia) and posthumously <a href=\"https://en.wikipedia.org/wiki/Rehabilitation_(Soviet)\" class=\"extiw\" title=\"w:Rehabilitation (Soviet)\">rehabilitated</a> victims of Soviet repressions (<a href=\"//commons.wikimedia.org/wiki/Template:PD-Russia\" title=\"Template:PD-Russia\">more information</a>).</div></small>\n</td></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align:center;font-size:x-small;line-height:140%;\"><a href=\"https://creativecommons.org/publicdomain/mark/1.0/deed.en\" class=\"extiw\" title=\"ccorg:publicdomain/mark/1.0/deed.en\">This file has been identified as being free of known restrictions under copyright law, including all related and neighboring rights.</a>\n</td></tr></tbody></table><span class=\"licensetpl_link\" style=\"display:none;\">https://creativecommons.org/publicdomain/mark/1.0/</span><span class=\"licensetpl_short\" style=\"display:none;\">PDM</span><span class=\"licensetpl_long\" style=\"display:none;\">Creative Commons Public Domain Mark 1.0</span><span class=\"licensetpl_link_req\" style=\"display:none;\">false</span><span class=\"licensetpl_attr_req\" style=\"display:none;\">false</span>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 8108675,
+        "ns": 6,
+        "title": "File:Bridge City, Houses at Dead End with Huey P. Long Bridge in distance, 2009.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Bridge_City%2C_Houses_at_Dead_End_with_Huey_P._Long_Bridge_in_distance%2C_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bridge_City,_Houses_at_Dead_End_with_Huey_P._Long_Bridge_in_distance,_2009.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8108675",
+            "sha1": "4d148e0f6a34021235cd5aafeec6ad90255019b5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2009-10-18 02:17:28",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Bridge City, Houses at Dead End with Huey P. Long Bridge in distance, 2009",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon Digital IXUS 60|GFDL-1.2|Huey P. Long Bridge, Jefferson Parish, Louisiana|Self-published work|October 2009 in Jefferson Parish|Fire hydrants in Jefferson Parish, Louisiana|Houses in Bridge City, Louisiana",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Bridge City, Louisiana. Residential architecture, with ramp for Huey P. Long Bridge in background.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-10",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "Photo by <a href=\"//commons.wikimedia.org/wiki/User:Infrogmation\" title=\"User:Infrogmation\">Infrogmation</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Infrogmation of New Orleans",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "You may select the license of your choice.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 9257994,
+        "ns": 6,
+        "title": "File:Part-time ford across the River Deerness below Esh Winning - geograph.org.uk - 146447.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Part-time_ford_across_the_River_Deerness_below_Esh_Winning_-_geograph.org.uk_-_146447.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Part-time_ford_across_the_River_Deerness_below_Esh_Winning_-_geograph.org.uk_-_146447.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9257994",
+            "sha1": "e2adbe5897805c4571099b14dabed4526d1afffb",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-01-31 08:46:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Part-time ford across the River Deerness below Esh Winning - geograph.org.uk - 146447",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Ricoh Caplio R3|Images from Geograph Britain and Ireland|Esh Winning|River Deerness|Information field template with formatting|Fords in County Durham|Images by Oliver Dixon|April 2006 in County Durham|Images from Geograph Britain and Ireland missing SDC coordinates of the point of view",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "54.779200",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-1.671000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Part-time ford. Part-time ford over the River Deerness below Esh Winning. The ford is in the civil parish of Brandon and Byshottles in County Durham. The debris trapped against the parapet on the upstream side shows that the river was in flood the day previously",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-04-03",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/146447\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/3462\">Oliver Dixon</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "Oliver Dixon",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 9331997,
+        "ns": 6,
+        "title": "File:The Old Police Station, High Street - geograph.org.uk - 202297.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/The_Old_Police_Station%2C_High_Street_-_geograph.org.uk_-_202297.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:The_Old_Police_Station,_High_Street_-_geograph.org.uk_-_202297.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=9331997",
+            "sha1": "aa9c5c6d323bbccd6506ccfaa77355ff43b5ed15",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-01-31 21:52:24",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "The Old Police Station, High Street - geograph.org.uk - 202297",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Police Station, Barton-upon-Humber|Slate roofs|Images from Geograph Britain and Ireland|Information field template with formatting|Railings in Lincolnshire|19th-century architecture in Lincolnshire|Images by David Wright|July 2006 in Lincolnshire|2006 in Barton-upon-Humber|United Kingdom photographs taken on 2006-07-15|Red doors in England|Houses in Barton-upon-Humber",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "53.684700",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.438000",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The Old Police Station, High Street. Pevsner says \"..the plain POLICE STATION of 1847 by the County Surveyor, J.S.Padley, originally symmetrical and all single-storeyed.\" For another Police Station by J.S.Padley at Winterton see <a href=\"//commons.wikimedia.org/wiki/File:The_Old_Police_Station,_Winterton_-_geograph.org.uk_-_201953.jpg\" title=\"File:The Old Police Station, Winterton - geograph.org.uk - 201953.jpg\">201953</a>. For a picture of the new Police Station see <a href=\"//commons.wikimedia.org/wiki/File:Police_Station,_Barton-Upon-Humber_-_geograph.org.uk_-_184458.jpg\" title=\"File:Police Station, Barton-Upon-Humber - geograph.org.uk - 184458.jpg\">184458</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2006-07-15",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/202297\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/1782\">David Wright</a>",
+                "source": "commons-desc-page"
+              },
+              "Attribution": {
+                "value": "David Wright",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 11021288,
+        "ns": 6,
+        "title": "File:Mosaic on City gym Vodova in Brno, Brno-City District.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Mosaic_on_City_gym_Vodova_in_Brno%2C_Brno-City_District.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Mosaic_on_City_gym_Vodova_in_Brno,_Brno-City_District.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=11021288",
+            "sha1": "e24fc4ce0d1768069fe8d76193f486db476bb6c8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2010-07-27 21:29:39",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Mosaic on City gym Vodova in Brno, Brno-City District",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 1000D|Self-published work|Files with coordinates missing SDC location of creation|Mosaics in Brno|Starez aréna Vodova",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "49.227050",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "16.585064",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Mosaic on City gym Vodova in Brno.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-04-28",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"http://jiri-sedlacek.cz\">Jiří Sedláček - Frettie</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 15872281,
+        "ns": 6,
+        "title": "File:Swimming Pool R02.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Swimming_Pool_R02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Swimming_Pool_R02.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15872281",
+            "sha1": "3a93af3a5bcc09964ef64932d5068e038f10aca8",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2011-07-22 21:16:33",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Swimming Pool R02",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Nikon D90|Outdoor swimming pools|Self-published work|Images by MJJR|Water reflections in Egypt|Files with coordinates missing SDC location of creation|Buildings in Hurghada",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "27.319083",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "33.709297",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Swimming Pool (TTC Sunny Beach, Hurghada, Egypt)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-03-24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Marc Ryckaert (<a href=\"//commons.wikimedia.org/wiki/User:MJJR\" title=\"User:MJJR\">MJJR</a>)",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Please attribute the author/ Naamsvermelding vereist",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 16915626,
+        "ns": 6,
+        "title": "File:GROUP OF MINERS WAITING TO GO TO WORK ON THE 4 P.M. TO MIDNIGHT SHIFT AT THE VIRGINIA-POCAHONTAS COAL COMPANY MINE ^4... - NARA - 556348.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/GROUP_OF_MINERS_WAITING_TO_GO_TO_WORK_ON_THE_4_P.M._TO_MIDNIGHT_SHIFT_AT_THE_VIRGINIA-POCAHONTAS_COAL_COMPANY_MINE_%5E4..._-_NARA_-_556348.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:GROUP_OF_MINERS_WAITING_TO_GO_TO_WORK_ON_THE_4_P.M._TO_MIDNIGHT_SHIFT_AT_THE_VIRGINIA-POCAHONTAS_COAL_COMPANY_MINE_%5E4..._-_NARA_-_556348.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=16915626",
+            "sha1": "955600488fbe57c8e4511223ccdbddaa1ea86da7",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2015-08-09 00:09:16",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\n<i>GROUP OF MINERS WAITING TO GO TO WORK ON THE 4 P.M. TO MIDNIGHT SHIFT AT THE VIRGINIA-POCAHONTAS COAL COMPANY MINE #4 NEAR RICHLANDS, VIRGINIA. THEY ARE THE SECOND OF TWO WORK SHIFTS WHICH ARE INVOLVED IN DIGGING THE COAL AND BRINGING IT OUT OF THE MINES THE MIDNIGHT TO MORNING OR \"HOOT-OWL\" SHIFT WORKS ON CLEANUP OPERATIONS</i></div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Richlands, Virginia|Images from the National Archives and Records Administration|Media contributed by the National Archives and Records Administration|PD US EPA|Artworks without Wikidata item|Coal mining in Virginia|US National Archives series: DOCUMERICA: The Environmental Protection Agency's Program to Photographically Document Subjects of Environmental Concern, compiled 1972 - 1977|NARA images of Virginia|April 1974 in Virginia|Shift work|Coal miners from the United States|DOCUMERICA photographs by Jack Corn",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "37.083",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-81.783",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://www.wikidata.org/wiki/Q107532904\" class=\"extiw\" title=\"d:Q107532904\"><span title=\"American photographer\">Jack Corn</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "April 1974<div style=\"display: none;\">date QS:P571,+1974-04-00T00:00:00Z/10</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/U.S._National_Archives_and_Records_Administration\" class=\"extiw\" title=\"en:U.S. National Archives and Records Administration\">U.S. National Archives and Records Administration</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 18245815,
+        "ns": 6,
+        "title": "File:Auschwitz-Work Set Free-new.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Auschwitz-Work_Set_Free-new.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Auschwitz-Work_Set_Free-new.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=18245815",
+            "sha1": "c7eddf41ba2aafa4a7cbb77457566f590911df15",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-02-01 15:28:03",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Auschwitz-Work Set Free-new",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Sony NEX-3|Arbeit macht frei in Auschwitz I|Self-published work|Files with coordinates missing SDC location of creation|Poland photographs taken on 2012-01-30|January 2012 in Lesser Poland Voivodeship",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "valued",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.027497",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "19.203200",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The main entrance to the German death camp Auschwitz I near the town of Oświęcim in Poland. Above the gate is the infamous motto, <i>Arbeit macht frei</i> (\"work makes free\").",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-01-30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Bibi595&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Bibi595 (page does not exist)\">Bibi595</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 19793855,
+        "ns": 6,
+        "title": "File:Thed Björk interview 2012.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Thed_Bj%C3%B6rk_interview_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Thed_Bj%C3%B6rk_interview_2012.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=19793855",
+            "sha1": "9bee8d9ea062d62a90675fec13fd162060484380",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2012-06-06 20:32:26",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Thed Björk interview 2012",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 600D|Viasat|Thed Björk|Self-published work|2012 Nationaldagsracet|Files by User:Green Yoshi|Månadens bästa bild|Interviews in Sweden|Microphones with advertisements|Interviews in sport|Peltor communication headsets",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Lars G Nilsson interviews Thed Björk for Viasat Motor at Anderstorp Raceway in 2012.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-06-02",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Green_Yoshi\" title=\"User:Green Yoshi\">Green Yoshi</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 24746648,
+        "ns": 6,
+        "title": "File:Education - Children Work - Kosovo.JPG",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Education_-_Children_Work_-_Kosovo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Education_-_Children_Work_-_Kosovo.JPG",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24746648",
+            "sha1": "9e6e2e83851176db72b59448bc791e93656c6d3e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-02-19 14:00:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Education - Children Work - Kosovo",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Education in Kosovo|Taken with Canon EOS 350D|Art of Kosovo|Culture of Pristina|Self-published work|Wiki Academy Kosovo Photo Contest",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Education - Children Work - Kosovo",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-04-28 10:36:53",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Shkumbins&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Shkumbins (page does not exist)\">Shkumbin Saneja</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 24832964,
+        "ns": 6,
+        "title": "File:England - City of London Police (bell) (6421762869).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/England_-_City_of_London_Police_%28bell%29_%286421762869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:England_-_City_of_London_Police_(bell)_(6421762869).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=24832964",
+            "sha1": "0353b28e9853f6139252430317ef4ca6a36f159a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-02-23 23:35:30",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "England - City of London Police (bell) (6421762869)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "City of London Police|Flickr images reviewed by File Upload Bot (Magnus Manske)|Flickr images missing SDC creator|Police patches of England",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Part of my collection of UK Police insignia",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-11-29 00:22",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/conner395/6421762869/\">England - City of London Police (bell)</a>\n</p>\n<ul><li>Uploaded by <a href=\"//commons.wikimedia.org/wiki/User:Indeedous\" title=\"User:Indeedous\">indeedous</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/91779914@N00\">Dave Conner</a> from Inverness, Scotland",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 25997924,
+        "ns": 6,
+        "title": "File:Thermal work limit application in the field.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Thermal_work_limit_application_in_the_field.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Thermal_work_limit_application_in_the_field.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=25997924",
+            "sha1": "e2a10f69b159f334eab07a8987983c52ef27350e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-05-17 01:08:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Thermal work limit application in the field",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "GFDL|Taken with iPhone 4S|Measuring instruments (temperature)|License migration redundant|Thermal work limit|Self-published work|Uploaded with en.wp upload wizard",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The TWL machine used in the field",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2012-09-15",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Yuchinglu?action=edit&amp;redlink=1\" title=\"User:Yuchinglu (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Yuchinglu\"]}}'>Yuchinglu</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 29161401,
+        "ns": 6,
+        "title": "File:City of Falls Church Police Department (3407859353).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/City_of_Falls_Church_Police_Department_%283407859353%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:City_of_Falls_Church_Police_Department_(3407859353).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=29161401",
+            "sha1": "550db221fbec8d23ac9c5a592cd9e9376862a0a2",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2013-10-24 05:04:15",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "City of Falls Church Police Department (3407859353)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Falls Church, Virginia|Taken with Nikon Coolpix P6000|Flickr images reviewed by File Upload Bot (Magnus Manske)|Files with coordinates missing SDC location of creation|Photographs by Carl Clifford|Falls Church Police Department|Municipal police automobiles of the United States|Ford Crown Victoria Police Interceptor (1998) in police service",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "38.875497",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-77.152689",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<p>The City of Falls Church Police Department was formed in 1948. It has 32 sworn law enforcement officers and is divided into five functional components: Animal Control, Canine Patrol, Investigations, Community Services, and Uniform Patrol. The Police Department also provides a School Resource Officer at Mary Ellen Henderson Middle School and George Mason High School.\n</p>\n<a rel=\"nofollow\" class=\"external text\" href=\"http://www.fallschurchva.gov/Content/Government/Departments/PublicSafety/PoliceDept/PoliceMain.aspx?&amp;cnlid=673\">www.fallschurchva.gov/Content/Government/Departments/Publ...</a>",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2009-04-02 17:11",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/nostri-imago/3407859353/\">City of Falls Church Police Department</a>\n</p>\n<ul><li>Uploaded by <a href=\"//commons.wikimedia.org/wiki/User:AlbertHerring\" class=\"mw-redirect\" title=\"User:AlbertHerring\">AlbertHerring</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/28567825@N03\">Cliff</a> from Arlington, Virginia, USA",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 35868017,
+        "ns": 6,
+        "title": "File:Soldier on 'Sick Leave'. Wellcome L0004853.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Soldier_on_%27Sick_Leave%27._Wellcome_L0004853.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Soldier_on_%27Sick_Leave%27._Wellcome_L0004853.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=35868017",
+            "sha1": "f1c19efaf561dce79213d6d6c6c713ec4ced1150",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2014-10-03 04:30:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "<div class=\"fn\">\nSoldier on 'Sick Leave'.</div>",
+                "source": "commons-desc-page"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "People associated with the American Civil War|Files with no machine-readable author|Malingering|Images uploaded by Fæ|Artworks without Wikidata item|Bars in New York City|Cartoons of the United Kingdom|English text|Files from Wellcome Images|Files from Wellcome Images missing from wellcomecollection.org|American Civil War cartoons",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<div class=\"description\">\n<p>Soldier on 'Sick Leave'.\n</p>\n<p>General Collections</p>\nKeywords: Naval and Military</div>",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<p><a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/obf_images/05/3d/8909cb3b9f6a8e625e695d2dee48.jpg\">https://wellcomeimages.org/indexplus/obf_images/05/3d/8909cb3b9f6a8e625e695d2dee48.jpg</a>\n</p>\n<ul><li>Gallery: <a rel=\"nofollow\" class=\"external free\" href=\"https://wellcomeimages.org/indexplus/image/L0004853.html\">https://wellcomeimages.org/indexplus/image/L0004853.html</a></li></ul>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 47538474,
+        "ns": 6,
+        "title": "File:Amberley Working Museum- Industrial Engines Day (5) (geograph 2119837).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Amberley_Working_Museum-_Industrial_Engines_Day_%285%29_%28geograph_2119837%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Amberley_Working_Museum-_Industrial_Engines_Day_(5)_(geograph_2119837).jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=47538474",
+            "sha1": "2f9c14d81d2bfce32235ab46b5b0da7b172a424f",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2016-03-15 08:08:58",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Amberley Working Museum- Industrial Engines Day (5) (geograph 2119837)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Simplex locomotives|Images from Geograph Britain and Ireland|Information field template with formatting|Images by Basher Eyre|Amberley Working Museum diesel locomotives",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "50.900894",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-0.535347",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Amberley Working Museum- Industrial Engines' Day (5)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2010-10-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "From <a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/photo/2119837\">geograph.org.uk</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.geograph.org.uk/profile/17822\">Basher Eyre</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Creative Commons Attribution Share-alike license 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Attribution": {
+                "value": "Basher Eyre",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 57597396,
+        "ns": 6,
+        "title": "File:City Centre (Manchester City Council ward).png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/City_Centre_%28Manchester_City_Council_ward%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:City_Centre_(Manchester_City_Council_ward).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=57597396",
+            "sha1": "9240d742980855e056fcaa923adc6bb85ebda308",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-04-01 01:18:04",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "City Centre (Manchester City Council ward)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Maps of the City of Manchester|Locator maps of wards in the United Kingdom",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Map showing location of City Centre ward within Manchester City Council.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-04-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:The_Vintage_Feminist\" title=\"User:The Vintage Feminist\">The Vintage Feminist</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 58191168,
+        "ns": 6,
+        "title": "File:City of London Cemetery and Crematorium ~ Café patio garden red umbrella.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/City_of_London_Cemetery_and_Crematorium_~_Caf%C3%A9_patio_garden_red_umbrella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:City_of_London_Cemetery_and_Crematorium_~_Caf%C3%A9_patio_garden_red_umbrella.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=58191168",
+            "sha1": "5044ef20795de9f3716349fc2b1d341654bfac9e",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-04-20 19:13:14",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "City of London Cemetery and Crematorium ~ Café patio garden red umbrella",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Taken with Canon EOS 6D and Canon EF 24-105mm F4L IS USM|Photographs with aspect ratio of 5:4|Self-published work|Spring flowers|Chimneys in London|Flowers in London|2017 in the London Borough of Newham|Trees in the London Borough of Newham|Trees in the Northern Hemisphere in April|Flora of London in April|Open air restaurant and café areas in the United Kingdom|Malus in the United Kingdom|Apple trees in England|April 2017 in London|Flora in the City of London Cemetery|White flowers in London|London photographs taken on 2017-04-09|Red umbrellas in London|Acabashi photos: City of London Cemetery and Crematorium|Files with coordinates missing SDC location of creation (51° N, 0° E)|Patios in England|London photos taken with Canon EOS 6D|Flowering branches|Trees in flower in London|Café of the City of London Cemetery and Crematorium|Trees and sky in London|Spring in the London Borough of Newham|Patio umbrellas in London|Malus in the Northern Hemisphere in April 2017",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "51.557887",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "0.044880",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Red patio umbrella, apple blossom, and southeast face of the café <a href=\"https://en.wikipedia.org/wiki/Al_fresco_dining\" class=\"extiw\" title=\"en:Al fresco dining\">al fresco</a> area of the <a href=\"https://en.wikipedia.org/wiki/City_of_London_Cemetery_and_Crematorium\" class=\"extiw\" title=\"en:City of London Cemetery and Crematorium\">City of London Cemetery</a>, Aldersbrook Road, <a href=\"https://en.wikipedia.org/wiki/London_Borough_of_Newham\" class=\"extiw\" title=\"en:London Borough of Newham\">Newham</a>, England.<br><b>Camera</b>: <a href=\"https://en.wikipedia.org/wiki/Canon_EOS_6D\" class=\"extiw\" title=\"w:Canon EOS 6D\">Canon EOS 6D</a> with <a href=\"https://en.wikipedia.org/wiki/Canon_EF_24%E2%80%93105mm_lens\" class=\"extiw\" title=\"w:Canon EF 24–105mm lens\">Canon EF 24-105mm F4L IS USM</a> lens.<br><b>Software</b>: RAW file lens-corrected, optimized and converted with <a href=\"https://en.wikipedia.org/wiki/DxO_OpticsPro\" class=\"extiw\" title=\"en:DxO OpticsPro\">DxO OpticsPro 11 Elite</a>, and further optimized with <a href=\"https://en.wikipedia.org/wiki/Adobe_Photoshop#CS2\" class=\"extiw\" title=\"en:Adobe Photoshop\">Adobe Photoshop CS2</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-04-09 14:11:46",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "<div style=\"clear:both; border:1px solid #999999; margin:1em 0.8em; padding:0.5em 0.8em; background-color: var(--background-color-base, #fff); color: inherit; font-size: 100%;\">\n<p><span class=\"mw-default-size\" typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:CCBYSA_yellow.png\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/2/29/CCBYSA_yellow.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled\" decoding=\"async\" loading=\"lazy\" width=\"87\" height=\"35\" class=\"mw-file-element\" data-file-width=\"87\" data-file-height=\"35\"></a></span>\n</p><p>Permission is given to reuse this file under conditions stipulated by <a href=\"https://en.wikipedia.org/wiki/Creative_Commons\" class=\"extiw\" title=\"en:Creative Commons\">Creative Commons</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">Attribution-ShareAlike 4.0 International</a> licensing. Please note that although this file is <a href=\"//commons.wikimedia.org/wiki/Commons:Licensing\" title=\"Commons:Licensing\">freely licenced</a> it is <b>not in the <a href=\"https://en.wikipedia.org/wiki/Public_domain\" class=\"extiw\" title=\"en:Public domain\">public domain</a></b>, and might have specific <b>exclusion</b> for use in <b>social media</b>.\n</p><p>Before download and reuse, please consult the Wikimedia page <a href=\"//commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia\" title=\"Commons:Reusing content outside Wikimedia\">Reusing content outside Wikimedia</a>. Attribution <b>must</b> be given for republishing this image in <b>any</b> media, and requires the name of the creator (<a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>), and a link to the content here if web based, or written accreditation if not web based. If you change, manipulate or add to any resolution of the file, or use the file or parts of it within other works, on publication in any media you <b>must still</b> credit the creator here as described above for this original image used, and must detail the changes you made. In all cases you must also add follow-on <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.en\">Attribution-ShareAlike 4.0 International</a> copyright license and disclaimer notices. You must state that your variation is freely available under this same level Creative Commons license, and that any follow-on publishing by others, with or without their further changes as above, must add the same licensing statement, and attribution referral to the original image here.\n</p><p><b>Put simply</b>, you must not re-publish this file without attribution and Creative Commons license, whether or not you have built on it, or with it, and you must not insist on your own copyright notification stopping others from freely using it or your variation or composite.\n</p><p><b>Online attribution</b>: Image © <a href=\"//commons.wikimedia.org/wiki/User:Acabashi\" title=\"User:Acabashi\">Acabashi</a>; <a rel=\"nofollow\" class=\"external text\" href=\"https://creativecommons.org/licenses/by/4.0/legalcode\">Creative Commons CC-BY-SA 4.0</a>; Source: <a href=\"//commons.wikimedia.org/wiki/Main_Page\" title=\"Main Page\">Wikimedia Commons</a>\n</p><p><b>Print attribution</b>: Image © Acabashi, Creative Commons CC-BY-SA 4.0, Wikimedia Commons\n</p>\n</div>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 58275054,
+        "ns": 6,
+        "title": "File:Nokia Networks Munich Office, April 2017 -02.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Nokia_Networks_Munich_Office%2C_April_2017_-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Nokia_Networks_Munich_Office,_April_2017_-02.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=58275054",
+            "sha1": "977bcb268b89469d49cef677e14ed97422922d9a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-04-28 09:09:32",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Nokia Networks Munich Office, April 2017 -02",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Germany photographs taken on 2017-04-14|Worm's-eye view of buildings in Germany|Nokia Networks|Buildings in Obergiesing|Self-published work|Featured Pictures by Martin Falbisoner|Featured pictures of Munich|Files with coordinates missing SDC location of creation (48° N, 11° E)|Werinherstraße (München)",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|valued|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "48.115356",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "11.597050",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "<a href=\"https://en.wikipedia.org/wiki/Nokia_Networks\" class=\"extiw\" title=\"en:Nokia Networks\">Nokia Networks</a>, <a href=\"https://en.wikipedia.org/wiki/Munich\" class=\"extiw\" title=\"en:Munich\">Munich</a> office: <a href=\"https://en.wikipedia.org/wiki/Worm%27s-eye_view\" class=\"extiw\" title=\"en:Worm's-eye view\">Worm's-eye view</a>.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-04-14 16:24:30",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi>Martin Falbisoner</bdi>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 61974471,
+        "ns": 6,
+        "title": "File:Québec city at night, view from Lévis city.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Qu%C3%A9bec_city_at_night%2C_view_from_L%C3%A9vis_city.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Qu%C3%A9bec_city_at_night,_view_from_L%C3%A9vis_city.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=61974471",
+            "sha1": "1ee06b09127f64dd6a24eecbcc57ab66a53b14d6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-11-29 01:48:12",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Québec city at night, view from Lévis city",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Views of Quebec City from Lévis|Images with annotations|Self-published work|Featured pictures by User:Wilfredor|FoP-Canada|Images from Wiki Loves Monuments 2017|Featured pictures of cityscapes|Heritage properties in Canada with known IDs|Files with coordinates missing SDC location of creation|Images from Wiki Loves Monuments 2017 in Canada|Canada photographs taken on 2017-08-26|Files with source materials at Commons Archive|Images from Wiki Loves Monuments missing SDC depicts|Images from Wiki Loves Monuments missing SDC location of creation|Heritage properties in Canada missing SDC location of creation|Heritage properties in Canada missing SDC depicts|Skylines of Quebec City|Featured pictures of Quebec City|August 2017 in Quebec City|Château Frontenac at night|Saint Lawrence River in Quebec City|Quebec City night skylines|Skylines by Wilfredor|Photographs of Château Frontenac by User:Wilfredor|Featured pictures from Wiki Loves Monuments Canada 2017|Featured pictures of Canada by User:Wilfredor|Featured pictures of Château Frontenac by User:Wilfredor|Photographs of Quebec City by Wilfredor",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "quality|featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "46.811811",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-71.187781",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Québec city at night, view from Lévis city",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-08-26 20:10:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span><div><figure class=\"mw-halign-left\" typeof=\"mw:File\"><span><img resource=\"https://commons.wikimedia.org/wiki/File:Commons_Archive_icon.svg\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Commons_Archive_icon.svg/40px-Commons_Archive_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Commons_Archive_icon.svg/120px-Commons_Archive_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"44\" data-file-height=\"54\" data-file-type=\"drawing\" height=\"49\" width=\"40\" class=\"mw-file-element\"></span><figcaption></figcaption></figure>\n<p>Source materials for this file are available from Commons Archive:<br>\n<a rel=\"mw:ExtLink nofollow\" href=\"https://archive.org/details/wiki-commonsarchive\" class=\"external free\">https://archive.org/details/wiki-commonsarchive</a></p>\n</div>\n<span class=\"mw-empty-elt\"><link rel=\"mw:PageProp/Category\" href=\"./Category:Files_with_source_materials_at_Commons_Archive\"></span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Wilfredor\" title=\"User:Wilfredor\" class=\"mw-redirect\">Wilfredor</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 63213514,
+        "ns": 6,
+        "title": "File:Full Time Sports 2017.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Full_Time_Sports_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Full_Time_Sports_2017.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=63213514",
+            "sha1": "cf329a813261b477d79ac2af7794bd92990e5352",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-10-06 13:45:52",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Full Time Sports 2017",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Full Time Sports|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Time Full Time Localizado em Vinhedo, SP",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-09-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Natidcosta&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Natidcosta (page does not exist)\">Natidcosta</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 64682718,
+        "ns": 6,
+        "title": "File:WOW Video Production - Work Experience Student London.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/WOW_Video_Production_-_Work_Experience_Student_London.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:WOW_Video_Production_-_Work_Experience_Student_London.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=64682718",
+            "sha1": "d424be7db5a47a9f13daab4f57a69f678977be7d",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2017-12-08 18:04:36",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "WOW Video Production - Work Experience Student London",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Film sets|Video productions|Self-published work|Unidentified marketing|Marketing personnel",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Work experience student (Right) on set, filming at Tower 42 in City of London",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-12-08",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:MichaelLawson&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:MichaelLawson (page does not exist)\">WOW Video Production</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 66039068,
+        "ns": 6,
+        "title": "File:European countries by hourly minimum wage in USD.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/European_countries_by_hourly_minimum_wage_in_USD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:European_countries_by_hourly_minimum_wage_in_USD.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=66039068",
+            "sha1": "bc98b6dbf309e61a76a4b26ed8a5c774103643a6",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-08-06 11:53:59",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "European countries by hourly minimum wage in USD",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Self-published work|Economic maps of Europe",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "European countries by hourly minimum wage in USD",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-02-01",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:HDC672?action=edit&amp;redlink=1\" title=\"User:HDC672 (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:HDC672\"]}}'>HDC672</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 74800599,
+        "ns": 6,
+        "title": "File:FukuokaCity Museum 2018.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/FukuokaCity_Museum_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:FukuokaCity_Museum_2018.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=74800599",
+            "sha1": "d40a352d37ed76b460b381c0aa7e7f63dfa6d263",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2018-12-02 12:17:51",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "FukuokaCity Museum 2018",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Fukuoka City Museum|Self-published work|Fukuoka City Museum Reflecting Pool",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "福岡市博物館",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2018-11-24 13:35:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nkmr844\" title=\"User:Nkmr844\">Nkmr844</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 81359803,
+        "ns": 6,
+        "title": "File:Chinese restaurant - Belize City 2015.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Chinese_restaurant_-_Belize_City_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chinese_restaurant_-_Belize_City_2015.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81359803",
+            "sha1": "8603ccd7c7d2917e44f67bc89ad7a616b6d63735",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-08-15 20:39:44",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Chinese restaurant - Belize City 2015",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Restaurants in Belize City|2015 in Belize City|Flickr images reviewed by FlickreviewR 2|Signs in Belize City|North Front Street, Belize City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Belize City, Belize.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2015-12-23 13:29:52",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/ironypoisoning/24174447772/\">https://www.flickr.com/photos/ironypoisoning/24174447772/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "ironypoisoning",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 94910006,
+        "ns": 6,
+        "title": "File:Warwick City Park playground beach.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Warwick_City_Park_playground_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Warwick_City_Park_playground_beach.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=94910006",
+            "sha1": "753512d234ac01787f9c5ef17df360e8e0f12818",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2020-10-10 02:46:11",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Warwick City Park playground beach",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Self-published work|Playgrounds in Rhode Island|Files with coordinates missing SDC location of creation|October 2020 in Rhode Island|Parks in 2020|Warwick City Park",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "41.689288",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "-71.408510",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Warwick City Park playground beach",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2020-10-09 16:32:55",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:ZeLonewolf&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:ZeLonewolf (page does not exist)\">ZeLonewolf</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 112723106,
+        "ns": 6,
+        "title": "File:Work Meeting.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Work_Meeting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Work_Meeting.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=112723106",
+            "sha1": "cfd2db84615032f944deed89fea6d2935d1340e5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2021-11-23 00:53:46",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Work Meeting",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Meetings|Flickr images missing SDC source of file|Flickr images reviewed by FlickreviewR 2",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "One woman and three men sitting around a table in a conference meeting",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2017-01-24",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/141761303@N08/36772573452/in/photolist-Y2t3X7-5HjzpN-ohVjYj-5HjzsW-5HfgND-5Hjztm-5HfgMB-5HjzoA-4rFX1-kVPuaB-2jvJMMH-2mwVt51-2k6myRN-8UtGf-7HiuBB-EVVUM-EVVEm-2kMJ3uR-4mgJnP-7h1NK5-JRpPaj-7n2aH-5gs8Dr-4sfi1V-8ZXezJ-6E544a-5zY8Qo-77Wfkv-qK2vh-2mc9SH3-e1RPyK-DvnPyy-8spcog-cE5nzG-22PjK5Y-2jqQRXE-5Lthrb-biBCL8-7xvzn-GGmYsV-cKh8PG-qM5LBH-6fEhXk-7bgUNf-99sMQ3-xAmFK-g21cY-8XT5Pn-fMX7Cx-ReCb4W\">https://www.flickr.com/photos/141761303@N08/36772573452/in/photolist-Y2t3X7-5HjzpN-ohVjYj-5HjzsW-5HfgND-5Hjztm-5HfgMB-5HjzoA-4rFX1-kVPuaB-2jvJMMH-2mwVt51-2k6myRN-8UtGf-7HiuBB-EVVUM-EVVEm-2kMJ3uR-4mgJnP-7h1NK5-JRpPaj-7n2aH-5gs8Dr-4sfi1V-8ZXezJ-6E544a-5zY8Qo-77Wfkv-qK2vh-2mc9SH3-e1RPyK-DvnPyy-8spcog-cE5nzG-22PjK5Y-2jqQRXE-5Lthrb-biBCL8-7xvzn-GGmYsV-cKh8PG-qM5LBH-6fEhXk-7bgUNf-99sMQ3-xAmFK-g21cY-8XT5Pn-fMX7Cx-ReCb4W</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Amtec Photos",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 2.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 2.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/2.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-2.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 117523991,
+        "ns": 6,
+        "title": "File:New York City Greenwich Village fire escapes.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/New_York_City_Greenwich_Village_fire_escapes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:New_York_City_Greenwich_Village_fire_escapes.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=117523991",
+            "sha1": "e918dc75b3292028d2ee3704fb777bfb573c4457",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-04-29 21:56:05",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "New York City Greenwich Village fire escapes",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Greenwich Village Historic District|Self-published work|Fire escapes in New York City|2008 in Greenwich Village, Manhattan|Buildings in Greenwich Village, Manhattan|November 2008 in Manhattan, New York City",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Fire escape in New York City in the historic district of Greenwich Village in Manhattan. A fire escape is a special kind of emergency exit, often outside of a building in USA and separate from the main areas of the building.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2008-11-27 14:32:21",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Marc-Lautenbacher\" title=\"User:Marc-Lautenbacher\">Marc-Lautenbacher</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 121722790,
+        "ns": 6,
+        "title": "File:Hello-Work Fukuoka-Nishi Public Employment Security Office Meinohama-Eki-Minami-3-chōme 20220814.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Hello-Work_Fukuoka-Nishi_Public_Employment_Security_Office_Meinohama-Eki-Minami-3-ch%C5%8Dme_20220814.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hello-Work_Fukuoka-Nishi_Public_Employment_Security_Office_Meinohama-Eki-Minami-3-ch%C5%8Dme_20220814.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=121722790",
+            "sha1": "1c2a2b6ba0ddcadc6f76d27e207e0758031de2e5",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2022-08-14 05:15:02",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Hello-Work Fukuoka-Nishi Public Employment Security Office Meinohama-Eki-Minami-3-chōme 20220814",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Meinohama, Fukuoka|Self-published work|Public Employment Security Offices in Fukuoka prefecture",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Hello-Work Fukuoka-Nishi (Public Employment Security Office, Meinohama-Eki-Minami-3-chōme, Nishi-ku, Fukuoka City)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2022-08-04 18:11:16",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Hirho\" title=\"User:Hirho\">Hirho</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 135611988,
+        "ns": 6,
+        "title": "File:Chief of Staff of the Army Relinquishment of Responsibility and Sergeant Major of the Army Change of Responsibility Ceremony at Joint Base Myer-Henderson, Va., Aug. 4, 2023 07.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Chief_of_Staff_of_the_Army_Relinquishment_of_Responsibility_and_Sergeant_Major_of_the_Army_Change_of_Responsibility_Ceremony_at_Joint_Base_Myer-Henderson%2C_Va.%2C_Aug._4%2C_2023_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Chief_of_Staff_of_the_Army_Relinquishment_of_Responsibility_and_Sergeant_Major_of_the_Army_Change_of_Responsibility_Ceremony_at_Joint_Base_Myer-Henderson,_Va.,_Aug._4,_2023_07.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=135611988",
+            "sha1": "c29b1c551d7150289c9ed97e503860b63dc74f03",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2023-08-06 08:49:07",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Chief of Staff of the Army Relinquishment of Responsibility and Sergeant Major of the Army Change of Responsibility Ceremony at Joint Base Myer-Henderson, Va., Aug. 4, 2023 07",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "PD US Military|Randy A. George|James C. McConville|Christine E. Wormuth|Michael R. Weimer|Flickr images missing SDC inception|Flickr images reviewed by FlickreviewR 2|Change of responsibility ceremonies of the United States military|Lloyd Austin in August 2023|2023 Chief of Staff of the Army and Sergeant Major of the Army change of responsibility",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Secretary of Defense Lloyd J. Austin III and Secretary of the Army Christine Wormuth along with senior army officials attend the Chief of Staff of the Army Relinquishment of Responsibility and Sergeant Major of the Army Change of Responsibility Ceremony at Joint Base Myer-Henderson, Va., Aug. 4, 2023 (DoD photo by U.S. Air Force Senior Airman Cesar J. Navarro)",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2023-08-04 11:09:43",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/68842444@N03/53093078712/\">https://www.flickr.com/photos/68842444@N03/53093078712/</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "U.S. Secretary of Defense",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 148437123,
+        "ns": 6,
+        "title": "File:Kalev Sports Hall in 2024.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Kalev_Sports_Hall_in_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kalev_Sports_Hall_in_2024.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=148437123",
+            "sha1": "eb1cb16a0acd3f74f2da44675fb33b9500737c60",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-05-17 10:27:34",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Kalev Sports Hall in 2024",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "CC-Zero|Kalev Sports Hall|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "This is the photo of Kalev Sports Hall in Tallinn.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2024-05-17",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Squad0273&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Squad0273 (page does not exist)\">Squad0273</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Zero, Public Domain Dedication",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 154422598,
+        "ns": 6,
+        "title": "File:Compare-sources-working-hours-France.png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Compare-sources-working-hours-France.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Compare-sources-working-hours-France.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=154422598",
+            "sha1": "0f7781c3d29d2dabc82fcf34cf35e16ee9dd641c",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2024-10-27 12:39:56",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Compare-sources-working-hours-France",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Working time|Statistics of France|Charts showing data through 2019|English-language statistical charts|Our World in Data graphics about time use",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "In the chart, you can compare annual working hours data from these four datasets. The data is shown one country at a time — with France currently selected. You can look at other countries by clicking ‘Change country or region’ on the chart, but note that not all sources publish data for every country.\n<p>As expected, there are differences between the sources. In 2000, for instance, Bick et al. estimates 1,642 hours of work for French workers, OECD estimates 1,558 hours, PWT estimates 1,550 hours, and Huberman and Minns estimates 1,443 hours. These differences are due to the use of different underlying sources and methods. Bick et al. use only labor force surveys; the others all rely primarily on national accounts data, but nonetheless still have differences.\n</p>\nIt’s also clear that these differences between sources are quite small when compared to the huge changes over the long run. The difference between sources in 2000 is at most 200 hours, while the historical data from Huberman and Minns shows that from 1870 to 2000 annual working hours in France decreased by 1,725 hours (from 3,168 to 1,443 hours).",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2021-01-06",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://ourworldindata.org/measure-working-hours\">https://ourworldindata.org/measure-working-hours</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "Charlie Giattino and Esteban Ortiz-Ospina",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "pageid": 176001606,
+        "ns": 6,
+        "title": "File:Internship (3).png",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Internship_%283%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Internship_(3).png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=176001606",
+            "sha1": "c06d07fbf3baf6c31762049e64a2d70cbc0b0e2a",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-10-03 08:13:57",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Internship (3)",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Interns|Self-published work|Files with coordinates missing SDC location of creation",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "GPSLatitude": {
+                "value": "22.747675",
+                "source": "commons-desc-page"
+              },
+              "GPSLongitude": {
+                "value": "75.896197",
+                "source": "commons-desc-page"
+              },
+              "GPSMapDatum": {
+                "value": "WGS-84",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "internship program",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "03/10/2025",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Logical_soft_tech?action=edit&amp;redlink=1\" title=\"User:Logical soft tech (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Logical soft tech\"]}}'>Logical soft tech</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 4.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-4.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
