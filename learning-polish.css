@@ -350,3 +350,26 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
  border-color:#aebef4!important;box-shadow:0 0 0 3px #4d6af312!important;
 }
 @media(prefers-reduced-motion:reduce){button.custom-select,button.custom-select::after{transition:none}}
+
+.quiz-card > .split + .progress-track{margin-top:16px}
+
+/* A compact, tactile menu control with a warm accent. */
+#menu-toggle.hamburger{
+ width:44px;height:44px;flex:0 0 44px;padding:0;border-radius:15px;
+ color:#596cb0;border:1px solid #e0e5f5;
+ background:linear-gradient(145deg,#ffffff 0%,#f6f7ff 58%,#edf0fc 100%);
+ box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 #dfe5f54d,0 5px 14px #6577af14;
+ transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+ -webkit-tap-highlight-color:transparent;
+}
+#menu-toggle .menu-toggle-icon{display:block;flex-shrink:0}
+@media(hover:hover){
+ #menu-toggle.hamburger:hover{
+  border-color:#c8d2f0;transform:translateY(-1px);
+  box-shadow:inset 0 1px 0 #fff,0 8px 18px #6577af20;
+ }
+}
+#menu-toggle.hamburger:active{
+ transform:translateY(1px);box-shadow:inset 0 2px 5px #8495c51a,0 2px 6px #6577af0d;
+}
+@media(prefers-reduced-motion:reduce){#menu-toggle.hamburger{transition:none}}

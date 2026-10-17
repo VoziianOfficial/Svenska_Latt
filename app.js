@@ -30,8 +30,9 @@ function applyAuthState(auth){
  const next=auth.user?{id:auth.user.id,email:auth.user.email,name:auth.user.user_metadata?.display_name||''}:null;
  if((user?.id||null)===(next?.id||null)){user=next;return}
  user=next;state=readLocalState();
- // Discard unfinished exercises from the previous identity.
+ // Restore only exercises belonging to the selected identity.
  quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};
+ restoreQuizSession();
  flash={ids:[],index:0,flipped:false};
  render();
 }
@@ -207,8 +208,8 @@ function changeLanguage(v){
 }
 function dictTextUpdate(input){const start=input.selectionStart||0;dictFilter.text=input.value;dictFilter.limit=42;render();const el=$('#dict-search');if(el){el.focus();try{el.setSelectionRange(start,start)}catch{}}}
 function bindEvents(){document.addEventListener('click',e=>{const b=e.target.closest('button[data-action],button[data-nav]');if(b){e.preventDefault();action(b);return}const card=e.target.closest('.words-grid [data-word-link]');if(card&&!e.target.closest('a,input,select,textarea,button'))navigate('word',card.dataset.wordLink)});document.addEventListener('keydown',e=>{const card=e.target.closest('.words-grid [data-word-link]');if(card&&e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();navigate('word',card.dataset.wordLink)}});document.addEventListener('change',e=>{const el=e.target;if(el.id==='lang-select'||el.id==='profile-lang')changeLanguage(el.value);if(el.id==='profile-level'){state.settings.level=el.value;save();render()}if(el.id==='dict-kind'){dictFilter.kind=el.value;dictFilter.limit=42;render()}if(el.id==='dict-group'){dictFilter.group=el.value;dictFilter.limit=42;render()}if(el.id==='dict-category'){dictFilter.category=el.value;dictFilter.limit=42;render()}if(el.id==='flash-kind'){flashFilter.kind=el.value;createFlashDeck();render()}if(el.id==='flash-group'){flashFilter.group=el.value;createFlashDeck();render()}});
- document.addEventListener('input',e=>{if(e.target.id==='dict-search')dictTextUpdate(e.target);if(e.target.id==='global-search')searchNow(e.target.value)});document.addEventListener('submit',e=>{if(e.target.id==='auth-form'){e.preventDefault();authSubmit(e.target)}if(e.target.id==='quiz-input-form'){e.preventDefault();submitAnswer($('#quiz-text-input')?.value||'')}});
- $('#close-modal').addEventListener('click',closeAuth);$('#modal-backdrop').addEventListener('click',e=>{if(e.target.id==='modal-backdrop')closeAuth()});$('#profile-top').addEventListener('click',()=>navigate('profile'));$('#sidebar-profile').addEventListener('click',()=>navigate('profile'));document.addEventListener('click',e=>{if(!e.target.closest('.topbar-left'))$('#search-results').classList.add('hidden')});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#global-search').focus()}if(e.key==='Escape'){closeAuth();$('#search-results').classList.add('hidden')}if(route==='flashcards'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){if(e.key==='ArrowRight')nextFlash(1);if(e.key==='ArrowLeft')nextFlash(-1);if(e.key===' '){e.preventDefault();flash.flipped=!flash.flipped;render()}}});window.addEventListener('hashchange',()=>{hydrateLocation();render()})}
+ document.addEventListener('input',e=>{if(e.target.id==='quiz-text-input'&&quiz.active&&!quiz.answered){quiz.selected=e.target.value;persistQuizSession()}if(e.target.id==='dict-search')dictTextUpdate(e.target);if(e.target.id==='global-search')searchNow(e.target.value)});document.addEventListener('submit',e=>{if(e.target.id==='auth-form'){e.preventDefault();authSubmit(e.target)}if(e.target.id==='quiz-input-form'){e.preventDefault();submitAnswer($('#quiz-text-input')?.value||'')}});
+ $('#close-modal').addEventListener('click',closeAuth);$('#modal-backdrop').addEventListener('click',e=>{if(e.target.id==='modal-backdrop')closeAuth()});$('#profile-top').addEventListener('click',()=>navigate('profile'));$('#sidebar-profile').addEventListener('click',()=>navigate('profile'));document.addEventListener('click',e=>{if(!e.target.closest('.topbar-left'))$('#search-results').classList.add('hidden')});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#global-search').focus()}if(e.key==='Escape'){closeAuth();$('#search-results').classList.add('hidden')}if(route==='flashcards'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){if(e.key==='ArrowRight')nextFlash(1);if(e.key==='ArrowLeft')nextFlash(-1);if(e.key===' '){e.preventDefault();flash.flipped=!flash.flipped;render()}}});window.addEventListener('hashchange',()=>{hydrateLocation();render()});window.addEventListener('pagehide',persistQuizSession)}
 
 async function boot(){
  try{
@@ -216,6 +217,7 @@ async function boot(){
   if(!wr.ok||!lr.ok||!br.ok)throw Error('Не удалось загрузить учебные файлы');
   WORDS=await wr.json();LESSONS=await lr.json();BOOKS=await br.json();
   state=readLocalState();
+  restoreQuizSession();
   hydrateLocation();bindEvents();render();
   if(window.SVAuth){
    void window.SVProgress?.initialize({onError:message=>toast(message)});
@@ -398,6 +400,79 @@ function renderBook(){const b=BOOKS.find(x=>x.id===routeParam);if(!b)return rend
 function renderAlphabet(){return title('Å Ä Ö · '+t('alphabetHub'),t('alphabetPron'))+`<section class="content-panel"><p class="notice">🇸🇪 ${esc(txt4('Шведский алфавит содержит 29 букв. Слушай название и слово-пример.','The Swedish alphabet has 29 letters. Listen to the letter names and example words.','Svenska alfabetet har 29 bokstäver. Lyssna på bokstavsnamn och exempelord.','Шведський алфавіт має 29 літер. Слухай назви та приклади.'))}</p><div class="alpha-grid">${ALPHABET3.map(([letter,ipa,word,ru])=>`<article class="alpha-card"><div class="alpha-head"><span class="alpha-letter">${esc(letter)}</span><span class="alpha-ipa">${esc(ipa)}</span></div><p><strong lang="sv">${esc(word)}</strong>${locale4()==='ru'?`<small>${esc(ru)}</small>`:''}</p><div class="split"><button class="btn secondary small" data-action="letter-speak" data-letter="${esc(letter)}" aria-label="${esc(t('pronounce'))} ${letter}">🔊 ${esc(letter)}</button><button class="btn ghost small" data-action="speak" data-text="${esc(word)}">▶ ${esc(word)}</button></div></article>`).join('')}</div></section>`}
 function renderHome(){let next=LESSONS.find(l=>!state.completed.includes(l.id)&&l.level===state.settings.level)||LESSONS[0];const actions=[['lessons','📚','pastel-lavender',t('lessons'),LESSONS.length+' '+t('availableLessons')],['topics','🗂️','pastel-mint',t('topics'),topicNames3().length+' '+t('allThemes')],['dictionary','🔎','pastel-peach',t('dictionary'),WORDS.length+' '+t('words')],['practice','🧠','pastel-lavender',t('train'),'14 '+t('chooseMode')],['reviews','🔁','pastel-peach',t('reviews'),t('smartReview')],['videos','🎬','pastel-mint',t('videos'),VIDEOS.length+' '+t('shortVideo')],['books','📖','pastel-peach',t('books'),BOOKS.length+' '+t('reading')],['rules','📜','pastel-lavender',t('rulesHub'),LESSONS.length+' '+t('lessonCount')],['alphabet','🔤','pastel-mint',t('alphabetHub'),'29 '+t('alphabetPron')]];return `<section class="hero"><div class="hero-copy"><span class="eyebrow">🇸🇪 SFI A · B · C · D</span><h1>${esc(t('welcome'))}</h1><p>${esc(t('heroDescription'))}</p><div class="split"><button class="btn white" data-nav="lesson" data-param="${esc(next.id)}">${esc(t('startLearning'))} →</button><button class="btn" data-nav="topics">🗂️ ${esc(t('topics'))}</button></div></div><div class="hero-picture"><div class="hero-illustration">📚</div><span class="hero-orbit orbit-a">🇸🇪</span><span class="hero-orbit orbit-b">💬</span></div></section><section class="stats-grid">${stat('🏆',accountLevel3(),t('accountRank'),'purple')}${stat('🔥',streak(),t('dayStreak'),'orange')}${stat('🧠',state.known.length,t('knownWords'),'mint')}${stat('🎓',state.completed.length,t('lessonCount'),'pink')}</section><div class="home-rank"><div class="split"><b>⭐ ${state.xp||0} XP</b><span>${accountProgress3()}/500 XP</span></div><div class="progress-track"><div class="progress-fill" style="width:${accountProgress3()/5}%"></div></div></div><div class="section-head"><h2>✨ ${esc(t('yourWorkout'))}</h2></div><div class="action-grid action-grid-4">${actions.map(([key,ico,cl,name,sub])=>`<button class="action-card ${cl}" data-nav="${key}"><span class="corner">↗</span><span class="action-emoji">${studioIcon(STUDIO_ACTION_ICON[key])}</span><h3>${esc(name)}</h3><p>${esc(sub)}</p></button>`).join('')}</div><div class="section-head"><h2>${esc(t('allCourses'))}</h2><button class="link-btn" data-nav="lessons">${esc(t('seeAll'))} →</button></div><div class="course-tiles">${'ABCD'.split('').map(courseTile).join('')}</div><div class="section-head"><h2>${esc(t('dayPractice'))}</h2><button class="link-btn" data-nav="profile">${esc(t('seeAll'))} →</button></div><div class="content-panel">${activityStrip()}<p class="info-scope">${esc(user?t('savedAccount'):t('guestNotice'))}</p></div>`}
 function renderPractice(){if(quiz.active)return quiz.finished?renderQuizFinish():renderQuiz();const modes=[['mixed','🎲'],['translation','🌍'],['fillBlank','📝'],['weekdays','🗓️'],['alphabet','🔤'],['months','📆'],['dialogues','💬'],['readText','📖'],['verbForms','⚡'],['articles','🧩'],['listening','🎧'],['sentences','🧱'],['writeWord','✍️'],['fixMistake','🛠️']];return title(t('train'),t('chooseMode'))+`<section class="practice-instructions"><span class="info-illustration">🎯</span><div><h3>${esc(t('lessonQuizTip'))}</h3><p>${esc(t('introPractice'))}</p></div></section><div class="practice-modes">${modes.map(([m,e])=>`<button class="mode-card" data-action="start-mode" data-mode="${m}"><span class="e">${e}</span><b>${esc(t(m))}</b><small>20 ${esc(t('quizDuration'))} · +XP</small></button>`).join('')}</div>`}
+// Ongoing exercises belong to this tab and account, independently of saved learning statistics.
+const quizSessionSnapshots=new WeakMap();
+function quizSessionKey(){return `${localStateKey()}:quiz-v1`}
+function quizQuestionSnapshots(question){
+ if(quizSessionSnapshots.has(question))return quizSessionSnapshots.get(question);
+ const language=state.settings.language,variants={};
+ try{
+  for(const lang of languages){state.settings.language=lang;variants[lang]=JSON.parse(JSON.stringify(question))}
+ }finally{state.settings.language=language}
+ quizSessionSnapshots.set(question,variants);
+ return variants;
+}
+function persistQuizSession(){
+ try{
+  if(!quiz.active){sessionStorage.removeItem(quizSessionKey());return}
+  const questions=quiz.questions.map(quizQuestionSnapshots);
+  sessionStorage.setItem(quizSessionKey(),JSON.stringify({version:1,language:locale4(),quiz:{...quiz,questions}}));
+ }catch(_){/* Storage may be unavailable or full; the exercise remains usable. */}
+}
+function validQuizSession(record){
+ const saved=record?.quiz;
+ if(record?.version!==1||!languages.includes(record.language)||!saved||saved.active!==true)return false;
+ if(!Array.isArray(saved.questions)||!saved.questions.length||saved.questions.length>100)return false;
+ if(!Number.isInteger(saved.index)||saved.index<0||saved.index>=saved.questions.length)return false;
+ if(!Number.isInteger(saved.score)||saved.score<0||saved.score>saved.questions.length)return false;
+ if(typeof saved.mode!=='string'||!(saved.lesson===null||typeof saved.lesson==='string'))return false;
+ if(typeof saved.finished!=='boolean'||typeof saved.answered!=='boolean')return false;
+ if(saved.answered?typeof saved.latest!=='boolean':saved.latest!==null)return false;
+ if(!(typeof saved.selected==='string'||Array.isArray(saved.selected)))return false;
+ for(const variants of saved.questions){
+  for(const lang of languages){
+   const q=variants?.[lang];
+   if(!q||!['choice','type','listen','arrange'].includes(q.type))return false;
+   if(!['question','answer','why'].every(key=>typeof q[key]==='string'))return false;
+   if(q.type!==variants[record.language]?.type)return false;
+   if(q.type==='choice'&&(!Array.isArray(q.options)||q.options.length>20||!q.options.every(x=>typeof x==='string')||!q.options.includes(q.answer)))return false;
+   if(q.type==='listen'&&typeof q.speak!=='string')return false;
+   if(q.type==='arrange'&&(!Array.isArray(q.tokens)||q.tokens.length>100||typeof q.punct!=='string'||!q.tokens.every(tok=>typeof tok?.id==='string'&&typeof tok.v==='string')))return false;
+  }
+ }
+ const current=saved.questions[saved.index][record.language];
+ if(Array.isArray(saved.selected)){
+  if(current.type==='arrange'){
+   if(new Set(saved.selected.map(tok=>tok?.id)).size!==saved.selected.length)return false;
+   if(!saved.selected.every(tok=>current.tokens.some(item=>item.id===tok?.id&&item.v===tok.v)))return false;
+  }else if(saved.selected.length)return false;
+ }else if(current.type==='choice'&&!current.options.includes(saved.selected))return false;
+ return true;
+}
+function restoreQuizSession(){
+ try{
+  const raw=sessionStorage.getItem(quizSessionKey());
+  if(!raw)return false;
+  const record=JSON.parse(raw);
+  if(!validQuizSession(record)){sessionStorage.removeItem(quizSessionKey());return false}
+  const saved=record.quiz;
+  const questions=saved.questions.map(variants=>{
+   const fields={};
+   for(const key of Object.keys(variants[record.language]))fields[key]=()=>variants[locale4()][key];
+   const question=localizedQuizQuestion(fields);
+   quizSessionSnapshots.set(question,variants);
+   return question;
+  });
+  let selected=saved.selected;
+  if(typeof selected==='string'&&questions[saved.index].type==='choice'){
+   const index=saved.questions[saved.index][record.language].options.indexOf(selected);
+   selected=questions[saved.index].options[index];
+  }
+  quiz={...saved,questions,selected};
+  return true;
+ }catch(_){return false}
+}
+
 // Keep question identity and option order fixed; resolve all display text at render time.
 const quizText=(ru,en,sv,uk)=>()=>txt4(ru,en,sv,uk);
 const quizValue=value=>typeof value==='function'?value():value;
@@ -543,7 +618,7 @@ function drawerToggle4(force){const app=$('#app'),opened=force===undefined?!app.
 document.addEventListener('click',e=>{if(e.target.closest('#menu-toggle,#bottom-menu-open')){e.preventDefault();drawerToggle4(true)}else if(e.target.closest('#drawer-close,#nav-shade')){e.preventDefault();drawerToggle4(false)}else if(e.target.closest('button[data-nav]'))drawerToggle4(false)},true);
 document.addEventListener('keydown',e=>{if(e.key==='Escape')drawerToggle4(false)});
 const oldRender4=legacyRender4;
-function render(){document.body.dataset.sfiLevel=state.settings.level||"A";oldRender4();const extra=route==='cheats'?renderCheats:route==='numbers'?renderNumbers:null;if(extra)$('#page').innerHTML=extra();if(route==='home'){$('#page').insertAdjacentHTML('beforeend',`<section class="resource-bar"><button class="btn secondary" data-nav="cheats"><span aria-hidden="true">🧾</span><span>${esc(pT('cheats'))}</span></button><button class="btn secondary" data-nav="numbers"><span aria-hidden="true">🔢</span><span>${esc(pT('numbers'))}</span></button></section>`)}if(route==='rules'){$('#page').insertAdjacentHTML('afterbegin',`<section class="resource-bar"><button class="btn secondary small" data-nav="cheats"><span aria-hidden="true">🧾</span><span>${esc(pT('cheats'))}</span></button><button class="btn secondary small" data-nav="numbers"><span aria-hidden="true">🔢</span><span>${esc(pT('numbers'))}</span></button><a href="https://www.skolverket.se/undervisning/komvux/komvux-i-svenska-for-invandrare-sfi/kursplan-for-svenska-for-invandrare-sfi-pa-andra-sprak" target="_blank" rel="noopener noreferrer" class="btn ghost small">Skolverket ↗</a><a href="https://svenska.se/" target="_blank" rel="noopener noreferrer" class="btn ghost small">Svenska Akademien ↗</a></section>`) }const sr=$('#search-results');sr?.setAttribute('aria-label',t('keyboardSearch'));const lang=$('#lang-select');lang?.setAttribute('title',t('interfaceLang'));let foot=document.querySelector('#footer-text');if(foot)foot.textContent=txt4('Учи понемногу, но каждый день.','Learn a little, every day.','Lär dig lite varje dag.','Вчи потроху, але щодня.');const legal=$$('.footer-legal a');if(legal.length>=3){legal[0].textContent=txt4('Конфиденциальность','Privacy','Integritet','Конфіденційність');legal[1].textContent=txt4('Условия использования','Terms of use','Användarvillkor','Умови використання');legal[2].textContent=txt4('Cookie и хранение','Cookies & storage','Kakor och lagring','Cookie та зберігання');}}
+function render(){persistQuizSession();document.body.dataset.sfiLevel=state.settings.level||"A";oldRender4();const extra=route==='cheats'?renderCheats:route==='numbers'?renderNumbers:null;if(extra)$('#page').innerHTML=extra();if(route==='home'){$('#page').insertAdjacentHTML('beforeend',`<section class="resource-bar"><button class="btn secondary" data-nav="cheats"><span aria-hidden="true">🧾</span><span>${esc(pT('cheats'))}</span></button><button class="btn secondary" data-nav="numbers"><span aria-hidden="true">🔢</span><span>${esc(pT('numbers'))}</span></button></section>`)}if(route==='rules'){$('#page').insertAdjacentHTML('afterbegin',`<section class="resource-bar"><button class="btn secondary small" data-nav="cheats"><span aria-hidden="true">🧾</span><span>${esc(pT('cheats'))}</span></button><button class="btn secondary small" data-nav="numbers"><span aria-hidden="true">🔢</span><span>${esc(pT('numbers'))}</span></button><a href="https://www.skolverket.se/undervisning/komvux/komvux-i-svenska-for-invandrare-sfi/kursplan-for-svenska-for-invandrare-sfi-pa-andra-sprak" target="_blank" rel="noopener noreferrer" class="btn ghost small">Skolverket ↗</a><a href="https://svenska.se/" target="_blank" rel="noopener noreferrer" class="btn ghost small">Svenska Akademien ↗</a></section>`) }const sr=$('#search-results');sr?.setAttribute('aria-label',t('keyboardSearch'));const lang=$('#lang-select');lang?.setAttribute('title',t('interfaceLang'));let foot=document.querySelector('#footer-text');if(foot)foot.textContent=txt4('Учи понемногу, но каждый день.','Learn a little, every day.','Lär dig lite varje dag.','Вчи потроху, але щодня.');const legal=$$('.footer-legal a');if(legal.length>=3){legal[0].textContent=txt4('Конфиденциальность','Privacy','Integritet','Конфіденційність');legal[1].textContent=txt4('Условия использования','Terms of use','Användarvillkor','Умови використання');legal[2].textContent=txt4('Cookie и хранение','Cookies & storage','Kakor och lagring','Cookie та зберігання');}}
 
 /* Search and word details: localized labels with robust, bounded suggestions. */
 function searchNow(value){const q=String(value||'').trim().toLocaleLowerCase(),el=$('#search-results');if(!el)return;if(!q){el.classList.add('hidden');el.innerHTML='';return}
