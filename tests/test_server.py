@@ -96,4 +96,14 @@ class ServerTests(unittest.TestCase):
   self.assertTrue(all('why' in q for l in self.get(x,'/lessons.json') for q in l['questions']))
   self.assertTrue(self.get(x,'/api/health')['ok'])
 
+ def test_supabase_modules_and_csp(self):
+  for name in ['supabase-client.js','supabase-auth.js','supabase-rpc.js']:
+   with self.subTest(name=name):
+    with urllib.request.urlopen(self.url+'/'+name) as response:
+     self.assertEqual(response.status,200)
+     self.assertIn('javascript',response.headers['Content-Type'])
+     csp=response.headers['Content-Security-Policy']
+     self.assertIn("script-src 'self' https://cdn.jsdelivr.net",csp)
+     self.assertIn("connect-src 'self' https://*.supabase.co wss://*.supabase.co",csp)
+
 if __name__=='__main__':unittest.main()

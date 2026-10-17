@@ -54,6 +54,12 @@ async function load(handlers,path,destination='image',method='GET'){
  assert.equal((await load(handlers,'assets/flashcards/unseen.webp')).status,504);
  assert.equal((await load(handlers,'style.css?v=999','style')).status,200,'versioned URL must find precache');
  assert.equal(await load(handlers,'api/session',''),undefined,'API must bypass caches');
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js']){
+  assert.equal((await load(handlers,file+'?v=1','script')).status,200,'auth preparation modules available offline');
+ }
+ assert.equal(await load(handlers,'https://example.supabase.co/auth/v1/user',''),undefined,'Auth GET bypasses worker');
+ assert.equal(await load(handlers,'https://example.supabase.co/rest/v1/rpc/sl_get_progress','','POST'),undefined,'RPC bypasses worker');
+ assert.equal(await load(handlers,'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js','script'),undefined,'SDK handled by browser, not shell cache');
  assert.equal(await load(handlers,'unlisted.webp'),undefined,'arbitrary images must not grow shell cache');
  online=true;await load(handlers,'assets/word-icons/cat.webp?v=1');online=false;
  assert.equal((await load(handlers,'assets/word-icons/cat.webp?v=2')).status,200,'viewed word icons stay available offline');

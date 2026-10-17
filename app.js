@@ -15,26 +15,7 @@ Object.assign(DICT.en,{alphabet:'Alphabet',topics:'Vocabulary modules',books:'Mi
 Object.assign(DICT.sv,{alphabet:'Alfabetet',topics:'Ordteman',books:'Korta böcker',rulesHub:'Grammatikregler'});
 Object.assign(DICT.uk,{alphabet:'Абетка',topics:'Словникові модулі',books:'Мінікниги',rulesHub:'Усі правила'});
 let backendAvailable=false;
-// Supabase cloud mode. If not configured, the original local Python backend still works.
-let cloudClient=null;
-function cloudConfigurationReady(){
- const conf=window.SV_SUPABASE||{};
- return /^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(String(conf.url||''))
-   && /^(sb_publishable_|eyJ)/.test(String(conf.publishableKey||''));
-}
-function cloudUser(u){
- return {id:u.id,email:u.email||'',name:u.user_metadata?.display_name||u.user_metadata?.full_name||u.email?.split('@')[0]||'Student'};
-}
-async function loadCloudProgress(authUser,guest){
- const {data,error}=await cloudClient.from('learning_progress').select('state').eq('user_id',authUser.id).maybeSingle();
- if(error)throw new Error('Нет доступа к таблице learning_progress. Проверь SQL и права RLS в Supabase: '+error.message);
- const initial=data?.state??guest;
- user=cloudUser(authUser);
- state=sanitize(initial);
- if(!data){dirty=true;await flushState()}
- localStorage.setItem('sv-language',state.settings.language);
-}
-
+// Supabase Auth is prepared separately; learning remains local in this stage.
 let WORDS=[],LESSONS=[],user=null,state={},route='home',routeParam='',toastTimer=null,flushTimer=null,saving=false,dirty=false;
 let selectedLevel='A',dictFilter={text:'',kind:'all',group:'all',category:'all',fav:false,limit:42},flashFilter={kind:'all',group:'all',category:'all'},flash={ids:[],index:0,flipped:false};
 let quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};
@@ -43,8 +24,8 @@ const t=k=>D()[k]||DICT.ru[k]||k;
 const DAY=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
 const defaultState=()=>({known:[],favorites:[],reviews:{},completed:[],activity:{},answered:0,correct:0,xp:0,settings:{language:localStorage.getItem('sv-language')||'ru',level:'A'},videos:[],booksRead:[],profile:{name:"",avatar:""}});
 function sanitize(s){let v=defaultState();if(s&&typeof s==='object')for(const k of Object.keys(v))if(k in s)v[k]=s[k];v.settings=v.settings||{language:'ru',level:'A'};v.profile=(v.profile&&typeof v.profile==='object')?v.profile:{name:'',avatar:''};return v}
-function save(){if(!user){localStorage.setItem('sv-guest-v2',JSON.stringify(state));return}if(cloudClient)localStorage.setItem('sv-cloud-backup-'+user.id,JSON.stringify(state));dirty=true;clearTimeout(flushTimer);flushTimer=setTimeout(flushState,450)}
-async function flushState(){if(!user||saving||!dirty)return;saving=true;dirty=false;const snapshot=JSON.stringify(state);try{if(cloudClient){const {error}=await cloudClient.from('learning_progress').upsert({user_id:user.id,state:JSON.parse(snapshot),updated_at:new Date().toISOString()},{onConflict:'user_id'});if(error)throw error;}else{const r=await fetch('./api/state',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({state:JSON.parse(snapshot)})});if(!r.ok)throw new Error('Save failed')}}catch(e){dirty=true;toast(t('saveError'))}finally{saving=false;if(dirty){clearTimeout(flushTimer);flushTimer=setTimeout(flushState,1800)}}}
+function save(){if(!user){localStorage.setItem('sv-guest-v2',JSON.stringify(state));return}dirty=true;clearTimeout(flushTimer);flushTimer=setTimeout(flushState,450)}
+async function flushState(){if(!user||saving||!dirty)return;saving=true;dirty=false;const snapshot=JSON.stringify(state);try{const r=await fetch('./api/state',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({state:JSON.parse(snapshot)})});if(!r.ok)throw new Error('Save failed')}catch(e){dirty=true;toast(t('saveError'))}finally{saving=false;if(dirty){clearTimeout(flushTimer);flushTimer=setTimeout(flushState,1800)}}}
 async function flushAll(){clearTimeout(flushTimer);while(user&&(dirty||saving)){if(saving){await new Promise(r=>setTimeout(r,50))}else await flushState();if(dirty)break}}
 const shuffle=a=>{const b=[...a];for(let i=b.length-1;i>0;i--){const k=Math.floor(Math.random()*(i+1));[b[i],b[k]]=[b[k],b[i]]}return b};
 function pic(w,large=false){const ch=String(w?.word||'S').slice(0,1).toUpperCase();return `<span class="photo-word"><span class="word-fallback">${esc(ch)}</span></span>`}
@@ -131,10 +112,10 @@ function heatmap(){let out=[];const labels={ru:['Вс','Пн','Вт','Ср','Ч�
 function renderProfile(){const display=user?.name||t('guest');return title(t('profileTitle'),user?t('savedAccount'):t('guestMode'))+`<div class="profile-banner"><div class="big-avatar">${user?'👩‍🎓':'🌻'}</div><div><h2>${esc(display)}</h2><p>${esc(user?.email||t('guestMode'))}</p><span class="chip">🇸🇪 SFI ${esc(state.settings.level)} · ⭐ ${state.xp||0} XP</span></div></div><section class="stats-grid">${stat('🔥',streak(),t('dayStreak'),'orange')}${stat('📖',state.completed.length,t('lessonCount'),'purple')}${stat('🧠',state.known.length,t('knownWords'),'mint')}${stat('🎯',state.answered?Math.round(100*state.correct/state.answered)+'%':'0%',t('accuracy'),'pink')}</section>
 <div class="profile-grid"><section class="content-panel"><h3>🗓 ${esc(t('practiceActivity'))}</h3><p class="micro-note">${Object.keys(state.activity).length} ${esc(t('dayPractice'))} · ${state.answered} ${esc(t('step'))}</p>${heatmap()}</section><section class="content-panel"><h3>⚙️ ${esc(t('settings'))}</h3><div class="settings-row"><div><b>${esc(t('interfaceLang'))}</b></div><select id="profile-lang" class="form-select"><option value="ru" ${state.settings.language==='ru'?'selected':''}>Русский</option><option value="en" ${state.settings.language==='en'?'selected':''}>English</option><option value="sv" ${state.settings.language==='sv'?'selected':''}>Svenska</option><option value="uk" ${state.settings.language==='uk'?'selected':''}>Українська</option></select></div><div class="settings-row"><div><b>${esc(t('sfiLevel'))}</b></div><select id="profile-level" class="form-select">${'ABCD'.split('').map(l=>`<option ${state.settings.level===l?'selected':''}>${l}</option>`).join('')}</select></div><p class="info-scope">${user?'☁️ '+t('savedAccount'):'📱 '+t('savedGuest')}</p></section></div><section class="content-panel" style="margin-top:20px"><h3>👤 ${esc(user?t('profile'):t('register'))}</h3><p style="font-size:13px;color:var(--muted)">${esc(user?t('savedAccount'):t('accountExplain'))}</p>${user?`<button class="btn ghost" data-action="logout">${esc(t('logout'))} ↗</button>`:`<div class="split" style="justify-content:flex-start"><button class="btn" data-action="auth" data-mode="register">${esc(t('register'))}</button><button class="btn secondary" data-action="auth" data-mode="login">${esc(t('login'))}</button></div>`}</section>`}
 function searchNow(value){let q=value.trim().toLocaleLowerCase();const el=$('#search-results');if(!q){el.classList.add('hidden');el.innerHTML='';return}const words=WORDS.filter(w=>[w.word,w.ru,w.inf,w.pre,w.past,w.sup,w.category].some(x=>String(x||'').toLocaleLowerCase().includes(q))).slice(0,9);const lessons=LESSONS.filter(l=>(l.title+' '+l.description+' '+l.rules.join(' ')).toLocaleLowerCase().includes(q)).slice(0,5);el.innerHTML=(lessons.map(l=>`<button class="search-result" data-nav="lesson" data-param="${l.id}"><span class="emo">${esc(l.emoji)}</span><span><strong>${esc(l.title)}</strong><small>📚 SFI ${l.level} · ${esc(t('lesson'))}</small></span></button>`).join('')+words.map(w=>`<button class="search-result" data-nav="word" data-param="${esc(w.id)}"><span class="emo">${esc(w.emoji)}</span><span><strong>${esc(wordLabel(w))}</strong><small>${esc(w.ru)}</small></span></button>`).join(''))||`<div class="serp-empty">${esc(t('noResults'))}</div>`;el.classList.remove('hidden')}
-function openAuth(mode='register'){if(!backendAvailable){const texts={ru:['Подключи Supabase','Для регистрации на GitHub Pages нужно настроить Supabase: открой файл supabase-config.js и укажи Project URL и Publishable Key. Уроки и тренировки пока доступны в гостевом режиме.','Продолжить обучение'],en:['Connect Supabase','To use registration on GitHub Pages, set up Supabase and fill Project URL and Publishable Key in supabase-config.js. Lessons and progress remain available in guest mode.','Keep learning'],sv:['Anslut Supabase','För registrering på GitHub Pages måste du konfigurera Supabase och ange Project URL och Publishable Key i supabase-config.js. Du kan fortsätta som gäst.','Fortsätt studera'],uk:['Підключи Supabase','Для реєстрації на GitHub Pages налаштуй Supabase: заповни Project URL і Publishable Key у supabase-config.js. Поки що можна навчатися як гість.','Продовжити навчання']};const [heading,note,button]=texts[state.settings?.language]||texts.ru;$('#modal-backdrop').classList.remove('hidden');$('#modal-inner').innerHTML=`<div style="font-size:48px;text-align:center">🔒</div><h2 style="text-align:center">${esc(heading)}</h2><p style="line-height:1.7;color:var(--muted);margin:18px 0 24px">${esc(note)}</p><button class="btn wide" type="button" id="static-close">${esc(button)} →</button>`;$('#static-close').addEventListener('click',closeAuth);return;}const el=$('#modal-inner');$('#modal-backdrop').classList.remove('hidden');el.innerHTML=`<div style="font-size:47px;text-align:center">${mode==='register'?'🌸':'🇸🇪'}</div><h2 style="text-align:center;margin-top:10px">${esc(t(mode))}</h2><p style="text-align:center;font-size:12px;color:var(--muted)">${esc(t('accountExplain'))}</p><form id="auth-form" data-mode="${mode}">${mode==='register'?`<label class="form-field" for="auth-name">${esc(t('name'))}</label><input id="auth-name" class="form-input" name="name" required minlength="2" maxlength="80" autocomplete="name">`:''}<label class="form-field" for="auth-email">${esc(t('email'))}</label><input id="auth-email" class="form-input" name="email" type="email" required maxlength="254" autocomplete="email"><label class="form-field" for="auth-pass">${esc(t('password'))}</label><input id="auth-pass" class="form-input" name="password" type="password" required minlength="${mode==='register'?8:1}" autocomplete="${mode==='register'?'new-password':'current-password'}"><p class="form-error" id="auth-error" role="alert"></p><button class="btn wide" id="auth-submit" type="submit">${esc(t(mode))} →</button></form><div style="margin-top:18px;text-align:center"><button class="auth-link" data-action="auth" data-mode="${mode==='register'?'login':'register'}">${esc(t(mode==='register'?'haveAccount':'newAccount'))}</button></div>`;setTimeout(()=>$('#auth-email')?.focus(),50)}
+function openAuth(mode='register'){if(!backendAvailable){const texts={ru:['Локальное обучение','Облачная авторизация подготовлена отдельно. Вход в кабинете будет включён вместе с безопасным сохранением прогресса. Продолжай учиться в гостевом режиме.','Продолжить обучение'],en:['Local learning','Cloud authentication is prepared separately. Account sign-in will be enabled together with safe progress saving. Keep learning in guest mode.','Keep learning'],sv:['Lär dig lokalt','Molninloggningen är förberedd separat. Kontoinloggning aktiveras tillsammans med säker sparning av framsteg. Fortsätt som gäst.','Fortsätt studera'],uk:['Локальне навчання','Хмарну авторизацію підготовлено окремо. Вхід у кабінеті ввімкнемо разом із безпечним збереженням прогресу. Продовжуй навчатися як гість.','Продовжити навчання']};const [heading,note,button]=texts[state.settings?.language]||texts.ru;$('#modal-backdrop').classList.remove('hidden');$('#modal-inner').innerHTML=`<div style="font-size:48px;text-align:center">🔒</div><h2 style="text-align:center">${esc(heading)}</h2><p style="line-height:1.7;color:var(--muted);margin:18px 0 24px">${esc(note)}</p><button class="btn wide" type="button" id="static-close">${esc(button)} →</button>`;$('#static-close').addEventListener('click',closeAuth);return;}const el=$('#modal-inner');$('#modal-backdrop').classList.remove('hidden');el.innerHTML=`<div style="font-size:47px;text-align:center">${mode==='register'?'🌸':'🇸🇪'}</div><h2 style="text-align:center;margin-top:10px">${esc(t(mode))}</h2><p style="text-align:center;font-size:12px;color:var(--muted)">${esc(t('accountExplain'))}</p><form id="auth-form" data-mode="${mode}">${mode==='register'?`<label class="form-field" for="auth-name">${esc(t('name'))}</label><input id="auth-name" class="form-input" name="name" required minlength="2" maxlength="80" autocomplete="name">`:''}<label class="form-field" for="auth-email">${esc(t('email'))}</label><input id="auth-email" class="form-input" name="email" type="email" required maxlength="254" autocomplete="email"><label class="form-field" for="auth-pass">${esc(t('password'))}</label><input id="auth-pass" class="form-input" name="password" type="password" required minlength="${mode==='register'?8:1}" autocomplete="${mode==='register'?'new-password':'current-password'}"><p class="form-error" id="auth-error" role="alert"></p><button class="btn wide" id="auth-submit" type="submit">${esc(t(mode))} →</button></form><div style="margin-top:18px;text-align:center"><button class="auth-link" data-action="auth" data-mode="${mode==='register'?'login':'register'}">${esc(t(mode==='register'?'haveAccount':'newAccount'))}</button></div>`;setTimeout(()=>$('#auth-email')?.focus(),50)}
 function closeAuth(){$('#modal-backdrop').classList.add('hidden');$('#modal-inner').innerHTML=''}
 async function authSubmit(form){const mode=form.dataset.mode;const payload={email:$('#auth-email').value,password:$('#auth-pass').value};if(mode==='register')payload.name=$('#auth-name').value.trim();const btn=$('#auth-submit');btn.disabled=true;$('#auth-error').textContent='';try{const r=await fetch('./api/'+mode,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'same-origin'});const data=await r.json();if(!r.ok)throw new Error(data.error||'Error');user=data.user;state=sanitize(data.state);if(mode==='register'){try{const guest=JSON.parse(localStorage.getItem('sv-guest-v2')||'{}');if(guest&&typeof guest==='object'){const old=sanitize(guest);state.known=old.known;state.favorites=old.favorites;state.reviews=old.reviews;state.completed=old.completed;state.activity=old.activity;state.answered=old.answered;state.correct=old.correct;state.xp=old.xp;state.videos=old.videos;state.settings=old.settings;dirty=true;flushState()}}catch{}}localStorage.setItem('sv-language',state.settings.language);closeAuth();toast('✅ '+(user.name||t('profile')));render()}catch(err){const messages={'Invalid email or password':'Неверная почта или пароль','Email already registered':'Такой email уже зарегистрирован','Password must have 8+ characters':'Пароль должен содержать не менее 8 символов','Too many attempts; try later':'Слишком много попыток — попробуйте позже'};$('#auth-error').textContent=messages[err.message]||err.message}finally{btn.disabled=false}}
-async function logout(){await flushAll();if(cloudClient){try{const {error}=await cloudClient.auth.signOut();if(error)throw error;user=null;dirty=false;state=sanitize(JSON.parse(localStorage.getItem('sv-guest-v2')||'{}'));toast('👋');navigate('home')}catch(e){toast(e.message||String(e))}return}try{const r=await fetch('./api/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});if(!r.ok)throw Error('Cannot log out');user=null;state=sanitize(JSON.parse(localStorage.getItem('sv-guest-v2')||'{}'));toast('👋');navigate('home')}catch(e){toast(String(e.message))}}
+async function logout(){await flushAll();try{const r=await fetch('./api/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});if(!r.ok)throw Error('Cannot log out');user=null;state=sanitize(JSON.parse(localStorage.getItem('sv-guest-v2')||'{}'));toast('👋');navigate('home')}catch(e){toast(String(e.message))}}
 function resetQuiz(){quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};render()}
 function nextFlash(n=1){flash.index=(flash.index+n+flash.ids.length)%flash.ids.length;flash.flipped=false;render()}
 async function action(btn){if(btn.dataset.nav){$('#search-results').classList.add('hidden');$('#global-search').value='';navigate(btn.dataset.nav,btn.dataset.param||'');return}
@@ -174,63 +155,28 @@ function changeLanguage(v){if(!languages.includes(v))return;state.settings.langu
 function dictTextUpdate(input){const start=input.selectionStart||0;dictFilter.text=input.value;dictFilter.limit=42;render();const el=$('#dict-search');if(el){el.focus();try{el.setSelectionRange(start,start)}catch{}}}
 function bindEvents(){document.addEventListener('click',e=>{const b=e.target.closest('button[data-action],button[data-nav]');if(b){e.preventDefault();action(b);return}const card=e.target.closest('.words-grid [data-word-link]');if(card&&!e.target.closest('a,input,select,textarea,button'))navigate('word',card.dataset.wordLink)});document.addEventListener('keydown',e=>{const card=e.target.closest('.words-grid [data-word-link]');if(card&&e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();navigate('word',card.dataset.wordLink)}});document.addEventListener('change',e=>{const el=e.target;if(el.id==='lang-select'||el.id==='profile-lang')changeLanguage(el.value);if(el.id==='profile-level'){state.settings.level=el.value;save();render()}if(el.id==='dict-kind'){dictFilter.kind=el.value;dictFilter.limit=42;render()}if(el.id==='dict-group'){dictFilter.group=el.value;dictFilter.limit=42;render()}if(el.id==='dict-category'){dictFilter.category=el.value;dictFilter.limit=42;render()}if(el.id==='flash-kind'){flashFilter.kind=el.value;createFlashDeck();render()}if(el.id==='flash-group'){flashFilter.group=el.value;createFlashDeck();render()}});
  document.addEventListener('input',e=>{if(e.target.id==='dict-search')dictTextUpdate(e.target);if(e.target.id==='global-search')searchNow(e.target.value)});document.addEventListener('submit',e=>{if(e.target.id==='auth-form'){e.preventDefault();authSubmit(e.target)}if(e.target.id==='quiz-input-form'){e.preventDefault();submitAnswer($('#quiz-text-input')?.value||'')}});
- $('#close-modal').addEventListener('click',closeAuth);$('#modal-backdrop').addEventListener('click',e=>{if(e.target.id==='modal-backdrop')closeAuth()});$('#profile-top').addEventListener('click',()=>navigate('profile'));$('#sidebar-profile').addEventListener('click',()=>navigate('profile'));document.addEventListener('click',e=>{if(!e.target.closest('.topbar-left'))$('#search-results').classList.add('hidden')});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#global-search').focus()}if(e.key==='Escape'){closeAuth();$('#search-results').classList.add('hidden')}if(route==='flashcards'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){if(e.key==='ArrowRight')nextFlash(1);if(e.key==='ArrowLeft')nextFlash(-1);if(e.key===' '){e.preventDefault();flash.flipped=!flash.flipped;render()}}});window.addEventListener('hashchange',()=>{hydrateLocation();render()});window.addEventListener('online',()=>{if(dirty)flushState()});document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&dirty)flushState()});window.addEventListener('pagehide',()=>{if(user&&dirty&&!cloudClient){const body=JSON.stringify({state});navigator.sendBeacon?.('./api/state',new Blob([body],{type:'application/json'}))}})}
-// The external authentication SDK is not needed for guest learning.
-// Loading it unconditionally blocked the entire application on slow connections.
-async function loadSupabaseSdk(){
- if(window.supabase?.createClient)return true;
- return new Promise(resolve=>{
-  const node=document.createElement('script');let done=false;
-  const finish=ok=>{if(done)return;done=true;clearTimeout(timer);resolve(ok)};
-  const timer=setTimeout(()=>finish(false),8000);
-  node.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
-  node.async=true;
-  node.onload=()=>finish(Boolean(window.supabase?.createClient));
-  node.onerror=()=>finish(false);
-  document.head.appendChild(node);
- });
-}
+ $('#close-modal').addEventListener('click',closeAuth);$('#modal-backdrop').addEventListener('click',e=>{if(e.target.id==='modal-backdrop')closeAuth()});$('#profile-top').addEventListener('click',()=>navigate('profile'));$('#sidebar-profile').addEventListener('click',()=>navigate('profile'));document.addEventListener('click',e=>{if(!e.target.closest('.topbar-left'))$('#search-results').classList.add('hidden')});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#global-search').focus()}if(e.key==='Escape'){closeAuth();$('#search-results').classList.add('hidden')}if(route==='flashcards'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)){if(e.key==='ArrowRight')nextFlash(1);if(e.key==='ArrowLeft')nextFlash(-1);if(e.key===' '){e.preventDefault();flash.flipped=!flash.flipped;render()}}});window.addEventListener('hashchange',()=>{hydrateLocation();render()});window.addEventListener('online',()=>{if(dirty)flushState()});document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&dirty)flushState()});window.addEventListener('pagehide',()=>{if(user&&dirty){const body=JSON.stringify({state});navigator.sendBeacon?.('./api/state',new Blob([body],{type:'application/json'}))}})}
 async function boot(){
  try{
-  const useCloud=cloudConfigurationReady();
-  if(useCloud){
-   await loadSupabaseSdk();
-   if(!window.supabase?.createClient){
-     console.warn('Библиотека Supabase не загрузилась; включен гостевой режим. Проверь доступ к jsdelivr.net.');
-   }else{
-     const conf=window.SV_SUPABASE;
-     cloudClient=window.supabase.createClient(conf.url.replace(/\/$/,''),conf.publishableKey,{
-       auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}
-     });
-   }
-  }
   const staticSite=/\.github\.io$/i.test(location.hostname);
+  const cloudRequested=Boolean(window.SV_SUPABASE?.url||window.SV_SUPABASE?.publishableKey);
   const [wr,lr,br,sr]=await Promise.all([
    fetch('./words.json'),fetch('./lessons.json'),fetch('./books.json'),
-   (cloudClient||staticSite)?Promise.resolve(null):fetch('./api/session',{credentials:'same-origin',cache:'no-store'}).catch(()=>null)
+   (cloudRequested||staticSite)?Promise.resolve(null):fetch('./api/session',{credentials:'same-origin',cache:'no-store'}).catch(()=>null)
   ]);
   if(!wr.ok||!lr.ok||!br.ok)throw Error('Не удалось загрузить учебные файлы (words.json, lessons.json, books.json)');
   WORDS=await wr.json();LESSONS=await lr.json();BOOKS=await br.json();
   let guest={};try{guest=JSON.parse(localStorage.getItem('sv-guest-v2')||'{}')}catch{}
   state=sanitize(guest);
-  if(cloudClient){
-    backendAvailable=true;
-    const {data,error}=await cloudClient.auth.getUser();
-    if(data?.user){
-      try{await loadCloudProgress(data.user,state)}
-      catch(e){console.error('Cloud data error',e);backendAvailable=true;toast('⚠️ '+e.message)}
-    }else if(error&&!String(error.message||'').toLowerCase().includes('session missing')){
-      console.warn('Supabase session',error.message);
-    }
-  }else{
-    let session=null;
-    try{if(sr?.ok&&(sr.headers.get('Content-Type')||'').includes('application/json')){
-      session=await sr.json();backendAvailable=session?.ok===true;
-    }}catch(e){console.warn('No JSON session response',e)}
-    user=session?.user||null;
-    state=sanitize(user?session?.state:guest);
-  }
+  let session=null;
+  try{if(sr?.ok&&(sr.headers.get('Content-Type')||'').includes('application/json')){
+    session=await sr.json();backendAvailable=session?.ok===true;
+  }}catch(e){console.warn('No JSON session response',e)}
+  user=session?.user||null;
+  state=sanitize(user?session?.state:guest);
   hydrateLocation();bindEvents();render();
+  // Background Auth restore must never block guest learning or replace its state.
+  void window.SVAuth?.initialize().catch(()=>{});
   if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1'))
    navigator.serviceWorker.register('./sw.js',{scope:'./'}).catch(()=>{});
  }catch(e){
@@ -324,26 +270,7 @@ function searchNow(value){let q=value.trim().toLocaleLowerCase();const el=$('#se
 function speak(text){if(!('speechSynthesis' in window)){toast(t('noAudio'));return}const api=window.speechSynthesis;api.cancel();const u=new SpeechSynthesisUtterance(String(text));u.lang='sv-SE';u.rate=.82;u.pitch=1;const vs=api.getVoices(),voice=vs.find(v=>v.lang.toLowerCase()==='sv-se')||vs.find(v=>v.lang.toLowerCase().startsWith('sv'));if(voice)u.voice=voice;else if(vs.length){toast('⚠️ Шведский голос не установлен. Проверь системные голоса sv-SE.');return}u.onerror=()=>toast('Не удалось воспроизвести. Установи шведский голос (sv-SE) в настройках устройства.');api.speak(u)}
 async function apiJson3(path,payload){if(!backendAvailable)throw Error('Для регистрации нужен работающий Python-сервер. На GitHub Pages доступен гостевой режим с локальным сохранением.');let response;try{response=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(payload)})}catch{throw Error('Нет соединения с сервером. Запусти python3 server.py и открой http://127.0.0.1:8765')}let data=null,raw='';try{raw=await response.text();if(!raw)throw new Error('empty');data=JSON.parse(raw)}catch{throw Error('Сервер не вернул JSON. Нужен запущенный Python-сервер, а не index.html или статический хостинг. Адрес: http://127.0.0.1:8765')}if(!response.ok||!data?.ok)throw Error(data?.error||`HTTP ${response.status}`);return data}
 async function authSubmit(form){
- if(cloudClient){
-   const mode=form.dataset.mode,email=$('#auth-email').value.trim(),password=$('#auth-pass').value;
-   const name=mode==='register'?$('#auth-name').value.trim():'';
-   const btn=$('#auth-submit');btn.disabled=true;$('#auth-error').textContent='';
-   try{
-     if(mode==='register'&&name.length<2)throw Error(txt4('Имя должно содержать минимум 2 символа','Name must have at least 2 characters','Namnet måste ha minst två tecken','Ім’я має містити щонайменше 2 символи')); 
-     const result=mode==='register'
-       ?await cloudClient.auth.signUp({email,password,options:{data:{display_name:name},emailRedirectTo:location.origin+location.pathname}})
-       :await cloudClient.auth.signInWithPassword({email,password});
-     if(result.error)throw result.error;
-     if(!result.data.session){
-       closeAuth();toast('✉️ '+txt4('Проверь почту, подтверди регистрацию и войди.','Check your email, confirm your account, then log in.','Kontrollera mejlen, bekräfta ditt konto och logga in.','Перевір пошту, підтвердь реєстрацію та увійди.'));return;
-     }
-     let guest={};try{guest=JSON.parse(localStorage.getItem('sv-guest-v2')||'{}')}catch{}
-     await loadCloudProgress(result.data.user,sanitize(guest));
-     closeAuth();toast('✅ '+user.name);render();
-   }catch(err){$('#auth-error').textContent=err.message||txt4('Не удалось войти. Проверь email, пароль и настройки Supabase.','Could not sign in. Check your email, password and Supabase settings.','Inloggningen misslyckades. Kontrollera e-post, lösenord och Supabase.','Не вдалося увійти. Перевір пошту, пароль і налаштування Supabase.');}
-   finally{btn.disabled=false}
-   return;
- }
+ if(!backendAvailable){openAuth(form.dataset.mode);return}
  const mode=form.dataset.mode,payload={email:$('#auth-email').value.trim(),password:$('#auth-pass').value};if(mode==='register')payload.name=$('#auth-name').value.trim();const btn=$('#auth-submit');btn.disabled=true;$('#auth-error').textContent='';try{const data=await apiJson3('./api/'+mode,payload);user=data.user;state=sanitize(data.state);if(mode==='register'){try{const guest=JSON.parse(localStorage.getItem('sv-guest-v2')||'{}');const old=sanitize(guest);if(guest&&Object.keys(guest).length){for(const k of ['known','favorites','reviews','completed','activity','answered','correct','xp','videos','booksRead'])state[k]=old[k];state.settings=old.settings;dirty=true;flushState()}}catch{}}localStorage.setItem('sv-language',state.settings.language);closeAuth();toast('✅ '+(user.name||t('profile')));render()}catch(err){const messages={'Invalid email or password':'Неверная почта или пароль','Email already registered':'Такой email уже зарегистрирован','Password must have 8+ characters':'Пароль должен содержать не менее 8 символов','Name must have 2+ characters':'Имя должно быть не короче 2 символов','Too many attempts; try later':'Слишком много попыток — попробуй позже','Invalid email':'Неверный формат email'};$('#auth-error').textContent=messages[err.message]||err.message}finally{btn.disabled=false}}
 
 /* Svenska Lätt v4: localized navigation, curriculum, topic pages, mobile access. */

@@ -4,7 +4,7 @@ const RELEASE='2026-10-16-prep-1';
 const APP_CACHE=`svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE=`svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT=150;
-const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
+const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./supabase-client.js','./supabase-auth.js','./supabase-rpc.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
 const SHELL_URLS=new Set(FILES.map(file=>new URL(file,self.registration.scope).href));
 let photoWrites=Promise.resolve();
 self.addEventListener('install',event=>{
