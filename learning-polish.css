@@ -249,3 +249,10 @@
  grid-template-columns:repeat(6,minmax(190px,1fr))!important;
  max-width:100%; overflow-x:auto; padding-bottom:6px;
 }
+
+/* Month navigation for the complete saved activity history. */
+.calendar-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 8px}
+.calendar-label{font-weight:800;text-align:center;text-transform:capitalize;min-width:0}
+.calendar-controls .calendar-arrow{flex:0 0 42px;min-width:42px;min-height:42px;font-size:24px!important;padding:4px!important;line-height:1!important}
+.calendar-controls .calendar-arrow:disabled{opacity:.35;cursor:default;transform:none;box-shadow:none!important}
+.calendar-reset{margin-top:10px}

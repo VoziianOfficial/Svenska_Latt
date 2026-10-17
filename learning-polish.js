@@ -129,13 +129,12 @@
    photo.src=url;
  }
  function updateDays(){
-   // Continuous rolling calendar: past days + upcoming dates, never marking future visits.
+   // Dashboard shows the last seven days, including today.
    const dict={ru:['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],sv:['Sön','Mån','Tis','Ons','Tor','Fre','Lör'],uk:['Нд','Пн','Вт','Ср','Чт','Пт','Сб']};
    const labs=dict[lang()]||dict.ru;
-   document.querySelectorAll('#page .daily-bar').forEach(grid=>{
-     const month=grid.classList.contains('calendar-month');
-     const n=month?28:14;
-     const past=month?20:7;
+   document.querySelectorAll('#page .daily-bar:not([data-activity-month])').forEach(grid=>{
+     const n=7;
+     const past=6;
      const today=new Date();today.setHours(12,0,0,0);
      const frag=document.createDocumentFragment();
      for(let i=0;i<n;i++){
