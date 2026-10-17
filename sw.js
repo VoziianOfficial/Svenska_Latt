@@ -1,6 +1,6 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE='2026-10-17-compact-number-cards-1';
+const RELEASE='2026-10-17-live-quiz-translations-1';
 const APP_CACHE=`svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE=`svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT=150;
