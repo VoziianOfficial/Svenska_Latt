@@ -10,7 +10,24 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET = ROOT / 'supabase/migrations/202610170002_manifest.sql'
+BASELINE = ROOT / 'supabase/migrations/202610170002_manifest.sql'
+
+
+def read_manifest(path):
+    match = re.search(r'select \$manifest\$(.*?)\$manifest\$::jsonb', path.read_text(), re.S)
+    if not match:
+        raise ValueError(f'No frozen manifest literal in {path.name}')
+    return json.loads(match[1])
+
+
+def latest_manifest_path():
+    # Only definitions of this exact function count, not filenames or references.
+    definitions = [path for path in sorted((ROOT / 'supabase/migrations').glob('*.sql'))
+                   if re.search(r'\bcreate\s+(?:or\s+replace\s+)?function\s+sl_private\.manifest\s*\(\s*\)',
+                                path.read_text(), re.I)]
+    if not definitions:
+        raise ValueError('No manifest migration found')
+    return definitions[-1]
 
 
 def current_manifest():
@@ -36,7 +53,14 @@ def current_manifest():
 
 
 if __name__ == '__main__':
-    match = re.search(r'select \$manifest\$(.*?)\$manifest\$::jsonb', TARGET.read_text(), re.S)
-    if not match or json.loads(match[1]) != current_manifest():
+    target = latest_manifest_path()
+    current = current_manifest()
+    frozen = read_manifest(target)
+    if frozen != current:
         raise SystemExit('FAIL: SQL manifest differs from static content; prepare a NEW migration')
-    print('PASS: frozen manifest matches 1006 words, 50 lessons, 12 books and video/topic IDs')
+    # This release is version-only. Future ID/count changes need an explicit
+    # compatibility review and an intentional update of this release guard.
+    baseline = read_manifest(BASELINE)
+    if {k: v for k, v in current.items() if k != 'version'} != {k: v for k, v in baseline.items() if k != 'version'}:
+        raise SystemExit('FAIL: IDs/categories/question counts changed since migration 002')
+    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories/question counts match migration 002')

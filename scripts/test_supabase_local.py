@@ -66,10 +66,18 @@ def main():
         started = True
         run_file(ROOT / 'supabase/tests/bootstrap_local.sql')
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
+        upgrade_assertions = 0
         for path in migrations:
-            run_file(path)
+            if path.name == '202610170006_manifest_version.sql':
+                # The test applies 006 itself over fixtures in the five-migration
+                # schema, captures all seven tables + function ACL, then checks
+                # old/new clients and an unfinished historical session.
+                upgrade = run_file(ROOT / 'supabase/tests/002_manifest_upgrade.sql')
+                upgrade_assertions += upgrade.stderr.count('PASS:')
+            else:
+                run_file(path)
         result = run_file(ROOT / 'supabase/tests/001_contract.sql')
-        assertions = result.stderr.count('PASS:')
+        assertions = result.stderr.count('PASS:') + upgrade_assertions
 
         sql(f"insert into auth.users(id,email) values('{USER}','sl-concurrency@example.invalid');")
         body = event('mark_known', {'word_id': 'v-arbeta'})

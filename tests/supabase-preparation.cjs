@@ -364,3 +364,44 @@ test('successful automatic read on restored login never replaces local account p
  await new Promise(r=>setTimeout(r,5));assert.equal(h.records.rpc.length,1);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
 });
+
+test('preview compares account and cloud without reading guest or writing/calling RPC',async()=>{
+ const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['v-arbeta'],favorites:['v-prata'],completed:[],booksRead:[],answered:4,correct:3,activity:{'2026-10-16':2}},cloudSnapshot:cloudSnapshot({content_version:'static-afaa62b7426e09a7'})});
+ await h.ctx.SVProgress.initialize();
+ const before=[...h.data],calls=h.records.rpc.length,reads=[];
+ const read=h.ctx.localStorage.getItem;h.ctx.localStorage.getItem=key=>{reads.push(key);return read(key)};
+ const p=h.ctx.SVProgressDebug.preview();
+ assert.equal(p.status,'preview');assert.equal(p.account.compatible,true);
+ assert.equal(p.account.summary.xp,23);assert.equal(p.cloud.xp,42);assert.equal(p.account.summary.accuracy,75);
+ assert.equal(p.account.summary.activeDays,1);assert.equal(p.account.summary.favorites,1);
+ assert.deepEqual(Array.from(p.account.differences.known.cloudOnly),['v-prata']);
+ assert.equal(p.guest.status,'excluded');assert.deepEqual(reads,['sv-account-local-v1-'+A]);
+ p.cloud.activity.changed=1;assert.equal(h.ctx.SVProgressDebug.preview().cloud.activity.changed,undefined);
+ assert.equal(h.records.rpc.length,calls);assert.deepEqual(h.records.storageWrites,[]);assert.deepEqual([...h.data],before);
+ assert.doesNotMatch(JSON.stringify(p),/test-jwt|access_token|avatarPath|person@example/);
+ const g=h.ctx.SVProgressDebug.preview({includeGuest:true});assert.equal(g.guest.summary.xp,91);assert.equal(g.account.summary.xp,23);
+});
+test('preview rejects incompatible raw local data without sanitizing or falling back to guest',async()=>{
+ const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',cloudSnapshot:cloudSnapshot({content_version:'static-afaa62b7426e09a7'})});
+ await h.ctx.SVProgress.initialize();const key='sv-account-local-v1-'+A;
+ assert.equal(h.ctx.SVProgressDebug.preview().account.status,'absent');
+ const invalid=[null,[],{xp:null},{xp:1000000001},{correct:2,answered:1},{known:['unknown']},{known:null},{activity:{'2026-02-30':1}},{activity:{'2026-10-17':10001}},
+  {reviews:{'v-arbeta':{due:4102444800001,interval:1,ease:2.5,rep:1}}},{settings:{language:'bad'}},{profile:{name:'x'.repeat(71)}}];
+ for(const s of invalid){h.data.set(key,JSON.stringify(s));const p=h.ctx.SVProgressDebug.preview();assert.equal(p.account.compatible,false,JSON.stringify(s))}
+ h.data.set(key,'{');assert.equal(h.ctx.SVProgressDebug.preview().account.status,'unreadable');
+ assert.deepEqual(h.records.storageWrites,[]);assert.equal(h.records.rpc.length,1);
+});
+test('preview checks content version and clears access immediately on identity changes',async()=>{
+ const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23},cloudSnapshot:cloudSnapshot()});
+ await h.ctx.SVProgress.initialize();
+ assert.ok(h.ctx.SVProgressDebug.preview().account.issues.includes('CONTENT_VERSION_UNVERIFIED_OR_MISMATCH'));
+ h.emit('SIGNED_IN',token(B));assert.equal(h.ctx.SVProgressDebug.preview().status,'unavailable');
+ await h.ctx.SVAuth.signOut();assert.equal(h.ctx.SVProgressDebug.preview().status,'unavailable');
+ assert.deepEqual(h.records.storageWrites,[]);
+});
+test('preview catalog version tracks actual static content and detects frozen manifest drift',()=>{
+ const {execFileSync}=require('node:child_process');
+ const version=execFileSync('python3',['-c',"import sys;sys.path.insert(0,'scripts');from check_supabase_manifest import current_manifest;print(current_manifest()['version'])"],{cwd:root,encoding:'utf8'}).trim();
+ const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
+ assert.ok(app.includes("version:'"+version+"'"));
+});

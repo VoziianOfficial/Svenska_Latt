@@ -233,7 +233,10 @@ async function boot(){
   restoreQuizSession();
   hydrateLocation();bindEvents();render();
   if(window.SVAuth){
-   void window.SVProgress?.initialize({onError:message=>toast(message)});
+   void window.SVProgress?.initialize({onError:message=>toast(message),previewCatalog:()=>({
+    version:'static-afaa62b7426e09a7',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
+    books:BOOKS.map(x=>x.id),videos:[...VIDEOS,...MORE_VIDEOS].map(x=>x.id)
+   })});
    window.SVAuth.subscribe(()=>applyAuthState(window.SVAuth.getState()));
    // Restore without delaying guest learning during a network outage.
    void window.SVAuth.initialize().then(auth=>{
