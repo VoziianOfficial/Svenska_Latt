@@ -1,10 +1,10 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE='2026-10-17-count-photo-fix-1';
+const RELEASE='2026-10-17-custom-controls-1';
 const APP_CACHE=`svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE=`svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT=150;
-const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./supabase-client.js','./supabase-auth.js','./supabase-rpc.js','./supabase-progress.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
+const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./custom-controls.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./supabase-client.js','./supabase-auth.js','./supabase-rpc.js','./supabase-progress.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
 const SHELL_URLS=new Set(FILES.map(file=>new URL(file,self.registration.scope).href));
 let photoWrites=Promise.resolve();
 self.addEventListener('install',event=>{
