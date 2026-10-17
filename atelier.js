@@ -172,7 +172,7 @@ function decorateSlider(track){
  const section=track.previousElementSibling;
  let header=section?.classList?.contains('section-head')?section:null;
  if(!header && track.classList.contains('premium-topics')) { header=document.createElement('div');header.className='section-head topic-slider-head';const label=document.createElement('h2');label.textContent=({en:'Browse all topics',sv:'Bläddra bland ämnen',uk:'Переглянути всі теми',ru:'Листай все темы'})[document.documentElement.lang]||'Листай все темы';header.appendChild(label);track.parentElement.insertBefore(header,track); }
- if(header){const holder=document.createElement('div');holder.className='slider-tools';holder.innerHTML='<span class="slider-hint" aria-hidden="true">‹ ›</span><button class="slider-arrow" type="button" aria-label="Previous cards">‹</button><button class="slider-arrow" type="button" aria-label="Next cards">›</button>';
+ if(header){const holder=document.createElement('div');holder.className='slider-tools';holder.innerHTML='<button class="slider-arrow" type="button" aria-label="Previous cards">‹</button><button class="slider-arrow" type="button" aria-label="Next cards">›</button>';
  header.appendChild(holder);
  const [prev,next]=holder.querySelectorAll('button');
  const update=()=>{prev.disabled=!circular&&track.scrollLeft<5;next.disabled=!circular&&track.scrollLeft+track.clientWidth>=track.scrollWidth-5};

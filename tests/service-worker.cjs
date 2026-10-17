@@ -2,6 +2,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const source=fs.readFileSync(require('node:path').join(__dirname,'../sw.js'),'utf8');
+const release=source.match(/const RELEASE='([^']+)'/)[1];
 const origin='https://example.test';
 const scope=origin+'/svenska/';
 const stores=new Map();
@@ -39,7 +40,7 @@ async function load(handlers,path,destination='image',method='GET'){
  const handlers=worker(source);
  await caches.open('svenska-latt-v45-shell');await caches.open('svenska-latt-v23-photos');await caches.open('unrelated-cache');
  await lifecycle(handlers.install);
- const shellName=(await caches.keys()).find(n=>n.includes('prep-1-shell'));
+ const shellName=(await caches.keys()).find(n=>n===`svenska-latt-${release}-shell`);
  assert(shellName);
  assert(![...stores.get(shellName).keys()].some(p=>p.includes('/flashcards/')),'do not precache photographs');
  await lifecycle(handlers.activate);
@@ -65,7 +66,7 @@ async function load(handlers,path,destination='image',method='GET'){
  assert.equal((await load(handlers,'assets/word-icons/cat.webp?v=2')).status,200,'viewed word icons stay available offline');
  assert.equal(await load(handlers,'style.css','style','POST'),undefined);
  online=true;
- const updated=worker(source.replace('2026-10-16-prep-1','test-next-release'));
+ const updated=worker(source.replace(release,'test-next-release'));
  await lifecycle(updated.install);await lifecycle(updated.activate);
  assert(!stores.has(photoName));assert(!stores.has(shellName));assert(stores.has('unrelated-cache'));
  await load(updated,'assets/flashcards/photo-204.webp');
