@@ -1465,3 +1465,2471 @@ window.SV_LOCALES.quiz={
  "я":{"en": "I", "sv": "jag", "uk": "я"},
  "яблоко":{"en": "apple", "sv": "ett äpple", "uk": "яблуко"}
 };
+
+// Full lesson explanations; arrays follow the source lesson order without summaries.
+window.SV_LOCALES.lessonDetails={
+ "lesson-1": {
+  "en": {
+   "description": "Learn to recognize Swedish letters and feel confident with new sounds.",
+   "rules": [
+    "Swedish has 29 letters. Å, Ä and Ö come at the end of the alphabet. They are separate letters, not variants of A and O.",
+    "The Swedish letter J is usually pronounced /j/, like y in yes. SJ often represents a special Swedish fricative sound.",
+    "Spelling and pronunciation can differ: jag often loses its final g in speech, and de is usually pronounced /dɔm/.",
+    "Listen to the whole word and repeat it aloud. Transcriptions using Russian letters are only approximate.",
+    "Å, ä and ö are separate letters placed after z at the very end of the alphabet. Do not replace them with a and o.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Alphabet and pronunciation” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Alphabet and pronunciation",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Lär dig känna igen svenska bokstäver och bli trygg med nya ljud.",
+   "rules": [
+    "Svenskan har 29 bokstäver. Å, Ä och Ö står sist i alfabetet. De är egna bokstäver, inte varianter av A och O.",
+    "Bokstaven J uttalas oftast /j/, som i ja. Kombinationen SJ betecknar ofta ett särskilt svenskt sje-ljud.",
+    "Stavning och uttal kan skilja sig: jag uttalas ofta utan slutljudet g och de uttalas oftast som dom.",
+    "Lyssna på hela ordet och upprepa det högt. Transkription med ryska bokstäver är bara ungefärlig.",
+    "Å, ä och ö är egna bokstäver som står efter z, sist i alfabetet. De får inte ersättas med a och o.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Alfabet och uttal” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Alfabet och uttal",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Навчимося впізнавати шведські літери й не боятися нових звуків.",
+   "rules": [
+    "У шведській 29 літер. Наприкінці алфавіту стоять Å, Ä і Ö — окремі літери, а не варіанти A та O.",
+    "Шведська J зазвичай вимовляється як «й», а сполучення SJ часто позначає особливий шведський шиплячий звук.",
+    "Не все читається так, як пишеться: jag часто звучить без кінцевого g, а de в мовленні зазвичай вимовляють як «дом».",
+    "Слухай слово цілком і повторюй уголос. Транскрипція російськими літерами лише приблизна.",
+    "Å, ä, ö — окремі літери після z, у самому кінці алфавіту. Їх не можна замінювати на a та o.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Алфавіт і вимова» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Алфавіт і вимова",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-2": {
+  "en": {
+   "description": "Phrases for your first conversation in Swedish.",
+   "rules": [
+    "Hej means hello, tack means thank you, and hej då means goodbye.",
+    "Introduce yourself with Jag heter ... (My name is ...). Jag is followed by a verb in the present tense.",
+    "Hur mår du? means How are you? You can answer Bra, tack (Good, thank you).",
+    "In Vad heter du?, the question word comes first, followed by the verb heter and then du.",
+    "A typical introduction follows this order: greeting → name → where you come from → where you live.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Greetings and introductions” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Greetings and introductions",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Fraser för ditt första samtal på svenska.",
+   "rules": [
+    "Hej används som hälsning, tack för att tacka och hej då när man skiljs åt.",
+    "Presentera dig med Jag heter ... Efter Jag står ett verb i presens.",
+    "Hur mår du? frågar hur någon känner sig. Du kan svara Bra, tack.",
+    "I frågan Vad heter du? kommer frågeordet först, sedan verbet heter och därefter du.",
+    "En vanlig presentation följer ordningen: hälsning → namn → varifrån du kommer → var du bor.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Hälsningar och presentation” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Hälsningar och presentation",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Фрази для першої розмови шведською.",
+   "rules": [
+    "Hej — «привіт», tack — «дякую», hej då — «бувай».",
+    "Щоб представитися, кажи Jag heter ... («Мене звати ...»). Після Jag стоїть дієслово в теперішньому часі.",
+    "Hur mår du? — «Як ти почуваєшся?» Можна відповісти Bra, tack («Добре, дякую»).",
+    "У запитанні Vad heter du? питальне слово стоїть першим, далі дієслово heter, потім du.",
+    "Звичайний порядок знайомства: привітання → ім’я → звідки ти → де живеш.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Вітання та знайомство» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Вітання та знайомство",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-3": {
+  "en": {
+   "description": "Understand who performs an action and who owns something.",
+   "rules": [
+    "Jag = I, du = you (singular), han = he, hon = she, vi = we, ni = you (plural), de = they.",
+    "When someone performs an action, use jag/du/hon and the other subject forms: Hon läser.",
+    "When an action is directed at a person, use object forms: mig, dig, honom, henne, oss, er, dem.",
+    "Hans = his, hennes = her, deras = their. These express possession, not the object of an action.",
+    "Jag, du, han, hon, vi, ni, de are subject forms. Mig, dig, honom, henne, oss, er, dem are object forms.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Pronouns: jag, du, hon” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Pronouns: jag, du, hon",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Förstå vem som utför en handling och vem något tillhör.",
+   "rules": [
+    "Jag, du, han, hon, vi, ni och de anger vem eller vilka som gör något: jag själv, den tilltalade, han eller hon, vi tillsammans, ni och de andra.",
+    "När någon utför en handling används jag/du/hon och andra subjektsformer: Hon läser.",
+    "När handlingen riktas mot en person används objektsformer: mig, dig, honom, henne, oss, er, dem.",
+    "Hans, hennes och deras anger vem något tillhör. De uttrycker ägande, inte handlingens objekt.",
+    "Jag, du, han, hon, vi, ni, de är subjektsformer. Mig, dig, honom, henne, oss, er, dem är objektsformer.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Pronomen: jag, du, hon” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Pronomen: jag, du, hon",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Розберемося, хто виконує дію і кому що належить.",
+   "rules": [
+    "Jag — я, du — ти, han — він, hon — вона, vi — ми, ni — ви, de — вони.",
+    "Коли людина сама щось робить, використовуй jag/du/hon та інші форми підмета: Hon läser.",
+    "Коли дія спрямована на людину, потрібні об’єктні форми: mig, dig, honom, henne, oss, er, dem.",
+    "Hans — його, hennes — її, deras — їхній. Це належність, а не об’єкт дії.",
+    "Jag, du, han, hon, vi, ni, de — форми підмета. Mig, dig, honom, henne, oss, er, dem — форми додатка.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Займенники: jag, du, hon» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Займенники: jag, du, hon",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-4": {
+  "en": {
+   "description": "Say what you are doing now or usually do.",
+   "rules": [
+    "The infinitive is the dictionary form: att arbeta (to work). The present tense uses the form arbetar.",
+    "Swedish verbs do not change with grammatical person: jag arbetar, du arbetar, vi arbetar.",
+    "Common present tense endings are -ar (jobbar), -er (köper) and -r (bor). Some verbs are irregular: är, har.",
+    "Do not identify a whole verb group from one ending alone. Learn all four forms when studying a verb.",
+    "In the present tense, the ending depends on the verb group: arbetar, köper, bor, skriver.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Present tense (presens)” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Present tense (presens)",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Berätta vad du gör nu eller brukar göra.",
+   "rules": [
+    "Infinitiv är ordboksformen: att arbeta. I presens används formen arbetar.",
+    "Svenska verb ändras inte efter person: jag arbetar, du arbetar, vi arbetar.",
+    "Vanliga presensändelser är -ar (jobbar), -er (köper) och -r (bor). Vissa verb är oregelbundna: är, har.",
+    "Bestäm inte verbgruppen utifrån bara en ändelse. Lär dig alla fyra formerna när du lär dig ett verb.",
+    "I presens beror ändelsen på verbgruppen: arbetar, köper, bor, skriver.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Presens” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Presens",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як сказати, що робиш зараз або зазвичай.",
+   "rules": [
+    "Інфінітив — словникова форма: att arbeta (працювати). Для теперішнього часу потрібна форма presens: arbetar.",
+    "Шведські дієслова не змінюються за особами: jag arbetar, du arbetar, vi arbetar.",
+    "Поширені закінчення presens: -ar (jobbar), -er (köper), -r (bor). Деякі дієслова неправильні: är, har.",
+    "Не визначай групу лише за одним закінченням: вивчаючи дієслово, запам’ятовуй усі чотири форми.",
+    "У теперішньому часі закінчення залежить від групи дієслова: arbetar, köper, bor, skriver.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Теперішній час (presens)» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Теперішній час (presens)",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-5": {
+  "en": {
+   "description": "The two noun genders and how to learn them.",
+   "rules": [
+    "Swedish nouns have two grammatical genders: en-nouns and ett-nouns. For example, en bok but ett hus.",
+    "Meaning usually does not reliably tell you a noun’s gender. Learn each new noun together with its article.",
+    "In the indefinite singular, say en bil (a car) and ett äpple (an apple).",
+    "Gender also affects other words: en stor bil but ett stort hus.",
+    "Nouns are en-ord or ett-ord. Memorize the article with the word: en bil, ett hus.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Nouns: en or ett” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Nouns: en or ett",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Substantivens två genus och hur du lär dig dem.",
+   "rules": [
+    "Svenska substantiv har två grammatiska genus: en-ord och ett-ord. Till exempel en bok men ett hus.",
+    "Betydelsen räcker oftast inte för att avgöra genus. Lär dig därför varje nytt substantiv tillsammans med artikeln.",
+    "I obestämd form singular säger man en bil och ett äpple.",
+    "Genus påverkar också andra ord: en stor bil men ett stort hus.",
+    "Substantiv är en-ord eller ett-ord. Lär dig artikeln tillsammans med ordet: en bil, ett hus.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Substantiv: en eller ett” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Substantiv: en eller ett",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Два роди іменників і як їх вивчати.",
+   "rules": [
+    "Шведські іменники мають два граматичні роди: слова з en і слова з ett. Наприклад, en bok, але ett hus.",
+    "За значенням зазвичай не можна точно визначити рід. Тому нове слово краще вчити одразу з артиклем.",
+    "У неозначеній формі однини кажемо en bil (машина), ett äpple (яблуко).",
+    "Це важливо й для інших слів: en stor bil, але ett stort hus.",
+    "Іменники бувають en-ord і ett-ord. Артикль потрібно запам’ятовувати разом зі словом: en bil, ett hus.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Іменники: en або ett» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Іменники: en або ett",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-6": {
+  "en": {
+   "description": "Why en bil becomes bilen.",
+   "rules": [
+    "When mentioning something for the first time or referring to it indefinitely, use en/ett: en bil, ett hus.",
+    "When referring to a known car or a specific house, the article usually becomes an ending: bilen, huset.",
+    "En-nouns usually take -en or -n, and ett-nouns -et or -t. The exact form depends on the word.",
+    "Compare: Jag har en bil. Bilen är röd. — I have a car. The car is red.",
+    "In the definite form, the article attaches to the end: en bil → bilen, ett hus → huset.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Definite form” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Definite form",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Varför en bil blir bilen.",
+   "rules": [
+    "När något nämns första gången eller är obestämt används en/ett: en bil, ett hus.",
+    "När det gäller en redan känd bil eller ett bestämt hus blir artikeln oftast en ändelse: bilen, huset.",
+    "En-ord får oftast -en eller -n och ett-ord -et eller -t. Den exakta formen beror på ordet.",
+    "Jämför: Jag har en bil. Bilen är röd. Först introduceras bilen, sedan syftar man på samma bil.",
+    "I bestämd form fogas artikeln till slutet: en bil → bilen, ett hus → huset.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Bestämd form” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Bestämd form",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Чому en bil перетворюється на bilen.",
+   "rules": [
+    "Коли говоримо про щось уперше або неозначено, використовуємо en/ett: en bil, ett hus.",
+    "Коли йдеться про вже відому машину або конкретний будинок, артикль зазвичай стає закінченням: bilen, huset.",
+    "Для слів з en зазвичай -en або -n, для слів з ett — -et або -t. Точна форма залежить від слова.",
+    "Порівняй: Jag har en bil. Bilen är röd. — У мене є машина. Ця машина червона.",
+    "В означеній формі артикль приєднується наприкінці: en bil → bilen, ett hus → huset.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Означена форма» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Означена форма",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-7": {
+  "en": {
+   "description": "Build simple questions.",
+   "rules": [
+    "Vad means what or which, var means where, vart means where to, and varifrån means where from.",
+    "Hur = how, när = when, varför = why, vem = who.",
+    "Questions with a question word often follow this order: question word + verb + subject: Var bor du?",
+    "Without a question word, the verb usually comes first: Bor du här?",
+    "Vad = what, var = where, vart = where to, vem = who, varför = why, när = when, hur = how.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Question words: vad, var, hur” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Question words: vad, var, hur",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Bilda enkla frågor.",
+   "rules": [
+    "Vad frågar efter en sak eller ett val, var efter en plats, vart efter riktning och varifrån efter ursprung.",
+    "Hur frågar efter sätt eller tillstånd, när efter tid, varför efter orsak och vem efter en person.",
+    "Frågor med frågeord har ofta ordningen frågeord + verb + subjekt: Var bor du?",
+    "Utan frågeord kommer verbet oftast först: Bor du här?",
+    "Frågeorden anger: vad – sak, var – plats, vart – riktning, vem – person, varför – orsak, när – tid, hur – sätt.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Frågeord: vad, var, hur” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Frågeord: vad, var, hur",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Побудуємо прості запитання.",
+   "rules": [
+    "Vad — «що» або «який», var — «де», vart — «куди», varifrån — «звідки».",
+    "Hur — «як», när — «коли», varför — «чому», vem — «хто».",
+    "У запитанні з питальним словом часто такий порядок: питальне слово + дієслово + підмет: Var bor du?",
+    "Без питального слова дієслово зазвичай стоїть першим: Bor du här?",
+    "Vad = що, var = де, vart = куди, vem = хто, varför = чому, när = коли, hur = як.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Питальні слова: vad, var, hur» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Питальні слова: vad, var, hur",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-8": {
+  "en": {
+   "description": "Shopping, timetables and appointments.",
+   "rules": [
+    "Numbers 1–10: ett/en, två, tre, fyra, fem, sex, sju, åtta, nio, tio.",
+    "Use klockan when telling the time: Klockan är åtta means It is eight o’clock.",
+    "Halv nio means 8:30 in Swedish: half an hour before nine. Remember which hour the expression refers to.",
+    "I dag = today, i morgon = tomorrow, i går = yesterday.",
+    "For time: klockan är två = two o’clock; halv tre = half past two (02:30).",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Numbers and time” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Numbers and time",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Inköp, tidtabeller och möten.",
+   "rules": [
+    "Talen 1–10: ett/en, två, tre, fyra, fem, sex, sju, åtta, nio, tio.",
+    "Använd klockan när du anger tid: Klockan är åtta betyder 08.00 eller 20.00 beroende på sammanhanget.",
+    "Halv nio betyder 8.30: en halvtimme före nio. Lägg märke till vilken timme uttrycket syftar på.",
+    "I dag är den här dagen, i morgon nästa dag och i går föregående dag.",
+    "Tidsuttryck: klockan är två = 02.00; halv tre = 02.30.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Tal och klockan” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Tal och klockan",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Покупки, розклад і зустрічі.",
+   "rules": [
+    "Числа 1–10: ett/en, två, tre, fyra, fem, sex, sju, åtta, nio, tio.",
+    "Для часу зручно використовувати klockan: Klockan är åtta — восьма година.",
+    "Halv nio шведською означає 8:30 — за пів години до дев’ятої. Звертай увагу, якої години стосується вислів.",
+    "I dag — сьогодні, i morgon — завтра, i går — учора.",
+    "Для часу: klockan är två = друга година; halv tre = пів на третю (02:30).",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Числа та час» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Числа та час",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-9": {
+  "en": {
+   "description": "The most regular verb group: -ar, -ade, -at.",
+   "rules": [
+    "Many group 1 verbs have an infinitive ending in -a: jobba, prata, arbeta.",
+    "For the present tense, add -r to the infinitive: jobba → jobbar. For the past tense, replace -a with -ade: jobbade.",
+    "The supine, used with har/hade, replaces -a with -at: jobbat.",
+    "The complete pattern is jobba → jobbar → jobbade → jobbat. This applies to group 1, not to every verb ending in -a.",
+    "Group 1: arbeta–arbetar–arbetade–arbetat. Recognize it by -ar in the present tense.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Group 1 verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Group 1 verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Den mest regelbundna verbgruppen: -ar, -ade, -at.",
+   "rules": [
+    "Många verb i grupp 1 har infinitiv på -a: jobba, prata, arbeta.",
+    "I presens läggs -r till infinitiven: jobba → jobbar. I preteritum ersätts -a med -ade: jobbade.",
+    "I supinum, som används med har/hade, ersätts -a med -at: jobbat.",
+    "Hela mönstret är jobba → jobbar → jobbade → jobbat. Det gäller grupp 1, inte alla verb på -a.",
+    "Grupp 1: arbeta–arbetar–arbetade–arbetat. Den känns igen på -ar i presens.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Verb i grupp 1” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Verb i grupp 1",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Найрегулярніша група: -ar, -ade, -at.",
+   "rules": [
+    "У багатьох дієслів першої групи інфінітив закінчується на -a: jobba, prata, arbeta.",
+    "У теперішньому часі додаємо -r до інфінітива: jobba → jobbar. У минулому замінюємо -a на -ade: jobbade.",
+    "Супінум, який використовується з har/hade: замінюємо -a на -at: jobbat.",
+    "Отже: jobba → jobbar → jobbade → jobbat. Це схема групи 1, а не правило для всіх дієслів на -a.",
+    "Група 1: arbeta–arbetar–arbetade–arbetat. Упізнаємо її за -ar у presens.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Дієслова групи 1» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Дієслова групи 1",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-10": {
+  "en": {
+   "description": "Learn to recognize -de and -t.",
+   "rules": [
+    "Group 2A often has -er in the present tense: ringer, stänger. But -er alone does not identify 2A, because group 2B also exists.",
+    "The past tense in group 2A usually ends in -de: ringde, stängde.",
+    "The supine often ends in -t: ringt, stängt.",
+    "Memorize the four forms: ringa → ringer → ringde → ringt. The stem does not always change according to one literal pattern.",
+    "Group 2A: ringa–ringer–ringde–ringt. A characteristic ending is -de in the past tense.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Group 2A verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Group 2A verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Lär dig känna igen -de och -t.",
+   "rules": [
+    "Grupp 2A har ofta -er i presens: ringer, stänger. Men -er räcker inte för att identifiera 2A, eftersom även grupp 2B finns.",
+    "Preteritum i grupp 2A slutar oftast på -de: ringde, stängde.",
+    "Supinum slutar ofta på -t: ringt, stängt.",
+    "Lär dig de fyra formerna: ringa → ringer → ringde → ringt. Stammen förändras inte alltid enligt en enda exakt mall.",
+    "Grupp 2A: ringa–ringer–ringde–ringt. Ett kännetecken är -de i preteritum.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Verb i grupp 2A” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Verb i grupp 2A",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Вчимося впізнавати -de і -t.",
+   "rules": [
+    "У групі 2A в presens часто -er: ringer, stänger. Але саме -er ще не означає 2A: є також група 2B.",
+    "У минулому часі група 2A зазвичай має -de: ringde, stängde.",
+    "У супінумі часто -t: ringt, stängt.",
+    "Зручно запам’ятати чотири форми: ringa → ringer → ringde → ringt. Основа не завжди змінюється буквально за одним шаблоном.",
+    "Група 2A: ringa–ringer–ringde–ringt. Характерна ознака — -de в минулому часі.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Дієслова групи 2A» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Дієслова групи 2A",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-11": {
+  "en": {
+   "description": "Tell -te apart from -de.",
+   "rules": [
+    "Group 2B resembles 2A: the present tense often ends in -er and the supine in -t.",
+    "However, the past tense usually ends in -te: köpa → köpte, läsa → läste.",
+    "The stem often ends in a voiceless consonant, giving -te rather than -de.",
+    "Compare ringde (2A) and köpte (2B). Learn each verb in all four forms to avoid mistakes.",
+    "Group 2B: köpa–köper–köpte–köpt. After a voiceless consonant, the past tense often takes -te.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Group 2B verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Group 2B verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Skilj på -te och -de.",
+   "rules": [
+    "Grupp 2B liknar 2A: presens slutar ofta på -er och supinum på -t.",
+    "Preteritum slutar däremot oftast på -te: köpa → köpte, läsa → läste.",
+    "Stammen slutar ofta på en tonlös konsonant, vilket ger -te i stället för -de.",
+    "Jämför ringde (2A) och köpte (2B). Lär dig alla fyra formerna av verbet för att undvika fel.",
+    "Grupp 2B: köpa–köper–köpte–köpt. Efter en tonlös konsonant får preteritum ofta -te.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Verb i grupp 2B” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Verb i grupp 2B",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Відрізняємо -te від -de.",
+   "rules": [
+    "Група 2B схожа на 2A: presens часто закінчується на -er, а supinum — на -t.",
+    "Але минулий час тут зазвичай на -te: köpa → köpte, läsa → läste.",
+    "Основа часто закінчується на глухий приголосний, тому отримуємо -te замість -de.",
+    "Порівняй ringde (2A) і köpte (2B). Щоб не помилятися, вчи дієслово одразу в чотирьох формах.",
+    "Група 2B: köpa–köper–köpte–köpt. Після глухого приголосного в минулому часі часто -te.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Дієслова групи 2B» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Дієслова групи 2B",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-12": {
+  "en": {
+   "description": "Short verbs: bo and tro.",
+   "rules": [
+    "Group 3 often contains short verbs without a final -a: bo, tro.",
+    "The present tense adds -r: bo → bor, tro → tror.",
+    "The past tense adds -dde: bo → bodde, tro → trodde.",
+    "The supine adds -tt: bo → bott, tro → trott. Not every short verb belongs to group 3!",
+    "Group 3: bo–bor–bodde–bott. Many of these verbs end in a vowel.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Group 3 verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Group 3 verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Korta verb: bo och tro.",
+   "rules": [
+    "Grupp 3 innehåller ofta korta verb utan -a på slutet: bo, tro.",
+    "Presens får -r: bo → bor, tro → tror.",
+    "Preteritum får -dde: bo → bodde, tro → trodde.",
+    "Supinum får -tt: bo → bott, tro → trott. Men alla korta verb hör inte till grupp 3!",
+    "Grupp 3: bo–bor–bodde–bott. Många av verben slutar på en vokal.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Verb i grupp 3” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Verb i grupp 3",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Короткі дієслова bo і tro.",
+   "rules": [
+    "У групі 3 часто короткі дієслова без -a наприкінці: bo, tro.",
+    "Presens отримує -r: bo → bor, tro → tror.",
+    "Минулий час отримує -dde: bo → bodde, tro → trodde.",
+    "Супінум отримує -tt: bo → bott, tro → trott. Але не всі короткі дієслова належать до групи 3!",
+    "Група 3: bo–bor–bodde–bott. Багато дієслів закінчуються на голосну.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Дієслова групи 3» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Дієслова групи 3",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-13": {
+  "en": {
+   "description": "Irregular forms without one common formula.",
+   "rules": [
+    "Group 4 contains many strong and irregular verbs. Their vowel can change: skriva → skrev → skrivit.",
+    "These verbs do not share one universal pattern of endings.",
+    "Examples: gå → går → gick → gått; vara → är → var → varit.",
+    "The best approach combines flashcards, pronunciation, examples and spaced repetition.",
+    "Group 4 contains strong and irregular verbs, for example skriva–skriver–skrev–skrivit.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Group 4 verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Group 4 verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Oregelbundna former utan en gemensam formel.",
+   "rules": [
+    "Grupp 4 innehåller många starka och oregelbundna verb. Vokalen kan ändras: skriva → skrev → skrivit.",
+    "De här verben har inte ett gemensamt mönster för alla ändelser.",
+    "Exempel: gå → går → gick → gått; vara → är → var → varit.",
+    "En bra metod är att kombinera ordkort, uttal, exempel och repetition med mellanrum.",
+    "Grupp 4 består av starka och oregelbundna verb, till exempel skriva–skriver–skrev–skrivit.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Verb i grupp 4” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Verb i grupp 4",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Неправильні форми без однієї спільної формули.",
+   "rules": [
+    "До четвертої групи належить багато сильних і неправильних дієслів. Вони можуть змінювати голосну: skriva → skrev → skrivit.",
+    "У таких слів немає однієї універсальної схеми закінчень.",
+    "Приклади: gå → går → gick → gått; vara → är → var → varit.",
+    "Найкращий спосіб — картки, вимова, приклади й інтервальне повторення.",
+    "Група 4 — сильні й неправильні дієслова. Наприклад: skriva–skriver–skrev–skrivit.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Дієслова групи 4» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Дієслова групи 4",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-14": {
+  "en": {
+   "description": "Talk about yesterday.",
+   "rules": [
+    "Preteritum is the simple past. Use it for completed events in the past, especially when stating when: i går, förra veckan.",
+    "The verb form depends on its group: jobbade, ringde, köpte, bodde, gick.",
+    "The form does not change with jag, du or hon: jag köpte, hon köpte.",
+    "Distinguish the past tense from the supine: jag köpte means I bought; jag har köpt means I have bought and includes har.",
+    "Preteritum describes a completed action in the past. The question “when?” matters: i går, förra veckan.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Past tense (preteritum)” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Past tense (preteritum)",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Berätta om gårdagen.",
+   "rules": [
+    "Preteritum är enkelt förflutet tempus. Det används för avslutade händelser i det förflutna, särskilt med tidsangivelser: i går, förra veckan.",
+    "Verbformen beror på gruppen: jobbade, ringde, köpte, bodde, gick.",
+    "Formen ändras inte med jag, du eller hon: jag köpte, hon köpte.",
+    "Skilj preteritum från supinum: jag köpte är preteritum; jag har köpt innehåller har och supinum.",
+    "Preteritum beskriver en avslutad handling i det förflutna. Frågan ”när?” är viktig: i går, förra veckan.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Preteritum” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Preteritum",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як говорити про вчорашній день.",
+   "rules": [
+    "Preteritum — простий минулий час. Використовуємо його для завершених подій у минулому, особливо коли вказуємо час: i går, förra veckan.",
+    "Форма дієслова залежить від групи: jobbade, ringde, köpte, bodde, gick.",
+    "Форма не змінюється залежно від jag, du або hon: jag köpte, hon köpte.",
+    "Не плутай із супінумом: jag köpte — я купила; jag har köpt — я вже купила, з har.",
+    "Preteritum описує завершену дію в минулому; важливе запитання «коли?» — i går, förra veckan.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Минулий час (preteritum)» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Минулий час (preteritum)",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-15": {
+  "en": {
+   "description": "Why we say har köpt rather than har köpte.",
+   "rules": [
+    "The supine is a special verb form used in compound past tenses: har + supine and hade + supine.",
+    "Perfect: jag har köpt. When stating what happened yesterday, jag köpte i går is more natural.",
+    "In the supine, group 1 often takes -at, group 2 -t and group 3 -tt. Group 4 has its own forms.",
+    "The supine is not a tense on its own. The whole construction har + supine creates the tense.",
+    "The perfect tense is formed with har + supine: har arbetat, har köpt, har skrivit.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Supine and perfect tense” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Supine and perfect tense",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Varför man säger har köpt och inte har köpte.",
+   "rules": [
+    "Supinum är en särskild verbform som används i sammansatta tempus: har + supinum och hade + supinum.",
+    "Perfekt: jag har köpt. När man berättar vad som hände i går är jag köpte i går naturligare.",
+    "I supinum får grupp 1 ofta -at, grupp 2 -t och grupp 3 -tt. Grupp 4 har egna former.",
+    "Supinum är inte ett eget tempus. Hela konstruktionen har + supinum bildar tempus.",
+    "Perfekt bildas med har + supinum: har arbetat, har köpt, har skrivit.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Supinum och perfekt” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Supinum och perfekt",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Чому кажуть har köpt, а не har köpte.",
+   "rules": [
+    "Supinum — особлива форма дієслова для складених минулих часів: har + супінум і hade + супінум.",
+    "Перфект: jag har köpt. Якщо окремо говоримо, що було вчора, природніше jag köpte i går.",
+    "У супінумі група 1 часто має -at, група 2 — -t, група 3 — -tt, а група 4 — власні форми.",
+    "Супінум сам по собі не є окремим часом: час утворює вся конструкція har + супінум.",
+    "Перфект утворюється з har + супінум: har arbetat, har köpt, har skrivit.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Супінум і перфект» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Супінум і перфект",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-16": {
+  "en": {
+   "description": "Understand the forms stolar, böcker and barn.",
+   "rules": [
+    "Plural nouns can take -or, -ar, -er or -n, or remain unchanged.",
+    "Examples: en flicka → flickor, en bil → bilar, en bok → böcker, ett äpple → äpplen, ett barn → barn.",
+    "The definite plural usually adds another ending: bilarna, böckerna, barnen.",
+    "The en/ett gender helps, but does not determine the ending in every case. Learn each noun together with its plural form.",
+    "Learn the plural with the noun: en stol → stolar, en bok → böcker, ett hus → hus.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Plural nouns” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Plural nouns",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Förstå formerna stolar, böcker och barn.",
+   "rules": [
+    "I plural kan substantiv få -or, -ar, -er eller -n, eller behålla samma form.",
+    "Exempel: en flicka → flickor, en bil → bilar, en bok → böcker, ett äpple → äpplen, ett barn → barn.",
+    "Bestämd form plural får oftast ytterligare en ändelse: bilarna, böckerna, barnen.",
+    "Genus, en/ett, hjälper men bestämmer inte ändelsen i alla fall. Lär dig substantivet tillsammans med pluralformen.",
+    "Lär dig pluralformen tillsammans med substantivet: en stol → stolar, en bok → böcker, ett hus → hus.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Substantiv i plural” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Substantiv i plural",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Чому stolar, böcker і barn.",
+   "rules": [
+    "У множині іменники можуть отримувати -or, -ar, -er, -n або зовсім не змінюватися.",
+    "Приклади: en flicka → flickor, en bil → bilar, en bok → böcker, ett äpple → äpplen, ett barn → barn.",
+    "Означена форма множини зазвичай отримує додаткові закінчення: bilarna, böckerna, barnen.",
+    "Рід en/ett допомагає, але не визначає закінчення в усіх випадках. Учи слово разом із формою множини.",
+    "Множину потрібно вчити разом з іменником: en stol → stolar, en bok → böcker, ett hus → hus.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Множина іменників» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Множина іменників",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-17": {
+  "en": {
+   "description": "My, your, her, his and their.",
+   "rules": [
+    "Use min with en-nouns: min bil; mitt with ett-nouns: mitt hus; and mina with the plural: mina böcker.",
+    "The same pattern applies to din, ditt, dina; vår, vårt, våra; er, ert, era.",
+    "Hans means his, hennes means her and deras means their. These words do NOT change with the gender of the following noun.",
+    "Distinguish hennes (whose?) from henne (to whom? whom?).",
+    "Use min with an en-noun, mitt with an ett-noun and mina with the plural. Din/ditt/dina follow the same pattern.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Possessives: min, mitt, mina” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Possessives: min, mitt, mina",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Min, din, hennes, hans och deras.",
+   "rules": [
+    "Min används med en-ord: min bil. Mitt används med ett-ord: mitt hus. Mina används i plural: mina böcker.",
+    "Samma mönster gäller för din, ditt, dina; vår, vårt, våra; er, ert, era.",
+    "Hans, hennes och deras uttrycker ägande. De här orden ändras INTE efter det följande substantivets genus.",
+    "Skilj på hennes (vems?) och henne (åt vem? vem som objekt?).",
+    "Min används med en-ord, mitt med ett-ord och mina med plural. Din/ditt/dina följer samma mönster.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Possessiva pronomen: min, mitt, mina” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Possessiva pronomen: min, mitt, mina",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Мій, твій, її, його, їхній.",
+   "rules": [
+    "Min використовуємо зі словами з en: min bil. Mitt — зі словами з ett: mitt hus. Mina — для множини: mina böcker.",
+    "За тією ж логікою: din, ditt, dina; vår, vårt, våra; er, ert, era.",
+    "Hans — його, hennes — її, deras — їхній. Ці слова НЕ змінюються залежно від роду наступного іменника.",
+    "Не плутай hennes (чий?) і henne (кому? кого?).",
+    "Min — зі словом з en, mitt — зі словом з ett, mina — з множиною. Din/ditt/dina утворюються так само.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Присвійні: min, mitt, mina» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Присвійні: min, mitt, mina",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-18": {
+  "en": {
+   "description": "Vill, kan, måste and ska.",
+   "rules": [
+    "Vill, kan, måste and ska are usually followed by an infinitive without att: Jag vill köpa en bok.",
+    "Vill = want to, kan = can / know how to, måste = must / need to, ska = intend to / will according to a plan.",
+    "These modal verbs come before the main verb.",
+    "After a modal auxiliary, do not put the main verb in the present tense: Jag kan simma, not jag kan simmar.",
+    "Kan, vill, ska and måste are most often followed by an infinitive without att.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Modal verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Modal verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Vill, kan, måste och ska.",
+   "rules": [
+    "Efter vill, kan, måste och ska kommer oftast infinitiv utan att: Jag vill köpa en bok.",
+    "Vill uttrycker önskan, kan förmåga eller möjlighet, måste nödvändighet och ska avsikt eller planerad framtid.",
+    "De här modala hjälpverben står före huvudverbet.",
+    "Efter ett modalt hjälpverb står huvudverbet inte i presens: Jag kan simma, inte jag kan simmar.",
+    "Efter kan, vill, ska och måste kommer oftast infinitiv utan att.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Modala hjälpverb” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Modala hjälpverb",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Vill, kan, måste і ska.",
+   "rules": [
+    "Після vill, kan, måste, ska зазвичай іде інфінітив без att: Jag vill köpa en bok.",
+    "Vill — хочу, kan — можу / вмію, måste — мушу / потрібно, ska — збираюся / буду за планом.",
+    "Ці модальні дієслова стоять перед основним дієсловом.",
+    "Після модального допоміжного дієслова основне не ставлять у presens: Jag kan simma, а не jag kan simmar.",
+    "Після kan, vill, ska, måste найчастіше йде інфінітив без att.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Модальні дієслова» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Модальні дієслова",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-19": {
+  "en": {
+   "description": "Say stor bil, stort hus and stora bilar.",
+   "rules": [
+    "An adjective can change according to the gender and number of its noun.",
+    "En stor bil means a big car, ett stort hus a big house, and stora bilar big cars.",
+    "The plural usually takes -a, while indefinite ett-nouns often require -t. Some adjectives are exceptions: liten → litet → små.",
+    "The adjective describes the noun, and en/ett determines the appropriate form.",
+    "With ett, adjectives often take -t: ett stort hus. The plural usually takes -a: stora hus.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Adjectives: en, ett and plural” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Adjectives: en, ett and plural",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Lär dig säga stor bil, stort hus och stora bilar.",
+   "rules": [
+    "Ett adjektiv kan ändras efter substantivets genus och numerus.",
+    "Jämför: en stor bil, ett stort hus, stora bilar. Adjektivet anpassas till substantivet.",
+    "Plural får oftast -a och obestämd form med ett-ord ofta -t. Vissa adjektiv är undantag: liten → litet → små.",
+    "Adjektivet beskriver substantivet, och en/ett avgör vilken form som passar.",
+    "Med ett får adjektivet ofta -t: ett stort hus. I plural får det oftast -a: stora hus.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Adjektiv: en, ett och plural” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Adjektiv: en, ett och plural",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як сказати stor bil, stort hus, stora bilar.",
+   "rules": [
+    "Прикметник може змінюватися залежно від роду й числа іменника.",
+    "En stor bil — велика машина, ett stort hus — великий будинок, stora bilar — великі машини.",
+    "У множині зазвичай -a, зі словом з ett у неозначеній формі часто -t. Але є винятки: liten → litet → små.",
+    "Прикметник описує іменник, а en/ett визначає відповідну форму.",
+    "Після ett у прикметника часто -t: ett stort hus. У множині зазвичай -a: stora hus.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Прикметники: en, ett та множина» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Прикметники: en, ett та множина",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-20": {
+  "en": {
+   "description": "Den stora bilen and det stora huset.",
+   "rules": [
+    "When a definite adjective precedes a noun, Swedish often uses double definiteness.",
+    "Den stora bilen refers to a specific big car; det stora huset refers to a specific big house.",
+    "In a definite construction, the adjective usually ends in -a: den röda bilen.",
+    "Compare en stor bil (an unspecified big car) with den stora bilen (that particular big car).",
+    "Definite noun phrases: den stora bilen / det stora huset / de stora bilarna.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Definite adjectives” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Definite adjectives",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Den stora bilen och det stora huset.",
+   "rules": [
+    "När ett adjektiv i bestämd form står före ett substantiv använder svenskan ofta dubbel bestämdhet.",
+    "Den stora bilen syftar på en bestämd stor bil; det stora huset på ett bestämt stort hus.",
+    "I en bestämd konstruktion får adjektivet oftast ändelsen -a: den röda bilen.",
+    "Jämför en stor bil (en obestämd stor bil) med den stora bilen (en viss bestämd stor bil).",
+    "Bestämda nominalfraser: den stora bilen / det stora huset / de stora bilarna.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Adjektiv i bestämd form” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Adjektiv i bestämd form",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Den stora bilen і det stora huset.",
+   "rules": [
+    "Якщо перед іменником стоїть означений прикметник, у шведській часто використовується подвійна означеність.",
+    "Den stora bilen — конкретна велика машина, det stora huset — конкретний великий будинок.",
+    "В означеній конструкції прикметник зазвичай має закінчення -a: den röda bilen.",
+    "Порівняй en stor bil (якась велика машина) і den stora bilen (ця конкретна велика машина).",
+    "Означена іменникова група: den stora bilen / det stora huset / de stora bilarna.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Прикметники в означеній формі» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Прикметники в означеній формі",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-21": {
+  "en": {
+   "description": "Why I dag arbetar jag is correct, rather than I dag jag arbetar.",
+   "rules": [
+    "In a declarative main clause, the finite verb usually takes second position (V2).",
+    "Jag arbetar i dag. If you begin with the time expression, say I dag arbetar jag.",
+    "“Second position” means the second syntactic position, not necessarily the second word: På måndag börjar jag klockan nio.",
+    "This is an important principle of Swedish word order.",
+    "In a normal main clause, the finite verb comes second: I dag går jag.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Word order (V2)” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Word order (V2)",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Varför man säger I dag arbetar jag och inte I dag jag arbetar.",
+   "rules": [
+    "I en påstående huvudsats står det finita verbet oftast på andra plats (V2).",
+    "Jag arbetar i dag. Om du börjar med tidsuttrycket blir det I dag arbetar jag.",
+    "”Andra plats” betyder den andra syntaktiska positionen, inte nödvändigtvis det andra ordet: På måndag börjar jag klockan nio.",
+    "Det här är en viktig princip för svensk ordföljd.",
+    "I en vanlig huvudsats står det finita verbet på andra plats: I dag går jag.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Ordföljd: V2” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Ordföljd: V2",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Чому I dag arbetar jag, а не I dag jag arbetar.",
+   "rules": [
+    "У головному розповідному реченні особова форма дієслова зазвичай займає друге місце (V2).",
+    "Jag arbetar i dag. Але якщо починаємо з обставини часу: I dag arbetar jag.",
+    "«Друге місце» означає другу синтаксичну позицію, не обов’язково друге слово: På måndag börjar jag klockan nio.",
+    "Це важливий принцип шведського порядку слів.",
+    "У звичайному головному реченні особова форма дієслова стоїть на другому місці: I dag går jag.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Порядок слів (V2)» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Порядок слів (V2)",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-22": {
+  "en": {
+   "description": "A common beginner’s mistake: jag inte kan.",
+   "rules": [
+    "In a simple main clause, inte usually follows the finite verb: Jag arbetar inte.",
+    "With a modal verb: Jag kan inte simma. Inte follows kan, and the infinitive comes after it.",
+    "In a subordinate clause, the order changes: ... eftersom jag inte kan simma.",
+    "Do not mechanically put inte in the same place in every sentence.",
+    "In a main clause, inte usually follows the finite verb: Jag kan inte komma.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Placement of inte” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Placement of inte",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Ett vanligt nybörjarfel: jag inte kan.",
+   "rules": [
+    "I en enkel huvudsats står inte oftast efter det finita verbet: Jag arbetar inte.",
+    "Med ett modalt hjälpverb: Jag kan inte simma. Inte står efter kan, och infinitiven kommer därefter.",
+    "I en bisats är ordningen annorlunda: ... eftersom jag inte kan simma.",
+    "Placera därför inte ordet inte mekaniskt på samma plats i alla meningar.",
+    "I en huvudsats står inte oftast efter det finita verbet: Jag kan inte komma.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Var ska inte stå?” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Var ska inte stå?",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Поширена помилка початківців: jag inte kan.",
+   "rules": [
+    "У простому головному реченні inte зазвичай ставлять після особової форми дієслова: Jag arbetar inte.",
+    "З модальним дієсловом: Jag kan inte simma. Inte йде після kan, а інфінітив — далі.",
+    "У підрядному реченні порядок інший: ... eftersom jag inte kan simma.",
+    "Тому не варто механічно ставити inte в одне місце в усіх реченнях.",
+    "У головному реченні inte зазвичай стоїть після особового дієслова: Jag kan inte komma.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Розташування inte» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Розташування inte",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-23": {
+  "en": {
+   "description": "What changes after eftersom, att and när.",
+   "rules": [
+    "BIFF is a memory aid: I Bisats kommer Inte Före Finita verbet. In a subordinate clause, inte comes BEFORE the finite verb.",
+    "Main clause: Jag kan inte komma. Subordinate clause: ... eftersom jag inte kan komma.",
+    "Subordinate clauses often begin with att (that), eftersom (because), när (when) or om (if).",
+    "Remember: after an initial subordinate clause, V2 still applies to the main clause.",
+    "BIFF: in a subordinate clause, inte comes before the finite verb: ... eftersom jag inte kan.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “BIFF and subordinate clauses” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: BIFF and subordinate clauses",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Vad som ändras efter eftersom, att och när.",
+   "rules": [
+    "BIFF är en minnesregel: I Bisats kommer Inte Före Finita verbet. I en bisats står inte FÖRE det finita verbet.",
+    "Huvudsats: Jag kan inte komma. Bisats: ... eftersom jag inte kan komma.",
+    "Bisatser börjar ofta med att, eftersom, när eller om, som anger innehåll, orsak, tid eller villkor.",
+    "Kom ihåg att V2 gäller i huvudsatsen efter en inledande bisats.",
+    "BIFF: i en bisats står inte före det finita verbet: ... eftersom jag inte kan.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”BIFF och bisatser” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: BIFF och bisatser",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Що змінюється після eftersom, att, när.",
+   "rules": [
+    "BIFF — мнемонічне правило: I Bisats kommer Inte Före Finita verbet. У підрядному реченні inte стоїть ПЕРЕД особовою формою дієслова.",
+    "Головне речення: Jag kan inte komma. Підрядне: ... eftersom jag inte kan komma.",
+    "Підрядне речення часто починається з att (що), eftersom (оскільки), när (коли), om (якщо).",
+    "Пам’ятай: після підрядного на початку речення в головній частині діє V2.",
+    "BIFF: у підрядному реченні inte ставиться перед особовим дієсловом: ... eftersom jag inte kan.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «BIFF та підрядні речення» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: BIFF та підрядні речення",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-24": {
+  "en": {
+   "description": "Kom! Vänta! Läs!",
+   "rules": [
+    "The imperative expresses a request, instruction or command.",
+    "The form often resembles the verb stem: vänta! (wait!), köp! (buy!), läs! (read!), kom! (come!).",
+    "Use gärna and tack to be polite: Vänta lite, tack.",
+    "In a negative command, inte usually comes after the verb: Gå inte!",
+    "Imperatives: Kom! Vänta! Läs! Skriv! The word snälla can soften a request.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Imperative form” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Imperative form",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Kom! Vänta! Läs!",
+   "rules": [
+    "Imperativ används för en uppmaning, instruktion eller befallning.",
+    "Formen liknar ofta verbstammen: vänta!, köp!, läs!, kom!",
+    "Använd gärna och tack för att vara artig: Vänta lite, tack.",
+    "I en nekande uppmaning står inte oftast efter verbet: Gå inte!",
+    "Imperativ: Kom! Vänta! Läs! Skriv! En uppmaning kan mjukas upp med ordet snälla.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Imperativ” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Imperativ",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Kom! Vänta! Läs!",
+   "rules": [
+    "Imperativ — наказовий спосіб: прохання, інструкція або команда.",
+    "Форма часто схожа на основу дієслова: vänta! (зачекай!), köp! (купи!), läs! (читай!), kom! (іди сюди!).",
+    "Для ввічливості використовуємо gärna і tack: Vänta lite, tack.",
+    "У заперечній команді inte зазвичай йде після дієслова: Gå inte!",
+    "Наказовий спосіб: Kom! Vänta! Läs! Skriv! Ввічливе звернення можна пом’якшити словом snälla.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Наказовий спосіб» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Наказовий спосіб",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-25": {
+  "en": {
+   "description": "On, in, next to and in front of.",
+   "rules": [
+    "I often means inside: i huset, i rummet. På can mean on a surface or occur in fixed expressions: på bordet, på jobbet.",
+    "Under = under, över = above, bredvid = next to, bakom = behind, framför = in front of, mellan = between.",
+    "Swedish prepositions do not always translate literally into Russian: i skolan (at school), på jobbet (at work).",
+    "Memorize common combinations as whole expressions.",
+    "På = on, i = in, under = under, över = above, framför = in front of, bakom = behind, bredvid = next to.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Prepositions of place” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Prepositions of place",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "På, i, bredvid och framför.",
+   "rules": [
+    "I betyder ofta inuti: i huset, i rummet. På kan ange en yta eller ingå i fasta uttryck: på bordet, på jobbet.",
+    "Under anger ett läge nedanför, över ovanför, bredvid vid sidan, bakom på baksidan, framför på framsidan och mellan i mitten av två eller flera.",
+    "Svenska prepositioner motsvarar inte alltid de ryska ordagrant: i skolan, på jobbet.",
+    "Lär dig vanliga kombinationer som hela uttryck.",
+    "På anger ofta en yta, i ett inre läge, under ett läge nedanför, över ovanför, framför på framsidan, bakom på baksidan och bredvid vid sidan.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Lägesprepositioner” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Lägesprepositioner",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "На, у, поруч і перед.",
+   "rules": [
+    "I часто означає всередині: i huset, i rummet. På може позначати «на поверхні» або вживатися у сталих сполученнях: på bordet, på jobbet.",
+    "Under — під, över — над, bredvid — поруч, bakom — за, framför — перед, mellan — між.",
+    "Шведські прийменники не завжди буквально збігаються з російськими: i skolan (у школі), på jobbet (на роботі).",
+    "Запам’ятовуй типові сполучення цілком.",
+    "På = на, i = у, under = під, över = над, framför = перед, bakom = позаду, bredvid = поруч.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Прийменники місця» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Прийменники місця",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-26": {
+  "en": {
+   "description": "Jag tvättar mig and hon känner sig.",
+   "rules": [
+    "When an action is directed at the person performing it, use a reflexive pronoun.",
+    "Jag tvättar mig, du tvättar dig, han/hon tvättar sig, vi tvättar oss, ni tvättar er, de tvättar sig.",
+    "Sometimes these combinations must be learned as a single verb, for example känna sig (to feel).",
+    "Distinguish a normal object from a reflexive one: Jag tvättar bilen (I wash the car), but Jag tvättar mig (I wash myself).",
+    "Reflexive pronouns change with grammatical person: mig, dig, sig, oss, er, sig.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Reflexive verbs” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Reflexive verbs",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Jag tvättar mig och hon känner sig.",
+   "rules": [
+    "När handlingen riktas mot den som själv utför den används ett reflexivt pronomen.",
+    "Jag tvättar mig, du tvättar dig, han/hon tvättar sig, vi tvättar oss, ni tvättar er, de tvättar sig.",
+    "Ibland behöver de här kombinationerna läras som ett enda verb, till exempel känna sig.",
+    "Skilj på ett vanligt objekt och ett reflexivt: Jag tvättar bilen, men Jag tvättar mig.",
+    "Reflexiva pronomen ändras efter person: mig, dig, sig, oss, er, sig.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Reflexiva verb” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Reflexiva verb",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Jag tvättar mig і hon känner sig.",
+   "rules": [
+    "Коли дія спрямована на саму людину, використовується зворотний займенник.",
+    "Jag tvättar mig, du tvättar dig, han/hon tvättar sig, vi tvättar oss, ni tvättar er, de tvättar sig.",
+    "Такі сполучення іноді потрібно запам’ятовувати як одне дієслово, наприклад känna sig (почуватися).",
+    "Не плутай зі звичайним об’єктом: Jag tvättar bilen (я мию машину), але Jag tvättar mig (я миюся).",
+    "Зворотні займенники змінюються за особами: mig, dig, sig, oss, er, sig.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Зворотні дієслова» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Зворотні дієслова",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-27": {
+  "en": {
+   "description": "Talk about plans and conditions.",
+   "rules": [
+    "Om often means if. A subordinate clause begins after om.",
+    "If a sentence starts with an om-clause, the following main clause begins with the finite verb: Om det regnar, stannar jag hemma.",
+    "If the conditional clause follows the main clause, the normal order remains: Jag stannar hemma om det regnar.",
+    "Hypothetical situations use skulle and past tense forms.",
+    "Om expresses a condition. When the subordinate clause comes first, the main clause often begins with the verb: Om det regnar, stannar jag hemma.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Conditional sentences with om” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Conditional sentences with om",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Prata om planer och villkor.",
+   "rules": [
+    "Om uttrycker ofta ett villkor och inleder då en bisats.",
+    "Om meningen börjar med en om-bisats kommer det finita verbet först i den följande huvudsatsen: Om det regnar, stannar jag hemma.",
+    "Om villkorsbisatsen kommer efter huvudsatsen behålls den vanliga ordningen: Jag stannar hemma om det regnar.",
+    "För hypotetiska situationer används skulle och former i förfluten tid.",
+    "Om uttrycker ett villkor. När bisatsen står först börjar huvudsatsen ofta med verbet: Om det regnar, stannar jag hemma.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Villkorssatser med om” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Villkorssatser med om",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Поговоримо про плани й умови.",
+   "rules": [
+    "Om часто означає «якщо». Після om починається підрядне речення.",
+    "Якщо речення починається з частини з om, у наступній головній частині особова форма дієслова стоїть першою: Om det regnar, stannar jag hemma.",
+    "Якщо умовна частина стоїть після головної, звичайний порядок зберігається: Jag stannar hemma om det regnar.",
+    "Для гіпотетичних ситуацій використовують skulle й форми минулого часу.",
+    "Om виражає умову. Коли підрядне стоїть першим, головне часто починається з дієслова: Om det regnar, stannar jag hemma.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Умовні речення з om» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Умовні речення з om",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-28": {
+  "en": {
+   "description": "Say “a person who works”.",
+   "rules": [
+    "Som connects a noun to additional information: en kvinna som arbetar här.",
+    "When som is the subject of a subordinate clause, it links directly to the verb: en man som bor i Malmö.",
+    "In a subordinate clause, inte comes before the finite verb: en person som inte röker.",
+    "These constructions make speech more natural, instead of splitting everything into very short sentences.",
+    "Som links parts of a sentence and often means who, which or that.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Relative clauses with som” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Relative clauses with som",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Lär dig säga ”en person som arbetar”.",
+   "rules": [
+    "Som kopplar ett substantiv till ytterligare information: en kvinna som arbetar här.",
+    "När som är subjekt i bisatsen kopplas det direkt till verbet: en man som bor i Malmö.",
+    "I en bisats står inte före det finita verbet: en person som inte röker.",
+    "De här konstruktionerna gör språket naturligare, i stället för att dela upp allt i mycket korta meningar.",
+    "Som binder ihop delar av en mening och syftar ofta tillbaka på en person eller sak som nämnts.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Relativa bisatser med som” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Relativa bisatser med som",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як сказати «людина, яка працює».",
+   "rules": [
+    "Som пов’язує іменник із додатковою інформацією: en kvinna som arbetar här.",
+    "Коли som — підмет підрядного, воно безпосередньо пов’язане з дієсловом: en man som bor i Malmö.",
+    "У підрядному реченні inte стоїть перед особовим дієсловом: en person som inte röker.",
+    "Такі конструкції роблять мовлення природнішим, без поділу всього на дуже короткі речення.",
+    "Som пов’язує частини речення й часто означає «який/яка/яке».",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Відносні речення з som» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Відносні речення з som",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-29": {
+  "en": {
+   "description": "When the action matters more than who performs it.",
+   "rules": [
+    "Use the passive when what happens to an object matters: Dörren öppnas means The door is opened by someone.",
+    "One method is to add -s to the verb form: Boken läses. Another is bli + participle: Dörren blev öppnad.",
+    "The meanings and uses of the s-passive and bli-passive are not always the same.",
+    "The passive is very common in notices and instructions: Här säljs biljetter means Tickets are sold here.",
+    "The passive describes an action without naming the person performing it: dörren öppnas, or dörren blir öppnad.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Passive voice” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Passive voice",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "När handlingen är viktigare än vem som utför den.",
+   "rules": [
+    "Passiv används när det viktiga är vad som händer med något: Dörren öppnas innebär att någon öppnar dörren.",
+    "Ett sätt är att lägga -s till verbformen: Boken läses. Ett annat är bli + particip: Dörren blev öppnad.",
+    "Betydelsen och användningen av s-passiv och bli-passiv är inte alltid desamma.",
+    "Passiv är mycket vanlig i skyltar och instruktioner: Här säljs biljetter.",
+    "Passiv beskriver en handling utan att ange vem som utför den: dörren öppnas eller dörren blir öppnad.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Passiv form” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Passiv form",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Коли важлива дія, а не той, хто її виконує.",
+   "rules": [
+    "Пасив потрібен, коли важливо, що відбувається з предметом: Dörren öppnas — двері відчиняються кимось.",
+    "Один спосіб — додати -s до форми дієслова: Boken läses. Інший — bli + дієприкметник: Dörren blev öppnad.",
+    "Значення й уживання пасиву на -s і пасиву з bli не завжди однакові.",
+    "В оголошеннях та інструкціях пасив дуже поширений: Här säljs biljetter — тут продаються квитки.",
+    "Пасив описує дію без зазначення виконавця: dörren öppnas або dörren blir öppnad.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Пасивний стан» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Пасивний стан",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-30": {
+  "en": {
+   "description": "Stor, större, störst.",
+   "rules": [
+    "To compare things, many adjectives have comparative and superlative forms.",
+    "Stor → större → störst; liten → mindre → minst; bra → bättre → bäst.",
+    "Some words use mer/mest: intressant → mer intressant → mest intressant.",
+    "The comparative is often followed by än: större än means bigger than.",
+    "A regular pattern is snabb – snabbare – snabbast. Some forms are irregular: bra – bättre – bäst.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Comparison of adjectives” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Comparison of adjectives",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Stor, större, störst.",
+   "rules": [
+    "För att jämföra saker har många adjektiv komparativ- och superlativformer.",
+    "Stor → större → störst; liten → mindre → minst; bra → bättre → bäst.",
+    "Vissa ord jämförs med mer/mest: intressant → mer intressant → mest intressant.",
+    "Efter komparativ kommer ofta än: större än.",
+    "Ett vanligt mönster är snabb – snabbare – snabbast. Vissa former är oregelbundna: bra – bättre – bäst.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Komparation av adjektiv” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Komparation av adjektiv",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Stor, större, störst.",
+   "rules": [
+    "Для порівняння предметів багато прикметників мають вищий і найвищий ступені.",
+    "Stor → större → störst; liten → mindre → minst; bra → bättre → bäst.",
+    "З деякими словами використовують mer/mest: intressant → mer intressant → mest intressant.",
+    "Після вищого ступеня часто стоїть än: större än — більший ніж.",
+    "Зазвичай: snabb – snabbare – snabbast. Деякі форми особливі: bra – bättre – bäst.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Ступені порівняння прикметників» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Ступені порівняння прикметників",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-31": {
+  "en": {
+   "description": "Talk about plans and predictions.",
+   "rules": [
+    "Ska + infinitive often expresses an intention or plan: Jag ska resa i morgon.",
+    "Kommer att + infinitive often expresses a prediction: Det kommer att regna.",
+    "In everyday speech, the present tense with a time expression can also express the future: Jag åker i morgon.",
+    "Ska is not followed by att, whereas the construction kommer att includes it.",
+    "Ska + infinitive indicates a plan; kommer att + infinitive expresses an expected future event.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Future: ska and kommer att” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Future: ska and kommer att",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Prata om planer och prognoser.",
+   "rules": [
+    "Ska + infinitiv uttrycker ofta en avsikt eller plan: Jag ska resa i morgon.",
+    "Kommer att + infinitiv används ofta för en prognos: Det kommer att regna.",
+    "I vardagligt tal kan framtid också uttryckas med presens och ett tidsuttryck: Jag åker i morgon.",
+    "Efter ska används inte att, men i konstruktionen kommer att finns att med.",
+    "Ska + infinitiv anger en plan; kommer att + infinitiv uttrycker en förväntad framtida händelse.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Framtid: ska och kommer att” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Framtid: ska och kommer att",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як говорити про плани й прогнози.",
+   "rules": [
+    "Ska + інфінітив часто виражає намір або план: Jag ska resa i morgon.",
+    "Kommer att + інфінітив часто використовується для прогнозу: Det kommer att regna.",
+    "У живому мовленні майбутнє може виражатися й теперішнім часом з обставиною часу: Jag åker i morgon.",
+    "Після ska немає att, а в конструкції kommer att воно є.",
+    "Ska + інфінітив позначає план; kommer att + інфінітив — очікування майбутньої події.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Майбутній час: ska і kommer att» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Майбутній час: ska і kommer att",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-32": {
+  "en": {
+   "description": "Write politely to a teacher or employer.",
+   "rules": [
+    "A formal letter can begin Hej! or Hej [name]!, followed by a brief explanation of why you are writing.",
+    "Useful expressions: Jag skriver för att ... = I am writing to ...; Jag undrar om ... = I would like to know whether ...",
+    "Closings: Tack på förhand (Thank you in advance), Med vänliga hälsningar (Kind regards).",
+    "A letter needs short paragraphs, a specific request and the correct verb tense.",
+    "A message begins with a greeting and ends with a signature. State the time, reason and request.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Writing letters and messages” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Writing letters and messages",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Skriv artigt till en lärare eller arbetsgivare.",
+   "rules": [
+    "Ett formellt brev kan börja med Hej! eller Hej [namn]!, följt av en kort förklaring till varför du skriver.",
+    "Användbara uttryck: Jag skriver för att ... anger syftet med brevet; Jag undrar om ... inleder en artig fråga.",
+    "Avslutningar: Tack på förhand för att tacka i förväg, Med vänliga hälsningar som artig sluthälsning.",
+    "I ett brev är korta stycken, en tydlig begäran och rätt verbtempus viktiga.",
+    "Ett meddelande börjar med en hälsning och slutar med en underskrift. Ange tid, orsak och önskemål.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Brev och meddelanden” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Brev och meddelanden",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Ввічливо напишемо викладачеві або роботодавцеві.",
+   "rules": [
+    "Офіційний лист можна почати з Hej! або Hej [ім’я]! і коротко назвати причину.",
+    "Корисні вислови: Jag skriver för att ... — Пишу, щоб ...; Jag undrar om ... — Хотіла б дізнатися, ...",
+    "Завершення: Tack på förhand (заздалегідь дякую), Med vänliga hälsningar (з повагою).",
+    "У листі важливі короткі абзаци, конкретне прохання й правильний час дієслова.",
+    "Повідомлення починається з привітання й закінчується підписом. Указуй час, причину й прохання.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Листи та повідомлення» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Листи та повідомлення",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-33": {
+  "en": {
+   "description": "Därför, eftersom and för att.",
+   "rules": [
+    "Eftersom introduces a subordinate clause giving a reason: Jag stannar hemma eftersom jag är sjuk.",
+    "Därför (therefore) often appears in a main clause: Jag är sjuk. Därför stannar jag hemma. V2 applies here.",
+    "För att + infinitive often expresses purpose: Jag studerar för att lära mig svenska.",
+    "Distinguish reason from purpose: I am at home because I am ill; I study in order to learn the language.",
+    "För att expresses purpose: jag tränar för att må bra. Eftersom / därför att explains a reason.",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Explaining reasons” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Explaining reasons",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Därför, eftersom och för att.",
+   "rules": [
+    "Eftersom inleder en orsaksbisats: Jag stannar hemma eftersom jag är sjuk.",
+    "Därför anger en följd och står ofta i en huvudsats: Jag är sjuk. Därför stannar jag hemma. Här gäller V2.",
+    "För att + infinitiv uttrycker ofta syfte: Jag studerar för att lära mig svenska.",
+    "Skilj på orsak och syfte: jag är hemma eftersom jag är sjuk; jag studerar för att lära mig språket.",
+    "För att anger syfte: jag tränar för att må bra. Eftersom / därför att förklarar en orsak.",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Att förklara orsaker” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Att förklara orsaker",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Därför, eftersom і för att.",
+   "rules": [
+    "Eftersom вводить підрядне речення причини: Jag stannar hemma eftersom jag är sjuk.",
+    "Därför («тому») часто стоїть у головному реченні: Jag är sjuk. Därför stannar jag hemma. Тут діє V2.",
+    "För att + інфінітив часто виражає мету: Jag studerar för att lära mig svenska.",
+    "Не плутай причину й мету: я вдома, тому що хворію; я навчаюся, щоб вивчити мову.",
+    "För att позначає мету: jag tränar för att må bra; eftersom / därför att пояснює причину.",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Пояснення причин» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Пояснення причин",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-34": {
+  "en": {
+   "description": "Understand SFI texts even when you do not know every word.",
+   "rules": [
+    "First read the title and look at dates, people and places. Try to understand the topic without translating every word.",
+    "On the second reading, look for verbs: who does what, and when it happened.",
+    "Underline linking words such as men, eftersom, när and för att to make the meaning clearer.",
+    "After reading, answer three questions: Vem? Vad? När? Then retell the text in two or three simple sentences.",
+    "First read for the overall meaning. Then find: who? where? when? what happened? why?",
+    "A useful habit: read the example, listen to it and make a similar sentence about yourself. Always read the explanation after answering a quiz question."
+   ],
+   "goals": [
+    "Understand “Reading for meaning” through concrete examples.",
+    "Learn to recognize this form in a short text.",
+    "Test yourself with an explanation of every answer."
+   ],
+   "readingTitle": "Short text: Reading for meaning",
+   "readingTip": "Read aloud, play the audio and find familiar forms."
+  },
+  "sv": {
+   "description": "Förstå SFI-texter även när du inte kan alla ord.",
+   "rules": [
+    "Läs först rubriken och titta på datum, personer och platser. Försök förstå ämnet utan att översätta varje ord.",
+    "Vid andra läsningen letar du efter verb: vem gör vad och när hände det?",
+    "Stryk under sambandsord som men, eftersom, när och för att så blir betydelsen tydligare.",
+    "Svara efter läsningen på tre frågor: Vem? Vad? När? Återberätta sedan texten med två eller tre enkla meningar.",
+    "Läs först för att förstå helheten. Leta sedan efter: vem? var? när? vad hände? varför?",
+    "En bra vana: läs exemplet, lyssna och skapa en liknande mening om dig själv. Läs alltid förklaringen efter ditt svar i ett test."
+   ],
+   "goals": [
+    "Förstå ”Läsförståelse” genom konkreta exempel.",
+    "Lär dig känna igen formen i en kort text.",
+    "Testa dig själv med en förklaring till varje svar."
+   ],
+   "readingTitle": "Kort text: Läsförståelse",
+   "readingTip": "Läs högt, spela upp ljudet och hitta former du känner igen."
+  },
+  "uk": {
+   "description": "Як розуміти тексти SFI, навіть якщо не знаєш усіх слів.",
+   "rules": [
+    "Спочатку прочитай заголовок, зверни увагу на дату, людей і місце. Спробуй зрозуміти тему без перекладу кожного слова.",
+    "Під час другого читання шукай дієслова: хто що робить і коли це сталося.",
+    "Підкреслюй сполучні слова, наприклад men, eftersom, när, för att, щоб зміст став зрозумілішим.",
+    "Після читання відповідай на три запитання: Vem? Vad? När? Потім перекажи текст двома-трьома простими реченнями.",
+    "Спочатку читай для загального змісту. Потім знаходь: хто? де? коли? що сталося? чому?",
+    "Корисна звичка: прочитай приклад, послухай його й придумай схоже речення про себе. У тесті після відповіді завжди читай пояснення."
+   ],
+   "goals": [
+    "Зрозуміти тему «Розуміння прочитаного» на конкретних прикладах.",
+    "Навчитися впізнавати цю форму в короткому тексті.",
+    "Перевірити себе з поясненням кожної відповіді."
+   ],
+   "readingTitle": "Мінітекст: Розуміння прочитаного",
+   "readingTip": "Прочитай уголос, увімкни озвучення й знайди знайомі форми."
+  }
+ },
+ "lesson-35": {
+  "en": {
+   "description": "Studying at SFI, school items and simple requests.",
+   "rules": [
+    "I skolan describes where you are. Till skolan describes a direction of movement.",
+    "Jag vill + infinitive: Jag vill läsa.",
+    "Kan du ...? is a polite request; tack expresses thanks.",
+    "Läraren means the teacher; läxan means the homework."
+   ],
+   "readingTitle": "School and classroom",
+   "readingTip": "I skolan describes where you are. Till skolan describes a direction of movement."
+  },
+  "sv": {
+   "description": "Studier på SFI, skolsaker och enkla önskemål.",
+   "rules": [
+    "I skolan anger var du befinner dig. Till skolan anger rörelsens riktning.",
+    "Jag vill + infinitiv: Jag vill läsa.",
+    "Kan du ...? är en artig begäran; tack uttrycker tacksamhet.",
+    "Läraren är den som undervisar; läxan är en uppgift att göra hemma."
+   ],
+   "readingTitle": "Skolan och klassrummet",
+   "readingTip": "I skolan anger var du befinner dig. Till skolan anger rörelsens riktning."
+  },
+  "uk": {
+   "description": "Навчання на SFI, предмети й прості прохання.",
+   "rules": [
+    "I skolan — де ти перебуваєш. Till skolan — напрямок руху.",
+    "Jag vill + інфінітив: Jag vill läsa.",
+    "Kan du ...? — ввічливе прохання; tack — подяка.",
+    "Läraren — учитель, läxan — домашнє завдання."
+   ],
+   "readingTitle": "Школа та клас",
+   "readingTip": "I skolan — де ти перебуваєш. Till skolan — напрямок руху."
+  }
+ },
+ "lesson-36": {
+  "en": {
+   "description": "Talk about your family, ages and relatives.",
+   "rules": [
+    "Use min with an en-noun: min mamma.",
+    "Use mitt with an ett-noun: mitt barn.",
+    "Use mina before the plural: mina syskon.",
+    "Har means have: Jag har två bröder."
+   ],
+   "readingTitle": "Family and relatives",
+   "readingTip": "Use min with an en-noun: min mamma."
+  },
+  "sv": {
+   "description": "Berätta om din familj, ålder och släktingar.",
+   "rules": [
+    "Min används med en-ord: min mamma.",
+    "Mitt används med ett-ord: mitt barn.",
+    "Mina används före plural: mina syskon.",
+    "Har uttrycker att man har något: Jag har två bröder."
+   ],
+   "readingTitle": "Familj och släkt",
+   "readingTip": "Min används med en-ord: min mamma."
+  },
+  "uk": {
+   "description": "Як розповісти про свою сім’ю, вік і родичів.",
+   "rules": [
+    "Min — з іменником з en: min mamma.",
+    "Mitt — з іменником з ett: mitt barn.",
+    "Mina — перед множиною: mina syskon.",
+    "Har — мати: Jag har två bröder."
+   ],
+   "readingTitle": "Сім'я та родичі",
+   "readingTip": "Min — з іменником з en: min mamma."
+  }
+ },
+ "lesson-37": {
+  "en": {
+   "description": "The calendar, yesterday, today, tomorrow and plans.",
+   "rules": [
+    "Swedish weekdays are written in lowercase.",
+    "På måndag means on Monday; i måndags means last Monday.",
+    "I dag = today, i går = yesterday, i morgon = tomorrow.",
+    "Varje fredag means every Friday."
+   ],
+   "readingTitle": "Weekdays and months",
+   "readingTip": "Swedish weekdays are written in lowercase."
+  },
+  "sv": {
+   "description": "Kalendern, i går, i dag, i morgon och planer.",
+   "rules": [
+    "Veckodagar på svenska skrivs med liten bokstav.",
+    "På måndag syftar på måndagen framåt i tiden; i måndags på den senaste måndagen.",
+    "I dag är den här dagen, i går föregående dag och i morgon nästa dag.",
+    "Varje fredag betyder alla fredagar, återkommande."
+   ],
+   "readingTitle": "Veckodagar och månader",
+   "readingTip": "Veckodagar på svenska skrivs med liten bokstav."
+  },
+  "uk": {
+   "description": "Календар, учора, сьогодні, завтра й плани.",
+   "rules": [
+    "Дні тижня шведською пишуть з малої літери.",
+    "På måndag — у понеділок; i måndags — минулого понеділка.",
+    "I dag — сьогодні, i går — учора, i morgon — завтра.",
+    "Varje fredag — щоп’ятниці."
+   ],
+   "readingTitle": "Дні тижня та місяці",
+   "readingTip": "Дні тижня шведською пишуть з малої літери."
+  }
+ },
+ "lesson-38": {
+  "en": {
+   "description": "Shopping, prices, quantities and talking to the cashier.",
+   "rules": [
+    "Vad kostar ...? means How much does ... cost?",
+    "Jag skulle vilja ha ... means I would like to have / buy ...",
+    "En, ett and plural forms matter when buying groceries.",
+    "Hur mycket? asks how much (uncountable amount or price); hur många? asks how many (countable things)."
+   ],
+   "readingTitle": "At the shop",
+   "readingTip": "Vad kostar ...? means How much does ... cost?"
+  },
+  "sv": {
+   "description": "Inköp, priser, mängder och samtal med kassapersonalen.",
+   "rules": [
+    "Vad kostar ...? frågar efter priset.",
+    "Jag skulle vilja ha ... är ett artigt sätt att säga att man vill få eller köpa något.",
+    "En, ett och pluralformer är viktiga när man köper matvaror.",
+    "Hur mycket? används för oräknelig mängd eller pris; hur många? för sådant som kan räknas."
+   ],
+   "readingTitle": "I affären",
+   "readingTip": "Vad kostar ...? frågar efter priset."
+  },
+  "uk": {
+   "description": "Покупки, ціни, кількості й спілкування з касиром.",
+   "rules": [
+    "Vad kostar ...? — скільки коштує?",
+    "Jag skulle vilja ha ... — я хотіла б отримати / купити ...",
+    "En, ett і множина важливі під час купівлі продуктів.",
+    "Hur mycket? — скільки (незлічуване / ціна), hur många? — скільки (злічуване)."
+   ],
+   "readingTitle": "У магазині",
+   "readingTip": "Vad kostar ...? — скільки коштує?"
+  }
+ },
+ "lesson-39": {
+  "en": {
+   "description": "How you feel, symptoms, the pharmacy and booking a doctor’s appointment.",
+   "rules": [
+    "Jag har ont i + a body part: Jag har ont i ryggen.",
+    "Jag är sjuk means I am ill; Jag mår dåligt means I feel unwell.",
+    "Jag behöver boka en tid means I need to book an appointment.",
+    "The past tense describes the past: Jag var sjuk i går."
+   ],
+   "readingTitle": "At the doctor and health",
+   "readingTip": "Jag har ont i + a body part: Jag har ont i ryggen."
+  },
+  "sv": {
+   "description": "Hur du mår, symtom, apoteket och att boka läkartid.",
+   "rules": [
+    "Jag har ont i + kroppsdel: Jag har ont i ryggen.",
+    "Jag är sjuk beskriver sjukdom; Jag mår dåligt beskriver att man inte känner sig bra.",
+    "Jag behöver boka en tid uttrycker att man behöver beställa en tid för ett besök.",
+    "Preteritum beskriver det förflutna: Jag var sjuk i går."
+   ],
+   "readingTitle": "Hos läkaren och hälsa",
+   "readingTip": "Jag har ont i + kroppsdel: Jag har ont i ryggen."
+  },
+  "uk": {
+   "description": "Самопочуття, симптоми, аптека й запис до лікаря.",
+   "rules": [
+    "Jag har ont i + частина тіла: Jag har ont i ryggen.",
+    "Jag är sjuk — я хворію; Jag mår dåligt — погано почуваюся.",
+    "Jag behöver boka en tid — мені потрібно записатися на прийом.",
+    "Preteritum описує минуле: Jag var sjuk i går."
+   ],
+   "readingTitle": "У лікаря та здоров'я",
+   "readingTip": "Jag har ont i + частина тіла: Jag har ont i ryggen."
+  }
+ },
+ "lesson-40": {
+  "en": {
+   "description": "Keeping your home tidy, everyday activities and responsibilities.",
+   "rules": [
+    "Städa = clean, diska = wash dishes, tvätta = wash clothes.",
+    "Brukar + infinitive expresses a usual, repeated action.",
+    "Efter att + infinitive means after doing something.",
+    "Position of time expressions: På lördag städar jag hemma."
+   ],
+   "readingTitle": "Housework and chores",
+   "readingTip": "Städa = clean, diska = wash dishes, tvätta = wash clothes."
+  },
+  "sv": {
+   "description": "Ordning hemma, vardagliga sysslor och ansvar.",
+   "rules": [
+    "Städa är att göra rent och skapa ordning, diska att rengöra disk och tvätta att rengöra kläder.",
+    "Brukar + infinitiv uttrycker en vanlig, återkommande handling.",
+    "Efter att + infinitiv anger att något sker efter en annan handling.",
+    "Tidsuttryckets placering: På lördag städar jag hemma."
+   ],
+   "readingTitle": "Hushållssysslor",
+   "readingTip": "Städa är att göra rent och skapa ordning, diska att rengöra disk och tvätta att rengöra kläder."
+  },
+  "uk": {
+   "description": "Порядок удома, повсякденні дії й обов’язки.",
+   "rules": [
+    "Städa — прибирати, diska — мити посуд, tvätta — прати.",
+    "Brukar + інфінітив позначає звичну, повторювану дію.",
+    "Efter att + інфінітив — після того, як щось зробити.",
+    "Позиція обставини часу: På lördag städar jag hemma."
+   ],
+   "readingTitle": "Домашні справи",
+   "readingTip": "Städa — прибирати, diska — мити посуд, tvätta — прати."
+  }
+ },
+ "lesson-41": {
+  "en": {
+   "description": "Talk about weather, seasons and suitable clothing.",
+   "rules": [
+    "Impersonal det describes weather: Det regnar.",
+    "Answer Hur är vädret? with Det är soligt.",
+    "I vinter means this winter; på vintern means in winter in general.",
+    "Comparison: Det är kallare i dag."
+   ],
+   "readingTitle": "Weather and seasons",
+   "readingTip": "Impersonal det describes weather: Det regnar."
+  },
+  "sv": {
+   "description": "Prata om väder, årstider och lämpliga kläder.",
+   "rules": [
+    "Opersonligt det används om väder: Det regnar.",
+    "På frågan Hur är vädret? kan man svara Det är soligt.",
+    "I vinter syftar på den aktuella vintern; på vintern betyder vintrar i allmänhet.",
+    "Jämförelse: Det är kallare i dag."
+   ],
+   "readingTitle": "Väder och årstider",
+   "readingTip": "Opersonligt det används om väder: Det regnar."
+  },
+  "uk": {
+   "description": "Говоримо про погоду, пори року й відповідний одяг.",
+   "rules": [
+    "Безособове det описує погоду: Det regnar.",
+    "На запитання Hur är vädret? відповідаємо: Det är soligt.",
+    "I vinter — цієї зими; på vintern — узимку загалом.",
+    "Порівняння: Det är kallare i dag."
+   ],
+   "readingTitle": "Погода та пори року",
+   "readingTip": "Безособове det описує погоду: Det regnar."
+  }
+ },
+ "lesson-42": {
+  "en": {
+   "description": "Bus journeys, tickets, stops and times.",
+   "rules": [
+    "Ta bussen means take the bus.",
+    "Gå på means get on; gå av means get off a vehicle.",
+    "Till expresses direction: till centrum.",
+    "Vid means near or at: vid hållplatsen."
+   ],
+   "readingTitle": "Transport and directions",
+   "readingTip": "Ta bussen means take the bus."
+  },
+  "sv": {
+   "description": "Bussresor, biljetter, hållplatser och tider.",
+   "rules": [
+    "Ta bussen betyder att åka med buss.",
+    "Gå på betyder att stiga på ett färdmedel; gå av att lämna det.",
+    "Till anger riktning: till centrum.",
+    "Vid betyder nära eller intill: vid hållplatsen."
+   ],
+   "readingTitle": "Transport och vägar",
+   "readingTip": "Ta bussen betyder att åka med buss."
+  },
+  "uk": {
+   "description": "Поїздки автобусом, квитки, зупинки й час.",
+   "rules": [
+    "Ta bussen — їхати автобусом.",
+    "Gå på — сідати в транспорт; gå av — виходити з транспорту.",
+    "Till — напрямок: till centrum.",
+    "Vid — біля, коло: vid hållplatsen."
+   ],
+   "readingTitle": "Транспорт і маршрути",
+   "readingTip": "Ta bussen — їхати автобусом."
+  }
+ },
+ "lesson-43": {
+  "en": {
+   "description": "The structure of a simple letter or message.",
+   "rules": [
+    "Begin a friendly letter with Hej! and end it with Hälsningar.",
+    "Connect ideas using först, sedan and till slut.",
+    "Use separate paragraphs for the greeting, main content and closing.",
+    "Reread your writing and check that the verb is in second position (V2)."
+   ],
+   "readingTitle": "Writing to a friend",
+   "readingTip": "Begin a friendly letter with Hej! and end it with Hälsningar."
+  },
+  "sv": {
+   "description": "Strukturen i ett enkelt brev eller meddelande.",
+   "rules": [
+    "Börja ett vänligt brev med Hej! och avsluta med Hälsningar.",
+    "Bind ihop tankar med först, sedan och till slut.",
+    "Använd separata stycken för hälsning, innehåll och avslutning.",
+    "Läs igenom texten och kontrollera att verbet står på andra plats (V2)."
+   ],
+   "readingTitle": "Brev till en vän",
+   "readingTip": "Börja ett vänligt brev med Hej! och avsluta med Hälsningar."
+  },
+  "uk": {
+   "description": "Структура простого листа й повідомлення.",
+   "rules": [
+    "Починай дружній лист з Hej! і закінчуй Hälsningar.",
+    "Пов’язуй думки словами först, sedan, till slut.",
+    "Використовуй окремі абзаци: привітання, зміст, завершення.",
+    "Перечитай написане: дієслово на другому місці (V2)."
+   ],
+   "readingTitle": "Лист другові",
+   "readingTip": "Починай дружній лист з Hej! і закінчуй Hälsningar."
+  }
+ },
+ "lesson-44": {
+  "en": {
+   "description": "Introduce yourself and talk about your skills.",
+   "rules": [
+    "Jag har erfarenhet av ... means I have experience of ...",
+    "Jag söker jobb som ... means I am looking for work as ...",
+    "Jag kan + infinitive means I can / know how to.",
+    "Talk about previous experience using the perfect tense: Jag har arbetat ..."
+   ],
+   "readingTitle": "At a job interview",
+   "readingTip": "Jag har erfarenhet av ... means I have experience of ..."
+  },
+  "sv": {
+   "description": "Presentera dig och berätta om dina färdigheter.",
+   "rules": [
+    "Jag har erfarenhet av ... används för att berätta vad man tidigare har arbetat med eller gjort.",
+    "Jag söker jobb som ... anger vilken tjänst eller yrkesroll man söker.",
+    "Jag kan + infinitiv uttrycker förmåga eller möjlighet.",
+    "Berätta om tidigare erfarenheter med perfekt: Jag har arbetat ..."
+   ],
+   "readingTitle": "På arbetsintervju",
+   "readingTip": "Jag har erfarenhet av ... används för att berätta vad man tidigare har arbetat med eller gjort."
+  },
+  "uk": {
+   "description": "Як представитися й розповісти про свої навички.",
+   "rules": [
+    "Jag har erfarenhet av ... — у мене є досвід у ...",
+    "Jag söker jobb som ... — я шукаю роботу на посаді ...",
+    "Jag kan + інфінітив — я вмію / можу.",
+    "Говоримо про попередній досвід через перфект: Jag har arbetat ..."
+   ],
+   "readingTitle": "На співбесіді",
+   "readingTip": "Jag har erfarenhet av ... — у мене є досвід у ..."
+  }
+ },
+ "lesson-45": {
+  "en": {
+   "description": "Express agreement, disagreement and reasons.",
+   "rules": [
+    "Jag tycker att ... means I think that ...",
+    "Jag håller med means I agree; Jag håller inte med means I disagree.",
+    "För att answers the question varför (why).",
+    "Därför (therefore) can begin a main clause. The verb follows in second position."
+   ],
+   "readingTitle": "Opinions and arguments",
+   "readingTip": "Jag tycker att ... means I think that ..."
+  },
+  "sv": {
+   "description": "Uttryck medhåll, invändningar och orsaker.",
+   "rules": [
+    "Jag tycker att ... används för att uttrycka en åsikt.",
+    "Jag håller med uttrycker enighet; Jag håller inte med uttrycker en annan uppfattning.",
+    "För att kan svara på frågan varför.",
+    "Därför kan inleda en huvudsats. Därefter kommer verbet på andra plats."
+   ],
+   "readingTitle": "Åsikter och argument",
+   "readingTip": "Jag tycker att ... används för att uttrycka en åsikt."
+  },
+  "uk": {
+   "description": "Висловлюємо згоду, незгоду й пояснюємо причину.",
+   "rules": [
+    "Jag tycker att ... — я вважаю, що ...",
+    "Jag håller med — я згоден; Jag håller inte med — не згоден.",
+    "För att відповідає на запитання varför (чому).",
+    "Därför (тому) починає головне речення, після нього дієслово стоїть на другому місці."
+   ],
+   "readingTitle": "Думки та аргументи",
+   "readingTip": "Jag tycker att ... — я вважаю, що ..."
+  }
+ },
+ "lesson-46": {
+  "en": {
+   "description": "Certificates, bookings, meetings and polite requests.",
+   "rules": [
+    "Skulle jag kunna ...? is a more polite request.",
+    "Jag behöver ett intyg means I need a certificate.",
+    "Distinguish boka (make a booking) from avboka (cancel a booking).",
+    "Stating a time: på torsdag klockan tio."
+   ],
+   "readingTitle": "Public services and appointments",
+   "readingTip": "Skulle jag kunna ...? is a more polite request."
+  },
+  "sv": {
+   "description": "Intyg, bokningar, möten och artiga förfrågningar.",
+   "rules": [
+    "Skulle jag kunna ...? är en mer artig förfrågan.",
+    "Jag behöver ett intyg uttrycker att man behöver ett dokument som bekräftar något.",
+    "Skilj på boka (beställa en tid) och avboka (ta bort en bokning).",
+    "Tidsangivelse: på torsdag klockan tio."
+   ],
+   "readingTitle": "På myndigheter och mottagningar",
+   "readingTip": "Skulle jag kunna ...? är en mer artig förfrågan."
+  },
+  "uk": {
+   "description": "Довідки, записи, зустрічі й ввічливі звернення.",
+   "rules": [
+    "Skulle jag kunna ...? — ввічливіше прохання.",
+    "Jag behöver ett intyg — мені потрібна довідка.",
+    "Відрізняй boka (записуватися) від avboka (скасувати запис).",
+    "Указання часу: på torsdag klockan tio."
+   ],
+   "readingTitle": "Державні установи та запис",
+   "readingTip": "Skulle jag kunna ...? — ввічливіше прохання."
+  }
+ },
+ "lesson-47": {
+  "en": {
+   "description": "Read the news and distinguish facts from opinions.",
+   "rules": [
+    "Skilj på fakta och åsikter means distinguish facts from opinions.",
+    "Enligt tidningen ... means according to the newspaper ...",
+    "Källa = source, rubrik = headline, artikel = article.",
+    "Words such as trots att and även om help you recognize contrast."
+   ],
+   "readingTitle": "News and sources",
+   "readingTip": "Skilj på fakta och åsikter means distinguish facts from opinions."
+  },
+  "sv": {
+   "description": "Läs nyheter och skilj fakta från åsikter.",
+   "rules": [
+    "Skilj på fakta och åsikter: fakta kan kontrolleras, åsikter uttrycker vad någon tycker.",
+    "Enligt tidningen ... anger att uppgiften kommer från tidningen.",
+    "Källa är informationens ursprung, rubrik textens överskrift och artikel en tidningstext.",
+    "Ord som trots att och även om hjälper dig att se kontraster."
+   ],
+   "readingTitle": "Nyheter och källor",
+   "readingTip": "Skilj på fakta och åsikter: fakta kan kontrolleras, åsikter uttrycker vad någon tycker."
+  },
+  "uk": {
+   "description": "Читання новин і відокремлення фактів від думок.",
+   "rules": [
+    "Skilj på fakta och åsikter — відокремлюй факти від думок.",
+    "Enligt tidningen ... — за даними газети ...",
+    "Källa — джерело, rubrik — заголовок, artikel — стаття.",
+    "Слова trots att, även om допомагають побачити протиставлення."
+   ],
+   "readingTitle": "Новини та джерела",
+   "readingTip": "Skilj på fakta och åsikter — відокремлюй факти від думок."
+  }
+ },
+ "lesson-48": {
+  "en": {
+   "description": "Discuss rights, rules and responsibilities.",
+   "rules": [
+    "En rättighet means a right; en skyldighet means an obligation.",
+    "Man måste ... means one must / has to; man får ... means one is allowed to.",
+    "Man får inte ... means it is forbidden.",
+    "Explain the reason using eftersom and därför att."
+   ],
+   "readingTitle": "Rights and duties",
+   "readingTip": "En rättighet means a right; en skyldighet means an obligation."
+  },
+  "sv": {
+   "description": "Diskutera rättigheter, regler och ansvar.",
+   "rules": [
+    "En rättighet är något man har rätt till; en skyldighet är något man måste göra.",
+    "Man måste ... uttrycker ett krav; man får ... uttrycker tillåtelse.",
+    "Man får inte ... uttrycker ett förbud.",
+    "Förklara orsaken med eftersom och därför att."
+   ],
+   "readingTitle": "Rättigheter och skyldigheter",
+   "readingTip": "En rättighet är något man har rätt till; en skyldighet är något man måste göra."
+  },
+  "uk": {
+   "description": "Обговорюємо права, правила й відповідальність.",
+   "rules": [
+    "En rättighet — право; en skyldighet — обов’язок.",
+    "Man måste ... — потрібно, зобов’язаний; man får ... — дозволено.",
+    "Man får inte ... — заборонено.",
+    "Пояснюй причину, використовуючи eftersom, därför att."
+   ],
+   "readingTitle": "Права та обов'язки",
+   "readingTip": "En rättighet — право; en skyldighet — обов’язок."
+  }
+ },
+ "lesson-49": {
+  "en": {
+   "description": "Discuss the environment, transport and your habits.",
+   "rules": [
+    "Miljö means environment; klimat means climate.",
+    "Use linking words: dessutom, däremot, därför.",
+    "Jag försöker att ... means I try to ...",
+    "Compare solutions using bättre, sämre, fler and färre."
+   ],
+   "readingTitle": "Society and environment",
+   "readingTip": "Miljö means environment; klimat means climate."
+  },
+  "sv": {
+   "description": "Diskutera miljö, transport och dina vanor.",
+   "rules": [
+    "Miljö är omgivningen vi lever i; klimat är de långsiktiga väderförhållandena.",
+    "Använd sambandsord: dessutom, däremot, därför.",
+    "Jag försöker att ... uttrycker att man gör ett försök eller anstränger sig.",
+    "Jämför lösningar med bättre, sämre, fler och färre."
+   ],
+   "readingTitle": "Samhälle och miljö",
+   "readingTip": "Miljö är omgivningen vi lever i; klimat är de långsiktiga väderförhållandena."
+  },
+  "uk": {
+   "description": "Обговорюємо екологію, транспорт і свої звички.",
+   "rules": [
+    "Miljö — довкілля; klimat — клімат.",
+    "Використовуй сполучні слова: dessutom, däremot, därför.",
+    "Jag försöker att ... — я намагаюся ...",
+    "Порівнюй рішення: bättre, sämre, fler, färre."
+   ],
+   "readingTitle": "Суспільство та довкілля",
+   "readingTip": "Miljö — довкілля; klimat — клімат."
+  }
+ },
+ "lesson-50": {
+  "en": {
+   "description": "Further education, goals, experience and plans.",
+   "rules": [
+    "Jag planerar att ... means I plan to ...",
+    "Jag skulle vilja ... means I would like to ...",
+    "Modal constructions: behöver, måste, kan, vill.",
+    "För att + infinitive expresses the purpose of an action."
+   ],
+   "readingTitle": "Work and education",
+   "readingTip": "Jag planerar att ... means I plan to ..."
+  },
+  "sv": {
+   "description": "Vidare studier, mål, erfarenheter och planer.",
+   "rules": [
+    "Jag planerar att ... uttrycker en plan eller avsikt.",
+    "Jag skulle vilja ... uttrycker en önskan på ett artigt sätt.",
+    "Modala konstruktioner: behöver, måste, kan, vill.",
+    "För att + infinitiv uttrycker handlingens syfte."
+   ],
+   "readingTitle": "Arbete och utbildning",
+   "readingTip": "Jag planerar att ... uttrycker en plan eller avsikt."
+  },
+  "uk": {
+   "description": "Подальше навчання, цілі, досвід і плани.",
+   "rules": [
+    "Jag planerar att ... — я планую ...",
+    "Jag skulle vilja ... — мені хотілося б ...",
+    "Модальні конструкції: behöver, måste, kan, vill.",
+    "För att + інфінітив показує мету дії."
+   ],
+   "readingTitle": "Робота та освіта",
+   "readingTip": "Jag planerar att ... — я планую ..."
+  }
+ }
+};
