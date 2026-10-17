@@ -244,6 +244,31 @@
 #page .rule-topic-title { display:inline-flex; align-items:center; gap:8px; min-width:0; }
 #page .rule-topic-icon { flex:0 0 auto; }
 
+/* A consistent disclosure control for lesson and number accordions. */
+#page .rule-details summary .chevron {
+ display:block; position:relative; flex:0 0 20px;
+ width:20px; height:20px; color:#7886ab;
+ font-size:0; line-height:1;
+ transition:transform .2s ease,color .2s ease;
+}
+#page .rule-details summary .chevron::before {
+ content:""; position:absolute; left:50%; top:50%; width:7px; height:7px;
+ border-right:2px solid currentColor; border-bottom:2px solid currentColor;
+ transform:translate(-50%,-70%) rotate(45deg);
+}
+#page .rule-details summary:hover .chevron {
+ color:#4d6af3;
+}
+#page .rule-details[open] summary .chevron {
+ transform:rotate(180deg); color:#4d6af3;
+}
+#page .rule-details summary:focus-visible {
+ outline:2px solid #536ac1; outline-offset:-3px;
+}
+@media(prefers-reduced-motion:reduce){
+ #page .rule-details summary .chevron{transition:none}
+}
+
 /* Keep all six large-number cards together in one row. */
 #page .large-number-grid {
  grid-template-columns:repeat(6,minmax(190px,1fr))!important;
