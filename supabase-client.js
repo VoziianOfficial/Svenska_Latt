@@ -43,5 +43,5 @@
   }).catch(reason=>{pending=null;throw reason});
   return pending;
  }
- window.SVSupabase=Object.freeze({configuration,getClient,SDK_VERSION,SDK_URL,cloudProgressEnabled:false});
+ window.SVSupabase=Object.freeze({configuration,getClient,SDK_VERSION,SDK_URL,get cloudProgressEnabled(){return window.SVProgress?.writeEnabled===true}});
 })();

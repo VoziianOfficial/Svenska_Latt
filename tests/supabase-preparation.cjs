@@ -8,7 +8,7 @@ const A='10000000-0000-0000-0000-000000000001',B='10000000-0000-0000-0000-000000
 const eid='20000000-0000-0000-0000-000000000001';
 const token=id=>({user:{id},access_token:'test-jwt-'+id});
 const config={url:'https://preparation-test.supabase.co',publishableKey:'sb_publishable_test_only'};
-function harness({conf=config,initial=null,failSdk=false,failSession=false,hash='#profile',search='',callbackFails=false,progress=false,hostname='example.github.io'}={}){
+function harness({conf=config,initial=null,failSdk=false,failSession=false,hash='#profile',search='',callbackFails=false,progress=false,hostname='example.github.io',environment=null}={}){
  const records={scripts:[],clients:[],rpc:[],storageWrites:[],fetch:[],sdkSubscriptions:0};
  const data=new Map([['sv-guest-v2','original-guest'],['sv-cloud-backup-'+A,'original-backup']]);
  let current=initial,handler=null,nextRpc=null;
@@ -43,7 +43,7 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false,hash=
    })}}
   }
  };
- ctx.window=ctx;ctx.addEventListener=()=>{};vm.createContext(ctx);
+ ctx.window=ctx;ctx.addEventListener=()=>{};if(environment)Object.assign(ctx,environment);vm.createContext(ctx);
  for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js',...(progress?['supabase-progress.js']:[])])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),ctx,{filename:file});
  return {ctx,records,data,client,emit(event,value){current=value;handler?.(event,value)},rpcResult(fn){nextRpc=fn}};
 }
@@ -404,4 +404,175 @@ test('preview catalog version tracks actual static content and detects frozen ma
  const version=execFileSync('python3',['-c',"import sys;sys.path.insert(0,'scripts');from check_supabase_manifest import current_manifest;print(current_manifest()['version'])"],{cwd:root,encoding:'utf8'}).trim();
  const app=fs.readFileSync(path.join(root,'app.js'),'utf8');
  assert.ok(app.includes("version:'"+version+"'"));
+});
+
+// Deliberate in-memory IndexedDB/Web Locks model. These are unit tests, not
+// browser or live Supabase evidence. Shared objects model reloads and tabs.
+function writerEnvironment(){
+ const stores=new Map(),tails=new Map(),data=new Map([['sv-cloud-write-dev-v1','enabled']]);
+ const clone=x=>x===undefined?undefined:JSON.parse(JSON.stringify(x));
+ const indexedDB={open(){const req={};setImmediate(()=>{
+  req.result={createObjectStore(name){stores.set(name,new Map())},transaction(name){
+   const tx={objectStore(){const map=stores.get(name);const operation=fn=>{const r={};setImmediate(()=>{
+    try{r.result=clone(fn());r.onsuccess?.();setImmediate(()=>tx.oncomplete?.())}catch(e){tx.onerror?.()}
+   });return r};return {
+    get:key=>operation(()=>map.get(key)),getAll:()=>operation(()=>[...map.values()]),
+    put:row=>operation(()=>{const copy=clone(row),key=name==='events'?copy.sequence:copy.userId;map.set(key,copy);return key}),
+    add:row=>operation(()=>{const key=map.size+1;map.set(key,{...clone(row),sequence:key});return key})
+   }}};return tx}};
+  if(stores.size===0)req.onupgradeneeded?.();req.onsuccess?.();
+ });return req}};
+ const locks={request(name,fn){const task=(tails.get(name)||Promise.resolve()).catch(()=>{}).then(fn);tails.set(name,task);return task}};
+ return {stores,data,environment:{indexedDB,navigator:{locks},crypto:require('node:crypto').webcrypto,
+  setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);if(ms===15000)timer.unref();return timer},
+  localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v),removeItem(){throw Error('forbidden')},clear(){throw Error('forbidden')}}}};
+}
+function writerServer(){
+ const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0;
+ function account(id){if(!accounts.has(id))accounts.set(id,{snapshot:cloudSnapshot({revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
+ async function request(h){
+  active++;maxActive=Math.max(maxActive,active);
+  try{
+   await new Promise(r=>setImmediate(r));
+   if(offline)throw Error('offline');
+   const call=h.records.rpc.at(-1),id=call.headers.Authorization.replace('Bearer test-jwt-',''),a=account(id),args=call.args;
+   if(call.name==='sl_get_progress')return {data:JSON.parse(JSON.stringify(a.snapshot))};
+   assert.equal(call.name,'sl_apply_event');const event=args.p_event;
+   if(a.receipts.has(args.p_event_id)){
+    assert.equal(JSON.stringify(event),a.receipts.get(args.p_event_id));
+    return {data:{duplicate:true,progress:JSON.parse(JSON.stringify(a.snapshot)),applied_revision:a.snapshot.revision}};
+   }
+   if(args.p_expected_revision!==a.snapshot.revision)return {error:{code:'40001'}};
+   assert.ok(/(Z|[+-]\d\d:\d\d)$/.test(event.occurred_at));assert.ok(event.timezone);assert.equal(event.xp,undefined);assert.equal(event.data.xp,undefined);
+   const s=a.snapshot.state,w=event.data.word_id;
+   if(event.type==='mark_known'&&!s.known.includes(w)){s.known.push(w);s.xp+=8}
+   else if(event.type==='favorite_set')s.favorites=event.data.value?[...new Set([...s.favorites,w])]:s.favorites.filter(x=>x!==w);
+   a.snapshot.revision++;a.receipts.set(args.p_event_id,JSON.stringify(event));
+   if(loseAck){loseAck=false;throw Error('lost acknowledgement')}
+   return {data:{duplicate:false,applied_revision:a.snapshot.revision,progress:JSON.parse(JSON.stringify(a.snapshot))}};
+  }finally{active--}
+ }
+ return {account,request,get maxActive(){return maxActive},set offline(v){offline=v},set loseAck(v){loseAck=v}};
+}
+async function startWriter(shared=writerEnvironment(),server=writerServer(),id=A,extra={}){
+ const h=harness({initial:token(id),progress:true,hostname:'localhost',environment:shared.environment,...extra});
+ h.rpcResult(()=>server.request(h));const snapshots=[],errors=[];
+ await h.ctx.SVProgress.initialize({previewCatalog:()=>({version:'writer-test-v1',words:['v-arbeta','v-prata']}),
+  onSnapshot:(s,owner)=>snapshots.push({s,owner}),onError:e=>errors.push(e)});
+ await h.ctx.SVProgressDebug?.flush();return {h,shared,server,snapshots,errors};
+}
+async function send(w,type,id='v-arbeta',value){
+ assert.equal(await w.h.ctx.SVProgress.enqueue(type,id,value),true);await w.h.ctx.SVProgressDebug.flush();
+}
+test('writer is disabled by default and outside loopback even with local flag',async()=>{
+ const w=await startWriter(writerEnvironment(),writerServer(),A,{hostname:'example.github.io'});
+ assert.equal(w.h.ctx.SVProgress.writeEnabled,false);assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),false);
+ assert.equal(w.server.account(A).snapshot.revision,0);
+});
+test('mark known and favorite add/remove publish server results; client sends no XP',async()=>{
+ const w=await startWriter();await send(w,'mark_known');await send(w,'favorite_set','v-arbeta',true);await send(w,'favorite_set','v-arbeta',false);
+ assert.equal(w.server.account(A).snapshot.state.xp,8);assert.equal(w.snapshots.at(-1).s.xp,8);
+ assert.deepEqual(Array.from(w.snapshots.at(-1).s.favorites),[]);assert.equal(w.server.account(A).snapshot.revision,3);
+ assert.ok([...w.shared.stores.get('events').values()].every(r=>r.status==='applied'));
+});
+test('lost ACK retries immutable event and UUID without a second XP award',async()=>{
+ const w=await startWriter();w.server.loseAck=true;await send(w,'mark_known');
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[0].status,'pending');
+ await w.h.ctx.SVProgressDebug.flush();
+ const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');assert.equal(calls.length,2);assert.deepEqual(calls[0].args,calls[1].args);
+ assert.equal(w.server.account(A).snapshot.state.xp,8);assert.equal(w.server.account(A).snapshot.revision,1);
+});
+test('offline queue survives reload and preserves account, guest and backup bytes',async()=>{
+ const w=await startWriter();w.shared.data.set('sv-guest-v2','guest-untouched');w.shared.data.set('backup','backup-untouched');
+ w.server.offline=true;await send(w,'mark_known');const old=[...w.shared.stores.get('events').values()][0];
+ w.server.offline=false;const reloaded=await startWriter(w.shared,w.server);
+ assert.equal(w.server.account(A).snapshot.state.xp,8);const row=[...w.shared.stores.get('events').values()][0];
+ assert.equal(row.eventId,old.eventId);assert.equal(row.eventJson,old.eventJson);assert.equal(row.status,'applied');
+ assert.equal(w.shared.data.get('sv-guest-v2'),'guest-untouched');assert.equal(w.shared.data.get('backup'),'backup-untouched');
+ assert.equal(reloaded.snapshots.at(-1).s.xp,8);
+});
+test('logout prevents sending; a different account never drains the first account queue; relogin resumes',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');await w.h.ctx.SVAuth.signOut();
+ w.server.offline=false;await w.h.ctx.SVProgressDebug.flush();assert.equal(w.server.account(A).snapshot.state.xp,0);
+ const other=await startWriter(w.shared,w.server,B);assert.equal(w.server.account(B).snapshot.state.xp,0);
+ await send(other,'favorite_set','v-prata',true);assert.deepEqual(w.server.account(B).snapshot.state.favorites,['v-prata']);
+ await startWriter(w.shared,w.server,A);assert.equal(w.server.account(A).snapshot.state.xp,8);assert.equal(w.server.account(B).snapshot.state.xp,0);
+});
+test('revision conflict rebases mark_known with the same event UUID/body',async()=>{
+ const w=await startWriter();w.server.account(A).snapshot.revision=4;await send(w,'mark_known');
+ const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');assert.equal(calls.length,2);
+ assert.equal(calls[0].args.p_event_id,calls[1].args.p_event_id);assert.deepEqual(calls[0].args.p_event,calls[1].args.p_event);
+ assert.equal(calls[0].args.p_expected_revision,0);assert.equal(calls[1].args.p_expected_revision,4);assert.equal(w.server.account(A).snapshot.state.xp,8);
+});
+test('favorite revision conflict stops stale intent until explicit acknowledgement and a new UI intent',async()=>{
+ const w=await startWriter();w.server.account(A).snapshot.revision=1;await send(w,'favorite_set','v-arbeta',true);
+ let q=await w.h.ctx.SVProgressDebug.queue();assert.equal(q.events[0].status,'conflict');
+ await w.h.ctx.SVProgressDebug.flush();assert.equal(w.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,1);
+ assert.deepEqual(w.server.account(A).snapshot.state.favorites,[]);
+ await w.h.ctx.SVProgressDebug.acknowledgeConflict(q.events[0].eventId);await w.h.ctx.SVProgressDebug.flush();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[0].status,'cancelled');
+ await send(w,'favorite_set','v-arbeta',true);assert.deepEqual(w.server.account(A).snapshot.state.favorites,['v-arbeta']);
+});
+test('two tabs share a lock and send each durable intent only once',async()=>{
+ const shared=writerEnvironment(),server=writerServer(),one=await startWriter(shared,server),two=await startWriter(shared,server);
+ server.offline=true;await send(one,'mark_known');server.offline=false;
+ await Promise.all([one.h.ctx.SVProgressDebug.flush(),two.h.ctx.SVProgressDebug.flush()]);
+ assert.equal(server.account(A).snapshot.state.xp,8);assert.equal(server.account(A).snapshot.revision,1);assert.equal(server.maxActive,1);
+});
+test('local unsynced progress, changed baseline and content mismatch block without erasing data',async()=>{
+ const shared=writerEnvironment();shared.data.set('sv-account-local-v1-'+A,JSON.stringify({xp:23}));
+ const w=await startWriter(shared);assert.equal((await w.h.ctx.SVProgressDebug.queue()).error,'LOCAL_PROGRESS_CONFLICT');
+ assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),false);assert.equal(shared.data.get('sv-account-local-v1-'+A),'{"xp":23}');
+ const ok=await startWriter();ok.shared.data.set('sv-account-local-v1-'+A,'{"xp":9}');
+ assert.equal(await ok.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),false);assert.equal(ok.server.account(A).snapshot.revision,0);
+ const version=await startWriter();version.server.account(A).snapshot.content_version='other';
+ assert.equal(await version.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),true);await version.h.ctx.SVProgressDebug.flush();
+ assert.equal(version.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
+ assert.equal((await version.h.ctx.SVProgressDebug.queue()).error,'CONTENT_VERSION_MISMATCH');
+});
+test('missing IndexedDB or Web Locks fails closed and queues no mutation',async()=>{
+ for(const override of [{indexedDB:undefined},{navigator:{}}]){
+  const shared=writerEnvironment();Object.assign(shared.environment,override);const w=await startWriter(shared);
+  assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),false);assert.equal(w.server.account(A).snapshot.revision,0);
+ }
+});
+
+test('UI handlers enqueue supported actions without local XP and block other account mutations',async()=>{
+ const w=await startWriter(),h=w.h;
+ const source=fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,'');vm.runInContext(source,h.ctx);
+ vm.runInContext("toast=()=>{};headerStats=()=>{};render=()=>{};user={id:'"+A+"'};state=defaultState();WORDS=[{id:'v-arbeta'}]",h.ctx);
+ await h.ctx.SVProgress.initialize({onSnapshot:s=>{h.ctx.serverState=s;vm.runInContext('state=sanitize(serverState)',h.ctx)}});
+ await h.ctx.SVProgressDebug.flush();
+ vm.runInContext("action({dataset:{action:'mark-known',id:'v-arbeta'}})",h.ctx);
+ assert.equal(vm.runInContext('state.xp',h.ctx),0);
+ // Enqueue waits for IDB commit; allow it to acquire the cross-tab lock.
+ await new Promise(r=>setTimeout(r,10));await h.ctx.SVProgressDebug.flush();
+ assert.equal(vm.runInContext('state.xp',h.ctx),8);assert.equal(vm.runInContext('state.known.length',h.ctx),1);
+ vm.runInContext("mutate(()=>{state.xp+=100;state.answered++})",h.ctx);
+ assert.equal(vm.runInContext('state.xp',h.ctx),8);assert.equal(vm.runInContext('state.answered',h.ctx),0);
+ assert.equal(w.shared.data.get('sv-account-local-v1-'+A),undefined);
+});
+test('multiple offline intents retain order and immutable bodies across recovery',async()=>{
+ const w=await startWriter();w.server.offline=true;
+ await send(w,'mark_known','v-arbeta');await send(w,'favorite_set','v-arbeta',true);await send(w,'mark_known','v-prata');
+ const before=[...w.shared.stores.get('events').values()].map(r=>[r.eventId,r.eventJson]);
+ w.server.offline=false;await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,16);assert.equal(w.server.account(A).snapshot.revision,3);
+ assert.deepEqual(w.server.account(A).snapshot.state.favorites,['v-arbeta']);
+ assert.deepEqual([...w.shared.stores.get('events').values()].map(r=>[r.eventId,r.eventJson]),before);
+});
+test('queue write failure sends nothing and existing event records are never cleared',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ const original=w.shared.stores.get('events');const before=JSON.stringify([...original]);
+ original.set=()=>{throw Error('quota')};
+ assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-prata'),false);
+ assert.equal(JSON.stringify([...original]),before);assert.equal(w.server.account(A).snapshot.revision,0);
+});
+test('reload while offline resumes existing queue on the online event after the initial read failed',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ const handlers={};w.shared.environment.addEventListener=(name,fn)=>handlers[name]=fn;
+ const reloaded=await startWriter(w.shared,w.server);
+ assert.equal(reloaded.h.ctx.SVProgressDebug.status().status,'error');assert.ok(handlers.online);
+ w.server.offline=false;await handlers.online();
+ assert.equal(w.server.account(A).snapshot.state.xp,8);assert.equal((await reloaded.h.ctx.SVProgressDebug.queue()).events[0].status,'applied');
 });
