@@ -83,7 +83,7 @@ current=page();current.run("reviewDeck=()=>WORDS.slice(0,5);startQuiz('review',n
 const review=current.run('JSON.stringify(quiz)');current=reload();assert.equal(current.run('JSON.stringify(quiz)'),review);
 
 // Completed results survive refresh; explicitly leaving the exercise clears them.
-current=page();current.run("startQuiz('translation');quiz.index=quiz.questions.length-1;submitAnswer(quiz.questions[quiz.index].answer);finishQuiz()");
+current=page();current.run("startQuiz('translation');while(!quiz.finished){submitAnswer(quiz.questions[quiz.index].answer);if(quiz.index===quiz.questions.length-1)finishQuiz();else{quiz.index++;quiz.answered=false;quiz.latest=null;quiz.selected=[]}}");
 current=reload();assert.equal(current.run('quiz.finished'),true);assert(current.run('html').includes('quiz-finished'));
 current.run('resetQuiz()');assert.equal(current.run('restoreQuizSession()'),false);
 

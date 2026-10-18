@@ -9,7 +9,7 @@ begin
   raise exception 'FAIL: query unexpectedly succeeded: %',query;
 end $$;
 -- The previous study-time tests ran against 008. Upgrade and test the new defaults.
-\ir ../migrations/202610180010_study_time_default.sql
+\ir ../migrations/202610180011_study_time_default.sql
 insert into auth.users(id,email) values('83000000-0000-0000-0000-000000000001','study-default@example.invalid');
 set role authenticated;
 select set_config('request.jwt.claim.sub','83000000-0000-0000-0000-000000000001',false);
@@ -21,7 +21,7 @@ select pg_temp.study_ok(public.sl_study_status()->>'enabled'='false','manual opt
 select pg_temp.study_fails($q$select public.sl_study_open(gen_random_uuid())$q$,'42501');
 reset role;
 -- Reapplying the migration must never enable an explicitly disabled account.
-\ir ../migrations/202610180010_study_time_default.sql
+\ir ../migrations/202610180011_study_time_default.sql
 set role authenticated;
 select pg_temp.study_ok(public.sl_study_status()->>'enabled'='false','upgrade preserves an existing manual opt-out');
 reset role;

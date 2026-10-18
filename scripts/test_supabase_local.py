@@ -68,7 +68,7 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
-            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180010_study_time_default.sql'):
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql'):
                 continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
@@ -175,6 +175,47 @@ def main():
         assert after_grade['state']['known'] == before_grade['state']['known']
         print('PASS: two devices grading same queue version commit exactly one SRS event', flush=True)
 
+        # Upgrade only after the original-contract tests, preserving their historical expectations.
+        quiz = run_file(ROOT / 'supabase/tests/007_quiz_rewards.sql')
+        assertions += quiz.stderr.count('PASS:')
+        # Two fully answered attempts, real concurrent finish requests, same account.
+        quiz_user = '95000000-0000-0000-0000-000000000001'
+        def quiz_sql(statement):
+            return (f"set role authenticated; select set_config('request.jwt.claim.sub','{quiz_user}',false); " + statement)
+        # Preparation helper is installed only in the disposable test database.
+        sessions = [sql(quiz_sql("select public.test_quiz_prepare('lesson:lesson-8',10);")).stdout.strip().splitlines()[-1] for _ in range(2)]
+        rev = json.loads(sql(quiz_sql('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])['revision']
+        finish_bodies = [event('session_finish', {'session_id': sid}) for sid in sessions]
+        finish_ids = ['95000000-0000-0000-0000-000000000010','95000000-0000-0000-0000-000000000011']
+        def finish(i, revision):
+            body = finish_bodies[i].replace("'", "''")
+            return quiz_sql(f"select public.sl_apply_event('{finish_ids[i]}',{revision},'{body}'::jsonb);")
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda i: sql(finish(i, rev), check=False), range(2)))
+        assert sorted(r.returncode for r in results) == [0, 1], [r.stderr for r in results]
+        failed = next(i for i, r in enumerate(results) if r.returncode)
+        assert '40001' in results[failed].stderr
+        sql(finish(failed, rev+1))
+        check = json.loads(sql(quiz_sql('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        assert check['state']['xp'] == 35, check
+        # Same UUID and original expected revision recovers the original reward receipt.
+        receipt = json.loads(sql(finish(0, rev)).stdout.strip().splitlines()[-1])
+        assert receipt['duplicate'] is True
+        assert sql(f"select sum(xp_delta) from public.sl_events where user_id='{quiz_user}' and event_type='session_finish';").stdout.strip() == '35'
+        print('PASS: simultaneous quiz finishes on two devices: conflict, safe retry, exactly one 35 XP reward', flush=True)
+
+        # Also install every migration in normal numerical order into a fresh database.
+        sql('create database clean_install_test;')
+        clean_base = [x if i != base.index('-d')+1 else 'clean_install_test' for i, x in enumerate(base)]
+        bootstrap = (ROOT / 'supabase/tests/bootstrap_local.sql').read_text()
+        bootstrap = '\n'.join(line for line in bootstrap.splitlines() if not line.startswith('create role '))
+        subprocess.run(clean_base + ['-c', bootstrap], env=env, check=True, capture_output=True)
+        for path in migrations:
+            result = subprocess.run(clean_base + ['-f', str(path)], env=env, text=True, capture_output=True)
+            (work / ('clean-' + path.name + '.log')).write_text(result.stdout + result.stderr)
+            assert result.returncode == 0, result.stderr
+        print('PASS: clean install of all 11 migrations in numerical order (no duplicate versions)', flush=True)
+
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')
         legacy_base = [x if x != 'postgres' or i != base.index('-d')+1 else 'legacy_guard_test' for i, x in enumerate(base)]
@@ -182,9 +223,9 @@ def main():
         guard = subprocess.run(legacy_base + ['-f', str(migrations[0])], env=env, text=True, capture_output=True)
         assert guard.returncode and 'Legacy learning_progress exists' in guard.stderr
         print('PASS: legacy installation guard prevents accidental mixed schemas', flush=True)
-        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 9,
+        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 10,
             'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False}, indent=2))
-        print(f'PASS: {assertions} SQL assertions, 9 concurrency scenarios, legacy guard; no remote connection', flush=True)
+        print(f'PASS: {assertions} SQL assertions, 10 concurrency scenarios, legacy guard; no remote connection', flush=True)
     finally:
         if started:
             subprocess.run(['pg_ctl', '-D', str(data), '-m', 'immediate', '-w', 'stop'],

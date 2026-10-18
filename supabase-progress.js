@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-quiz-sessions-1';
+ const moduleVersion='2026-10-18-quiz-rewards-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -27,6 +27,15 @@
    !(s.profile.avatarPath===null||(typeof s.profile.avatarPath==='string'&&s.profile.avatarPath.length<=180)))invalid();
   // Own immutable copy, with no aliases into RPC results or app.js state.
   const capabilities=value.capabilities??[];
+  if(s.quizResults!==undefined){
+   if(!record(s.quizResults))invalid();
+   for(const [id,r] of Object.entries(s.quizResults)){
+    if(!id||id.length>180||!record(r)||typeof r.rewarded!=='boolean')invalid();
+    if(r.total===null){if(r.correct!==null)invalid()}
+    else if(!count(r.total)||!r.total||!count(r.correct)||r.correct>r.total)invalid();
+   }
+  }
+  if(Array.isArray(capabilities)&&capabilities.includes('quiz_rewards_v1')&&!record(s.quizResults))invalid();
   if(!Array.isArray(capabilities)||capabilities.some(v=>typeof v!=='string'||v.length>100))invalid();
   const snapshot=JSON.parse(JSON.stringify({revision:value.revision,content_version:value.content_version,capabilities,state:s}));
   function freeze(object){for(const v of Object.values(object))if(record(v)||Array.isArray(v))freeze(v);return Object.freeze(object)}
@@ -215,7 +224,7 @@
        result.applied_revision===0||result.applied_revision>snapshot.revision)throw fail('INVALID_PROGRESS_RESPONSE');
       if(snapshot.content_version!==row.contentVersion)throw fail('CONTENT_VERSION_MISMATCH');
       // Record ACK before publishing; a crash before this commit retries the same UUID.
-      row.status='applied';row.appliedRevision=result.applied_revision;await put(row);
+      row.status='applied';row.appliedRevision=result.applied_revision;row.quizResult=result.quiz_result??null;await put(row);
       requireCurrent(c);c.snapshot=snapshot;await compatible(c);publish(c);await reportActivity(c,JSON.parse(row.eventJson));break;
      }catch(e){
       requireCurrent(c);
@@ -290,7 +299,9 @@
      contentVersion:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
     requireCurrent(c);
    });
-   await reportActivity(c);void flush();return true;
+   await reportActivity(c);await flush();requireCurrent(c);
+   const receipt=(await rows()).find(r=>r.userId===c.userId&&r.eventId===eventId);
+   return receipt?.status==='applied'?{quizResult:receipt.quizResult}:false;
   }catch(e){if(c&&current(c))notify(e.code||'QUEUE_STORAGE_FAILED');return false}
  }
  // Explicit settings changes share the event writer's cross-tab lock, but do
