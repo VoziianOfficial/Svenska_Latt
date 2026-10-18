@@ -535,3 +535,6 @@ button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 .words-grid .word-actions .manual-review-add{flex:0 0 100px;width:100px!important;min-width:100px!important;white-space:nowrap;font-size:12px!important;padding:0 6px!important}
 [data-action="mark-review"].is-queued,[data-action="flash-grade"].is-queued{background:#e5f2ed!important;color:#397768!important;opacity:1;box-shadow:inset 0 0 0 1px #a7cdbf;cursor:default}
 @media(max-width:600px){.manual-review-row{flex-wrap:wrap;padding:14px;gap:12px}.manual-review-actions{width:100%;justify-content:space-between}}
+
+button.brand,button.mobile-brand{background:transparent;color:inherit;text-align:left}
+button.mobile-brand{padding:0}

@@ -202,8 +202,11 @@
  }
  function duration(ms,exact=false){
   const d=dictionary(),n=Math.floor(ms/1000),h=Math.floor(n/3600),m=Math.floor(n%3600/60),s=n%60;
-  if(!exact&&h)return `${h} ${d.hour} ${m} ${d.minute}`;
-  if(!exact&&m)return `${m} ${d.minute}`;
+  if(!exact){
+   if(h)return `${h} ${d.hour}`+(m?` ${m} ${d.minute}`:'');
+   if(m)return `${m} ${d.minute}`;
+   return ms>0?`< 1 ${d.minute}`:`0 ${d.minute}`;
+  }
   return [h?`${h} ${d.hour}`:'',m?`${m} ${d.minute}`:'',`${s} ${secondsLabel(s)}`].filter(Boolean).join(' ');
  }
  const dateFormat=(day,options)=>new Intl.DateTimeFormat(lang(),{...options,timeZone:'UTC'}).format(new Date(day+'T12:00:00Z'));
@@ -223,7 +226,7 @@
  function panel(){
   const d=dictionary(),s=c&&current(c)?c.snapshot:null;
   return `<div id="study-time-panel" class="study-summary">
-   <div class="study-totals" role="group" aria-label="${d.title}">${['today','week','month','all'].map(key=>`<div class="study-stat study-stat--${key}"><small>${d[key]}</small><strong title="${s?escape(duration(s.totals[key],true)):''}">${s?duration(s.totals[key]):'—'}</strong><span class="study-stat-period">${escape(periodText(key,s))}</span></div>`).join('')}</div>
+   <div class="study-totals" role="group" aria-label="${d.title}">${['today','week','month','all'].map(key=>`<div class="study-stat study-stat--${key}"><small>${d[key]}</small><strong title="${s?escape(duration(s.totals[key],true)):''}">${s?escape(duration(s.totals[key])):'—'}</strong><span class="study-stat-period">${escape(periodText(key,s))}</span></div>`).join('')}</div>
    <label class="study-toggle"><input type="checkbox" data-study-enabled ${s?.enabled&&!paused(c)?'checked':''} ${s&&!c?.saving?'':'disabled'}><span>${d.track}</span></label>
    <p class="study-message" role="status">${c?.saveError||c?.writeError?d.error:c?.readError?d.unavailable:!s?d.loading:d.hint}${c?.readError||c?.saveError||c?.writeError?' <button type="button" class="link-btn" data-study-retry aria-label="${d.retry}">↻</button>':''}</p></div>`;
  }

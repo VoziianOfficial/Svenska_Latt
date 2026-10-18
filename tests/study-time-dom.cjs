@@ -104,6 +104,7 @@ domTest('production profile uses one existing activity calendar, preserves color
  assert.equal(h.document.querySelectorAll('.activity-calendar').length,1);
  assert.equal(h.document.querySelectorAll('.study-calendar,.study-chart,.study-zone').length,0);
  assert.equal(h.document.querySelectorAll('.study-totals strong').length,4);
+ assert.deepEqual(Array.from(h.document.querySelectorAll('.study-totals strong'),el=>el.textContent),['0 мин','0 мин','0 мин','0 мин']);
  assert.equal(h.document.querySelector('[data-study-enabled]').hasAttribute('checked'),true);
  const day=h.document.querySelector('[data-study-date="2026-10-18"]');
  assert.ok(day.classList.contains('done'));
@@ -143,7 +144,7 @@ domTest('real interval batches drive server totals and restore after reload with
  await h.visibility(false);await settle();
  const restored=ui({resources:h.resources,route:'profile'});await restored.ready();
  assert.ok(restored.ctx.__study.get().snapshot.totals.all>=recorded);
- assert.match(restored.document.querySelector('.study-totals strong').textContent,/с/);
+ assert.match(restored.document.querySelector('.study-totals strong').textContent,/мин/);
  assert.equal(restored.resources.data.get('sv-cloud-events-v1'),'untouched');
 });
 domTest('automatic timezone synchronization preserves disabled consent and old daily data',async()=>{
