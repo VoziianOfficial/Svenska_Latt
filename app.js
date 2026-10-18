@@ -1146,6 +1146,8 @@ function manualQueue(){return window.SVManualReviews?.state()||{ready:false,entr
 function manualReviewIds(){return manualQueue().entries.filter(e=>e.active).map(e=>e.word_id).filter(id=>getWord(id))}
 function queueUX(key){const labels={
  add:['Повторить','Review','Repetera','Повторити'],
+ addedNotice:['Слово добавлено в повторение','Word added to reviews','Ordet har lagts till i repetition','Слово додано до повторення'],
+ removedNotice:['Слово убрано из повторения','Word removed from reviews','Ordet har tagits bort från repetition','Слово прибрано з повторення'],
  added:['✓ В повторении','✓ In reviews','✓ I repetition','✓ У повторенні'],
  remove:['Убрать из повторения','Remove from reviews','Ta bort från repetition','Прибрати з повторення'],
  start:['Начать повторение','Start review','Börja repetera','Почати повторення'],
@@ -1183,6 +1185,7 @@ function updateManualReviewButtons(){
  document.querySelectorAll('[data-review-count]').forEach(el=>{el.textContent=el.dataset.nav==='reviews'?`🔁 ${t('reviews')} · ${!user?0:q.ready?ids.size:'…'} →`:`${!user?0:q.ready?ids.size:'…'} ${t('words')}`});
 }
 function manualQueueChanged(event){
+ if(event?.action==='add'||event?.action==='remove')toast(queueUX(event.action==='add'?'addedNotice':'removedNotice'));
  const page=$('#page');if(!page)return;
  if(event&&reviewExercise?.owner===ownerKey()&&reviewExercise.id===event.wordId&&reviewExercise.version===event.version&&['remember','again'].includes(event.action)){
   reviewExercise.submitted=true;reviewExercise.correct=event.action==='remember';
