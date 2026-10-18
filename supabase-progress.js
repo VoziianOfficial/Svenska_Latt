@@ -1,7 +1,7 @@
-/* Validated cloud progress and opt-in stage-one event queue; RPC only. */
+/* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-word-state-2';
+ const moduleVersion='2026-10-18-account-cloud-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -73,6 +73,7 @@
   ]).then(value=>{
    if(!current(c))return;
    c.snapshot=validate(value);c.receivedAt=new Date().toISOString();c.status='ready';
+   deliverSnapshot(c);
   }).catch(error=>{
    if(!current(c))return;
    c.snapshot=null;c.status='error';c.error=diagnostic(error);
@@ -92,10 +93,11 @@
   }
   return initializing;
  }
- // Stage-one writer shares this module's validated cloud snapshot and Auth context.
- // The loopback-only flag is read once per page load. No production write switch.
- const writeEnabled=['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&
-  ['http:','https:'].includes(location.protocol)&&(()=>{try{return localStorage.getItem('sv-cloud-write-dev-v1')==='enabled'}catch(_){return false}})();
+ // HTTPS releases save supported account events. Loopback keeps its explicit
+ // development opt-in; neither switch controls reading/rendering account data.
+ const loopback=['127.0.0.1','localhost','[::1]'].includes(location.hostname);
+ const writeEnabled=(!loopback&&location.protocol==='https:')||(loopback&&
+  ['http:','https:'].includes(location.protocol)&&(()=>{try{return localStorage.getItem('sv-cloud-write-dev-v1')==='enabled'}catch(_){return false}})());
  let writerReady=null,writeError=null,dbPromise=null,draining=null,onSnapshot=null,retryTimer=null,onActivity=null;
  let activity={pending:[],error:null};
  async function reportActivity(c,completed=null){
@@ -160,10 +162,14 @@
   // Archive the exact local bytes used for the preflight, without modifying them.
   await storage('baselines','readwrite',s=>s.put({userId:c.userId,raw}));
  }
+ function deliverSnapshot(c){
+  requireCurrent(c);
+  onSnapshot?.(JSON.parse(JSON.stringify(c.snapshot.state)),c.userId);
+ }
  function publish(c){
   requireCurrent(c);
   writerReady=c;writeError=null;
-  onSnapshot?.(JSON.parse(JSON.stringify(c.snapshot.state)),c.userId);
+  deliverSnapshot(c);
  }
  async function fresh(c){
   const result=await window.SVRpc.getProgress({expectedUserId:c.userId});requireCurrent(c);
@@ -343,18 +349,15 @@
   catch(e){if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR')}
  }
  async function wakeWriter(){
-  if(!writeEnabled)return;
   const c=context;if(!c||!current(c))return;
   if(c.status==='error')await sync({retry:true});
   else if(writerReady!==c)await prepareWriter();
   await flush();
  }
- if(writeEnabled){
-  window.addEventListener('online',wakeWriter);
-  window.addEventListener('focus',wakeWriter);
- }
+ window.addEventListener('online',wakeWriter);
+ window.addEventListener('focus',wakeWriter);
 
- window.SVProgress=Object.freeze({initialize,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
+ window.SVProgress=Object.freeze({initialize,status:summary,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
  // Local development summary only; no tokens, identities or raw state.
  if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)){
   window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,moduleVersion,diagnostics,queue:queueStatus,flush,acknowledgeConflict});

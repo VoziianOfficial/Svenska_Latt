@@ -87,11 +87,16 @@ current=page();current.run("startQuiz('translation');quiz.index=quiz.questions.l
 current=reload();assert.equal(current.run('quiz.finished'),true);assert(current.run('html').includes('quiz-finished'));
 current.run('resetQuiz()');assert.equal(current.run('restoreQuizSession()'),false);
 
-// Exercises are isolated by account and tab; restoring never imports another identity's attempt.
-current=page();current.run("startQuiz('articles');applyAuthState({user:{id:'account-a'}})");
+// Cloud accounts cannot resume local-only quizzes or award unpersisted XP.
+// Guest drafts and legacy account drafts remain intact across identity changes.
+current=page();current.run("startQuiz('articles')");
+const draft=sessionStorage.getItem('sv-guest-v2:quiz-v1');
+sessionStorage.setItem('sv-account-local-v1-account-a:quiz-v1',draft);
+current.run("applyAuthState({user:{id:'account-a'}})");
 assert.equal(current.run('quiz.active'),false);
-current.run("startQuiz('months')");
-current=page();current.run("applyAuthState({user:{id:'account-a'}})");assert.equal(current.run('quiz.mode'),'months');assert.equal(current.run('quiz.active'),true);
+current.run("startQuiz('months')");assert.equal(current.run('quiz.active'),false);
+current=page();current.run("applyAuthState({user:{id:'account-a'}})");assert.equal(current.run('quiz.active'),false);
+assert.equal(sessionStorage.getItem('sv-account-local-v1-account-a:quiz-v1'),draft);
 current.run("applyAuthState({user:{id:'account-b'}})");assert.equal(current.run('quiz.active'),false);
 current.run("applyAuthState({user:null})");assert.equal(current.run('quiz.mode'),'articles');
 

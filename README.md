@@ -69,17 +69,17 @@ The **1,006 vocabulary entries** form a shared dictionary; individual words are 
 
 ## Project status
 
-**Active development.** The learning tools run in the browser, with progress saved locally by default. Guest progress and signed-in account progress use separate browser storage. Signing in alone does **not** make learning progress available on another device.
+**Active development.** Guests learn with progress stored in this browser. Signed-in accounts display validated Supabase progress; guest and legacy account storage are never imported automatically.
 
 | Area | Current behavior in this checkout |
 | --- | --- |
 | **Guest learning** | Available without a Supabase account; progress is stored in this browser. |
 | **Supabase authentication** | Sign-up, email confirmation, sign-in, session restoration, and sign-out are integrated; they require a configured Supabase project. |
-| **Cloud progress reads** | After sign-in, the app can request and validate a cloud snapshot through RPC when the backend is configured. In the default mode, this snapshot does not replace local learning progress. |
-| **Experimental cloud writes** | Disabled by default and restricted to an explicit loopback development mode. Only favorites and marking words as known are connected; other progress changes are blocked in that mode. |
-| **Cross-device synchronization & import** | Still in development. There is no complete production synchronization flow or automatic import of existing local progress. |
+| **Cloud progress reads** | After sign-in, validated `sl_get_progress()` data is the account’s source of progress, regardless of the development write flag. Unavailable data shows a placeholder and a retry notice. |
+| **Cloud event writes** | Enabled on hosted HTTPS. Loopback retains explicit development opt-in. Known-word toggles, favorites and supported review events use the durable account queue; unsupported quiz/profile mutations remain blocked. Local conflict and content-version checks remain enforced. |
+| **Account reload & import** | Reload and sign-in fetch account progress again. No automatic import, reset or deletion of guest/legacy progress. A live account acceptance check remains required before release. |
 
-The experimental write path has mock-based checks; real Supabase RPC and multi-device behavior still require validation. See the [cloud progress notes](docs/SUPABASE_PROGRESS_READ.md), [import preview notes](docs/SUPABASE_IMPORT_PREVIEW.md), and [experimental event queue](docs/SUPABASE_EVENT_QUEUE.md).
+See the [account release repair and manual checks](docs/ACCOUNT_CLOUD_RELEASE_FIX.md) for the cause of the previous zero-XP display and current verification limits. The event queue has mock-based checks; live Supabase HTTP and multi-device behavior still require validation. See the [cloud progress notes](docs/SUPABASE_PROGRESS_READ.md), [import preview notes](docs/SUPABASE_IMPORT_PREVIEW.md), and [experimental event queue](docs/SUPABASE_EVENT_QUEUE.md).
 
 ## Technology
 
@@ -87,7 +87,7 @@ The experimental write path has mock-based checks; real Supabase RPC and multi-d
 | --- | --- |
 | **Frontend** | HTML5, CSS3, and vanilla JavaScript; no frontend build step or npm installation required. |
 | **Learning content** | JSON datasets with JavaScript localization and media mappings. |
-| **Browser APIs** | Web Speech API for pronunciation; localStorage for normal progress and preferences; IndexedDB and Web Locks for the experimental cloud event queue. |
+| **Browser APIs** | Web Speech API for pronunciation; localStorage for guest progress and preferences; IndexedDB and Web Locks for the cloud event queue. |
 | **Local server** | Python standard library HTTP server with SQLite account/state API endpoints. The current frontend uses Supabase Auth and browser-local progress by default. |
 | **Cloud integration** | Supabase Auth and PostgreSQL RPC adapters; the JavaScript SDK is loaded from jsDelivr when needed. |
 | **Static hosting** | GitHub Pages, with a web app manifest and service worker for asset caching. |
@@ -165,7 +165,7 @@ These are placeholders. The current client accepts a **public publishable key be
 
 This file is served to every visitor. Never put a secret key (`sb_secret_`), `service_role` key, database password, personal access token, or other private credential in it. Public keys rely on the backend’s permissions and Row Level Security for data access control.
 
-Configure Supabase Auth’s site URL and allowed redirect URLs for the exact local or hosted address you use. Public configuration alone does not install the database schema, enable cloud writes, or import local progress. Consult the [authentication notes](docs/SUPABASE_AUTH_PREPARATION.md), [database architecture](docs/SUPABASE_STAGE1.md), and [RPC integration notes](docs/SUPABASE_STAGE2.md) before setting up the backend; this README does not apply SQL or change remote services.
+Configure Supabase Auth’s site URL and allowed redirect URLs for the exact local or hosted address you use. Public configuration alone does not install the database schema or import local progress. Hosted HTTPS enables supported account event writes after the existing backend and local-conflict checks pass. Consult the [authentication notes](docs/SUPABASE_AUTH_PREPARATION.md), [database architecture](docs/SUPABASE_STAGE1.md), and [RPC integration notes](docs/SUPABASE_STAGE2.md) before setting up the backend; this README does not apply SQL or change remote services.
 
 ## GitHub Pages
 

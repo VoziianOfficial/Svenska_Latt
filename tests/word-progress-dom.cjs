@@ -12,7 +12,7 @@ function ui({cloud=false,capable=true,scope=''}={}){
  let release;
  const ctx={document,console,Date,Math,URL,Response,setTimeout,clearTimeout,Image:function(){},navigator:{onLine:true},location:{hash:'',hostname:'localhost',pathname:'/'},localStorage:{getItem:k=>data.get(k)||null,setItem:(k,v)=>data.set(k,v)},matchMedia:()=>({matches:true})};
  const handlers={};ctx.window=ctx;let hashValue='';Object.defineProperty(ctx.location,'hash',{get:()=>hashValue,set:value=>hashValue=value?(value.startsWith('#')?value:'#'+value):''});ctx.addEventListener=(type,fn)=>{handlers[type]=fn};
- ctx.SVProgress={writeEnabled:cloud,writeStatus:()=>({ready:true}),activity:()=>({pending}),supports:()=>capable,enqueue:async(type,id,value)=>{calls.push({type,id,value});pending.push({type,wordId:id});await new Promise(r=>release=r);return true}};
+ ctx.SVProgress={status:()=>({status:'ready',receivedAt:'2026-10-18T12:00:00Z'}),writeEnabled:cloud,writeStatus:()=>({ready:cloud}),activity:()=>({pending}),supports:()=>capable,enqueue:async(type,id,value)=>{calls.push({type,id,value});pending.push({type,wordId:id});await new Promise(r=>release=r);return true}};
  vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'flashcard-media.js'),'utf8'),ctx);vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,''),ctx);
  const run=code=>vm.runInContext(code,ctx);
  ctx.words=JSON.parse(fs.readFileSync(path.join(root,'words.json'),'utf8')).slice(0,12);
@@ -168,4 +168,59 @@ domTest('manual removal preserves other list rows and document height without na
 domTest('flashcard review control receives the same confirmed queue state without an automatic exercise',async()=>{
  const h=await withManualQueue();h.run("route='flashcards';flash.ids=[WORDS[0].id];flash.index=0");h.page.innerHTML='<button data-action="flash-grade" data-value="0" disabled>Повторить</button>';h.run('manualQueueChanged()');
  const btn=h.page.querySelector('button');assert.equal(btn.disabled,false);assert.equal(btn.textContent,' Повторить');await h.run("action({dataset:{action:'flash-grade',value:'0'}})");assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.disabled,true);assert.equal(h.run('route'),'flashcards');assert.equal(h.grades.length,0);
+});
+
+domTest('account photo and name open the profile once and close the mobile drawer',()=>{
+ const h=ui();
+ const {parseHTML}=require(domModule);
+ const shell=parseHTML(fs.readFileSync(path.join(root,'index.html'),'utf8')).document;
+ h.document.body.innerHTML=shell.body.innerHTML;
+ h.run("user={name:'Yuliia'};state.profile={name:'Yuliia',avatar:''};window.profileVisits=[];navigate=(key)=>profileVisits.push(key);renderNav();bindEvents()");
+ assert.ok(fs.existsSync(path.join(root,'assets/avatars/pippi-cartoon.png')));
+ for(const selector of ['#sidebar-profile .user-image','#sidebar-profile strong','#profile-top .user-image']){
+  const target=h.document.querySelector(selector);assert.ok(target,selector);
+  h.document.querySelector('#app').classList.add('nav-open');
+  target.dispatchEvent(new h.document.defaultView.Event('click',{bubbles:true}));
+  assert.equal(h.document.querySelector('#app').classList.contains('nav-open'),false);
+ }
+ assert.equal(h.run('JSON.stringify(profileVisits)'),JSON.stringify(['profile','profile','profile']));
+ h.run("state.profile.avatar='data:image/png;base64,aGVsbG8=';renderNav()");
+ assert.equal(h.document.querySelector('#sidebar-profile img').getAttribute('src'),'data:image/png;base64,aGVsbG8=');
+ assert.equal(h.document.querySelector('#profile-top img').getAttribute('src'),'data:image/png;base64,aGVsbG8=');
+});
+
+domTest('profile shows account XP, keeps email in settings and reports failed reads without a false zero',()=>{
+ const h=ui({cloud:true});
+ h.ctx.SVProgress.status=()=>({status:'ready',receivedAt:'2026-10-18T12:00:00Z'});
+ h.ctx.SVManualReviews={state:()=>({ready:true,entries:[],pending:[],error:null})};
+ h.run("user={id:'test-account',name:'Yuliia',email:'profile@example.test'};state.xp=1280;state.settings.level='C';route='profile'");
+ for(const language of ['ru','en','sv','uk']){
+  h.run(`state.settings.language=${JSON.stringify(language)}`);
+  h.page.innerHTML=h.run('renderProfile()');h.run('renderProgressUX()');
+  assert.match(h.page.querySelector('.profile-level').textContent,/1280 XP/);
+  assert.equal(h.page.querySelector('.profile-person').textContent.includes('profile@example.test'),false);
+  assert.match(h.page.querySelector('.account-email').textContent,/profile@example.test/);
+  assert.equal(h.page.querySelectorAll('.save-status:not(.hidden)').length,0);
+  assert.doesNotMatch(h.page.textContent,/синхронизац.*выключена|синхронізацію вимкнено|Cloud sync is currently off|Molnsynkronisering är avstängd/);
+ }
+ h.ctx.SVProgress.status=()=>({status:'error',receivedAt:null,errorCode:'PGRST202'});
+ h.run("state.settings.language='ru';state.xp=0");
+ h.page.innerHTML=h.run('renderProfile()');h.run('renderProgressUX()');
+ assert.match(h.page.querySelector('.profile-level').textContent,/— XP/);
+ assert.doesNotMatch(h.page.querySelector('.profile-level').textContent,/0 XP/);
+ const status=h.page.querySelector('.save-status');
+ assert.match(status.textContent,/Не удалось загрузить прогресс/);
+ assert.ok(status.querySelector('[data-action="save-retry"]'));
+ assert.doesNotMatch(status.textContent,/Supabase|RPC|PGRST|IndexedDB|localStorage/);
+});
+
+domTest('failed Auth restoration shows a compact connection notice instead of silently remaining a guest',()=>{
+ const h=ui();h.ctx.SVAuth={getState:()=>({status:'unavailable'})};
+ h.run("route='profile'");h.page.innerHTML=h.run('renderProfile()');h.run('renderProgressUX()');
+ const status=h.page.querySelector('.save-status');
+ assert.match(status.textContent,/Не удалось подключиться/);
+ assert.ok(status.querySelector('[data-action="auth-retry"]'));
+ assert.doesNotMatch(status.textContent,/Supabase|RPC|JWT|SDK|localStorage/);
+ h.ctx.SVAuth.getState=()=>({status:'signed_out'});h.run('renderProgressUX(true)');
+ assert.equal(h.page.querySelector('.save-status'),null);
 });

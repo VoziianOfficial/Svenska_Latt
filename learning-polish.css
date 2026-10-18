@@ -538,3 +538,10 @@ button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 
 button.brand,button.mobile-brand{background:transparent;color:inherit;text-align:left}
 button.mobile-brand{padding:0}
+
+.account-button .small-avatar{flex:0 0 32px;width:32px;height:32px;border-radius:50%;overflow:hidden}
+.account-button .small-avatar .user-image{display:block;width:100%;height:100%;object-fit:cover}
+
+.account-email span{min-width:0;text-align:right;overflow-wrap:anywhere;font-size:13px}
+
+.page-heading p:empty{display:none}

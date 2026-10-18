@@ -198,19 +198,20 @@ test('expired, incomplete and rejected callbacks leave no credentials and preser
   assert.equal(h.data.get('sv-guest-v2'),'original-guest');assert.deepEqual(h.records.storageWrites,[]);
  }
 });
-test('account switches and signout keep guest, each account and backups isolated',async()=>{
- const {h,saved}=await bootGuest({initial:token(A)});
- vm.runInContext('state.xp=25;save()',h.ctx);
+test('signed-in state never writes or restores legacy local XP; signout restores guest only',async()=>{
+ const {h,saved}=await bootGuest({initial:token(A),accountState:{xp:25}});
+ h.data.set('sv-account-local-v1-'+B,JSON.stringify({xp:8}));
+ const before=[...h.data];
+ vm.runInContext('state.xp=99;save()',h.ctx);
  assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+A)).xp,25);
  h.emit('SIGNED_IN',token(B));await new Promise(r=>setTimeout(r,5));
  assert.equal(vm.runInContext('state.xp',h.ctx),0);
- vm.runInContext('state.xp=8;save()',h.ctx);
  h.emit('SIGNED_IN',token(A));await new Promise(r=>setTimeout(r,5));
- assert.equal(vm.runInContext('state.xp',h.ctx),25);
+ assert.equal(vm.runInContext('state.xp',h.ctx),0);
  await h.ctx.SVAuth.signOut();await new Promise(r=>setTimeout(r,5));
  assert.equal(vm.runInContext('user',h.ctx),null);assert.equal(vm.runInContext('state.xp',h.ctx),91);
- assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');
- assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+B)).xp,8);assert.deepEqual(h.records.rpc,[]);
+ assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual([...h.data],before);
+ assert.deepEqual(h.records.storageWrites,[]);assert.deepEqual(h.records.rpc,[]);
 });
 
 function formHarness(h,mode='register'){
@@ -255,10 +256,11 @@ test('logout handler preserves identity and progress on failure and restores gue
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.equal(h.data.get('sv-cloud-backup-'+A),'original-backup');
 });
 
-test('reload restores existing local account progress without taking guest progress',async()=>{
+test('without the cloud module account data stays unavailable instead of using legacy local XP',async()=>{
  const {h,saved}=await bootGuest({initial:token(A),accountState:{xp:34,known:['v-prata']}});
- assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),34);
- assert.equal(vm.runInContext('state.known[0]',h.ctx),'v-prata');
+ assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),0);
+ assert.equal(vm.runInContext('accountDataReady()',h.ctx),false);
+ assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+A)).xp,34);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);assert.deepEqual(h.records.rpc,[]);
 });
 test('email return during SDK outage is scrubbed and reports callback failure',async()=>{
@@ -347,19 +349,23 @@ test('guests and Auth outages send no progress RPC; debug API only exists on loo
 test('application boot automatically reads cloud once and profile renders never repeat it',async()=>{
  const {h,saved}=await bootGuest({initial:token(A),progress:true,hostname:'127.0.0.1',accountState:{xp:23}});
  await h.ctx.SVProgress.initialize(); // boot's default RPC mock is intentionally malformed
- assert.equal(h.ctx.SVProgressDebug.status().status,'error');assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),23);
+ assert.equal(h.ctx.SVProgressDebug.status().status,'error');assert.equal(vm.runInContext('user.id',h.ctx),A);assert.equal(vm.runInContext('state.xp',h.ctx),0);
+ assert.equal(vm.runInContext('accountDataReady()',h.ctx),false);
+ assert.match(vm.runInContext('renderProfile()',h.ctx),/— XP/);
  h.rpcResult(()=>({data:cloudSnapshot(),error:null}));await h.ctx.SVProgressDebug.retry();
  for(let i=0;i<5;i++)vm.runInContext("route='profile';renderProfile()",h.ctx);
  h.emit('TOKEN_REFRESHED',token(A));await new Promise(r=>setTimeout(r,5));
- assert.equal(h.records.rpc.length,2);assert.equal(h.ctx.SVProgressDebug.status().xp,42);assert.equal(vm.runInContext('state.xp',h.ctx),23);
+ assert.equal(h.records.rpc.length,2);assert.equal(h.ctx.SVProgressDebug.status().xp,42);assert.equal(vm.runInContext('state.xp',h.ctx),42);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
 });
 
-test('successful automatic read on restored login never replaces local account progress',async()=>{
+test('successful automatic read renders cloud account data with local dev writes disabled',async()=>{
  const {h,saved}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['local-only']},cloudSnapshot:cloudSnapshot()});
  await h.ctx.SVProgress.initialize();
  assert.equal(h.ctx.SVProgressDebug.status().status,'ready');assert.equal(h.ctx.SVProgressDebug.status().xp,42);
- assert.equal(vm.runInContext('state.xp',h.ctx),23);assert.equal(vm.runInContext('state.known[0]',h.ctx),'local-only');
+ assert.equal(vm.runInContext('state.xp',h.ctx),42);assert.equal(vm.runInContext('state.known[0]',h.ctx),'v-arbeta');
+ assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+A)).xp,23);
+ assert.equal(h.ctx.SVProgress.writeEnabled,false);
  for(let i=0;i<5;i++)vm.runInContext("route='profile';renderProfile()",h.ctx);
  await new Promise(r=>setTimeout(r,5));assert.equal(h.records.rpc.length,1);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
@@ -469,10 +475,17 @@ async function startWriter(shared=writerEnvironment(),server=writerServer(),id=A
 async function send(w,type,id='v-arbeta',value){
  assert.equal(await w.h.ctx.SVProgress.enqueue(type,id,value),true);await w.h.ctx.SVProgressDebug.flush();
 }
-test('writer is disabled by default and outside loopback even with local flag',async()=>{
- const w=await startWriter(writerEnvironment(),writerServer(),A,{hostname:'example.github.io'});
- assert.equal(w.h.ctx.SVProgress.writeEnabled,false);assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),false);
- assert.equal(w.server.account(A).snapshot.revision,0);
+test('HTTPS releases save account events without a dev flag; loopback remains opt-in',async()=>{
+ const shared=writerEnvironment();shared.data.delete('sv-cloud-write-dev-v1');
+ const w=await startWriter(shared,writerServer(),A,{hostname:'example.github.io'});
+ assert.equal(w.h.ctx.SVProgress.writeEnabled,true);assert.equal(w.h.ctx.SVProgressDebug,undefined);
+ assert.equal(await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),true);
+ for(let i=0;i<20;i++)await new Promise(r=>setImmediate(r));
+ assert.equal(w.server.account(A).snapshot.state.xp,8);
+ const reloaded=await startWriter(shared,w.server,A,{hostname:'example.github.io'});
+ assert.equal(reloaded.snapshots.at(-1).s.xp,8);
+ const local=harness({initial:token(A),progress:true,hostname:'localhost',environment:shared.environment});
+ assert.equal(local.ctx.SVProgress.writeEnabled,false);
 });
 test('mark known and favorite add/remove publish server results; client sends no XP',async()=>{
  const w=await startWriter();await send(w,'mark_known');await send(w,'favorite_set','v-arbeta',true);await send(w,'favorite_set','v-arbeta',false);
@@ -587,7 +600,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('current debug export has queue and version even with writes disabled and no session',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-word-state-2');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-account-cloud-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,false);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
@@ -888,4 +901,24 @@ test('hung progress read times out, leaves stored progress intact and ignores a 
  assert.equal(h.ctx.SVProgressDebug.status().status,'error');
  h.rpcResult(()=>({data:cloudSnapshot(),error:null}));await h.ctx.SVProgressDebug.retry();
  assert.equal(h.ctx.SVProgressDebug.status().status,'ready');
+});
+
+test('HTTPS profile restores Supabase XP after reload and relogin, without importing legacy or guest data',async()=>{
+ const progress=cloudSnapshot({revision:29,state:{...cloudSnapshot().state,xp:1280,known:['v-prata']}});
+ const options={initial:token(A),progress:true,hostname:'example.github.io',accountState:{xp:0},cloudSnapshot:progress};
+ for(let reload=0;reload<2;reload++){
+  const {h,saved}=await bootGuest(options);await h.ctx.SVProgress.initialize();
+  assert.equal(vm.runInContext('state.xp',h.ctx),1280);
+  assert.equal(vm.runInContext('state.known[0]',h.ctx),'v-prata');
+  assert.equal(vm.runInContext('accountDataReady()',h.ctx),true);
+  await h.ctx.SVAuth.signOut();await new Promise(r=>setTimeout(r,5));
+  assert.equal(vm.runInContext('state.xp',h.ctx),91);
+  await h.ctx.SVAuth.signIn({email:'test@example.test',password:'test-password'});
+  await new Promise(r=>setTimeout(r,5));
+  assert.equal(vm.runInContext('state.xp',h.ctx),1280);
+  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));
+  assert.equal(h.data.get('sv-account-local-v1-'+A),JSON.stringify({xp:0}));
+  assert.deepEqual(h.records.storageWrites,[]);
+  assert.ok(h.records.rpc.every(r=>r.name==='sl_get_progress'));
+ }
 });
