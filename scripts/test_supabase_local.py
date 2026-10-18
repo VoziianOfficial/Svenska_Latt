@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run Stage 1 SQL ONLY in a freshly created, disposable PostgreSQL cluster.
+"""Run migration contracts ONLY in a freshly created, disposable PostgreSQL cluster.
 
 No connection string argument, no TCP listener, no Supabase credentials/CLI.
 Auth/Storage schema stubs are explicitly test-only. Does not test HTTP APIs.
@@ -12,6 +12,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
+import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 USER = '10000000-0000-0000-0000-000000000003'
@@ -68,7 +69,7 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
-            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql'):
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql', '202610180012_xp_integrity.sql'):
                 continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
@@ -204,6 +205,72 @@ def main():
         assert sql(f"select sum(xp_delta) from public.sl_events where user_id='{quiz_user}' and event_type='session_finish';").stdout.strip() == '35'
         print('PASS: simultaneous quiz finishes on two devices: conflict, safe retry, exactly one 35 XP reward', flush=True)
 
+        integrity = run_file(ROOT / 'supabase/tests/008_xp_integrity.sql')
+        assertions += integrity.stderr.count('PASS:')
+        integrity_races = 0
+        integrity_user = '97000000-0000-0000-0000-000000000004'
+        def integrity_sql(statement):
+            return (f"set role authenticated; select set_config('request.jwt.claim.sub','{integrity_user}',false); " + statement)
+        def integrity_progress():
+            return json.loads(sql(integrity_sql('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        def integrity_race(kind, payload, same_id=False, second_kind=None, second_payload=None):
+            nonlocal integrity_races
+            revision = integrity_progress()['revision']
+            body = event(kind, payload).replace("'", "''")
+            second_body = event(second_kind or kind, second_payload or payload).replace("'", "''")
+            ids = [str(uuid.uuid4()), str(uuid.uuid4())]
+            if same_id:
+                ids[1] = ids[0]
+            def command(i, rev):
+                return integrity_sql(f"select public.sl_apply_event('{ids[i]}',{rev},'{[body,second_body][i]}'::jsonb);")
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                results = list(pool.map(lambda i: sql(command(i, revision), check=False), (0, 1)))
+            if same_id:
+                assert all(r.returncode == 0 for r in results), [r.stderr for r in results]
+                assert sum(json.loads(r.stdout.strip().splitlines()[-1])['duplicate'] for r in results) == 1
+            else:
+                assert sorted(r.returncode for r in results) == [0, 1], [r.stderr for r in results]
+                assert '40001' in ''.join(r.stderr for r in results)
+                failed = next(i for i, r in enumerate(results) if r.returncode)
+                sql(command(failed, revision+1))
+            integrity_races += 1
+        integrity_race('mark_known', {'word_id': 'v-arbeta'}, same_id=True)
+        assert integrity_progress()['state']['xp'] == 8
+        integrity_race('unmark_known', {'word_id': 'v-arbeta'})
+        integrity_race('flash_grade', {'word_id': 'v-arbeta', 'correct': True})
+        assert integrity_progress()['state']['xp'] == 8
+        integrity_race('flash_grade', {'word_id': 'v-prata', 'correct': False})
+        assert integrity_progress()['state']['xp'] == 8
+        integrity_race('video_set', {'content_id': 'v1', 'value': True})
+        integrity_race('video_set', {'content_id': 'v1', 'value': False})
+        integrity_race('video_set', {'content_id': 'v1', 'value': True})
+        assert integrity_progress()['state']['xp'] == 8
+        integrity_race('book_read', {'content_id': 'book-1'})
+        assert integrity_progress()['state']['xp'] == 28
+        # Different event types share the same once-per-word entitlement.
+        integrity_race('mark_known', {'word_id': 'v-studera'}, second_kind='flash_grade', second_payload={'word_id': 'v-studera', 'correct': True})
+        integrity_race('flash_grade', {'word_id': 'v-studera', 'correct': True})
+        assert integrity_progress()['state']['xp'] == 36
+        print(f'PASS: {integrity_races} post-012 concurrent UUID/revision/word/video/book scenarios', flush=True)
+        # Exercise the full quiz concurrency test again with 012 installed.
+        post012_sessions = [sql(quiz_sql("select public.test_quiz_prepare('lesson:lesson-9',200);")).stdout.strip().splitlines()[-1] for _ in range(2)]
+        before012 = json.loads(sql(quiz_sql('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        bodies012 = [event('session_finish', {'session_id': sid}).replace("'", "''") for sid in post012_sessions]
+        ids012 = [str(uuid.uuid4()), str(uuid.uuid4())]
+        def finish012(i, revision):
+            return quiz_sql(f"select public.sl_apply_event('{ids012[i]}',{revision},'{bodies012[i]}'::jsonb);")
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda i: sql(finish012(i, before012['revision']), check=False), (0, 1)))
+        assert sorted(r.returncode for r in results) == [0, 1], [r.stderr for r in results]
+        failed = next(i for i, r in enumerate(results) if r.returncode)
+        sql(finish012(failed, before012['revision']+1))
+        after012 = json.loads(sql(quiz_sql('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        assert after012['state']['xp'] == before012['state']['xp'] + 35
+        replay012 = json.loads(sql(finish012(0, before012['revision'])).stdout.strip().splitlines()[-1])
+        assert replay012['duplicate'] is True
+        integrity_races += 1
+        print('PASS: post-012 concurrent quiz finishes and lost ACK still pay exactly one reward', flush=True)
+
         # Also install every migration in normal numerical order into a fresh database.
         sql('create database clean_install_test;')
         clean_base = [x if i != base.index('-d')+1 else 'clean_install_test' for i, x in enumerate(base)]
@@ -211,10 +278,22 @@ def main():
         bootstrap = '\n'.join(line for line in bootstrap.splitlines() if not line.startswith('create role '))
         subprocess.run(clean_base + ['-c', bootstrap], env=env, check=True, capture_output=True)
         for path in migrations:
+            if path.name == '202610180012_xp_integrity.sql':
+                continue  # 008 seeds pre-upgrade history and applies 012 itself.
             result = subprocess.run(clean_base + ['-f', str(path)], env=env, text=True, capture_output=True)
             (work / ('clean-' + path.name + '.log')).write_text(result.stdout + result.stderr)
             assert result.returncode == 0, result.stderr
-        print('PASS: clean install of all 11 migrations in numerical order (no duplicate versions)', flush=True)
+        # Only test helpers are copied; production functions come exclusively
+        # from the actual, numerically ordered 001-011 migration files above.
+        for signature in ('public.test_quiz_event(text,jsonb,uuid)', 'public.test_quiz_prepare(text,integer)'):
+            definition = sql(f"select pg_get_functiondef('{signature}'::regprocedure);").stdout
+            subprocess.run(clean_base + ['-c', definition], env=env, check=True, capture_output=True)
+        ordered_upgrade = subprocess.run(clean_base + ['-f', str(ROOT / 'supabase/tests/008_xp_integrity.sql')],
+                                         env=env, text=True, capture_output=True)
+        (work / 'ordered-008_xp_integrity.sql.log').write_text(ordered_upgrade.stdout + ordered_upgrade.stderr)
+        assert ordered_upgrade.returncode == 0, ordered_upgrade.stderr[-6000:]
+        assertions += ordered_upgrade.stderr.count('PASS:')
+        print(f'PASS: exact numerical 001-011 install, populated pre-012 fixtures, then 012 and all integrity assertions ({len(migrations)} migrations)', flush=True)
 
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')
@@ -223,9 +302,9 @@ def main():
         guard = subprocess.run(legacy_base + ['-f', str(migrations[0])], env=env, text=True, capture_output=True)
         assert guard.returncode and 'Legacy learning_progress exists' in guard.stderr
         print('PASS: legacy installation guard prevents accidental mixed schemas', flush=True)
-        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 10,
+        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 10 + integrity_races,
             'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False}, indent=2))
-        print(f'PASS: {assertions} SQL assertions, 10 concurrency scenarios, legacy guard; no remote connection', flush=True)
+        print(f'PASS: {assertions} SQL assertions, {10 + integrity_races} concurrency scenarios, legacy guard; no remote connection', flush=True)
     finally:
         if started:
             subprocess.run(['pg_ctl', '-D', str(data), '-m', 'immediate', '-w', 'stop'],

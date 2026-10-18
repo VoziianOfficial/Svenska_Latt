@@ -643,7 +643,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('debug export has queue and version without a session or dev flag',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-local-save-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-word-buttons-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,true);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);

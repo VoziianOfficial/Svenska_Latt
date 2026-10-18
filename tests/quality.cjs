@@ -40,5 +40,10 @@ const html=fs.readFileSync(root+'/index.html','utf8');const css=fs.readFileSync(
 check(html.includes('lang-select')&&html.includes('mobile-nav')&&html.includes('global-search'),'nav missing');
 check(css.includes('font-size:16px!important')&&css.includes('course-tiles{display:flex')&&css.includes('nav-open'),'responsive css missing');
 check(fs.existsSync(root+'/SUPABASE_SETUP.sql')&&fs.existsSync(root+'/supabase-config.js'),'supabase files missing');
-for(let legal of ['privacy','terms','cookies'])check(fs.readFileSync(root+`/${legal}.html`,'utf8').includes('ru:'),'legal translations? '+legal);
+for(const legal of ['privacy','terms','cookies']){
+ const source=fs.readFileSync(root+`/${legal}.html`,'utf8');
+ const match=source.match(/const I18N=(.*?);const lang=/s);check(match,'legal translation dictionary missing: '+legal);
+ const translations=JSON.parse(match[1]);
+ for(const lang of ['ru','en','sv','uk'])check(typeof translations[lang]?.[0]==='string'&&translations[lang][1]?.length>0,'legal translations? '+legal+'/'+lang);
+}
 console.log(JSON.stringify({status:'PASS',words:words.length,lessons:lessons.length,categories:cat.length,minWords:Math.min(...cat.map(x=>x[1])),books:books.length,locales:4,quizModes:14,videoCards:run("(renderVideos().match(/class=\\\"video-card/g)||[]).length")},null,2));

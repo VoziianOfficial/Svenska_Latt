@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-local-save-1';
+ const moduleVersion='2026-10-18-word-buttons-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -121,7 +121,14 @@
  const fail=code=>Object.assign(new Error(code),{code});
  function notify(code){
   writeError=code;
+  if(code==='SRS_INTERVAL_LIMIT'&&retryTimer){clearTimeout(retryTimer);retryTimer=null}
   void reportActivity(context);
+ }
+ function writeFailure(error){
+  // Recognize this constraint without retaining/logging the failing row: its
+  // details contain account IDs and private progress data.
+  return error?.code==='23514'&&String(error.message||'').includes('sl_words_interval_days_check')
+   ?'SRS_INTERVAL_LIMIT':error?.code||'NETWORK_OR_RPC_ERROR';
  }
  function database(){
   if(!dbPromise)dbPromise=new Promise((resolve,reject)=>{
@@ -242,11 +249,11 @@
      }
     }
    }
-  }).catch(e=>{if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR')}).finally(()=>{
+  }).catch(e=>{if(current(c))notify(writeFailure(e))}).finally(()=>{
    draining=null;
    if(current(c))void reportActivity(c);
    if(context!==c){void flush()}
-   if(current(c)&&writerReady===c&&!retryTimer&&!['FEATURE_UNAVAILABLE','FAVORITE_CONFLICT','WORD_STATE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
+   if(current(c)&&writerReady===c&&!retryTimer&&!['SRS_INTERVAL_LIMIT','FEATURE_UNAVAILABLE','FAVORITE_CONFLICT','WORD_STATE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
   });
   return draining;
  }
