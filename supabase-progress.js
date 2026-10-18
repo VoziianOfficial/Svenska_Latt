@@ -263,6 +263,36 @@
    void flush();return true;
   }catch(e){if(c&&current(c))notify(e.code||'QUEUE_STORAGE_FAILED');return false}
  }
+ // Explicit settings changes share the event writer's cross-tab lock, but do
+ // not import, overwrite or require a match with device learning progress.
+ let pendingSetting=null;
+ async function updateLevel(level){
+  if(!['A','B','C','D'].includes(level))throw fail('INVALID_LEVEL');
+  await sync({retry:true});const c=context;
+  if(!c||!current(c)||c.status!=='ready')throw fail('CLOUD_NOT_READY');
+  return lock(c,async()=>{
+   requireCurrent(c);
+   if(!pendingSetting||pendingSetting.userId!==c.userId||pendingSetting.level!==level)
+    pendingSetting={userId:c.userId,level,id:crypto.randomUUID(),event:{type:'settings_update',occurred_at:new Date().toISOString(),timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,data:{level}}};
+   const intent=pendingSetting;
+   for(let attempt=0;attempt<2;attempt++){
+    const latest=validate(await window.SVRpc.getProgress({expectedUserId:c.userId}));requireCurrent(c);
+    try{
+     const result=await window.SVRpc.applyEvent({expectedUserId:c.userId,eventId:intent.id,expectedRevision:latest.revision,event:intent.event});
+     requireCurrent(c);const snapshot=validate(result?.progress);
+     if(typeof result.duplicate!=='boolean'||!count(result.applied_revision)||result.applied_revision<1||result.applied_revision>snapshot.revision)throw fail('INVALID_PROGRESS_RESPONSE');
+     c.snapshot=snapshot;c.receivedAt=new Date().toISOString();deliverSnapshot(c);pendingSetting=null;
+     if(snapshot.state.settings.level!==level)throw fail('SETTINGS_CHANGED_ELSEWHERE');
+     return level;
+    }catch(e){if(e.code!=='40001'||attempt===1)throw e}
+   }
+  });
+ }
+ async function refresh(){
+  const c=context;if(!c||!current(c))return;
+  await lock(c,async()=>{const snapshot=validate(await window.SVRpc.getProgress({expectedUserId:c.userId}));requireCurrent(c);c.snapshot=snapshot;c.status='ready';c.receivedAt=new Date().toISOString();deliverSnapshot(c)});
+ }
+ window.addEventListener('focus',()=>{void refresh().catch(()=>{})});
  // Inspection never creates/upgrades a database or starts the writer/RPC.
  async function inspectQueue(){
   if(typeof indexedDB==='undefined')return {status:'unavailable',error:'QUEUE_STORAGE_UNAVAILABLE'};
@@ -357,7 +387,7 @@
  window.addEventListener('online',wakeWriter);
  window.addEventListener('focus',wakeWriter);
 
- window.SVProgress=Object.freeze({initialize,status:summary,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
+ window.SVProgress=Object.freeze({initialize,updateLevel,refresh,status:summary,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
  // Local development summary only; no tokens, identities or raw state.
  if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)){
   window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,moduleVersion,diagnostics,queue:queueStatus,flush,acknowledgeConflict});

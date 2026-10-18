@@ -50,7 +50,7 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
   }};
  ctx.window=ctx;vm.createContext(ctx);
  // Test-only access to drive the real asynchronous loop without waiting minutes.
- vm.runInContext(source.replace(/\}\)\(\);\s*$/, 'window.__study={tick,drain,refresh,settings,paint,get:()=>c};})();'),ctx);
+ vm.runInContext(source.replace(/\}\)\(\);\s*$/, 'window.__study={tick,drain,refresh,settings,paint,duration,get:()=>c};})();'),ctx);
  return {ctx,document,resources,calls,snapshot,receipts,session,get total(){return resources.totals.get(user)||0},
   async ready(){await settle()},async tick(ms=1000){time+=ms;await ctx.__study.tick();await settle()},
   async input(){const e=new Event('pointerdown',{bubbles:true});Object.defineProperty(e,'isTrusted',{value:true});document.getElementById('learn').dispatchEvent(e);await settle()},
@@ -199,4 +199,25 @@ domTest('timezone change commits old lease before changing preferences and prese
  assert.ok(settingsIndex>0);assert.ok(h.calls.slice(0,settingsIndex).some(c=>c[0]==='commit'&&c[1].close));
  assert.equal(h.calls[settingsIndex][1].enabled,true);
  assert.equal(h.snapshot.days['2026-09-01'],5700000);assert.ok(h.total>0);
+});
+
+domTest('study minute formatting has exact boundaries and retains milliseconds in the tooltip',async()=>{
+ const h=ui({route:'profile'});await h.ready();
+ for(const [ms,label] of [[0,'0 мин'],[1,'0 мин'],[59000,'0 мин'],[59999,'0 мин'],[60000,'1 мин'],[3599999,'59 мин'],[3600000,'1 ч'],[3660000,'1 ч 1 мин'],[5700000,'1 ч 35 мин']])assert.equal(h.ctx.__study.duration(ms),label);
+ assert.equal(h.ctx.__study.duration(59999,true),'59 секунд');
+ assert.equal(h.document.querySelectorAll('.study-stat').length,4);
+});
+domTest('three minutes of active learning commit real milliseconds and render nonzero totals',async()=>{
+ const h=ui();await h.ready();await h.tick();
+ for(let second=0;second<185;second++){if(second%30===0)await h.input();await h.tick()}
+ h.setRoute('profile');await h.tick();await h.ctx.__study.refresh(h.ctx.__study.get());h.ctx.__study.paint();
+ assert.ok(h.total>=180000,`Expected real study time, got ${h.total}`);
+ assert.equal(h.document.querySelectorAll('.study-stat strong').length,4);
+ for(const value of h.document.querySelectorAll('.study-stat strong'))assert.equal(value.textContent,'3 мин');
+ assert.ok(h.calls.filter(call=>call[0]==='commit').length>1);
+});
+domTest('disabled study tracking explains zero without enabling tracking or changing preferences',async()=>{
+ const h=ui({enabled:false,route:'profile'});await h.ready();h.ctx.__study.paint();
+ assert.match(h.document.querySelector('.study-message').textContent,/Учёт выключен/);
+ assert.equal(h.calls.filter(call=>call[0]==='settings'||call[0]==='open').length,0);
 });

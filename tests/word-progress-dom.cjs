@@ -193,7 +193,8 @@ domTest('profile shows account XP, keeps email in settings and reports failed re
  const h=ui({cloud:true});
  h.ctx.SVProgress.status=()=>({status:'ready',receivedAt:'2026-10-18T12:00:00Z'});
  h.ctx.SVManualReviews={state:()=>({ready:true,entries:[],pending:[],error:null})};
- h.run("user={id:'test-account',name:'Yuliia',email:'profile@example.test'};state.xp=1280;state.settings.level='C';route='profile'");
+ h.ctx.SVAuth={getState:()=>({user:{id:'test-account',email:'profile@example.test'}})};
+ h.run("user={id:'test-account',name:'Yuliia',email:'stale@example.test'};state.xp=1280;state.settings.level='C';route='profile'");
  for(const language of ['ru','en','sv','uk']){
   h.run(`state.settings.language=${JSON.stringify(language)}`);
   h.page.innerHTML=h.run('renderProfile()');h.run('renderProgressUX()');
@@ -223,4 +224,52 @@ domTest('failed Auth restoration shows a compact connection notice instead of si
  assert.doesNotMatch(status.textContent,/Supabase|RPC|JWT|SDK|localStorage/);
  h.ctx.SVAuth.getState=()=>({status:'signed_out'});h.run('renderProgressUX(true)');
  assert.equal(h.page.querySelector('.save-status'),null);
+});
+
+domTest('profile level waits for server ACK, updates badge without replacing page and restores selection on failure',async()=>{
+ const h=ui({cloud:true});h.ctx.SVAuth={getState:()=>({user:{id:'test-account',email:'auth@example.test'}})};
+ h.run("route='profile';state.settings.level='A';state.xp=1280");h.page.innerHTML=h.run('renderProfile()');h.run('renderProgressUX()');
+ const original=h.page.querySelector('.profile-person'),select=h.page.querySelector('#profile-level');
+ assert.equal(select.disabled,false);Object.defineProperty(select,'value',{value:'A',writable:true});let ack;
+ h.ctx.SVProgress.updateLevel=async level=>{await new Promise(resolve=>ack=resolve);h.run(`state.settings.level=${JSON.stringify(level)}`)};
+ select.value='B';h.ctx.select=select;const task=h.run('saveProfileLevel(select)');
+ assert.equal(select.disabled,true);assert.equal(h.page.querySelector('[data-profile-level]').textContent,'A');assert.equal(h.page.querySelector('#profile-level-message').textContent,'');
+ ack();await task;
+ assert.equal(h.page.querySelector('.profile-person'),original);assert.equal(h.page.querySelector('[data-profile-level]').textContent,'B');assert.equal(select.disabled,false);assert.match(h.page.querySelector('#profile-level-message').textContent,/сохранён/);
+ h.ctx.SVProgress.updateLevel=async()=>{throw {code:'NETWORK_ERROR'}};select.value='C';await h.run('saveProfileLevel(select)');
+ assert.equal(select.value,'B');assert.equal(h.page.querySelector('[data-profile-level]').textContent,'B');assert.match(h.page.querySelector('#profile-level-message').textContent,/соединение/);assert.equal(h.run('state.xp'),1280);
+});
+domTest('profile email editor keeps confirmed Auth email, labels pending state and clears stale confirmation after refresh',()=>{
+ const h=ui({cloud:true});let auth={id:'test-account',email:'old@example.test',new_email:'pending@example.test'};
+ h.ctx.SVAuth={getState:()=>({user:auth})};h.run("route='profile';user.email='stale@example.test'");h.page.innerHTML=h.run('renderProfile()');
+ assert.equal(h.page.querySelector('[data-current-email]').textContent,'old@example.test');assert.match(h.page.querySelector('#profile-email-message').textContent,/Проверьте почту/);
+ assert.equal(h.page.querySelector('#profile-email-form').hasAttribute('hidden'),true);
+ h.run("profileEmailEditing=true;profileEmailDraft='draft@example.test'");h.page.innerHTML=h.run('renderProfile()');
+ assert.equal(h.page.querySelector('#profile-new-email').value,'draft@example.test');assert.equal(h.page.querySelector('#profile-email-form').hasAttribute('hidden'),false);
+ h.run("profileEmailEditing=false;profileEmailMessage=settingsText('check')");auth={id:'test-account',email:'pending@example.test'};h.run('refreshProfileSettings()');
+ assert.equal(h.page.querySelector('[data-current-email]').textContent,'pending@example.test');assert.equal(h.page.querySelector('#profile-email-message').textContent,'');
+});
+
+domTest('dictionary numeric counters depend on loaded data, never on cloud write availability',()=>{
+ const h=ui({cloud:true});h.ctx.SVProgress.writeStatus=()=>({ready:false});
+ for(const scope of ['', 'learned', 'favorites']){
+  h.ctx.scope=scope;h.run("routeParam=scope;state.known=WORDS.map(w=>w.id);state.favorites=WORDS.map(w=>w.id)");h.mount();
+  assert.equal(h.page.querySelector('.vocab-counter').textContent,'Показано 12 из 12');
+  assert.equal(h.page.querySelector('[data-action="dict-reset"]'),null);
+ }
+ h.ctx.SVProgress.status=()=>({status:'loading',receivedAt:null});h.run("routeParam='learned';state.known=[]");h.mount();
+ assert.match(h.page.querySelector('.vocab-counter').textContent,/Загружа/);assert.doesNotMatch(h.page.querySelector('.vocab-counter').textContent,/…/);
+ h.ctx.SVProgress.status=()=>({status:'error',receivedAt:null});h.run('cloudReadError=true;refreshWordUI()');
+ assert.match(h.page.querySelector('.vocab-counter').textContent,/Не удалось/);assert.match(h.page.querySelector('.empty-state').textContent,/Не удалось/);
+ h.run("routeParam=''");h.mount();assert.equal(h.page.querySelector('.vocab-counter').textContent,'Показано 12 из 12');
+});
+domTest('search has a small clear control and filter reset appears only in filtered empty state',async()=>{
+ const h=ui();h.mount();assert.ok(h.page.querySelector('.dict-search-clear').hasAttribute('hidden'));assert.equal(h.page.querySelector('[data-action="dict-reset"]'),null);
+ h.run("dictFilter.text='not-a-real-word'");h.mount();
+ assert.equal(h.page.querySelector('.dict-search-clear').hasAttribute('hidden'),false);assert.match(h.page.querySelector('.empty-state').textContent,/Очистить фильтры/);
+ h.run('render=()=>{document.querySelector("#page").innerHTML=renderDictionary();renderProgressUX()}');
+ await h.run("action({dataset:{action:'dict-clear-search'}})");
+ assert.equal(h.run('dictFilter.text'),'');assert.equal(h.page.querySelector('[data-action="dict-reset"]'),null);assert.equal(h.document.activeElement.id,'dict-search');
+ h.run("dictFilter.kind='noun';dictFilter.group='4';dictFilter.category='unknown'");h.mount();await h.run("action({dataset:{action:'dict-reset'}})");
+ assert.equal(h.run("dictFilter.kind+'|'+dictFilter.group+'|'+dictFilter.category"),'all|all|all');
 });

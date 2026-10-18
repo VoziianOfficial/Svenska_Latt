@@ -456,18 +456,18 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
 }
 
 /* Confirmed word progress and quiet saving feedback. */
-/* Keep word labels clear and all four actions together at every card width. */
-.words-grid { align-items:stretch!important; }
-.words-grid .word-row { grid-template-columns:46px minmax(0,1fr)!important; grid-template-rows:auto auto!important; gap:10px 12px!important; padding:14px!important; align-content:center; }
-.words-grid .word-visual { grid-row:1 / 3!important; }
-.words-grid .word-info { grid-column:2!important; grid-row:1!important; align-self:end!important; }
-.words-grid .word-actions { grid-column:2!important; grid-row:2!important; justify-content:flex-start!important; flex-wrap:wrap; gap:7px!important; }
-.words-grid .word-actions button { display:inline-flex; align-items:center; justify-content:center; flex:0 0 34px; margin:0!important; }
-.words-grid .word-known-toggle.is-learned { background:#eef1ff!important; border-color:#dfe5ff!important; color:#4258aa!important; }
-.words-grid .word-actions button:hover { filter:brightness(.97); }
-@media(max-width:600px) {
- .words-grid .word-row { padding:12px!important; gap:9px 11px!important; }
-}
+/* One layout for dictionary, learned words, favorites and topic cards. */
+.words-grid{align-items:stretch!important}
+.words-grid .word-row{grid-template-columns:46px minmax(0,1fr)!important;grid-template-rows:auto auto!important;gap:12px!important;padding:14px!important;align-content:start}
+.words-grid .word-visual{grid-column:1!important;grid-row:1!important}
+.words-grid .word-info{grid-column:2!important;grid-row:1!important;align-self:center!important}
+.words-grid .word-actions{grid-column:1 / -1!important;grid-row:2!important;display:flex!important;justify-content:flex-start!important;align-items:center!important;flex-wrap:wrap;gap:7px!important;min-width:0}
+.words-grid .word-actions button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px!important;min-width:34px!important;height:36px!important;margin:0!important;padding:0!important;white-space:nowrap!important;overflow-wrap:normal;word-break:normal;line-height:1.2!important}
+.words-grid .word-actions .manual-review-add,.words-grid .word-actions .word-known-toggle{flex:0 0 auto;width:auto!important;min-width:82px!important;gap:5px;padding:0 10px!important;font-size:12px!important}
+.words-grid .word-actions .manual-review-add{min-width:112px!important}
+.words-grid .word-known-toggle.is-learned{background:#eef1ff!important;border-color:#dfe5ff!important;color:#4258aa!important}
+.words-grid .word-actions button:hover{filter:brightness(.97)}
+@media(max-width:600px){.words-grid .word-row{padding:12px!important;gap:10px!important}}
 .btn.is-learned{background:#dbf1e5;color:#246650;opacity:1}
 .save-status{padding:12px 18px;margin-bottom:16px;background:#f1edf9;color:#574871;border-radius:16px;font-size:14px}
 .progress-filters,.profile-collections{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
@@ -484,7 +484,13 @@ button:disabled{cursor:default}
 .word-recall{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
 .word-recall h2{font-size:clamp(28px,5vw,42px);margin:0}
 .recall-translation{font-size:24px;margin:0;color:#386653}
-.dict-reset{margin:12px 0}
+.dict-search-field{position:relative;flex:1 1 240px;min-width:0;max-width:100%}
+.filters-bar .dict-search-field .search-input{width:100%;min-width:0;padding-right:44px!important}
+.dict-search-clear{position:absolute;right:7px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:30px;height:30px;padding:0;border-radius:9px;background:#edf1f9;color:#637392;font-size:23px;line-height:1}
+.dict-search-clear:hover{background:#e0e7f4}
+.dict-search-clear[hidden]{display:none}
+.dict-empty-reset{margin-top:8px;padding:5px 0;background:transparent;color:#4c74a3;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.vocab-counter{min-height:1.6em;font-variant-numeric:tabular-nums}
 
 /* Progress feedback must not move the vocabulary under the pointer. */
 .save-status{position:fixed;z-index:80;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 32px);margin:0;box-shadow:0 5px 22px #44365b22}
@@ -493,7 +499,7 @@ button:disabled{cursor:default}
 
 
 /* One compact learning toggle; selected state stays readable when it is read-only. */
-.words-grid .word-actions .word-known-toggle{flex:0 0 82px;width:82px!important;min-width:82px!important;font-size:12px!important;white-space:nowrap;gap:4px}
+
 .word-known-toggle:disabled,.btn.is-learned:disabled{opacity:1;cursor:default}
 .word-list-photo{display:block;width:46px;height:46px;object-fit:cover;border-radius:12px}
 .word-list-photo[hidden],[data-action="mark-review"][hidden],[data-action="start-review"][hidden],[data-action="flash-grade"][hidden]{display:none!important}
@@ -501,13 +507,13 @@ button.stat-card{text-align:left;font:inherit;color:inherit;cursor:pointer}
 button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 
 /* Study time shares the existing activity calendar and its activity colors. */
-.study-summary{margin-top:16px;border-top:1px solid var(--line,#e3e2eb);padding-top:14px}
+.study-summary{container-type:inline-size;margin-top:16px;border-top:1px solid var(--line,#e3e2eb);padding-top:14px}
 /* Study totals follow the account's current day, week and month. */
-.study-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
-.study-totals>.study-stat{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px;background:#fafbfe;border:1px solid #e4e8f1;border-radius:16px;min-width:0}
+.study-totals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.study-totals>.study-stat{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px;background:#fafbfe;border:1px solid #e4e8f1;border-radius:16px;min-width:0;min-height:116px}
 .study-totals>.study-stat--today{background:linear-gradient(135deg,#f0edff,#f8f6ff);border-color:#ded8fa}
 .study-totals small{display:block;color:#59677e;font-size:12px;font-weight:700;line-height:1.4}
-.study-totals strong{display:block;font-size:clamp(20px,2.2vw,28px);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.03em;color:#253954;line-height:1.2;overflow-wrap:anywhere}
+.study-totals strong{display:block;font-size:clamp(20px,2.2vw,28px);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.03em;color:#253954;line-height:1.2;white-space:nowrap;overflow-wrap:normal}
 .study-stat--today strong{color:#6255b5}
 .study-stat-period{display:block;margin-top:auto;color:#728097;font-size:10px;line-height:1.5}
 .study-toggle{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
@@ -521,7 +527,8 @@ button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 .study-tooltip[hidden]{display:none}
 [data-study-date]{cursor:pointer}
 [data-study-date]:focus-visible{outline:2px solid #6089b7;outline-offset:2px}
-@media(max-width:600px){.study-totals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@container(min-width:620px){.study-totals{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:375px){.study-totals>.study-stat{padding:12px;min-height:112px}.study-totals strong{font-size:20px}}
 
 /* Personal review queue: stable controls and compact mobile rows. */
 .manual-queue-status{min-height:2.2em;font-size:.88rem;color:var(--muted);padding:8px 0;overflow-wrap:anywhere}
@@ -532,7 +539,7 @@ button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 .manual-review-row .word-visual{flex-shrink:0;width:64px;height:64px}
 /* Keep the repeat symbol compact and aligned with the button label. */
 .btn .review-button-icon{width:16px;height:16px;flex:0 0 16px}
-.words-grid .word-actions .manual-review-add{flex:0 0 100px;width:100px!important;min-width:100px!important;white-space:nowrap;font-size:12px!important;padding:0 6px!important}
+
 [data-action="mark-review"].is-queued,[data-action="flash-grade"].is-queued{background:#e5f2ed!important;color:#397768!important;opacity:1;box-shadow:inset 0 0 0 1px #a7cdbf;cursor:default}
 @media(max-width:600px){.manual-review-row{flex-wrap:wrap;padding:14px;gap:12px}.manual-review-actions{width:100%;justify-content:space-between}}
 

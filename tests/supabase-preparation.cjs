@@ -457,6 +457,7 @@ function writerServer({wordState=false}={}){
     const previous=s.reviews[w]||{rep:0,interval:0,ease:2.5},ok=event.type==='review_grade'&&event.data.correct;
     s.reviews[w]={rep:ok?previous.rep+1:0,interval:ok?(previous.rep===0?1:3):0,ease:previous.ease,due:Date.parse(event.occurred_at)+(ok?86400000:600000)};
    }
+   else if(event.type==='settings_update')s.settings.level=event.data.level;
    else if(event.type==='favorite_set')s.favorites=event.data.value?[...new Set([...s.favorites,w])]:s.favorites.filter(x=>x!==w);
    a.snapshot.revision++;a.receipts.set(args.p_event_id,JSON.stringify(event));
    if(loseAck){loseAck=false;throw Error('lost acknowledgement')}
@@ -825,7 +826,7 @@ test('learned, favorites, search, group and category filters have explicit scope
  vm.runInContext("dictFilter.text='hör';dictFilter.category='Техника'",w.h.ctx);
  assert.equal(vm.runInContext('filteredWords()[0].id',w.h.ctx),'lex-0357');
  vm.runInContext("dictFilter.group='1'",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),0);
- assert.match(vm.runInContext('renderDictionary()',w.h.ctx),/Сбрось поиск и фильтры/);
+ assert.match(vm.runInContext('renderDictionary()',w.h.ctx),/Очистить фильтры/);
  await vm.runInContext("action({dataset:{action:'dict-reset'}})",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),2);
  vm.runInContext("navigate('dictionary','favorites')",w.h.ctx);assert.equal(vm.runInContext('filteredWords()[0].id',w.h.ctx),'lex-0357');
  vm.runInContext("dictFilter.text='does-not-exist';navigate('home');navigate('dictionary')",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),3);
@@ -921,4 +922,73 @@ test('HTTPS profile restores Supabase XP after reload and relogin, without impor
   assert.deepEqual(h.records.storageWrites,[]);
   assert.ok(h.records.rpc.every(r=>r.name==='sl_get_progress'));
  }
+});
+
+
+test('profile SFI A → B → C → D uses settings patches, survives reload/relogin and preserves all learning fields',async()=>{
+ const shared=writerEnvironment();shared.data.delete('sv-cloud-write-dev-v1');
+ const server=writerServer(),w=await startWriter(shared,server);
+ const s=server.account(A).snapshot.state;
+ Object.assign(s,{xp:123,known:['v-arbeta'],favorites:['v-prata'],reviews:{'v-arbeta':{due:1000,interval:3,rep:1,ease:2.5}},completed:['lesson-1'],videos:['v1'],booksRead:['book-1'],activity:{'2026-10-18':3},answered:10,correct:7});
+ const before=JSON.stringify({...s,settings:undefined}),storageBefore=[...shared.data];
+ assert.equal(w.h.ctx.SVProgress.writeEnabled,false);
+ for(const level of ['B','C','D']){
+  assert.equal(await w.h.ctx.SVProgress.updateLevel(level),level);
+  assert.equal(w.snapshots.at(-1).s.settings.level,level);
+  assert.equal(JSON.stringify({...server.account(A).snapshot.state,settings:undefined}),before);
+ }
+ const reloaded=await startWriter(shared,server);assert.equal(reloaded.snapshots.at(-1).s.settings.level,'D');
+ await reloaded.h.ctx.SVAuth.signOut();await reloaded.h.ctx.SVAuth.signIn({email:'a@example.test',password:'test-only'});
+ await new Promise(r=>setTimeout(r,10));await reloaded.h.ctx.SVProgress.initialize();
+ assert.equal(reloaded.snapshots.at(-1).s.settings.level,'D');
+ assert.equal(JSON.stringify({...server.account(A).snapshot.state,settings:undefined}),before);
+ assert.deepEqual([...shared.data],storageBefore);
+ assert.deepEqual(JSON.parse(JSON.stringify(w.h.records.rpc.filter(r=>r.name==='sl_apply_event').map(r=>r.args.p_event.data))),[{level:'B'},{level:'C'},{level:'D'}]);
+});
+test('settings failure publishes no success; lost ACK retry retains UUID and avoids a second mutation',async()=>{
+ const w=await startWriter();const count=w.snapshots.length;
+ w.server.offline=true;await assert.rejects(w.h.ctx.SVProgress.updateLevel('B'));
+ assert.equal(w.snapshots.length,count);assert.equal(w.server.account(A).snapshot.state.settings.level,'A');
+ w.server.offline=false;w.server.loseAck=true;await assert.rejects(w.h.ctx.SVProgress.updateLevel('B'));
+ assert.equal(w.snapshots.length,count);
+ await w.h.ctx.SVProgress.updateLevel('B');
+ const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');
+ assert.equal(calls[0].args.p_event_id,calls[1].args.p_event_id);assert.deepEqual(calls[0].args.p_event,calls[1].args.p_event);
+ assert.equal(w.server.account(A).snapshot.revision,1);assert.equal(w.snapshots.at(-1).s.settings.level,'B');
+ await assert.rejects(w.h.ctx.SVProgress.updateLevel('SFI A'),rejectCode('INVALID_LEVEL'));
+});
+test('email change uses official Auth API, keeps pending email separate and refreshes confirmation without resetting identity',async()=>{
+ const h=harness({initial:{...token(A),user:{id:A,email:'old@example.test'}}});
+ let remote={id:A,email:'old@example.test'},request;
+ h.client.auth.getUser=async()=>({data:{user:remote},error:null});
+ h.client.auth.updateUser=async(input,options)=>{request={input,options};remote={...remote,new_email:input.email};return {data:{user:remote},error:null}};
+ await h.ctx.SVAuth.initialize();const revision=h.ctx.SVAuth.getState().identityRevision;
+ await h.ctx.SVAuth.changeEmail(' new@example.test ');
+ assert.deepEqual(JSON.parse(JSON.stringify(request)),{input:{email:'new@example.test'},options:{emailRedirectTo:'https://example.test/svenska/'}});
+ assert.equal(h.ctx.SVAuth.getState().user.email,'old@example.test');assert.equal(h.ctx.SVAuth.getState().user.new_email,'new@example.test');
+ remote={id:A,email:'new@example.test'};await h.ctx.SVAuth.refreshUser();
+ assert.equal(h.ctx.SVAuth.getState().user.email,'new@example.test');assert.equal(h.ctx.SVAuth.getState().identityRevision,revision);
+ assert.equal(h.ctx.SVAuth.getState().status,'signed_in');assert.deepEqual(h.records.storageWrites,[]);assert.equal(h.records.rpc.length,0);
+});
+test('email validation, duplicate, rate limit, offline and expired session do not replace confirmed email',async()=>{
+ const h=harness({initial:{...token(A),user:{id:A,email:'old@example.test'}}});
+ h.client.auth.getUser=async()=>({data:{user:{id:A,email:'old@example.test'}},error:null});
+ await h.ctx.SVAuth.initialize();let calls=0;
+ h.client.auth.updateUser=async()=>{calls++;throw Error('unexpected')};
+ for(const value of ['broken','x@@example.test',''])await assert.rejects(h.ctx.SVAuth.changeEmail(value),rejectCode('EMAIL_INVALID'));
+ await assert.rejects(h.ctx.SVAuth.changeEmail('old@example.test'),rejectCode('EMAIL_UNCHANGED'));assert.equal(calls,0);
+ for(const code of ['email_exists','over_email_send_rate_limit','NETWORK_ERROR','session_not_found']){
+  h.client.auth.updateUser=async()=>({error:{code}});
+  await assert.rejects(h.ctx.SVAuth.changeEmail('new@example.test'),rejectCode(code));
+  assert.equal(h.ctx.SVAuth.getState().user.email,'old@example.test');
+ }
+ await h.ctx.SVAuth.signOut();await assert.rejects(h.ctx.SVAuth.changeEmail('new@example.test'),rejectCode('AUTH_SESSION_MISSING'));
+});
+test('settings revision conflict retries the same intent; refresh receives another device level',async()=>{
+ const w=await startWriter();let conflict=true;
+ w.h.rpcResult(()=>{const call=w.h.records.rpc.at(-1);if(call.name==='sl_apply_event'&&conflict){conflict=false;w.server.account(A).snapshot.revision++;return {error:{code:'40001'}}}return w.server.request(w.h)});
+ await w.h.ctx.SVProgress.updateLevel('C');
+ const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');assert.equal(calls.length,2);
+ assert.equal(calls[0].args.p_event_id,calls[1].args.p_event_id);assert.deepEqual(calls[0].args.p_event,calls[1].args.p_event);
+ w.server.account(A).snapshot.state.settings.level='D';await w.h.ctx.SVProgress.refresh();assert.equal(w.snapshots.at(-1).s.settings.level,'D');
 });

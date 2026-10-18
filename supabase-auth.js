@@ -94,6 +94,28 @@
   if(result.error)throw result.error;
   update(result.data.session,'SIGNED_IN');return result.data;
  }
+ // Re-read Auth on return from a confirmation tab; never copy new_email to email.
+ async function refreshUser(){
+  const active=await ready(),revision=identityRevision,id=session?.user?.id;
+  if(!id)throw error('AUTH_SESSION_MISSING');
+  const result=await active.auth.getUser();
+  if(result.error)throw result.error;
+  if(revision!==identityRevision||result.data.user?.id!==id)throw error('AUTH_CONTEXT_CHANGED');
+  update({...session,user:result.data.user},'USER_REFRESHED');return result.data.user;
+ }
+ async function changeEmail(email){
+  if(typeof email!=='string'||email.trim().length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))throw error('EMAIL_INVALID');
+  const active=await ready();await refreshUser();
+  const revision=identityRevision,id=session.user.id;
+  if(email.trim().toLowerCase()===session.user.email?.toLowerCase())throw error('EMAIL_UNCHANGED');
+  const result=await active.auth.updateUser({email:email.trim()},{emailRedirectTo:location.origin+location.pathname});
+  if(result.error)throw result.error;
+  if(revision!==identityRevision||session?.user?.id!==id)throw error('AUTH_CONTEXT_CHANGED');
+  // SDK USER_UPDATED supplies the actual Auth user, including pending new_email.
+  if(result.data.user?.id===id)update({...session,user:result.data.user},'USER_UPDATED');
+  return result.data;
+ }
+ window.addEventListener('focus',()=>{if(session)void refreshUser().catch(()=>{})});
  async function signOut(){
   const active=await ready();
   const result=await active.auth.signOut({scope:'local'});
@@ -104,5 +126,5 @@
   if(typeof listener!=='function')throw error('LISTENER_REQUIRED');
   listeners.add(listener);return ()=>listeners.delete(listener);
  }
- window.SVAuth=Object.freeze({initialize,getSession,signUp,signIn,signOut,subscribe,getState:snapshot});
+ window.SVAuth=Object.freeze({initialize,getSession,signUp,signIn,signOut,refreshUser,changeEmail,subscribe,getState:snapshot});
 })();

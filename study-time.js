@@ -205,7 +205,7 @@
   if(!exact){
    if(h)return `${h} ${d.hour}`+(m?` ${m} ${d.minute}`:'');
    if(m)return `${m} ${d.minute}`;
-   return ms>0?`< 1 ${d.minute}`:`0 ${d.minute}`;
+   return `0 ${d.minute}`;
   }
   return [h?`${h} ${d.hour}`:'',m?`${m} ${d.minute}`:'',`${s} ${secondsLabel(s)}`].filter(Boolean).join(' ');
  }
@@ -228,7 +228,7 @@
   return `<div id="study-time-panel" class="study-summary">
    <div class="study-totals" role="group" aria-label="${d.title}">${['today','week','month','all'].map(key=>`<div class="study-stat study-stat--${key}"><small>${d[key]}</small><strong title="${s?escape(duration(s.totals[key],true)):''}">${s?escape(duration(s.totals[key])):'—'}</strong><span class="study-stat-period">${escape(periodText(key,s))}</span></div>`).join('')}</div>
    <label class="study-toggle"><input type="checkbox" data-study-enabled ${s?.enabled&&!paused(c)?'checked':''} ${s&&!c?.saving?'':'disabled'}><span>${d.track}</span></label>
-   <p class="study-message" role="status">${c?.saveError||c?.writeError?d.error:c?.readError?d.unavailable:!s?d.loading:d.hint}${c?.readError||c?.saveError||c?.writeError?' <button type="button" class="link-btn" data-study-retry aria-label="${d.retry}">↻</button>':''}</p></div>`;
+   <p class="study-message" role="status">${c?.saveError||c?.writeError?d.error:c?.readError?d.unavailable:!s?d.loading:!s.enabled||paused(c)?({ru:'Учёт выключен. Включите его перед занятиями.',en:'Tracking is off. Turn it on before studying.',sv:'Tidsregistrering är avstängd. Slå på den innan du studerar.',uk:'Облік вимкнено. Увімкніть його перед заняттями.'})[lang()]:d.hint}${c?.readError||c?.saveError||c?.writeError?' <button type="button" class="link-btn" data-study-retry aria-label="${d.retry}">↻</button>':''}</p></div>`;
  }
  let paintKey='';
  function paint(){
