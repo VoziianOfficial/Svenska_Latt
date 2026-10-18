@@ -14,7 +14,7 @@ function page(){
  const events={},nodes={};
  const document={addEventListener(type,fn){(events[type]??=[]).push(fn)},querySelector:selector=>nodes[selector]||null};
  const window={addEventListener(type,fn){(events[type]??=[]).push(fn)}};
- const context={window,document,localStorage,sessionStorage,location:{hash:'#practice',hostname:'github.io',pathname:'/'},navigator:{},Image:function(){},Date,Math,console,setTimeout,clearTimeout,URL,Response};
+ const context={window,document,localStorage,sessionStorage,location:{hash:'#practice',hostname:'github.io',pathname:'/'},navigator:{},Image:function(){},Date,Math,console,AbortController,setTimeout,clearTimeout,URL,Response};
  vm.createContext(context);
  vm.runInContext(read('locale-content.js'),context);vm.runInContext(app,context);
  const run=source=>vm.runInContext(source,context);

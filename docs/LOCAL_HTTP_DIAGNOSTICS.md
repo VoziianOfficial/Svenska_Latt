@@ -11,7 +11,7 @@ Supabase SQL, ключи, учебные материалы и фотограф�
 
 Порт 8765 занимал Python PID **60454**, запущенный в **21:11:04** по Стокгольму.
 `lsof -a -p 60454 -d cwd` подтвердил рабочую папку
-`/Users/yuliia/Desktop/Projects/Svenska_Latt`; аргументы процесса — `python3 server.py`.
+`<project-root>`; аргументы процесса — `python3 server.py`.
 Это нужный проект, но загруженная в память версия серверного кода была старой.
 Файл server.py на диске обновлён позже, в 21:32:28.
 
@@ -88,7 +88,7 @@ UTF-8/NFD-пути, CSP worker, занятый порт и защиту прив
 `lsof -nP -iTCP:8765 -sTCP:LISTEN` и завершить только этот PID), затем:
 
 ```sh
-cd /Users/yuliia/Desktop/Projects/Svenska_Latt
+cd /path/to/Svenska_Latt
 python3 server.py
 ```
 

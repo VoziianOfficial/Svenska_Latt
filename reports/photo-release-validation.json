@@ -1,39 +1,9 @@
 {
   "status": "PASS",
   "cards_with_http_200_image_webp": 1006,
-  "release_files_hash_verified": 1418,
+  "release_files_hash_verified": 1425,
   "existing_asset_hashes_preserved": 1371,
   "attribution_entries": 1006,
-  "browser_visual_check": "unavailable: browser runtime returned no connected browsers",
-  "release": "f4199a8d182bcd2a",
-  "deploy_directory": "/Users/yuliia/Desktop/Projects/Svenska_Latt_Atelier_v12-main/deploy",
-  "previous_deploy_backup": "/tmp/svenska-latt-deploy-before-photo-stage-b227540d86",
-  "existing_runtime_files_unchanged_from_HEAD": [
-    "assets/flashcards/photo-credits-imported.json",
-    "app.js",
-    "style.css",
-    "studio.css",
-    "atelier.css",
-    "learning-polish.css",
-    "atelier.js",
-    "learning-polish.js",
-    "supabase-config.js",
-    "words.json",
-    "lessons.json",
-    "books.json"
-  ],
-  "js_suites_passed": [
-    "photo-links",
-    "flashcard-media",
-    "quality",
-    "service-worker",
-    "word-icons",
-    "ui_smoke"
-  ],
-  "python_server_tests_passed": 5,
-  "html_local_links_verified": {
-    "photo-credits.html": 3538,
-    "reports/photo-review.html": 2099
-  },
-  "syntax_checks": "PASS"
+  "browser_visual_check": "not performed by this HTTP verifier",
+  "release": "aabe676b23a5ec1a"
 }

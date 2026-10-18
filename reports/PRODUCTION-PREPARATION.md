@@ -1,8 +1,10 @@
+> Исторический отчёт. Актуальное решение о публикации: [FINAL_RELEASE_AUDIT](../docs/FINAL_RELEASE_AUDIT.md).
+
 # Безопасная подготовка Svenska Lätt — 16 октября 2026
 
 Изменения выполнены в `production/safe-preparation-2026-10-16`.
 Резервная копия всего проекта, включая `.git`, создана до правок:
-`/Users/yuliia/Desktop/Projects/Svenska_Latt_Atelier_v12-main-backup-20261016.tar.gz`.
+`Svenska_Latt_Atelier_v12-main-backup-20261016.tar.gz`.
 Временный оригинал архива: `/private/tmp/svenska-latt-backup-20261016.tar.gz`.
 Коммиты, push, публикация и подключение Supabase не выполнялись.
 

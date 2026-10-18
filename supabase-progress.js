@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-quiz-rewards-1';
+ const moduleVersion='2026-10-18-local-save-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -102,11 +102,10 @@
   }
   return initializing;
  }
- // HTTPS releases save supported account events. Loopback keeps its explicit
- // development opt-in; neither switch controls reading/rendering account data.
+ // Normal local use must save just like hosted HTTPS. Auth, owner checks and
+ // the durable queue remain mandatory; no hidden development flag is needed.
  const loopback=['127.0.0.1','localhost','[::1]'].includes(location.hostname);
- const writeEnabled=(!loopback&&location.protocol==='https:')||(loopback&&
-  ['http:','https:'].includes(location.protocol)&&(()=>{try{return localStorage.getItem('sv-cloud-write-dev-v1')==='enabled'}catch(_){return false}})());
+ const writeEnabled=location.protocol==='https:'||(loopback&&location.protocol==='http:');
  let writerReady=null,writeError=null,dbPromise=null,draining=null,onSnapshot=null,retryTimer=null,onActivity=null;
  let activity={pending:[],error:null};
  async function reportActivity(c,completed=null){
@@ -380,7 +379,7 @@
  async function diagnostics(){
   let flag;try{flag=localStorage.getItem('sv-cloud-write-dev-v1')}catch(_){flag='unavailable'}
   const loopback=['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol);
-  return {moduleVersion,scriptUrl,loopback,flag,writeEnabled,reloadRequired:(loopback&&flag==='enabled')!==writeEnabled,
+  return {moduleVersion,scriptUrl,loopback,flag,writeEnabled,reloadRequired:false,
    webLocks:typeof navigator.locks?.request==='function',
    serviceWorker:navigator.serviceWorker?.controller?.scriptURL??null,queue:await queueStatus()};
  }

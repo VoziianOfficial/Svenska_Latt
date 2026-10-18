@@ -69,14 +69,16 @@ The **1,006 vocabulary entries** form a shared dictionary; individual words are 
 
 ## Project status
 
+**Release audit: publication is blocked.** See [FINAL_RELEASE_AUDIT.md](docs/FINAL_RELEASE_AUDIT.md) for the confirmed legacy RPC XP bypass, cloud profile limitations, privacy blockers and required manual checks.
+
 **Active development.** Guests learn with progress stored in this browser. Signed-in accounts display validated Supabase progress; guest and legacy account storage are never imported automatically.
 
 | Area | Current behavior in this checkout |
 | --- | --- |
 | **Guest learning** | Available without a Supabase account; progress is stored in this browser. |
 | **Supabase authentication** | Sign-up, email confirmation, sign-in, session restoration, and sign-out are integrated; they require a configured Supabase project. |
-| **Cloud progress reads** | After sign-in, validated `sl_get_progress()` data is the account’s source of progress, regardless of the development write flag. Unavailable data shows a placeholder and a retry notice. |
-| **Cloud event writes** | Enabled on hosted HTTPS. Loopback retains explicit development opt-in. Known-word toggles, favorites and supported review events use the durable account queue; unsupported quiz/profile mutations remain blocked. Local conflict and content-version checks remain enforced. |
+| **Cloud progress reads** | After sign-in, validated `sl_get_progress()` data is the account’s source of progress, independently of local legacy progress. Unavailable data shows a placeholder and a retry notice. |
+| **Cloud event writes** | Enabled on hosted HTTPS and ordinary loopback HTTP; no development flag is required. Known-word toggles, favorites and supported review events use the durable account queue; quiz sessions use the migration 010 reward contract; profile name/photo editing and book/video completion marks remain blocked. Local conflict and content-version checks remain enforced. |
 | **Account reload & import** | Reload and sign-in fetch account progress again. No automatic import, reset or deletion of guest/legacy progress. A live account acceptance check remains required before release. |
 
 See the [account release repair and manual checks](docs/ACCOUNT_CLOUD_RELEASE_FIX.md) for the cause of the previous zero-XP display and current verification limits. The event queue has mock-based checks; live Supabase HTTP and multi-device behavior still require validation. See the [cloud progress notes](docs/SUPABASE_PROGRESS_READ.md), [import preview notes](docs/SUPABASE_IMPORT_PREVIEW.md), and [experimental event queue](docs/SUPABASE_EVENT_QUEUE.md).
@@ -171,9 +173,9 @@ Configure Supabase Auth’s site URL and allowed redirect URLs for the exact loc
 
 The public demo is available at **[voziianofficial.github.io/Svenska_Latt](https://voziianofficial.github.io/Svenska_Latt/)**.
 
-GitHub Pages serves the static frontend and learning assets. It does not execute `server.py` or provide its SQLite API. Supabase authentication connects to an independently configured backend; the experimental progress writer cannot be enabled on GitHub Pages.
+GitHub Pages serves the static frontend and learning assets. It does not execute `server.py` or provide its SQLite API. Supabase authentication connects to an independently configured backend. Hosted HTTPS enables the supported progress writer after account, content-version and local-conflict checks.
 
-The repository includes `.nojekyll` and [scripts/build_deploy.py](scripts/build_deploy.py), which prepares a runtime copy in a new output directory. It does not publish the site. Local changes may differ from the public demo until a separate deployment occurs.
+The repository includes `.nojekyll` and [scripts/build_deploy.py](scripts/build_deploy.py), which prepares a runtime copy in a new output directory. It writes a `release-manifest.json` with the exact runtime file hashes and does not publish the site. Verify that directory with `python3 scripts/verify_photo_release.py /path/to/output`. Local changes may differ from the public demo until a separate deployment occurs.
 
 ## Author & usage terms
 

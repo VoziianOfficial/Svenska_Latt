@@ -1,6 +1,6 @@
 # Миграция 006: подготовлена, в реальном Supabase не применена
 
-Источник контента: `/Users/yuliia/Desktop/Projects/Svenska_Latt`.
+Источник контента: `<project-root>`.
 Полный SQL: `supabase/migrations/202610170006_manifest_version.sql`.
 
 ## Состав изменения

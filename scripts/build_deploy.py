@@ -44,10 +44,13 @@ def build(destination):
     sw = destination / 'sw.js'
     sw.write_text(re.sub(r"const RELEASE='[^']+';", f"const RELEASE='{release}';", sw.read_text(), count=1))
     inventory['sw.js'] = hashlib.sha256(sw.read_bytes()).hexdigest()
-    print(json.dumps({'directory': str(destination), 'release': release,
+    manifest = {'directory': str(destination), 'release': release,
                       'files': len(inventory),
                       'bytes': sum(p.stat().st_size for p in destination.rglob('*') if p.is_file()),
-                      'sha256': inventory}, ensure_ascii=False, indent=2))
+                      'sha256': inventory}
+    # The published inventory must not disclose the builder's local username/path.
+    (destination / 'release-manifest.json').write_text(json.dumps({**manifest, 'directory': '.'}, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps(manifest, ensure_ascii=False, indent=2))
 
 if __name__ == '__main__':
     build(Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'deploy')

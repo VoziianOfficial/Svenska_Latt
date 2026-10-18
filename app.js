@@ -369,9 +369,7 @@ function bindEvents(){document.addEventListener('click',e=>{const b=e.target.clo
 
 async function boot(){
  try{
-  const [wr,lr,br]=await Promise.all([fetch('./words.json'),fetch('./lessons.json'),fetch('./books.json')]);
-  if(!wr.ok||!lr.ok||!br.ok)throw Error('Не удалось загрузить учебные файлы');
-  WORDS=await wr.json();LESSONS=await lr.json();BOOKS=await br.json();
+  [WORDS,LESSONS,BOOKS]=await loadLearningData();
   state=readLocalState();
   restoreQuizSession();
   hydrateLocation();bindEvents();render();
@@ -396,8 +394,26 @@ async function boot(){
   if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1'))
    navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'}).then(registration=>registration.update()).catch(()=>{});
  }catch(e){
-  console.error(e);$('#page').innerHTML=`<div class="empty-state"><div class="big">🛠️</div><h2>Не удалось запустить приложение</h2><p>Проверь файлы сайта и подключение Supabase.</p><pre>${esc(String(e.message))}</pre></div>`;
+  console.error(e);
+  const message={ru:['Не удалось загрузить занятия','Проверь подключение к интернету и обнови страницу.','Попробовать снова'],en:['Could not load the lessons','Check your internet connection and reload the page.','Try again'],sv:['Kunde inte ladda lektionerna','Kontrollera internetanslutningen och ladda om sidan.','Försök igen'],uk:['Не вдалося завантажити заняття','Перевір інтернет-з’єднання та онови сторінку.','Спробувати знову']}[locale4()]||['Could not load the lessons','Check your internet connection and reload the page.','Try again'];
+  $('#page').innerHTML=`<div class="empty-state"><div class="big">🛠️</div><h2>${esc(message[0])}</h2><p>${esc(message[1])}</p><button type="button" class="btn" id="boot-retry">${esc(message[2])}</button></div>`;
+  $('#boot-retry').addEventListener('click',()=>location.reload());
  }
+}
+async function loadLearningData(){
+ const controller=new AbortController();let timer;
+ try{
+  return await Promise.race([
+   Promise.all(['words','lessons','books'].map(async name=>{
+    const response=await fetch(`./${name}.json`,{signal:controller.signal});
+    if(!response.ok)throw Error('LEARNING_DATA_UNAVAILABLE');
+    const data=await response.json();
+    if(!Array.isArray(data)||!data.length)throw Error('INVALID_LEARNING_DATA');
+    return data;
+   })),
+   new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('LEARNING_DATA_TIMEOUT')),12000)})
+  ]);
+ }finally{clearTimeout(timer);controller.abort()}
 }
 /* Svenska Lätt 3 — expanded curriculum, word modules, alphabet, readers & quizzes. */
 const UI3={

@@ -62,6 +62,16 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
  };
 }
 const domTest=(name,fn)=>test(name,{skip:!domModule&&'Set SL_UX_DOM_MODULE for DOM integration'},fn);
+domTest('server default-on tracks without a browser opt-in, while explicit opt-out survives reload',async()=>{
+ const resources=shared(),h=ui({resources,enabled:true});await h.ready();await h.tick();
+ assert.equal(h.calls.filter(c=>c[0]==='open').length,1);
+ for(let i=0;i<6;i++)await h.tick();await h.ctx.__study.drain(h.ctx.__study.get());assert.ok(h.total>0);
+ await h.ctx.__study.settings(false,'Europe/Stockholm');
+ const reloaded=ui({resources,enabled:true});await reloaded.ready();await reloaded.input();
+ for(let i=0;i<20;i++)await reloaded.tick();
+ assert.equal(reloaded.calls.filter(c=>c[0]==='open').length,0);
+ assert.equal(resources.data.get('sv-study-paused:account-a'),'yes');
+});
 domTest('guest makes no study RPC or queue writes',async()=>{
  for(const args of [{user:null}]){const h=ui(args);await h.ready();await h.tick();assert.equal(h.calls.length,0);assert.equal(h.resources.rows.size,0)}
 });

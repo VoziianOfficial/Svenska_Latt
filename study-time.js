@@ -32,6 +32,7 @@
   let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('STUDY_RPC_TIMEOUT')),8000)})])}finally{clearTimeout(timer)}
  }
  function current(x){const a=window.SVAuth?.getState();return c===x&&a?.user?.id===x.userId&&a.identityRevision===x.revision}
+ // Follow the server's default-on preference; retain explicit local opt-outs.
  const paused=x=>{try{return localStorage.getItem('sv-study-paused:'+x.userId)==='yes'}catch(_){return true}};
  const routeNow=()=>{
   if(typeof route!=='string')return '';
@@ -274,7 +275,13 @@
    if(x.lease)await stop(x);
    await drain(x,true);
    const s=validate(await request(window.SVRpc.studySettings({expectedUserId:x.userId,enabled,timezone,generation:x.snapshot.generation})));
-   if(current(x)){x.snapshot=s;if(!automatic)x.lastInput=-Infinity;if(enabled&&!automatic)try{localStorage.removeItem('sv-study-paused:'+x.userId)}catch(_){}}
+   if(current(x)){
+    x.snapshot=s;
+    if(!automatic)x.lastInput=-Infinity;
+    if(enabled&&!automatic){
+     localStorage.removeItem('sv-study-paused:'+x.userId);
+    }
+   }
   }catch(_){if(current(x)){x.saveError=true;await refresh(x)}}
   finally{if(current(x)){x.saving=false;paint();if(month&&x.snapshot?.month!==month)void refresh(x)}}
  }

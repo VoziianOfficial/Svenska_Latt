@@ -31,7 +31,7 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false,hash=
    return builder;
   }
  };
- const ctx={console,URL,URLSearchParams,Response,Math,Date,setTimeout,clearTimeout,queueMicrotask,
+ const ctx={console,URL,URLSearchParams,Response,Math,Date,AbortController,setTimeout,clearTimeout,queueMicrotask,
   location:{origin:'https://example.test',pathname:'/svenska/',hostname,protocol:'https:',hash,search},
   history:{state:null,replaceState(state,title,path){records.cleanedUrl=path;const url=new URL(path,ctx.location.origin);ctx.location.hash=url.hash;ctx.location.search=url.search}},navigator:{},Image:function(){},SV_SUPABASE:conf,
   localStorage:{getItem:key=>data.get(key)||null,setItem(key,value){records.storageWrites.push(key);data.set(key,value)},removeItem(){throw Error('storage removal forbidden')},clear(){throw Error('storage clear forbidden')}},
@@ -359,13 +359,13 @@ test('application boot automatically reads cloud once and profile renders never 
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
 });
 
-test('successful automatic read renders cloud account data with local dev writes disabled',async()=>{
+test('automatic cloud reads preserve legacy data when local writer prechecks fail',async()=>{
  const {h,saved}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['local-only']},cloudSnapshot:cloudSnapshot()});
  await h.ctx.SVProgress.initialize();
  assert.equal(h.ctx.SVProgressDebug.status().status,'ready');assert.equal(h.ctx.SVProgressDebug.status().xp,42);
  assert.equal(vm.runInContext('state.xp',h.ctx),42);assert.equal(vm.runInContext('state.known[0]',h.ctx),'v-arbeta');
  assert.equal(JSON.parse(h.data.get('sv-account-local-v1-'+A)).xp,23);
- assert.equal(h.ctx.SVProgress.writeEnabled,false);
+ assert.equal(h.ctx.SVProgress.writeEnabled,true);
  for(let i=0;i<5;i++)vm.runInContext("route='profile';renderProfile()",h.ctx);
  await new Promise(r=>setTimeout(r,5));assert.equal(h.records.rpc.length,1);
  assert.equal(h.data.get('sv-guest-v2'),JSON.stringify(saved));assert.deepEqual(h.records.storageWrites,[]);
@@ -503,7 +503,7 @@ async function startWriter(shared=writerEnvironment(),server=writerServer(),id=A
 async function send(w,type,id='v-arbeta',value){
  assert.equal(await w.h.ctx.SVProgress.enqueue(type,id,value),true);await w.h.ctx.SVProgressDebug.flush();
 }
-test('HTTPS releases save account events without a dev flag; loopback remains opt-in',async()=>{
+test('HTTPS and loopback save account events without a hidden dev flag',async()=>{
  const shared=writerEnvironment();shared.data.delete('sv-cloud-write-dev-v1');
  const w=await startWriter(shared,writerServer(),A,{hostname:'example.github.io'});
  assert.equal(w.h.ctx.SVProgress.writeEnabled,true);assert.equal(w.h.ctx.SVProgressDebug,undefined);
@@ -513,7 +513,22 @@ test('HTTPS releases save account events without a dev flag; loopback remains op
  const reloaded=await startWriter(shared,w.server,A,{hostname:'example.github.io'});
  assert.equal(reloaded.snapshots.at(-1).s.xp,8);
  const local=harness({initial:token(A),progress:true,hostname:'localhost',environment:shared.environment});
- assert.equal(local.ctx.SVProgress.writeEnabled,false);
+ assert.equal(local.ctx.SVProgress.writeEnabled,true);
+});
+test('ordinary loopback HTTP saves known and favorites without touching legacy flags or guest data',async()=>{
+ for(const hostname of ['127.0.0.1','localhost','[::1]']){
+  const shared=writerEnvironment();shared.data.delete('sv-cloud-write-dev-v1');
+  const before=JSON.stringify([...shared.data]);
+  const environment={...shared.environment,location:{origin:'http://'+hostname+':8765',hostname,protocol:'http:',pathname:'/',hash:'#dictionary',search:'?utm_source=chatgpt.com'}};
+  const w=await startWriter(shared,writerServer(),A,{environment});
+  assert.equal(w.h.ctx.SVProgress.writeStatus().ready,true);
+  await send(w,'mark_known');await send(w,'favorite_set','v-arbeta',true);
+  const reloaded=await startWriter(shared,w.server,A,{environment});
+  assert.deepEqual(Array.from(reloaded.snapshots.at(-1).s.known),['v-arbeta']);
+  assert.deepEqual(Array.from(reloaded.snapshots.at(-1).s.favorites),['v-arbeta']);
+  assert.equal(reloaded.snapshots.at(-1).s.xp,8);
+  assert.equal(JSON.stringify([...shared.data]),before);
+ }
 });
 test('mark known and favorite add/remove publish server results; client sends no XP',async()=>{
  const w=await startWriter();await send(w,'mark_known');await send(w,'favorite_set','v-arbeta',true);await send(w,'favorite_set','v-arbeta',false);
@@ -625,32 +640,28 @@ test('reload while offline resumes existing queue on the online event after the 
 });
 
 
-test('current debug export has queue and version even with writes disabled and no session',async()=>{
+test('debug export has queue and version without a session or dev flag',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-quiz-rewards-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-local-save-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
- assert.equal(d.writeEnabled,false);assert.equal(d.queue.ready,false);
+ assert.equal(d.writeEnabled,true);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
  assert.equal(h.records.rpc.length,0);assert.deepEqual(h.records.storageWrites,[]);
 });
-test('flag requires reload and exact enabled value; diagnostic reads preserve disabled queue',async()=>{
+test('legacy development flags cannot disable local saving; diagnostics preserve pending data',async()=>{
  const shared=writerEnvironment(),w=await startWriter(shared);w.server.offline=true;await send(w,'mark_known');
- const before=JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]])),bytes=JSON.stringify([...shared.data]);
- shared.data.set('sv-cloud-write-dev-v1','disabled');
- assert.equal((await w.h.ctx.SVProgressDebug.diagnostics()).reloadRequired,true);
- const h=harness({progress:true,initial:token(A),hostname:'localhost',environment:shared.environment});
- h.rpcResult(()=>({data:cloudSnapshot()}));await h.ctx.SVProgress.initialize();
- const calls=h.records.rpc.length;
- const q=await h.ctx.SVProgressDebug.queue();assert.equal(q.enabled,false);assert.equal(q.events[0].status,'pending');
- assert.equal(q.storage.status,'ready');assert.equal(q.storage.version,1);
- assert.equal(h.records.rpc.length,calls);assert.equal(JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]])),before);
- shared.data.set('sv-cloud-write-dev-v1','enabled');
- const d=await h.ctx.SVProgressDebug.diagnostics();assert.equal(d.reloadRequired,true);assert.equal(d.writeEnabled,false);
- assert.equal(JSON.stringify([...shared.data]),bytes);
- for(const value of ['true','1','Enabled']){
-  shared.data.set('sv-cloud-write-dev-v1',value);
-  assert.equal(harness({progress:true,hostname:'localhost',environment:shared.environment}).ctx.SVProgress.writeEnabled,false);
+ const before=JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]]));
+ for(const value of [null,'disabled','enabled','true','1','Enabled']){
+  if(value===null)shared.data.delete('sv-cloud-write-dev-v1');else shared.data.set('sv-cloud-write-dev-v1',value);
+  const h=harness({progress:true,hostname:'localhost',environment:shared.environment});
+  assert.equal(h.ctx.SVProgress.writeEnabled,true);
+  const bytes=JSON.stringify([...shared.data]);
+  const d=await w.h.ctx.SVProgressDebug.diagnostics();
+  assert.equal(d.reloadRequired,false);assert.equal(d.writeEnabled,true);
+  assert.equal(d.queue.events[0].status,'pending');
+  assert.equal(JSON.stringify([...shared.data]),bytes);
+  assert.equal(JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]])),before);
  }
 });
 test('inspection of absent, inaccessible or unsupported IDB never opens or creates a database',async()=>{
@@ -958,7 +969,7 @@ test('profile SFI A → B → C → D uses settings patches, survives reload/rel
  const s=server.account(A).snapshot.state;
  Object.assign(s,{xp:123,known:['v-arbeta'],favorites:['v-prata'],reviews:{'v-arbeta':{due:1000,interval:3,rep:1,ease:2.5}},completed:['lesson-1'],videos:['v1'],booksRead:['book-1'],activity:{'2026-10-18':3},answered:10,correct:7});
  const before=JSON.stringify({...s,settings:undefined}),storageBefore=[...shared.data];
- assert.equal(w.h.ctx.SVProgress.writeEnabled,false);
+ assert.equal(w.h.ctx.SVProgress.writeEnabled,true);
  for(const level of ['B','C','D']){
   assert.equal(await w.h.ctx.SVProgress.updateLevel(level),level);
   assert.equal(w.snapshots.at(-1).s.settings.level,level);
