@@ -23,10 +23,10 @@ const caches={
  async delete(name){return stores.delete(name)}
 };
 let online=true,requests=0;
-function worker(code){
+function worker(code,workerOrigin=origin,workerScope=scope){
  const handlers={};
- const ctx={URL,Request,Response,caches,fetch:async(request,options)=>{assert.equal(options.cache,'no-cache','revalidate HTTP content after publication');requests++;if(!online)throw Error('offline');return new Response('network')},
-  self:{location:{origin},registration:{scope},clients:{claim:async()=>{}},skipWaiting:async()=>{},addEventListener:(name,fn)=>handlers[name]=fn}};
+ const ctx={URL,Request,Response,caches,fetch:async(request,options)=>{assert.equal(options.cache,workerOrigin===origin?'no-cache':'no-store','runtime cache policy');requests++;if(!online)throw Error('offline');return new Response('network')},
+  self:{location:{origin:workerOrigin},registration:{scope:workerScope},clients:{claim:async()=>{}},skipWaiting:async()=>{},addEventListener:(name,fn)=>handlers[name]=fn}};
  vm.runInNewContext(code,ctx);
  return handlers;
 }
@@ -55,7 +55,7 @@ async function load(handlers,path,destination='image',method='GET'){
  assert.equal((await load(handlers,'assets/flashcards/unseen.webp')).status,504);
  assert.equal((await load(handlers,'style.css?v=999','style')).status,200,'versioned URL must find precache');
  assert.equal(await load(handlers,'api/session',''),undefined,'API must bypass caches');
- for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js']){
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','study-time.js']){
   assert.equal((await load(handlers,file+'?v=1','script')).status,200,'auth preparation modules available offline');
  }
  assert.equal(await load(handlers,'https://example.supabase.co/auth/v1/user',''),undefined,'Auth GET bypasses worker');
@@ -71,5 +71,12 @@ async function load(handlers,path,destination='image',method='GET'){
  assert(!stores.has(photoName));assert(!stores.has(shellName));assert(stores.has('unrelated-cache'));
  await load(updated,'assets/flashcards/photo-204.webp');
  assert.equal(stores.get('svenska-latt-test-next-release-photos').size,1);
+ const localOrigin='http://127.0.0.1:8765';
+ const local=worker(source,localOrigin,localOrigin+'/');
+ online=true;
+ assert.equal(await (await load(local,localOrigin+'/supabase-progress.js?v=current','script')).text(),'network');
+ online=false;
+ assert.equal((await load(local,localOrigin+'/supabase-progress.js?v=1','script')).status,504,'local runtime must never fall back to stale shell');
+ online=true;
  console.log('PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation');
 })().catch(error=>{console.error(error);process.exitCode=1});

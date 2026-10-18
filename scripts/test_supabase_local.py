@@ -68,6 +68,8 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql'):
+                continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
                 # schema, captures all seven tables + function ACL, then checks
@@ -77,7 +79,10 @@ def main():
             else:
                 run_file(path)
         result = run_file(ROOT / 'supabase/tests/001_contract.sql')
-        assertions = result.stderr.count('PASS:') + upgrade_assertions
+        study_upgrade = run_file(ROOT / 'supabase/tests/004_study_time.sql')
+        upgrade_assertions += study_upgrade.stderr.count('PASS:')
+        word_upgrade = run_file(ROOT / 'supabase/tests/003_word_state_upgrade.sql')
+        assertions = result.stderr.count('PASS:') + upgrade_assertions + word_upgrade.stderr.count('PASS:')
 
         sql(f"insert into auth.users(id,email) values('{USER}','sl-concurrency@example.invalid');")
         body = event('mark_known', {'word_id': 'v-arbeta'})
@@ -112,6 +117,34 @@ def main():
         assert check['revision'] == 4 and check['state']['xp'] == 24 and len(check['state']['known']) == 3, check
         print('PASS: explicit append-event rebase keeps both devices and exact XP', flush=True)
 
+        # Account-wide study exclusivity and idempotence, with actual parallel connections.
+        before_study = check
+        sql(authenticated("select public.sl_study_settings(true,'Europe/Stockholm',0);"))
+        lease_ids = [f'92000000-0000-0000-0000-00000000000{i}' for i in (1, 2)]
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda lid: sql(authenticated(f"select public.sl_study_open('{lid}');")), lease_ids))
+        grants = [json.loads(r.stdout.strip().splitlines()[-1]) for r in results]
+        assert sum(g['available'] for g in grants) == 1, grants
+        lease = next(g for g in grants if g['available'])
+        print('PASS: two devices claim concurrently; only one account-wide study lease', flush=True)
+        sql('select pg_sleep(0.04);')
+        segments = json.dumps([[lease['cursor_ms'], lease['cursor_ms'] + 10]])
+        def study_commit(eid):
+            return authenticated(f"select public.sl_study_commit('{eid}','{lease['id']}','{segments}');")
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda i: sql(study_commit(f'93000000-0000-0000-0000-00000000000{i}'),check=False), (1, 2)))
+        assert sorted(r.returncode for r in results) == [0, 1], [r.stderr for r in results]
+        assert '22023' in ''.join(r.stderr for r in results)
+        segments = json.dumps([[lease['cursor_ms'] + 10, lease['cursor_ms'] + 20]])
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            results = list(pool.map(lambda _: sql(study_commit('93000000-0000-0000-0000-000000000003')), range(2)))
+        assert all(r.returncode == 0 for r in results)
+        study = json.loads(sql(authenticated('select public.sl_study_status();')).stdout.strip().splitlines()[-1])
+        assert study['totals']['all'] == 20, study
+        after_study = json.loads(sql(authenticated('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        assert before_study == after_study, (before_study, after_study)
+        print('PASS: overlapping parallel periods rejected, same UUID is idempotent, XP/progress unchanged', flush=True)
+
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')
         legacy_base = [x if x != 'postgres' or i != base.index('-d')+1 else 'legacy_guard_test' for i, x in enumerate(base)]
@@ -119,9 +152,9 @@ def main():
         guard = subprocess.run(legacy_base + ['-f', str(migrations[0])], env=env, text=True, capture_output=True)
         assert guard.returncode and 'Legacy learning_progress exists' in guard.stderr
         print('PASS: legacy installation guard prevents accidental mixed schemas', flush=True)
-        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 3,
+        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 6,
             'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False}, indent=2))
-        print(f'PASS: {assertions} SQL assertions, 3 concurrency scenarios, legacy guard; no remote connection', flush=True)
+        print(f'PASS: {assertions} SQL assertions, 6 concurrency scenarios, legacy guard; no remote connection', flush=True)
     finally:
         if started:
             subprocess.run(['pg_ctl', '-D', str(data), '-m', 'immediate', '-w', 'stop'],

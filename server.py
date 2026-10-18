@@ -91,7 +91,7 @@ class Handler(BaseHTTPRequestHandler):
   if path=='/':path='/index.html'
   relative=path.lstrip('/')
   if '\\' in path or '\x00' in path or any(part in {'.','..'} for part in relative.split('/')):return self.error(404,'Not found')
-  public_files={'index.html','style.css','studio.css','atelier.css','learning-polish.css','app.js','atelier.js','learning-polish.js','custom-controls.js','flashcard-media.js','word-icons.js','locale-content.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js','supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','privacy.html','terms.html','cookies.html','photo-credits.html'}
+  public_files={'index.html','style.css','studio.css','atelier.css','learning-polish.css','app.js','atelier.js','learning-polish.js','custom-controls.js','flashcard-media.js','word-icons.js','locale-content.js','words.json','lessons.json','books.json','favicon.svg','manifest.webmanifest','sw.js','supabase-config.js','supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','study-time.js','privacy.html','terms.html','cookies.html','photo-credits.html'}
   public_asset=relative.startswith('assets/') and Path(relative).suffix.lower() in {'.webp','.png','.jpg','.jpeg','.svg','.gif','.woff','.woff2','.mp3','.ogg','.wav'}
   public_asset=public_asset or relative in {'assets/flashcards/photo-credits-imported.json','assets/flashcards/photo-credits-added.json','assets/word-icons/manifest.json','assets/word-icons/LICENSE'}
   if relative not in public_files and not public_asset:return self.error(404,'Not found')

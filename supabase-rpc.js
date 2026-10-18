@@ -38,5 +38,9 @@
   if(!uuid(sourceId)||!state||typeof state!=='object'||Array.isArray(state)||!['empty_only','independent','archive_only'].includes(mode))throw error('INVALID_IMPORT');
   return call('sl_import_progress',{p_import_id:importId,p_expected_revision:expectedRevision,p_source_id:sourceId,p_state:state,p_mode:mode},expectedUserId);
  }
- window.SVRpc=Object.freeze({getProgress,applyEvent,importProgress});
+ function studyStatus({expectedUserId,month=null}={}){return call('sl_study_status',{p_month:month},expectedUserId)}
+ function studySettings({expectedUserId,enabled,timezone,generation}={}){return call('sl_study_settings',{p_enabled:enabled,p_timezone:timezone,p_generation:generation},expectedUserId)}
+ function studyOpen({expectedUserId,leaseId}={}){return call('sl_study_open',{p_lease_id:leaseId},expectedUserId)}
+ function studyCommit({expectedUserId,id,leaseId,segments,close=false}={}){return call('sl_study_commit',{p_id:id,p_lease_id:leaseId,p_segments:segments,p_close:close},expectedUserId)}
+ window.SVRpc=Object.freeze({getProgress,applyEvent,importProgress,studyStatus,studySettings,studyOpen,studyCommit});
 })();

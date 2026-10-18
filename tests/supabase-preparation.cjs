@@ -35,7 +35,7 @@ function harness({conf=config,initial=null,failSdk=false,failSession=false,hash=
   location:{origin:'https://example.test',pathname:'/svenska/',hostname,protocol:'https:',hash,search},
   history:{state:null,replaceState(state,title,path){records.cleanedUrl=path;const url=new URL(path,ctx.location.origin);ctx.location.hash=url.hash;ctx.location.search=url.search}},navigator:{},Image:function(){},SV_SUPABASE:conf,
   localStorage:{getItem:key=>data.get(key)||null,setItem(key,value){records.storageWrites.push(key);data.set(key,value)},removeItem(){throw Error('storage removal forbidden')},clear(){throw Error('storage clear forbidden')}},
-  document:{addEventListener(){},createElement(){return {dataset:{},remove(){this.removed=true}}},
+  document:{addEventListener(){},querySelector(){return null},createElement(){return {dataset:{},remove(){this.removed=true}}},
    head:{appendChild(node){records.scripts.push(node);queueMicrotask(()=>{
     if(failSdk){node.onerror?.();return}
     ctx.supabase={createClient(url,key,options){records.clients.push({url,key,options});return client}};
@@ -411,8 +411,8 @@ test('preview catalog version tracks actual static content and detects frozen ma
 function writerEnvironment(){
  const stores=new Map(),tails=new Map(),data=new Map([['sv-cloud-write-dev-v1','enabled']]);
  const clone=x=>x===undefined?undefined:JSON.parse(JSON.stringify(x));
- const indexedDB={open(){const req={};setImmediate(()=>{
-  req.result={createObjectStore(name){stores.set(name,new Map())},transaction(name){
+ const indexedDB={async databases(){return stores.size?[{name:"sv-cloud-events-v1",version:1}]:[]},open(){const req={};setImmediate(()=>{
+  req.result={name:"sv-cloud-events-v1",version:1,close(){},objectStoreNames:{contains:name=>stores.has(name)},createObjectStore(name){stores.set(name,new Map())},transaction(name){
    const tx={objectStore(){const map=stores.get(name);const operation=fn=>{const r={};setImmediate(()=>{
     try{r.result=clone(fn());r.onsuccess?.();setImmediate(()=>tx.oncomplete?.())}catch(e){tx.onerror?.()}
    });return r};return {
@@ -427,9 +427,9 @@ function writerEnvironment(){
   setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);if(ms===15000)timer.unref();return timer},
   localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v),removeItem(){throw Error('forbidden')},clear(){throw Error('forbidden')}}}};
 }
-function writerServer(){
+function writerServer({wordState=false}={}){
  const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0;
- function account(id){if(!accounts.has(id))accounts.set(id,{snapshot:cloudSnapshot({revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
+ function account(id){if(!accounts.has(id))accounts.set(id,{history:new Set(),snapshot:cloudSnapshot({capabilities:wordState?['unmark_known','review_grade','known_reward_once']:[],revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
  async function request(h){
   active++;maxActive=Math.max(maxActive,active);
   try{
@@ -445,7 +445,12 @@ function writerServer(){
    if(args.p_expected_revision!==a.snapshot.revision)return {error:{code:'40001'}};
    assert.ok(/(Z|[+-]\d\d:\d\d)$/.test(event.occurred_at));assert.ok(event.timezone);assert.equal(event.xp,undefined);assert.equal(event.data.xp,undefined);
    const s=a.snapshot.state,w=event.data.word_id;
-   if(event.type==='mark_known'&&!s.known.includes(w)){s.known.push(w);s.xp+=8}
+   if(event.type==='mark_known'&&!s.known.includes(w)){s.known.push(w);if(!wordState||!a.history.has(w))s.xp+=8;a.history.add(w)}
+   else if(event.type==='unmark_known'){assert.ok(wordState);s.known=s.known.filter(id=>id!==w)}
+   else if(['mark_review','review_grade'].includes(event.type)){
+    const previous=s.reviews[w]||{rep:0,interval:0,ease:2.5},ok=event.type==='review_grade'&&event.data.correct;
+    s.reviews[w]={rep:ok?previous.rep+1:0,interval:ok?(previous.rep===0?1:3):0,ease:previous.ease,due:Date.parse(event.occurred_at)+(ok?86400000:600000)};
+   }
    else if(event.type==='favorite_set')s.favorites=event.data.value?[...new Set([...s.favorites,w])]:s.favorites.filter(x=>x!==w);
    a.snapshot.revision++;a.receipts.set(args.p_event_id,JSON.stringify(event));
    if(loseAck){loseAck=false;throw Error('lost acknowledgement')}
@@ -540,6 +545,7 @@ test('missing IndexedDB or Web Locks fails closed and queues no mutation',async(
 test('UI handlers enqueue supported actions without local XP and block other account mutations',async()=>{
  const w=await startWriter(),h=w.h;
  const source=fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,'');vm.runInContext(source,h.ctx);
+ h.ctx.document.querySelector=()=>null;h.ctx.scrollTo=()=>{};
  vm.runInContext("toast=()=>{};headerStats=()=>{};render=()=>{};user={id:'"+A+"'};state=defaultState();WORDS=[{id:'v-arbeta'}]",h.ctx);
  await h.ctx.SVProgress.initialize({onSnapshot:s=>{h.ctx.serverState=s;vm.runInContext('state=sanitize(serverState)',h.ctx)}});
  await h.ctx.SVProgressDebug.flush();
@@ -575,4 +581,305 @@ test('reload while offline resumes existing queue on the online event after the 
  assert.equal(reloaded.h.ctx.SVProgressDebug.status().status,'error');assert.ok(handlers.online);
  w.server.offline=false;await handlers.online();
  assert.equal(w.server.account(A).snapshot.state.xp,8);assert.equal((await reloaded.h.ctx.SVProgressDebug.queue()).events[0].status,'applied');
+});
+
+
+test('current debug export has queue and version even with writes disabled and no session',async()=>{
+ const h=harness({progress:true,hostname:'localhost'});
+ for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-word-state-2');
+ const d=await h.ctx.SVProgressDebug.diagnostics();
+ assert.equal(d.writeEnabled,false);assert.equal(d.queue.ready,false);
+ assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
+ assert.equal(h.records.rpc.length,0);assert.deepEqual(h.records.storageWrites,[]);
+});
+test('flag requires reload and exact enabled value; diagnostic reads preserve disabled queue',async()=>{
+ const shared=writerEnvironment(),w=await startWriter(shared);w.server.offline=true;await send(w,'mark_known');
+ const before=JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]])),bytes=JSON.stringify([...shared.data]);
+ shared.data.set('sv-cloud-write-dev-v1','disabled');
+ assert.equal((await w.h.ctx.SVProgressDebug.diagnostics()).reloadRequired,true);
+ const h=harness({progress:true,initial:token(A),hostname:'localhost',environment:shared.environment});
+ h.rpcResult(()=>({data:cloudSnapshot()}));await h.ctx.SVProgress.initialize();
+ const calls=h.records.rpc.length;
+ const q=await h.ctx.SVProgressDebug.queue();assert.equal(q.enabled,false);assert.equal(q.events[0].status,'pending');
+ assert.equal(q.storage.status,'ready');assert.equal(q.storage.version,1);
+ assert.equal(h.records.rpc.length,calls);assert.equal(JSON.stringify([...shared.stores].map(([name,rows])=>[name,[...rows]])),before);
+ shared.data.set('sv-cloud-write-dev-v1','enabled');
+ const d=await h.ctx.SVProgressDebug.diagnostics();assert.equal(d.reloadRequired,true);assert.equal(d.writeEnabled,false);
+ assert.equal(JSON.stringify([...shared.data]),bytes);
+ for(const value of ['true','1','Enabled']){
+  shared.data.set('sv-cloud-write-dev-v1',value);
+  assert.equal(harness({progress:true,hostname:'localhost',environment:shared.environment}).ctx.SVProgress.writeEnabled,false);
+ }
+});
+test('inspection of absent, inaccessible or unsupported IDB never opens or creates a database',async()=>{
+ for(const [indexedDB,status] of [
+  [{databases:async()=>[]},'absent'],
+  [{databases:async()=>{throw Error('denied')}},'error'],
+  [{},'unsupported']
+ ]){
+  indexedDB.open=()=>{throw Error('inspection must not open absent database')};
+  const h=harness({progress:true,hostname:'localhost',environment:{indexedDB}});
+  assert.equal((await h.ctx.SVProgressDebug.queue()).storage.status,status);
+  assert.equal(h.records.rpc.length,0);assert.deepEqual(h.records.storageWrites,[]);
+ }
+});
+test('inspection hides other accounts and signed-out rows without enabling writes',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ w.shared.stores.get('events').set(99,{sequence:99,userId:B,eventId:'other-account',eventJson:'{}',status:'pending'});
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1);
+ await w.h.ctx.SVAuth.signOut();assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,0);
+});
+test('IDB inspection reports blocked opens and aborts a disappeared database upgrade',async()=>{
+ for(const mode of ['blocked','missing']){
+  let aborted=false;
+  const indexedDB={databases:async()=>[{name:'sv-cloud-events-v1',version:1}],open(){
+   const req={transaction:{abort(){aborted=true}}};setImmediate(()=>mode==='blocked'?req.onblocked():req.onupgradeneeded());return req;
+  }};
+  const h=harness({progress:true,hostname:'localhost',environment:{indexedDB}});
+  assert.equal((await h.ctx.SVProgressDebug.queue()).storage.status,mode==='blocked'?'blocked':'absent');
+  assert.equal(aborted,mode==='missing');assert.equal(h.records.rpc.length,0);
+ }
+});
+
+test('account change during diagnostic IDB read hides the captured account events',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ const original=w.h.ctx.indexedDB.databases;let release;
+ w.h.ctx.indexedDB.databases=()=>new Promise(resolve=>{release=resolve});
+ const inspection=w.h.ctx.SVProgressDebug.queue();
+ await w.h.ctx.SVAuth.signOut();release(await original());
+ const q=await inspection;assert.equal(q.ready,false);assert.equal(q.events.length,0);
+});
+
+test('repeated learned clicks and concurrent pending intents produce one durable mark_known',async()=>{
+ const w=await startWriter();w.server.offline=true;
+ await Promise.all([w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta')]);
+ await w.h.ctx.SVProgressDebug.flush();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1);
+ assert.equal(w.snapshots.at(-1).s.xp,0);
+ w.server.offline=false;await w.h.ctx.SVProgress.retry();
+ await w.h.ctx.SVProgress.enqueue('mark_known','v-arbeta');await w.h.ctx.SVProgressDebug.flush();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1);
+ assert.equal(w.server.account(A).snapshot.revision,1);assert.equal(w.snapshots.at(-1).s.xp,8);
+});
+
+test('activity feedback exposes pending state, reports success only after ACK, and stays account scoped',async()=>{
+ const w=await startWriter(),updates=[];
+ await w.h.ctx.SVProgress.initialize({onActivity:s=>updates.push(s)});
+ w.server.offline=true;await send(w,'favorite_set','v-arbeta',true);
+ assert.equal(updates.some(s=>s.completed),false);
+ assert.equal(w.h.ctx.SVProgress.activity().pending[0].wordId,'v-arbeta');
+ assert.deepEqual(Array.from(w.snapshots.at(-1).s.favorites),[]);assert.equal(w.snapshots.at(-1).s.xp,0);
+ const detached=w.h.ctx.SVProgress.activity();detached.pending.length=0;
+ assert.equal(w.h.ctx.SVProgress.activity().pending.length,1);
+ w.server.offline=false;await w.h.ctx.SVProgress.retry();
+ assert.equal(updates.filter(s=>s.completed).length,1);
+ assert.equal(updates.find(s=>s.completed).completed.type,'favorite_set');
+ assert.equal(w.h.ctx.SVProgress.activity().pending.length,0);assert.equal(w.snapshots.at(-1).s.xp,0);
+ await w.h.ctx.SVAuth.signOut();assert.equal(w.h.ctx.SVProgress.activity().pending.length,0);
+});
+
+test('dictionary and flashcard know actions share IDs and server XP, while repeat stays separate',async()=>{
+ const w=await startWriter(),h=w.h;
+ const source=fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,'');vm.runInContext(source,h.ctx);
+ h.ctx.document.querySelector=()=>null;h.ctx.scrollTo=()=>{};
+ vm.runInContext("toast=()=>{};headerStats=()=>{};render=()=>{};user={id:'"+A+"'};state=defaultState();WORDS=[{id:'v-arbeta',word:'arbeta',ru:'работать',type:'verb'},{id:'v-prata',word:'prata',ru:'говорить',type:'verb'}];flash.ids=['v-arbeta'];",h.ctx);
+ await h.ctx.SVProgress.initialize({onSnapshot:s=>{h.ctx.serverState=s;vm.runInContext('state=sanitize(serverState)',h.ctx)}});
+ await h.ctx.SVProgressDebug.flush();
+ await vm.runInContext("action({dataset:{action:'flash-grade',value:'1'}})",h.ctx);await h.ctx.SVProgressDebug.flush();
+ await vm.runInContext("action({dataset:{action:'mark-known',id:'v-arbeta'}})",h.ctx);await h.ctx.SVProgressDebug.flush();
+ assert.equal(h.records.rpc.filter(r=>r.name==='sl_apply_event').length,1);assert.equal(vm.runInContext('state.xp',h.ctx),8);
+ await vm.runInContext("action({dataset:{action:'flash-grade',value:'0'}})",h.ctx);
+ await vm.runInContext("action({dataset:{action:'mark-review',id:'v-arbeta'}})",h.ctx);
+ assert.equal(h.records.rpc.filter(r=>r.name==='sl_apply_event').length,1);
+ assert.match(vm.runInContext("wordEntry(WORDS[0])",h.ctx),/aria-label="✓ Знаю" title="✓ Знаю">✓ Знаю<\/button>/);
+ assert.match(vm.runInContext("routeParam='v-arbeta';renderWord()",h.ctx),/✓ Знаю/);
+ assert.match(vm.runInContext('renderProfile()',h.ctx),/data-action="show-learned"/);
+ assert.equal(vm.runInContext("routeParam='learned';filteredWords().map(w=>w.id).join(',')",h.ctx),'v-arbeta');
+ assert.equal(vm.runInContext("flashFilter.scope='known';createFlashDeck();flash.ids.join(',')",h.ctx),'v-arbeta');
+ assert.doesNotMatch(vm.runInContext("authText('local')",h.ctx),/Supabase|RPC|IndexedDB/);
+});
+
+test('guest known actions remain local and award XP once per word',async()=>{
+ const h=harness();vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,''),h.ctx);
+ vm.runInContext("render=()=>{};headerStats=()=>{};WORDS=[{id:'v-arbeta'}];state=defaultState();",h.ctx);
+ await vm.runInContext("learnWord('v-arbeta')",h.ctx);await vm.runInContext("learnWord('v-arbeta')",h.ctx);
+ assert.equal(vm.runInContext('state.xp',h.ctx),8);assert.equal(JSON.parse(h.data.get('sv-guest-v2')).known.length,1);
+ assert.equal(h.records.rpc.length,0);
+});
+
+test('explicit retry of a rejected event retains its original UUID and body',async()=>{
+ const w=await startWriter();let reject=true;
+ w.h.rpcResult(()=>w.h.records.rpc.at(-1).name==='sl_apply_event'&&reject?{error:{code:'22023'}}:w.server.request(w.h));
+ await send(w,'mark_known');
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[0].status,'blocked');
+ await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,1);
+ reject=false;await w.h.ctx.SVProgress.retry();
+ const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');
+ assert.equal(calls.length,2);assert.equal(calls[0].args.p_event_id,calls[1].args.p_event_id);
+ assert.deepEqual(calls[0].args.p_event,calls[1].args.p_event);assert.equal(w.snapshots.at(-1).s.xp,8);
+});
+
+test('accepting current favorites retains cancelled conflict and requires a new explicit favorite intent',async()=>{
+ const w=await startWriter();w.server.account(A).snapshot.revision=1;
+ await send(w,'favorite_set','v-arbeta',true);
+ await w.h.ctx.SVProgress.acceptCurrentFavorites();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[0].status,'cancelled');
+ assert.equal(w.h.ctx.SVProgress.activity().pending.length,0);
+ assert.deepEqual(Array.from(w.snapshots.at(-1).s.favorites),[]);
+ await send(w,'favorite_set','v-arbeta',true);
+ assert.deepEqual(Array.from(w.snapshots.at(-1).s.favorites),['v-arbeta']);assert.equal(w.snapshots.at(-1).s.xp,0);
+});
+
+async function wordStateWriter(){return startWriter(writerEnvironment(),writerServer({wordState:true}))}
+function loadWordUI(w){
+ const h=w.h;vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,''),h.ctx);
+ h.ctx.document.querySelector=()=>null;h.ctx.scrollTo=()=>{};
+ vm.runInContext("render=()=>{};toast=()=>{};headerStats=()=>{};user={id:'"+A+"'};state=defaultState();WORDS=[{id:'v-arbeta',word:'arbeta',inf:'arbeta',ru:'работать',type:'verb',group:'1',category:'Работа'},{id:'v-prata',word:'prata',inf:'prata',ru:'говорить',type:'verb',group:'1',category:'Общение'},{id:'lex-0357',word:'hörlurar',ru:'наушники',type:'noun',category:'Техника'}]",h.ctx);
+ return h.ctx.SVProgress.initialize({onSnapshot:s=>{h.ctx.serverState=s;vm.runInContext('state=sanitize(serverState)',h.ctx)}}).then(()=>h.ctx.SVProgressDebug.flush());
+}
+
+test('new word actions stay gated until the server explicitly advertises capabilities',async()=>{
+ const w=await startWriter();assert.equal(w.h.ctx.SVProgress.supports('unmark_known'),false);
+ assert.equal(await w.h.ctx.SVProgress.enqueue('unmark_known','v-arbeta'),false);
+ assert.equal(await w.h.ctx.SVProgress.enqueue('review_grade','v-arbeta',true),false);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,0);
+});
+
+test('known toggle removes the mark without confirmation, retains XP across reload and relogin',async()=>{
+ const w=await wordStateWriter();await loadWordUI(w);
+ await vm.runInContext("learnWord('v-arbeta')",w.h.ctx);await w.h.ctx.SVProgressDebug.flush();
+ await vm.runInContext("action({dataset:{action:'mark-known',id:'v-arbeta'}})",w.h.ctx);
+ await w.h.ctx.SVProgressDebug.flush();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2,'one toggle sends one unmark event');
+ assert.equal(vm.runInContext('state.known.length',w.h.ctx),0);assert.equal(vm.runInContext('state.xp',w.h.ctx),8);
+ assert.equal(vm.runInContext("routeParam='learned';filteredWords().length",w.h.ctx),0);
+ assert.equal(vm.runInContext("routeParam='';filteredWords().length",w.h.ctx),3,'unmarked word remains in general dictionary');
+ const reloaded=await startWriter(w.shared,w.server);assert.equal(reloaded.snapshots.at(-1).s.known.length,0);
+ await reloaded.h.ctx.SVAuth.signOut();const relogged=await startWriter(w.shared,w.server);
+ await send(relogged,'mark_known');assert.equal(relogged.snapshots.at(-1).s.xp,8);assert.equal(relogged.snapshots.at(-1).s.known.length,1);
+});
+
+test('offline unmark and lost ACK preserve UUID and award history, then recover on reload',async()=>{
+ const w=await wordStateWriter();await send(w,'mark_known');w.server.offline=true;
+ await send(w,'unmark_known');await w.h.ctx.SVProgress.enqueue('unmark_known','v-arbeta');
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2);
+ assert.equal(w.snapshots.at(-1).s.known.length,1,'no optimistic unmark');
+ const intent=[...w.shared.stores.get('events').values()][1];w.server.offline=false;w.server.loseAck=true;
+ await w.h.ctx.SVProgress.retry();assert.equal(w.server.account(A).snapshot.state.known.length,0);
+ const reloaded=await startWriter(w.shared,w.server);await reloaded.h.ctx.SVProgressDebug.flush();
+ const receipt=[...w.shared.stores.get('events').values()][1];
+ assert.equal(receipt.eventId,intent.eventId);assert.equal(receipt.eventJson,intent.eventJson);assert.equal(receipt.status,'applied');
+ await send(reloaded,'mark_known');assert.equal(reloaded.snapshots.at(-1).s.xp,8);
+});
+
+test('word status revision conflicts never silently overwrite a newer decision',async()=>{
+ const w=await wordStateWriter();await send(w,'mark_known');w.server.account(A).snapshot.revision++;
+ await send(w,'unmark_known');assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[1].status,'conflict');
+ assert.equal(w.server.account(A).snapshot.state.known.length,1);
+ await w.h.ctx.SVProgress.acceptCurrentWordState();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[1].status,'cancelled');
+ await send(w,'unmark_known');assert.equal(w.server.account(A).snapshot.state.known.length,0);
+ // An old mark_known is also a mutable intent once the server supports unmark.
+ w.server.account(A).snapshot.revision++;await send(w,'mark_known');
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[3].status,'conflict');
+ assert.equal(w.snapshots.at(-1).s.xp,8);
+});
+
+test('focused recall uses SRS grades without clearing known or adding XP',async()=>{
+ const w=await wordStateWriter();await loadWordUI(w);await send(w,'mark_known');
+ vm.runInContext("navigate('word-review','v-arbeta');renderWordReview()",w.h.ctx);
+ await vm.runInContext("gradeWordReview(true)",w.h.ctx);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1,'grade requires revealing the translation');
+ vm.runInContext('reviewExercise.revealed=true',w.h.ctx);
+ await vm.runInContext('gradeWordReview(true)',w.h.ctx);await w.h.ctx.SVProgressDebug.flush();
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2,JSON.stringify({queue:await w.h.ctx.SVProgressDebug.queue(),exercise:vm.runInContext('reviewExercise',w.h.ctx)}));
+ assert.ok(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx),JSON.stringify(await w.h.ctx.SVProgressDebug.queue()));
+ assert.equal(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx).rep,1);assert.equal(vm.runInContext('state.known.length',w.h.ctx),1);assert.equal(vm.runInContext('state.xp',w.h.ctx),8);
+ await vm.runInContext('gradeWordReview(true)',w.h.ctx);assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2,'one grade per exercise');
+ vm.runInContext("navigate('word-review','v-arbeta');renderWordReview();reviewExercise.revealed=true",w.h.ctx);
+ await vm.runInContext('gradeWordReview(false)',w.h.ctx);await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx).rep,0);assert.equal(vm.runInContext('state.known.length',w.h.ctx),1);assert.equal(vm.runInContext('state.xp',w.h.ctx),8);
+});
+
+test('guest unmark preserves history, favorites and XP after saving and rereading',async()=>{
+ const h=harness();vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,''),h.ctx);
+ h.ctx.document.querySelector=()=>null;
+ vm.runInContext("render=()=>{};toast=()=>{};headerStats=()=>{};WORDS=[{id:'v-arbeta'}];state=sanitize({known:['v-arbeta'],favorites:['v-arbeta'],xp:8,reviews:{'v-arbeta':{rep:2,interval:3,ease:2.6,due:123}}})",h.ctx);
+ await vm.runInContext("unlearnWord('v-arbeta')",h.ctx);
+ assert.equal(vm.runInContext("state.reviews['v-arbeta'].rep",h.ctx),2);assert.equal(vm.runInContext('state.favorites.length',h.ctx),1);
+ vm.runInContext('state=readLocalState()',h.ctx);await vm.runInContext("learnWord('v-arbeta')",h.ctx);
+ assert.equal(vm.runInContext('state.xp',h.ctx),8);assert.equal(h.records.rpc.length,0);
+});
+
+test('learned, favorites, search, group and category filters have explicit scopes and reliable resets',async()=>{
+ const w=await wordStateWriter();await loadWordUI(w);
+ vm.runInContext("state.known=['v-arbeta','lex-0357'];state.favorites=['lex-0357'];route='dictionary';routeParam='learned';dictFilter.fav=true",w.h.ctx);
+ assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),2,'stale hidden favorite flag cannot hide learned words');
+ vm.runInContext("dictFilter.text='hör';dictFilter.category='Техника'",w.h.ctx);
+ assert.equal(vm.runInContext('filteredWords()[0].id',w.h.ctx),'lex-0357');
+ vm.runInContext("dictFilter.group='1'",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),0);
+ assert.match(vm.runInContext('renderDictionary()',w.h.ctx),/Сбрось поиск и фильтры/);
+ await vm.runInContext("action({dataset:{action:'dict-reset'}})",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),2);
+ vm.runInContext("navigate('dictionary','favorites')",w.h.ctx);assert.equal(vm.runInContext('filteredWords()[0].id',w.h.ctx),'lex-0357');
+ vm.runInContext("dictFilter.text='does-not-exist';navigate('home');navigate('dictionary')",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),3);
+ vm.runInContext("location.hash='#dictionary/learned';hydrateLocation()",w.h.ctx);assert.equal(vm.runInContext('filteredWords().length',w.h.ctx),2);
+});
+
+
+test('a stale UI identity cannot send an unmark to the previous account',async()=>{
+ const w=await wordStateWriter();await loadWordUI(w);await send(w,'mark_known');
+ vm.runInContext("user={id:'"+B+"'}",w.h.ctx);
+ await vm.runInContext("unlearnWord('v-arbeta')",w.h.ctx);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1);
+ assert.equal(w.server.account(A).snapshot.state.known.length,1);
+});
+
+test('review today opens a supported single-word recall instead of an unsynced session',async()=>{
+ const w=await wordStateWriter();await loadWordUI(w);
+ vm.runInContext("state.reviews={'v-arbeta':{due:0,rep:0,interval:0,ease:2.5}}",w.h.ctx);
+ await vm.runInContext("action({dataset:{action:'start-review'}})",w.h.ctx);
+ assert.equal(vm.runInContext("route+'|'+routeParam",w.h.ctx),'word-review|v-arbeta');
+ assert.equal(vm.runInContext('quiz.active',w.h.ctx),false);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,0,'opening exercise does not record a result');
+});
+
+test('pending new events remain durable and unsent if server support is withdrawn',async()=>{
+ const w=await wordStateWriter();await send(w,'mark_known');w.server.offline=true;await send(w,'unmark_known');
+ w.server.account(A).snapshot.capabilities=[];w.server.offline=false;
+ const before=w.h.records.rpc.filter(r=>r.name==='sl_apply_event').length;
+ await w.h.ctx.SVProgress.retry();
+ assert.equal(w.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,before);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).error,'FEATURE_UNAVAILABLE');
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).events[1].status,'pending');
+ w.server.account(A).snapshot.capabilities=['unmark_known','review_grade'];await w.h.ctx.SVProgress.retry();
+ assert.equal(w.snapshots.at(-1).s.known.length,0);assert.equal(w.snapshots.at(-1).s.xp,8);
+});
+
+test('study RPC adapters bind all four operations to verified owner, preserve UUID and do not retry',async()=>{
+ const h=harness({initial:token(A)});await h.ctx.SVAuth.initialize();
+ await h.ctx.SVRpc.studyStatus({expectedUserId:A,month:'2026-10-01'});
+ await h.ctx.SVRpc.studySettings({expectedUserId:A,enabled:true,timezone:'Europe/Stockholm',generation:0});
+ await h.ctx.SVRpc.studyOpen({expectedUserId:A,leaseId:eid});
+ await h.ctx.SVRpc.studyCommit({expectedUserId:A,id:eid,leaseId:eid,segments:[[1000,2000]],close:true});
+ assert.deepEqual(h.records.rpc.map(r=>r.name),['sl_study_status','sl_study_settings','sl_study_open','sl_study_commit']);
+ assert.equal(h.records.rpc[0].args.p_month,'2026-10-01');assert.equal(h.records.rpc[1].args.p_generation,0);
+ assert.equal(h.records.rpc[3].args.p_id,eid);assert.equal(h.records.rpc[3].args.p_close,true);
+ for(const row of h.records.rpc){assert.equal(row.headers.Authorization,'Bearer '+token(A).access_token);assert.equal(row.retry,false)}
+ assert.equal(h.records.storageWrites.length,0);
+});
+test('study RPC refuses guest and mismatched account before any network mutation',async()=>{
+ const h=harness({initial:token(A)});
+ for(const name of ['studyStatus','studySettings','studyOpen','studyCommit'])await assert.rejects(h.ctx.SVRpc[name]({expectedUserId:B}),rejectCode('AUTH_USER_MISMATCH'));
+ const g=harness();await assert.rejects(g.ctx.SVRpc.studyOpen({expectedUserId:A,leaseId:eid}),rejectCode('AUTH_USER_MISMATCH'));
+ assert.equal(h.records.rpc.length+g.records.rpc.length,0);
+});
+test('in-flight study response is discarded when account changes',async()=>{
+ const h=harness({initial:token(A)});let finish,started;
+ const start=new Promise(resolve=>started=resolve);h.rpcResult(()=>new Promise(resolve=>{finish=resolve;started()}));
+ const pending=h.ctx.SVRpc.studyOpen({expectedUserId:A,leaseId:eid});await start;
+ h.emit('SIGNED_IN',token(B));finish({data:{available:true},error:null});
+ await assert.rejects(pending,rejectCode('AUTH_CONTEXT_CHANGED'));
+ assert.equal(h.records.rpc[0].headers.Authorization,'Bearer '+token(A).access_token);
 });

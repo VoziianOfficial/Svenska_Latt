@@ -1,6 +1,8 @@
 /* Validated cloud progress and opt-in stage-one event queue; RPC only. */
 'use strict';
 (() => {
+ const moduleVersion='2026-10-18-word-state-2';
+ const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
  const count=value=>Number.isSafeInteger(value)&&value>=0;
@@ -24,7 +26,9 @@
    !s.settings.timezone.length||s.settings.timezone.length>100||typeof s.profile.name!=='string'||s.profile.name.length>70||
    !(s.profile.avatarPath===null||(typeof s.profile.avatarPath==='string'&&s.profile.avatarPath.length<=180)))invalid();
   // Own immutable copy, with no aliases into RPC results or app.js state.
-  const snapshot=JSON.parse(JSON.stringify({revision:value.revision,content_version:value.content_version,state:s}));
+  const capabilities=value.capabilities??[];
+  if(!Array.isArray(capabilities)||capabilities.some(v=>typeof v!=='string'||v.length>100))invalid();
+  const snapshot=JSON.parse(JSON.stringify({revision:value.revision,content_version:value.content_version,capabilities,state:s}));
   function freeze(object){for(const v of Object.values(object))if(record(v)||Array.isArray(v))freeze(v);return Object.freeze(object)}
   return freeze(snapshot);
  }
@@ -52,8 +56,9 @@
  }
  function sync({retry=false}={}){
   const auth=window.SVAuth.getState();
-  if(!auth.user){context=null;return Promise.resolve(summary())}
+  if(!auth.user){context=null;activity={pending:[],error:null};return Promise.resolve(summary())}
   if(!context||context.userId!==auth.user.id||context.identityRevision!==auth.identityRevision){
+   activity={pending:[],error:null};writeError=null;
    context={userId:auth.user.id,identityRevision:auth.identityRevision,status:'idle',attempts:0,snapshot:null,error:null,receivedAt:null,pending:null};
   }
   const c=context;
@@ -75,6 +80,7 @@
   if(typeof options.onSnapshot==='function')onSnapshot=options.onSnapshot;
   if(typeof options.previewCatalog==='function')previewCatalog=options.previewCatalog;
   if(typeof options.onError==='function')onError=options.onError;
+  if(typeof options.onActivity==='function')onActivity=options.onActivity;
   if(!started){
    started=true;
    window.SVAuth.subscribe(()=>{void sync()});
@@ -86,14 +92,22 @@
  // The loopback-only flag is read once per page load. No production write switch.
  const writeEnabled=['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&
   ['http:','https:'].includes(location.protocol)&&(()=>{try{return localStorage.getItem('sv-cloud-write-dev-v1')==='enabled'}catch(_){return false}})();
- let writerReady=null,writeError=null,dbPromise=null,draining=null,onSnapshot=null,retryTimer=null;
+ let writerReady=null,writeError=null,dbPromise=null,draining=null,onSnapshot=null,retryTimer=null,onActivity=null;
+ let activity={pending:[],error:null};
+ async function reportActivity(c,completed=null){
+  if(!c||!current(c))return;
+  let stored;try{stored=await rows()}catch(_){stored=[]}
+  const pending=stored.filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status)).map(r=>{
+   const event=JSON.parse(r.eventJson);return {type:event.type,wordId:event.data.word_id,status:r.status};
+  });
+  if(!current(c))return;
+  activity={pending,error:writeError};
+  try{onActivity?.({...activity,completed})}catch(_){}
+ }
  const fail=code=>Object.assign(new Error(code),{code});
  function notify(code){
   writeError=code;
-  const messages={LOCAL_PROGRESS_CONFLICT:'В аккаунте есть несовместимые или несинхронизированные локальные данные. Облачная запись остановлена; данные сохранены.',
-   FAVORITE_CONFLICT:'Избранное изменилось на другом устройстве. Старое действие не применено. Откройте кабинет для проверки конфликта.',
-   CONTENT_VERSION_MISMATCH:'Версии учебных материалов не совпадают. Облачная запись остановлена.'};
-  try{onError?.(messages[code]||`Облачное сохранение приостановлено (${code}). Очередь сохранена.`)}catch(_){}
+  void reportActivity(context);
  }
  function database(){
   if(!dbPromise)dbPromise=new Promise((resolve,reject)=>{
@@ -157,7 +171,7 @@
   if(!writeEnabled||!c||!current(c)||c.status!=='ready')return;
   try{await lock(c,async()=>{await compatible(c);requireCurrent(c);publish(c)})}
   catch(e){if(current(c)){writerReady=null;notify(e.code||'WRITE_PRECHECK_FAILED')}return}
-  void flush();
+  void reportActivity(c);void flush();
  }
  async function flush(){
   const c=context;
@@ -168,9 +182,11 @@
    const pending=(await rows()).filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status));
    for(const row of pending){
     requireCurrent(c);
-    if(row.status==='conflict')throw fail('FAVORITE_CONFLICT');
+    if(row.status==='conflict')throw fail(JSON.parse(row.eventJson).type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
     if(row.status==='blocked')throw fail('EVENT_REJECTED');
     if(row.contentVersion!==c.snapshot.content_version)throw fail('CONTENT_VERSION_MISMATCH');
+    const eventType=JSON.parse(row.eventJson).type;
+    if(['unmark_known','review_grade'].includes(eventType)&&!c.snapshot.capabilities.includes(eventType))throw fail('FEATURE_UNAVAILABLE');
     for(let attempt=0;attempt<2;attempt++){
      requireCurrent(c);await compatible(c);
      try{
@@ -183,13 +199,14 @@
       if(snapshot.content_version!==row.contentVersion)throw fail('CONTENT_VERSION_MISMATCH');
       // Record ACK before publishing; a crash before this commit retries the same UUID.
       row.status='applied';row.appliedRevision=result.applied_revision;await put(row);
-      requireCurrent(c);c.snapshot=snapshot;await compatible(c);publish(c);break;
+      requireCurrent(c);c.snapshot=snapshot;await compatible(c);publish(c);await reportActivity(c,JSON.parse(row.eventJson));break;
      }catch(e){
       requireCurrent(c);
       if(e.code==='40001'){
        await fresh(c);
-       if(JSON.parse(row.eventJson).type==='favorite_set'){
-        row.status='conflict';await put(row);throw fail('FAVORITE_CONFLICT');
+       const type=JSON.parse(row.eventJson).type;
+       if(type==='favorite_set'||type==='unmark_known'||(type==='mark_known'&&c.snapshot.capabilities.includes('unmark_known'))){
+        row.status='conflict';await put(row);throw fail(type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
        }
        row.expectedRevision=c.snapshot.revision;await put(row);
        if(attempt===1)throw fail('REVISION_RETRY_PENDING');
@@ -202,8 +219,9 @@
    }
   }).catch(e=>{if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR')}).finally(()=>{
    draining=null;
+   if(current(c))void reportActivity(c);
    if(context!==c){void flush()}
-   if(current(c)&&writerReady===c&&!retryTimer&&!['FAVORITE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
+   if(current(c)&&writerReady===c&&!retryTimer&&!['FEATURE_UNAVAILABLE','FAVORITE_CONFLICT','WORD_STATE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
   });
   return draining;
  }
@@ -213,25 +231,77 @@
    if(!writeEnabled||!c||writerReady!==c)throw fail('CLOUD_NOT_READY');
    await lock(c,async()=>{
     await compatible(c);requireCurrent(c);
-    if(!previewCatalog?.().words.includes(wordId)||!['favorite_set','mark_known'].includes(type)||
-     (type==='favorite_set'&&typeof value!=='boolean'))throw fail('INVALID_EVENT');
+    if(!previewCatalog?.().words.includes(wordId)||!['favorite_set','mark_known','unmark_known','mark_review','review_grade'].includes(type)||
+     (['favorite_set','review_grade'].includes(type)&&typeof value!=='boolean'))throw fail('INVALID_EVENT');
+    if(['unmark_known','review_grade'].includes(type)&&!c.snapshot.capabilities.includes(type))throw fail('FEATURE_UNAVAILABLE');
     const pending=(await rows()).filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status));
     if(pending.some(r=>r.status==='conflict'||r.status==='blocked'))throw fail('QUEUE_REQUIRES_REVIEW');
+    const sameWord=pending.filter(r=>JSON.parse(r.eventJson).data.word_id===wordId);
+    const knownIntent=['mark_known','unmark_known'].includes(type);
+    if(knownIntent&&sameWord.some(r=>['mark_known','unmark_known'].includes(JSON.parse(r.eventJson).type)))return;
+    if(type==='mark_known'&&c.snapshot.state.known.includes(wordId))return;
+    if(type==='unmark_known'&&!c.snapshot.state.known.includes(wordId))return;
+    if(['mark_review','review_grade'].includes(type)&&sameWord.some(r=>['mark_review','review_grade'].includes(JSON.parse(r.eventJson).type)))return;
+    if(type==='favorite_set'&&pending.some(r=>{const e=JSON.parse(r.eventJson);return e.type===type&&e.data.word_id===wordId}))return;
     const event={type,occurred_at:new Date().toISOString(),timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,
-     data:type==='favorite_set'?{word_id:wordId,value}:{word_id:wordId}};
+     data:type==='favorite_set'?{word_id:wordId,value}:type==='review_grade'?{word_id:wordId,correct:value}:{word_id:wordId}};
     await storage('events','readwrite',s=>s.add({userId:c.userId,eventId:crypto.randomUUID(),eventJson:JSON.stringify(event),
      contentVersion:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
     requireCurrent(c);
    });
-   try{onError?.('Действие сохранено в очереди. Ожидаем подтверждение Supabase.')}catch(_){}
+   await reportActivity(c);
    void flush();return true;
   }catch(e){if(c&&current(c))notify(e.code||'QUEUE_STORAGE_FAILED');return false}
  }
+ // Inspection never creates/upgrades a database or starts the writer/RPC.
+ async function inspectQueue(){
+  if(typeof indexedDB==='undefined')return {status:'unavailable',error:'QUEUE_STORAGE_UNAVAILABLE'};
+  if(typeof indexedDB.databases!=='function')return {status:'unsupported',error:'DATABASE_ENUMERATION_UNAVAILABLE'};
+  try{
+   const databases=await indexedDB.databases();
+   const info=databases.find(db=>db.name==='sv-cloud-events-v1');
+   if(!info)return {status:'absent',name:'sv-cloud-events-v1',events:[]};
+   return await new Promise(resolve=>{
+    let finished=false,db;
+    const done=value=>{if(finished)return;finished=true;clearTimeout(timer);db?.close();resolve(value)};
+    const timer=setTimeout(()=>done({status:'blocked',error:'QUEUE_STORAGE_TIMEOUT'}),2000);
+    const req=indexedDB.open(info.name);
+    req.onupgradeneeded=()=>{req.transaction.abort();done({status:'absent',events:[]})};
+    req.onblocked=()=>done({status:'blocked',error:'QUEUE_STORAGE_BLOCKED'});
+    req.onerror=()=>done({status:'error',error:'QUEUE_STORAGE_UNAVAILABLE'});
+    req.onsuccess=()=>{
+     db=req.result;
+     if(finished){db.close();return}
+     db.onversionchange=()=>db.close();
+     if(!db.objectStoreNames.contains('events')){done({status:'error',error:'QUEUE_SCHEMA_MISMATCH'});return}
+     try{
+      const tx=db.transaction('events','readonly'),read=tx.objectStore('events').getAll();let events;
+      read.onsuccess=()=>{events=read.result};
+      tx.oncomplete=()=>done({status:'ready',name:db.name,version:db.version,events});
+      tx.onerror=tx.onabort=()=>done({status:'error',error:'QUEUE_STORAGE_FAILED'});
+     }catch(_){done({status:'error',error:'QUEUE_STORAGE_FAILED'})}
+    };
+   });
+  }catch(_){return {status:'error',error:'QUEUE_STORAGE_UNAVAILABLE'}}
+ }
  async function queueStatus(){
-  const c=context;if(!c||!current(c))return {enabled:writeEnabled,ready:false,error:null,events:[]};
-  const events=writeEnabled?(await rows()).filter(r=>r.userId===c.userId).map(r=>({eventId:r.eventId,type:JSON.parse(r.eventJson).type,
-   wordId:JSON.parse(r.eventJson).data.word_id,status:r.status,expectedRevision:r.expectedRevision,appliedRevision:r.appliedRevision})):[];
-  requireCurrent(c);return {enabled:writeEnabled,ready:writerReady===c,error:writeError,events};
+  const c=context,inspection=await inspectQueue();
+  const {events:stored=[],...storage}=inspection;
+  // Recheck identity after the asynchronous read; never show another account.
+  const active=!!c&&current(c);
+  const events=active?stored.filter(r=>r.userId===c.userId).map(r=>{
+   let event;try{event=JSON.parse(r.eventJson)}catch(_){}
+   return {eventId:r.eventId,type:event?.type??null,wordId:event?.data?.word_id??null,
+    status:r.status,expectedRevision:r.expectedRevision,appliedRevision:r.appliedRevision};
+  }):[];
+  return {enabled:writeEnabled,ready:active&&writerReady===c,error:active?writeError:null,storage,events};
+ }
+ async function diagnostics(){
+  let flag;try{flag=localStorage.getItem('sv-cloud-write-dev-v1')}catch(_){flag='unavailable'}
+  const loopback=['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol);
+  return {moduleVersion,scriptUrl,loopback,flag,writeEnabled,reloadRequired:(loopback&&flag==='enabled')!==writeEnabled,
+   webLocks:typeof navigator.locks?.request==='function',
+   serviceWorker:navigator.serviceWorker?.controller?.scriptURL??null,queue:await queueStatus()};
  }
  // Explicit local conflict acknowledgement: retain the old event as cancelled.
  // User must inspect fresh state and click the desired favorite in the UI again.
@@ -242,6 +312,31 @@
    const row=(await rows()).find(r=>r.userId===c.userId&&r.eventId===eventId&&r.status==='conflict');
    if(!row)throw fail('CONFLICT_NOT_FOUND');row.status='cancelled';await put(row);
   });void flush();
+ }
+ // Explicit UI recovery keeps receipts, bodies and IDs intact.
+ async function retrySaving(){
+  const c=context;
+  if(c&&current(c)&&writerReady===c){
+   try{await lock(c,async()=>{
+    await fresh(c);
+    for(const row of await rows()){
+     requireCurrent(c);
+     if(row.userId===c.userId&&row.status==='blocked'&&row.contentVersion===c.snapshot.content_version){row.status='pending';await put(row)}
+    }
+   })}catch(e){if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR');return}
+  }
+  await wakeWriter();
+ }
+ async function acceptCurrentChanges(kind='favorite'){
+  const c=context;if(!c||!current(c)||writerReady!==c)return;
+  try{await lock(c,async()=>{
+   await fresh(c);
+   for(const row of await rows()){
+    requireCurrent(c);
+    if(row.userId===c.userId&&row.status==='conflict'&&((JSON.parse(row.eventJson).type==='favorite_set')===(kind==='favorite'))){row.status='cancelled';await put(row)}
+   }
+  });await reportActivity(c);await flush()}
+  catch(e){if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR')}
  }
  async function wakeWriter(){
   if(!writeEnabled)return;
@@ -255,10 +350,10 @@
   window.addEventListener('focus',wakeWriter);
  }
 
- window.SVProgress=Object.freeze({initialize,writeEnabled,enqueue,writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
+ window.SVProgress=Object.freeze({initialize,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
  // Local development summary only; no tokens, identities or raw state.
  if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)){
-  window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,queue:queueStatus,flush,acknowledgeConflict});
+  window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,moduleVersion,diagnostics,queue:queueStatus,flush,acknowledgeConflict});
  }
  // Explicit, synchronous local inspection. No RPC, storage write, normalization,
  // guest fallback, import payload or persistent report is produced here.

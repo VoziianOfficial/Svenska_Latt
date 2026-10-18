@@ -49,25 +49,28 @@
  function play(text){
    if(!('speechSynthesis' in window)){if(typeof toast==='function')toast('⚠️');return;}
    const t=String(text||'').trim();if(!t)return;
+   window.SVStudy?.audio(false);
    const token=++currentAudio;const queue=splitSpeech(t);
    const synth=window.speechSynthesis;synth.cancel();
    const v=preferredVoice();
    if(!v && synth.getVoices().length){if(typeof toast==='function')toast(typeof pT==='function'?pT('audioError'):'Swedish voice unavailable');return;}
    let i=0;
    const next=()=>{
-     if(token!==currentAudio || i>=queue.length)return;
+     if(token!==currentAudio)return;
+     if(i>=queue.length){window.SVStudy?.audio(false);return;}
      const utterance=new SpeechSynthesisUtterance(queue[i++]);
      utterance.lang='sv-SE';utterance.rate=SPEEDS[saved];utterance.pitch=.97;
      if(v)utterance.voice=v;
+     utterance.onstart=()=>{if(token===currentAudio)window.SVStudy?.audio(true)};
      utterance.onend=next;
-     utterance.onerror=(e)=>{if(token!==currentAudio || e.error==='canceled'||e.error==='interrupted')return;if(typeof toast==='function')toast(typeof pT==='function'?pT('audioError'):'Audio error');};
+     utterance.onerror=(e)=>{if(token!==currentAudio)return;window.SVStudy?.audio(false);if(e.error==='canceled'||e.error==='interrupted')return;if(typeof toast==='function')toast(typeof pT==='function'?pT('audioError'):'Audio error');};
      synth.speak(utterance);
    };
    next();
  }
  // Keep all previously wired pronunciation buttons intact.
  if(typeof speak==='function')speak=play;
- const stop=()=>{currentAudio++;if('speechSynthesis' in window)speechSynthesis.cancel()};
+ const stop=()=>{window.SVStudy?.audio(false);currentAudio++;if('speechSynthesis' in window)speechSynthesis.cancel()};
  function audioUI(){
    const d=words[lang()]||words.ru;
    const voices=swedishVoices();

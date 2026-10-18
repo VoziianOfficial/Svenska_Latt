@@ -102,7 +102,8 @@
 .flash-card .flash-table strong { font-size:11px!important; overflow-wrap:anywhere; }
 .flash-control-row { justify-content:center!important; gap:10px!important; flex-wrap:wrap!important; }
 .flash-control-row>.btn { min-width:95px; }
-.flash-buttons { margin:12px 0!important; gap:10px!important; }
+.flash-buttons { display:flex; justify-content:center; align-items:center; flex-wrap:nowrap; margin:12px 0!important; gap:10px!important; }
+.flash-buttons>.btn { min-width:0; }
 /* Small, tidy review/word cards: 3/2/1 columns depending on available space. */
 .words-grid { display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr))!important; align-items:start!important; gap:11px!important; }
 /* Soft colours inspired by Pippi's clothes and Villa Villekulla. */
@@ -452,3 +453,76 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
  .book-reader .reader-playback .speech-speed select{flex:1;max-width:100%;min-width:0}
  .book-reader .reader-toolbar .reader-read{width:100%;justify-self:stretch}
 }
+
+/* Confirmed word progress and quiet saving feedback. */
+/* Keep word labels clear and all four actions together at every card width. */
+.words-grid { align-items:stretch!important; }
+.words-grid .word-row { grid-template-columns:46px minmax(0,1fr)!important; grid-template-rows:auto auto!important; gap:10px 12px!important; padding:14px!important; align-content:center; }
+.words-grid .word-visual { grid-row:1 / 3!important; }
+.words-grid .word-info { grid-column:2!important; grid-row:1!important; align-self:end!important; }
+.words-grid .word-actions { grid-column:2!important; grid-row:2!important; justify-content:flex-start!important; flex-wrap:wrap; gap:7px!important; }
+.words-grid .word-actions button { display:inline-flex; align-items:center; justify-content:center; flex:0 0 34px; margin:0!important; }
+.words-grid .word-known-toggle.is-learned { background:#eef1ff!important; border-color:#dfe5ff!important; color:#4258aa!important; }
+.words-grid .word-actions button:hover { filter:brightness(.97); }
+@media(max-width:600px) {
+ .words-grid .word-row { padding:12px!important; gap:9px 11px!important; }
+}
+.btn.is-learned{background:#dbf1e5;color:#246650;opacity:1}
+.save-status{padding:12px 18px;margin-bottom:16px;background:#f1edf9;color:#574871;border-radius:16px;font-size:14px}
+.progress-filters,.profile-collections{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.progress-filters [aria-pressed="true"]{background:#dfefdf;color:#286550}
+.activity-availability{padding:12px 16px;border-radius:14px;background:#f7f3ec}
+button:disabled{cursor:default}
+
+.word-recall{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.word-recall h2{font-size:clamp(28px,5vw,42px);margin:0}
+.recall-translation{font-size:24px;margin:0;color:#386653}
+.dict-reset{margin:12px 0}
+
+/* Progress feedback must not move the vocabulary under the pointer. */
+.save-status{position:fixed;z-index:80;bottom:calc(84px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 32px);margin:0;box-shadow:0 5px 22px #44365b22}
+.word-actions{flex-wrap:wrap}
+[data-action="favorite"][aria-busy="true"]{cursor:progress}
+
+
+/* One compact learning toggle; selected state stays readable when it is read-only. */
+.words-grid .word-actions .word-known-toggle{flex:0 0 82px;width:82px!important;min-width:82px!important;font-size:12px!important;white-space:nowrap;gap:4px}
+.word-known-toggle:disabled,.btn.is-learned:disabled{opacity:1;cursor:default}
+.word-list-photo{display:block;width:46px;height:46px;object-fit:cover;border-radius:12px}
+.word-list-photo[hidden],[data-action="mark-review"][hidden],[data-action="start-review"][hidden],[data-action="flash-grade"][hidden]{display:none!important}
+button.stat-card{text-align:left;font:inherit;color:inherit;cursor:pointer}
+button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
+
+/* Study time: fixed chart/calendar geometry and quiet account consent. */
+.study-time{margin-top:18px}
+.study-time h3{margin-bottom:18px}
+.study-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:22px}
+.study-totals>div{padding:13px;border:1px solid #e0e8ef;background:#f6f8fd;border-radius:14px;min-width:0}
+.study-totals small{display:block;color:#728197;font-size:12px;margin-bottom:7px}
+.study-totals strong{display:block;font-size:clamp(17px,2vw,23px);font-variant-numeric:tabular-nums;color:#286c7c;line-height:1.35}
+.study-visuals{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.study-visuals h4{font-size:14px;min-height:32px;margin:0 0 10px}
+.study-chart{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;height:182px;align-items:end}
+.study-bar{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;padding:0;background:transparent;color:#687e91}
+.study-bar-track{display:flex;align-items:flex-end;height:150px;width:min(30px,100%);background:#f0f4f9;border-radius:8px;overflow:hidden}
+.study-bar-track>span{display:block;width:100%;background:linear-gradient(#92bdb5,#327b86);border-radius:8px;transition:height .25s}
+.study-bar small{font-size:11px;line-height:20px}
+.study-calendar-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:32px;margin-bottom:10px}
+.study-calendar-heading strong{font-size:14px;text-transform:capitalize}
+.study-calendar-heading button{height:32px;width:32px;border-radius:10px;background:#edf1fc;color:#4258aa;font-size:22px}
+.study-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;min-height:245px}
+.study-weekday{text-align:center;font-size:11px;color:#7e8b9d;line-height:22px}
+.study-day,.study-day-blank{min-height:30px;border-radius:9px}
+.study-day{padding:4px;font-size:12px;color:#708095;background:#f4f6fb;border:1px solid transparent;font-variant-numeric:tabular-nums}
+.study-day.study-tone-1{background:#e0f0e9;color:#366a60}.study-day.study-tone-2{background:#b5d8cc;color:#244e4e}.study-day.study-tone-3{background:#73ac9f;color:#123f40}.study-day.study-tone-4{background:#2d7580;color:#fff}
+.study-day[aria-current="date"]{border-color:#4167aa}.study-day[aria-pressed="true"]{outline:2px solid #6089b7;outline-offset:1px}
+.study-day-detail{min-height:38px;margin:12px 0 0;font-size:12px;line-height:1.5;color:#63788e}
+.study-preferences{margin-top:18px;padding-top:18px;border-top:1px solid #e5eaf2}
+.study-toggle{display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer}
+.study-toggle input{width:18px;height:18px;accent-color:#2d7580}
+.study-preferences .micro-note{margin:7px 0 13px;font-size:12px}
+.study-zone{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px}
+.study-zone input{padding:8px 10px;border:1px solid #dfe6ee;border-radius:10px;max-width:240px;min-width:0;background:#fff;color:#41596e;font:inherit}
+.study-message{font-size:12px;color:#7e8b9d;min-height:18px;margin:9px 0 0}
+@media(max-width:700px){.study-totals{grid-template-columns:repeat(2,minmax(0,1fr))}.study-visuals{grid-template-columns:1fr;gap:24px}.study-calendar{min-height:260px}.study-day,.study-day-blank{min-height:34px}.study-zone label{flex-basis:100%}.study-zone input{flex:1;width:0}}
+@media(prefers-reduced-motion:reduce){.study-bar-track>span{transition:none}}

@@ -1,10 +1,10 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE='2026-10-17-reader-toggle-1';
+const RELEASE='2026-10-18-known-list-3';
 const APP_CACHE=`svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE=`svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT=150;
-const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./custom-controls.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./supabase-client.js','./supabase-auth.js','./supabase-rpc.js','./supabase-progress.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
+const FILES=['./','./index.html','./style.css','./studio.css','./atelier.css','./learning-polish.css','./atelier.js','./learning-polish.js','./custom-controls.js','./flashcard-media.js','./assets/avatars/pippi-cartoon.png','./app.js','./word-icons.js','./locale-content.js','./supabase-config.js','./supabase-client.js','./supabase-auth.js','./supabase-rpc.js','./supabase-progress.js','./study-time.js','./words.json','./lessons.json','./books.json','./favicon.svg','./manifest.webmanifest','./privacy.html','./terms.html','./cookies.html'];
 const SHELL_URLS=new Set(FILES.map(file=>new URL(file,self.registration.scope).href));
 let photoWrites=Promise.resolve();
 self.addEventListener('install',event=>{
@@ -52,6 +52,13 @@ self.addEventListener('fetch',event=>{
   ((url.pathname.startsWith(iconRoot)&&url.pathname.endsWith('.webp'))||
    (url.pathname.startsWith(avatarRoot)&&/\.(png|jpe?g|webp)$/.test(url.pathname)));
  if(!SHELL_URLS.has(url.href)&&!staticImage)return;
+ // Local runtime must reflect the working tree, including during debugging.
+ // Never silently fall back to an old script when the local server is down.
+ if(['localhost','127.0.0.1','[::1]'].includes(url.hostname)&&SHELL_URLS.has(url.href)){
+  event.respondWith(fetch(request,{cache:'no-store'}).catch(()=>new Response('',{status:504,statusText:'Local server unavailable'})));
+  return;
+ }
+
  event.respondWith((async()=>{
   const cache=await caches.open(APP_CACHE);
   try{

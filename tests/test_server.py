@@ -107,16 +107,16 @@ class ServerTests(unittest.TestCase):
 
  def test_versioned_javascript_bytes_and_mime(self):
   # Fetch the exact URL reported by the browser, not a VM or mocked fetch.
-  for name in ['supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js']:
+  for name in ['supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js','study-time.js']:
    with self.subTest(name=name):
-    with urllib.request.urlopen(self.url+'/'+name+'?v=1') as response:
+    with urllib.request.urlopen(self.url+'/'+name+'?v=2026-10-18-word-state-2') as response:
      self.assertEqual(response.status,200)
      self.assertEqual(response.headers.get_content_type(),'text/javascript')
      self.assertEqual(response.read(),(ROOT/name).read_bytes())
      self.assertEqual(response.headers['Cache-Control'],'no-cache')
      self.assertEqual(response.headers['X-Content-Type-Options'],'nosniff')
   with urllib.request.urlopen(self.url+'/') as response:
-   self.assertIn('./supabase-progress.js?v=1',response.read().decode())
+   self.assertIn('./supabase-progress.js?v=2026-10-18-word-state-2',response.read().decode())
 
  def test_http_progress_module_exposes_local_debug_status(self):
   # Execute bytes fetched from the real HTTP server in a JS global context.
@@ -125,9 +125,10 @@ class ServerTests(unittest.TestCase):
    source=response.read().decode('utf-8')
   script="""const vm=require('node:vm'),assert=require('node:assert/strict');
 const source=require('node:fs').readFileSync(0,'utf8');
-const scope={window:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
+const scope={window:{},document:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
 vm.runInNewContext(source,scope,{filename:'supabase-progress.js from HTTP'});
-assert.equal(typeof scope.window.SVProgressDebug.status,'function');
+for(const method of ['status','queue','diagnostics'])assert.equal(typeof scope.window.SVProgressDebug[method],'function');
+assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-10-18-word-state-2');
 assert.equal(scope.window.SVProgressDebug.status().status,'idle');
 """
   result=subprocess.run(['node','-e',script],input=source,text=True,capture_output=True,timeout=10)
