@@ -107,7 +107,7 @@ class ServerTests(unittest.TestCase):
 
  def test_versioned_javascript_bytes_and_mime(self):
   # Fetch the exact URL reported by the browser, not a VM or mocked fetch.
-  for name in ['supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js','study-time.js']:
+  for name in ['supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js','manual-reviews.js','study-time.js']:
    with self.subTest(name=name):
     with urllib.request.urlopen(self.url+'/'+name+'?v=2026-10-18-word-state-2') as response:
      self.assertEqual(response.status,200)
@@ -116,7 +116,9 @@ class ServerTests(unittest.TestCase):
      self.assertEqual(response.headers['Cache-Control'],'no-cache')
      self.assertEqual(response.headers['X-Content-Type-Options'],'nosniff')
   with urllib.request.urlopen(self.url+'/') as response:
-   self.assertIn('./supabase-progress.js?v=2026-10-18-word-state-2',response.read().decode())
+   html=response.read().decode()
+   self.assertRegex(html,r'\./supabase-progress\.js\?v=[^" ]+')
+   self.assertIn('./study-time.js?v=2',html)
 
  def test_http_progress_module_exposes_local_debug_status(self):
   # Execute bytes fetched from the real HTTP server in a JS global context.

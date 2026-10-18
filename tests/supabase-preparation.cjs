@@ -787,20 +787,12 @@ test('word status revision conflicts never silently overwrite a newer decision',
  assert.equal(w.snapshots.at(-1).s.xp,8);
 });
 
-test('focused recall uses SRS grades without clearing known or adding XP',async()=>{
- const w=await wordStateWriter();await loadWordUI(w);await send(w,'mark_known');
- vm.runInContext("navigate('word-review','v-arbeta');renderWordReview()",w.h.ctx);
- await vm.runInContext("gradeWordReview(true)",w.h.ctx);
- assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,1,'grade requires revealing the translation');
- vm.runInContext('reviewExercise.revealed=true',w.h.ctx);
- await vm.runInContext('gradeWordReview(true)',w.h.ctx);await w.h.ctx.SVProgressDebug.flush();
- assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2,JSON.stringify({queue:await w.h.ctx.SVProgressDebug.queue(),exercise:vm.runInContext('reviewExercise',w.h.ctx)}));
- assert.ok(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx),JSON.stringify(await w.h.ctx.SVProgressDebug.queue()));
- assert.equal(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx).rep,1);assert.equal(vm.runInContext('state.known.length',w.h.ctx),1);assert.equal(vm.runInContext('state.xp',w.h.ctx),8);
- await vm.runInContext('gradeWordReview(true)',w.h.ctx);assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,2,'one grade per exercise');
- vm.runInContext("navigate('word-review','v-arbeta');renderWordReview();reviewExercise.revealed=true",w.h.ctx);
- await vm.runInContext('gradeWordReview(false)',w.h.ctx);await w.h.ctx.SVProgressDebug.flush();
- assert.equal(vm.runInContext("state.reviews['v-arbeta']",w.h.ctx).rep,0);assert.equal(vm.runInContext('state.known.length',w.h.ctx),1);assert.equal(vm.runInContext('state.xp',w.h.ctx),8);
+test('existing review_grade events retain SRS semantics without clearing known or adding XP',async()=>{
+ const w=await wordStateWriter();await send(w,'mark_known');await send(w,'review_grade','v-arbeta',true);
+ assert.equal(w.server.account(A).snapshot.state.reviews['v-arbeta'].rep,1);
+ await send(w,'review_grade','v-arbeta',false);
+ assert.equal(w.server.account(A).snapshot.state.reviews['v-arbeta'].rep,0);
+ assert.equal(w.server.account(A).snapshot.state.known.length,1);assert.equal(w.server.account(A).snapshot.state.xp,8);
 });
 
 test('guest unmark preserves history, favorites and XP after saving and rereading',async()=>{
@@ -836,11 +828,11 @@ test('a stale UI identity cannot send an unmark to the previous account',async()
  assert.equal(w.server.account(A).snapshot.state.known.length,1);
 });
 
-test('review today opens a supported single-word recall instead of an unsynced session',async()=>{
+test('automatic SRS words cannot start manual review when manual queue is unavailable',async()=>{
  const w=await wordStateWriter();await loadWordUI(w);
  vm.runInContext("state.reviews={'v-arbeta':{due:0,rep:0,interval:0,ease:2.5}}",w.h.ctx);
  await vm.runInContext("action({dataset:{action:'start-review'}})",w.h.ctx);
- assert.equal(vm.runInContext("route+'|'+routeParam",w.h.ctx),'word-review|v-arbeta');
+ assert.equal(vm.runInContext("route+'|'+routeParam",w.h.ctx),'home|');
  assert.equal(vm.runInContext('quiz.active',w.h.ctx),false);
  assert.equal((await w.h.ctx.SVProgressDebug.queue()).events.length,0,'opening exercise does not record a result');
 });
@@ -882,4 +874,18 @@ test('in-flight study response is discarded when account changes',async()=>{
  h.emit('SIGNED_IN',token(B));finish({data:{available:true},error:null});
  await assert.rejects(pending,rejectCode('AUTH_CONTEXT_CHANGED'));
  assert.equal(h.records.rpc[0].headers.Authorization,'Bearer '+token(A).access_token);
+});
+
+
+test('hung progress read times out, leaves stored progress intact and ignores a late response',async()=>{
+ const h=harness({initial:token(A),progress:true,hostname:'localhost'});await h.ctx.SVAuth.initialize();
+ let release;h.rpcResult(()=>new Promise(r=>release=r));
+ const originalTimeout=h.ctx.setTimeout;h.ctx.setTimeout=(fn,ms)=>originalTimeout(fn,ms===8000?10:ms);
+ await h.ctx.SVProgress.initialize();
+ assert.equal(h.ctx.SVProgressDebug.status().status,'error');
+ assert.equal(h.data.get('sv-guest-v2'),'original-guest');
+ release({data:cloudSnapshot(),error:null});await new Promise(r=>setImmediate(r));
+ assert.equal(h.ctx.SVProgressDebug.status().status,'error');
+ h.rpcResult(()=>({data:cloudSnapshot(),error:null}));await h.ctx.SVProgressDebug.retry();
+ assert.equal(h.ctx.SVProgressDebug.status().status,'ready');
 });

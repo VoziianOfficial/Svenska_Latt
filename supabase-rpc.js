@@ -42,5 +42,7 @@
  function studySettings({expectedUserId,enabled,timezone,generation}={}){return call('sl_study_settings',{p_enabled:enabled,p_timezone:timezone,p_generation:generation},expectedUserId)}
  function studyOpen({expectedUserId,leaseId}={}){return call('sl_study_open',{p_lease_id:leaseId},expectedUserId)}
  function studyCommit({expectedUserId,id,leaseId,segments,close=false}={}){return call('sl_study_commit',{p_id:id,p_lease_id:leaseId,p_segments:segments,p_close:close},expectedUserId)}
- window.SVRpc=Object.freeze({getProgress,applyEvent,importProgress,studyStatus,studySettings,studyOpen,studyCommit});
+ function reviewList({expectedUserId}={}){return call('sl_review_list',{},expectedUserId)}
+ function reviewChange({expectedUserId,requestId,wordId,action,version}={}){return call('sl_review_change',{p_request_id:requestId,p_word_id:wordId,p_action:action,p_version:version},expectedUserId)}
+ window.SVRpc=Object.freeze({reviewList,reviewChange,getProgress,applyEvent,importProgress,studyStatus,studySettings,studyOpen,studyCommit});
 })();

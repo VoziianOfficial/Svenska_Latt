@@ -295,7 +295,8 @@
 /* Month navigation for the complete saved activity history. */
 .calendar-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:14px 0 8px}
 .calendar-label{font-weight:800;text-align:center;text-transform:capitalize;min-width:0}
-.calendar-controls .calendar-arrow{flex:0 0 42px;min-width:42px;min-height:42px;font-size:24px!important;padding:4px!important;line-height:1!important}
+.calendar-controls .calendar-arrow{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;min-width:42px;min-height:42px;padding:0!important;line-height:1!important}
+.calendar-arrow svg{display:block;width:20px;height:20px;flex:none}
 .calendar-controls .calendar-arrow:disabled{opacity:.35;cursor:default;transform:none;box-shadow:none!important}
 .calendar-reset{margin-top:10px}
 
@@ -470,6 +471,12 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
 .btn.is-learned{background:#dbf1e5;color:#246650;opacity:1}
 .save-status{padding:12px 18px;margin-bottom:16px;background:#f1edf9;color:#574871;border-radius:16px;font-size:14px}
 .progress-filters,.profile-collections{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.profile-collections .btn{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px}
+.profile-collections .collection-icon{display:block;width:22px;height:22px;flex:0 0 22px;stroke-width:2.2}
+.profile-collections .collection-icon--repeat{color:#6870c7}
+.profile-collections .collection-icon--learned{color:#26966b;stroke-width:2.8}
+.profile-collections .collection-icon--favorite{color:#bd8a1e;fill:#f5c451;stroke-width:1.5}
+.profile-collections .collection-arrow{display:block;width:18px;height:18px;flex:0 0 18px;margin-left:3px;color:#26966b;stroke-width:2}
 .progress-filters [aria-pressed="true"]{background:#dfefdf;color:#286550}
 .activity-availability{padding:12px 16px;border-radius:14px;background:#f7f3ec}
 button:disabled{cursor:default}
@@ -493,36 +500,38 @@ button:disabled{cursor:default}
 button.stat-card{text-align:left;font:inherit;color:inherit;cursor:pointer}
 button.stat-card:focus-visible{outline:3px solid #387c84;outline-offset:3px}
 
-/* Study time: fixed chart/calendar geometry and quiet account consent. */
-.study-time{margin-top:18px}
-.study-time h3{margin-bottom:18px}
-.study-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:22px}
-.study-totals>div{padding:13px;border:1px solid #e0e8ef;background:#f6f8fd;border-radius:14px;min-width:0}
-.study-totals small{display:block;color:#728197;font-size:12px;margin-bottom:7px}
-.study-totals strong{display:block;font-size:clamp(17px,2vw,23px);font-variant-numeric:tabular-nums;color:#286c7c;line-height:1.35}
-.study-visuals{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
-.study-visuals h4{font-size:14px;min-height:32px;margin:0 0 10px}
-.study-chart{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;height:182px;align-items:end}
-.study-bar{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;padding:0;background:transparent;color:#687e91}
-.study-bar-track{display:flex;align-items:flex-end;height:150px;width:min(30px,100%);background:#f0f4f9;border-radius:8px;overflow:hidden}
-.study-bar-track>span{display:block;width:100%;background:linear-gradient(#92bdb5,#327b86);border-radius:8px;transition:height .25s}
-.study-bar small{font-size:11px;line-height:20px}
-.study-calendar-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:32px;margin-bottom:10px}
-.study-calendar-heading strong{font-size:14px;text-transform:capitalize}
-.study-calendar-heading button{height:32px;width:32px;border-radius:10px;background:#edf1fc;color:#4258aa;font-size:22px}
-.study-calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;min-height:245px}
-.study-weekday{text-align:center;font-size:11px;color:#7e8b9d;line-height:22px}
-.study-day,.study-day-blank{min-height:30px;border-radius:9px}
-.study-day{padding:4px;font-size:12px;color:#708095;background:#f4f6fb;border:1px solid transparent;font-variant-numeric:tabular-nums}
-.study-day.study-tone-1{background:#e0f0e9;color:#366a60}.study-day.study-tone-2{background:#b5d8cc;color:#244e4e}.study-day.study-tone-3{background:#73ac9f;color:#123f40}.study-day.study-tone-4{background:#2d7580;color:#fff}
-.study-day[aria-current="date"]{border-color:#4167aa}.study-day[aria-pressed="true"]{outline:2px solid #6089b7;outline-offset:1px}
-.study-day-detail{min-height:38px;margin:12px 0 0;font-size:12px;line-height:1.5;color:#63788e}
-.study-preferences{margin-top:18px;padding-top:18px;border-top:1px solid #e5eaf2}
-.study-toggle{display:flex;align-items:center;gap:10px;font-size:14px;cursor:pointer}
-.study-toggle input{width:18px;height:18px;accent-color:#2d7580}
-.study-preferences .micro-note{margin:7px 0 13px;font-size:12px}
-.study-zone{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px}
-.study-zone input{padding:8px 10px;border:1px solid #dfe6ee;border-radius:10px;max-width:240px;min-width:0;background:#fff;color:#41596e;font:inherit}
-.study-message{font-size:12px;color:#7e8b9d;min-height:18px;margin:9px 0 0}
-@media(max-width:700px){.study-totals{grid-template-columns:repeat(2,minmax(0,1fr))}.study-visuals{grid-template-columns:1fr;gap:24px}.study-calendar{min-height:260px}.study-day,.study-day-blank{min-height:34px}.study-zone label{flex-basis:100%}.study-zone input{flex:1;width:0}}
-@media(prefers-reduced-motion:reduce){.study-bar-track>span{transition:none}}
+/* Study time shares the existing activity calendar and its activity colors. */
+.study-summary{margin-top:16px;border-top:1px solid var(--line,#e3e2eb);padding-top:14px}
+/* Study totals follow the account's current day, week and month. */
+.study-totals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.study-totals>.study-stat{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:16px;background:#fafbfe;border:1px solid #e4e8f1;border-radius:16px;min-width:0}
+.study-totals>.study-stat--today{background:linear-gradient(135deg,#f0edff,#f8f6ff);border-color:#ded8fa}
+.study-totals small{display:block;color:#59677e;font-size:12px;font-weight:700;line-height:1.4}
+.study-totals strong{display:block;font-size:clamp(20px,2.2vw,28px);font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.03em;color:#253954;line-height:1.2;overflow-wrap:anywhere}
+.study-stat--today strong{color:#6255b5}
+.study-stat-period{display:block;margin-top:auto;color:#728097;font-size:10px;line-height:1.5}
+.study-toggle{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
+.study-toggle input[type=checkbox]{appearance:none;-webkit-appearance:none;display:block;flex:0 0 20px;width:20px;height:20px;min-width:20px;min-height:20px;padding:0;margin:0;border:1.5px solid #aaa4cf;border-radius:6px;background:#fff;box-shadow:none}
+.study-toggle input[type=checkbox]:checked{border-color:#625bd0;background:#625bd0 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='m5 10 3.5 3.5L15 6.5' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 18px 18px no-repeat}
+.study-toggle input[type=checkbox]::after{content:none}
+.study-toggle input:disabled{cursor:default;opacity:.5}
+.study-message{font-size:11px;line-height:1.5;color:#728197;min-height:3em;margin:6px 0 0}
+.study-tooltip{position:fixed;z-index:100;pointer-events:none;width:max-content;max-width:calc(100vw - 16px);padding:10px 13px;border:1px solid #dfe8ed;border-radius:12px;background:#fbfdfd;color:#456675;box-shadow:0 5px 20px #334d6520;font-size:12px;line-height:1.6}
+.study-tooltip strong,.study-tooltip span{display:block}
+.study-tooltip[hidden]{display:none}
+[data-study-date]{cursor:pointer}
+[data-study-date]:focus-visible{outline:2px solid #6089b7;outline-offset:2px}
+@media(max-width:600px){.study-totals{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Personal review queue: stable controls and compact mobile rows. */
+.manual-queue-status{min-height:2.2em;font-size:.88rem;color:var(--muted);padding:8px 0;overflow-wrap:anywhere}
+.manual-review-list{display:grid;gap:12px}
+.manual-review-row{display:flex;align-items:center;gap:16px;padding:18px;border:1px solid var(--line,#e3e2eb);border-radius:20px;background:var(--panel,#fff)}
+.manual-review-row .word-info{flex:1;min-width:0;display:grid;gap:5px;overflow-wrap:anywhere}
+.manual-review-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.manual-review-row .word-visual{flex-shrink:0;width:64px;height:64px}
+/* Keep the repeat symbol compact and aligned with the button label. */
+.btn .review-button-icon{width:16px;height:16px;flex:0 0 16px}
+.words-grid .word-actions .manual-review-add{flex:0 0 100px;width:100px!important;min-width:100px!important;white-space:nowrap;font-size:12px!important;padding:0 6px!important}
+[data-action="mark-review"].is-queued,[data-action="flash-grade"].is-queued{background:#e5f2ed!important;color:#397768!important;opacity:1;box-shadow:inset 0 0 0 1px #a7cdbf;cursor:default}
+@media(max-width:600px){.manual-review-row{flex-wrap:wrap;padding:14px;gap:12px}.manual-review-actions{width:100%;justify-content:space-between}}

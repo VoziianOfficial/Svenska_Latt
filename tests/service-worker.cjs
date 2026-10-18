@@ -55,7 +55,7 @@ async function load(handlers,path,destination='image',method='GET'){
  assert.equal((await load(handlers,'assets/flashcards/unseen.webp')).status,504);
  assert.equal((await load(handlers,'style.css?v=999','style')).status,200,'versioned URL must find precache');
  assert.equal(await load(handlers,'api/session',''),undefined,'API must bypass caches');
- for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','study-time.js']){
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','manual-reviews.js','study-time.js']){
   assert.equal((await load(handlers,file+'?v=1','script')).status,200,'auth preparation modules available offline');
  }
  assert.equal(await load(handlers,'https://example.supabase.co/auth/v1/user',''),undefined,'Auth GET bypasses worker');

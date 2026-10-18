@@ -68,7 +68,7 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
-            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql'):
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180010_study_time_default.sql'):
                 continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
@@ -82,6 +82,10 @@ def main():
         study_upgrade = run_file(ROOT / 'supabase/tests/004_study_time.sql')
         upgrade_assertions += study_upgrade.stderr.count('PASS:')
         word_upgrade = run_file(ROOT / 'supabase/tests/003_word_state_upgrade.sql')
+        review_upgrade = run_file(ROOT / 'supabase/tests/005_manual_review_queue.sql')
+        upgrade_assertions += review_upgrade.stderr.count('PASS:')
+        defaults_upgrade = run_file(ROOT / 'supabase/tests/006_study_time_default.sql')
+        upgrade_assertions += defaults_upgrade.stderr.count('PASS:')
         assertions = result.stderr.count('PASS:') + upgrade_assertions + word_upgrade.stderr.count('PASS:')
 
         sql(f"insert into auth.users(id,email) values('{USER}','sl-concurrency@example.invalid');")
@@ -145,6 +149,32 @@ def main():
         assert before_study == after_study, (before_study, after_study)
         print('PASS: overlapping parallel periods rejected, same UUID is idempotent, XP/progress unchanged', flush=True)
 
+        # Manual queue: real competing connections, including simultaneous grading.
+        def queue_change(request_id, action, version=None):
+            expected = 'null' if version is None else f"'{version}'"
+            command = authenticated(f"select public.sl_review_change('{request_id}','v-arbeta','{action}',{expected});")
+            return json.loads(sql(command).stdout.strip().splitlines()[-1])
+        add_id = '94000000-0000-0000-0000-000000000001'
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            responses = list(pool.map(lambda _: queue_change(add_id, 'add'), range(2)))
+        assert sum(r['duplicate'] for r in responses) == 1
+        assert all(len(r['queue']['entries']) == 1 for r in responses)
+        print('PASS: concurrent queue UUID retries produce one durable entry', flush=True)
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            responses = list(pool.map(lambda i: queue_change(f'94000000-0000-0000-0000-00000000000{i}', 'add'), (2, 3)))
+        assert all(not r['conflict'] and len(r['queue']['entries']) == 1 for r in responses)
+        print('PASS: simultaneous adds with different UUIDs cannot duplicate a word', flush=True)
+        before_grade = json.loads(sql(authenticated('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            responses = list(pool.map(lambda i: queue_change(f'94000000-0000-0000-0000-00000000000{i}', 'remember', add_id), (4, 5)))
+        assert sum(r['conflict'] for r in responses) == 1
+        assert all(not r['queue']['entries'][0]['active'] for r in responses)
+        after_grade = json.loads(sql(authenticated('select public.sl_get_progress();')).stdout.strip().splitlines()[-1])
+        assert after_grade['revision'] == before_grade['revision'] + 1
+        assert after_grade['state']['xp'] == before_grade['state']['xp']
+        assert after_grade['state']['known'] == before_grade['state']['known']
+        print('PASS: two devices grading same queue version commit exactly one SRS event', flush=True)
+
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')
         legacy_base = [x if x != 'postgres' or i != base.index('-d')+1 else 'legacy_guard_test' for i, x in enumerate(base)]
@@ -152,9 +182,9 @@ def main():
         guard = subprocess.run(legacy_base + ['-f', str(migrations[0])], env=env, text=True, capture_output=True)
         assert guard.returncode and 'Legacy learning_progress exists' in guard.stderr
         print('PASS: legacy installation guard prevents accidental mixed schemas', flush=True)
-        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 6,
+        (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 9,
             'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False}, indent=2))
-        print(f'PASS: {assertions} SQL assertions, 6 concurrency scenarios, legacy guard; no remote connection', flush=True)
+        print(f'PASS: {assertions} SQL assertions, 9 concurrency scenarios, legacy guard; no remote connection', flush=True)
     finally:
         if started:
             subprocess.run(['pg_ctl', '-D', str(data), '-m', 'immediate', '-w', 'stop'],

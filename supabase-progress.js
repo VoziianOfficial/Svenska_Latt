@@ -66,14 +66,18 @@
   if(c.status==='ready'||(c.status==='error'&&!retry))return Promise.resolve(summary());
   c.status='loading';c.error=null;c.attempts++;
   // Defer the read so pending is assigned before any Auth events it triggers.
-  c.pending=Promise.resolve().then(()=>window.SVRpc.getProgress({expectedUserId:c.userId})).then(value=>{
+  let readTimer;
+  c.pending=Promise.race([
+   Promise.resolve().then(()=>window.SVRpc.getProgress({expectedUserId:c.userId})),
+   new Promise((_,reject)=>{readTimer=setTimeout(()=>reject(Object.assign(new Error('RPC_READ_TIMEOUT'),{code:'RPC_READ_TIMEOUT'})),8000)})
+  ]).then(value=>{
    if(!current(c))return;
    c.snapshot=validate(value);c.receivedAt=new Date().toISOString();c.status='ready';
   }).catch(error=>{
    if(!current(c))return;
    c.snapshot=null;c.status='error';c.error=diagnostic(error);
    try{onError?.(c.error.message)}catch(_){}
-  }).finally(()=>{c.pending=null}).then(async()=>{if(current(c))await prepareWriter();return summary()});
+  }).finally(()=>{clearTimeout(readTimer);c.pending=null}).then(async()=>{if(current(c))await prepareWriter();return summary()});
   return c.pending;
  }
  function initialize(options={}){

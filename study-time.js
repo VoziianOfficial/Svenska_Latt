@@ -1,4 +1,4 @@
-/* Local preparation only. Explicit account consent + loopback gate + server v1 required. */
+/* Account study time: user preferences, server leases and durable interval receipts. */
 'use strict';
 (() => {
  const IDLE=90000,READ_IDLE=300000,AUDIO_LIMIT=1200000,MAX_GAP=2500;
@@ -24,9 +24,8 @@
  const core={period,activeUntil,addDays,validate,IDLE,READ_IDLE,AUDIO_LIMIT};
  // The same deterministic policy runs in node tests, without browser side effects.
  if(typeof module!=='undefined'&&module.exports){module.exports=core;return}
- const dev=['localhost','127.0.0.1','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)&&
-  (()=>{try{return localStorage.getItem('sv-study-time-dev-v1')==='enabled'}catch(_){return false}})();
- let c=null,dbPromise=null,running=false,month=null,selection=null;
+ let c=null,dbPromise=null,running=false,month=null;
+ const browserZone=()=>Intl.DateTimeFormat().resolvedOptions().timeZone;
  const uuid=()=>crypto.randomUUID();
  const now=()=>performance.now();
  async function request(promise){
@@ -75,9 +74,10 @@
      if(x.lease?.id===row.leaseId&&integer(response.end_ms)&&integer(response.server_ms)&&!response.closed){
       x.lease.end_ms=response.end_ms; // Keep original monotonic anchor: replayed receipts must not reset time.
      }
-     await store('readwrite',s=>s.delete(row.sequence));
+     await store('readwrite',s=>s.delete(row.sequence));x.writeError=false;
     }catch(e){
      if(!current(x))return;
+     x.writeError=true;
      if(['22023','42501'].includes(e.code)){
       // Preserve rejected records for review. Never reinterpret/reassign them to a new session/account.
       row.status='rejected';await store('readwrite',s=>s.put(row));
@@ -117,28 +117,30 @@
      releaseLock(x);return;
     }
     if(!integer(grant.server_ms)||!integer(grant.end_ms)||grant.end_ms<=grant.server_ms||grant.end_ms>grant.server_ms+90000||grant.generation!==x.snapshot.generation)throw Error('INVALID_STUDY_GRANT');
-    x.lease=grant;x.anchor={server:grant.server_ms,local:now()};x.previous=now();x.persisted=now();x.sent=now();
+    x.writeError=false;x.lease=grant;x.anchor={server:grant.server_ms,local:now()};x.previous=now();x.persisted=now();x.sent=now();
     try{sessionStorage.setItem('sv-study-lease:'+x.userId,id)}catch(_){}
     await held;
-   }catch(_){releaseLock(x)}
+   }catch(_){if(current(x))x.writeError=true;releaseLock(x)}
   }).catch(()=>{}).finally(()=>{x.acquiring=false});
  }
  async function refresh(x){
-  if(!current(x)||x.refreshing)return;
-  x.refreshing=true;
-  try{const s=validate(await request(window.SVRpc.studyStatus({expectedUserId:x.userId,month})));if(current(x)){x.snapshot=s;x.state='ready';paint()}}
-  catch(_){if(current(x)){x.state=x.snapshot?'ready':'unavailable';paint()}}
+  if(!x||!current(x)||x.refreshing)return;
+  x.refreshing=true;const requestedMonth=month;
+  try{const s=validate(await request(window.SVRpc.studyStatus({expectedUserId:x.userId,month:requestedMonth})));if(current(x)){x.snapshot=s;x.state='ready';x.readError=false;paint()}}
+  catch(_){if(current(x)){x.state=x.snapshot?'ready':'unavailable';x.readError=true;paint()}}
   finally{x.refreshing=false}
+  if(current(x)&&month!==requestedMonth){void refresh(x);return}
+  if(current(x)&&x.snapshot&&x.snapshot.timezone!==browserZone()&&!x.saving&&!x.saveError)await settings(x.snapshot.enabled,browserZone(),true);
  }
  async function tick(){
   if(running)return;running=true;
   try{
-   const x=c;if(!x||!current(x)||!dev)return;
+   const x=c;if(!x||!current(x))return;
    const p=now(),r=routeNow();
    if(r!==x.route){x.route=r;x.previous=p;x.audioUntil=0;x.lastInput=p}
    const eligible=visible()&&learning.has(r)&&p<activeUntil({route:r,lastInput:x.lastInput,audioUntil:x.audioUntil})&&x.snapshot?.enabled&&!paused(x)&&!x.saving&&x.state==='ready';
    if(!x.lease){
-    if(p-x.sent>20000){x.sent=p;void drain(x).catch(()=>{});if(routeNow()==='profile')await refresh(x)}
+    if(p-x.sent>20000){x.sent=p;void drain(x).catch(()=>{});await refresh(x)}
     if(eligible&&p-x.attempt>10000){x.attempt=p;await acquire(x)}
     return;
    }
@@ -153,15 +155,15 @@
    }
    if(!eligible||x.stopRequested||stamp(p)>=x.lease.end_ms){await stop(x);return}
    if(p-x.persisted>=5000)await enqueue(x);
-   if(p-x.sent>=20000){x.sent=p;x.renew=true;await enqueue(x);void drain(x).catch(()=>{})}
-  }catch(_){if(c){c.stopRequested=true;releaseLock(c)}}finally{running=false}
+   if(p-x.sent>=20000){x.sent=p;x.renew=true;await enqueue(x);void drain(x).catch(()=>{});void refresh(x)}
+  }catch(_){if(c){c.writeError=true;c.stopRequested=true;releaseLock(c)}}finally{running=false}
  }
  function authChanged(){
   const a=window.SVAuth?.getState();
   if(c&&a?.user?.id===c.userId&&a.identityRevision===c.revision)return;
   if(c){releaseLock(c);c.segments=[];c.audioUntil=0}
-  c=null;month=null;selection=null;
-  if(a?.user&&dev){const p=now();c={userId:a.user.id,revision:a.identityRevision,state:'loading',snapshot:null,lease:null,segments:[],lastInput:p,previous:p,audioUntil:0,route:routeNow(),attempt:-Infinity,sent:p};void refresh(c)}
+  c=null;month=null;
+  if(a?.user){const p=now();c={userId:a.user.id,revision:a.identityRevision,state:'loading',snapshot:null,lease:null,segments:[],lastInput:p,previous:p,audioUntil:0,route:routeNow(),attempt:-Infinity,sent:p};void refresh(c)}
   paint();
  }
  // Trusted input only, inside the learning surface. Pointer movement alone is not learning.
@@ -185,67 +187,81 @@
  document.addEventListener('playing',e=>{if(e.target.closest?.('#page')&&e.target.matches?.('audio,video'))audio(true)},true);
  for(const event of ['pause','ended','error'])document.addEventListener(event,e=>{if(e.target.matches?.('audio,video'))audio(false)},true);
  const words={
-  ru:{title:'Время со шведским',today:'Сегодня',week:'Эта неделя',month:'Этот месяц',all:'Всего',seven:'Последние 7 дней',track:'Учитывать учебное время',hint:'Только во время занятий. Можно выключить в любой момент.',unavailable:'Учёт времени пока недоступен.',loading:'Загружаем время занятий…',zone:'Часовой пояс',save:'Сохранить',empty:'Занятий не было',hour:'ч',minute:'мин',second:'с',prev:'Предыдущий месяц',next:'Следующий месяц',error:'Не удалось сохранить. Попробуй ещё раз.'},
-  en:{title:'Time with Swedish',today:'Today',week:'This week',month:'This month',all:'All time',seven:'Last 7 days',track:'Track study time',hint:'Only while studying. Turn it off whenever you like.',unavailable:'Study time is not available yet.',loading:'Loading study time…',zone:'Time zone',save:'Save',empty:'No study time',hour:'h',minute:'min',second:'s',prev:'Previous month',next:'Next month',error:'Could not save. Please try again.'},
-  sv:{title:'Tid med svenska',today:'Idag',week:'Denna vecka',month:'Denna månad',all:'Totalt',seven:'Senaste 7 dagarna',track:'Registrera studietid',hint:'Bara under studier. Stäng av när du vill.',unavailable:'Studietid är inte tillgänglig ännu.',loading:'Laddar studietid…',zone:'Tidszon',save:'Spara',empty:'Ingen studietid',hour:'tim',minute:'min',second:'s',prev:'Föregående månad',next:'Nästa månad',error:'Kunde inte spara. Försök igen.'},
-  uk:{title:'Час зі шведською',today:'Сьогодні',week:'Цей тиждень',month:'Цей місяць',all:'Усього',seven:'Останні 7 днів',track:'Враховувати навчальний час',hint:'Лише під час навчання. Можна вимкнути будь-коли.',unavailable:'Облік часу поки недоступний.',loading:'Завантажуємо час занять…',zone:'Часовий пояс',save:'Зберегти',empty:'Занять не було',hour:'год',minute:'хв',second:'с',prev:'Попередній місяць',next:'Наступний місяць',error:'Не вдалося зберегти. Спробуй ще раз.'}
+  ru:{title:'Время со шведским',today:'Сегодня',week:'Эта неделя',month:'Этот месяц',all:'За всё время',seven:'Последние 7 дней',retry:'Попробовать снова',track:'Учитывать учебное время',hint:'Только во время занятий. Можно выключить в любой момент.',unavailable:'Учёт времени пока недоступен.',loading:'Загружаем время занятий…',zone:'Часовой пояс',save:'Сохранить',empty:'Нет записанного времени',study:'Обучение',hour:'ч',minute:'мин',second:'с',prev:'Предыдущий месяц',next:'Следующий месяц',error:'Не удалось сохранить. Попробуй ещё раз.'},
+  en:{title:'Time with Swedish',today:'Today',week:'This week',month:'This month',all:'All time',seven:'Last 7 days',retry:'Try again',track:'Track study time',hint:'Only while studying. Turn it off whenever you like.',unavailable:'Study time is not available yet.',loading:'Loading study time…',zone:'Time zone',save:'Save',empty:'No recorded time',study:'Study',hour:'h',minute:'min',second:'s',prev:'Previous month',next:'Next month',error:'Could not save. Please try again.'},
+  sv:{title:'Tid med svenska',today:'Idag',week:'Denna vecka',month:'Denna månad',all:'Totalt',seven:'Senaste 7 dagarna',retry:'Försök igen',track:'Registrera studietid',hint:'Bara under studier. Stäng av när du vill.',unavailable:'Studietid är inte tillgänglig ännu.',loading:'Laddar studietid…',zone:'Tidszon',save:'Spara',empty:'Ingen registrerad tid',study:'Studier',hour:'tim',minute:'min',second:'s',prev:'Föregående månad',next:'Nästa månad',error:'Kunde inte spara. Försök igen.'},
+  uk:{title:'Час зі шведською',today:'Сьогодні',week:'Цей тиждень',month:'Цей місяць',all:'Усього',seven:'Останні 7 днів',retry:'Спробувати знову',track:'Враховувати навчальний час',hint:'Лише під час навчання. Можна вимкнути будь-коли.',unavailable:'Облік часу поки недоступний.',loading:'Завантажуємо час занять…',zone:'Часовий пояс',save:'Зберегти',empty:'Немає записаного часу',study:'Навчання',hour:'год',minute:'хв',second:'с',prev:'Попередній місяць',next:'Наступний місяць',error:'Не вдалося зберегти. Спробуй ще раз.'}
  };
  const lang=()=>typeof locale4==='function'?locale4():'ru';
  const dictionary=()=>words[lang()]||words.ru;
+ function secondsLabel(n){
+  const language=lang(),form=new Intl.PluralRules(language).select(n);
+  const units={ru:{one:'секунда',few:'секунды',many:'секунд',other:'секунды'},uk:{one:'секунда',few:'секунди',many:'секунд',other:'секунди'},en:{one:'second',other:'seconds'},sv:{one:'sekund',other:'sekunder'}};
+  const labels=units[language]||units.ru;
+  return labels[form]||labels.other;
+ }
  function duration(ms,exact=false){
   const d=dictionary(),n=Math.floor(ms/1000),h=Math.floor(n/3600),m=Math.floor(n%3600/60),s=n%60;
   if(!exact&&h)return `${h} ${d.hour} ${m} ${d.minute}`;
   if(!exact&&m)return `${m} ${d.minute}`;
-  return [h?`${h} ${d.hour}`:'',m?`${m} ${d.minute}`:'',`${s} ${d.second}`].filter(Boolean).join(' ');
+  return [h?`${h} ${d.hour}`:'',m?`${m} ${d.minute}`:'',`${s} ${secondsLabel(s)}`].filter(Boolean).join(' ');
  }
  const dateFormat=(day,options)=>new Intl.DateTimeFormat(lang(),{...options,timeZone:'UTC'}).format(new Date(day+'T12:00:00Z'));
- function label(day,s){const ms=s.days[day]||0;return dateFormat(day,{day:'numeric',month:'long',year:'numeric'})+' · '+(ms?duration(ms,true):dictionary().empty+' · '+duration(0,true))}
+ function dayText(day){
+  const s=c?.snapshot,d=dictionary();
+  const loaded=s&&s.month.slice(0,7)===day.slice(0,7)&&month===s.month&&!c.readError;
+  return loaded?(s.days[day]?d.study+': '+duration(s.days[day]):d.empty):(c?.readError?d.unavailable:d.loading);
+ }
+ function periodText(key,s){
+  if(!s)return '';
+  if(key==='all')return ({ru:'С начала обучения',en:'Since you started',sv:'Sedan starten',uk:'Від початку навчання'})[lang()]||'Since you started';
+  const end=s.today;
+  const start=key==='today'?end:key==='month'?end.slice(0,8)+'01':addDays(end,-((new Date(end+'T12:00:00Z').getUTCDay()+6)%7));
+  const format=day=>dateFormat(day,{day:'numeric',month:'short'});
+  return start===end?format(end):format(start)+' – '+format(end);
+ }
  function panel(){
   const d=dictionary(),s=c&&current(c)?c.snapshot:null;
-  const ready=!!s,sel=s&&(selection?.startsWith(s.month.slice(0,7))?selection:s.month===s.today.slice(0,7)+'-01'?s.today:s.month);
-  let chart='',calendar='';
-  if(s){
-   const days=Array.from({length:7},(_,i)=>addDays(s.today,i-6)),max=Math.max(1,...days.map(day=>s.days[day]||0));
-   chart=days.map(day=>`<button type="button" class="study-bar" data-study-day="${day}" title="${escape(label(day,s))}" aria-label="${escape(label(day,s))}"><span class="study-bar-track"><span style="height:${100*(s.days[day]||0)/max}%"></span></span><small>${escape(dateFormat(day,{weekday:'short'}))}</small></button>`).join('');
-   const first=new Date(s.month+'T12:00:00Z'),offset=(first.getUTCDay()+6)%7;
-   const count=new Date(Date.UTC(first.getUTCFullYear(),first.getUTCMonth()+1,0)).getUTCDate();
-   const headings=Array.from({length:7},(_,i)=>`<span class="study-weekday">${escape(dateFormat(addDays('2026-10-19',i),{weekday:'short'}))}</span>`).join('');
-   calendar=headings+Array.from({length:42},(_,i)=>{
-    const num=i-offset+1;if(num<1||num>count)return '<span class="study-day-blank" aria-hidden="true"></span>';
-    const day=addDays(s.month,num-1),ms=s.days[day]||0,intensity=ms===0?0:ms<300000?1:ms<900000?2:ms<1800000?3:4;
-    return `<button type="button" class="study-day study-tone-${intensity}" data-study-day="${day}" title="${escape(label(day,s))}" aria-label="${escape(label(day,s))}" aria-pressed="${day===sel}" ${day===s.today?'aria-current="date"':''}>${num}</button>`;
-   }).join('');
-  }
-  return `<section class="content-panel study-time" id="study-time-panel" aria-labelledby="study-time-title">
-   <h3 id="study-time-title">${d.title}</h3>
-   <div class="study-totals">${['today','week','month','all'].map(key=>`<div><small>${d[key]}</small><strong title="${s?escape(duration(s.totals[key],true)):''}">${s?duration(s.totals[key]):'—'}</strong></div>`).join('')}</div>
-   <div class="study-visuals"><div><h4>${d.seven}</h4><div class="study-chart" aria-label="${d.seven}">${chart}</div></div>
-   <div><div class="study-calendar-heading"><button type="button" data-study-month="-1" aria-label="${d.prev}" ${ready?'':'disabled'}>‹</button><strong>${s?escape(dateFormat(s.month,{month:'long',year:'numeric'})):'—'}</strong><button type="button" data-study-month="1" aria-label="${d.next}" ${ready?'':'disabled'}>›</button></div>
-   <div class="study-calendar">${calendar}</div><p class="study-day-detail" aria-live="polite">${s?escape(label(sel,s)):'&nbsp;'}</p></div></div>
-   <div class="study-preferences"><label class="study-toggle"><input type="checkbox" data-study-enabled ${s?.enabled&&!paused(c)?'checked':''} ${ready&&!c?.saving?'':'disabled'}><b>${d.track}</b></label><p class="micro-note">${d.hint}</p>
-   <div class="study-zone"><label for="study-time-zone">${d.zone}</label><input id="study-time-zone" type="text" maxlength="100" value="${escape(s?.timezone||'Europe/Stockholm')}" list="study-time-zones" ${ready&&!c?.saving?'':'disabled'}><datalist id="study-time-zones">${['Europe/Stockholm','Europe/Kyiv','Europe/London','Europe/Berlin','America/New_York','Asia/Tokyo','UTC'].map(z=>`<option value="${z}"></option>`).join('')}</datalist><button type="button" class="btn secondary small" data-study-save ${ready&&!c?.saving?'':'disabled'}>${d.save}</button></div>
-   <p class="study-message" role="status">${c?.saveError?d.error:!ready?(c?.state==='loading'?d.loading:d.unavailable):'&nbsp;'}</p></div></section>`;
+  return `<div id="study-time-panel" class="study-summary">
+   <div class="study-totals" role="group" aria-label="${d.title}">${['today','week','month','all'].map(key=>`<div class="study-stat study-stat--${key}"><small>${d[key]}</small><strong title="${s?escape(duration(s.totals[key],true)):''}">${s?duration(s.totals[key]):'—'}</strong><span class="study-stat-period">${escape(periodText(key,s))}</span></div>`).join('')}</div>
+   <label class="study-toggle"><input type="checkbox" data-study-enabled ${s?.enabled&&!paused(c)?'checked':''} ${s&&!c?.saving?'':'disabled'}><span>${d.track}</span></label>
+   <p class="study-message" role="status">${c?.saveError||c?.writeError?d.error:c?.readError?d.unavailable:!s?d.loading:d.hint}${c?.readError||c?.saveError||c?.writeError?' <button type="button" class="link-btn" data-study-retry aria-label="${d.retry}">↻</button>':''}</p></div>`;
  }
  let paintKey='';
  function paint(){
   const page=document.getElementById('page');if(!page)return;
-  const signed=window.SVAuth?.getState().user;
+  const calendar=page.querySelector('.activity-calendar');
   const old=page.querySelector('#study-time-panel');
-  if(routeNow()!=='profile'||!signed){if(old)old.remove();paintKey='';return}
-  const key=JSON.stringify([lang(),c?.state,c?.snapshot,c?.saving,c?.saveError,selection]);
-  if(old&&paintKey===key)return;
-  // Retain a zone being edited and keyboard focus through server refreshes.
-  const focused=document.activeElement,focusId=focused?.id,focusDay=focused?.dataset?.studyDay,focusToggle=focused?.hasAttribute?.('data-study-enabled');
-  const zone=old?.querySelector('#study-time-zone'),draft=zone&&focused===zone?zone.value:null;
-  if(old)old.outerHTML=panel();else{
-   const anchor=page.querySelector('.profile-collections')||page.querySelector('.profile-identity');
-   if(anchor)anchor.insertAdjacentHTML('afterend',panel());else page.insertAdjacentHTML('beforeend',panel());
+  if(routeNow()!=='profile'||!window.SVAuth?.getState().user||!calendar){if(old)old.remove();hideTip();paintKey='';return}
+  const desired=calendar.dataset.calendarMonth;
+  if(desired&&desired!==month){month=desired;void refresh(c)}
+  const key=JSON.stringify([lang(),c?.state,c?.snapshot,c?.saving,c?.saveError,c?.readError,c?.writeError,month]);
+  if(!old||paintKey!==key){
+   const focusToggle=document.activeElement?.hasAttribute?.('data-study-enabled');
+   if(old)old.outerHTML=panel();else calendar.insertAdjacentHTML('afterend',panel());
+   if(focusToggle)page.querySelector('[data-study-enabled]')?.focus({preventScroll:true});
+   paintKey=key;
   }
-  paintKey=key;
-  const replacement=focusToggle?page.querySelector('[data-study-enabled]'):focusId==='study-time-zone'?page.querySelector('#study-time-zone'):focusDay?page.querySelector(`[data-study-day="${focusDay}"]`):null;
-  if(replacement){if(draft!==null)replacement.value=draft;replacement.focus({preventScroll:true})}
+  for(const day of calendar.querySelectorAll('[data-study-date]')){
+   if(day.hasAttribute('title')){day.dataset.activityLabel=day.getAttribute('title');day.removeAttribute('title')}
+   const label=dateFormat(day.dataset.studyDate,{day:'numeric',month:'long'})+' · '+dayText(day.dataset.studyDate)+' · '+(day.dataset.activityLabel||'');
+   if(day.getAttribute('aria-label')!==label)day.setAttribute('aria-label',label);
+  }
+  if(tipDay?.isConnected)showTip(tipDay);else hideTip();
  }
- async function settings(enabled,timezone){
+ let tip=null,tipDay=null;
+ function hideTip(){if(tip)tip.hidden=true;tipDay?.removeAttribute('aria-describedby');tipDay=null}
+ function showTip(day){
+  if(!c||routeNow()!=='profile')return;
+  if(!tip){tip=document.createElement('div');tip.id='study-day-tip';tip.className='study-tooltip';tip.setAttribute('role','tooltip');document.body.append(tip)}
+  if(tipDay!==day)tipDay?.removeAttribute('aria-describedby');tipDay=day;tip.hidden=false;
+  tip.innerHTML=`<strong>${escape(dateFormat(day.dataset.studyDate,{day:'numeric',month:'long'}))}</strong><span>${escape(dayText(day.dataset.studyDate))}</span>`;
+  day.setAttribute('aria-describedby',tip.id);
+  const rect=day.getBoundingClientRect(),box=tip.getBoundingClientRect();
+  tip.style.left=Math.max(8,Math.min(window.innerWidth-box.width-8,rect.left+rect.width/2-box.width/2))+'px';
+  tip.style.top=Math.max(8,rect.top>box.height+12?rect.top-box.height-8:Math.min(window.innerHeight-box.height-8,rect.bottom+8))+'px';
+ }
+ async function settings(enabled,timezone,automatic=false){
   const x=c;if(!x||!current(x)||x.state!=='ready'||x.saving)return;
   x.saving=true;x.saveError=false;
   if(!enabled)try{localStorage.setItem('sv-study-paused:'+x.userId,'yes')}catch(_){}
@@ -255,21 +271,21 @@
    if(x.lease)await stop(x);
    await drain(x,true);
    const s=validate(await request(window.SVRpc.studySettings({expectedUserId:x.userId,enabled,timezone,generation:x.snapshot.generation})));
-   if(current(x)){x.snapshot=s;month=null;x.lastInput=-Infinity;if(enabled)try{localStorage.removeItem('sv-study-paused:'+x.userId)}catch(_){}}
+   if(current(x)){x.snapshot=s;if(!automatic)x.lastInput=-Infinity;if(enabled&&!automatic)try{localStorage.removeItem('sv-study-paused:'+x.userId)}catch(_){}}
   }catch(_){if(current(x)){x.saveError=true;await refresh(x)}}
-  finally{if(current(x)){x.saving=false;paint()}}
+  finally{if(current(x)){x.saving=false;paint();if(month&&x.snapshot?.month!==month)void refresh(x)}}
  }
- document.addEventListener('change',e=>{if(e.target.matches?.('[data-study-enabled]')&&c)void settings(e.target.checked,c.snapshot.timezone)});
+ document.addEventListener('change',e=>{if(e.target.matches?.('[data-study-enabled]')&&c)void settings(e.target.checked,browserZone())});
+ document.addEventListener('pointerover',e=>{const day=e.target.closest?.('[data-study-date]');if(day)showTip(day)});
+ document.addEventListener('pointerout',e=>{if(e.pointerType!=='touch'&&e.target.closest?.('[data-study-date]')&&!e.relatedTarget?.closest?.('[data-study-date]'))hideTip()});
+ document.addEventListener('focusin',e=>{const day=e.target.closest?.('[data-study-date]');if(day)showTip(day);else hideTip()});
  document.addEventListener('click',e=>{
-  const el=e.target.closest?.('[data-study-month],[data-study-day],[data-study-save]');if(!el||!c?.snapshot)return;
-  if(el.hasAttribute('data-study-save')){void settings(c.snapshot.enabled&&!paused(c),document.getElementById('study-time-zone').value.trim());return}
-  if(el.dataset.studyMonth){const s=c.snapshot,d=new Date(s.month+'T12:00:00Z');d.setUTCMonth(d.getUTCMonth()+Number(el.dataset.studyMonth));month=d.toISOString().slice(0,10);selection=null;void refresh(c);return}
-  selection=el.dataset.studyDay;
-  const detail=document.querySelector('.study-day-detail');if(detail)detail.textContent=label(selection,c.snapshot);
-  document.querySelectorAll('.study-day').forEach(day=>day.setAttribute('aria-pressed',String(day.dataset.studyDay===selection)));
+  const day=e.target.closest?.('[data-study-date]');if(day){showTip(day);return}
+  hideTip();if(e.target.closest?.('[data-study-retry]')&&c){c.saveError=false;void drain(c).catch(()=>{});void refresh(c)}
  });
- document.addEventListener('focusin',e=>{if(e.target.dataset?.studyDay&&c?.snapshot){const out=document.querySelector('.study-day-detail');if(out)out.textContent=label(e.target.dataset.studyDay,c.snapshot)}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')hideTip();if((e.key==='Enter'||e.key===' ')&&e.target.matches?.('[data-study-date]')){e.preventDefault();showTip(e.target)}});
+ window.addEventListener('scroll',hideTip,true);window.addEventListener('resize',hideTip);
  new MutationObserver(()=>{paint()}).observe(document.getElementById('page'),{childList:true,subtree:true});
- window.SVStudy=Object.freeze({audio,refresh:()=>c?refresh(c):Promise.resolve(),preparedOnly:!dev});
+ window.SVStudy=Object.freeze({audio,refresh:()=>c?refresh(c):Promise.resolve(),preparedOnly:false});
  window.SVAuth?.subscribe(authChanged);authChanged();setInterval(()=>{void tick()},1000);
 })();

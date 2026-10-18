@@ -106,14 +106,11 @@ domTest('learned counter opens the dictionary list and restores its filters, scr
  await h.run("action({dataset:{nav:'dictionary',param:'learned'}})");assert.equal(h.ctx.scrolled.at(-1),340);assert.equal(h.run('dictFilter.text'),'ar');assert.equal(h.run('dictFilter.group'),'1');assert.equal(h.run('dictFilter.category'),'Глаголы');assert.equal(h.document.activeElement.dataset.wordLink,h.ctx.targetId);assert.equal(h.document.activeElement.focusOptions.preventScroll,true);
  const before=h.page.querySelector('#dict-search');await h.run("action({dataset:{action:'show-learned'}})");assert.equal(h.page.querySelector('#dict-search'),before);assert.equal(h.ctx.scrolled.at(-1),340);
 });
-domTest('unsupported reviews are hidden and cannot navigate or mutate learning state',async()=>{
- for(const route of ['word','flashcards','reviews']){
-  const h=ui({cloud:true,capable:false});h.run(`route=${JSON.stringify(route)};routeParam=WORDS[0].id;state.known=[WORDS[0].id];state.reviews[WORDS[0].id]={due:0,rep:0,interval:0,ease:2.5}`);
-  h.page.innerHTML=route==='word'?h.run('renderWord()'):route==='flashcards'?'<button data-action="flash-grade" data-value="0">Повторить</button>':h.run('renderReviews()');h.run('renderProgressUX()');
-  const review=h.page.querySelector('[data-action="mark-review"],[data-action="flash-grade"][data-value="0"],[data-action="start-review"]');assert.ok(review);assert.equal(review.hidden,true);assert.equal(review.disabled,true);
-  await h.run("action({dataset:{action:'mark-review',id:WORDS[0].id}})");assert.equal(h.run('route'),route);assert.equal(h.calls.length,0);assert.equal(h.run('state.known.length'),1);assert.deepEqual(h.notices,[]);
-  assert.doesNotMatch(h.run('renderWordReview()'),/обновления сервиса|word-recall/);
- }
+domTest('manual reviews unavailable before migration cannot mutate progress or open an exercise',async()=>{
+ const h=ui({cloud:true,capable:false});h.run("route='word';routeParam=WORDS[0].id;state.known=[WORDS[0].id]");h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
+ const review=h.page.querySelector('[data-action="mark-review"]');assert.equal(review.hidden,false);assert.equal(review.textContent,' Повторить');
+ await h.run("action({dataset:{action:'mark-review',id:WORDS[0].id}})");assert.equal(h.run('route'),'word');assert.equal(h.calls.length,0);assert.equal(h.run('state.known.length'),1);assert.equal(h.notices.length,1);
+ assert.doesNotMatch(h.run('renderWordReview()'),/word-recall/);
 });
 domTest('offline supported toggle keeps the selected label, focus and filters while awaiting the server',async()=>{
  const h=ui({cloud:true});h.ctx.navigator.onLine=false;h.run('state.known=[WORDS[0].id]');h.mount();const btn=h.page.querySelector('[data-action="mark-known"]');btn.focus();const search=h.page.querySelector('#dict-search');
@@ -126,5 +123,49 @@ domTest('programmatic hash navigation renders once; browser Back restores the le
 });
 domTest('supported repeated practice leaves the selected learning toggle intact',()=>{
  const h=ui({cloud:true});h.run('route="word";routeParam=WORDS[0].id;state.known=[WORDS[0].id]');h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
- const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,false);assert.equal(review.textContent.includes('Повторить'),true);assert.equal(h.calls.length,0);
+ const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,false);assert.equal(review.textContent.includes(' Повторить'),true);assert.equal(h.calls.length,0);
+});
+
+async function withManualQueue(){
+ const h=ui({cloud:true});let entries=[],revision=0,changeHold=null;
+ const crypto=require('node:crypto');h.ctx.crypto={randomUUID:crypto.randomUUID};h.ctx.setInterval=()=>{};
+ h.ctx.SVAuth={getState:()=>({user:{id:'test-account'},identityRevision:1}),subscribe(){}};
+ const grades=[];
+ h.ctx.SVRpc={reviewList:async()=>({revision,entries:structuredClone(entries)}),reviewChange:async body=>{
+  if(changeHold){await changeHold;changeHold=null}
+  let row=entries.find(e=>e.word_id===body.wordId);if(!row){row={word_id:body.wordId};entries.push(row)}
+  row.active=['add','again'].includes(body.action);row.version=body.requestId;revision++;
+  if(['remember','again'].includes(body.action))grades.push(body.action);
+  return {duplicate:false,conflict:false,queue:{revision,entries:structuredClone(entries)}};
+ }};
+ vm.runInContext(fs.readFileSync(path.join(root,'manual-reviews.js'),'utf8'),h.ctx);
+ h.run('SVManualReviews.initialize(manualQueueChanged)');await new Promise(r=>setImmediate(r));
+ return {...h,grades,hold(promise){changeHold=promise}};
+}
+domTest('manual add preserves dictionary search, filters, focus and nodes; ACK exposes word in common list',async()=>{
+ const h=await withManualQueue();h.run("dictFilter.text='ar';dictFilter.kind='verb';dictFilter.limit=84");h.mount();
+ const search=h.page.querySelector('#dict-search'),row=h.page.querySelector('[data-word-link]'),btn=row.querySelector('[data-action="mark-review"]');btn.focus();
+ const before=h.run('JSON.stringify(state)'),filters=h.run('JSON.stringify(dictFilter)');h.ctx.targetId=btn.dataset.id;let release;h.hold(new Promise(r=>release=r));
+ const first=h.run("action({dataset:{action:'mark-review',id:targetId}})");await h.run("action({dataset:{action:'mark-review',id:targetId}})");
+ assert.equal(btn.textContent,' Повторить');assert.equal(btn.disabled,true);assert.equal(h.run('manualReviewIds().length'),0);
+ release();await first;assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.getAttribute('aria-pressed'),'true');assert.equal(h.run('route'),'dictionary');assert.equal(h.run('JSON.stringify(state)'),before);assert.equal(h.run('JSON.stringify(dictFilter)'),filters);assert.equal(h.page.querySelector('#dict-search'),search);assert.equal(h.page.querySelector('[data-word-link]'),row);assert.equal(h.document.activeElement,btn);
+ h.run("route='reviews'");h.page.innerHTML=h.run('renderReviews()');assert.equal(h.page.querySelectorAll('[data-review-id]').length,1);assert.match(h.page.querySelector('[data-review-count]').textContent,/1/);assert.ok(h.page.querySelector('.word-info small').textContent);assert.ok(h.page.querySelector('img.word-list-photo'));assert.ok(h.page.querySelector('[data-nav="word-review"]'));
+});
+domTest('recall requires reveal; remember removes word from the list after ACK, again keeps it',async()=>{
+ const h=await withManualQueue();await h.run('addManualReview(WORDS[0].id)');const before=h.run('JSON.stringify(state)');
+ h.run("route='word-review';routeParam=WORDS[0].id");h.page.innerHTML=h.run('renderWordReview()');
+ assert.equal(h.page.querySelector('.recall-translation'),null);await h.run('gradeWordReview(true)');assert.equal(h.grades.length,0);
+ h.run('reviewExercise.revealed=true');h.page.innerHTML=h.run('renderWordReview()');let release;h.hold(new Promise(r=>release=r));const first=h.run('gradeWordReview(true)');await h.run('gradeWordReview(true)');
+ assert.equal(h.run('manualReviewIds().length'),1);release();await first;assert.equal(h.run('manualReviewIds().length'),0);assert.match(h.page.textContent,/Слово убрано/);assert.deepEqual(h.grades,['remember']);
+ h.run("route='reviews'");h.page.innerHTML=h.run('renderReviews()');assert.ok(h.page.querySelector('.empty-state'));assert.match(h.page.querySelector('[data-review-count]').textContent,/0/);
+ await h.run('addManualReview(WORDS[0].id)');h.run("route='word-review';routeParam=WORDS[0].id;reviewExercise=null");h.page.innerHTML=h.run('renderWordReview()');h.run('reviewExercise.revealed=true');await h.run('gradeWordReview(false)');assert.equal(h.run('manualReviewIds().length'),1);assert.match(h.page.textContent,/остаётся/);assert.deepEqual(h.grades,['remember','again']);assert.equal(h.run('JSON.stringify(state)'),before);
+});
+domTest('manual removal preserves other list rows and document height without navigating',async()=>{
+ const h=await withManualQueue();await h.run('addManualReview(WORDS[0].id);addManualReview(WORDS[1].id)');await new Promise(r=>setImmediate(r));
+ h.run("route='reviews'");h.page.innerHTML=h.run('renderReviews()');const rows=[...h.page.querySelectorAll('[data-review-id]')];rows[0].querySelector('[data-action="remove-review"]').focus();
+ await h.run("action({dataset:{action:'remove-review',id:WORDS[0].id}})");assert.equal(rows[0].isConnected,false);assert.equal(rows[1].isConnected,true);assert.equal(h.page.style.minHeight,'900px');assert.equal(h.run('route'),'reviews');assert.equal(h.grades.length,0);assert.equal(h.document.activeElement,rows[1].querySelector('button'));
+});
+domTest('flashcard review control receives the same confirmed queue state without an automatic exercise',async()=>{
+ const h=await withManualQueue();h.run("route='flashcards';flash.ids=[WORDS[0].id];flash.index=0");h.page.innerHTML='<button data-action="flash-grade" data-value="0" disabled>Повторить</button>';h.run('manualQueueChanged()');
+ const btn=h.page.querySelector('button');assert.equal(btn.disabled,false);assert.equal(btn.textContent,' Повторить');await h.run("action({dataset:{action:'flash-grade',value:'0'}})");assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.disabled,true);assert.equal(h.run('route'),'flashcards');assert.equal(h.grades.length,0);
 });

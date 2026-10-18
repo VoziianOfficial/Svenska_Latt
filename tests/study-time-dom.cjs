@@ -5,7 +5,7 @@ const source=fs.readFileSync(require('node:path').join(__dirname,'../study-time.
 const clone=x=>x===undefined?undefined:JSON.parse(JSON.stringify(x));
 const settle=async()=>{for(let i=0;i<35;i++)await Promise.resolve()};
 function shared(){
- const rows=new Map(),locks=new Set(),data=new Map([['sv-study-time-dev-v1','enabled'],['sv-language','ru'],['sv-cloud-events-v1','untouched']]);let seq=0;
+ const rows=new Map(),locks=new Set(),waiters=new Map(),data=new Map([['sv-language','ru'],['sv-cloud-events-v1','untouched']]);let seq=0;
  const db={createObjectStore(){},transaction(){
   const tx={objectStore(){return Object.fromEntries(['getAll','add','put','delete'].map(method=>[method,value=>{
    const req={};queueMicrotask(()=>{
@@ -17,23 +17,26 @@ function shared(){
   }]))}};return tx;
  }};
  return {rows,data,locks,db,leases:new Map(),receipts:new Map(),totals:new Map(),indexedDB:{open(){const req={result:db};queueMicrotask(()=>req.onsuccess?.());return req}},
-  navigator:{onLine:true,locks:{async request(name,options,fn){if(locks.has(name))return fn(null);locks.add(name);try{return await fn({name})}finally{locks.delete(name)}}}}};
+  navigator:{onLine:true,locks:{async request(name,options,fn){if(locks.has(name)){if(options.ifAvailable)return fn(null);await new Promise(resolve=>{const queue=waiters.get(name)||[];queue.push(resolve);waiters.set(name,queue)})}locks.add(name);try{return await fn({name})}finally{locks.delete(name);waiters.get(name)?.shift()?.()}}}}};
 }
 function ui({resources=shared(),host='localhost',user='account-a',enabled=true,route='flashcards'}={}){
- const {parseHTML}=require(domModule),{document,Event}=parseHTML('<html><body><main id="page"><section class="profile-identity"></section><button id="learn">Learn</button></main></body></html>');
+ const {parseHTML}=require(domModule),{document,Event,HTMLElement}=parseHTML('<html><body><main id="page"><section class="content-panel"><div class="activity-calendar" data-calendar-month="2026-10-01"><div class="day-square done" data-study-date="2026-10-18" title="2026-10-18 · 3" tabindex="0"></div><div class="day-square" data-study-date="2026-10-15" title="2026-10-15 · 0" tabindex="0"></div></div></section><button id="learn">Learn</button></main></body></html>');
+ HTMLElement.prototype.getBoundingClientRect=()=>({top:100,bottom:150,left:20,width:150,height:50});
  const browserHandlers={},authListeners=[],calls=[],session=new Map();let time=0,visible=true,focus=true,identity={user:user?{id:user}:null,identityRevision:1},timer;
  Object.defineProperty(document,'visibilityState',{get:()=>visible?'visible':'hidden'});document.hasFocus=()=>focus;
  const snapshot={version:1,enabled,generation:1,timezone:'Europe/Stockholm',today:'2026-10-18',month:'2026-10-01',totals:{today:0,week:0,month:0,all:0},days:{}};
  const leases=resources.leases,receipts=resources.receipts;let lostAck=false,offline=false;
  const base=1792324800000;
- const ctx={document,Event,console,Date,Intl,JSON,Math,performance:{now:()=>time},crypto,route,locale4:()=> 'ru',
+ let browserTimezone='Europe/Stockholm';
+ function DateTimeFormat(locale,options){return new Intl.DateTimeFormat(locale,{timeZone:browserTimezone,...options})}
+ const ctx={document,Event,console,Date,Intl:{DateTimeFormat,PluralRules:Intl.PluralRules},innerWidth:390,innerHeight:844,JSON,Math,performance:{now:()=>time},crypto,route,locale4:()=> 'ru',
   location:{hostname:host,protocol:'http:'},navigator:resources.navigator,indexedDB:resources.indexedDB,
   localStorage:{getItem:k=>resources.data.get(k)||null,setItem:(k,v)=>resources.data.set(k,v),removeItem:k=>resources.data.delete(k)},
   sessionStorage:{getItem:k=>session.get(k)||null,setItem:(k,v)=>session.set(k,v),removeItem:k=>session.delete(k)},
   MutationObserver:class{observe(){}},setTimeout,clearTimeout,setInterval:fn=>timer=fn,addEventListener:(name,fn)=>browserHandlers[name]=fn,
   SVAuth:{getState:()=>identity,subscribe:fn=>authListeners.push(fn)},
   SVRpc:{
-   async studyStatus(args){calls.push(['status',clone(args)]);return clone(snapshot)},
+   async studyStatus(args){calls.push(['status',clone(args)]);const total=resources.totals.get(user)||0;return clone({...snapshot,month:args.month||snapshot.month,totals:{today:total,week:total,month:total,all:total},days:{...snapshot.days,...(total?{'2026-10-18':total}:{})}})},
    async studySettings(args){calls.push(['settings',clone(args)]);if(offline)throw Error('offline');snapshot.enabled=args.enabled;snapshot.timezone=args.timezone;snapshot.generation++;return clone(snapshot)},
    async studyOpen(args){calls.push(['open',clone(args)]);const grant={available:true,id:args.leaseId,server_ms:base+time,end_ms:base+time+90000,cursor_ms:base+time,generation:snapshot.generation,timezone:snapshot.timezone};leases.set(args.leaseId,grant);return clone(grant)},
    async studyCommit(args){calls.push(['commit',clone(args)]);if(offline)throw Error('offline');
@@ -55,12 +58,12 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
   async auth(userId){identity={user:userId?{id:userId}:null,identityRevision:identity.identityRevision+1};authListeners.forEach(fn=>fn());await settle()},
   loseAck(){lostAck=true},offline(value){offline=value;resources.navigator.onLine=!value},
   async renew(){const c=ctx.__study.get();if(c){c.renew=true;await ctx.__study.tick();await settle()}},
-  setRoute(value){ctx.route=value},read:code=>vm.runInContext(code,ctx),setFocus(value){focus=value;browserHandlers[value?'focus':'blur']?.()}
+  setTimezone(value){browserTimezone=value},setRoute(value){ctx.route=value},read:code=>vm.runInContext(code,ctx),setFocus(value){focus=value;browserHandlers[value?'focus':'blur']?.()}
  };
 }
 const domTest=(name,fn)=>test(name,{skip:!domModule&&'Set SL_UX_DOM_MODULE for DOM integration'},fn);
-domTest('production and guest make no study RPC or queue writes',async()=>{
- for(const args of [{host:'example.com'},{user:null}]){const h=ui(args);await h.ready();await h.tick();assert.equal(h.calls.length,0);assert.equal(h.resources.rows.size,0)}
+domTest('guest makes no study RPC or queue writes',async()=>{
+ for(const args of [{user:null}]){const h=ui(args);await h.ready();await h.tick();assert.equal(h.calls.length,0);assert.equal(h.resources.rows.size,0)}
 });
 domTest('consent off prevents lease acquisition; opt in requires a subsequent learning action',async()=>{
  const h=ui({enabled:false});await h.ready();await h.tick();assert.equal(h.calls.filter(c=>c[0]==='open').length,0);
@@ -96,14 +99,20 @@ domTest('account switch while lease response is in flight cannot publish into ne
  await h.tick();await h.auth('account-b');release({available:true,id:'old',server_ms:0,end_ms:90000,generation:1,cursor_ms:0});await settle();
  assert.equal(h.ctx.__study.get().userId,'account-b');assert.equal(h.ctx.__study.get().lease,null);
 });
-domTest('profile has exact empty days, seven bars, 42 calendar slots and accessible date detail',async()=>{
- const h=ui({route:'profile'});await h.ready();h.ctx.__study.paint();
- assert.equal(h.document.querySelectorAll('.study-bar').length,7);
- assert.equal(h.document.querySelectorAll('.study-day,.study-day-blank').length,42);
- assert.equal(h.document.querySelectorAll('.study-tone-0').length,31);
- assert.match(h.document.querySelector('[data-study-day="2026-10-18"]').getAttribute('title'),/Занятий не было · 0 с/);
+domTest('production profile uses one existing activity calendar, preserves colors, has compact consent and tooltips',async()=>{
+ const h=ui({host:'example.com',route:'profile'});await h.ready();h.ctx.__study.paint();
+ assert.equal(h.document.querySelectorAll('.activity-calendar').length,1);
+ assert.equal(h.document.querySelectorAll('.study-calendar,.study-chart,.study-zone').length,0);
  assert.equal(h.document.querySelectorAll('.study-totals strong').length,4);
  assert.equal(h.document.querySelector('[data-study-enabled]').hasAttribute('checked'),true);
+ const day=h.document.querySelector('[data-study-date="2026-10-18"]');
+ assert.ok(day.classList.contains('done'));
+ assert.match(day.getAttribute('aria-label'),/Нет записанного времени.*2026-10-18 · 3/);
+ day.dispatchEvent(new h.ctx.Event('click',{bubbles:true}));
+ assert.match(h.document.querySelector('[role="tooltip"]').textContent,/18 октябряНет записанного времени/);
+ h.document.dispatchEvent(Object.assign(new h.ctx.Event('keydown'),{key:'Escape'}));
+ assert.equal(h.document.querySelector('[role="tooltip"]').hidden,true);
+ assert.ok(h.calls.some(c=>c[0]==='status'));
 });
 domTest('failed offline opt out stops local tracking immediately and keeps the switch off',async()=>{
  const h=ui();await h.ready();await h.tick();h.offline(true);
@@ -126,4 +135,67 @@ domTest('slow network requests do not block ongoing durable time checkpoints',as
  for(let i=0;i<20;i++)await h.tick();const count=h.resources.rows.size;
  for(let i=0;i<5;i++)await h.tick();assert.ok(h.resources.rows.size>count,'5 second local checkpoint continues while network is pending');
  h.ctx.SVRpc.studyCommit=original;release();for(let i=0;i<20;i++)await settle();
+});
+
+domTest('real interval batches drive server totals and restore after reload without deleting progress',async()=>{
+ const h=ui({host:'example.com'});await h.ready();await h.tick();for(let i=0;i<25;i++)await h.tick();
+ assert.ok(h.total>=19000);const recorded=h.total;
+ await h.visibility(false);await settle();
+ const restored=ui({resources:h.resources,route:'profile'});await restored.ready();
+ assert.ok(restored.ctx.__study.get().snapshot.totals.all>=recorded);
+ assert.match(restored.document.querySelector('.study-totals strong').textContent,/с/);
+ assert.equal(restored.resources.data.get('sv-cloud-events-v1'),'untouched');
+});
+domTest('automatic timezone synchronization preserves disabled consent and old daily data',async()=>{
+ const h=ui({enabled:false});await h.ready();h.setTimezone('America/New_York');
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ const calls=h.calls.filter(c=>c[0]==='settings');assert.equal(calls.length,1);
+ assert.equal(calls[0][1].timezone,'America/New_York');assert.equal(calls[0][1].enabled,false);
+ assert.equal(h.calls.filter(c=>c[0]==='open').length,0);
+});
+domTest('calendar month change fetches matching daily status and retains current totals',async()=>{
+ const h=ui({route:'profile'});await h.ready();
+ h.document.querySelector('.activity-calendar').dataset.calendarMonth='2026-09-01';h.ctx.__study.paint();await settle();
+ assert.equal(h.ctx.__study.get().snapshot.month,'2026-09-01');
+ assert.ok(h.calls.some(c=>c[0]==='status'&&c[1].month==='2026-09-01'));
+});
+domTest('failed status settles into an error and can recover instead of loading forever',async()=>{
+ const h=ui({route:'profile'});await h.ready();h.ctx.SVRpc.studyStatus=async()=>{throw Error('network')};
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.match(h.document.querySelector('.study-message').textContent,/недоступен/);
+ assert.ok(h.document.querySelector('[data-study-retry]'));
+ h.ctx.SVRpc.studyStatus=async()=>clone(h.snapshot);await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.equal(h.ctx.__study.get().readError,false);
+});
+
+domTest('tooltip shows server duration on hover, focus and mobile tap within viewport',async()=>{
+ const h=ui({route:'profile'});await h.ready();h.snapshot.days['2026-10-15']=5700000;
+ await h.ctx.__study.refresh(h.ctx.__study.get());
+ const day=h.document.querySelector('[data-study-date="2026-10-15"]');
+ for(const type of ['pointerover','focusin','click']){
+  day.dispatchEvent(new h.ctx.Event(type,{bubbles:true}));
+  const tip=h.document.querySelector('[role="tooltip"]');assert.equal(tip.hidden,false);
+  assert.match(tip.textContent,/15 октябряОбучение: 1 ч 35 мин/);
+  assert.ok(parseFloat(tip.style.left)>=8);assert.ok(parseFloat(tip.style.top)>=8);
+ }
+ assert.ok(day.hasAttribute('aria-describedby'));
+});
+domTest('idle stops actual commits and trusted input resumes; hidden and blurred tabs add nothing',async()=>{
+ const h=ui();await h.ready();await h.tick();for(let i=0;i<110;i++)await h.tick();
+ assert.equal(h.ctx.__study.get().lease,null);const idle=h.total;assert.ok(idle>0&&idle<=90000);
+ for(let i=0;i<25;i++)await h.tick();assert.equal(h.total,idle);
+ await h.input();await h.tick(11000);for(let i=0;i<25;i++)await h.tick();assert.ok(h.total>idle);
+ h.setFocus(false);await settle();await h.tick();const blurred=h.total;
+ for(let i=0;i<25;i++)await h.tick();assert.equal(h.total,blurred);
+ h.setFocus(true);await h.tick(11000);await h.visibility(false);const hidden=h.total;
+ for(let i=0;i<25;i++)await h.tick();assert.equal(h.total,hidden);
+});
+domTest('timezone change commits old lease before changing preferences and preserves historical records',async()=>{
+ const h=ui();await h.ready();await h.tick();for(let i=0;i<6;i++)await h.tick();
+ h.snapshot.days['2026-09-01']=5700000;h.setTimezone('America/New_York');
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ const settingsIndex=h.calls.findIndex(c=>c[0]==='settings');
+ assert.ok(settingsIndex>0);assert.ok(h.calls.slice(0,settingsIndex).some(c=>c[0]==='commit'&&c[1].close));
+ assert.equal(h.calls[settingsIndex][1].enabled,true);
+ assert.equal(h.snapshot.days['2026-09-01'],5700000);assert.ok(h.total>0);
 });
