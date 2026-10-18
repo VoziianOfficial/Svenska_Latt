@@ -31,7 +31,7 @@ function save(){if(cloudAccount())return;localStorage.setItem(localStateKey(),JS
 function applyAuthState(auth){
  const next=auth.user?{id:auth.user.id,email:auth.user.email,name:auth.user.user_metadata?.display_name||''}:null;
  if((user?.id||null)===(next?.id||null)){user=next;refreshProfileSettings();return}
- user=next;profileEmailEditing=false;profileEmailDraft='';profileEmailMessage='';profileLevelMessage='';cloudReadError=false;dictionaryViews.clear();lastDictionaryScope='';reviewExercise=null;state=cloudAccount()?defaultState():readLocalState();
+ user=next;quizBusy=false;profileEmailEditing=false;profileEmailDraft='';profileEmailMessage='';profileLevelMessage='';cloudReadError=false;dictionaryViews.clear();lastDictionaryScope='';reviewExercise=null;state=cloudAccount()?defaultState():readLocalState();
  // Restore only exercises belonging to the selected identity.
  quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};
  restoreQuizSession();
@@ -143,9 +143,82 @@ function renderQuiz(){let q=quiz.questions[quiz.index];if(!q)return renderQuizFi
  else if(q.type==='arrange'){let selection=Array.isArray(quiz.selected)?quiz.selected:[];answerUi=`<div class="built-sentence">${selection.length?selection.map((a,i)=>`<button class="quiz-word" data-action="remove-token" data-index="${i}" ${quiz.answered?'disabled':''}>${esc(a.v)} ×</button>`).join(''):`<span class="small-muted">${esc(t('tapOrder'))}</span>`}</div><div class="quiz-words">${q.tokens.filter(x=>!selection.some(y=>y.id===x.id)).map(x=>`<button class="quiz-word" data-action="add-token" data-id="${x.id}" ${quiz.answered?'disabled':''}>${esc(x.v)}</button>`).join('')}</div><div class="split" style="margin-top:19px"><button class="btn ghost small" data-action="reset-tokens" ${quiz.answered?'disabled':''}>↺ ${esc(t('reset'))}</button><button class="btn" data-action="check-tokens" ${quiz.answered?'disabled':''}>${esc(t('check'))}</button></div>`}
  return `<button class="back-link" data-action="stop-quiz">← ${esc(t('back'))}</button><section class="quiz-card"><div class="split"><div class="quiz-count">${t('step')} ${quiz.index+1} ${t('of')} ${quiz.questions.length}</div><span class="chip">🏆 ${quiz.score} ${esc(t('correct'))}</span></div><div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div><h2 class="quiz-prompt">${esc(q.question)}</h2>${answerUi}${feedback}${quiz.answered?`<button style="margin-top:18px" class="btn wide" data-action="quiz-next">${quiz.index===quiz.questions.length-1?t('finished'):t('continue')} →</button>`:''}</section>`}
 function normalize(str){return String(str||'').trim().toLocaleLowerCase('sv').replace(/[\s\t\n]+/g,' ').replace(/[.!?。]+$/,'').normalize('NFC')}
-function submitAnswer(answer){if(cloudAccount())return;if(!quiz.active||quiz.answered)return;let q=quiz.questions[quiz.index],correct=normalize(answer)===normalize(q.answer);quiz.answered=true;quiz.selected=answer;quiz.latest=correct;if(correct)quiz.score++;mutate(()=>{state.answered++;if(correct)state.correct++;state.xp+=correct?12:3;touch();if(q.wordId)markReview(q.wordId,correct)});render()}
-function finishQuiz(){quiz.finished=true;quiz.active=true;if(quiz.lesson&&quiz.mode!=='book'&&quiz.mode!=='topic'&&quiz.score/quiz.questions.length>=.6&&!state.completed.includes(quiz.lesson)){mutate(()=>{state.completed.push(quiz.lesson);state.xp+=35;touch()})}render()}
-function renderQuizFinish(){let passed=quiz.score>=Math.ceil(quiz.questions.length*.6);return `<section class="quiz-card quiz-finished"><div class="big">${passed?'🏆':'💪'}</div><h1>${esc(t('finished'))}</h1><div class="score">${quiz.score} / ${quiz.questions.length}</div><p>${esc(t('accuracy'))}: ${Math.round(quiz.score/quiz.questions.length*100)}% · +XP</p>${quiz.lesson&&passed?`<p class="badge-verified">✓ ${esc(t('practiceDone'))}</p>`:''}<div class="split" style="justify-content:center;margin-top:25px"><button class="btn secondary" data-action="quiz-retry">↻ ${esc(t('again'))}</button><button class="btn" data-action="stop-quiz">${esc(t('continue'))} →</button></div></section>`}
+let quizBusy=false;
+function quizStorage(){return sessionStorage}
+function activeQuizKey(){return cloudAccount()?localStateKey()+':cloud-quiz-v1':quizSessionKey()}
+function quizEvent(type,data){return {id:crypto.randomUUID(),event:{type,occurred_at:new Date().toISOString(),timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,data:{session_id:quiz.cloud.id,...data}}}}
+async function sendQuizEvent(key){
+ const current=quiz,owner=user?.id,intent=current.cloud?.events[key];
+ if(!intent||current.cloud.owner!==owner)return false;
+ persistQuizSession();
+ let timer;
+ try{
+  const ok=await Promise.race([window.SVProgress.enqueueSession(intent.id,intent.event),new Promise(resolve=>{timer=setTimeout(()=>resolve(false),8000)})]);
+  return ok&&quiz===current&&user?.id===owner;
+ }finally{clearTimeout(timer)}
+}
+function quizLoading(value){
+ quizBusy=value;
+ document.querySelectorAll?.('#page .quiz-card button,#page .quiz-card input,#page [data-action="quiz-retry"],#page [data-action="stop-quiz"]').forEach(el=>{
+  if(value){if(el.dataset.quizWasDisabled===undefined)el.dataset.quizWasDisabled=String(el.disabled);el.disabled=true}
+  else if(el.dataset.quizWasDisabled!==undefined){el.disabled=el.dataset.quizWasDisabled==='true';delete el.dataset.quizWasDisabled}
+  el.setAttribute('aria-busy',String(value));
+ });
+ const card=document.querySelector('.quiz-card'),status=card?.querySelector('[data-quiz-busy]');
+ if(value&&!status)card?.insertAdjacentHTML('beforeend',`<p class="micro-note" data-quiz-busy role="status">${esc(txt4('Сохраняем…','Saving…','Sparar…','Зберігаємо…'))}</p>`);
+ if(!value)status?.remove();
+}
+async function submitAnswer(answer){
+ if(!quiz.active||quiz.finished||quiz.answered||quizBusy||!String(answer).trim())return;
+ const current=quiz,q=quiz.questions[quiz.index],correct=normalize(answer)===normalize(q.answer);
+ if(quiz.cloud){
+  const key='answer-'+quiz.index;
+  // Preserve the first submitted answer and timestamp if queue storage fails.
+  if(!quiz.cloud.events[key])quiz.cloud.events[key]={...quizEvent('answer',{question_index:quiz.index,correct}),answer};
+  quizLoading(true);
+  let ok=false;try{ok=await sendQuizEvent('start')&&await sendQuizEvent(key)}finally{if(quiz===current)quizLoading(false)}
+  if(!ok){if(quiz===current)toast(t('saveError'));return}
+  answer=quiz.cloud.events[key].answer;
+ }
+ const checked=quiz.cloud?quiz.cloud.events['answer-'+quiz.index].event.data.correct:correct;
+ quiz.answered=true;quiz.selected=answer;quiz.latest=checked;if(checked)quiz.score++;
+ if(!checked)(quiz.mistakes??=[]).push({index:quiz.index,answer});
+ if(!quiz.cloud)mutate(()=>{state.answered++;if(checked)state.correct++;state.xp+=checked?12:3;touch();if(q.wordId)markReview(q.wordId,checked)});
+ render();
+}
+async function finishQuiz(){
+ if(quizBusy||quiz.finished||!quiz.answered||quiz.index!==quiz.questions.length-1)return;
+ const current=quiz;
+ if(quiz.cloud){
+  quiz.cloud.events.finish??=quizEvent('session_finish',{});
+  quizLoading(true);let ok=false;try{ok=await sendQuizEvent('finish')}finally{if(quiz===current)quizLoading(false)}
+  if(!ok){if(quiz===current)toast(t('saveError'));return}
+ }else if(quiz.lesson&&!['book','topic','video'].includes(quiz.mode)&&quiz.score/quiz.questions.length>=.6&&!state.completed.includes(quiz.lesson)){
+  mutate(()=>{state.completed.push(quiz.lesson);state.xp+=35;touch()});
+ }
+ quiz.finished=true;quiz.active=true;render();
+}
+function quizSaveLabel(){
+ if(!quiz.cloud)return '';
+ const activity=window.SVProgress?.activity(),writer=window.SVProgress?.writeStatus(),pending=!writer?.ready||activity?.pending?.some(e=>e.sessionId===quiz.cloud.id);
+ return `<p class="micro-note" role="status">${esc(activity?.error||writer?.error?t('saveError'):pending?txt4('Результат ожидает синхронизации','Result awaiting sync','Resultatet väntar på synkronisering','Результат очікує синхронізації'):t('savedAccount'))}</p>`;
+}
+function renderQuizFinish(){
+ const passed=quiz.score>=Math.ceil(quiz.questions.length*.6);
+ const mistakes=(quiz.mistakes||[]).map(m=>{const q=quiz.questions[m.index];return `<div class="quiz-feedback failure"><b>${esc(q.question)}</b><p>${esc(m.answer)} → <strong>${esc(q.answer)}</strong></p><small>${esc(q.why||'')}</small></div>`}).join('');
+ return `<section class="quiz-card quiz-finished"><div class="big">${passed?'🏆':'💪'}</div><h1>${esc(t('finished'))}</h1><div class="score">${quiz.score} / ${quiz.questions.length}</div><p>${esc(t('accuracy'))}: ${Math.round(quiz.score/quiz.questions.length*100)}%</p>${quizSaveLabel()}${quiz.lesson&&passed&&!['book','topic','video'].includes(quiz.mode)?`<p class="badge-verified">✓ ${esc(t('practiceDone'))}</p>`:''}<div class="split" style="justify-content:center;margin-top:25px"><button class="btn secondary" data-action="quiz-retry">↻ ${esc(t('again'))}</button><button class="btn" data-action="stop-quiz">${esc(t('back'))} →</button></div>${mistakes?`<details style="text-align:left;margin-top:20px;overflow-wrap:anywhere"><summary>${esc(t('bad'))} · ${quiz.mistakes.length}</summary>${mistakes}</details>`:''}</section>`;
+}
+async function leaveQuiz(){
+ if(quizBusy)return;
+ const current=quiz,origin=quiz.origin;
+ if(quiz.cloud&&!quiz.finished){
+  quiz.cloud.events.abandon??=quizEvent('session_abandon',{});
+  quizLoading(true);let ok=false;try{ok=await sendQuizEvent('start')&&await sendQuizEvent('abandon')}finally{if(quiz===current)quizLoading(false)}
+  if(!ok){if(quiz===current)toast(t('saveError'));return}
+ }
+ const key=activeQuizKey();try{quizStorage().removeItem(key)}catch(_){}
+ resetQuiz();if(origin)navigate(origin.route,origin.param);
+}
 const VIDEOS=[
  {id:'v1',name:'Välkommen till oss — Frukosten',level:'C–D',duration:'7 min',emoji:'🥐',description:'Небольшой эпизод о семье за завтраком. Слушай повседневные фразы.',url:'https://urplay.se/serie/244804-valkommen-till-oss'},
  {id:'v2',name:'Välkommen till oss — Sfi',level:'C–D',duration:'11 min',emoji:'📚',description:'Короткая история о занятиях SFI и о том, как важно учиться самостоятельно.',url:'https://urplay.se/program/244809-valkommen-till-oss-sfi'},
@@ -216,8 +289,8 @@ async function action(btn){if(btn.dataset.nav){$('#search-results').classList.ad
    return;
  }
  if(name==='letter-speak'||name==='speak-letter'){speakLetter3(btn.dataset.letter);return}
- if(name==='topic-quiz'){startQuiz('topic',btn.dataset.topic);return}
- if(name==='book-quiz'){startQuiz('book',btn.dataset.id);return}
+ if(name==='topic-quiz'){await startQuiz('topic',btn.dataset.topic);return}
+ if(name==='book-quiz'){await startQuiz('book',btn.dataset.id);return}
  if(name==='book-read'){
    const id=btn.dataset.id;
    mutate(()=>{
@@ -249,17 +322,17 @@ async function action(btn){if(btn.dataset.nav){$('#search-results').classList.ad
  if(name==='flash-next'){nextFlash(1);return}
  if(name==='flash-prev'){nextFlash(-1);return}
  if(name==='flash-grade'){const id=flash.ids[flash.index];if(btn.dataset.value==='1'){if(state.known.includes(id))await unlearnWord(id);else await learnWord(id);return}await addManualReview(id);return}
- if(name==='start-mode'){startQuiz(btn.dataset.mode);const q=quiz.questions[0];if(q?.type==='listen')speak(q.speak);return}
- if(name==='lesson-test'){startQuiz('lesson',btn.dataset.id);return}
+ if(name==='start-mode'){await startQuiz(btn.dataset.mode);const q=quiz.questions[0];if(q?.type==='listen')speak(q.speak);return}
+ if(name==='lesson-test'){await startQuiz('lesson',btn.dataset.id);return}
  if(name==='start-review'){if(!canReviewWords())return;const id=manualReviewIds()[0];if(id)navigate('word-review',id);return}
- if(name==='quiz-choice'){submitAnswer(btn.dataset.choice);return}
- if(name==='quiz-next'){if(quiz.index>=quiz.questions.length-1)finishQuiz();else{quiz.index++;quiz.answered=false;quiz.selected=[];quiz.latest=null;render();let q=quiz.questions[quiz.index];if(q?.type==='listen')setTimeout(()=>speak(q.speak),250)}return}
- if(name==='quiz-retry'){startQuiz(quiz.mode,quiz.lesson,quiz.mode==='review');return}
- if(name==='stop-quiz'){resetQuiz();return}
- if(name==='add-token'){if(quiz.answered)return;const q=quiz.questions[quiz.index],tok=q.tokens.find(x=>x.id===btn.dataset.id);if(tok){quiz.selected.push(tok);render()}return}
- if(name==='remove-token'){if(quiz.answered)return;quiz.selected.splice(Number(btn.dataset.index),1);render();return}
- if(name==='reset-tokens'){quiz.selected=[];render();return}
- if(name==='check-tokens'){let q=quiz.questions[quiz.index];if(!quiz.selected.length)return;submitAnswer(quiz.selected.map(x=>x.v).join(' ') + q.punct);return}
+ if(name==='quiz-choice'){await submitAnswer(btn.dataset.choice);return}
+ if(name==='quiz-next'){if(quizBusy||!quiz.active||!quiz.answered||quiz.finished)return;if(quiz.index>=quiz.questions.length-1)await finishQuiz();else{quiz.index++;quiz.answered=false;quiz.selected=[];quiz.latest=null;render();let q=quiz.questions[quiz.index];if(q?.type==='listen')setTimeout(()=>speak(q.speak),250)}return}
+ if(name==='quiz-retry'){if(!quiz.finished||quizBusy)return;await startQuiz(quiz.mode,quiz.lesson,quiz.mode==='review');return}
+ if(name==='stop-quiz'){await leaveQuiz();return}
+ if(name==='add-token'){if(quiz.answered||quizBusy)return;const q=quiz.questions[quiz.index],tok=q.tokens.find(x=>x.id===btn.dataset.id);if(tok&&!quiz.selected.some(x=>x.id===tok.id)){quiz.selected.push(tok);render()}return}
+ if(name==='remove-token'){if(quiz.answered||quizBusy)return;quiz.selected.splice(Number(btn.dataset.index),1);render();return}
+ if(name==='reset-tokens'){if(quiz.answered||quizBusy)return;quiz.selected=[];render();return}
+ if(name==='check-tokens'){let q=quiz.questions[quiz.index];if(!quiz.selected.length)return;await submitAnswer(quiz.selected.map(x=>x.v).join(' ') + q.punct);return}
  if(name==='watched'){let id=btn.dataset.id;mutate(()=>{if(state.videos.includes(id))state.videos=state.videos.filter(x=>x!==id);else{state.videos.push(id);state.xp+=5;touch()}});render();return}}
 function changeLanguage(v){
  if(!languages.includes(v))return;
@@ -287,7 +360,7 @@ async function boot(){
   restoreQuizSession();
   hydrateLocation();bindEvents();render();
   if(window.SVAuth){
-   void window.SVProgress?.initialize({onError:()=>{cloudReadError=true;if(user)refreshWordUI(true)},onActivity:info=>{if(user){if(info.completed)toast(info.completed.type==='unmark_known'?wordUX('returned'):['mark_review','review_grade'].includes(info.completed.type)?wordUX('reviewSaved'):info.completed.type==='mark_known'?txt4('Слово изучено','Word learned','Ordet är inlärt','Слово вивчено'):info.completed.data.value?txt4('Добавлено в избранное','Added to favorites','Tillagt i favoriter','Додано до обраного'):txt4('Удалено из избранного','Removed from favorites','Borttaget från favoriter','Видалено з обраного'));refreshWordUI()}},onSnapshot:(snapshot,userId)=>{
+   void window.SVProgress?.initialize({onError:()=>{cloudReadError=true;if(user)refreshWordUI(true)},onActivity:info=>{if(user){if(info.completed&&!info.completed.type.startsWith('session_')&&info.completed.type!=='answer')toast(info.completed.type==='unmark_known'?wordUX('returned'):['mark_review','review_grade'].includes(info.completed.type)?wordUX('reviewSaved'):info.completed.type==='mark_known'?txt4('Слово изучено','Word learned','Ordet är inlärt','Слово вивчено'):info.completed.data.value?txt4('Добавлено в избранное','Added to favorites','Tillagt i favoriter','Додано до обраного'):txt4('Удалено из избранного','Removed from favorites','Borttaget från favoriter','Видалено з обраного'));refreshWordUI();if(route==='practice'&&quiz.finished)render()}},onSnapshot:(snapshot,userId)=>{
     applyAuthState(window.SVAuth.getState());
     if(user?.id===userId){cloudReadError=false;state=sanitize(snapshot);refreshWordUI(true)}
    },previewCatalog:()=>({
@@ -481,7 +554,7 @@ function renderBook(){const b=BOOKS.find(x=>x.id===routeParam);if(!b)return rend
 function renderAlphabet(){return title('Å Ä Ö · '+t('alphabetHub'),t('alphabetPron'))+`<section class="content-panel"><p class="notice">🇸🇪 ${esc(txt4('Шведский алфавит содержит 29 букв. Слушай название и слово-пример.','The Swedish alphabet has 29 letters. Listen to the letter names and example words.','Svenska alfabetet har 29 bokstäver. Lyssna på bokstavsnamn och exempelord.','Шведський алфавіт має 29 літер. Слухай назви та приклади.'))}</p><div class="alpha-grid">${ALPHABET3.map(([letter,ipa,word,ru])=>`<article class="alpha-card"><div class="alpha-head"><span class="alpha-letter">${esc(letter)}</span><span class="alpha-ipa">${esc(ipa)}</span></div><p><strong lang="sv">${esc(word)}</strong>${locale4()==='ru'?`<small>${esc(ru)}</small>`:''}</p><div class="split"><button class="btn secondary small" data-action="letter-speak" data-letter="${esc(letter)}" aria-label="${esc(t('pronounce'))} ${letter}">🔊 ${esc(letter)}</button><button class="btn ghost small" data-action="speak" data-text="${esc(word)}">▶ ${esc(word)}</button></div></article>`).join('')}</div></section>`}
 function renderHome(){let next=LESSONS.find(l=>!state.completed.includes(l.id)&&l.level===state.settings.level)||LESSONS[0];const actions=[['lessons','📚','pastel-lavender',t('lessons'),LESSONS.length+' '+t('availableLessons')],['topics','🗂️','pastel-mint',t('topics'),topicNames3().length+' '+t('allThemes')],['dictionary','🔎','pastel-peach',t('dictionary'),WORDS.length+' '+t('words')],['practice','🧠','pastel-lavender',t('train'),'14 '+t('chooseMode')],['reviews','🔁','pastel-peach',t('reviews'),t('smartReview')],['videos','🎬','pastel-mint',t('videos'),VIDEOS.length+' '+t('shortVideo')],['books','📖','pastel-peach',t('books'),BOOKS.length+' '+t('reading')],['rules','📜','pastel-lavender',t('rulesHub'),LESSONS.length+' '+t('lessonCount')],['alphabet','🔤','pastel-mint',t('alphabetHub'),'29 '+t('alphabetPron')]];return `<section class="hero"><div class="hero-copy"><span class="eyebrow">🇸🇪 SFI A · B · C · D</span><h1>${esc(t('welcome'))}</h1><p>${esc(t('heroDescription'))}</p><div class="split"><button class="btn white" data-nav="lesson" data-param="${esc(next.id)}">${esc(t('startLearning'))} →</button><button class="btn" data-nav="topics">🗂️ ${esc(t('topics'))}</button></div></div><div class="hero-picture"><div class="hero-illustration">📚</div><span class="hero-orbit orbit-a">🇸🇪</span><span class="hero-orbit orbit-b">💬</span></div></section><section class="stats-grid">${stat('🏆',accountLevel3(),t('accountRank'),'purple')}${stat('🔥',streak(),t('dayStreak'),'orange')}${stat('🧠',state.known.length,t('knownWords'),'mint')}${stat('🎓',state.completed.length,t('lessonCount'),'pink')}</section><div class="home-rank"><div class="split"><b>⭐ ${state.xp||0} XP</b><span>${accountProgress3()}/500 XP</span></div><div class="progress-track"><div class="progress-fill" style="width:${accountProgress3()/5}%"></div></div></div><div class="section-head"><h2>✨ ${esc(t('yourWorkout'))}</h2></div><div class="action-grid action-grid-4">${actions.map(([key,ico,cl,name,sub])=>`<button class="action-card ${cl}" data-nav="${key}"><span class="corner">↗</span><span class="action-emoji">${studioIcon(STUDIO_ACTION_ICON[key])}</span><h3>${esc(name)}</h3><p>${esc(sub)}</p></button>`).join('')}</div><div class="section-head"><h2>${esc(t('allCourses'))}</h2><button class="link-btn" data-nav="lessons">${esc(t('seeAll'))} →</button></div><div class="course-tiles">${'ABCD'.split('').map(courseTile).join('')}</div><div class="section-head"><h2>${esc(t('dayPractice'))}</h2><button class="link-btn" data-nav="profile">${esc(t('seeAll'))} →</button></div><div class="content-panel">${activityStrip()}<p class="info-scope">${esc(user?t('savedAccount'):t('guestNotice'))}</p></div>`}
 function renderPractice(){if(quiz.active)return quiz.finished?renderQuizFinish():renderQuiz();const modes=[['mixed','🎲'],['translation','🌍'],['fillBlank','📝'],['weekdays','🗓️'],['alphabet','🔤'],['months','📆'],['dialogues','💬'],['readText','📖'],['verbForms','⚡'],['articles','🧩'],['listening','🎧'],['sentences','🧱'],['writeWord','✍️'],['fixMistake','🛠️']];return title(t('train'),t('chooseMode'))+`<section class="practice-instructions"><span class="info-illustration">🎯</span><div><h3>${esc(t('lessonQuizTip'))}</h3><p>${esc(t('introPractice'))}</p></div></section><div class="practice-modes">${modes.map(([m,e])=>`<button class="mode-card" data-action="start-mode" data-mode="${m}"><span class="e">${e}</span><b>${esc(t(m))}</b><small>20 ${esc(t('quizDuration'))} · +XP</small></button>`).join('')}</div>`}
-// Ongoing exercises belong to this tab and account, independently of saved learning statistics.
+// Exercise drafts belong to this tab and identity; account events live in the durable queue.
 const quizSessionSnapshots=new WeakMap();
 function quizSessionKey(){return `${localStateKey()}:quiz-v1`}
 function quizQuestionSnapshots(question){
@@ -494,11 +567,11 @@ function quizQuestionSnapshots(question){
  return variants;
 }
 function persistQuizSession(){
- if(cloudAccount())return;
+ if(cloudAccount()&&(!quiz.cloud||quiz.cloud.owner!==user.id))return;
  try{
-  if(!quiz.active){sessionStorage.removeItem(quizSessionKey());return}
+  if(!quiz.active){quizStorage().removeItem(activeQuizKey());return}
   const questions=quiz.questions.map(quizQuestionSnapshots);
-  sessionStorage.setItem(quizSessionKey(),JSON.stringify({version:1,language:locale4(),quiz:{...quiz,questions}}));
+  quizStorage().setItem(activeQuizKey(),JSON.stringify({version:1,language:locale4(),quiz:{...quiz,questions}}));
  }catch(_){/* Storage may be unavailable or full; the exercise remains usable. */}
 }
 function validQuizSession(record){
@@ -532,12 +605,12 @@ function validQuizSession(record){
  return true;
 }
 function restoreQuizSession(){
- if(cloudAccount())return false;
  try{
-  const raw=sessionStorage.getItem(quizSessionKey());
+  const raw=quizStorage().getItem(activeQuizKey());
   if(!raw)return false;
   const record=JSON.parse(raw);
-  if(!validQuizSession(record)){sessionStorage.removeItem(quizSessionKey());return false}
+  if(!validQuizSession(record))return false;
+  if(cloudAccount()&&record.quiz.cloud?.owner!==user.id)return false;
   const saved=record.quiz;
   const questions=saved.questions.map(variants=>{
    const fields={};
@@ -675,18 +748,28 @@ function getQuestion(mode){
  if(mode==='readText')return quizBookQuestion(shuffle(BOOKS)[0]);
  return getQuestion('translation');
 }
-function startQuiz(mode='mixed',lesson=null,forReview=false){
- if(cloudAccount())return;
+async function startQuiz(mode='mixed',lesson=null,forReview=false){
+ if(quizBusy)return;
+ if(cloudAccount()&&!window.SVProgress?.writeStatus().ready){toast(t('saveError'));return}
+ const origin=quiz.finished&&quiz.origin?quiz.origin:{route, param:routeParam};
+ if(quiz.cloud&&!quiz.finished){
+  const previous=quiz;quiz.cloud.events.abandon??=quizEvent('session_abandon',{});
+  quizLoading(true);let ok=false;try{ok=await sendQuizEvent('start')&&await sendQuizEvent('abandon')}finally{if(quiz===previous)quizLoading(false)}
+  if(!ok||quiz!==previous){if(quiz===previous)toast(t('saveError'));return}
+ }
  let questions=[];
- if(mode==='book'){
+ if(mode==='video'){
+  const v=MORE_VIDEOS.find(x=>x.id===lesson);if(!v?.question)return;
+  questions=[localizedQuizChoice(v.question,v.answer,v.wrong,null,()=>txt4('Вопрос по описанию видео.','Question based on the video description.','Fråga om videobeskrivningen.','Запитання за описом відео.'))];
+ }else if(mode==='book'){
   const book=BOOKS.find(x=>x.id===lesson);if(!book)return;
   questions=book.questions.map(source=>quizBankQuestion(source));
  }else if(mode==='topic'){
-  const words=shuffle(WORDS.filter(w=>w.category===lesson));
+  const words=shuffle(topicWordsPlus(lesson));
   questions=words.slice(0,20).map(w=>quizWordQuestion(w,'translation',words));
  }else if(lesson){
   const l=LESSONS.find(x=>x.id===lesson);if(!l)return;
-  questions=shuffle(l.questions).slice(0,14).map(source=>quizBankQuestion(source));
+  questions=shuffle(l.questions).map(source=>quizBankQuestion(source));
  }else if(forReview){
   questions=shuffle(reviewDeck()).slice(0,20).map(w=>{
    if(w.type==='verb')return localizedQuizChoice(`${w.inf} → Preteritum`,w.past,shuffle(WORDS.filter(x=>x.type==='verb'&&x.past&&x.past!==w.past)).slice(0,3).map(x=>x.past),w.id,()=>`${w.inf} → ${w.pre} → ${w.past} → ${w.sup} · ${locMeaning4(w)}`);
@@ -695,7 +778,14 @@ function startQuiz(mode='mixed',lesson=null,forReview=false){
   });
  }else questions=Array.from({length:20},()=>getQuestion(mode));
  if(!questions.length){toast(t('noDue'));return}
- quiz={active:true,finished:false,mode,lesson,questions,index:0,score:0,answered:false,selected:[],latest:null};navigate('practice');
+ quiz={active:true,finished:false,mode,lesson,questions,index:0,score:0,answered:false,selected:[],latest:null,origin,mistakes:[]};
+ if(cloudAccount()){
+  quiz.cloud={owner:user.id,id:crypto.randomUUID(),events:{},version:window.SVProgress.status().content_version};
+  quiz.cloud.events.start=quizEvent('session_start',{mode:lesson&&!['book','topic','video'].includes(mode)?'lesson':mode,...(lesson?{context_id:lesson}:{}),content_version:quiz.cloud.version,questions:questions.map(q=>q.wordId?{word_id:q.wordId}:{})});
+ }
+ navigate('practice');if(quiz.cloud){
+  const current=quiz;quizLoading(true);try{if(!await sendQuizEvent('start')&&quiz===current)toast(t('saveError'))}finally{if(quiz===current){quizLoading(false);render()}}
+ }
 }
 // Overlay support for every navigation category and responsive search.
 function drawerToggle4(force){const app=$('#app'),opened=force===undefined?!app.classList.contains('nav-open'):!!force;app.classList.toggle('nav-open',opened);$('#menu-toggle')?.setAttribute('aria-expanded',String(opened));if(opened)$('#drawer-close')?.focus()}
@@ -813,7 +903,7 @@ document.addEventListener('click',event=>{const b=event.target?.closest?.('[data
 
 
 // Small post-video check: based on UR's published synopsis, not a verified speech transcript.
-document.addEventListener('click',e=>{const el=e.target?.closest?.('[data-action="video-quiz"]');if(!el)return;e.preventDefault();e.stopImmediatePropagation();const v=MORE_VIDEOS.find(x=>x.id===el.dataset.id);if(!v?.question)return;const question=localizedQuizChoice(v.question,v.answer,v.wrong,null,()=>txt4('Вопрос по описанию выпуска UR Play. Чтобы проверить аудирование, сначала посмотри видео.','Question based on the UR Play episode description. Watch the video first to practise listening.','Frågan bygger på avsnittsbeskrivningen hos UR Play. Titta först på videon.','Запитання за описом випуску UR Play. Спершу переглянь відео.'));quiz={active:true,finished:false,mode:'mixed',lesson:null,questions:[question],index:0,score:0,answered:false,selected:[],latest:null};navigate('practice')},true);
+document.addEventListener('click',e=>{const el=e.target?.closest?.('[data-action="video-quiz"]');if(!el)return;e.preventDefault();e.stopImmediatePropagation();const v=MORE_VIDEOS.find(x=>x.id===el.dataset.id);if(!v?.question)return;const question=localizedQuizChoice(v.question,v.answer,v.wrong,null,()=>txt4('Вопрос по описанию выпуска UR Play. Чтобы проверить аудирование, сначала посмотри видео.','Question based on the UR Play episode description. Watch the video first to practise listening.','Frågan bygger på avsnittsbeskrivningen hos UR Play. Titta först på videon.','Запитання за описом випуску UR Play. Спершу переглянь відео.'));startQuiz('video',v.id)},true);
 
 
 // A consistent illustrated icon system. Original training icons remain unchanged.
@@ -903,7 +993,7 @@ async function setWordFavorite(id){
  else mutate(()=>{state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id]})}
  finally{wordSubmissions.delete(key);refreshWordUI()}
 }
-function unsupportedAction(name,btn){return ['start-mode','lesson-test','topic-quiz','book-quiz','quiz-retry','watched','book-read','save-profile-name','remove-photo'].includes(name)}
+function unsupportedAction(name,btn){return ['watched','book-read','save-profile-name','remove-photo'].includes(name)}
 // Progress notifications never replace the page, search controls or surviving cards.
 function refreshWordUI(snapshotChanged=false){
  const page=$('#page');if(!page?.querySelectorAll)return;
@@ -1079,14 +1169,15 @@ function renderManualReviews(){return title(t('reviews'))+`<p data-review-count>
 async function addManualReview(id){
  if(!user){toast(queueUX('login'));return}
  if(!manualQueue().ready){toast(queueUX(manualQueue().error||'unavailable'));void window.SVManualReviews?.refresh();return}
- if(getWord(id)){const saved=await window.SVManualReviews.change('add',id);if(!saved&&manualQueue().error==='offline')toast(queueUX('offline'))}
+ if(manualQueue().pending.includes(id))return;
+ if(getWord(id)){const action=manualReviewIds().includes(id)?'remove':'add';const saved=await window.SVManualReviews.change(action,id);if(!saved&&manualQueue().error==='offline')toast(queueUX('offline'))}
 }
 function updateManualReviewButtons(){
  const q=manualQueue(),ids=new Set(manualReviewIds());
  document.querySelectorAll('[data-action="mark-review"],[data-action="flash-grade"][data-value="0"]').forEach(btn=>{
   const id=btn.dataset.id||flash.ids[flash.index],selected=ids.has(id),pending=q.pending.includes(id);
-  btn.hidden=false;btn.innerHTML=studioIcon('repeat','review-button-icon')+' '+esc(t('repeat'));btn.classList.toggle('is-queued',selected);btn.title=selected?queueUX('added'):pending?ux('saving'):queueUX('add');btn.setAttribute('aria-label',selected?queueUX('added'):queueUX('add'));
-  btn.disabled=selected||pending;btn.setAttribute('aria-pressed',String(selected));btn.setAttribute('aria-busy',String(pending));
+  btn.hidden=false;btn.innerHTML=studioIcon('repeat','review-button-icon')+' '+esc(t('repeat'));btn.classList.toggle('is-queued',selected);btn.title=pending?ux('saving'):selected?queueUX('remove'):queueUX('add');btn.setAttribute('aria-label',selected?queueUX('remove'):queueUX('add'));
+  btn.disabled=pending;btn.setAttribute('aria-pressed',String(selected));btn.setAttribute('aria-busy',String(pending));
  });
  document.querySelectorAll('[data-action="remove-review"]').forEach(btn=>{btn.disabled=q.pending.includes(btn.dataset.id)});
  document.querySelectorAll('[data-review-count]').forEach(el=>{el.textContent=el.dataset.nav==='reviews'?`🔁 ${t('reviews')} · ${!user?0:q.ready?ids.size:'…'} →`:`${!user?0:q.ready?ids.size:'…'} ${t('words')}`});

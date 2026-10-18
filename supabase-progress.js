@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-account-cloud-1';
+ const moduleVersion='2026-10-18-quiz-sessions-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -104,7 +104,7 @@
   if(!c||!current(c))return;
   let stored;try{stored=await rows()}catch(_){stored=[]}
   const pending=stored.filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status)).map(r=>{
-   const event=JSON.parse(r.eventJson);return {type:event.type,wordId:event.data.word_id,status:r.status};
+   const event=JSON.parse(r.eventJson);return {type:event.type,wordId:event.data.word_id,sessionId:event.data.session_id,status:r.status};
   });
   if(!current(c))return;
   activity={pending,error:writeError};
@@ -171,8 +171,15 @@
   writerReady=c;writeError=null;
   deliverSnapshot(c);
  }
+ // A stalled request must release the cross-tab queue lock. A late write can
+ // safely be retried because the exact event UUID/body remains in IndexedDB.
+ async function boundedRpc(request){
+  let timer;
+  try{return await Promise.race([request,new Promise((_,reject)=>{timer=setTimeout(()=>reject(fail('RPC_TIMEOUT')),8000)})])}
+  finally{clearTimeout(timer)}
+ }
  async function fresh(c){
-  const result=await window.SVRpc.getProgress({expectedUserId:c.userId});requireCurrent(c);
+  const result=await boundedRpc(window.SVRpc.getProgress({expectedUserId:c.userId}));requireCurrent(c);
   c.snapshot=validate(result);c.status='ready';c.receivedAt=new Date().toISOString();
   await compatible(c);requireCurrent(c);publish(c);
  }
@@ -200,8 +207,8 @@
     for(let attempt=0;attempt<2;attempt++){
      requireCurrent(c);await compatible(c);
      try{
-      const result=await window.SVRpc.applyEvent({expectedUserId:c.userId,eventId:row.eventId,
-       expectedRevision:row.expectedRevision,event:JSON.parse(row.eventJson)});
+      const result=await boundedRpc(window.SVRpc.applyEvent({expectedUserId:c.userId,eventId:row.eventId,
+       expectedRevision:row.expectedRevision,event:JSON.parse(row.eventJson)}));
       requireCurrent(c);
       const snapshot=validate(result?.progress);
       if(typeof result.duplicate!=='boolean'||!count(result.applied_revision)||
@@ -261,6 +268,29 @@
    });
    await reportActivity(c);
    void flush();return true;
+  }catch(e){if(c&&current(c))notify(e.code||'QUEUE_STORAGE_FAILED');return false}
+ }
+ // Session events use the same durable, ordered, identity-scoped queue as words.
+ // The caller retains the immutable event/UUID before enqueueing, so a crash or
+ // lost response can only retry that event, never award a second answer.
+ async function enqueueSession(eventId,event){
+  const c=context;
+  try{
+   if(!writeEnabled||!c||writerReady!==c)throw fail('CLOUD_NOT_READY');
+   await lock(c,async()=>{
+    await compatible(c);requireCurrent(c);
+    if(!/^[0-9a-f-]{36}$/i.test(eventId)||!['session_start','answer','session_finish','session_abandon'].includes(event?.type))throw fail('INVALID_EVENT');
+    const body=JSON.stringify(event),stored=(await rows()).filter(r=>r.userId===c.userId);
+    const existing=stored.find(r=>r.eventId===eventId);
+    if(existing){if(existing.eventJson!==body)throw fail('EVENT_ID_REUSED');if(['blocked','conflict','cancelled'].includes(existing.status))throw fail('QUEUE_REQUIRES_REVIEW');return}
+    const pending=stored.filter(r=>!['applied','cancelled'].includes(r.status));
+    if(pending.some(r=>['conflict','blocked'].includes(r.status)))throw fail('QUEUE_REQUIRES_REVIEW');
+    if(event.type==='session_start'&&event.data.content_version!==c.snapshot.content_version)throw fail('CONTENT_VERSION_MISMATCH');
+    await storage('events','readwrite',store=>store.add({userId:c.userId,eventId,eventJson:body,
+     contentVersion:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
+    requireCurrent(c);
+   });
+   await reportActivity(c);void flush();return true;
   }catch(e){if(c&&current(c))notify(e.code||'QUEUE_STORAGE_FAILED');return false}
  }
  // Explicit settings changes share the event writer's cross-tab lock, but do
@@ -387,7 +417,7 @@
  window.addEventListener('online',wakeWriter);
  window.addEventListener('focus',wakeWriter);
 
- window.SVProgress=Object.freeze({initialize,updateLevel,refresh,status:summary,writeEnabled,enqueue,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
+ window.SVProgress=Object.freeze({initialize,updateLevel,refresh,status:summary,writeEnabled,enqueue,enqueueSession,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
  // Local development summary only; no tokens, identities or raw state.
  if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)){
   window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,moduleVersion,diagnostics,queue:queueStatus,flush,acknowledgeConflict});

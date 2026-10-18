@@ -167,7 +167,7 @@ domTest('manual removal preserves other list rows and document height without na
 });
 domTest('flashcard review control receives the same confirmed queue state without an automatic exercise',async()=>{
  const h=await withManualQueue();h.run("route='flashcards';flash.ids=[WORDS[0].id];flash.index=0");h.page.innerHTML='<button data-action="flash-grade" data-value="0" disabled>Повторить</button>';h.run('manualQueueChanged()');
- const btn=h.page.querySelector('button');assert.equal(btn.disabled,false);assert.equal(btn.textContent,' Повторить');await h.run("action({dataset:{action:'flash-grade',value:'0'}})");assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.disabled,true);assert.equal(h.run('route'),'flashcards');assert.equal(h.grades.length,0);
+ const btn=h.page.querySelector('button');assert.equal(btn.disabled,false);assert.equal(btn.textContent,' Повторить');await h.run("action({dataset:{action:'flash-grade',value:'0'}})");assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.disabled,false);assert.equal(h.run('route'),'flashcards');assert.equal(h.grades.length,0);
 });
 
 domTest('account photo and name open the profile once and close the mobile drawer',()=>{

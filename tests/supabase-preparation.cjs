@@ -435,7 +435,7 @@ function writerEnvironment(){
 }
 function writerServer({wordState=false}={}){
  const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0;
- function account(id){if(!accounts.has(id))accounts.set(id,{history:new Set(),snapshot:cloudSnapshot({capabilities:wordState?['unmark_known','review_grade','known_reward_once']:[],revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
+ function account(id){if(!accounts.has(id))accounts.set(id,{history:new Set(),sessions:new Map(),snapshot:cloudSnapshot({capabilities:wordState?['unmark_known','review_grade','known_reward_once']:[],revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
  async function request(h){
   active++;maxActive=Math.max(maxActive,active);
   try{
@@ -456,6 +456,24 @@ function writerServer({wordState=false}={}){
    else if(['mark_review','review_grade'].includes(event.type)){
     const previous=s.reviews[w]||{rep:0,interval:0,ease:2.5},ok=event.type==='review_grade'&&event.data.correct;
     s.reviews[w]={rep:ok?previous.rep+1:0,interval:ok?(previous.rep===0?1:3):0,ease:previous.ease,due:Date.parse(event.occurred_at)+(ok?86400000:600000)};
+   }
+   else if(event.type==='session_start'){
+    const d=event.data;assert.equal(d.content_version,a.snapshot.content_version);
+    if(['lesson','book'].includes(d.mode)){
+     const bank=JSON.parse(fs.readFileSync(path.join(root,d.mode==='lesson'?'lessons.json':'books.json')));
+     assert.equal(d.questions.length,bank.find(row=>row.id===d.context_id).questions.length);
+    }
+    assert(!a.sessions.has(d.session_id));a.sessions.set(d.session_id,{...d,status:'active',answers:new Map()});
+   }else if(event.type==='answer'){
+    const d=event.data,session=a.sessions.get(d.session_id);assert.equal(session?.status,'active');
+    assert(!session.answers.has(d.question_index));assert(d.question_index<session.questions.length);
+    session.answers.set(d.question_index,d.correct);s.answered++;if(d.correct)s.correct++;s.xp+=d.correct?12:3;
+   }else if(['session_finish','session_abandon'].includes(event.type)){
+    const session=a.sessions.get(event.data.session_id);assert.equal(session?.status,'active');
+    if(event.type==='session_finish'){
+     assert.equal(session.answers.size,session.questions.length);session.status='completed';
+     if(session.mode==='lesson'&&[...session.answers.values()].filter(Boolean).length/session.questions.length>=.6&&!s.completed.includes(session.context_id)){s.completed.push(session.context_id);s.xp+=35}
+    }else session.status='abandoned';
    }
    else if(event.type==='settings_update')s.settings.level=event.data.level;
    else if(event.type==='favorite_set')s.favorites=event.data.value?[...new Set([...s.favorites,w])]:s.favorites.filter(x=>x!==w);
@@ -601,7 +619,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('current debug export has queue and version even with writes disabled and no session',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-account-cloud-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-quiz-sessions-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,false);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
@@ -991,4 +1009,105 @@ test('settings revision conflict retries the same intent; refresh receives anoth
  const calls=w.h.records.rpc.filter(r=>r.name==='sl_apply_event');assert.equal(calls.length,2);
  assert.equal(calls[0].args.p_event_id,calls[1].args.p_event_id);assert.deepEqual(calls[0].args.p_event,calls[1].args.p_event);
  w.server.account(A).snapshot.state.settings.level='D';await w.h.ctx.SVProgress.refresh();assert.equal(w.snapshots.at(-1).s.settings.level,'D');
+});
+
+// Full application → durable client queue → RPC model. No live SQL or accounts.
+async function quizApp(w){
+ const h=w.h,ctx=h.ctx;
+ ctx.sessionStorage={getItem:k=>w.shared.data.get('tab:'+k)??null,setItem:(k,v)=>w.shared.data.set('tab:'+k,v),removeItem:k=>w.shared.data.delete('tab:'+k)};
+ ctx.document.querySelectorAll=()=>[];
+ vm.runInContext(fs.readFileSync(path.join(root,'locale-content.js'),'utf8'),ctx);
+ vm.runInContext(fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,''),ctx);
+ const run=code=>vm.runInContext(code,ctx);
+ run(`WORDS=${fs.readFileSync(path.join(root,'words.json'),'utf8')};LESSONS=${fs.readFileSync(path.join(root,'lessons.json'),'utf8')};BOOKS=${fs.readFileSync(path.join(root,'books.json'),'utf8')};user={id:'${A}'};state=defaultState();toast=()=>{};headerStats=()=>{};render=()=>persistQuizSession();navigate=(r,p='')=>{route=r;routeParam=p;render()};route='lesson';routeParam='lesson-50';`);
+ await ctx.SVProgress.initialize({onSnapshot:s=>{ctx.nextSnapshot=s;run('state=sanitize(nextSnapshot)')}});
+ return run;
+}
+test('account lesson completes real questions with mistakes, exact XP, retry reward once, reload and relogin',async()=>{
+ const w=await startWriter(),run=await quizApp(w);
+ await run("action({dataset:{action:'lesson-test',id:'lesson-50'}})");
+ assert.equal(run('quiz.questions.length'),run("LESSONS.find(x=>x.id==='lesson-50').questions.length"));
+ const n=run('quiz.questions.length');
+ await run("submitAnswer(quiz.questions[0].options.find(x=>x!==quiz.questions[0].answer))");
+ const after=run('quiz.score');await run('submitAnswer(quiz.questions[0].answer)');assert.equal(run('quiz.score'),after);
+ // Reload the application after one wrong answer without losing question order.
+ const before=run('JSON.stringify(quiz.questions)');const again=await startWriter(w.shared,w.server),r=await quizApp(again);
+ assert.equal(r('restoreQuizSession()'),true);assert.equal(r('quiz.answered'),true);assert.equal(r('JSON.stringify(quiz.questions)'),before);
+ for(let i=1;i<n;i++){await r("action({dataset:{action:'quiz-next'}})");await r('submitAnswer(quiz.questions[quiz.index].answer)')}
+ await r('finishQuiz()');await again.h.ctx.SVProgressDebug.flush();
+ assert.equal(r('quiz.finished'),true);assert.equal(r('quiz.mistakes.length'),1);assert.match(r('renderQuizFinish()'),/details/);
+ let state=w.server.account(A).snapshot.state;
+ assert.equal(state.answered,n);assert.equal(state.correct,n-1);assert.equal(state.xp,3+(n-1)*12+35);assert(state.completed.includes('lesson-50'));
+ const result=await startWriter(w.shared,w.server);assert.equal(result.snapshots.at(-1).s.xp,state.xp);
+ await r("startQuiz('lesson','lesson-50')");
+ for(let i=0;i<n;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<n-1)await r("action({dataset:{action:'quiz-next'}})")}
+ await r('finishQuiz()');await again.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,3+(n-1)*12+35+n*12);
+ assert.equal(w.server.account(A).snapshot.state.completed.filter(id=>id==='lesson-50').length,1);
+ assert.equal(w.shared.data.get('sv-account-local-v1-'+A),undefined);
+});
+test('all 14 account modes, every topic, book and video use real content and supported session events',async()=>{
+ const w=await startWriter(),run=await quizApp(w);
+ for(const mode of ['mixed','translation','fillBlank','weekdays','alphabet','months','dialogues','readText','verbForms','articles','listening','sentences','writeWord','fixMistake']){
+  await run(`startQuiz('${mode}')`);const n=run('quiz.questions.length');assert(n>0,mode);
+  for(let i=0;i<n;i++){
+   await run('submitAnswer(quiz.questions[quiz.index].answer)');assert.equal(run('quiz.latest'),true);
+   await run("action({dataset:{action:'quiz-next'}})");
+  }
+  assert.equal(run('quiz.finished'),true,mode);assert.equal(run('quiz.score'),n,mode);
+ }
+ for(const topic of run('topicNames3()')){await run(`startQuiz('topic',${JSON.stringify(topic)})`);assert(run('quiz.questions.length')>0,topic)}
+ for(const book of run('BOOKS.map(b=>b.id)')){await run(`startQuiz('book','${book}')`);assert.equal(run('quiz.questions.length'),run(`BOOKS.find(b=>b.id==='${book}').questions.length`))}
+ const video=run('MORE_VIDEOS.find(v=>v.question).id');await run(`startQuiz('video','${video}')`);assert.equal(run('quiz.questions.length'),1);
+ await run('submitAnswer(quiz.questions[0].answer)');await run('finishQuiz()');await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.h.ctx.SVProgress.writeStatus().error,null);
+ assert([...w.server.account(A).sessions.values()].some(s=>s.mode==='video'&&s.status==='completed'));
+});
+test('offline answers and lost ACK survive reload; same answer UUID cannot award twice',async()=>{
+ const w=await startWriter(),run=await quizApp(w);await run("startQuiz('translation')");await w.h.ctx.SVProgressDebug.flush();
+ w.server.offline=true;await run('submitAnswer(quiz.questions[0].answer)');await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(run('quiz.answered'),true);assert.equal(w.server.account(A).snapshot.state.answered,0);
+ assert.match(run('quizSaveLabel()'),/сохранить|синхронизации/);
+ const old=[...w.shared.stores.get('events').values()].find(r=>JSON.parse(r.eventJson).type==='answer');
+ w.server.offline=false;w.server.loseAck=true;await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,12);
+ const reloaded=await startWriter(w.shared,w.server),r=await quizApp(reloaded);assert.equal(r('restoreQuizSession()'),true);
+ await r('submitAnswer(quiz.questions[0].answer)');await reloaded.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,12);assert.equal(w.server.account(A).snapshot.state.answered,1);
+ const row=[...w.shared.stores.get('events').values()].find(r=>r.eventId===old.eventId);assert.equal(row.eventJson,old.eventJson);assert.equal(row.status,'applied');
+});
+test('storage failure retains answer intent, concurrent clicks enqueue one answer, abandoning preserves XP',async()=>{
+ const w=await startWriter(),run=await quizApp(w);await run("startQuiz('translation')");await w.h.ctx.SVProgressDebug.flush();
+ const map=w.shared.stores.get('events'),set=map.set;
+ map.set=()=>{throw Error('quota')};await run('submitAnswer(quiz.questions[0].answer)');assert.equal(run('quiz.answered'),false);
+ const intent=run("JSON.stringify(quiz.cloud.events['answer-0'])");map.set=set;
+ await Promise.all([run('submitAnswer(quiz.questions[0].answer)'),run('submitAnswer(quiz.questions[0].answer)')]);
+ await w.h.ctx.SVProgressDebug.flush();assert.equal(run("JSON.stringify(quiz.cloud.events['answer-0'])"),intent);
+ assert.equal(w.server.account(A).snapshot.state.xp,12);assert.equal(w.server.account(A).snapshot.state.answered,1);
+ await run('leaveQuiz()');await w.h.ctx.SVProgressDebug.flush();assert.equal([...w.server.account(A).sessions.values()][0].status,'abandoned');assert.equal(run('quiz.active'),false);
+});
+
+test('stalled session RPC releases the writer lock and retries the original event after timeout',async()=>{
+ const shared=writerEnvironment(),normalTimeout=shared.environment.setTimeout,timers=new Set();
+ shared.environment.setTimeout=(fn,ms)=>{if(ms===8000)timers.add(fn);return normalTimeout(fn,ms)};
+ const w=await startWriter(shared),run=await quizApp(w);
+ await run("startQuiz('translation')");await w.h.ctx.SVProgressDebug.flush();timers.clear();
+ let stalled=false;w.h.rpcResult(()=>{if(w.h.records.rpc.at(-1).name==='sl_apply_event'){stalled=true;return new Promise(()=>{})}return w.server.request(w.h)});
+ await run('submitAnswer(quiz.questions[0].answer)');
+ for(let i=0;i<25&&!stalled;i++)await new Promise(resolve=>setImmediate(resolve));
+ assert.equal(stalled,true);const pending=[...shared.stores.get('events').values()].find(row=>JSON.parse(row.eventJson).type==='answer');
+ for(const timeout of timers)timeout();await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.answered,0);
+ w.h.rpcResult(()=>w.server.request(w.h));await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,12);assert.equal(w.server.account(A).snapshot.state.answered,1);
+ assert.equal([...shared.stores.get('events').values()].find(row=>row.eventId===pending.eventId).status,'applied');
+});
+
+test('identity change during a quiz submission cannot update or unlock the next account exercise',async()=>{
+ const w=await startWriter(),run=await quizApp(w);await run("startQuiz('translation')");
+ let release;w.h.ctx.SVProgress={...w.h.ctx.SVProgress,enqueueSession:()=>new Promise(resolve=>{release=resolve})};
+ const pending=run('submitAnswer(quiz.questions[0].answer)');
+ run(`user={id:'${B}'};quiz={active:true,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};quizBusy=true;`);
+ release(true);await pending;
+ assert.equal(run('quizBusy'),true);assert.equal(run('quiz.answered'),false);assert.equal(run('quiz.score'),0);
 });

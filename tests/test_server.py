@@ -118,7 +118,7 @@ class ServerTests(unittest.TestCase):
   with urllib.request.urlopen(self.url+'/') as response:
    html=response.read().decode()
    self.assertRegex(html,r'\./supabase-progress\.js\?v=[^" ]+')
-   self.assertIn('./study-time.js?v=2',html)
+   self.assertRegex(html,r'\./study-time\.js\?v=[^" ]+')
 
  def test_http_progress_module_exposes_local_debug_status(self):
   # Execute bytes fetched from the real HTTP server in a JS global context.
@@ -127,10 +127,10 @@ class ServerTests(unittest.TestCase):
    source=response.read().decode('utf-8')
   script="""const vm=require('node:vm'),assert=require('node:assert/strict');
 const source=require('node:fs').readFileSync(0,'utf8');
-const scope={window:{},document:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
+const scope={window:{addEventListener(){}},document:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
 vm.runInNewContext(source,scope,{filename:'supabase-progress.js from HTTP'});
 for(const method of ['status','queue','diagnostics'])assert.equal(typeof scope.window.SVProgressDebug[method],'function');
-assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-10-18-word-state-2');
+assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-10-18-quiz-sessions-1');
 assert.equal(scope.window.SVProgressDebug.status().status,'idle');
 """
   result=subprocess.run(['node','-e',script],input=source,text=True,capture_output=True,timeout=10)

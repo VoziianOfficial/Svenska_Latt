@@ -18,7 +18,7 @@ function page(){
  vm.createContext(context);
  vm.runInContext(read('locale-content.js'),context);vm.runInContext(app,context);
  const run=source=>vm.runInContext(source,context);
- run(`WORDS=${read('words.json')};LESSONS=${JSON.stringify(lessons)};BOOKS=${read('books.json')};state=readLocalState();render=()=>{persistQuizSession();html=renderPractice()};navigate=target=>{route=target;render()};markReview=()=>{};headerStats=()=>{}`);
+ run(`WORDS=${read('words.json')};LESSONS=${JSON.stringify(lessons)};BOOKS=${read('books.json')};state=readLocalState();render=()=>{persistQuizSession();html=renderPractice()};navigate=target=>{route=target;render()};markReview=()=>{};headerStats=()=>{};toast=()=>{}`);
  return {run,events,nodes,document};
 }
 function reload(lang){
@@ -114,6 +114,25 @@ assert.equal(current.run('quiz.active'),true);assert.equal(current.run('restoreQ
 (async()=>{
  sessionStorage.setItem=(key,value)=>sessionStorage.map.set(key,String(value));
  sessionStorage.getItem=key=>sessionStorage.map.get(key)??null;
+ // Complete every guest mode through the actual action handlers, including
+ // text and token input, then repeat without reusing an answered question.
+ for(const mode of modes){
+  const guest=page();await guest.run(`startQuiz('${mode}')`);
+  const n=guest.run('quiz.questions.length'),start=guest.run('state.answered');
+  for(let i=0;i<n;i++){
+   const type=guest.run('quiz.questions[quiz.index].type');
+   if(type==='arrange'){
+    guest.run("quiz.selected=quiz.questions[quiz.index].answer.replace(/[.!?]+$/g,'').split(' ').map((v,i)=>({id:String(i),v}))");
+    await guest.run("action({dataset:{action:'check-tokens'}})");
+   }else if(type==='choice')await guest.run("action({dataset:{action:'quiz-choice',choice:quiz.questions[quiz.index].answer}})");
+   else await guest.run('submitAnswer(quiz.questions[quiz.index].answer)');
+   assert.equal(guest.run('quiz.latest'),true,mode);
+   await guest.run("action({dataset:{action:'quiz-next'}})");
+  }
+  assert.equal(guest.run('quiz.finished'),true,mode);assert.equal(guest.run('quiz.score'),n,mode);
+  assert.equal(guest.run('state.answered'),start+n,mode);
+  await guest.run("action({dataset:{action:'quiz-retry'}})");assert.equal(guest.run('quiz.index'),0);assert.equal(guest.run('quiz.answered'),false);
+ }
  const original=page();original.run("startQuiz('sentences')");
  const before=original.run('JSON.stringify(quiz)');
  const fresh=page();
