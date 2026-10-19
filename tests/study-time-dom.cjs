@@ -16,7 +16,7 @@ function shared(){
    });return req;
   }]))}};return tx;
  }};
- return {rows,data,locks,db,leases:new Map(),receipts:new Map(),totals:new Map(),indexedDB:{open(){const req={result:db};queueMicrotask(()=>req.onsuccess?.());return req}},
+ return {rows,data,locks,db,preferences:new Map(),leases:new Map(),receipts:new Map(),totals:new Map(),indexedDB:{open(){const req={result:db};queueMicrotask(()=>req.onsuccess?.());return req}},
   navigator:{onLine:true,locks:{async request(name,options,fn){if(locks.has(name)){if(options.ifAvailable)return fn(null);await new Promise(resolve=>{const queue=waiters.get(name)||[];queue.push(resolve);waiters.set(name,queue)})}locks.add(name);try{return await fn({name})}finally{locks.delete(name);waiters.get(name)?.shift()?.()}}}}};
 }
 function ui({resources=shared(),host='localhost',user='account-a',enabled=true,route='flashcards'}={}){
@@ -24,7 +24,14 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
  HTMLElement.prototype.getBoundingClientRect=()=>({top:100,bottom:150,left:20,width:150,height:50});
  const browserHandlers={},authListeners=[],calls=[],session=new Map();let time=0,visible=true,focus=true,identity={user:user?{id:user}:null,identityRevision:1},timer;
  Object.defineProperty(document,'visibilityState',{get:()=>visible?'visible':'hidden'});document.hasFocus=()=>focus;
- const snapshot={version:1,enabled,generation:1,timezone:'Europe/Stockholm',today:'2026-10-18',month:'2026-10-01',totals:{today:0,week:0,month:0,all:0},days:{}};
+ const newSnapshot=(enabled=true)=>({version:1,enabled,generation:1,timezone:'Europe/Stockholm',today:'2026-10-18',month:'2026-10-01',totals:{today:0,week:0,month:0,all:0},days:{}});
+ if(!resources.preferences.has(user))resources.preferences.set(user,newSnapshot(enabled));
+ const snapshot=resources.preferences.get(user);
+ function serverSnapshot(id){if(!resources.preferences.has(id))resources.preferences.set(id,newSnapshot());return resources.preferences.get(id)}
+ function status(args){
+  const s=serverSnapshot(args.expectedUserId),total=resources.totals.get(args.expectedUserId)||0;
+  return clone({...s,month:args.month||s.month,totals:{today:total,week:total,month:total,all:total},days:{...s.days,...(total?{'2026-10-18':total}:{})}});
+ }
  const leases=resources.leases,receipts=resources.receipts;let lostAck=false,offline=false;
  const base=1792324800000;
  let browserTimezone='Europe/Stockholm';
@@ -36,13 +43,18 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
   MutationObserver:class{observe(){}},setTimeout,clearTimeout,setInterval:fn=>timer=fn,addEventListener:(name,fn)=>browserHandlers[name]=fn,
   SVAuth:{getState:()=>identity,subscribe:fn=>authListeners.push(fn)},
   SVRpc:{
-   async studyStatus(args){calls.push(['status',clone(args)]);const total=resources.totals.get(user)||0;return clone({...snapshot,month:args.month||snapshot.month,totals:{today:total,week:total,month:total,all:total},days:{...snapshot.days,...(total?{'2026-10-18':total}:{})}})},
-   async studySettings(args){calls.push(['settings',clone(args)]);if(offline)throw Error('offline');snapshot.enabled=args.enabled;snapshot.timezone=args.timezone;snapshot.generation++;return clone(snapshot)},
-   async studyOpen(args){calls.push(['open',clone(args)]);const grant={available:true,id:args.leaseId,server_ms:base+time,end_ms:base+time+90000,cursor_ms:base+time,generation:snapshot.generation,timezone:snapshot.timezone};leases.set(args.leaseId,grant);return clone(grant)},
+   async studyStatus(args){calls.push(['status',clone(args)]);if(offline)throw Error('offline');return status(args)},
+   async studySettings(args){calls.push(['settings',clone(args)]);if(offline)throw Error('offline');const s=serverSnapshot(args.expectedUserId);
+    if(args.generation!==s.generation)throw Object.assign(Error('study_settings_conflict'),{code:'40001'});
+    if(s.enabled!==args.enabled||s.timezone!==args.timezone){s.enabled=args.enabled;s.timezone=args.timezone;s.generation++}
+    return status(args)},
+   async studyOpen(args){calls.push(['open',clone(args)]);const s=serverSnapshot(args.expectedUserId);
+    if(!s.enabled)throw Object.assign(Error('study_consent_required'),{code:'42501'});
+    const grant={available:true,id:args.leaseId,server_ms:base+time,end_ms:base+time+90000,cursor_ms:base+time,generation:s.generation,timezone:s.timezone};leases.set(args.leaseId,grant);return clone(grant)},
    async studyCommit(args){calls.push(['commit',clone(args)]);if(offline)throw Error('offline');
     if(receipts.has(args.id)){assert.equal(JSON.stringify(args),JSON.stringify(receipts.get(args.id).args));return clone(receipts.get(args.id).result)}
     const grant=leases.get(args.leaseId);assert.ok(grant,'lease must exist');
-    for(const [lo,hi] of args.segments){assert.ok(hi<=grant.end_ms);assert.ok(lo>=grant.cursor_ms);resources.totals.set(user,(resources.totals.get(user)||0)+hi-lo);grant.cursor_ms=hi}
+    for(const [lo,hi] of args.segments){assert.ok(hi<=grant.end_ms);assert.ok(lo>=grant.cursor_ms);resources.totals.set(args.expectedUserId,(resources.totals.get(args.expectedUserId)||0)+hi-lo);grant.cursor_ms=hi}
     grant.end_ms=base+time+90000;
     const result={...grant,closed:args.close};receipts.set(args.id,{args:clone(args),result});
     if(lostAck){lostAck=false;throw Error('ACK lost')};return clone(result);
@@ -57,12 +69,13 @@ function ui({resources=shared(),host='localhost',user='account-a',enabled=true,r
   async visibility(value){visible=value;document.dispatchEvent(new Event('visibilitychange'));await settle()},
   async auth(userId){identity={user:userId?{id:userId}:null,identityRevision:identity.identityRevision+1};authListeners.forEach(fn=>fn());await settle()},
   loseAck(){lostAck=true},offline(value){offline=value;resources.navigator.onLine=!value},
+  async reconnect(){offline=false;resources.navigator.onLine=true;browserHandlers.online?.();await settle()},
   async renew(){const c=ctx.__study.get();if(c){c.renew=true;await ctx.__study.tick();await settle()}},
   setTimezone(value){browserTimezone=value},setRoute(value){ctx.route=value},read:code=>vm.runInContext(code,ctx),setFocus(value){focus=value;browserHandlers[value?'focus':'blur']?.()}
  };
 }
 const domTest=(name,fn)=>test(name,{skip:!domModule&&'Set SL_UX_DOM_MODULE for DOM integration'},fn);
-domTest('server default-on tracks without a browser opt-in, while explicit opt-out survives reload',async()=>{
+domTest('server default-on tracks without a browser opt-in, while saved opt-out survives reload',async()=>{
  const resources=shared(),h=ui({resources,enabled:true});await h.ready();await h.tick();
  assert.equal(h.calls.filter(c=>c[0]==='open').length,1);
  for(let i=0;i<6;i++)await h.tick();await h.ctx.__study.drain(h.ctx.__study.get());assert.ok(h.total>0);
@@ -70,12 +83,13 @@ domTest('server default-on tracks without a browser opt-in, while explicit opt-o
  const reloaded=ui({resources,enabled:true});await reloaded.ready();await reloaded.input();
  for(let i=0;i<20;i++)await reloaded.tick();
  assert.equal(reloaded.calls.filter(c=>c[0]==='open').length,0);
- assert.equal(resources.data.get('sv-study-paused:account-a'),'yes');
+ assert.equal(resources.preferences.get('account-a').enabled,false);
+ assert.equal(resources.data.has('sv-study-paused:account-a'),false,'acknowledged setting belongs to the account');
 });
 domTest('guest makes no study RPC or queue writes',async()=>{
  for(const args of [{user:null}]){const h=ui(args);await h.ready();await h.tick();assert.equal(h.calls.length,0);assert.equal(h.resources.rows.size,0)}
 });
-domTest('consent off prevents lease acquisition; opt in requires a subsequent learning action',async()=>{
+domTest('saved opt-out prevents lease acquisition; explicit enable requires a subsequent learning action',async()=>{
  const h=ui({enabled:false});await h.ready();await h.tick();assert.equal(h.calls.filter(c=>c[0]==='open').length,0);
  await h.ctx.__study.settings(true,'Europe/Stockholm');await h.tick(11000);assert.equal(h.calls.filter(c=>c[0]==='open').length,0);
  await h.input();await h.tick(11000);assert.equal(h.calls.filter(c=>c[0]==='open').length,1);
@@ -109,7 +123,7 @@ domTest('account switch while lease response is in flight cannot publish into ne
  await h.tick();await h.auth('account-b');release({available:true,id:'old',server_ms:0,end_ms:90000,generation:1,cursor_ms:0});await settle();
  assert.equal(h.ctx.__study.get().userId,'account-b');assert.equal(h.ctx.__study.get().lease,null);
 });
-domTest('production profile uses one existing activity calendar, preserves colors, has compact consent and tooltips',async()=>{
+domTest('production profile uses one existing activity calendar, preserves colors, has compact setting and tooltips',async()=>{
  const h=ui({host:'example.com',route:'profile'});await h.ready();h.ctx.__study.paint();
  assert.equal(h.document.querySelectorAll('.activity-calendar').length,1);
  assert.equal(h.document.querySelectorAll('.study-calendar,.study-chart,.study-zone').length,0);
@@ -128,7 +142,7 @@ domTest('production profile uses one existing activity calendar, preserves color
 domTest('failed offline opt out stops local tracking immediately and keeps the switch off',async()=>{
  const h=ui();await h.ready();await h.tick();h.offline(true);
  await h.ctx.__study.settings(false,'Europe/Stockholm');await settle();
- assert.equal(h.resources.data.get('sv-study-paused:account-a'),'yes');
+ assert.match(h.resources.data.get('sv-study-paused:account-a'),/^yes:/);
  assert.equal(h.ctx.__study.get().lease,null);
  const opens=h.calls.filter(c=>c[0]==='open').length;
  await h.tick(11000);assert.equal(h.calls.filter(c=>c[0]==='open').length,opens);
@@ -157,7 +171,7 @@ domTest('real interval batches drive server totals and restore after reload with
  assert.match(restored.document.querySelector('.study-totals strong').textContent,/мин/);
  assert.equal(restored.resources.data.get('sv-cloud-events-v1'),'untouched');
 });
-domTest('automatic timezone synchronization preserves disabled consent and old daily data',async()=>{
+domTest('automatic timezone synchronization preserves disabled preference and old daily data',async()=>{
  const h=ui({enabled:false});await h.ready();h.setTimezone('America/New_York');
  await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
  const calls=h.calls.filter(c=>c[0]==='settings');assert.equal(calls.length,1);
@@ -229,5 +243,144 @@ domTest('three minutes of active learning commit real milliseconds and render no
 domTest('disabled study tracking explains zero without enabling tracking or changing preferences',async()=>{
  const h=ui({enabled:false,route:'profile'});await h.ready();h.ctx.__study.paint();
  assert.match(h.document.querySelector('.study-message').textContent,/Учёт выключен/);
+ assert.equal(h.calls.filter(call=>call[0]==='settings'||call[0]==='open').length,0);
+});
+
+domTest('UI opt-out preserves history through reload, sign-in and a device with empty browser storage',async()=>{
+ const resources=shared();resources.totals.set('account-a',5700000);
+ const h=ui({resources,route:'profile'});h.snapshot.days['2026-09-01']=123456;await h.ready();
+ assert.equal(h.document.querySelector('[data-study-enabled]').hasAttribute('checked'),true);
+ const before=clone(h.ctx.__study.get().snapshot);
+ const toggle=h.document.querySelector('[data-study-enabled]');toggle.checked=false;
+ toggle.dispatchEvent(new h.ctx.Event('change',{bubbles:true}));await settle();
+ assert.equal(h.snapshot.enabled,false);
+ assert.deepEqual(h.ctx.__study.get().snapshot.totals,before.totals);
+ assert.deepEqual(h.ctx.__study.get().snapshot.days,before.days);
+ assert.equal(h.document.querySelector('[data-study-enabled]').hasAttribute('checked'),false);
+ await h.auth(null);await h.auth('account-a');await h.tick();
+ assert.equal(h.ctx.__study.get().snapshot.enabled,false);
+ const reloaded=ui({resources,route:'profile'});await reloaded.ready();
+ const device=ui({resources:{...resources,data:new Map()},route:'profile'});await device.ready();
+ for(const view of [h,reloaded,device]){
+  assert.equal(view.document.querySelector('[data-study-enabled]').hasAttribute('checked'),false);
+  assert.equal(view.ctx.__study.get().snapshot.totals.all,5700000);
+  assert.equal(view.ctx.__study.get().snapshot.days['2026-09-01'],123456);
+  view.setRoute('flashcards');await view.tick(11000);
+  assert.equal(view.calls.filter(call=>call[0]==='open').length,0);
+ }
+ assert.equal(resources.data.get('sv-cloud-events-v1'),'untouched');
+ await h.auth('account-b');assert.equal(h.ctx.__study.get().snapshot.enabled,true,'other account retains default');
+ assert.equal(h.ctx.__study.get().snapshot.totals.all,0);
+});
+
+domTest('offline opt-out survives reload and reconnect synchronizes the saved account preference',async()=>{
+ const h=ui();await h.ready();await h.tick();for(let i=0;i<6;i++)await h.tick();
+ h.offline(true);await h.ctx.__study.settings(false,'Europe/Stockholm');await settle();
+ const pending=clone([...h.resources.rows.values()]);assert.ok(pending.length>0);
+ assert.equal(h.snapshot.enabled,true,'server did not acknowledge the offline write');
+ assert.match(h.resources.data.get('sv-study-paused:account-a'),/^yes:/);
+ const reloaded=ui({resources:h.resources});reloaded.offline(true);await reloaded.ready();await reloaded.tick();
+ assert.equal(reloaded.calls.filter(call=>call[0]==='open').length,0);
+ assert.deepEqual([...h.resources.rows.values()],pending,'pending time batches are retained');
+ await reloaded.reconnect();for(let i=0;i<5;i++)await settle();
+ assert.equal(h.snapshot.enabled,false,'pending opt-out eventually reaches the server');
+ assert.equal(h.resources.data.has('sv-study-paused:account-a'),false);
+ const otherDevice=ui({resources:{...h.resources,data:new Map()},route:'profile'});await otherDevice.ready();
+ assert.equal(otherDevice.ctx.__study.get().snapshot.enabled,false);
+});
+
+domTest('legacy local opt-out is synchronized before opening any lease and is account-scoped',async()=>{
+ const resources=shared();resources.data.set('sv-study-paused:account-a','yes');
+ const h=ui({resources});await h.ready();await h.tick();
+ assert.equal(h.snapshot.enabled,false);assert.equal(h.calls.filter(call=>call[0]==='open').length,0);
+ assert.ok(h.calls.some(call=>call[0]==='settings'&&call[1].enabled===false));
+ assert.equal(resources.data.has('sv-study-paused:account-a'),false);
+ await h.auth('account-b');assert.equal(h.ctx.__study.get().snapshot.enabled,true);
+ await h.auth('account-a');assert.equal(h.ctx.__study.get().snapshot.enabled,false);
+});
+
+domTest('stale status arriving after an opt-out ACK cannot recheck the switch or replace statistics',async()=>{
+ const h=ui({route:'profile'});h.resources.totals.set('account-a',60000);await h.ready();
+ const original=h.ctx.SVRpc.studyStatus,stale=clone(h.ctx.__study.get().snapshot);let resolve;
+ h.ctx.SVRpc.studyStatus=()=>new Promise(r=>resolve=r);
+ const read=h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ await h.ctx.__study.settings(false,'Europe/Stockholm');
+ resolve({...stale,enabled:true,totals:{today:0,week:0,month:0,all:0}});await read;await settle();
+ assert.equal(h.ctx.__study.get().snapshot.enabled,false);
+ assert.equal(h.ctx.__study.get().snapshot.totals.all,60000);
+ assert.equal(h.document.querySelector('[data-study-enabled]').hasAttribute('checked'),false);
+ h.ctx.SVRpc.studyStatus=original;
+});
+
+domTest('remote opt-out closes an active lease on refresh and adds no further intervals',async()=>{
+ const h=ui();await h.ready();await h.tick();for(let i=0;i<6;i++)await h.tick();
+ h.snapshot.enabled=false;h.snapshot.generation++;
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.equal(h.ctx.__study.get().lease,null);
+ const total=h.total,opens=h.calls.filter(call=>call[0]==='open').length;
+ for(let i=0;i<25;i++)await h.tick();
+ assert.equal(h.total,total);assert.equal(h.calls.filter(call=>call[0]==='open').length,opens);
+});
+
+domTest('timezone update racing a remote opt-out cannot enable it using an old generation',async()=>{
+ const h=ui();await h.ready();h.setTimezone('America/New_York');
+ const original=h.ctx.SVRpc.studySettings;let conflict=true;
+ h.ctx.SVRpc.studySettings=async args=>{
+  if(conflict){conflict=false;h.snapshot.enabled=false;h.snapshot.generation++}
+  return original(args);
+ };
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.equal(h.snapshot.enabled,false);
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.equal(h.ctx.__study.get().snapshot.enabled,false);
+ assert.equal(h.snapshot.enabled,false);
+ assert.equal(h.calls.filter(call=>call[0]==='open').length,0);
+});
+
+domTest('late lease response after opt-out cannot start tracking',async()=>{
+ const h=ui();await h.ready();let resolve;
+ h.ctx.SVRpc.studyOpen=()=>new Promise(r=>resolve=r);
+ await h.tick();await h.ctx.__study.settings(false,'Europe/Stockholm');
+ resolve({available:true,id:'late',server_ms:0,end_ms:90000,generation:1,cursor_ms:0});await settle();
+ assert.equal(h.ctx.__study.get().lease,null);
+ for(let i=0;i<6;i++)await h.tick();assert.equal(h.total,0);
+});
+
+domTest('acknowledged opt-out can be explicitly enabled on another device without a stale browser veto',async()=>{
+ const resources=shared(),a=ui({resources,route:'profile'});await a.ready();
+ await a.ctx.__study.settings(false,'Europe/Stockholm');
+ const b=ui({resources:{...resources,data:new Map()},route:'profile'});await b.ready();
+ await b.ctx.__study.settings(true,'Europe/Stockholm');
+ await a.ctx.__study.refresh(a.ctx.__study.get());
+ assert.equal(a.document.querySelector('[data-study-enabled]').hasAttribute('checked'),true);
+ assert.equal(a.snapshot.enabled,true);
+ assert.equal(a.calls.filter(call=>call[0]==='settings'&&call[1].enabled).length,0,'no implicit enable');
+});
+
+domTest('older enable ACK cannot erase a newer pending opt-out from another tab',async()=>{
+ const resources=shared(),a=ui({resources,enabled:false,route:'profile'}),b=ui({resources,route:'profile'});
+ await a.ready();await b.ready();const original=a.ctx.SVRpc.studySettings;let resolve;
+ a.ctx.SVRpc.studySettings=async args=>{const saved=await original(args);return new Promise(r=>resolve=()=>r(saved))};
+ const enabling=a.ctx.__study.settings(true,'Europe/Stockholm');await settle();
+ b.offline(true);await b.ctx.__study.settings(false,'Europe/Stockholm');await settle();
+ const pending=resources.data.get('sv-study-paused:account-a');assert.match(pending,/^yes:/);
+ resolve();await enabling;
+ assert.equal(resources.data.get('sv-study-paused:account-a'),pending);
+ assert.equal(a.document.querySelector('[data-study-enabled]').hasAttribute('checked'),false);
+ a.ctx.SVRpc.studySettings=original;await a.reconnect();await a.ctx.__study.refresh(a.ctx.__study.get());await settle();
+ assert.equal(a.snapshot.enabled,false);assert.equal(resources.data.has('sv-study-paused:account-a'),false);
+});
+
+domTest('failed status cannot acknowledge a pending opt-out using an old disabled snapshot',async()=>{
+ const h=ui({enabled:false});await h.ready();
+ h.resources.data.set('sv-study-paused:account-a','yes:pending');h.offline(true);
+ await h.ctx.__study.refresh(h.ctx.__study.get());await settle();
+ assert.equal(h.resources.data.get('sv-study-paused:account-a'),'yes:pending');
+});
+
+domTest('browser storage failure pauses locally without inventing an account opt-out',async()=>{
+ const h=ui();await h.ready();h.ctx.localStorage.getItem=()=>{throw Error('blocked')};
+ await h.ctx.__study.refresh(h.ctx.__study.get());await h.tick();
+ assert.equal(h.snapshot.enabled,true);
  assert.equal(h.calls.filter(call=>call[0]==='settings'||call[0]==='open').length,0);
 });

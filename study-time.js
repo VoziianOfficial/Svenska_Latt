@@ -32,8 +32,19 @@
   let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('STUDY_RPC_TIMEOUT')),8000)})])}finally{clearTimeout(timer)}
  }
  function current(x){const a=window.SVAuth?.getState();return c===x&&a?.user?.id===x.userId&&a.identityRevision===x.revision}
- // Follow the server's default-on preference; retain explicit local opt-outs.
- const paused=x=>{try{return localStorage.getItem('sv-study-paused:'+x.userId)==='yes'}catch(_){return true}};
+ // A local marker is an unacknowledged opt-out, never an opt-in or consent.
+ // Once acknowledged, the account preference is authoritative on every device.
+ const marker=x=>{try{return localStorage.getItem('sv-study-paused:'+x.userId)}catch(_){return 'unavailable'}};
+ const isPause=value=>value==='yes'||value?.startsWith('yes:');
+ const paused=x=>{const value=marker(x);return x.localPaused||value==='unavailable'||isPause(value)};
+ function acknowledge(x,expectedMarker){
+  try{
+   // A newer opt-out in another tab must survive an older settings ACK.
+   if(marker(x)===expectedMarker)localStorage.removeItem('sv-study-paused:'+x.userId);
+   x.localPaused=!!isPause(marker(x));
+  }
+  catch(_){x.localPaused=true} // Fail closed if browser storage is unavailable.
+ }
  const routeNow=()=>{
   if(typeof route!=='string')return '';
   if(route==='practice'&&(typeof quiz==='undefined'||!quiz.active||quiz.finished))return '';
@@ -112,13 +123,13 @@
     let id;try{id=sessionStorage.getItem('sv-study-lease:'+x.userId)}catch(_){}
     id=id||uuid();
     const grant=await request(window.SVRpc.studyOpen({expectedUserId:x.userId,leaseId:id}));
-    if(!current(x)||!visible()){releaseLock(x);return}
+    if(!current(x)||!visible()||paused(x)||x.saving||!x.snapshot?.enabled){releaseLock(x);return}
     if(!grant.available){
      if(grant.expired)try{sessionStorage.removeItem('sv-study-lease:'+x.userId)}catch(_){}
      releaseLock(x);return;
     }
     if(!integer(grant.server_ms)||!integer(grant.end_ms)||grant.end_ms<=grant.server_ms||grant.end_ms>grant.server_ms+90000||grant.generation!==x.snapshot.generation)throw Error('INVALID_STUDY_GRANT');
-    x.writeError=false;x.lease=grant;x.anchor={server:grant.server_ms,local:now()};x.previous=now();x.persisted=now();x.sent=now();
+    x.writeError=false;x.stopRequested=false;x.lease=grant;x.anchor={server:grant.server_ms,local:now()};x.previous=now();x.persisted=now();x.sent=now();
     try{sessionStorage.setItem('sv-study-lease:'+x.userId,id)}catch(_){}
     await held;
    }catch(_){if(current(x))x.writeError=true;releaseLock(x)}
@@ -126,12 +137,30 @@
  }
  async function refresh(x){
   if(!x||!current(x)||x.refreshing)return;
-  x.refreshing=true;const requestedMonth=month;
-  try{const s=validate(await request(window.SVRpc.studyStatus({expectedUserId:x.userId,month:requestedMonth})));if(current(x)){x.snapshot=s;x.state='ready';x.readError=false;paint()}}
-  catch(_){if(current(x)){x.state=x.snapshot?'ready':'unavailable';x.readError=true;paint()}}
+  x.refreshing=true;const requestedMonth=month,settingsRevision=x.settingsRevision,pendingMarker=marker(x);
+  try{
+   const s=validate(await request(window.SVRpc.studyStatus({expectedUserId:x.userId,month:requestedMonth})));
+   // A read started before a settings write must not replace its newer ACK.
+   if(current(x)&&!x.saving&&settingsRevision===x.settingsRevision){
+    x.snapshot=s;x.state='ready';x.readError=false;
+    if(x.lease&&(!s.enabled||x.lease.generation!==s.generation)){
+     x.stopRequested=true;await stop(x);
+    }
+    paint();
+   }
+  }
+  catch(_){if(current(x)&&!x.saving&&settingsRevision===x.settingsRevision){x.state=x.snapshot?'ready':'unavailable';x.readError=true;paint()}}
   finally{x.refreshing=false}
   if(current(x)&&month!==requestedMonth){void refresh(x);return}
-  if(current(x)&&x.snapshot&&x.snapshot.timezone!==browserZone()&&!x.saving&&!x.saveError)await settings(x.snapshot.enabled,browserZone(),true);
+  if(!current(x)||!x.snapshot||x.saving)return;
+  // Retry a durable opt-out after reload, sign-in or reconnect. This also
+  // migrates markers left by older clients. Never retry an opt-in implicitly.
+  if(paused(x)){
+   // A storage error alone is not a user choice and must not change the account.
+   if(!x.localPaused&&!isPause(marker(x)))return;
+   if(!x.snapshot.enabled&&!x.readError){acknowledge(x,pendingMarker);x.saveError=false;paintKey='';paint()}
+   else await settings(false,browserZone(),true);
+  }else if(x.snapshot.timezone!==browserZone()&&!x.saveError)await settings(x.snapshot.enabled,browserZone(),true);
  }
  async function tick(){
   if(running)return;running=true;
@@ -164,7 +193,7 @@
   if(c&&a?.user?.id===c.userId&&a.identityRevision===c.revision)return;
   if(c){releaseLock(c);c.segments=[];c.audioUntil=0}
   c=null;month=null;
-  if(a?.user){const p=now();c={userId:a.user.id,revision:a.identityRevision,state:'loading',snapshot:null,lease:null,segments:[],lastInput:p,previous:p,audioUntil:0,route:routeNow(),attempt:-Infinity,sent:p};void refresh(c)}
+  if(a?.user){const p=now();c={userId:a.user.id,revision:a.identityRevision,settingsRevision:0,state:'loading',snapshot:null,lease:null,segments:[],lastInput:p,previous:p,audioUntil:0,route:routeNow(),attempt:-Infinity,sent:p};void refresh(c)}
   paint();
  }
  // Trusted input only, inside the learning surface. Pointer movement alone is not learning.
@@ -178,7 +207,7 @@
  window.addEventListener('blur',pause);
  window.addEventListener('focus',()=>{if(c){c.previous=now();c.lastInput=now();c.stopRequested=false}});
  window.addEventListener('pagehide',pause);
- window.addEventListener('storage',e=>{if(c&&e.key==='sv-study-paused:'+c.userId){if(paused(c))pause();paintKey='';paint()}});
+ window.addEventListener('storage',e=>{if(c&&e.key==='sv-study-paused:'+c.userId){if(paused(c))pause();paintKey='';paint();void refresh(c)}});
  window.addEventListener('online',()=>{if(c){void drain(c).catch(()=>{});void refresh(c)}});
  // Actual speech/media start/end hooks. Hidden tabs always pause, even during playback.
  function audio(active){
@@ -267,23 +296,30 @@
  }
  async function settings(enabled,timezone,automatic=false){
   const x=c;if(!x||!current(x)||x.state!=='ready'||x.saving)return;
-  x.saving=true;x.saveError=false;
-  if(!enabled)try{localStorage.setItem('sv-study-paused:'+x.userId,'yes')}catch(_){}
+  x.saving=true;x.settingsRevision++;x.saveError=false;
+  if(!enabled){
+   x.localPaused=true;x.stopRequested=true;
+   try{if(!automatic||!isPause(marker(x)))localStorage.setItem('sv-study-paused:'+x.userId,'yes:'+uuid())}catch(_){}
+  }
+  const pendingMarker=marker(x);
   paint();
   try{
    new Intl.DateTimeFormat('en',{timeZone:timezone});
    if(x.lease)await stop(x);
    await drain(x,true);
+   if(!current(x))return;
    const s=validate(await request(window.SVRpc.studySettings({expectedUserId:x.userId,enabled,timezone,generation:x.snapshot.generation})));
+   if(s.enabled!==enabled)throw Error('STUDY_SETTING_NOT_SAVED');
    if(current(x)){
     x.snapshot=s;
     if(!automatic)x.lastInput=-Infinity;
-    if(enabled&&!automatic){
-     localStorage.removeItem('sv-study-paused:'+x.userId);
-    }
+    acknowledge(x,pendingMarker);
    }
-  }catch(_){if(current(x)){x.saveError=true;await refresh(x)}}
-  finally{if(current(x)){x.saving=false;paint();if(month&&x.snapshot?.month!==month)void refresh(x)}}
+  }catch(_){if(current(x))x.saveError=true}
+  finally{if(current(x)){
+   x.settingsRevision++;x.saving=false;paint();
+   if((!automatic&&x.saveError)||(month&&x.snapshot?.month!==month))void refresh(x);
+  }}
  }
  document.addEventListener('change',e=>{if(e.target.matches?.('[data-study-enabled]')&&c)void settings(e.target.checked,browserZone())});
  document.addEventListener('pointerover',e=>{const day=e.target.closest?.('[data-study-date]');if(day)showTip(day)});
