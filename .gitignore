@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 svenska.sqlite3*
 deploy/
+
+# Supabase CLI state and local backup/schema audit artifacts.
+/supabase/.temp/
+/tmp/migration-registration-audit/

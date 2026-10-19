@@ -84,3 +84,10 @@ Frontend regression: **170 passed, 0 failed, 0 skipped**. Python HTTP/server: **
 - `docs/FINAL_RELEASE_AUDIT.md` — статус B1: локальный патч подготовлен, реальный Supabase ещё не исправлен/не проверен этим запуском.
 
 SHA-256 SQL 012 для сверки проверяемого файла: `cd41d04e31b86024de5fdf416aa3eb00c08860077c76d2173f451185c6569de4`.
+
+
+## Последующая проверка совместимости с SRS 013
+
+18 октября 2026: отдельный локальный прогон **1505 SQL assertions + 21 concurrency scenarios — PASS**, PostgreSQL 14.20. Отдельно пройдены точные сценарии 001–011 → 012 → 013 → 013 и 001–011 → ручной SRS patch → 012 → 013 → 013; ручной helper сохраняется после 012, а повторная 013 не меняет прогресс/ACL. Все 11 публичных RPC-контрактов сохранены; historical event/queue receipts, XP/import/RLS, 113 trusted quizzes и post-013 RPC regressions прошли. JS/DOM: 181/181 PASS без пропусков. Кластер остановлен, логи `/private/tmp/sl-sql-tests-ezwk7eg1/`. SQL 001–012 не изменён.
+
+Рабочая 012 по-прежнему не установлена. Подробный [план применения 012 и регистрации 013](SUPABASE_012_013_INSTALL_PLAN.md) содержит проверки и условия остановки; локальные Auth/Storage заглушки не заменяют реальный HTTP acceptance. Деплой, очистка пользовательских данных/хранилищ не выполнялись.

@@ -69,7 +69,7 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
-            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql', '202610180012_xp_integrity.sql'):
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql', '202610180012_xp_integrity.sql', '202610180013_srs_interval_cap.sql'):
                 continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
@@ -205,8 +205,12 @@ def main():
         assert sql(f"select sum(xp_delta) from public.sl_events where user_id='{quiz_user}' and event_type='session_finish';").stdout.strip() == '35'
         print('PASS: simultaneous quiz finishes on two devices: conflict, safe retry, exactly one 35 XP reward', flush=True)
 
+        srs = run_file(ROOT / 'supabase/tests/009_srs_interval_cap.sql')
+        assertions += srs.stderr.count('PASS:')
         integrity = run_file(ROOT / 'supabase/tests/008_xp_integrity.sql')
         assertions += integrity.stderr.count('PASS:')
+        srs_after_012 = run_file(ROOT / 'supabase/tests/helpers/srs_boundary_cases.sql')
+        assertions += srs_after_012.stderr.count('PASS:')
         integrity_races = 0
         integrity_user = '97000000-0000-0000-0000-000000000004'
         def integrity_sql(statement):
@@ -271,29 +275,66 @@ def main():
         integrity_races += 1
         print('PASS: post-012 concurrent quiz finishes and lost ACK still pay exactly one reward', flush=True)
 
-        # Also install every migration in normal numerical order into a fresh database.
-        sql('create database clean_install_test;')
-        clean_base = [x if i != base.index('-d')+1 else 'clean_install_test' for i, x in enumerate(base)]
-        bootstrap = (ROOT / 'supabase/tests/bootstrap_local.sql').read_text()
-        bootstrap = '\n'.join(line for line in bootstrap.splitlines() if not line.startswith('create role '))
-        subprocess.run(clean_base + ['-c', bootstrap], env=env, check=True, capture_output=True)
-        for path in migrations:
-            if path.name == '202610180012_xp_integrity.sql':
-                continue  # 008 seeds pre-upgrade history and applies 012 itself.
-            result = subprocess.run(clean_base + ['-f', str(path)], env=env, text=True, capture_output=True)
-            (work / ('clean-' + path.name + '.log')).write_text(result.stdout + result.stderr)
-            assert result.returncode == 0, result.stderr
-        # Only test helpers are copied; production functions come exclusively
-        # from the actual, numerically ordered 001-011 migration files above.
-        for signature in ('public.test_quiz_event(text,jsonb,uuid)', 'public.test_quiz_prepare(text,integer)'):
-            definition = sql(f"select pg_get_functiondef('{signature}'::regprocedure);").stdout
-            subprocess.run(clean_base + ['-c', definition], env=env, check=True, capture_output=True)
-        ordered_upgrade = subprocess.run(clean_base + ['-f', str(ROOT / 'supabase/tests/008_xp_integrity.sql')],
-                                         env=env, text=True, capture_output=True)
-        (work / 'ordered-008_xp_integrity.sql.log').write_text(ordered_upgrade.stdout + ordered_upgrade.stderr)
-        assert ordered_upgrade.returncode == 0, ordered_upgrade.stderr[-6000:]
-        assertions += ordered_upgrade.stderr.count('PASS:')
-        print(f'PASS: exact numerical 001-011 install, populated pre-012 fixtures, then 012 and all integrity assertions ({len(migrations)} migrations)', flush=True)
+        # Exercise BOTH exact ordered upgrade paths in separate fresh databases.
+        ordered_scenarios = {}
+        public_rpc_catalog = """select coalesce(jsonb_agg(jsonb_build_object(
+            'name',p.proname,'args',pg_get_function_identity_arguments(p.oid),
+            'result',pg_get_function_result(p.oid),'definer',p.prosecdef,
+            'config',p.proconfig,'owner',pg_get_userbyid(p.proowner),
+            'anon',has_function_privilege('anon',p.oid,'execute'),
+            'authenticated',has_function_privilege('authenticated',p.oid,'execute'))
+            order by p.proname,pg_get_function_identity_arguments(p.oid)),'[]'::jsonb)
+            from pg_proc p join pg_namespace n on n.oid=p.pronamespace
+            where n.nspname='public' and left(p.proname,3)='sl_'"""
+        for db_name, manual_patch in (('clean_install_test', False), ('manual_patch_upgrade_test', True)):
+            sql(f'create database {db_name};')
+            ordered_base = [x if i != base.index('-d')+1 else db_name for i, x in enumerate(base)]
+
+            def ordered_sql(statement):
+                r = subprocess.run(ordered_base + ['-At', '-c', statement], env=env, text=True, capture_output=True)
+                assert r.returncode == 0, r.stderr[-6000:]
+                return r.stdout.strip()
+
+            def ordered_file(path, extra_args=()):
+                r = subprocess.run(ordered_base + list(extra_args) + ['-f', str(ROOT / path)],
+                                   env=env, text=True, capture_output=True)
+                (work / (db_name + '-' + Path(path).name + '.log')).write_text(r.stdout + r.stderr)
+                assert r.returncode == 0, r.stderr[-6000:]
+                return r.stderr.count('PASS:')
+
+            bootstrap = (ROOT / 'supabase/tests/bootstrap_local.sql').read_text()
+            bootstrap = '\n'.join(line for line in bootstrap.splitlines() if not line.startswith('create role '))
+            ordered_sql(bootstrap)
+            for path in migrations:
+                if path.name >= '202610180012':
+                    continue
+                ordered_file(path.relative_to(ROOT))
+            for signature in ('public.test_quiz_event(text,jsonb,uuid)', 'public.test_quiz_prepare(text,integer)'):
+                ordered_sql(sql(f"select pg_get_functiondef('{signature}'::regprocedure);").stdout)
+            ordered_file('supabase/tests/helpers/upgrade_queue_fixture.sql')
+            before_rpc = ordered_sql(public_rpc_catalog)
+            review_definition = None
+            if manual_patch:
+                ordered_file('supabase/patches/srs_interval_cap.sql')
+                review_definition = ordered_sql("select pg_get_functiondef('sl_private.review(uuid,text,boolean,timestamptz)'::regprocedure)")
+                assertions += ordered_file('supabase/tests/helpers/srs_boundary_cases.sql')
+            # 008 captures ALL current rows, installs exactly 012, checks preservation
+            # and runs the XP/import/UUID/RLS/113-quiz assertions.
+            count = ordered_file('supabase/tests/008_xp_integrity.sql')
+            assert ordered_sql(public_rpc_catalog) == before_rpc, '012 changed a public RPC contract'
+            if manual_patch:
+                assert ordered_sql("select pg_get_functiondef('sl_private.review(uuid,text,boolean,timestamptz)'::regprocedure)") == review_definition
+                count += ordered_file('supabase/tests/helpers/srs_boundary_cases.sql')
+            # Skip the optional patch in 009: these are exact 012 -> 013 paths.
+            count += ordered_file('supabase/tests/009_srs_interval_cap.sql', ('-v', 'srs_skip_manual_patch=true'))
+            assert ordered_sql(public_rpc_catalog) == before_rpc, '013 changed a public RPC contract'
+            count += ordered_file('supabase/tests/helpers/post_upgrade_rpc_cases.sql')
+            assertions += count
+            ordered_scenarios[db_name] = {'manual_patch_before_012': manual_patch,
+                'sql_assertions': count, 'public_rpc_contracts_preserved': True,
+                'srs_preserved_through_012': manual_patch}
+            label = '001-011 -> manual patch -> 012 -> 013 -> 013' if manual_patch else '001-011 -> 012 -> 013 -> 013'
+            print(f'PASS: {label}; populated queue/events preserved; public RPC signatures/ACL unchanged', flush=True)
 
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')
@@ -303,7 +344,8 @@ def main():
         assert guard.returncode and 'Legacy learning_progress exists' in guard.stderr
         print('PASS: legacy installation guard prevents accidental mixed schemas', flush=True)
         (work / 'summary.json').write_text(json.dumps({'sql_assertions': assertions, 'concurrency_scenarios': 10 + integrity_races,
-            'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False}, indent=2))
+            'legacy_guard': True, 'migrations': len(migrations), 'http_api_tested': False,
+            'ordered_scenarios': ordered_scenarios}, indent=2))
         print(f'PASS: {assertions} SQL assertions, {10 + integrity_races} concurrency scenarios, legacy guard; no remote connection', flush=True)
     finally:
         if started:
