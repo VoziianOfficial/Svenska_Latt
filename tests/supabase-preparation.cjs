@@ -643,7 +643,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('debug export has queue and version without a session or dev flag',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-18-word-buttons-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-19-videos-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,true);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
@@ -1034,7 +1034,7 @@ test('settings revision conflict retries the same intent; refresh receives anoth
 // Full application → durable client queue → RPC model. No live SQL or accounts.
 async function quizApp(w){
  const h=w.h,ctx=h.ctx;
- w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1');await ctx.SVProgress.refresh();
+ w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3');await ctx.SVProgress.refresh();
  ctx.sessionStorage={getItem:k=>w.shared.data.get('tab:'+k)??null,setItem:(k,v)=>w.shared.data.set('tab:'+k,v),removeItem:k=>w.shared.data.delete('tab:'+k)};
  ctx.document.querySelectorAll=()=>[];
  vm.runInContext(fs.readFileSync(path.join(root,'locale-content.js'),'utf8'),ctx);
@@ -1079,8 +1079,11 @@ test('all 14 account modes, every topic, book and video use real content and sup
  }
  for(const topic of run('topicNames3()')){await run(`startQuiz('topic',${JSON.stringify(topic)})`);assert(run('quiz.questions.length')>0,topic)}
  for(const book of run('BOOKS.map(b=>b.id)')){await run(`startQuiz('book','${book}')`);assert.equal(run('quiz.questions.length'),run(`BOOKS.find(b=>b.id==='${book}').questions.length`))}
- const video=run('MORE_VIDEOS.find(v=>v.question).id');await run(`startQuiz('video','${video}')`);assert.equal(run('quiz.questions.length'),1);
- await run('submitAnswer(quiz.questions[0].answer)');await run('finishQuiz()');await w.h.ctx.SVProgressDebug.flush();
+ for(const video of run('MORE_VIDEOS.filter(v=>v.question).map(v=>v.id)')){
+  await run(`startQuiz('video','${video}')`);const n=run('quiz.questions.length');assert.equal(n,5);
+  for(let i=0;i<n;i++){await run('submitAnswer(quiz.questions[quiz.index].answer)');await run("action({dataset:{action:'quiz-next'}})")}
+  await w.h.ctx.SVProgressDebug.flush();assert.equal(run('quiz.finished'),true,video);
+ }
  assert.equal(w.h.ctx.SVProgress.writeStatus().error,null);
  assert([...w.server.account(A).sessions.values()].some(s=>s.mode==='video'&&s.status==='completed'));
 });

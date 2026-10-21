@@ -69,7 +69,7 @@ def main():
         migrations = sorted((ROOT / 'supabase/migrations').glob('*.sql'))
         upgrade_assertions = 0
         for path in migrations:
-            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql', '202610180012_xp_integrity.sql', '202610180013_srs_interval_cap.sql'):
+            if path.name in ('202610180007_word_state.sql', '202610180008_study_time.sql', '202610180009_manual_review_queue.sql', '202610180011_study_time_default.sql', '202610180010_quiz_rewards.sql', '202610180012_xp_integrity.sql', '202610180013_srs_interval_cap.sql', '202610190014_video_progress.sql'):
                 continue  # Old contract assertions run against the original six migrations.
             if path.name == '202610170006_manifest_version.sql':
                 # The test applies 006 itself over fixtures in the five-migration
@@ -335,6 +335,9 @@ def main():
                 'srs_preserved_through_012': manual_patch}
             label = '001-011 -> manual patch -> 012 -> 013 -> 013' if manual_patch else '001-011 -> 012 -> 013 -> 013'
             print(f'PASS: {label}; populated queue/events preserved; public RPC signatures/ACL unchanged', flush=True)
+
+        video = run_file(ROOT / 'supabase/tests/010_video_progress.sql')
+        assertions += video.stderr.count('PASS:')
 
         # Ensure applying the new plan to legacy data stops BEFORE creating tables.
         sql('create database legacy_guard_test;')

@@ -130,7 +130,7 @@ const source=require('node:fs').readFileSync(0,'utf8');
 const scope={window:{addEventListener(){}},document:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
 vm.runInNewContext(source,scope,{filename:'supabase-progress.js from HTTP'});
 for(const method of ['status','queue','diagnostics'])assert.equal(typeof scope.window.SVProgressDebug[method],'function');
-assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-10-18-word-buttons-1');
+assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-10-19-videos-1');
 assert.equal(scope.window.SVProgressDebug.status().status,'idle');
 """
   result=subprocess.run(['node','-e',script],input=source,text=True,capture_output=True,timeout=10)

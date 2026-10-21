@@ -235,10 +235,10 @@ async function leaveQuiz(destination=null){
  resetQuiz();if(destination)navigate(destination);else if(origin)navigate(origin.route,origin.param);
 }
 const VIDEOS=[
- {id:'v1',name:'Välkommen till oss — Frukosten',level:'C–D',duration:'7 min',emoji:'🥐',description:'Небольшой эпизод о семье за завтраком. Слушай повседневные фразы.',url:'https://urplay.se/serie/244804-valkommen-till-oss'},
- {id:'v2',name:'Välkommen till oss — Sfi',level:'C–D',duration:'11 min',emoji:'📚',description:'Короткая история о занятиях SFI и о том, как важно учиться самостоятельно.',url:'https://urplay.se/program/244809-valkommen-till-oss-sfi'},
+ {id:'v1',"name":"Hitta hem — Den första lögnen","level":"B–C","duration":"7 min","emoji":"🎬","description":"Den första lögnen","url":"https://urplay.se/program/217858-hitta-hem-den-forsta-lognen"},
+ {id:'v2',"name":"Hitta hem — Ett djärvt förslag","level":"B–C","duration":"6 min","emoji":"🎬","description":"Ett djärvt förslag","url":"https://urplay.se/program/217842-hitta-hem-ett-djarvt-forslag"},
  {id:'v3',name:'Välkommen till oss — Bussen',level:'C–D',duration:'6 min',emoji:'🚌',description:'Диалог и правила поведения в автобусе. Серия коротких фильмов.',url:'https://urplay.se/serie/244804-valkommen-till-oss'},
- {id:'v4',name:'Fokus på grammatik — Partikelverb',level:'C–D',duration:'4 min',emoji:'🧠',description:'Очень короткое объяснение о шведских глаголах с частицами и субтитрами.',url:'https://urplay.se/program/244852-fokus-pa-grammatik-partikelverb-nar-sma-ord-gor-stor-skillnad'},
+ {id:'v4',"name":"Hitta hem — Martinas hemlighet","level":"B–C","duration":"6 min","emoji":"🎬","description":"Martinas hemlighet","url":"https://urplay.se/program/217854-hitta-hem-martinas-hemlighet"},
  {id:'v5',name:'Kortfilm på svenska',level:'B–D',duration:'5–20 min',emoji:'🍿',description:'Подборка настоящих шведских короткометражек — выбирай по настроению.',url:'https://urplay.se/bladdra/kortfilm/svenska'},
  {id:'v6',name:'SFI — filmer och övningar',level:'A–D',duration:'varierar',emoji:'🇸🇪',description:'Раздел UR Play с обучающими фильмами и упражнениями для SFI.',url:'https://urplay.se/amne/sfi-svenska-for-invandrare'},
  {id:'v7',name:'SVT Play — korta klipp',level:'B–D',duration:'1–5 min',emoji:'🎬',description:'Короткие эпизоды на живом шведском языке. Для тренировки слуха.',url:'https://www.svtplay.se/klipp'},
@@ -349,7 +349,7 @@ async function action(btn){if(btn.dataset.nav){$('#search-results').classList.ad
  if(name==='remove-token'){if(quiz.answered||quizBusy)return;quiz.selected.splice(Number(btn.dataset.index),1);render();return}
  if(name==='reset-tokens'){if(quiz.answered||quizBusy)return;quiz.selected=[];render();return}
  if(name==='check-tokens'){let q=quiz.questions[quiz.index];if(!quiz.selected.length)return;await submitAnswer(quiz.selected.map(x=>x.v).join(' ') + q.punct);return}
- if(name==='watched'){let id=btn.dataset.id;mutate(()=>{if(state.videos.includes(id))state.videos=state.videos.filter(x=>x!==id);else{state.videos.push(id);state.xp+=5;touch()}});render();return}}
+ if(name==='watched'){await toggleVideoWatched(btn.dataset.id);return}}
 function changeLanguage(v){
  if(!languages.includes(v))return;
  const question=quiz.active&&!quiz.finished?quiz.questions[quiz.index]:null;
@@ -374,7 +374,7 @@ async function boot(){
   restoreQuizSession();
   hydrateLocation();bindEvents();render();
   if(window.SVAuth){
-   void window.SVProgress?.initialize({onError:()=>{cloudReadError=true;if(user)refreshWordUI(true)},onActivity:info=>{if(user){if(info.completed&&!info.completed.type.startsWith('session_')&&info.completed.type!=='answer')toast(info.completed.type==='unmark_known'?wordUX('returned'):['mark_review','review_grade'].includes(info.completed.type)?wordUX('reviewSaved'):info.completed.type==='mark_known'?txt4('Слово изучено','Word learned','Ordet är inlärt','Слово вивчено'):info.completed.data.value?txt4('Добавлено в избранное','Added to favorites','Tillagt i favoriter','Додано до обраного'):txt4('Удалено из избранного','Removed from favorites','Borttaget från favoriter','Видалено з обраного'));refreshWordUI();if(route==='practice'&&quiz.finished)render()}},onSnapshot:(snapshot,userId)=>{
+   void window.SVProgress?.initialize({onError:()=>{cloudReadError=true;if(user)refreshWordUI(true)},onActivity:info=>{if(user){if(info.completed&&!info.completed.type.startsWith('session_')&&info.completed.type!=='answer')toast(info.completed.type==='video_set'?videoText('server'):info.completed.type==='unmark_known'?wordUX('returned'):['mark_review','review_grade'].includes(info.completed.type)?wordUX('reviewSaved'):info.completed.type==='mark_known'?txt4('Слово изучено','Word learned','Ordet är inlärt','Слово вивчено'):info.completed.data.value?txt4('Добавлено в избранное','Added to favorites','Tillagt i favoriter','Додано до обраного'):txt4('Удалено из избранного','Removed from favorites','Borttaget från favoriter','Видалено з обраного'));refreshWordUI();if(route==='practice'&&quiz.finished)render()}},onSnapshot:(snapshot,userId)=>{
     applyAuthState(window.SVAuth.getState());
     if(user?.id===userId){cloudReadError=false;state=sanitize(snapshot);refreshWordUI(true)}
    },previewCatalog:()=>({
@@ -719,7 +719,11 @@ function quizWordQuestion(w,mode='translation',pool=WORDS){
  const meaning=()=>locMeaning4(w),why=()=>`${w.word} — ${meaning()}`;
  if(mode==='listening'||mode==='writeWord')return localizedQuizQuestion({type:mode==='listening'?'listen':'type',question:()=>mode==='listening'?t('listenPrompt'):`${meaning()} → 🇸🇪`,answer:w.word,wordId:w.id,why,speak:w.word});
  const others=shuffle(pool.filter(x=>x.word!==w.word&&languages.every(lang=>x[lang]!==w[lang]||lang==='sv'))).slice(0,3);
- return localizedQuizChoice(`${w.word} → ?`,meaning,others.map(other=>()=>locMeaning4(other)),w.id,why);
+ const q=localizedQuizChoice(`${w.word} → ?`,meaning,others.map(other=>()=>locMeaning4(other)),w.id,why);
+ // Bind topic responses to the choices actually selected, not a lookup through
+ // unrelated words with the same translated label (for example 'student').
+ Object.defineProperty(q,'canonicalOptions',{get:()=>q.options.map(value=>normalize(value)===normalize(meaning())?w.ru:others.find(other=>locMeaning4(other)===value)?.ru||'')});
+ return q;
 }
 function quizSourceText(source){
  return locale4()==='ru'?source:(content4().quiz?.[source]?.[locale4()]||source);
@@ -794,13 +798,15 @@ async function startQuiz(mode='mixed',lesson=null,forReview=false){
  let questions=[];
  if(mode==='video'){
   const v=MORE_VIDEOS.find(x=>x.id===lesson);if(!v?.question)return;
-  questions=[localizedQuizChoice(v.question,v.answer,v.wrong,null,()=>txt4('Вопрос по описанию видео.','Question based on the video description.','Fråga om videobeskrivningen.','Запитання за описом відео.'))];
+  if(!videoContentAvailable(v)){toast(videoText('expired'));return}
+  if(cloudAccount()&&v.requiresVideoBank&&!window.SVProgress?.supports('video_quizzes_v3')){toast(videoText('quizUnavailable'));return}
+  questions=v.questions.map(source=>localizedQuizChoice(source.question,source.answer,source.wrong,null,()=>txt4('По материалам UR. Ответ: ','Question based on UR materials. Answer: ','Fråga utifrån UR:s material. Svar: ','За матеріалами UR. Відповідь: ')+source.answer));
  }else if(mode==='book'){
   const book=BOOKS.find(x=>x.id===lesson);if(!book)return;
   questions=book.questions.map((source,i)=>quizBankQuestion(source,'','q'+i));
  }else if(mode==='topic'){
   const words=shuffle(topicWordsPlus(lesson));
-  questions=words.slice(0,20).map(w=>{const q=quizWordQuestion(w,'translation',words);Object.defineProperties(q,{questionId:{enumerable:true,value:w.id},serverOptions:{enumerable:true,get:()=>q.options.map(value=>normalize(value)===normalize(locMeaning4(w))?w.ru:words.find(x=>locMeaning4(x)===value)?.ru||'')}});return q});
+  questions=words.slice(0,20).map(w=>{const q=quizWordQuestion(w,'translation',words);Object.defineProperties(q,{questionId:{enumerable:true,value:w.id},serverOptions:{enumerable:true,get:()=>q.canonicalOptions}});return q});
  }else if(lesson){
   const l=LESSONS.find(x=>x.id===lesson);if(!l)return;
   questions=shuffle(l.questions.map((source,i)=>quizBankQuestion(source,'','q'+i)));
@@ -811,7 +817,7 @@ async function startQuiz(mode='mixed',lesson=null,forReview=false){
    return quizWordQuestion(w);
   });
  }else questions=Array.from({length:20},()=>getQuestion(mode));
- if(mode==='video')Object.defineProperties(questions[0],{questionId:{enumerable:true,value:'q0'},serverOptions:{enumerable:true,get:()=>questions[0].options.map(value=>normalize(value)===normalize(questions[0].answer)?questions[0].answer:value)}});
+ if(mode==='video')questions.forEach((q,i)=>Object.defineProperties(q,{questionId:{enumerable:true,value:MORE_VIDEOS.find(v=>v.id===lesson).questions[i].id},serverOptions:{enumerable:true,get:()=>q.options.map(value=>normalize(value)===normalize(q.answer)?q.answer:value)}}));
  if(!questions.length){toast(t('noDue'));return}
  quiz={active:true,finished:false,mode,lesson,questions,index:0,score:0,answered:false,selected:[],latest:null,origin,mistakes:[],answerCount:0};
  if(cloudAccount()){
@@ -906,6 +912,847 @@ const CHEAT_SECTIONS=[
 {ico:'👥',title:['Местоимения','Pronouns','Pronomen','Займенники'],rows:[['jag · mig · min/mitt/mina','du · dig · din/ditt/dina','подлежащее / дополнение / принадлежность'],['han · honom · hans','hon · henne · hennes','различаем формы'],['de · dem · deras','vi · oss · vår/vårt/våra','письменные формы de/dem']]}
 ];
 function renderCheats(){return title('🧠 '+pT('cheats'),pT('cheatIntro'))+`<div class="cheat-grid">${CHEAT_SECTIONS.map(section=>`<section class="cheat-card"><span class="cheat-emoji">${section.ico}</span><h2>${esc(section.title[{ru:0,en:1,sv:2,uk:3}[locale4()]||0])}</h2><div class="cheat-scroll"><table><tbody>${section.rows.map(([a,b,c])=>`<tr><th>${esc(a)}</th><td lang="sv">${esc(b)}</td>${locale4()==='ru'?`<td>${esc(c)}</td>`:''}</tr>`).join('')}</tbody></table></div></section>`).join('')}</div><section class="content-panel"><h2>${esc(pT('source'))}</h2><p>${esc(txt4('Правила — учебные схемы, а не исчерпывающее описание исключений. Если у конкретного слова есть особая форма, проверяй её в словаре Svenska Akademien.','These are learning summaries, not exhaustive rules. Check irregular forms in Svenska Akademien’s dictionaries.','Det här är förenklade översikter. Kontrollera undantag i Svenska Akademiens ordböcker.','Це навчальні схеми, а не всі винятки. Звіряй форми у словниках Svenska Akademien.'))}</p><div class="source-links"><a href="https://svenska.se/" target="_blank" rel="noopener noreferrer">Svenska Akademiens ordböcker ↗</a><a href="https://www.skolverket.se/undervisning/komvux/komvux-i-svenska-for-invandrare-sfi" target="_blank" rel="noopener noreferrer">Skolverket · SFI ↗</a><a href="https://www.isof.se/" target="_blank" rel="noopener noreferrer">Språkrådet / Isof ↗</a></div></section>`}
+// Verified episode questions. Source locators use PDF page numbers (one-based).
+const VIDEO_QUIZ_BANK={
+ "ur-hitta1": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vilka två personer följer berättelsen?",
+    "answer": "Martina och Jamal",
+    "wrong": [
+     "Anna och Erik",
+     "Lina och Per",
+     "Lisa och Ali"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+    "locator": "2, 5"
+   },
+   {
+    "id": "q1",
+    "question": "Från vilken stad kommer Martina?",
+    "answer": "Barcelona",
+    "wrong": [
+     "Madrid",
+     "Paris",
+     "Rom"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Vad heter läraren på sfi?",
+    "answer": "Ylva",
+    "wrong": [
+     "Fatou",
+     "Camilla",
+     "Martina"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q3",
+    "question": "Varför säger Martina att hon är sen?",
+    "answer": "Hon missade bussen.",
+    "wrong": [
+     "Hon var hos läkaren.",
+     "Hon sov hela dagen.",
+     "Hon tappade sina nycklar."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+    "locator": 5
+   },
+   {
+    "id": "q4",
+    "question": "Vilken utbildning har Jamal?",
+    "answer": "Ingenjör",
+    "wrong": [
+     "Läkare",
+     "Lärare",
+     "Kock"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+    "locator": 5
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta2": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Var arbetar Jamal?",
+    "answer": "På ett äldreboende",
+    "wrong": [
+     "På en bank",
+     "I en affär",
+     "På en skola"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+    "locator": 4
+   },
+   {
+    "id": "q1",
+    "question": "Vem ringer Jamal när han inte hittar till jobbet?",
+    "answer": "Ylva",
+    "wrong": [
+     "Martina",
+     "Elsa",
+     "Rune"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Varför behöver Jamal hjälp i telefonsamtalet?",
+    "answer": "Han hittar inte till rätt adress.",
+    "wrong": [
+     "Han vill köpa mat.",
+     "Han vill byta telefon.",
+     "Han vill boka en resa."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q3",
+    "question": "Vad ska Jamal få innan föreståndaren visar honom runt?",
+    "answer": "Arbetskläder",
+    "wrong": [
+     "En cykel",
+     "En dator",
+     "En bussbiljett"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+    "locator": 4
+   },
+   {
+    "id": "q4",
+    "question": "Vilka får dela ut medicin på äldreboendet?",
+    "answer": "Utbildad personal",
+    "wrong": [
+     "Alla besökare",
+     "Alla som vill",
+     "Bara de boende"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+    "locator": 6
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta3": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vem får besök hemma?",
+    "answer": "Martina",
+    "wrong": [
+     "Sara",
+     "Ylva",
+     "Anna"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q1",
+    "question": "I vilken del av staden bor Martina?",
+    "answer": "Gamla stan",
+    "wrong": [
+     "Södermalm",
+     "Enskede",
+     "Kista"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q2",
+    "question": "Vad väljer Jamal att dricka?",
+    "answer": "Juice",
+    "wrong": [
+     "Kaffe",
+     "Te",
+     "Mjölk"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q3",
+    "question": "Vad arbetar Martina som?",
+    "answer": "Webbdesigner",
+    "wrong": [
+     "Sjuksköterska",
+     "Taxiförare",
+     "Rektor"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+    "locator": 5
+   },
+   {
+    "id": "q4",
+    "question": "Varifrån kommer pengarna som Martina har ärvt?",
+    "answer": "Från hennes mamma.",
+    "wrong": [
+     "Från Jamals pappa.",
+     "Från hennes lärare.",
+     "Från hennes granne."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+    "locator": 5
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta4": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "I vilket land utspelar sig berättelsen?",
+    "answer": "Sverige",
+    "wrong": [
+     "Norge",
+     "Finland",
+     "Danmark"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+    "locator": 5
+   },
+   {
+    "id": "q1",
+    "question": "Vad heter Martina och Jamals barn?",
+    "answer": "Axel",
+    "wrong": [
+     "Konrad",
+     "Hassan",
+     "Magnus"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q2",
+    "question": "Vad heter Martinas pappa?",
+    "answer": "Konrad",
+    "wrong": [
+     "Göran",
+     "Jamal",
+     "Hassan"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q3",
+    "question": "Varför kom Martina från början till Sverige?",
+    "answer": "För att hitta sin pappa.",
+    "wrong": [
+     "För att köpa ett hus.",
+     "För att öppna en restaurang.",
+     "För att spela fotboll."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q4",
+    "question": "Varför behöver Martina någon som tar hand om Axel nästa eftermiddag?",
+    "answer": "Hon har ett möte med en webbyrå.",
+    "wrong": [
+     "Hon ska på semester.",
+     "Hon ska flytta.",
+     "Hon ska springa ett lopp."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+    "locator": 4
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta5": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vad hittar Martina?",
+    "answer": "En gammal artikel",
+    "wrong": [
+     "En ny cykel",
+     "En katt",
+     "En dator"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q1",
+    "question": "Vad heter rektorn som Martina kontaktar?",
+    "answer": "Göran Hedlund",
+    "wrong": [
+     "Konrad Svensson",
+     "Magnus Nilsson",
+     "Jamal Miró"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Vilken skola kontaktar Martina?",
+    "answer": "Enskede gårds gymnasium",
+    "wrong": [
+     "Tekniska högskolan",
+     "Stockholms universitet",
+     "Bokstavsskolan"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q3",
+    "question": "Vilken idrott var Konrad bra på i skolan?",
+    "answer": "Löpning",
+    "wrong": [
+     "Simning",
+     "Ishockey",
+     "Tennis"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+    "locator": 4
+   },
+   {
+    "id": "q4",
+    "question": "Vilken uppgift om Konrad saknar Martina när hon ringer skolan?",
+    "answer": "Hans personnummer",
+    "wrong": [
+     "Hans förnamn",
+     "Hans efternamn",
+     "Namnet på hans gamla skola"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+    "locator": 3
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta6": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vems förflutna diskuteras?",
+    "answer": "Konrad",
+    "wrong": [
+     "Jamal",
+     "Martina",
+     "Ylva"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q1",
+    "question": "Vad heter kvinnan som Martina ringer om sin pappa?",
+    "answer": "Camilla",
+    "wrong": [
+     "Ylva",
+     "Fatou",
+     "Nadima"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Vem pratar Jamal med om sin familj?",
+    "answer": "Sin mamma",
+    "wrong": [
+     "Sin chef",
+     "Sin granne",
+     "Sin läkare"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q3",
+    "question": "Vad tror Jamals mamma att Jamal och Ylva ska göra?",
+    "answer": "Gifta sig",
+    "wrong": [
+     "Byta jobb",
+     "Sälja en bil",
+     "Flytta till Norge"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+    "locator": 4
+   },
+   {
+    "id": "q4",
+    "question": "Vad berättar Camilla om pengarna som Konrad lånade?",
+    "answer": "Han betalade inte tillbaka dem.",
+    "wrong": [
+     "Han betalade tillbaka direkt.",
+     "Han gav dem till Martina.",
+     "Han satte in dem på hennes konto."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+    "locator": 6
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta7": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vem får Martina ny information om?",
+    "answer": "Sin pappa",
+    "wrong": [
+     "Sin lärare",
+     "Sin granne",
+     "Sin chef"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q1",
+    "question": "Vilket efternamn har Konrad på Facebook?",
+    "answer": "Rosén",
+    "wrong": [
+     "Hedlund",
+     "Miró",
+     "Nilsson"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Vem berättar till slut för Martina var hennes pappa är?",
+    "answer": "Göran",
+    "wrong": [
+     "Camilla",
+     "Ylva",
+     "Fatou"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q3",
+    "question": "Vad arbetar Jamal med när Martina möter honom ute?",
+    "answer": "Han kör taxi.",
+    "wrong": [
+     "Han säljer blommor.",
+     "Han undervisar.",
+     "Han delar ut post."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q4",
+    "question": "När säger Jamal att han började köra taxi?",
+    "answer": "I går",
+    "wrong": [
+     "För ett år sedan",
+     "Samma morgon",
+     "För tio år sedan"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+    "locator": 5
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta8": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vem hittar något på KTH:s webbplats?",
+    "answer": "Jamal",
+    "wrong": [
+     "Ylva",
+     "Konrad",
+     "Sara"
+    ],
+    "source": "https://urplay.se/program/217859-hitta-hem-avstangd",
+    "locator": "Om programmet"
+   },
+   {
+    "id": "q1",
+    "question": "Vilken utbildning frågar Jamal om?",
+    "answer": "Kompletterande utbildning för ingenjörer",
+    "wrong": [
+     "Utbildning för kockar",
+     "Utbildning för taxiförare",
+     "Utbildning för lärare"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Varför vill rektorn prata med Ylva?",
+    "answer": "Han har fått klagomål på henne.",
+    "wrong": [
+     "Han vill ge henne semester.",
+     "Han vill köpa hennes bil.",
+     "Han har hittat hennes nycklar."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q3",
+    "question": "Vad beslutar rektorn om Ylvas undervisning?",
+    "answer": "Hon får inte undervisa medan saken utreds.",
+    "wrong": [
+     "Hon ska undervisa fler klasser.",
+     "Hon ska bli rektor direkt.",
+     "Hon ska börja undervisa på KTH."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+    "locator": 6
+   },
+   {
+    "id": "q4",
+    "question": "Hur förklarar Ylva det som såg ut som en kärleksrelation?",
+    "answer": "De skulle lura Jamals föräldrar.",
+    "wrong": [
+     "De skulle gifta sig nästa dag.",
+     "De hade aldrig träffats.",
+     "De arbetade på samma bank."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+    "locator": 5
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "ur-hitta9": {
+  "sourceType": "script",
+  "questions": [
+   {
+    "id": "q0",
+    "question": "Vilka två vänner handlar serien om?",
+    "answer": "Martina och Jamal",
+    "wrong": [
+     "Lars och Anna",
+     "Britta och Elsa",
+     "Erik och Eva"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q1",
+    "question": "Varför tackar Ylva eleverna?",
+    "answer": "De hjälpte henne att få tillbaka jobbet.",
+    "wrong": [
+     "De köpte en bil åt henne.",
+     "De betalade hennes hyra.",
+     "De byggde en skola."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q2",
+    "question": "Vad behöver Fatou göra efter sfi?",
+    "answer": "Hitta ett jobb",
+    "wrong": [
+     "Byta namn",
+     "Köpa ett hotell",
+     "Sälja sin lägenhet"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+    "locator": 3
+   },
+   {
+    "id": "q3",
+    "question": "Vilka elever får en applåd för att de är klara med sfi?",
+    "answer": "Fatou, Martina och Mohammed",
+    "wrong": [
+     "Ylva, Konrad och Göran",
+     "Jamal, Camilla och Nadima",
+     "Magnus, Axel och Hassan"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+    "locator": 2
+   },
+   {
+    "id": "q4",
+    "question": "Vad säger Jamal att han berättade för rektorn om Ylva?",
+    "answer": "Hon är den bästa lärare han har haft.",
+    "wrong": [
+     "Hon vill sluta arbeta.",
+     "Hon behöver mer semester.",
+     "Hon vill sälja skolan."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+    "locator": 4
+   }
+  ],
+  "fullQuiz": true,
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31"
+ },
+ "v1": {
+  "sourceType": "script",
+  "fullQuiz": true,
+  "programUrl": "https://urplay.se/program/217858-hitta-hem-den-forsta-lognen",
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31",
+  "replaces": "Frukosten",
+  "legacyQuestions": {
+   "q0": {
+    "answer": "Chokladkräm"
+   }
+  },
+  "questions": [
+   {
+    "id": "r014q0",
+    "question": "Vilken myndighet ringer Martina?",
+    "answer": "Skatteverket",
+    "wrong": [
+     "Polisen",
+     "Arbetsförmedlingen",
+     "Försäkringskassan"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+    "locator": 4
+   },
+   {
+    "id": "r014q1",
+    "question": "Vad heter personen som Martina letar efter?",
+    "answer": "Konrad",
+    "wrong": [
+     "Karzan",
+     "Magnus",
+     "Jamal"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+    "locator": 6
+   },
+   {
+    "id": "r014q2",
+    "question": "När brukar Jamal prata med sina föräldrar?",
+    "answer": "På måndagar klockan tre",
+    "wrong": [
+     "På fredagar klockan åtta",
+     "Varje morgon",
+     "På söndagar klockan tolv"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+    "locator": 2
+   },
+   {
+    "id": "r014q3",
+    "question": "Hur mycket betalar Jamal för kläderna tillsammans?",
+    "answer": "150 kronor",
+    "wrong": [
+     "50 kronor",
+     "100 kronor",
+     "500 kronor"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+    "locator": 7
+   },
+   {
+    "id": "r014q4",
+    "question": "Vad frågar Jamals pappa om?",
+    "answer": "Om Jamal har hittat en fru",
+    "wrong": [
+     "Om Jamal har köpt en bil",
+     "Om Martina har ringt",
+     "Om Jamal har klarat provet"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+    "locator": 10
+   }
+  ]
+ },
+ "v2": {
+  "sourceType": "script",
+  "fullQuiz": true,
+  "programUrl": "https://urplay.se/program/217842-hitta-hem-ett-djarvt-forslag",
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31",
+  "replaces": "Sfi",
+  "legacyQuestions": {
+   "q0": {
+    "answer": "Leen"
+   }
+  },
+  "questions": [
+   {
+    "id": "r014q0",
+    "question": "Varför var Martina inte i skolan?",
+    "answer": "Hon sov.",
+    "wrong": [
+     "Hon arbetade.",
+     "Hon reste bort.",
+     "Hon var hos läkaren."
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+    "locator": 5
+   },
+   {
+    "id": "r014q1",
+    "question": "Vad gör Martina vid datorn på nätterna?",
+    "answer": "Letar efter sin pappa",
+    "wrong": [
+     "Skriver en bok",
+     "Spelar spel",
+     "Söker jobb åt Jamal"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+    "locator": 2
+   },
+   {
+    "id": "r014q2",
+    "question": "Vad lovar Jamal Martina att sluta med?",
+    "answer": "Att ljuga för sina föräldrar",
+    "wrong": [
+     "Att gå till skolan",
+     "Att ringa Ylva",
+     "Att arbeta"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+    "locator": 6
+   },
+   {
+    "id": "r014q3",
+    "question": "Vem ringer Jamal i slutet av avsnittet?",
+    "answer": "Ylva",
+    "wrong": [
+     "Konrad",
+     "Martina",
+     "Sin chef"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+    "locator": 10
+   },
+   {
+    "id": "r014q4",
+    "question": "Vad ber Jamal Ylva om?",
+    "answer": "Att bli hans flickvän",
+    "wrong": [
+     "Att hitta hans pappa",
+     "Att låna honom en bil",
+     "Att ge honom ett jobb"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+    "locator": 10
+   }
+  ]
+ },
+ "v4": {
+  "sourceType": "script",
+  "fullQuiz": true,
+  "programUrl": "https://urplay.se/program/217854-hitta-hem-martinas-hemlighet",
+  "verifiedOn": "2026-10-19",
+  "availableUntil": "2026-12-31",
+  "replaces": "Partikelverb",
+  "legacyQuestions": {
+   "q0": {
+    "answer": "Liam"
+   }
+  },
+  "questions": [
+   {
+    "id": "r014q0",
+    "question": "Vem berättade för Martina att hon har en svensk pappa?",
+    "answer": "Hennes mamma",
+    "wrong": [
+     "Jamal",
+     "Ylva",
+     "Hennes lärare"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+    "locator": 2
+   },
+   {
+    "id": "r014q1",
+    "question": "Vilken stad kommer Martinas pappa från?",
+    "answer": "Stockholm",
+    "wrong": [
+     "Göteborg",
+     "Malmö",
+     "Uppsala"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+    "locator": 4
+   },
+   {
+    "id": "r014q2",
+    "question": "Var träffades Martinas föräldrar?",
+    "answer": "I Barcelona",
+    "wrong": [
+     "I Stockholm",
+     "I Paris",
+     "I Oslo"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+    "locator": 4
+   },
+   {
+    "id": "r014q3",
+    "question": "Hur länge träffades Martinas föräldrar?",
+    "answer": "En vecka",
+    "wrong": [
+     "Ett år",
+     "En månad",
+     "Tio år"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+    "locator": 4
+   },
+   {
+    "id": "r014q4",
+    "question": "Vilket plagg lånar Jamal ut till Ylva?",
+    "answer": "Sin träningsjacka",
+    "wrong": [
+     "Sin vinterkappa",
+     "Sin mössa",
+     "Sina handskar"
+    ],
+    "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+    "locator": 7
+   }
+  ]
+ }
+};
+
 const MORE_VIDEOS=[
 {id:'ur-alpha',name:'Livet i Bokstavslandet',level:'A–B',duration:'Alfabetet',emoji:'🔤',description:'Letters, easy words and pronunciation.',url:'https://urplay.se/serie/178136-livet-i-bokstavslandet'},
 {id:'ur-hitta1',name:'Hitta hem — Hur allt börjar',level:'B–C',duration:'6 min',emoji:'🏡',description:'Meet Martina and Jamal at the start of the story.',url:'https://urplay.se/program/217838-hitta-hem-hur-allt-borjar',answer:'Martina och Jamal',question:'Vilka två personer följer berättelsen?',wrong:['Anna och Erik','Lina och Per','Lisa och Ali']},
@@ -918,9 +1765,98 @@ const MORE_VIDEOS=[
 {id:'ur-hitta8',name:'Hitta hem — Avstängd',level:'C–D',duration:'7 min',emoji:'📚',description:'New clues and difficult news for the characters.',url:'https://urplay.se/program/217859-hitta-hem-avstangd',answer:'Jamal',question:'Vem hittar något på KTH:s webbplats?',wrong:['Ylva','Konrad','Sara']},
 {id:'ur-hitta9',name:'Hitta hem — Slutet gott?',level:'C–D',duration:'8 min',emoji:'🏁',description:'The story reaches its conclusion.',url:'https://urplay.se/program/217834-hitta-hem-slutet-gott',answer:'Martina och Jamal',question:'Vilka två vänner handlar serien om?',wrong:['Lars och Anna','Britta och Elsa','Erik och Eva']},
 {id:'ur-sfi',name:'UR Play — Svenska för invandrare',level:'A–D',duration:'Olika',emoji:'🎓',description:'More SFI videos and educational collections.',url:'https://urplay.se/amne/sfi-svenska-for-invandrare'},
-{id:'ur-sva',name:'UR Play — Svenska som andraspråk',level:'A–D',duration:'Olika',emoji:'🎧',description:'Swedish as a second language video collection.',url:'https://urplay.se/amne/svenska-som-andrasprak'}];
-const videoLevelMatch=(v)=>v.level.includes(state.settings.level);
-function renderVideos(){const vids=[...MORE_VIDEOS].sort((a,b)=>Number(videoLevelMatch(b))-Number(videoLevelMatch(a)));return title(t('videos'),t('videosIntro'))+`<div class="notice">🎬 ${esc(t('vidNote'))}</div><div class="video-grid">${vids.map((v,i)=>`<article class="video-card ${videoLevelMatch(v)?'level-match':''}"><a class="video-main" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(v.name)}"><div class="video-art tone-${i%6}"><span>${v.emoji}</span><span class="play-mark">▶</span></div><div class="video-body"><div class="video-meta"><span class="chip">SFI ${esc(v.level)}</span>${videoLevelMatch(v)?`<span class="mini-recommended">★ ${esc(pT('levelHint'))}</span>`:''}</div><h3>${esc(v.name)}</h3><p>${esc(txt4('Шведская речь: учись воспринимать настоящие диалоги на слух.','Swedish listening: practise with real spoken conversations.','Svensk hörförståelse: öva med talade dialoger.','Шведське аудіювання: тренуйся на живих діалогах.'))}</p><strong class="vid-link">${esc(t('watch'))} ↗</strong></div></a><div class="video-tools"><button class="btn small ghost" data-action="watched" data-id="${esc(v.id)}">${state.videos.includes(v.id)?'✓ '+esc(t('watched')):esc(t('markWatched'))}</button>${v.question?quizStatusChip('video:'+v.id):''}${v.question?`<button class="btn small secondary" data-action="video-quiz" data-id="${esc(v.id)}">🧠 ${esc(t('quiz'))}</button>`:''}</div></article>`).join('')}</div>`}
+{id:'ur-sva',name:'UR Play — Svenska som andraspråk',level:'A–D',duration:'Olika',emoji:'🎧',description:'Swedish as a second language video collection.',url:'https://urplay.se/amne/svenska-som-andrasprak'},
+{id:'v1',"name":"Hitta hem — Den första lögnen","level":"B–C","duration":"7 min","emoji":"🎬","description":"Den första lögnen","url":"https://urplay.se/program/217858-hitta-hem-den-forsta-lognen","question":"Vilken myndighet ringer Martina?","answer":"Skatteverket","wrong":["Polisen","Arbetsförmedlingen","Försäkringskassan"],"requiresVideoBank":true,"previousTitle":"Frukosten"},
+{id:'v2',"name":"Hitta hem — Ett djärvt förslag","level":"B–C","duration":"6 min","emoji":"🎬","description":"Ett djärvt förslag","url":"https://urplay.se/program/217842-hitta-hem-ett-djarvt-forslag","question":"Varför var Martina inte i skolan?","answer":"Hon sov.","wrong":["Hon arbetade.","Hon reste bort.","Hon var hos läkaren."],"requiresVideoBank":true,"previousTitle":"Sfi"},
+{id:'v4',"name":"Hitta hem — Martinas hemlighet","level":"B–C","duration":"6 min","emoji":"🎬","description":"Martinas hemlighet","url":"https://urplay.se/program/217854-hitta-hem-martinas-hemlighet","question":"Vem berättade för Martina att hon har en svensk pappa?","answer":"Hennes mamma","wrong":["Jamal","Ylva","Hennes lärare"],"requiresVideoBank":true,"previousTitle":"Partikelverb"}];
+for(const v of MORE_VIDEOS)if(VIDEO_QUIZ_BANK[v.id]){v.questions=VIDEO_QUIZ_BANK[v.id].questions;v.requiresVideoBank=true;v.availableUntil??=VIDEO_QUIZ_BANK[v.id].availableUntil||'2026-12-31';v.disabled??=false}
+
+// A range includes intermediate levels; broad collections are not recommendations.
+const videoLevelMatch=v=>!!v.question&&(()=>{const levels=v.level.match(/[ABCD]/g)||[],level=state.settings.level;return levels.length===2?level>=levels[0]&&level<=levels[1]:levels.includes(level)})();
+const videoSubmissions=new Set();
+function videoText(key){const labels={
+ watch:['Смотреть видео','Watch video','Titta på video','Дивитися відео'],
+ quiz:['Пройти квиз','Take quiz','Gör quiz','Пройти квіз'],
+ notWatched:['Не просмотрено','Not watched','Inte sedd','Не переглянуто'],
+ notPassed:['Не пройдено','Not passed','Inte godkänd','Не пройдено'],
+ passed:['Пройдено','Passed','Godkänd','Пройдено'],
+ undo:['Отменить просмотр','Undo watched','Markera som osedd','Скасувати перегляд'],
+ pending:['Ожидает сохранения','Waiting to save','Väntar på att sparas','Очікує збереження'],
+ server:['Сохранено в аккаунте','Saved to account','Sparat på kontot','Збережено в акаунті'],
+ local:['Только на этом устройстве','On this device only','Bara på den här enheten','Лише на цьому пристрої'],
+ quizUnavailable:['Новый квиз ждёт обновления сервера','This quiz awaits a server update','Det här quizet väntar på serveruppdatering','Новий квіз очікує оновлення сервера'],
+ unavailable:['Сохранение просмотра ждёт обновления сервера','Watch tracking awaits a server update','Visningsstatus väntar på serveruppdatering','Збереження перегляду очікує оновлення сервера'],
+ expired:['Видео недоступно. Сохранённые результаты и XP остаются.','Video unavailable. Saved results and XP are retained.','Videon är inte tillgänglig. Sparade resultat och XP finns kvar.','Відео недоступне. Збережені результати та XP залишаються.'],
+ loading:['Загрузка прогресса…','Loading progress…','Laddar framsteg…','Завантаження прогресу…'],
+ collection:['Подборка: выбери конкретный выпуск для подготовки квиза.','Collection: choose an episode to prepare a quiz.','Samling: välj ett avsnitt för att förbereda ett quiz.','Добірка: обери конкретний випуск для підготовки квізу.'],
+ synopsis:['Квиз по материалам UR · успех от 80%','UR source quiz · pass at 80%','Quiz utifrån UR:s material · godkänt från 80 %','Квіз за матеріалами UR · успіх від 80%'],
+ conflict:['Просмотр изменён на другом устройстве. Загрузите актуальное состояние и повторите выбор.','Watch status changed on another device. Load the current state and choose again.','Visningsstatus ändrades på en annan enhet. Läs in aktuell status och välj igen.','Перегляд змінено на іншому пристрої. Завантажте актуальний стан і повторіть вибір.'],
+ accept:['Загрузить актуальные отметки','Load current watch status','Läs in aktuell visningsstatus','Завантажити актуальні позначки']};return txt4(...labels[key])}
+// Inclusive licensed date in Stockholm, independent of the device timezone or DST.
+const VIDEO_LOCAL_DATE=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Stockholm',year:'numeric',month:'2-digit',day:'2-digit'});
+function videoContentAvailable(v,now=Date.now()){return !v.disabled&&(!v.availableUntil||VIDEO_LOCAL_DATE.format(new Date(now))<=v.availableUntil)}
+function videoQuizAvailable(v){return videoContentAvailable(v)&&(!user||!v.requiresVideoBank||window.SVProgress?.supports('video_quizzes_v3'))}
+function videoQuizNote(v){
+ if(!videoContentAvailable(v))return videoText('expired');
+ if(!videoQuizAvailable(v))return videoText('quizUnavailable');
+ const n=v.questions.length;
+ const count=txt4(n+' вопросов',n+' questions',n+' frågor',n+' запитань');
+ return count+' · '+(VIDEO_QUIZ_BANK[v.id].fullQuiz?videoText('synopsis'):txt4('Короткий квиз по описанию UR; содержание проверено частично.','Short UR synopsis quiz; content only partly verified.','Kort quiz om UR:s beskrivning; innehållet är bara delvis verifierat.','Короткий квіз за описом UR; зміст перевірено частково.'));
+}
+function videoPending(id){return videoSubmissions.has(ownerKey()+':'+id)||(window.SVProgress?.activity?.().pending||[]).some(e=>e.type==='video_set'&&e.contentId===id)}
+function videoAvailability(){return !user||cloudAccount()&&window.SVProgress?.writeStatus?.().ready&&window.SVProgress?.supports('video_set_v1')}
+function videoDescription(v){const descriptions={
+ "v1":["Мартина ищет Конрада, Джамал разговаривает с родителями.", "Martina searches for Konrad; Jamal talks to his parents.", "Martina söker Konrad. Jamal pratar med sina föräldrar.", "Мартіна шукає Конрада, Джамал розмовляє з батьками."],
+ "v2":["Мартина просыпает занятия. Джамал просит Ыльву о помощи.", "Martina oversleeps. Jamal asks Ylva for help.", "Martina försover sig. Jamal ber Ylva om hjälp.", "Мартіна просипає заняття. Джамал просить Ільву про допомогу."],
+ "v4":["Мартина рассказывает об отце. Ыльва знакомится с родителями Джамала.", "Martina talks about her father. Ylva meets Jamal’s parents.", "Martina berättar om sin pappa. Ylva träffar Jamals föräldrar.", "Мартіна розповідає про батька. Ільва знайомиться з батьками Джамала."],
+ 'ur-alpha':['Буквы, простые слова и произношение. Серия для детей.','Letters, simple words and pronunciation. A children’s series.','Bokstäver, enkla ord och uttal. En barnserie.','Літери, прості слова й вимова. Дитяча серія.'],
+ 'ur-hitta1':['Знакомство с Мартиной и Джамалом.','Meet Martina and Jamal.','Lär känna Martina och Jamal.','Знайомство з Мартіною та Джамалом.'],
+ 'ur-hitta2':['Джамал начинает работу в доме престарелых.','Jamal starts work at a care home.','Jamal börjar arbeta på ett äldreboende.','Джамал починає роботу в будинку для літніх людей.'],
+ 'ur-hitta3':['Джамал приходит в гости к Мартине.','Jamal visits Martina at home.','Jamal besöker Martina hemma.','Джамал приходить у гості до Мартіни.'],
+ 'ur-hitta4':['Джамал смотрит в будущее, Мартина размышляет о жизни в Швеции.','Jamal looks ahead; Martina reflects on life in Sweden.','Jamal blickar framåt. Martina funderar över livet i Sverige.','Джамал думає про майбутнє, Мартіна — про життя у Швеції.'],
+ 'ur-hitta5':['Старая статья приводит Мартину к новым подсказкам.','An old article leads Martina to new clues.','En gammal artikel ger Martina nya ledtrådar.','Стара стаття дає Мартіні нові підказки.'],
+ 'ur-hitta6':['Бывшая девушка рассказывает о прошлом Конрада.','A former girlfriend talks about Konrad’s past.','En före detta flickvän berättar om Konrads förflutna.','Колишня дівчина розповідає про минуле Конрада.'],
+ 'ur-hitta7':['Мартина узнаёт новое об отце и отправляется в путь с Джамалом.','Martina learns about her father and travels with Jamal.','Martina får veta mer om sin pappa och reser med Jamal.','Мартіна дізнається про батька й вирушає в дорогу з Джамалом.'],
+ 'ur-hitta8':['Джамал находит кое-что на сайте KTH. Мартина ищет подсказки в суде.','Jamal finds something on KTH’s website. Martina looks for clues at court.','Jamal hittar något på KTH:s hemsida. Martina söker ledtrådar på tingsrätten.','Джамал знаходить дещо на сайті KTH. Мартіна шукає підказки в суді.'],
+ 'ur-hitta9':['Найдёт ли Мартина отца? Чем закончится история друзей?','Will Martina find her father? How will the friends’ story end?','Ska Martina hitta sin pappa? Hur slutar vännernas historia?','Чи знайде Мартіна батька? Чим завершиться історія друзів?'],
+ 'ur-sfi':['Подборка программ и учебных материалов SFI от UR.','UR’s collection of SFI programmes and learning materials.','UR:s samling av program och läromedel för sfi.','Добірка програм і навчальних матеріалів SFI від UR.'],
+ 'ur-sva':['Программы UR для изучающих шведский как второй язык.','UR programmes for learning Swedish as a second language.','UR-program för svenska som andraspråk.','Програми UR для вивчення шведської як другої мови.']};return txt4(...descriptions[v.id])}
+function videoProgressMarkup(v){
+ const pending=videoPending(v.id),watched=state.videos.includes(v.id),ready=accountDataReady(),passed=quizPassed('video:'+v.id),r=state.quizResults?.['video:'+v.id];
+ const scope=pending?videoText('pending'):!user?videoText('local'):!ready?videoText('loading'):!videoAvailability()?videoText('unavailable'):videoText('server');
+ return `<div class="video-status-row"><button type="button" class="video-watch-toggle" data-action="watched" data-id="${esc(v.id)}" aria-pressed="${watched}" aria-busy="${pending}" aria-disabled="${!videoAvailability()||pending}" aria-label="${esc(watched?videoText('undo'):t('markWatched'))} · ${esc(v.name)}"><span aria-hidden="true">${watched?'✓':'○'}</span> ${esc(!ready&&user?videoText('loading'):watched?t('watched'):videoText('notWatched'))}</button><small class="video-completion ${passed?'is-passed':''}" data-video-completion="${esc(v.id)}"><span aria-hidden="true">${passed?'✓':'○'}</span> ${esc(!ready&&user?videoText('loading'):passed?(v.previousTitle&&r?.total===1?txt4('Исторический квиз пройден','Historical quiz passed','Tidigare quiz godkänt','Історичний квіз пройдено'):videoText('passed')):videoText('notPassed'))}${r?.total?' · '+Math.floor(r.correct*100/r.total)+'%':''}</small></div><small class="video-save-scope" role="status">${esc(scope)}</small>`;
+}
+function refreshVideoUI(){
+ if(route!=='videos')return;
+ for(const button of document.querySelectorAll('[data-action="video-quiz"]')){const v=MORE_VIDEOS.find(v=>v.id===button.dataset.id);if(!v)continue;button.setAttribute('aria-disabled',String(!videoQuizAvailable(v)));const note=document.getElementById('video-quiz-note-'+v.id);if(note)note.textContent=videoQuizNote(v)}
+ for(const el of document.querySelectorAll('[data-video-progress]')){
+  const v=MORE_VIDEOS.find(v=>v.id===el.dataset.videoProgress);if(!v)continue;
+  // Patch the button in place to preserve keyboard focus during server ACKs.
+  const template=document.createElement('template');template.innerHTML=videoProgressMarkup(v);
+  const button=el.querySelector('button'),next=template.content.querySelector('button');
+  if(button&&next){button.innerHTML=next.innerHTML;for(const attr of ['aria-pressed','aria-busy','aria-disabled','aria-label'])button.setAttribute(attr,next.getAttribute(attr));}
+  const status=el.querySelector('[data-video-completion]'),scope=el.querySelector('.video-save-scope');
+  if(status)status.outerHTML=template.content.querySelector('[data-video-completion]').outerHTML;
+  if(scope)scope.textContent=template.content.querySelector('.video-save-scope').textContent;
+ }
+}
+async function toggleVideoWatched(id){
+ if(!MORE_VIDEOS.some(v=>v.id===id)||videoPending(id))return;
+ if(!videoAvailability()){toast(videoText('unavailable'));return}
+ const key=ownerKey()+':'+id;videoSubmissions.add(key);refreshVideoUI();
+ try{if(cloudAccount())await window.SVProgress.enqueue('video_set',id,!state.videos.includes(id));
+ else mutate(()=>{state.videos=state.videos.includes(id)?state.videos.filter(x=>x!==id):[...state.videos,id]})}
+ finally{videoSubmissions.delete(key);refreshVideoUI()}
+}
+function renderVideos(){
+ const vids=MORE_VIDEOS.filter(v=>v.question).sort((a,b)=>Number(videoLevelMatch(b))-Number(videoLevelMatch(a)));
+ const external='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 4h6v6m0-6L10 14m0-9H5v14h14v-5"/></svg>';
+ return title(t('videos'),t('videosIntro'))+`<div class="notice">${esc(t('vidNote'))}</div><div class="video-grid">${vids.map(v=>{
+ const program=v.url.match(/program\/(\d+)/)?.[1],preview=program?`https://assets.ur.se/id/${program}/images/1_xl.jpg`:v.id==='ur-alpha'?'https://assets.ur.se/id/178136/images/1_xl.jpg':'./assets/video-collection.svg';
+ return `<article class="video-card video-card-unified" data-video-id="${esc(v.id)}"><div class="video-preview"><img data-video-preview src="${preview}" alt="" width="640" height="360" loading="lazy"><span class="video-provider">UR Play</span></div><div class="video-content"><div class="video-meta"><span class="chip">SFI ${esc(v.level)}</span>${videoLevelMatch(v)?`<span class="mini-recommended">${esc(pT('levelHint'))}</span>`:''}</div><h3 lang="sv">${esc(v.name)}</h3><p class="video-description">${esc(videoDescription(v))}</p>${v.previousTitle?`<small>${esc(txt4('История карточки: ','Card history: ','Kortets historik: ','Історія картки: ')+v.previousTitle)}</small>`:''}${videoContentAvailable(v)?`<a class="btn video-watch-link" data-video-watch="${esc(v.id)}" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(videoText('watch')+' · '+v.name+' · UR Play')}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span>${esc(videoText('watch'))}</span>${external}</a>`:`<p role="status">${esc(videoText('expired'))}</p>`}<div class="video-progress" data-video-progress="${esc(v.id)}">${videoProgressMarkup(v)}</div><button type="button" class="btn secondary video-quiz-button" data-action="video-quiz" data-id="${esc(v.id)}" aria-disabled="${!videoQuizAvailable(v)}" aria-describedby="video-quiz-note-${esc(v.id)}">${esc(videoText('quiz'))}</button><small class="video-quiz-note" id="video-quiz-note-${esc(v.id)}">${esc(videoQuizNote(v))}</small></div></article>`}).join('')}</div>`
+}
+// A tab left open across expiry must also refuse a new external launch.
+document.addEventListener('click',event=>{const link=event.target?.closest?.('[data-video-watch]');if(!link)return;const v=MORE_VIDEOS.find(v=>v.id===link.dataset.videoWatch);if(v&&!videoContentAvailable(v)){event.preventDefault();toast(videoText('expired'));if(route==='videos')render()}},true);
 function avatarMarkup(kind='small'){const avatar=state.profile?.avatar;const name=state.profile?.name||user?.name||t('guest');return avatar&&/^data:image\/(jpeg|png|webp);base64,/.test(avatar)?`<img class="user-image" src="${esc(avatar)}" alt="${esc(name)}">`:`<img class="user-image" src="./assets/avatars/pippi-cartoon.png" alt="Pippi Långstrump">`}
 function renderNav(){const mk=([key,ico])=>`<button type="button" class="nav-link ${route===key||(route==='book'&&key==='books')||(route==='topic'&&key==='topics')?'active':''}" data-nav="${key}"><span class="nav-glyph">${ico}</span><span class="nav-text">${esc(t(key))}</span></button>`;$('#sidebar-nav').innerHTML=NAV4.slice(0,6).map(mk).join('');$('#sidebar-learn').innerHTML=NAV4.slice(6).map(mk).join('')+`<button class="nav-link ${route==='cheats'?'active':''}" data-nav="cheats"><span class="nav-glyph">🧾</span><span class="nav-text">${esc(pT('cheats'))}</span></button><button class="nav-link ${route==='numbers'?'active':''}" data-nav="numbers"><span class="nav-glyph">🔢</span><span class="nav-text">${esc(pT('numbers'))}</span></button>`;$('#mobile-nav').innerHTML=mainRoutes4.map(([key,ico])=>`<button type="button" class="${route===key?'active':''}" data-nav="${key}" aria-label="${esc(t(key))}"><span class="i">${ico}</span><span>${esc(t(key))}</span></button>`).join('')+`<button type="button" class="mobile-more" id="bottom-menu-open" aria-label="${esc(t('subsections'))}"><span class="i">☰</span><span>${esc(t('subsections'))}</span></button>`;const name=state.profile?.name||user?.name||t('guest');$('#sidebar-profile').innerHTML=`<span class="small-avatar">${avatarMarkup()}</span><span class="nav-account-name"><strong>${esc(name)}</strong><small>🏆 ${esc(t('accountRank'))} ${accountLevel3()}</small></span>`;$('#profile-top').innerHTML=avatarMarkup('top')}
 function renderProfile(){const name=state.profile?.name||user?.name||t('guest'),xp=accountProgress3();return title(t('profileTitle'),user?'':authText('guest'))+`<div class="profile-identity"><section class="profile-person"><div class="big-avatar">${avatarMarkup('big')}</div><div class="identity-copy"><h2>${esc(name)}</h2><span class="chip">🇸🇪 SFI <span data-profile-level>${accountDataReady()?esc(state.settings.level):'…'}</span></span></div></section><section class="profile-level"><span class="rank-emoji">🏆</span><div><h2>${esc(t('accountRank'))} ${accountDataReady()?accountLevel3():'—'}</h2><p>${accountDataReady()?`${state.xp} XP · ${xp}/500`:'— XP'}</p></div><div class="progress-track"><div class="progress-fill" style="width:${xp/5}%"></div></div></section></div><section class="content-panel profile-collections"><button class="btn secondary" data-nav="reviews" data-review-count>${studioIcon('repeat','collection-icon collection-icon--repeat')}<span>${esc(t('reviews'))} · ${!user?0:manualQueue().ready?manualReviewIds().length:'…'}</span>${studioIcon('arrow','collection-arrow')}</button><button class="btn secondary" data-action="show-learned">${studioIcon('check','collection-icon collection-icon--learned')}<span>${esc(ux('learned'))} · ${state.known.length}</span>${studioIcon('arrow','collection-arrow')}</button><button class="btn secondary" data-action="show-favorites">${studioIcon('star','collection-icon collection-icon--favorite')}<span>${esc(t('favorites'))} · ${state.favorites.length}</span>${studioIcon('arrow','collection-arrow')}</button></section><section class="content-panel profile-edit"><h3>✏️ ${esc(pT('personal'))}</h3><div class="edit-inline"><label for="profile-name-edit">${esc(pT('nameEdit'))}</label><input id="profile-name-edit" type="text" class="form-input" maxlength="70" value="${esc(state.profile?.name||user?.name||'')}"><button class="btn small" data-action="save-profile-name">${esc(pT('saveName'))}</button></div><div class="avatar-actions"><label for="profile-photo-file" class="btn secondary small file-select"><span aria-hidden="true">📷</span><span>${esc(pT('uploadPhoto'))}</span><input id="profile-photo-file" type="file" accept="image/jpeg,image/png,image/webp" hidden></label>${state.profile?.avatar?`<button class="btn ghost small" data-action="remove-photo">${esc(pT('removePhoto'))}</button>`:''}</div></section><section class="stats-grid">${stat('🔥',streak(),t('dayStreak'),'orange')}${stat('🎓',state.completed.length,t('lessonCount'),'purple')}${stat('🧠',state.known.length,t('knownWords'),'mint')}${stat('★',state.favorites.length,t('favorites'),'orange')}${stat('📚',(state.booksRead||[]).length,t('booksRead'),'pink')}</section><div class="profile-grid"><section class="content-panel"><h3>🗓️ ${esc(t('practiceActivity'))}</h3>${heatmap()}</section><div class="profile-settings-column">${profileSettingsMarkup()}${user?`<section class="content-panel auth-teaser account-session"><div class="account-session-heading"><span class="account-session-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span><div class="account-session-copy"><h3>${esc(t('profile'))}</h3><p>${esc(txt4('Продолжайте обучение на любом устройстве.','Continue learning on any device.','Fortsätt lära dig på valfri enhet.','Продовжуйте навчання на будь-якому пристрої.'))}</p></div></div><button class="btn ghost small account-signout" data-action="logout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4H5v16h5m5-12 4 4-4 4M9 12h10"/></svg>${esc(t('logout'))}</button></section>`:`<section class="content-panel auth-teaser"><h3>🔐 ${esc(t('register'))}</h3><p>${esc(authText('guest'))}</p><div class="split"><button class="btn small" data-action="auth" data-mode="register">${esc(t('register'))}</button><button class="btn secondary small" data-action="auth" data-mode="login">${esc(t('login'))}</button></div></section>`}</div></div>`}
@@ -937,8 +1873,8 @@ document.addEventListener('change',event=>{if(event.target?.id==='profile-photo-
 document.addEventListener('click',event=>{const b=event.target?.closest?.('[data-action="save-profile-name"],[data-action="remove-photo"]');if(!b)return;event.preventDefault();event.stopImmediatePropagation();if(cloudAccount())return;if(b.dataset.action==='save-profile-name'){const value=String(document.getElementById('profile-name-edit')?.value||'').trim().slice(0,70);if(!value)return;mutate(()=>{state.profile=state.profile||{};state.profile.name=value})}else{mutate(()=>{state.profile=state.profile||{};state.profile.avatar=''})}render();toast(pT('profileSave'))},true);
 
 
-// Small post-video check: based on UR's published synopsis, not a verified speech transcript.
-document.addEventListener('click',e=>{const el=e.target?.closest?.('[data-action="video-quiz"]');if(!el)return;e.preventDefault();e.stopImmediatePropagation();const v=MORE_VIDEOS.find(x=>x.id===el.dataset.id);if(!v?.question)return;const question=localizedQuizChoice(v.question,v.answer,v.wrong,null,()=>txt4('Вопрос по описанию выпуска UR Play. Чтобы проверить аудирование, сначала посмотри видео.','Question based on the UR Play episode description. Watch the video first to practise listening.','Frågan bygger på avsnittsbeskrivningen hos UR Play. Titta först på videon.','Запитання за описом випуску UR Play. Спершу переглянь відео.'));startQuiz('video',v.id)},true);
+// Start a source-verified episode quiz; persisted older sessions keep their snapshot.
+document.addEventListener('click',e=>{const el=e.target?.closest?.('[data-action="video-quiz"]');if(!el)return;e.preventDefault();e.stopImmediatePropagation();const v=MORE_VIDEOS.find(x=>x.id===el.dataset.id);if(!v?.question){toast(videoText('collection'));return}startQuiz('video',v.id)},true);
 
 
 // A consistent illustrated icon system. Original training icons remain unchanged.
@@ -1028,9 +1964,10 @@ async function setWordFavorite(id){
  else mutate(()=>{state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id]})}
  finally{wordSubmissions.delete(key);refreshWordUI()}
 }
-function unsupportedAction(name,btn){return ['watched','book-read','save-profile-name','remove-photo'].includes(name)}
+function unsupportedAction(name,btn){return ['book-read','save-profile-name','remove-photo'].includes(name)}
 // Progress notifications never replace the page, search controls or surviving cards.
 function refreshWordUI(snapshotChanged=false){
+ refreshVideoUI();
  const page=$('#page');if(!page?.querySelectorAll)return;
  headerStats();
  if(snapshotChanged){
@@ -1088,6 +2025,7 @@ function retireWordRow(row){
  if(row.animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches)row.animate([{opacity:1},{opacity:0}],{duration:140}).finished.then(finish,finish);else finish();
 }
 function renderProgressUX(update=false){
+ refreshVideoUI();
  const page=$('#page');if(!page)return;
  const cloud=cloudAccount(),activity=window.SVProgress?.activity?.()||{pending:[]};
  const ready=!cloud||window.SVProgress?.writeStatus?.().ready===true;
@@ -1096,10 +2034,11 @@ function renderProgressUX(update=false){
  if(!cloud&&!authUnavailable)page.querySelector('.save-status')?.remove();
  if(cloud||authUnavailable){
   const error=activity.error||window.SVProgress?.writeStatus?.().error;
-  const conflict=activity.pending.some(e=>e.status==='conflict'),wordConflict=activity.pending.some(e=>e.status==='conflict'&&e.type!=='favorite_set');
+  const videoConflict=activity.pending.some(e=>e.status==='conflict'&&e.type==='video_set');
+  const conflict=activity.pending.some(e=>e.status==='conflict'),wordConflict=activity.pending.some(e=>e.status==='conflict'&&!['favorite_set','video_set'].includes(e.type));
   const readStatus=window.SVProgress?.status?.();
-  const message=authUnavailable?authText('offline'):conflict?(wordConflict?wordUX('conflict'):ux('conflict')):navigator.onLine===false&&activity.pending.length?ux('offline'):error==='SRS_INTERVAL_LIMIT'?txt4('Не удалось сохранить слово из-за ошибки расписания повторений. Следующие изменения ожидают отправки. Требуется исправление на сервере.','A review schedule error prevented saving the word. Later changes are waiting to send. A server fix is required.','Ett fel i repetitionsschemat hindrade ordet från att sparas. Senare ändringar väntar på att skickas. Servern behöver rättas.','Не вдалося зберегти слово через помилку розкладу повторень. Наступні зміни очікують надсилання. Потрібне виправлення на сервері.'):error==='FEATURE_UNAVAILABLE'?ux('waiting'):error?ux('error'):cloudReadError||!window.SVProgress||readStatus?.status==='error'?ux('readError'):!accountDataReady()?ux('loading'):activity.pending.length?ux('saving'):'';
-  const statusHTML=`<div class="save-status ${message?'':'hidden'}" role="status" aria-live="polite">${esc(message)}${conflict?` <button class="link-btn" data-action="${wordConflict?'accept-word-state':'accept-favorites'}">${esc(wordConflict?wordUX('accept'):ux('accept'))}</button>`:authUnavailable||error||cloudReadError||!window.SVProgress||readStatus?.status==='error'?` <button class="link-btn" data-action="${authUnavailable?'auth-retry':'save-retry'}">${esc(authUnavailable?t('repeat'):ux('retry'))}</button>`:''}</div>`;
+  const message=authUnavailable?authText('offline'):conflict?(videoConflict?videoText('conflict'):wordConflict?wordUX('conflict'):ux('conflict')):navigator.onLine===false&&activity.pending.length?ux('offline'):error==='SRS_INTERVAL_LIMIT'?txt4('Не удалось сохранить слово из-за ошибки расписания повторений. Следующие изменения ожидают отправки. Требуется исправление на сервере.','A review schedule error prevented saving the word. Later changes are waiting to send. A server fix is required.','Ett fel i repetitionsschemat hindrade ordet från att sparas. Senare ändringar väntar på att skickas. Servern behöver rättas.','Не вдалося зберегти слово через помилку розкладу повторень. Наступні зміни очікують надсилання. Потрібне виправлення на сервері.'):error==='FEATURE_UNAVAILABLE'?ux('waiting'):error?ux('error'):cloudReadError||!window.SVProgress||readStatus?.status==='error'?ux('readError'):!accountDataReady()?ux('loading'):activity.pending.length?ux('saving'):'';
+  const statusHTML=`<div class="save-status ${message?'':'hidden'}" role="status" aria-live="polite">${esc(message)}${conflict?` <button class="link-btn" data-action="${videoConflict?'accept-video-state':wordConflict?'accept-word-state':'accept-favorites'}">${esc(videoConflict?videoText('accept'):wordConflict?wordUX('accept'):ux('accept'))}</button>`:authUnavailable||error||cloudReadError||!window.SVProgress||readStatus?.status==='error'?` <button class="link-btn" data-action="${authUnavailable?'auth-retry':'save-retry'}">${esc(authUnavailable?t('repeat'):ux('retry'))}</button>`:''}</div>`;
   const status=page.querySelector('.save-status');if(!status)page.insertAdjacentHTML('afterbegin',statusHTML);else if(status.outerHTML!==statusHTML)status.outerHTML=statusHTML;
  }
  page.querySelectorAll('[data-action="mark-known"],[data-action="flash-grade"][data-value="1"]').forEach(btn=>{
@@ -1307,3 +2246,8 @@ function quizResultLabel(){
 }
 
 function quizPassed(id){const r=state.quizResults?.[id];return !!r?.total&&r.correct*5>=r.total*4}
+
+document.addEventListener('click',async e=>{if(!e.target.closest('[data-action="accept-video-state"]'))return;await window.SVProgress?.acceptCurrentVideos();refreshVideoUI()});
+
+// Keep a real image fallback when an external thumbnail cannot load offline.
+document.addEventListener('error',e=>{const img=e.target;if(img?.matches?.('img[data-video-preview]')&&!img.src.endsWith('/assets/video-collection.svg'))img.src='./assets/video-collection.svg'},true);

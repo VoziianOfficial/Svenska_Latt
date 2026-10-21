@@ -553,3 +553,39 @@ button.mobile-brand{padding:0}
 .account-email span{min-width:0;text-align:right;overflow-wrap:anywhere;font-size:13px}
 
 .page-heading p:empty{display:none}
+
+/* Video library: a single card contract, independent of older tile enhancers. */
+#page .video-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px;align-items:stretch}
+#page .video-card-unified{display:flex!important;flex-direction:column!important;padding:10px!important;gap:0!important;background:#fff!important;border:1px solid #e8e5ef!important;border-radius:24px!important;box-shadow:0 6px 22px #34304b09;min-width:0;transition:transform .2s,box-shadow .2s}
+#page .video-card-unified:hover{transform:translateY(-3px);box-shadow:0 14px 32px #34304b13}
+.video-preview{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#e7e4f5,#e0eee9)}
+.video-preview img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.video-card-unified:hover .video-preview img{transform:scale(1.025)}
+.video-provider{position:absolute;bottom:10px;left:10px;background:#ffffffeb;color:#2d2940;border-radius:8px;padding:4px 9px;font-size:11px;font-weight:750}
+#page .video-content{display:flex;flex:1;flex-direction:column;gap:12px;padding:16px 8px 8px;min-width:0}
+#page .video-card-unified .video-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-height:26px;margin:0}
+#page .video-card-unified .chip{font-size:11px;line-height:1.4;padding:5px 9px;white-space:nowrap}
+#page .video-card-unified .mini-recommended{font-size:10px;line-height:1.4;color:#47685c;background:#eef6f1;border-radius:8px;padding:5px 7px;max-width:100%}
+#page .video-card-unified h3{font-size:18px;line-height:1.35;letter-spacing:-.02em;margin:0;min-height:0;overflow-wrap:anywhere;color:#302c45}
+#page .video-description{font-size:13px;line-height:1.6;color:#6e6a7e;margin:0;min-height:0;flex:0 0 auto}
+#page .video-card-unified .btn{display:flex!important;align-items:center;justify-content:center;gap:8px;flex:0 0 auto!important;width:100%!important;min-width:0!important;min-height:46px!important;height:auto!important;margin:0!important;padding:11px 10px!important;font-size:13px;line-height:1.5;white-space:normal!important;border-radius:13px!important;text-decoration:none}
+#page .video-watch-link{background:#7360b0!important;color:white!important;box-shadow:0 4px 10px #7360b01a!important}
+.video-watch-link svg{width:18px;height:18px;flex-shrink:0}
+.video-watch-link svg:last-child{width:15px;height:15px;opacity:.8}
+#page .video-watch-link:hover{background:#625095!important}
+#page .video-quiz-button{background:#f3f0fa!important;color:#675293!important;border:1px solid #e5dff1!important;box-shadow:none!important}
+#page .video-quiz-button:hover{background:#eae4f5!important}
+.video-progress{min-width:0;border-block:1px solid #f0edf5;padding-block:10px}
+.video-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#page .video-watch-toggle{appearance:none;background:#f6f5f9;color:#5c576b;border:1px solid transparent;border-radius:9px;min-height:44px;font:inherit;font-size:11px;font-weight:600;padding:8px;cursor:pointer;max-width:100%;text-align:start}
+#page .video-watch-toggle[aria-pressed=true]{color:#356a55;background:#edf6f0}
+#page .video-watch-toggle[aria-disabled=true]{cursor:help;opacity:.75}
+#page .video-watch-toggle[aria-busy=true]{cursor:progress}
+.video-completion{font-size:11px;color:#6e6a7e;line-height:1.5}
+.video-completion.is-passed{color:#356a55}
+.video-save-scope{display:block;font-size:10px;color:#777184;line-height:1.5;margin-top:4px;min-height:15px}
+.video-quiz-note{font-size:10px;line-height:1.5;color:#777184;min-height:3em}
+#page .video-card-unified :is(button,a):focus-visible{outline:3px solid #866bc2;outline-offset:3px}
+@media(max-width:1199px){#page .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px}}
+@media(max-width:620px){#page .video-grid{grid-template-columns:minmax(0,1fr)!important;gap:18px}#page .video-card-unified h3{min-height:0}#page .video-description{min-height:0}#page .video-card-unified .btn{min-height:48px!important}.video-quiz-note{min-height:0}}
+@media(prefers-reduced-motion:reduce){#page .video-card-unified,.video-preview img{transition:none}#page .video-card-unified:hover,.video-card-unified:hover .video-preview img{transform:none}}

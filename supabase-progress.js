@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-18-word-buttons-1';
+ const moduleVersion='2026-10-19-videos-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -112,7 +112,7 @@
   if(!c||!current(c))return;
   let stored;try{stored=await rows()}catch(_){stored=[]}
   const pending=stored.filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status)).map(r=>{
-   const event=JSON.parse(r.eventJson);return {type:event.type,wordId:event.data.word_id,sessionId:event.data.session_id,status:r.status};
+   const event=JSON.parse(r.eventJson);return {type:event.type,wordId:event.data.word_id,contentId:event.data.content_id,sessionId:event.data.session_id,status:r.status};
   });
   if(!current(c))return;
   activity={pending,error:writeError};
@@ -214,11 +214,11 @@
    const pending=(await rows()).filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status));
    for(const row of pending){
     requireCurrent(c);
-    if(row.status==='conflict')throw fail(JSON.parse(row.eventJson).type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
+    if(row.status==='conflict')throw fail(JSON.parse(row.eventJson).type==='video_set'?'VIDEO_STATE_CONFLICT':JSON.parse(row.eventJson).type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
     if(row.status==='blocked')throw fail('EVENT_REJECTED');
     if(row.contentVersion!==c.snapshot.content_version)throw fail('CONTENT_VERSION_MISMATCH');
     const eventType=JSON.parse(row.eventJson).type;
-    if(['unmark_known','review_grade'].includes(eventType)&&!c.snapshot.capabilities.includes(eventType))throw fail('FEATURE_UNAVAILABLE');
+    if((['unmark_known','review_grade'].includes(eventType)&&!c.snapshot.capabilities.includes(eventType)||eventType==='video_set'&&!c.snapshot.capabilities.includes('video_set_v1')))throw fail('FEATURE_UNAVAILABLE');
     for(let attempt=0;attempt<2;attempt++){
      requireCurrent(c);await compatible(c);
      try{
@@ -237,8 +237,8 @@
       if(e.code==='40001'){
        await fresh(c);
        const type=JSON.parse(row.eventJson).type;
-       if(type==='favorite_set'||type==='unmark_known'||(type==='mark_known'&&c.snapshot.capabilities.includes('unmark_known'))){
-        row.status='conflict';await put(row);throw fail(type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
+       if(type==='video_set'||type==='favorite_set'||type==='unmark_known'||(type==='mark_known'&&c.snapshot.capabilities.includes('unmark_known'))){
+        row.status='conflict';await put(row);throw fail(type==='video_set'?'VIDEO_STATE_CONFLICT':type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
        }
        row.expectedRevision=c.snapshot.revision;await put(row);
        if(attempt===1)throw fail('REVISION_RETRY_PENDING');
@@ -253,7 +253,7 @@
    draining=null;
    if(current(c))void reportActivity(c);
    if(context!==c){void flush()}
-   if(current(c)&&writerReady===c&&!retryTimer&&!['SRS_INTERVAL_LIMIT','FEATURE_UNAVAILABLE','FAVORITE_CONFLICT','WORD_STATE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
+   if(current(c)&&writerReady===c&&!retryTimer&&!['SRS_INTERVAL_LIMIT','FEATURE_UNAVAILABLE','FAVORITE_CONFLICT','VIDEO_STATE_CONFLICT','WORD_STATE_CONFLICT','EVENT_REJECTED','CONTENT_VERSION_MISMATCH','LOCAL_PROGRESS_CONFLICT'].includes(writeError)){retryTimer=setTimeout(()=>{retryTimer=null;void flush()},15000)}
   });
   return draining;
  }
@@ -263,8 +263,9 @@
    if(!writeEnabled||!c||writerReady!==c)throw fail('CLOUD_NOT_READY');
    await lock(c,async()=>{
     await compatible(c);requireCurrent(c);
-    if(!previewCatalog?.().words.includes(wordId)||!['favorite_set','mark_known','unmark_known','mark_review','review_grade'].includes(type)||
-     (['favorite_set','review_grade'].includes(type)&&typeof value!=='boolean'))throw fail('INVALID_EVENT');
+    if(!(type==='video_set'?previewCatalog?.().videos:previewCatalog?.().words)?.includes(wordId)||!['video_set','favorite_set','mark_known','unmark_known','mark_review','review_grade'].includes(type)||
+     (['video_set','favorite_set','review_grade'].includes(type)&&typeof value!=='boolean'))throw fail('INVALID_EVENT');
+    if(type==='video_set'&&!c.snapshot.capabilities.includes('video_set_v1'))throw fail('FEATURE_UNAVAILABLE');
     if(['unmark_known','review_grade'].includes(type)&&!c.snapshot.capabilities.includes(type))throw fail('FEATURE_UNAVAILABLE');
     const pending=(await rows()).filter(r=>r.userId===c.userId&&!['applied','cancelled'].includes(r.status));
     if(pending.some(r=>r.status==='conflict'||r.status==='blocked'))throw fail('QUEUE_REQUIRES_REVIEW');
@@ -274,9 +275,10 @@
     if(type==='mark_known'&&c.snapshot.state.known.includes(wordId))return;
     if(type==='unmark_known'&&!c.snapshot.state.known.includes(wordId))return;
     if(['mark_review','review_grade'].includes(type)&&sameWord.some(r=>['mark_review','review_grade'].includes(JSON.parse(r.eventJson).type)))return;
+    if(type==='video_set'&&pending.some(r=>{const e=JSON.parse(r.eventJson);return e.type===type&&e.data.content_id===wordId}))return;
     if(type==='favorite_set'&&pending.some(r=>{const e=JSON.parse(r.eventJson);return e.type===type&&e.data.word_id===wordId}))return;
     const event={type,occurred_at:new Date().toISOString(),timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,
-     data:type==='favorite_set'?{word_id:wordId,value}:type==='review_grade'?{word_id:wordId,correct:value}:{word_id:wordId}};
+     data:type==='video_set'?{content_id:wordId,value}:type==='favorite_set'?{word_id:wordId,value}:type==='review_grade'?{word_id:wordId,correct:value}:{word_id:wordId}};
     await storage('events','readwrite',s=>s.add({userId:c.userId,eventId:crypto.randomUUID(),eventJson:JSON.stringify(event),
      contentVersion:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
     requireCurrent(c);
@@ -420,7 +422,7 @@
    await fresh(c);
    for(const row of await rows()){
     requireCurrent(c);
-    if(row.userId===c.userId&&row.status==='conflict'&&((JSON.parse(row.eventJson).type==='favorite_set')===(kind==='favorite'))){row.status='cancelled';await put(row)}
+    if(row.userId===c.userId&&row.status==='conflict'&&(kind==='video'?JSON.parse(row.eventJson).type==='video_set':kind==='favorite'?JSON.parse(row.eventJson).type==='favorite_set':['mark_known','unmark_known'].includes(JSON.parse(row.eventJson).type))){row.status='cancelled';await put(row)}
    }
   });await reportActivity(c);await flush()}
   catch(e){if(current(c))notify(e.code||'NETWORK_OR_RPC_ERROR')}
@@ -434,7 +436,7 @@
  window.addEventListener('online',wakeWriter);
  window.addEventListener('focus',wakeWriter);
 
- window.SVProgress=Object.freeze({initialize,updateLevel,refresh,status:summary,writeEnabled,enqueue,enqueueSession,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
+ window.SVProgress=Object.freeze({initialize,updateLevel,refresh,status:summary,writeEnabled,enqueue,enqueueSession,retry:retrySaving,acceptCurrentFavorites:()=>acceptCurrentChanges('favorite'),acceptCurrentWordState:()=>acceptCurrentChanges('known'),acceptCurrentVideos:()=>acceptCurrentChanges('video'),supports:type=>!!context&&current(context)&&context.snapshot?.capabilities.includes(type)===true,activity:()=>context&&current(context)?JSON.parse(JSON.stringify(activity)):{pending:[],error:null},writeStatus:()=>({ready:!!context&&current(context)&&writerReady===context,error:writeError})});
  // Local development summary only; no tokens, identities or raw state.
  if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)&&['http:','https:'].includes(location.protocol)){
   window.SVProgressDebug=Object.freeze({status:summary,retry:async()=>{const result=await sync({retry:true});if(writeEnabled)await prepareWriter();return result},preview,moduleVersion,diagnostics,queue:queueStatus,flush,acknowledgeConflict});

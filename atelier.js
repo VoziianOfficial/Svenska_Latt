@@ -113,6 +113,7 @@ function enhanceModes(){document.querySelectorAll('.mode-card').forEach((el,i)=>
  back(el,MODES[i%MODES.length]);if(!el.querySelector(':scope > .tile-photo'))el.appendChild(image(MODES[i%MODES.length],'tile-photo'));
  });}
 function enhanceVideos(){document.querySelectorAll('.video-card').forEach((el,i)=>{
+ if(el.classList.contains('video-card-unified'))return;
  const art=el.querySelector('.video-art');back(art,VIDEOS[i%VIDEOS.length]);
  });}
 function enhanceCheats(){document.querySelectorAll('.cheat-card').forEach((el,i)=>{

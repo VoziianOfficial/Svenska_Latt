@@ -19,7 +19,7 @@ function resources(){
 }
 function server(){
  const accounts=new Map(),calls=[];let failure=null,hold=null,capIntervals=false;
- const account=id=>{if(!accounts.has(id))accounts.set(id,{revision:0,content_version:'static-afaa62b7426e09a7',capabilities:['unmark_known','review_grade','known_reward_once','quiz_rewards_v1'],state:{known:[],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:0,answered:0,correct:0,quizResults:{},settings:{language:'ru',level:'A',speechSpeed:'slow',timezone:'Europe/Stockholm'},profile:{name:'Tester',avatarPath:null}},receipts:new Map(),rewarded:new Set()});return accounts.get(id)};
+ const account=id=>{if(!accounts.has(id))accounts.set(id,{revision:0,content_version:'static-afaa62b7426e09a7',capabilities:['unmark_known','review_grade','known_reward_once','quiz_rewards_v1','video_set_v1','video_quizzes_v3'],state:{known:[],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:0,answered:0,correct:0,quizResults:{},settings:{language:'ru',level:'A',speechSpeed:'slow',timezone:'Europe/Stockholm'},profile:{name:'Tester',avatarPath:null}},receipts:new Map(),rewarded:new Set()});return accounts.get(id)};
  return {calls,account,set failure(value){failure=value},set hold(value){hold=value},set capIntervals(value){capIntervals=value},async rpc(id,name,args){
   const a=account(id),snapshot=()=>{const {receipts,rewarded,...s}=a;return clone(s)};
   if(name==='sl_get_progress')return {data:snapshot()};
@@ -39,6 +39,7 @@ function server(){
   if(event.type==='mark_known'){if(!s.known.includes(wid))s.known.push(wid);if(!a.rewarded.has(wid)){s.xp+=8;a.rewarded.add(wid)}}
   else if(event.type==='unmark_known')s.known=s.known.filter(v=>v!==wid);
   else if(event.type==='favorite_set')s.favorites=event.data.value?[...new Set([...s.favorites,wid])]:s.favorites.filter(v=>v!==wid);
+  else if(event.type==='video_set')s.videos=event.data.value?[...new Set([...s.videos,event.data.content_id])]:s.videos.filter(v=>v!==event.data.content_id);
   else throw Error('Unexpected event '+event.type);
   a.revision++;a.receipts.set(args.p_event_id,JSON.stringify(event));return {data:{duplicate:false,applied_revision:a.revision,progress:snapshot()}};
  }};
@@ -148,4 +149,85 @@ domTest('a rejected click action reports an error without an unhandled rejection
  assert.match(h.notices.at(-1),/Не удалось сохранить/);
  assert.equal(h.document.querySelector('[data-action="favorite"][data-id="v-arbeta"]').getAttribute('aria-pressed'),'false');
  assert.deepEqual(h.backend.account(A).state.favorites,[]);assert.equal(h.backend.calls.length,0);
+});
+
+// Video actions use the production app, RPC identity binding and durable queue.
+const watched='[data-action="watched"][data-id="ur-hitta1"]';
+async function videos(h){h.run("navigate('videos')");await h.settle();return h}
+domTest('every video card exposes the same elements in all four languages and verified episode quizzes',async()=>{
+ const h=await videos(await page());
+ for(const lang of ['ru','uk','en','sv']){
+  h.run(`state.settings.language='${lang}';render()`);
+  const cards=[...h.document.querySelectorAll('[data-video-id]')];assert.equal(cards.length,12);assert.equal(h.run('MORE_VIDEOS.filter(v=>v.question).length'),12);assert(!h.document.querySelector('[data-video-id="ur-alpha"]'));
+  for(const c of cards){for(const selector of ['.video-preview img','.video-meta .chip','h3','.video-description','.video-watch-link','[data-action="watched"]','[data-video-completion]','[data-action="video-quiz"]','.video-save-scope','.video-quiz-note'])assert.equal(c.querySelectorAll(selector).length,1,c.dataset.videoId+selector);
+   assert(!c.textContent.includes('↗'));assert(c.querySelector('[data-action="watched"]').getAttribute('aria-label'));
+  }
+ }
+ h.run("state.settings.level='C'");assert.equal(h.run("videoLevelMatch(MORE_VIDEOS.find(v=>v.id==='ur-hitta4'))"),true,'B–D includes C');
+ assert.equal(h.run("videoLevelMatch(MORE_VIDEOS.find(v=>v.id==='ur-sfi'))"),false,'broad collection is not a recommendation');
+});
+domTest('watched and undo sync across isolated devices, reload and relogin, independently of quiz and XP',async()=>{
+ const backend=server(),h=await videos(await page({backend}));
+ await h.click(watched);assert.equal(h.document.querySelector(watched).getAttribute('aria-pressed'),'true');assert.equal(h.run('state.xp'),0);assert.equal(h.run("quizPassed('video:ur-hitta1')"),false);
+ const phone=await videos(await page({backend}));assert.equal(phone.document.querySelector(watched).getAttribute('aria-pressed'),'true');
+ await phone.click(watched);await h.ctx.SVProgress.refresh();await h.settle();assert.equal(h.document.querySelector(watched).getAttribute('aria-pressed'),'false');
+ await h.click(watched);const reloaded=await videos(await page({shared:h.shared,backend}));assert.equal(reloaded.document.querySelector(watched).getAttribute('aria-pressed'),'true');
+ await reloaded.identity(B);reloaded.run("navigate('videos')");assert.equal(reloaded.document.querySelector(watched).getAttribute('aria-pressed'),'false');
+ await reloaded.identity(A);reloaded.run("navigate('videos')");assert.equal(reloaded.document.querySelector(watched).getAttribute('aria-pressed'),'true');assert.equal(backend.account(A).state.xp,0);
+});
+domTest('offline intent is pending until ACK, survives reload and retries the same UUID',async()=>{
+ const h=await videos(await page());h.backend.failure='NETWORK_ERROR';h.ctx.navigator.onLine=false;
+ const button=h.document.querySelector(watched);await h.click(watched);await h.click(watched);
+ assert.equal(button.getAttribute('aria-pressed'),'false');assert.equal(button.getAttribute('aria-busy'),'true');
+ assert.match(button.closest('[data-video-progress]').textContent,/Ожидает сохранения/);
+ const rows=[...h.shared.stores.get('events').values()];assert.equal(rows.length,1);const uuid=rows[0].eventId;
+ const reloaded=await videos(await page({shared:h.shared,backend:h.backend}));assert.equal(reloaded.document.querySelector(watched).getAttribute('aria-busy'),'true');
+ h.backend.failure=null;await reloaded.ctx.SVProgress.retry();await reloaded.settle();assert.equal(reloaded.document.querySelector(watched).getAttribute('aria-pressed'),'true');
+ assert(h.backend.calls.every(c=>c.args.p_event_id===uuid));assert.equal(h.backend.account(A).state.xp,0);
+});
+domTest('old server stays gated; denied write never becomes local success',async()=>{
+ const backend=server();backend.account(A).capabilities=backend.account(A).capabilities.filter(v=>v!=='video_set_v1');
+ const h=await videos(await page({backend}));await h.click(watched);assert.equal(backend.calls.length,0);assert.match(h.document.querySelector(watched).closest('[data-video-progress]').textContent,/обновления сервера/);
+ backend.account(A).capabilities.push('video_set_v1');await h.ctx.SVProgress.refresh();backend.failure='42501';await h.click(watched);
+ assert.equal(h.document.querySelector(watched).getAttribute('aria-pressed'),'false');assert.equal(h.run('state.videos.length'),0);assert.equal(h.run('state.xp'),0);
+ assert.equal(h.shared.data.get('sv-account-local-v1-'+A),undefined);
+});
+domTest('stale second-device watch intent requires explicit conflict recovery, no silent overwrite',async()=>{
+ const backend=server(),mac=await videos(await page({backend})),phone=await videos(await page({backend}));
+ await mac.click(watched);await phone.click(watched);assert.equal(phone.ctx.SVProgress.activity().pending[0].status,'conflict');
+ assert.equal(phone.ctx.SVProgress.writeStatus().error,'VIDEO_STATE_CONFLICT');assert.match(phone.document.querySelector('.save-status').textContent,/другом устройстве/);
+ await phone.click('[data-action="accept-video-state"]');assert.equal(phone.ctx.SVProgress.activity().pending.length,0);
+ assert.equal(phone.document.querySelector(watched).getAttribute('aria-pressed'),'true');await phone.click(watched);assert.equal(backend.account(A).state.videos.length,0);
+});
+domTest('guest video toggles persist locally with zero XP and do not call cloud',async()=>{
+ const h=await videos(await page({owner:null}));await h.click(watched);assert.equal(h.run('state.xp'),0);assert.match(h.document.querySelector(watched).closest('[data-video-progress]').textContent,/Только на этом устройстве/);
+ const reload=await videos(await page({owner:null,shared:h.shared}));assert.equal(reload.document.querySelector(watched).getAttribute('aria-pressed'),'true');await reload.click(watched);assert.equal(reload.run('state.xp'),0);assert.equal(h.backend.calls.length,0);
+});
+
+domTest('new episode quizzes wait for the reviewed bank on accounts and existing expanded quizzes',async()=>{
+ const backend=server();backend.account(A).capabilities=backend.account(A).capabilities.filter(v=>v!=='video_quizzes_v3');
+ const h=await videos(await page({backend}));
+ const selector='[data-action="video-quiz"][data-id="v1"]';assert.equal(h.document.querySelector(selector).getAttribute('aria-disabled'),'true');
+ await h.click(selector);assert.equal(h.run('quiz.active'),false);assert.equal(backend.calls.length,0);
+ assert.equal(h.document.querySelector('[data-action="video-quiz"][data-id="ur-hitta1"]').getAttribute('aria-disabled'),'true');
+ backend.account(A).capabilities.push('video_quizzes_v3');await h.ctx.SVProgress.refresh();await h.settle();assert.equal(h.document.querySelector(selector).getAttribute('aria-disabled'),'false');
+});
+
+domTest('all twelve cards toggle watched and undo through production queue without XP or quiz changes',async()=>{
+ const h=await videos(await page());
+ const ids=JSON.parse(h.run('JSON.stringify(MORE_VIDEOS.filter(v=>v.question).map(v=>v.id))'));
+ for(const id of ids){const selector='[data-action="watched"][data-id="'+id+'"]';await h.click(selector);assert.equal(h.document.querySelector(selector).getAttribute('aria-pressed'),'true',id);await h.click(selector);assert.equal(h.document.querySelector(selector).getAttribute('aria-pressed'),'false',id)}
+ assert.equal(h.backend.calls.length,24);assert.equal(h.run('state.xp'),0);assert.equal(h.run('Object.keys(state.quizResults).length'),0);
+});
+
+domTest('expired or disabled videos retain history and block new quizzes and watch links',async()=>{
+ const backend=server();backend.account(A).state.xp=12;backend.account(A).state.videos=['v1'];backend.account(A).state.quizResults={'video:v1':{correct:1,total:1,rewarded:true}};
+ const h=await videos(await page({backend})),before=h.run('JSON.stringify(state)');
+ h.run("MORE_VIDEOS.filter(v=>v.question).forEach(v=>v.availableUntil='2020-12-31');render()");
+ assert.equal(h.document.querySelectorAll('[data-video-id]').length,12);
+ assert.equal(h.document.querySelectorAll('.video-watch-link').length,0);
+ assert.equal(h.document.querySelectorAll('[data-action="video-quiz"][aria-disabled="true"]').length,12);
+ await h.click('[data-action="video-quiz"][data-id="v1"]');assert.equal(h.run('quiz.active'),false);
+ assert.equal(h.run('JSON.stringify(state)'),before);assert.equal(backend.calls.length,0);
+ assert.match(h.document.querySelector('[data-video-id="v1"]').textContent,/Исторический квиз пройден/);
 });

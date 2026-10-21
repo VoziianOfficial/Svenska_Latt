@@ -10,7 +10,7 @@ function catalog(){
  ...LESSONS.map(l=>['lesson:'+l.id,{count:l.questions.length,reward:35,questions:Object.fromEntries(l.questions.map((q,i)=>['q'+i,{answer:q.answer}]))}]),
  ...BOOKS.map(l=>['book:'+l.id,{count:l.questions.length,reward:35,questions:Object.fromEntries(l.questions.map((q,i)=>['q'+i,{answer:q.answer}]))}]),
  ...topicNames3().map(id=>{const words=topicWordsPlus(id);return ['topic:'+id,{count:Math.min(20,words.length),reward:35,questions:Object.fromEntries(words.map(w=>[w.id,{answer:w.ru,word_id:w.id}]))}]}),
- ...MORE_VIDEOS.filter(v=>v.question).map(v=>['video:'+v.id,{count:1,reward:12,questions:{q0:{answer:v.answer}}}])
+ ...MORE_VIDEOS.filter(v=>v.question).map(v=>['video:'+v.id,{count:v.questions.length,reward:12,...(VIDEO_QUIZ_BANK[v.id].legacyQuestions?{start_questions:v.questions.map(q=>({question_id:q.id}))}:{}),questions:{...VIDEO_QUIZ_BANK[v.id].legacyQuestions,...Object.fromEntries(v.questions.map(q=>[q.id,{answer:q.answer}]))}}])
  ]))`,context));
 }
 module.exports=catalog;

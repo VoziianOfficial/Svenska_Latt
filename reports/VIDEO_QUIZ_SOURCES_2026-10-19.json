@@ -1,0 +1,839 @@
+{
+  "ur-hitta1": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vilka två personer följer berättelsen?",
+        "answer": "Martina och Jamal",
+        "wrong": [
+          "Anna och Erik",
+          "Lina och Per",
+          "Lisa och Ali"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+        "locator": "2, 5"
+      },
+      {
+        "id": "q1",
+        "question": "Från vilken stad kommer Martina?",
+        "answer": "Barcelona",
+        "wrong": [
+          "Madrid",
+          "Paris",
+          "Rom"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Vad heter läraren på sfi?",
+        "answer": "Ylva",
+        "wrong": [
+          "Fatou",
+          "Camilla",
+          "Martina"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q3",
+        "question": "Varför säger Martina att hon är sen?",
+        "answer": "Hon missade bussen.",
+        "wrong": [
+          "Hon var hos läkaren.",
+          "Hon sov hela dagen.",
+          "Hon tappade sina nycklar."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+        "locator": 5
+      },
+      {
+        "id": "q4",
+        "question": "Vilken utbildning har Jamal?",
+        "answer": "Ingenjör",
+        "wrong": [
+          "Läkare",
+          "Lärare",
+          "Kock"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220618-3_Dialogmanus_HH_avsnitt_1.pdf",
+        "locator": 5
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta2": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Var arbetar Jamal?",
+        "answer": "På ett äldreboende",
+        "wrong": [
+          "På en bank",
+          "I en affär",
+          "På en skola"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+        "locator": 4
+      },
+      {
+        "id": "q1",
+        "question": "Vem ringer Jamal när han inte hittar till jobbet?",
+        "answer": "Ylva",
+        "wrong": [
+          "Martina",
+          "Elsa",
+          "Rune"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Varför behöver Jamal hjälp i telefonsamtalet?",
+        "answer": "Han hittar inte till rätt adress.",
+        "wrong": [
+          "Han vill köpa mat.",
+          "Han vill byta telefon.",
+          "Han vill boka en resa."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q3",
+        "question": "Vad ska Jamal få innan föreståndaren visar honom runt?",
+        "answer": "Arbetskläder",
+        "wrong": [
+          "En cykel",
+          "En dator",
+          "En bussbiljett"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+        "locator": 4
+      },
+      {
+        "id": "q4",
+        "question": "Vilka får dela ut medicin på äldreboendet?",
+        "answer": "Utbildad personal",
+        "wrong": [
+          "Alla besökare",
+          "Alla som vill",
+          "Bara de boende"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220619-3_Dialogmanus_HH_avsnitt_2.pdf",
+        "locator": 6
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta3": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vem får besök hemma?",
+        "answer": "Martina",
+        "wrong": [
+          "Sara",
+          "Ylva",
+          "Anna"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q1",
+        "question": "I vilken del av staden bor Martina?",
+        "answer": "Gamla stan",
+        "wrong": [
+          "Södermalm",
+          "Enskede",
+          "Kista"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q2",
+        "question": "Vad väljer Jamal att dricka?",
+        "answer": "Juice",
+        "wrong": [
+          "Kaffe",
+          "Te",
+          "Mjölk"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q3",
+        "question": "Vad arbetar Martina som?",
+        "answer": "Webbdesigner",
+        "wrong": [
+          "Sjuksköterska",
+          "Taxiförare",
+          "Rektor"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+        "locator": 5
+      },
+      {
+        "id": "q4",
+        "question": "Varifrån kommer pengarna som Martina har ärvt?",
+        "answer": "Från hennes mamma.",
+        "wrong": [
+          "Från Jamals pappa.",
+          "Från hennes lärare.",
+          "Från hennes granne."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220759-2_Dialogmanus_HH_avsnitt_16.pdf",
+        "locator": 5
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta4": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "I vilket land utspelar sig berättelsen?",
+        "answer": "Sverige",
+        "wrong": [
+          "Norge",
+          "Finland",
+          "Danmark"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+        "locator": 5
+      },
+      {
+        "id": "q1",
+        "question": "Vad heter Martina och Jamals barn?",
+        "answer": "Axel",
+        "wrong": [
+          "Konrad",
+          "Hassan",
+          "Magnus"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q2",
+        "question": "Vad heter Martinas pappa?",
+        "answer": "Konrad",
+        "wrong": [
+          "Göran",
+          "Jamal",
+          "Hassan"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q3",
+        "question": "Varför kom Martina från början till Sverige?",
+        "answer": "För att hitta sin pappa.",
+        "wrong": [
+          "För att köpa ett hus.",
+          "För att öppna en restaurang.",
+          "För att spela fotboll."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q4",
+        "question": "Varför behöver Martina någon som tar hand om Axel nästa eftermiddag?",
+        "answer": "Hon har ett möte med en webbyrå.",
+        "wrong": [
+          "Hon ska på semester.",
+          "Hon ska flytta.",
+          "Hon ska springa ett lopp."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/224000-224999/224824-2_Manus_Hitt%20hem_ep1_s2.pdf",
+        "locator": 4
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta5": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vad hittar Martina?",
+        "answer": "En gammal artikel",
+        "wrong": [
+          "En ny cykel",
+          "En katt",
+          "En dator"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q1",
+        "question": "Vad heter rektorn som Martina kontaktar?",
+        "answer": "Göran Hedlund",
+        "wrong": [
+          "Konrad Svensson",
+          "Magnus Nilsson",
+          "Jamal Miró"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Vilken skola kontaktar Martina?",
+        "answer": "Enskede gårds gymnasium",
+        "wrong": [
+          "Tekniska högskolan",
+          "Stockholms universitet",
+          "Bokstavsskolan"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q3",
+        "question": "Vilken idrott var Konrad bra på i skolan?",
+        "answer": "Löpning",
+        "wrong": [
+          "Simning",
+          "Ishockey",
+          "Tennis"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+        "locator": 4
+      },
+      {
+        "id": "q4",
+        "question": "Vilken uppgift om Konrad saknar Martina när hon ringer skolan?",
+        "answer": "Hans personnummer",
+        "wrong": [
+          "Hans förnamn",
+          "Hans efternamn",
+          "Namnet på hans gamla skola"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220677-2_Dialogmanus_HH_avsnitt_8.pdf",
+        "locator": 3
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta6": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vems förflutna diskuteras?",
+        "answer": "Konrad",
+        "wrong": [
+          "Jamal",
+          "Martina",
+          "Ylva"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q1",
+        "question": "Vad heter kvinnan som Martina ringer om sin pappa?",
+        "answer": "Camilla",
+        "wrong": [
+          "Ylva",
+          "Fatou",
+          "Nadima"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Vem pratar Jamal med om sin familj?",
+        "answer": "Sin mamma",
+        "wrong": [
+          "Sin chef",
+          "Sin granne",
+          "Sin läkare"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q3",
+        "question": "Vad tror Jamals mamma att Jamal och Ylva ska göra?",
+        "answer": "Gifta sig",
+        "wrong": [
+          "Byta jobb",
+          "Sälja en bil",
+          "Flytta till Norge"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+        "locator": 4
+      },
+      {
+        "id": "q4",
+        "question": "Vad berättar Camilla om pengarna som Konrad lånade?",
+        "answer": "Han betalade inte tillbaka dem.",
+        "wrong": [
+          "Han betalade tillbaka direkt.",
+          "Han gav dem till Martina.",
+          "Han satte in dem på hennes konto."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220679-2_Dialogmanus_HH_avsnitt_10.pdf",
+        "locator": 6
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta7": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vem får Martina ny information om?",
+        "answer": "Sin pappa",
+        "wrong": [
+          "Sin lärare",
+          "Sin granne",
+          "Sin chef"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q1",
+        "question": "Vilket efternamn har Konrad på Facebook?",
+        "answer": "Rosén",
+        "wrong": [
+          "Hedlund",
+          "Miró",
+          "Nilsson"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Vem berättar till slut för Martina var hennes pappa är?",
+        "answer": "Göran",
+        "wrong": [
+          "Camilla",
+          "Ylva",
+          "Fatou"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q3",
+        "question": "Vad arbetar Jamal med när Martina möter honom ute?",
+        "answer": "Han kör taxi.",
+        "wrong": [
+          "Han säljer blommor.",
+          "Han undervisar.",
+          "Han delar ut post."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q4",
+        "question": "När säger Jamal att han började köra taxi?",
+        "answer": "I går",
+        "wrong": [
+          "För ett år sedan",
+          "Samma morgon",
+          "För tio år sedan"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220756-2_Dialogmanus_HH_avsnitt_13.pdf",
+        "locator": 5
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta8": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vem hittar något på KTH:s webbplats?",
+        "answer": "Jamal",
+        "wrong": [
+          "Ylva",
+          "Konrad",
+          "Sara"
+        ],
+        "source": "https://urplay.se/program/217859-hitta-hem-avstangd",
+        "locator": "Om programmet"
+      },
+      {
+        "id": "q1",
+        "question": "Vilken utbildning frågar Jamal om?",
+        "answer": "Kompletterande utbildning för ingenjörer",
+        "wrong": [
+          "Utbildning för kockar",
+          "Utbildning för taxiförare",
+          "Utbildning för lärare"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Varför vill rektorn prata med Ylva?",
+        "answer": "Han har fått klagomål på henne.",
+        "wrong": [
+          "Han vill ge henne semester.",
+          "Han vill köpa hennes bil.",
+          "Han har hittat hennes nycklar."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q3",
+        "question": "Vad beslutar rektorn om Ylvas undervisning?",
+        "answer": "Hon får inte undervisa medan saken utreds.",
+        "wrong": [
+          "Hon ska undervisa fler klasser.",
+          "Hon ska bli rektor direkt.",
+          "Hon ska börja undervisa på KTH."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+        "locator": 6
+      },
+      {
+        "id": "q4",
+        "question": "Hur förklarar Ylva det som såg ut som en kärleksrelation?",
+        "answer": "De skulle lura Jamals föräldrar.",
+        "wrong": [
+          "De skulle gifta sig nästa dag.",
+          "De hade aldrig träffats.",
+          "De arbetade på samma bank."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220762-2_Dialogmanus_HH_avsnitt_17.pdf",
+        "locator": 5
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "ur-hitta9": {
+    "sourceType": "script",
+    "questions": [
+      {
+        "id": "q0",
+        "question": "Vilka två vänner handlar serien om?",
+        "answer": "Martina och Jamal",
+        "wrong": [
+          "Lars och Anna",
+          "Britta och Elsa",
+          "Erik och Eva"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q1",
+        "question": "Varför tackar Ylva eleverna?",
+        "answer": "De hjälpte henne att få tillbaka jobbet.",
+        "wrong": [
+          "De köpte en bil åt henne.",
+          "De betalade hennes hyra.",
+          "De byggde en skola."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q2",
+        "question": "Vad behöver Fatou göra efter sfi?",
+        "answer": "Hitta ett jobb",
+        "wrong": [
+          "Byta namn",
+          "Köpa ett hotell",
+          "Sälja sin lägenhet"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+        "locator": 3
+      },
+      {
+        "id": "q3",
+        "question": "Vilka elever får en applåd för att de är klara med sfi?",
+        "answer": "Fatou, Martina och Mohammed",
+        "wrong": [
+          "Ylva, Konrad och Göran",
+          "Jamal, Camilla och Nadima",
+          "Magnus, Axel och Hassan"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+        "locator": 2
+      },
+      {
+        "id": "q4",
+        "question": "Vad säger Jamal att han berättade för rektorn om Ylva?",
+        "answer": "Hon är den bästa lärare han har haft.",
+        "wrong": [
+          "Hon vill sluta arbeta.",
+          "Hon behöver mer semester.",
+          "Hon vill sälja skolan."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220772-2_Dialogmanus_HH_avsnitt_20.pdf",
+        "locator": 4
+      }
+    ],
+    "fullQuiz": true,
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31"
+  },
+  "v1": {
+    "sourceType": "script",
+    "fullQuiz": true,
+    "programUrl": "https://urplay.se/program/217858-hitta-hem-den-forsta-lognen",
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31",
+    "replaces": "Frukosten",
+    "legacyQuestions": {
+      "q0": {
+        "answer": "Chokladkräm"
+      }
+    },
+    "questions": [
+      {
+        "id": "r014q0",
+        "question": "Vilken myndighet ringer Martina?",
+        "answer": "Skatteverket",
+        "wrong": [
+          "Polisen",
+          "Arbetsförmedlingen",
+          "Försäkringskassan"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+        "locator": 4
+      },
+      {
+        "id": "r014q1",
+        "question": "Vad heter personen som Martina letar efter?",
+        "answer": "Konrad",
+        "wrong": [
+          "Karzan",
+          "Magnus",
+          "Jamal"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+        "locator": 6
+      },
+      {
+        "id": "r014q2",
+        "question": "När brukar Jamal prata med sina föräldrar?",
+        "answer": "På måndagar klockan tre",
+        "wrong": [
+          "På fredagar klockan åtta",
+          "Varje morgon",
+          "På söndagar klockan tolv"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+        "locator": 2
+      },
+      {
+        "id": "r014q3",
+        "question": "Hur mycket betalar Jamal för kläderna tillsammans?",
+        "answer": "150 kronor",
+        "wrong": [
+          "50 kronor",
+          "100 kronor",
+          "500 kronor"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+        "locator": 7
+      },
+      {
+        "id": "r014q4",
+        "question": "Vad frågar Jamals pappa om?",
+        "answer": "Om Jamal har hittat en fru",
+        "wrong": [
+          "Om Jamal har köpt en bil",
+          "Om Martina har ringt",
+          "Om Jamal har klarat provet"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220620-3_Dialogmanus_HH_avsnitt_3.pdf",
+        "locator": 10
+      }
+    ]
+  },
+  "v2": {
+    "sourceType": "script",
+    "fullQuiz": true,
+    "programUrl": "https://urplay.se/program/217842-hitta-hem-ett-djarvt-forslag",
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31",
+    "replaces": "Sfi",
+    "legacyQuestions": {
+      "q0": {
+        "answer": "Leen"
+      }
+    },
+    "questions": [
+      {
+        "id": "r014q0",
+        "question": "Varför var Martina inte i skolan?",
+        "answer": "Hon sov.",
+        "wrong": [
+          "Hon arbetade.",
+          "Hon reste bort.",
+          "Hon var hos läkaren."
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+        "locator": 5
+      },
+      {
+        "id": "r014q1",
+        "question": "Vad gör Martina vid datorn på nätterna?",
+        "answer": "Letar efter sin pappa",
+        "wrong": [
+          "Skriver en bok",
+          "Spelar spel",
+          "Söker jobb åt Jamal"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+        "locator": 2
+      },
+      {
+        "id": "r014q2",
+        "question": "Vad lovar Jamal Martina att sluta med?",
+        "answer": "Att ljuga för sina föräldrar",
+        "wrong": [
+          "Att gå till skolan",
+          "Att ringa Ylva",
+          "Att arbeta"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+        "locator": 6
+      },
+      {
+        "id": "r014q3",
+        "question": "Vem ringer Jamal i slutet av avsnittet?",
+        "answer": "Ylva",
+        "wrong": [
+          "Konrad",
+          "Martina",
+          "Sin chef"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+        "locator": 10
+      },
+      {
+        "id": "r014q4",
+        "question": "Vad ber Jamal Ylva om?",
+        "answer": "Att bli hans flickvän",
+        "wrong": [
+          "Att hitta hans pappa",
+          "Att låna honom en bil",
+          "Att ge honom ett jobb"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220621-2_Dialogmanus_HH_avsnitt_4.pdf",
+        "locator": 10
+      }
+    ]
+  },
+  "v4": {
+    "sourceType": "script",
+    "fullQuiz": true,
+    "programUrl": "https://urplay.se/program/217854-hitta-hem-martinas-hemlighet",
+    "verifiedOn": "2026-10-19",
+    "availableUntil": "2026-12-31",
+    "replaces": "Partikelverb",
+    "legacyQuestions": {
+      "q0": {
+        "answer": "Liam"
+      }
+    },
+    "questions": [
+      {
+        "id": "r014q0",
+        "question": "Vem berättade för Martina att hon har en svensk pappa?",
+        "answer": "Hennes mamma",
+        "wrong": [
+          "Jamal",
+          "Ylva",
+          "Hennes lärare"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+        "locator": 2
+      },
+      {
+        "id": "r014q1",
+        "question": "Vilken stad kommer Martinas pappa från?",
+        "answer": "Stockholm",
+        "wrong": [
+          "Göteborg",
+          "Malmö",
+          "Uppsala"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+        "locator": 4
+      },
+      {
+        "id": "r014q2",
+        "question": "Var träffades Martinas föräldrar?",
+        "answer": "I Barcelona",
+        "wrong": [
+          "I Stockholm",
+          "I Paris",
+          "I Oslo"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+        "locator": 4
+      },
+      {
+        "id": "r014q3",
+        "question": "Hur länge träffades Martinas föräldrar?",
+        "answer": "En vecka",
+        "wrong": [
+          "Ett år",
+          "En månad",
+          "Tio år"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+        "locator": 4
+      },
+      {
+        "id": "r014q4",
+        "question": "Vilket plagg lånar Jamal ut till Ylva?",
+        "answer": "Sin träningsjacka",
+        "wrong": [
+          "Sin vinterkappa",
+          "Sin mössa",
+          "Sina handskar"
+        ],
+        "source": "https://www.ur.se/mb/pdf/Programmanus/220000-220999/220622-2_Dialogmanus_HH_avsnitt_5.pdf",
+        "locator": 7
+      }
+    ]
+  }
+}

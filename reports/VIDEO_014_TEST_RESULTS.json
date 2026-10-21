@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-19",
+  "sql014": {
+    "path": "supabase/migrations/202610190014_video_progress.sql",
+    "sha256": "4c8f88203ed9fe2fcc086f0585c92fc0e272c68c78171488e858c6af5b863a83"
+  },
+  "full_sql": {
+    "sql_assertions": 1644,
+    "concurrency_scenarios": 21,
+    "legacy_guard": true,
+    "migrations": 14,
+    "http_api_tested": false,
+    "ordered_scenarios": {
+      "clean_install_test": {
+        "manual_patch_before_012": false,
+        "sql_assertions": 414,
+        "public_rpc_contracts_preserved": true,
+        "srs_preserved_through_012": false
+      },
+      "manual_patch_upgrade_test": {
+        "manual_patch_before_012": true,
+        "sql_assertions": 433,
+        "public_rpc_contracts_preserved": true,
+        "srs_preserved_through_012": true
+      }
+    }
+  },
+  "focused_sql": {
+    "sql_checks": 145,
+    "migration": "202610190014_video_progress.sql",
+    "remote_connections": 0,
+    "concurrent_video_finish": true,
+    "verification_sql_valid": true
+  },
+  "active_video_questions": 60,
+  "server_video_answers_including_legacy": 63,
+  "remote_connections": 0,
+  "production_sql_executed": false,
+  "push_performed": false,
+  "user_storage_cleared": false,
+  "local_http_tests": 11,
+  "dom_video_and_word_scenarios": 15,
+  "legacy_migrations_unchanged": true,
+  "final_sql_sha256_verified": true
+}

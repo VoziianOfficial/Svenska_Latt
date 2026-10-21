@@ -78,8 +78,8 @@ for(const lang of languages){
 }
 
 // Video feedback uses the same live localization as practice and lesson feedback.
-run(`MORE_VIDEOS.push({id:'localization-test',question:'Vad säger hon?',answer:'Hej',wrong:['Tack']})`);
-const event={target:{closest:()=>({dataset:{id:'localization-test'}})},preventDefault(){},stopImmediatePropagation(){}};
+// Exercise a verified real video bank, including translated source feedback.
+const event={target:{closest:()=>({dataset:{id:'ur-hitta1'}})},preventDefault(){},stopImmediatePropagation(){}};
 switchTo('ru');
 for(const fn of listeners.click)if(String(fn).includes('video-quiz'))fn(event);
 const videoRu=run('quiz.questions[0].why');switchTo('en');

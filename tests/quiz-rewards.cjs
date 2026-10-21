@@ -32,7 +32,14 @@ function reload(lang){
 const catalog=require('../scripts/quiz_catalog.cjs')();
 const migration=read('supabase/migrations/202610180010_quiz_rewards.sql');
 const embedded=JSON.parse(migration.split('$quizbank$')[1]);
-assert.deepEqual(embedded,catalog,'Trusted bank drifted from source content');
+const migration014=read('supabase/migrations/202610190014_video_progress.sql');
+const videoBank=JSON.parse(migration014.split('$video_bank$')[1]);
+const upgraded={...embedded,...videoBank};
+for(const [id,bank] of Object.entries(embedded)){
+ if(!id.startsWith('video:'))assert.deepEqual(upgraded[id],bank,'014 must retain historical bank '+id);
+ else for(const [qid,q] of Object.entries(bank.questions))assert.deepEqual(upgraded[id].questions[qid],q,'Historical response changed '+id+'/'+qid);
+}
+assert.deepEqual(upgraded,catalog,'014 trusted bank drifted from source content');
 async function complete(p,mode,id,correct){
  await p.run(`startQuiz(${JSON.stringify(mode)},${JSON.stringify(id)})`);
  const n=p.run('quiz.questions.length'),baseline=p.run('state.xp');
@@ -65,6 +72,32 @@ async function complete(p,mode,id,correct){
  p.nodes['#page']={querySelectorAll:selector=>selector==='[data-quiz-status]'?[chip]:selector==='[data-action="lesson-test"]'?[button]:[]};
  p.run("route='lessons';renderProgressUX=()=>{};savedRender=render;render=()=>{throw Error('Page must survive snapshot')};refreshWordUI(true);render=savedRender");
  assert.equal(chip.textContent,'✓ Пройден · 100%');assert(classes.has('done-chip'));assert(!classes.has('chip'));assert.match(button.textContent,/ещё|раз|снова/i);
+ // Video rewards and completion remain independent of viewing, including reload and failed retries.
+ p=page();p.run('state=defaultState()');
+ await complete(p,'video','ur-hitta1',0);assert.equal(p.run('state.xp'),0);
+ await complete(p,'video','ur-hitta1',4);assert.equal(p.run('state.xp'),12);assert.equal(p.run('state.videos.length'),0);
+ await complete(p,'video','ur-hitta1',4);assert.equal(p.run('state.xp'),12);
+ p=reload();assert.equal(p.run("quizPassed('video:ur-hitta1')"),true);assert.equal(p.run('state.xp'),12);
+ await complete(p,'video','ur-hitta1',0);assert.equal(p.run("quizPassed('video:ur-hitta1')"),true);assert.equal(p.run('state.xp'),12);
+ for(const id of ['v1','v2','v4']){const before=p.run('state.xp');await complete(p,'video',id,4);assert.equal(p.run('state.xp'),before+12);await complete(p,'video',id,4);assert.equal(p.run('state.xp'),before+12)}
+ // Emulate a saved local quiz from the old audio/grammar cards, then load the new app.
+ for(const [id,answer] of Object.entries({v1:'Chokladkräm',v2:'Leen',v4:'Liam'})){
+  p=page();p.run('state=defaultState();save()');
+  p.run(`MORE_VIDEOS.find(v=>v.id==='${id}').questions=[{id:'q0',question:'Vem eller vad?',answer:${JSON.stringify(answer)},wrong:['X','Y','Z']}]`);
+  await p.run(`startQuiz('video','${id}')`);p.run('persistQuizSession()');p=reload();
+  assert.equal(p.run('quiz.questions.length'),1);assert.equal(p.run('quiz.questions[0].answer'),answer);
+  await p.run('submitAnswer(quiz.questions[0].answer)');await p.run("action({dataset:{action:'quiz-next'}})");
+  assert.equal(p.run('state.xp'),12);assert.equal(p.run(`state.quizResults['video:${id}'].total`),1);
+  await complete(p,'video',id,5);assert.equal(p.run('state.xp'),12);assert.equal(p.run('quiz.questions[0].questionId'),'r014q0');
+ }
+ // Audit the pass threshold and one-time reward for every visible video.
+ for(const [id,bank] of Object.entries(catalog).filter(([id])=>id.startsWith('video:'))){
+  p=page();p.run('state=defaultState()');const videoId=id.slice(6),threshold=Math.ceil(bank.count*.8);
+  await complete(p,'video',videoId,threshold-1);assert.equal(p.run('state.xp'),0,id+' below 80%');
+  await complete(p,'video',videoId,threshold);assert.equal(p.run('state.xp'),12,id+' first pass');
+  await complete(p,'video',videoId,bank.count);assert.equal(p.run('state.xp'),12,id+' repeat');
+  p=reload();assert.equal(p.run('state.xp'),12,id+' persisted XP');assert.equal(p.run(`quizPassed(${JSON.stringify(id)})`),true);
+ }
  // Every canonical response remains bound to the same question after localization and refresh.
  for(const lang of ['ru','en','sv','uk']){
   p.run(`state.settings.language='${lang}'`);

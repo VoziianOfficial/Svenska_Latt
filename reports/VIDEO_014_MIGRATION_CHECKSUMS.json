@@ -1,0 +1,54 @@
+[
+  {
+    "file": "supabase/migrations/202610170001_core.sql",
+    "sha256": "00b57225399076b86f07fa03c7d9d0960d6768f01528b03e6f12d02526fa8c5d"
+  },
+  {
+    "file": "supabase/migrations/202610170002_manifest.sql",
+    "sha256": "d990f7a48d9c6e75b0a9ffed5551716c617d82e94adbc3c516637a8395868bc2"
+  },
+  {
+    "file": "supabase/migrations/202610170003_progress_rpc.sql",
+    "sha256": "c6a82384967d9fdf258b7e6041c67a508e6d3f887da221d2c590acff46f7a92b"
+  },
+  {
+    "file": "supabase/migrations/202610170004_import.sql",
+    "sha256": "83e208d2cda36a04aa1419313033eabd9a00bf4378ec0296ca820d0dba8814d1"
+  },
+  {
+    "file": "supabase/migrations/202610170005_avatars.sql",
+    "sha256": "2d6f2b00165fb8b757406baf7837543a9681ccb436bfc24cdeb8b29e24e3c031"
+  },
+  {
+    "file": "supabase/migrations/202610170006_manifest_version.sql",
+    "sha256": "999723748c8f65c60bcea14a33810d4152ec73078a37d46ab4f048087634799a"
+  },
+  {
+    "file": "supabase/migrations/202610180007_word_state.sql",
+    "sha256": "94e766b7ec667edc627572546657341571d2a7e9e82ad2415d33140ec5657a8e"
+  },
+  {
+    "file": "supabase/migrations/202610180008_study_time.sql",
+    "sha256": "100c6f8de5c7a39d1c16f1cadee11bbbea299c53c9e5f7c4f35bf9b5d596afd4"
+  },
+  {
+    "file": "supabase/migrations/202610180009_manual_review_queue.sql",
+    "sha256": "9a660bb6d61bb4703a0792ac1fa58ed1a40cd3aa1512d07dd7d1dfc48389e285"
+  },
+  {
+    "file": "supabase/migrations/202610180010_quiz_rewards.sql",
+    "sha256": "532da78afc952ae641c5587f461d5c8f3f3dfd26f1949d93b96cfba9794dd628"
+  },
+  {
+    "file": "supabase/migrations/202610180011_study_time_default.sql",
+    "sha256": "716c4ace08ceb765a74fd5d991bb92a7aa739537a634da20459441028b6ea1f5"
+  },
+  {
+    "file": "supabase/migrations/202610180012_xp_integrity.sql",
+    "sha256": "cd41d04e31b86024de5fdf416aa3eb00c08860077c76d2173f451185c6569de4"
+  },
+  {
+    "file": "supabase/migrations/202610180013_srs_interval_cap.sql",
+    "sha256": "b7905f470630b798207ec68a35a7bae4a06c9b2012257025839e69068297705a"
+  }
+]
