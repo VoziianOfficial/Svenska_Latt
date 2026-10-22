@@ -2128,7 +2128,7 @@ async function gradeWordReview(correct){
 
 // Manual repetitions are separate from state.reviews (automatic SRS dates).
 function manualQueue(){return window.SVManualReviews?.state()||{ready:false,entries:[],pending:[],error:null}}
-function manualReviewIds(){return manualQueue().entries.filter(e=>e.active).map(e=>e.word_id).filter(id=>getWord(id))}
+function manualReviewIds(){return manualQueue().entries.filter(e=>e.active).map(e=>e.word_id).filter(id=>getWord(id)&&!state.known.includes(id))}
 function queueUX(key){const labels={
  add:['Повторить','Review','Repetera','Повторити'],
  addedNotice:['Слово добавлено в повторение','Word added to reviews','Ordet har lagts till i repetition','Слово додано до повторення'],
@@ -2153,8 +2153,15 @@ function manualQueueStatus(){const q=manualQueue();const message=!user?queueUX('
 function manualReviewRow(w){return `<article class="manual-review-row" data-review-id="${esc(w.id)}"><span class="word-visual">${wordListVisual(w)}</span><div class="word-info"><strong lang="sv">${esc(wordLabel(w))}</strong><small>${esc(locMeaning4(w))}</small></div><div class="manual-review-actions"><button class="btn secondary small" data-nav="word-review" data-param="${esc(w.id)}">${esc(queueUX('start'))}</button><button class="link-btn" data-action="remove-review" data-id="${esc(w.id)}">${esc(queueUX('remove'))}</button></div></article>`}
 function manualReviewContent(){const ids=manualReviewIds();return ids.length?`<div class="manual-review-list">${ids.map(getWord).map(manualReviewRow).join('')}</div>`:`<div class="empty-state"><div class="big" aria-hidden="true">🌷</div><h3>${esc(queueUX('empty'))}</h3><p>${esc(queueUX('hint'))}</p><button class="btn" data-nav="dictionary">${esc(t('dictionary'))} →</button></div>`}
 function renderManualReviews(){return title(t('reviews'))+`<p data-review-count>${!user?0:manualQueue().ready?manualReviewIds().length:'…'} ${esc(t('words'))}</p>`+manualQueueStatus()+`<section class="manual-queue-content">${manualReviewContent()}</section>`}
+function reviewLearnedHint(){return txt4(
+ 'Сними отметку «Знаю», чтобы добавить слово в повторение.',
+ 'Remove the learned mark to add this word to reviews.',
+ 'Ta bort markeringen som inlärt för att repetera ordet.',
+ 'Зніми позначку «Знаю», щоб додати слово до повторення.'
+)}
 async function addManualReview(id){
  if(!user){toast(queueUX('login'));return}
+ if(state.known.includes(id)){toast(reviewLearnedHint());return}
  if(!manualQueue().ready){toast(queueUX(manualQueue().error||'unavailable'));void window.SVManualReviews?.refresh();return}
  if(manualQueue().pending.includes(id))return;
  if(getWord(id)){const action=manualReviewIds().includes(id)?'remove':'add';const saved=await window.SVManualReviews.change(action,id);if(!saved&&manualQueue().error==='offline')toast(queueUX('offline'))}
@@ -2162,9 +2169,16 @@ async function addManualReview(id){
 function updateManualReviewButtons(){
  const q=manualQueue(),ids=new Set(manualReviewIds());
  document.querySelectorAll('[data-action="mark-review"],[data-action="flash-grade"][data-value="0"]').forEach(btn=>{
-  const id=btn.dataset.id||flash.ids[flash.index],selected=ids.has(id),pending=q.pending.includes(id);
-  btn.hidden=false;btn.innerHTML=studioIcon('repeat','review-button-icon')+' '+esc(t('repeat'));btn.classList.toggle('is-queued',selected);btn.title=pending?ux('saving'):selected?queueUX('remove'):queueUX('add');btn.setAttribute('aria-label',selected?queueUX('remove'):queueUX('add'));
-  btn.disabled=pending;btn.setAttribute('aria-pressed',String(selected));btn.setAttribute('aria-busy',String(pending));
+  const id=btn.dataset.id||flash.ids[flash.index],selected=ids.has(id),pending=q.pending.includes(id),learned=state.known.includes(id);
+  btn.hidden=false;
+  btn.innerHTML=learned?'✓ '+esc(ux('learned')):studioIcon('repeat','review-button-icon')+' '+esc(t('repeat'));
+  btn.classList.toggle('is-queued',selected&&!learned);
+  btn.title=learned?reviewLearnedHint():pending?ux('saving'):selected?queueUX('remove'):queueUX('add');
+  btn.setAttribute('aria-label',learned?reviewLearnedHint():selected?queueUX('remove'):queueUX('add'));
+  btn.disabled=pending||learned;
+  btn.setAttribute('aria-disabled',String(pending||learned));
+  btn.setAttribute('aria-pressed',String(selected&&!learned));
+  btn.setAttribute('aria-busy',String(pending));
  });
  document.querySelectorAll('[data-action="remove-review"]').forEach(btn=>{btn.disabled=q.pending.includes(btn.dataset.id)});
  document.querySelectorAll('[data-review-count]').forEach(el=>{el.textContent=el.dataset.nav==='reviews'?`🔁 ${t('reviews')} · ${!user?0:q.ready?ids.size:'…'} →`:`${!user?0:q.ready?ids.size:'…'} ${t('words')}`});
