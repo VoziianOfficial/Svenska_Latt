@@ -14,8 +14,14 @@ function mock(pending = false, storageFails = false) {
     supabase: {
       auth: {
         getUser: async () => ({
-          data: { user: { id: USER } },
+          data: { user: { id: USER, email: "test@example.invalid" } },
           error: null,
+        }),
+        signInWithPassword: async ({ password }: { password: string }) => ({
+          data: { user: password === "test-password" ? { id: USER } : null },
+          error: password === "test-password"
+            ? null
+            : { message: "Invalid credentials" },
         }),
       },
       from: () => ({
@@ -62,12 +68,15 @@ function mock(pending = false, storageFails = false) {
   return { ctx, calls };
 }
 
-async function request(ctx: ReturnType<typeof mock>["ctx"]) {
+async function request(
+  ctx: ReturnType<typeof mock>["ctx"],
+  password = "test-password",
+) {
   return await fn.fetch(
     new Request("https://test.invalid/", {
       method: "POST",
       headers: { Authorization: "Bearer fake-test-token" },
-      body: JSON.stringify({ confirmation: "DELETE MY ACCOUNT" }),
+      body: JSON.stringify({ confirmation: "DELETE MY ACCOUNT", password }),
     }),
     ctx,
   );
@@ -79,16 +88,36 @@ Deno.test("Deletion safety with mocked Supabase", async () => {
     Deno.env.delete("ACCOUNT_DELETION_TEST_USER_ID");
 
     const disabled = mock();
-    assert((await request(disabled.ctx)).status === 503, "Deletion must default to disabled");
+    assert(
+      (await request(disabled.ctx)).status === 503,
+      "Deletion must default to disabled",
+    );
     assert(disabled.calls.length === 0, "Disabled deletion touched data");
 
     Deno.env.set("ACCOUNT_DELETION_ENABLED", "true");
+    Deno.env.set(
+      "ACCOUNT_DELETION_TEST_USER_ID",
+      "98000000-0000-0000-0000-000000000006",
+    );
 
     const restricted = mock();
-    assert((await request(restricted.ctx)).status === 403, "Test account guard missing");
+    assert(
+      (await request(restricted.ctx)).status === 403,
+      "Test account guard missing",
+    );
     assert(restricted.calls.length === 0, "Wrong account touched data");
 
     Deno.env.set("ACCOUNT_DELETION_TEST_USER_ID", USER);
+
+    const wrongPassword = mock();
+    assert(
+      (await request(wrongPassword.ctx, "incorrect")).status === 401,
+      "Incorrect password must be rejected",
+    );
+    assert(
+      wrongPassword.calls.length === 0,
+      "Incorrect password must not modify data",
+    );
 
     const normal = mock();
     assert((await request(normal.ctx)).status === 200, "Mock deletion failed");
@@ -98,12 +127,24 @@ Deno.test("Deletion safety with mocked Supabase", async () => {
     );
 
     const failure = mock(false, true);
-    assert((await request(failure.ctx)).status === 503, "Storage error not handled");
-    assert(!failure.calls.some(x => x.startsWith("delete:")), "Deleted after Storage error");
+    assert(
+      (await request(failure.ctx)).status === 503,
+      "Storage error not handled",
+    );
+    assert(
+      !failure.calls.some((x) => x.startsWith("delete:")),
+      "Deleted after Storage error",
+    );
 
     const retry = mock(true);
-    assert((await request(retry.ctx)).status === 200, "Pending deletion cannot resume");
-    assert(!retry.calls.includes("freeze"), "Pending deletion was frozen twice");
+    assert(
+      (await request(retry.ctx)).status === 200,
+      "Pending deletion cannot resume",
+    );
+    assert(
+      !retry.calls.includes("freeze"),
+      "Pending deletion was frozen twice",
+    );
   } finally {
     Deno.env.delete("ACCOUNT_DELETION_ENABLED");
     Deno.env.delete("ACCOUNT_DELETION_TEST_USER_ID");
@@ -140,7 +181,31 @@ Deno.test("Unauthorized and invalid requests are rejected", async () => {
     }),
     instance.ctx,
   );
-  assert(invalidConfirmation.status === 400, "Invalid confirmation must be rejected");
+  assert(
+    invalidConfirmation.status === 400,
+    "Invalid confirmation must be rejected",
+  );
 
   assert(instance.calls.length === 0, "Rejected requests must not change data");
+});
+
+Deno.test("Public deletion permits the authenticated owner", async () => {
+  try {
+    Deno.env.set("ACCOUNT_DELETION_ENABLED", "true");
+    Deno.env.delete("ACCOUNT_DELETION_TEST_USER_ID");
+
+    const instance = mock();
+    const response = await request(instance.ctx);
+
+    assert(response.status === 200,
+      "Authenticated owner should be allowed without test restriction");
+
+    assert(
+      instance.calls.includes(`delete:${USER}`),
+      "Only the authenticated owner's account should be deleted"
+    );
+  } finally {
+    Deno.env.delete("ACCOUNT_DELETION_ENABLED");
+    Deno.env.delete("ACCOUNT_DELETION_TEST_USER_ID");
+  }
 });

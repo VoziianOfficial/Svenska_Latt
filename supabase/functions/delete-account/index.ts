@@ -48,6 +48,32 @@ export default {
       return fail("confirmation_required", 400);
     }
 
+    // Require the account password immediately before deletion.
+    const password = (body as Record<string, unknown>).password;
+
+    if (
+      typeof password !== "string" ||
+      password.length < 1 ||
+      password.length > 1024
+    ) {
+      return fail("password_required", 400);
+    }
+
+    const email = identity.user?.email;
+    if (!email) {
+      return fail("account_email_required", 409);
+    }
+
+    const { data: verified, error: passwordError } = await ctx.supabase.auth
+      .signInWithPassword({
+        email,
+        password,
+      });
+
+    if (passwordError || verified.user?.id !== userId) {
+      return fail("password_verification_failed", 401);
+    }
+
     // Never enable real deletion before completing safety tests.
     if (Deno.env.get("ACCOUNT_DELETION_ENABLED") !== "true") {
       return fail("deletion_not_enabled", 503);
@@ -56,7 +82,7 @@ export default {
     // During testing, only one explicitly allowed account may be deleted.
     const testUserId = Deno.env.get("ACCOUNT_DELETION_TEST_USER_ID");
 
-    if (!testUserId || testUserId !== userId) {
+    if (testUserId && testUserId !== userId) {
       return fail("deletion_test_account_only", 403);
     }
 

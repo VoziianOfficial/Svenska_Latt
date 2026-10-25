@@ -273,6 +273,140 @@ function renderProfile(){const display=user?.name||t('guest');return title(t('pr
 function searchNow(value){let q=value.trim().toLocaleLowerCase();const el=$('#search-results');if(!q){el.classList.add('hidden');el.innerHTML='';return}const words=WORDS.filter(w=>[w.word,w.ru,w.inf,w.pre,w.past,w.sup,w.category].some(x=>String(x||'').toLocaleLowerCase().includes(q))).slice(0,9);const lessons=LESSONS.filter(l=>(l.title+' '+l.description+' '+l.rules.join(' ')).toLocaleLowerCase().includes(q)).slice(0,5);el.innerHTML=(lessons.map(l=>`<button class="search-result" data-nav="lesson" data-param="${l.id}"><span class="emo">${esc(l.emoji)}</span><span><strong>${esc(l.title)}</strong><small>📚 SFI ${l.level} · ${esc(t('lesson'))}</small></span></button>`).join('')+words.map(w=>`<button class="search-result" data-nav="word" data-param="${esc(w.id)}"><span class="emo">${esc(w.emoji)}</span><span><strong>${esc(wordLabel(w))}</strong><small>${esc(w.ru)}</small></span></button>`).join(''))||`<div class="serp-empty">${esc(t('noResults'))}</div>`;el.classList.remove('hidden')}
 function openAuth(mode='register'){const el=$('#modal-inner');$('#modal-backdrop').classList.remove('hidden');el.innerHTML=`<div style="font-size:47px;text-align:center">${mode==='register'?'🌸':'🇸🇪'}</div><h2 style="text-align:center;margin-top:10px">${esc(t(mode))}</h2><p style="text-align:center;font-size:12px;color:var(--muted)">${esc(t('accountExplain'))}</p><form id="auth-form" data-mode="${mode}">${mode==='register'?`<label class="form-field" for="auth-name">${esc(t('name'))}</label><input id="auth-name" class="form-input" name="name" required minlength="2" maxlength="70" autocomplete="name">`:''}<label class="form-field" for="auth-email">${esc(t('email'))}</label><input id="auth-email" class="form-input" name="email" type="email" required maxlength="254" autocomplete="email"><label class="form-field" for="auth-pass">${esc(t('password'))}</label><input id="auth-pass" class="form-input" name="password" type="password" required minlength="${mode==='register'?8:1}" autocomplete="${mode==='register'?'new-password':'current-password'}"><p class="form-error" id="auth-error" role="alert"></p><p id="auth-status" role="status" aria-live="polite"></p><button class="btn wide" id="auth-submit" type="submit">${esc(t(mode))} →</button></form><div style="margin-top:18px;text-align:center"><button class="auth-link" data-action="auth" data-mode="${mode==='register'?'login':'register'}">${esc(t(mode==='register'?'haveAccount':'newAccount'))}</button></div>`;setTimeout(()=>$('#auth-email')?.focus(),50)}
 function closeAuth(){$('#modal-backdrop').classList.add('hidden');$('#modal-inner').innerHTML=''}
+
+let accountDeletionBusy = false;
+
+function openAccountDeletion(){
+ if(!user||!cloudAccount()||accountDeletionBusy)return;
+
+ const heading=txt4('Удалить аккаунт?','Delete account?','Radera kontot?','Видалити акаунт?');
+ const warning=txt4(
+  'Все выученные слова, XP, результаты тестов и учебная история будут удалены без возможности восстановления.',
+  'Your learned words, XP, quiz results and learning history will be permanently deleted.',
+  'Dina inlärda ord, XP, testresultat och studiehistorik raderas permanent.',
+  'Вивчені слова, XP, результати тестів та історія навчання будуть видалені назавжди.'
+ );
+ const confirm=txt4(
+  'Я понимаю, что это действие необратимо.',
+  'I understand this cannot be undone.',
+  'Jag förstår att detta inte kan ångras.',
+  'Я розумію, що цю дію не можна скасувати.'
+ );
+
+ $('#modal-backdrop').classList.remove('hidden');
+ $('#modal-inner').innerHTML=`
+ <div style="text-align:center;font-size:40px" aria-hidden="true">🔒</div>
+ <h2 style="text-align:center">${esc(heading)}</h2>
+ <p style="line-height:1.6">${esc(warning)}</p>
+ <form id="delete-account-form">
+  <label class="form-field" for="delete-account-password">
+   ${esc(txt4('Подтверди пароль','Confirm password','Bekräfta lösenord','Підтвердь пароль'))}
+  </label>
+  <input id="delete-account-password" class="form-input"
+   type="password" autocomplete="current-password"
+   required maxlength="1024">
+  <label style="display:flex;gap:10px;align-items:start;margin:18px 0">
+   <input type="checkbox" required>
+   <span>${esc(confirm)}</span>
+  </label>
+  <p id="delete-account-status" role="alert" aria-live="polite"></p>
+  <div class="split">
+   <button type="button" class="btn secondary"
+    data-action="cancel-delete-account">
+    ${esc(txt4('Отмена','Cancel','Avbryt','Скасувати'))}
+   </button>
+   <button type="submit" class="btn"
+    id="delete-account-submit"
+    style="background:#b83b51!important;color:white!important" disabled>
+    ${esc(txt4('Удалить навсегда','Delete permanently','Radera permanent','Видалити назавжди'))}
+   </button>
+  </div>
+ </form>`;
+ const deletionForm=$('#delete-account-form');
+ const updateDeletionButton=()=>{
+  const password=deletionForm?.querySelector('#delete-account-password');
+  const checkbox=deletionForm?.querySelector('input[type="checkbox"]');
+  const button=deletionForm?.querySelector('#delete-account-submit');
+  if(button)button.disabled=accountDeletionBusy||!password?.value||!checkbox?.checked;
+ };
+ deletionForm?.addEventListener('input',updateDeletionButton);
+ deletionForm?.addEventListener('change',updateDeletionButton);
+ updateDeletionButton();
+ $('#delete-account-password')?.focus();
+}
+
+async function confirmAccountDeletion(form){
+ if(accountDeletionBusy||!user||!cloudAccount())return;
+ const ownerId=user.id;
+ const input=form.querySelector('#delete-account-password');
+ const status=form.querySelector('#delete-account-status');
+ const submit=form.querySelector('#delete-account-submit');
+ const password=input?.value||'';
+ if(!password||!form.querySelector('input[type="checkbox"]')?.checked)return;
+
+ accountDeletionBusy=true;
+ submit.disabled=true;
+ status.textContent=txt4(
+  'Проверяем запрос…','Checking request…',
+  'Kontrollerar begäran…','Перевіряємо запит…'
+ );
+
+ try{
+  const session=await window.SVAuth.getSession();
+  if(!session?.access_token||session.user?.id!==ownerId)
+   throw Error('AUTH_CONTEXT_CHANGED');
+
+  const client=await window.SVSupabase.getClient();
+  const {data,error}=await client.functions.invoke('delete-account',{
+   body:{confirmation:'DELETE MY ACCOUNT',password}
+  });
+
+  if(error||data?.status!=='deleted'){
+   const response=error?.context;
+   let code='';
+   if(response instanceof Response){
+    const payload=await response.clone().json().catch(()=>null);
+    code=payload?.error||'';
+   }
+   status.textContent=code==='deletion_not_enabled'||code==='deletion_test_account_only'
+    ?txt4(
+      'Удаление пока отключено на время тестирования.',
+      'Deletion is temporarily disabled during testing.',
+      'Radering är tillfälligt avstängd under testning.',
+      'Видалення тимчасово вимкнено під час тестування.'
+     )
+    :txt4(
+      'Не удалось завершить удаление. Обратись в поддержку.',
+      'Deletion could not be completed. Contact support.',
+      'Raderingen kunde inte slutföras. Kontakta support.',
+      'Не вдалося завершити видалення. Звернися до підтримки.'
+     );
+   return;
+  }
+
+  try{await window.SVAuth.signOut()}catch(_){}
+  accountDeletionBusy=false;
+  closeAuth();
+  applyAuthState(window.SVAuth.getState());
+  navigate('home');
+  toast(txt4(
+   'Аккаунт удалён.','Account deleted.',
+   'Kontot har raderats.','Акаунт видалено.'
+  ));
+ }catch(_){
+  status.textContent=txt4(
+   'Не удалось выполнить запрос. Попробуй позже.',
+   'Request failed. Please try again later.',
+   'Begäran misslyckades. Försök igen senare.',
+   'Не вдалося виконати запит. Спробуй пізніше.'
+  );
+ }finally{
+  if(input)input.value='';
+  accountDeletionBusy=false;
+  submit.disabled=true;
+ }
+}
+
 function resetQuiz(){quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};render()}
 function nextFlash(n=1){flash.index=(flash.index+n+flash.ids.length)%flash.ids.length;flash.flipped=false;render()}
 async function action(btn){if(btn.dataset.nav){$('#search-results').classList.add('hidden');$('#global-search').value='';navigate(btn.dataset.nav,btn.dataset.param||'');return}
@@ -323,41 +457,8 @@ async function action(btn){if(btn.dataset.nav){$('#search-results').classList.ad
  if(name==='speak'){speak(btn.dataset.text);return}
  if(name==='auth'){openAuth(btn.dataset.mode);return}
  if(name==='logout'){await logout();return}
- if(name==='delete-account'){
-  if(!user||!cloudAccount())return;
-  const ownerId=user.id;
-  const warning=txt4(
-   'Удаление аккаунта необратимо. Все сохранённые слова, достижения, XP и история обучения будут удалены. Продолжить?',
-   'Account deletion is permanent. Your saved words, XP and learning history will be deleted. Continue?',
-   'Kontot raderas permanent, inklusive ord, XP och studiehistorik. Fortsätta?',
-   'Видалення акаунта незворотне. Слова, XP та історію навчання буде видалено. Продовжити?'
-  );
-  if(!window.confirm(warning))return;
-  const instruction=txt4(
-   'Для подтверждения введи DELETE MY ACCOUNT',
-   'Type DELETE MY ACCOUNT to confirm',
-   'Skriv DELETE MY ACCOUNT för att bekräfta',
-   'Для підтвердження введи DELETE MY ACCOUNT'
-  );
-  if(window.prompt(instruction)!=='DELETE MY ACCOUNT')return;
-  btn.disabled=true;
-  try{
-   const session=await window.SVAuth.getSession();
-   if(!session?.access_token||session.user?.id!==ownerId)throw Error('AUTH_CONTEXT_CHANGED');
-   const client=await window.SVSupabase.getClient();
-   const {data,error}=await client.functions.invoke('delete-account',{
-    body:{confirmation:'DELETE MY ACCOUNT'}
-   });
-   if(error||data?.status!=='deleted'){
-    toast(txt4('Удаление пока недоступно или не завершилось.','Deletion is unavailable or incomplete.','Radering är inte tillgänglig eller slutfördes inte.','Видалення недоступне або не завершилося.'));
-    return;
-   }
-   try{await window.SVAuth.signOut()}catch(_){}
-   toast(txt4('Аккаунт удалён.','Account deleted.','Kontot har raderats.','Акаунт видалено.'));
-  }catch(_){toast(ux('error'))}
-  finally{btn.disabled=false}
-  return;
- }
+ if(name==='delete-account'){openAccountDeletion();return}
+ if(name==='cancel-delete-account'){closeAuth();return}
  if(name==='course'){selectedLevel=btn.dataset.level;navigate('lessons',selectedLevel);return}
  if(name==='level'){selectedLevel=btn.dataset.level;navigate('lessons',selectedLevel);return}
  if(name==='dict-more'){dictFilter.limit+=42;render();return}
@@ -399,7 +500,7 @@ function changeLanguage(v){
 }
 function dictTextUpdate(input){const start=input.selectionStart||0;dictFilter.text=input.value;dictFilter.limit=42;render();const el=$('#dict-search');if(el){el.focus();try{el.setSelectionRange(start,start)}catch{}}}
 function bindEvents(){document.addEventListener('click',e=>{const b=e.target.closest('button[data-action],button[data-nav]');if(b){e.preventDefault();void action(b).catch(()=>toast(ux('error')));return}const card=e.target.closest('.words-grid [data-word-link]');if(card&&!e.target.closest('a,input,select,textarea,button'))navigate('word',card.dataset.wordLink)});document.addEventListener('keydown',e=>{const card=e.target.closest('.words-grid [data-word-link]');if(card&&e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();navigate('word',card.dataset.wordLink)}});document.addEventListener('change',e=>{const el=e.target;if(el.id==='lang-select'||el.id==='profile-lang')changeLanguage(el.value);if(el.id==='profile-level')void saveProfileLevel(el);if(el.id==='dict-kind'){dictFilter.kind=el.value;if(el.value!=='verb')dictFilter.group='all';dictFilter.limit=42;render()}if(el.id==='dict-group'){dictFilter.group=el.value;dictFilter.limit=42;render()}if(el.id==='dict-category'){dictFilter.category=el.value;dictFilter.limit=42;render()}if(el.id==='flash-kind'){flashFilter.kind=el.value;if(el.value!=='verb')flashFilter.group='all';createFlashDeck();render()}if(el.id==='flash-group'){flashFilter.group=el.value;createFlashDeck();render()}});
- document.addEventListener('input',e=>{if(e.target.id==='quiz-text-input'&&quiz.active&&!quiz.answered){quiz.selected=e.target.value;persistQuizSession()}if(e.target.id==='dict-search')dictTextUpdate(e.target);if(e.target.id==='global-search')searchNow(e.target.value)});document.addEventListener('submit',e=>{if(e.target.id==='auth-form'){e.preventDefault();authSubmit(e.target)}if(e.target.id==='quiz-input-form'){e.preventDefault();submitAnswer($('#quiz-text-input')?.value||'')}});
+ document.addEventListener('input',e=>{if(e.target.id==='quiz-text-input'&&quiz.active&&!quiz.answered){quiz.selected=e.target.value;persistQuizSession()}if(e.target.id==='dict-search')dictTextUpdate(e.target);if(e.target.id==='global-search')searchNow(e.target.value)});document.addEventListener('submit',e=>{if(e.target.id==='auth-form'){e.preventDefault();authSubmit(e.target)}if(e.target.id==='delete-account-form'){e.preventDefault();void confirmAccountDeletion(e.target)}if(e.target.id==='quiz-input-form'){e.preventDefault();submitAnswer($('#quiz-text-input')?.value||'')}});
  $('#close-modal').addEventListener('click',closeAuth);$('#modal-backdrop').addEventListener('click',e=>{if(e.target.id==='modal-backdrop')closeAuth()});document.addEventListener('click',e=>{if(!e.target.closest('.topbar-left'))$('#search-results').classList.add('hidden')});document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#global-search').focus()}if(e.key==='Escape'){closeAuth();$('#search-results').classList.add('hidden')}if(route==='flashcards'&&!['INPUT','TEXTAREA','SELECT','BUTTON','A'].includes(document.activeElement?.tagName)){if(e.key==='ArrowRight')nextFlash(1);if(e.key==='ArrowLeft')nextFlash(-1);if(e.key===' '){e.preventDefault();flash.flipped=!flash.flipped;render()}}});window.addEventListener('hashchange',()=>{const current=route+(routeParam?'/'+routeParam:'');if(decodeURIComponent(location.hash.slice(1))===current)return;hydrateLocation();render();restoreDictionaryPosition(route==='dictionary'?dictionaryViews.get(dictionaryViewKey(routeParam)):null)});window.addEventListener('pagehide',persistQuizSession)}
 
 async function boot(){
