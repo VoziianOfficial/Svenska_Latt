@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@supabase/server": "./mock-server.ts",
+    "@supabase/functions-js/edge-runtime.d.ts": "./empty.ts"
+  }
+}
