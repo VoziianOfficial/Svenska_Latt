@@ -1,6 +1,6 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE = '2026-11-08-pwa-install-001';
+const RELEASE = '2026-11-08-pwa-install-002';
 const APP_CACHE = `svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE = `svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT = 150;
@@ -52,12 +52,6 @@ self.addEventListener('fetch', event => {
       ((url.pathname.startsWith(iconRoot) && url.pathname.endsWith('.webp')) ||
          (url.pathname.startsWith(avatarRoot) && /\.(png|jpe?g|webp)$/.test(url.pathname)));
    if (!SHELL_URLS.has(url.href) && !staticImage) return;
-   // Local runtime must reflect the working tree, including during debugging.
-   // Never silently fall back to an old script when the local server is down.
-   if (['localhost', '127.0.0.1', '[::1]'].includes(url.hostname) && SHELL_URLS.has(url.href)) {
-      event.respondWith(fetch(request, { cache: 'no-store' }).catch(() => new Response('', { status: 504, statusText: 'Local server unavailable' })));
-      return;
-   }
 
    event.respondWith((async () => {
       const cache = await caches.open(APP_CACHE);
