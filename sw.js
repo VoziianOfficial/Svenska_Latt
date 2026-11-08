@@ -1,10 +1,10 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE = '2026-11-08-pwa-install-003';
+const RELEASE = '2026-11-08-lesson-covers-001';
 const APP_CACHE = `svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE = `svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT = 150;
-const FILES = ['./', './index.html', './style.css', './studio.css', './atelier.css', './learning-polish.css', './atelier.js', './learning-polish.js', './custom-controls.js', './flashcard-media.js', './assets/avatars/pippi-cartoon.png', './app.js', './word-icons.js', './locale-content.js', './supabase-config.js', './supabase-client.js', './supabase-auth.js', './supabase-rpc.js', './supabase-progress.js', './study-time.js', './manual-reviews.js', './words.json', './lessons.json', './books.json', './assets/video-collection.svg', './favicon.svg', './manifest.webmanifest', './privacy.html', './terms.html', './cookies.html', './icons/icon-192.png', './icons/icon-512.png'];
+const FILES = ['./', './index.html', './style.css', './studio.css', './atelier.css', './learning-polish.css', './atelier.js', './learning-polish.js', './custom-controls.js', './flashcard-media.js', './assets/avatars/pippi-cartoon.png', './app.js', './pwa-install.js', './word-icons.js', './locale-content.js', './supabase-config.js', './supabase-client.js', './supabase-auth.js', './supabase-rpc.js', './supabase-progress.js', './study-time.js', './manual-reviews.js', './words.json', './lessons.json', './books.json', './assets/video-collection.svg', './favicon.svg', './manifest.webmanifest', './privacy.html', './terms.html', './cookies.html', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-192-v2.png', './icons/icon-512-v2.png'];
 const SHELL_URLS = new Set(FILES.map(file => new URL(file, self.registration.scope).href));
 let photoWrites = Promise.resolve();
 self.addEventListener('install', event => {
@@ -38,7 +38,8 @@ self.addEventListener('fetch', event => {
    const url = new URL(request.url);
    const local = url.origin === self.location.origin;
    const photoRoot = new URL('./assets/flashcards/', self.registration.scope);
-   if ((local && url.pathname.startsWith(photoRoot.pathname) && url.pathname.endsWith('.webp')) ||
+   const lessonPhotoRoot = new URL('./assets/lesson-covers/', self.registration.scope);
+   if ((local && (url.pathname.startsWith(photoRoot.pathname) || url.pathname.startsWith(lessonPhotoRoot.pathname)) && url.pathname.endsWith('.webp')) ||
       (request.destination === 'image' && ['images.pexels.com', 'upload.wikimedia.org'].includes(url.hostname))) {
       event.respondWith(cachePhoto(request)); return;
    }

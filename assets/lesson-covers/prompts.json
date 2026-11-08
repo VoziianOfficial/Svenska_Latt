@@ -1,0 +1,315 @@
+{
+  "generator": "built-in image_gen",
+  "style": "Neutral Scandinavian editorial photography",
+  "output": {
+    "format": "WebP",
+    "width": 768,
+    "height": 512,
+    "quality": 80
+  },
+  "images": [
+    {
+      "id": "lesson-1",
+      "theme": "Алфавит и произношение",
+      "scene": "Three ivory wooden alphabet tiles displaying exactly 'Å', 'Ä', 'Ö' on pale oak with a linen notebook and pencil. The diacritics must be correct.",
+      "file": "lesson-01-v1.webp",
+      "prompt_override": "Use case: photorealistic-natural. Asset: premium photographic cover for the Swedish beginner lesson 'Alphabet and pronunciation'. Generate ONE high quality landscape photograph, exact 3:2 aspect ratio, ideally 1536x1024. A restrained Scandinavian editorial still life: three separate ivory wooden letter tiles displaying exactly Å, Ä, Ö, arranged clearly on a pale oak desk beside a closed linen notebook and an understated pencil. Correct real letter shapes with the dots and ring unmistakable. The physical objects and paper grain must look genuinely photographed, not 3D rendered or illustrated. Soft natural window light, warm off-white, pale oak and a subtle sage accent, crisp fine detail, calm neutral mood. Thoughtful uncluttered composition, subjects entirely inside the frame with generous 12 percent safe margins on all four sides; all objects comfortably visible at a small thumbnail size. No people, faces, logos, watermark, borders, collage, split screen, overlay headings or decorative text. Only those three Swedish letters may be visible. No UI."
+    },
+    {
+      "id": "lesson-2",
+      "theme": "Приветствия и знакомство",
+      "scene": "A welcoming cafe table set for two with two cream ceramic cups, two empty chairs visible behind, and a small ivory folded greeting card reading exactly 'Hej!'. No people.",
+      "file": "lesson-02-v1.webp"
+    },
+    {
+      "id": "lesson-3",
+      "theme": "Местоимения jag, du, hon",
+      "scene": "Three simple unpainted wooden human figurines standing individually on a study desk, paired with three physical ivory word cards reading exactly 'jag', 'du', 'hon'. A clear calm visual about personal pronouns, no real people.",
+      "file": "lesson-03-v1.webp"
+    },
+    {
+      "id": "lesson-4",
+      "theme": "Настоящее время (presens)",
+      "scene": "An everyday morning still life: a fresh cup of tea, an open notebook, a pencil, and a small wooden analog clock. Two physical word cards read exactly 'jag läser' and 'jag skriver', expressing actions happening now.",
+      "file": "lesson-04-v1.webp"
+    },
+    {
+      "id": "lesson-5",
+      "theme": "Существительные en / ett",
+      "scene": "A small tasteful wooden model car and wooden model house on a pale study table. Two physical cream vocabulary cards read exactly 'en bil' beneath the car and 'ett hus' beneath the house. Distinct real objects, clean material textures.",
+      "file": "lesson-05-v1.webp"
+    },
+    {
+      "id": "lesson-6",
+      "theme": "Определённая форма",
+      "scene": "One simple little wooden model car on a pale desk, with two neat physical vocabulary cards reading exactly 'en bil' and 'bilen'. A pencil points from the first card toward the second. An elegant photograph about an indefinite and a definite noun, not a diagram.",
+      "file": "lesson-06-v1.webp"
+    },
+    {
+      "id": "lesson-7",
+      "theme": "Вопросы: vad, var, hur",
+      "scene": "Three physical ivory study cards standing on a pale oak desk, clearly reading exactly 'vad?', 'var?', 'hur?'. A small closed notebook and a simple pencil alongside, composition focused on the three question words.",
+      "file": "lesson-07-v1.webp"
+    },
+    {
+      "id": "lesson-8",
+      "theme": "Числа и время",
+      "scene": "An elegant cream analog clock showing ten past ten, a simple desk calendar with the large numeral '12', and three pale wooden number tiles '1', '2', '3'. Neutral practical everyday objects about numbers and time, no other text.",
+      "file": "lesson-08-v1.webp"
+    },
+    {
+      "id": "lesson-9",
+      "theme": "Глаголы группы 1",
+      "scene": "Four physical cream study cards on a pale desk, in order reading exactly 'arbeta', 'arbetar', 'arbetade', 'arbetat'. A linen notebook and a sharpened pencil alongside. Grammar word forms must be accurate and clearly distinct.",
+      "file": "lesson-09-v1.webp"
+    },
+    {
+      "id": "lesson-10",
+      "theme": "Глаголы группы 2A",
+      "scene": "A simple neutral landline telephone handset on a pale oak desk beside four physical ivory cards reading exactly 'ringa', 'ringer', 'ringde', 'ringt'. The phone connects the Swedish verb forms to the action of calling.",
+      "file": "lesson-10-v1.webp"
+    },
+    {
+      "id": "lesson-11",
+      "theme": "Глаголы группы 2B",
+      "scene": "A small plain kraft shopping bag and a neatly folded receipt without legible text, beside four ivory study cards reading exactly 'köpa', 'köper', 'köpte', 'köpt'. Restrained product photography about the verb to buy.",
+      "file": "lesson-11-v1.webp"
+    },
+    {
+      "id": "lesson-12",
+      "theme": "Глаголы группы 3",
+      "scene": "A small handmade wooden house beside a linen notebook and four physical cream cards reading exactly 'bo', 'bor', 'bodde', 'bott'. The house illustrates living somewhere and the Swedish third conjugation.",
+      "file": "lesson-12-v1.webp"
+    },
+    {
+      "id": "lesson-13",
+      "theme": "Глаголы группы 4",
+      "scene": "A clean pair of understated walking shoes near a light wooden doorstep, with four neat physical ivory study cards reading exactly 'gå', 'går', 'gick', 'gått'. A gentle still life illustrating the irregular verb to walk, no people.",
+      "file": "lesson-13-v1.webp"
+    },
+    {
+      "id": "lesson-14",
+      "theme": "Прошедшее время preteritum",
+      "scene": "An open daily journal and a turned-over calendar leaf on a pale desk, beside a small physical card reading exactly 'i går' and a second card 'jag läste'. Yesterday's completed reading activity, with a closed book and a pencil.",
+      "file": "lesson-14-v1.webp"
+    },
+    {
+      "id": "lesson-15",
+      "theme": "Supinum и perfekt",
+      "scene": "A newly opened small kraft parcel with a pristine book inside, on a pale oak table. Two physical ivory grammar cards read exactly 'har köpt' and 'har läst'. Calm still life illustrating a completed purchase and reading, no logos.",
+      "file": "lesson-15-v1.webp"
+    },
+    {
+      "id": "lesson-16",
+      "theme": "Множественное число",
+      "scene": "One cream linen-bound book on one side and a tidy stack of three matching books beside it, with two physical ivory cards reading exactly 'en bok' and 'böcker'. Photographic still life clearly comparing one and many.",
+      "file": "lesson-16-v1.webp"
+    },
+    {
+      "id": "lesson-17",
+      "theme": "Притяжательные min/mitt/mina",
+      "scene": "A linen-bound book, a small wooden model house, and a small stack of books on a light desk, each paired with a cream card reading exactly 'min bok', 'mitt hus', 'mina böcker'. Spacious uncluttered arrangement about possession.",
+      "file": "lesson-17-v1.webp"
+    },
+    {
+      "id": "lesson-18",
+      "theme": "Модальные глаголы",
+      "scene": "A neat personal planner with a pencil and four small physical study cards reading exactly 'vill', 'kan', 'måste', 'ska', arranged beside an understated ceramic cup. A quiet thoughtful planning still life.",
+      "file": "lesson-18-v1.webp"
+    },
+    {
+      "id": "lesson-19",
+      "theme": "Прилагательные: en, ett, plural",
+      "scene": "A large wooden model car, a small wooden house and a matching pair of model cars, with three physical ivory cards reading exactly 'stor bil', 'stort hus', 'stora bilar'. Elegant educational still life about adjective agreement.",
+      "file": "lesson-19-v1.webp"
+    },
+    {
+      "id": "lesson-20",
+      "theme": "Определённые прилагательные",
+      "scene": "One muted red wooden model car resting on a pale oak desk next to a cream physical card reading exactly 'den röda bilen'. A closed linen notebook and pencil kept secondary. Simple photograph identifying a specific red car.",
+      "file": "lesson-20-v1.webp"
+    },
+    {
+      "id": "lesson-21",
+      "theme": "Порядок слов: V2",
+      "scene": "Three large physical ivory word cards placed in one tidy left-to-right row on a pale desk. They read exactly 'I dag', 'läser', 'jag' in that order. An open book and pencil nearby, photographic Swedish word-order exercise.",
+      "file": "lesson-21-v1.webp"
+    },
+    {
+      "id": "lesson-22",
+      "theme": "Место inte в предложении",
+      "scene": "Four neat physical ivory word cards laid left-to-right on a study table, reading exactly 'Jag', 'kan', 'inte', 'komma'. The 'inte' card has a very subtle sage edge. Clean photographic still life about correct negation placement.",
+      "file": "lesson-22-v1.webp"
+    },
+    {
+      "id": "lesson-23",
+      "theme": "BIFF: придаточные предложения",
+      "scene": "Four physical ivory word cards placed left-to-right, reading exactly 'eftersom', 'jag', 'inte', 'kan'. A plain linen notebook behind. The 'inte' and 'kan' cards are clearly separated and readable, showing negation before the finite verb in a subordinate clause.",
+      "file": "lesson-23-v1.webp"
+    },
+    {
+      "id": "lesson-24",
+      "theme": "Императив: просьбы и команды",
+      "scene": "An open book and a simple small desk bell on pale oak, with three physical cream cards reading exactly 'Läs!', 'Vänta!', 'Kom!'. Understated editorial study still life about requests and instructions.",
+      "file": "lesson-24-v1.webp"
+    },
+    {
+      "id": "lesson-25",
+      "theme": "Предлоги места",
+      "scene": "A neutral cup sitting inside a shallow wooden tray, a pencil lying on a linen book, and a small key beside the book. All objects and their spatial relationships are unmistakably visible. No words, no people, a photographic example of in, on and beside.",
+      "file": "lesson-25-v1.webp"
+    },
+    {
+      "id": "lesson-26",
+      "theme": "Возвратные глаголы",
+      "scene": "A clean Scandinavian bathroom still life with a ceramic soap dispenser, neatly folded cotton hand towel, toothbrush and a small mirror reflecting only the softly lit tiled wall. A discreet physical cream study card reads exactly 'tvätta sig'. No people.",
+      "file": "lesson-26-v1.webp"
+    },
+    {
+      "id": "lesson-27",
+      "theme": "Условные предложения om",
+      "scene": "A neatly folded sage umbrella on a light windowsill beside a notebook; a few soft rain droplets on the window behind. One small physical ivory card reads exactly 'om det regnar'. Quiet conditional planning scene, no people.",
+      "file": "lesson-27-v1.webp"
+    },
+    {
+      "id": "lesson-28",
+      "theme": "Относительные предложения som",
+      "scene": "Two small wooden model houses, one with a muted red roof and the other all natural wood, on a study desk. A single physical ivory card reads exactly 'huset som är rött'. A clear visual identifying the house through a relative clause.",
+      "file": "lesson-28-v1.webp"
+    },
+    {
+      "id": "lesson-29",
+      "theme": "Пассив: -s и bli",
+      "scene": "Fresh bread rolls cooling on a plain rack in a clean light bakery work area, a folded linen cloth and small paper bag nearby. A small physical ivory card reads exactly 'Brödet bakas'. No baker or hands visible; the finished action is the focus.",
+      "file": "lesson-29-v1.webp"
+    },
+    {
+      "id": "lesson-30",
+      "theme": "Сравнение прилагательных",
+      "scene": "Three matching plain wooden houses in three obviously increasing sizes on a pale desk, paired with three physical cream word cards reading exactly 'stor', 'större', 'störst'. A calm photographic comparison, not an illustration or diagram.",
+      "file": "lesson-30-v1.webp"
+    },
+    {
+      "id": "lesson-31",
+      "theme": "Будущее: ska, kommer att",
+      "scene": "A tidy weekly planner open on a pale desk, a small packed canvas day bag beside it, and a physical ivory card reading exactly 'i morgon'. A second small card reads 'ska resa'. Soft hopeful morning light, a neutral photograph about future plans.",
+      "file": "lesson-31-v1.webp"
+    },
+    {
+      "id": "lesson-32",
+      "theme": "Письма и сообщения",
+      "scene": "An ivory letter sheet, matching envelope, elegant everyday pen and a muted sage laptop corner on a tidy pale desk. The paper shows only the exact greeting 'Hej!' at top and 'Vänliga hälsningar' near the bottom, otherwise mostly blank. Formal correspondence.",
+      "file": "lesson-32-v1.webp"
+    },
+    {
+      "id": "lesson-33",
+      "theme": "Объяснение причины",
+      "scene": "A short line of real wooden dominoes on a pale desk, some gently toppled into the next, showing a clear cause and effect. A single physical ivory word card reads exactly 'därför'. Calm still-life photography, no dramatic or chaotic composition.",
+      "file": "lesson-33-v1.webp"
+    },
+    {
+      "id": "lesson-34",
+      "theme": "Чтение: находить смысл",
+      "scene": "An open Swedish reading book with a cream bookmark and pencil on a light wooden table beside reading glasses. Only the short heading 'En ny dag' is legible; the small body print is naturally softly defocused and not a focus. Quiet reading-comprehension photograph.",
+      "file": "lesson-34-v1.webp"
+    },
+    {
+      "id": "lesson-35",
+      "theme": "Школа и класс",
+      "scene": "An empty bright contemporary Scandinavian adult classroom with pale wooden desks, clean chairs, exercise books, pencils, a simple blank whiteboard and soft daylight. No children, no teacher, no faces, no logos, wide balanced interior photograph.",
+      "file": "lesson-35-v1.webp"
+    },
+    {
+      "id": "lesson-36",
+      "theme": "Семья и близкие",
+      "scene": "Four understated natural wooden family figurines, two adult-sized and two smaller child-sized, arranged together beside a little wooden house and a small green plant on a pale oak shelf. Warm but neutral real-object still-life photograph, no cartoon faces.",
+      "file": "lesson-36-v1.webp"
+    },
+    {
+      "id": "lesson-37",
+      "theme": "Дни недели и месяцы",
+      "scene": "A tasteful wooden desk calendar, two physical ivory weekday cards reading exactly 'måndag' and 'tisdag', a simple analog clock and a pencil on a pale table. A restrained still-life photograph about dates, weekdays and planning, no other legible print.",
+      "file": "lesson-37-v1.webp"
+    },
+    {
+      "id": "lesson-38",
+      "theme": "В магазине",
+      "scene": "A small reusable canvas grocery bag, a paper carton with no branding, fresh apples, a loaf of bread and a simple checkout card reader on a clean light grocery counter. Calm neutral everyday shopping photograph, no people, no logos.",
+      "file": "lesson-38-v1.webp"
+    },
+    {
+      "id": "lesson-39",
+      "theme": "У врача и здоровье",
+      "scene": "A modern stethoscope, a simple digital thermometer, a folded white cotton cloth and an unbranded appointment card on a clean light clinic desk. Calm reassuring medical still-life photography, no injections, no patients, no cartoon hearts, no readable personal data.",
+      "file": "lesson-39-v1.webp"
+    },
+    {
+      "id": "lesson-40",
+      "theme": "Домашние дела",
+      "scene": "A tasteful neutral household cleaning still life: wooden-handled brush, reusable amber spray bottle without a label, folded cotton cleaning cloth and small ceramic bowl on a pale countertop in a clean bright home. No people, no brands.",
+      "file": "lesson-40-v1.webp"
+    },
+    {
+      "id": "lesson-41",
+      "theme": "Погода и времена года",
+      "scene": "A restrained single photographic still life on a pale windowsill: folded light wool scarf, a small spring blossom branch in a clear vase, understated sunglasses and two ochre autumn leaves. A soft natural view of weather through the window. Not a collage or four-part layout.",
+      "file": "lesson-41-v1.webp"
+    },
+    {
+      "id": "lesson-42",
+      "theme": "Транспорт и маршруты",
+      "scene": "A clean contemporary city bus at a quiet Scandinavian bus stop in soft daylight, with a clear shelter and a simple route-map board in the scene. Entire bus is inside the frame with breathing room. No readable brand names or advertisements, no close-up faces.",
+      "file": "lesson-42-v1.webp"
+    },
+    {
+      "id": "lesson-43",
+      "theme": "Письмо другу",
+      "scene": "A personal ivory note beginning with the exact short greeting 'Hej!', an open cream envelope, a simple pen and a ceramic cup of tea on a pale wooden kitchen table. Warm natural daylight, a friendly but restrained neutral correspondence still life.",
+      "file": "lesson-43-v1.webp"
+    },
+    {
+      "id": "lesson-44",
+      "theme": "На собеседовании",
+      "scene": "A small bright contemporary Scandinavian interview room with two empty upholstered chairs on opposite sides of a pale oak desk, a neat resume folder and a notebook. Quiet professional neutral interior photograph; no people, no laptops with code, no logos.",
+      "file": "lesson-44-v1.webp"
+    },
+    {
+      "id": "lesson-45",
+      "theme": "Мнение и аргументы",
+      "scene": "Two physical ivory discussion cards on a pale study desk, reading exactly 'Jag tycker' and 'därför att', next to a pencil and two tidy contrasting sage and cream notebooks. Calm photograph about expressing and supporting an opinion.",
+      "file": "lesson-45-v1.webp"
+    },
+    {
+      "id": "lesson-46",
+      "theme": "В учреждениях",
+      "scene": "A bright uncluttered public service reception desk with an unbranded queue ticket showing the numeral '23', a neat document folder, a pen and a simple empty waiting chair in the background. Neutral Scandinavian civic-service interior photograph, no people or personal data.",
+      "file": "lesson-46-v1.webp"
+    },
+    {
+      "id": "lesson-47",
+      "theme": "Новости и источники",
+      "scene": "A folded newspaper with small print deliberately out of focus, a tablet showing a restrained generic news layout without legible headlines, and reading glasses on a pale oak table. Thoughtful neutral media-literacy photograph, no politician photos or logos.",
+      "file": "lesson-47-v1.webp"
+    },
+    {
+      "id": "lesson-48",
+      "theme": "Права и обязанности",
+      "scene": "A small elegant brass balance scale beside a plain document folder and a thin linen book on a pale desk. One small physical ivory card reads exactly 'regler'. Bright calm neutral photograph about fairness, rules and responsibility, no court drama.",
+      "file": "lesson-48-v1.webp"
+    },
+    {
+      "id": "lesson-49",
+      "theme": "Общество и окружающая среда",
+      "scene": "A clean Scandinavian neighborhood recycling station with separate understated paper and glass containers, a simple parked bicycle and green plants, in soft natural daylight. Calm realistic environmental everyday scene, no people, no big writing or logos.",
+      "file": "lesson-49-v1.webp"
+    },
+    {
+      "id": "lesson-50",
+      "theme": "Работа и образование",
+      "scene": "A tidy pale oak study-and-work desk with an open unbranded laptop, a small stack of linen books, a notebook, pencil and a simple document folder with the exact short label 'CV'. Quiet bright Scandinavian interior, no people, no computer code, no logos.",
+      "file": "lesson-50-v1.webp"
+    }
+  ],
+  "common_prompt": "Use case: photorealistic-natural. Asset: one premium photographic lesson-card cover for a Swedish language learning app. Generate ONE separate high-quality photograph, exact landscape 3:2 aspect ratio, ideally 1536x1024. Consistent restrained Scandinavian editorial photography: soft natural window light, warm off-white, pale oak, linen textures and restrained sage accents; clean calm neutral composition, realistic materials, fine crisp photographic detail, tasteful gentle contrast. The image must read clearly as a small card thumbnail. Keep ALL primary objects entirely inside the frame with at least 10 percent safe margins on every edge. No cut-off people or heads. Avoid staged stock-photo smiles. No illustration, 3D render, collage, split screen, borders, watermarks, UI, logos, captions or overlay typography. Any requested words must be printed naturally on real physical cards or paper, accurately spelled in simple readable dark type; do not add other readable text. Scene: ",
+  "prompt_recipe": "Use prompt_override when present, otherwise concatenate common_prompt and scene."
+}

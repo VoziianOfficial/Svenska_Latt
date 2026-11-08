@@ -41,15 +41,59 @@ const TOPIC_PHOTOS={
  'Счёт и количество':'./assets/flashcards/w-tv%C3%A5.webp','Путешествия':PH.travel
 };
 const LEVELS=[pex(5212330),pex(6238130),pex(3184298),pex(7092613)];
-const LESSONS=[
-  pex(5212330),pex(5428010),pex(5940831),pex(4262425),pex(5212345),pex(1640774),pex(264507),
-  pex(7088484),pex(210182),pex(3764164),pex(7679863),pex(3184465),pex(1118873),pex(106399),
-  pex(4386467),'./assets/flashcards/w-r%C3%B6d.webp',pex(3184298),pex(5428004),pex(5905709),pex(1118873),pex(4386370),
-  pex(6238297),pex(3155666),pex(1181244),pex(34950),pex(159711),pex(5905483),pex(5212700),
-  pex(7088484),pex(5905555),pex(6238048),'./assets/flashcards/w-tv%C3%A5.webp',pex(5427891),pex(6147369),pex(845451),
-  pex(4386431),pex(3769021),pex(5428263),pex(7092359),pex(4386467),pex(6238130),pex(5212695),
-  pex(7679863),pex(7092613),pex(271618),pex(5905568),pex(5212331),pex(4262423),pex(1571460),pex(34950)
-];
+// Stable lesson IDs keep cover topics correct across levels, order and locales.
+const LESSON_COVERS = Object.freeze({
+  "lesson-1": "./assets/lesson-covers/lesson-01-v1.webp",
+  "lesson-2": "./assets/lesson-covers/lesson-02-v1.webp",
+  "lesson-3": "./assets/lesson-covers/lesson-03-v1.webp",
+  "lesson-4": "./assets/lesson-covers/lesson-04-v1.webp",
+  "lesson-5": "./assets/lesson-covers/lesson-05-v1.webp",
+  "lesson-6": "./assets/lesson-covers/lesson-06-v1.webp",
+  "lesson-7": "./assets/lesson-covers/lesson-07-v1.webp",
+  "lesson-8": "./assets/lesson-covers/lesson-08-v1.webp",
+  "lesson-9": "./assets/lesson-covers/lesson-09-v1.webp",
+  "lesson-10": "./assets/lesson-covers/lesson-10-v1.webp",
+  "lesson-11": "./assets/lesson-covers/lesson-11-v1.webp",
+  "lesson-12": "./assets/lesson-covers/lesson-12-v1.webp",
+  "lesson-13": "./assets/lesson-covers/lesson-13-v1.webp",
+  "lesson-14": "./assets/lesson-covers/lesson-14-v1.webp",
+  "lesson-15": "./assets/lesson-covers/lesson-15-v1.webp",
+  "lesson-16": "./assets/lesson-covers/lesson-16-v1.webp",
+  "lesson-17": "./assets/lesson-covers/lesson-17-v1.webp",
+  "lesson-18": "./assets/lesson-covers/lesson-18-v1.webp",
+  "lesson-19": "./assets/lesson-covers/lesson-19-v1.webp",
+  "lesson-20": "./assets/lesson-covers/lesson-20-v1.webp",
+  "lesson-21": "./assets/lesson-covers/lesson-21-v1.webp",
+  "lesson-22": "./assets/lesson-covers/lesson-22-v1.webp",
+  "lesson-23": "./assets/lesson-covers/lesson-23-v1.webp",
+  "lesson-24": "./assets/lesson-covers/lesson-24-v1.webp",
+  "lesson-25": "./assets/lesson-covers/lesson-25-v1.webp",
+  "lesson-26": "./assets/lesson-covers/lesson-26-v1.webp",
+  "lesson-27": "./assets/lesson-covers/lesson-27-v1.webp",
+  "lesson-28": "./assets/lesson-covers/lesson-28-v1.webp",
+  "lesson-29": "./assets/lesson-covers/lesson-29-v1.webp",
+  "lesson-30": "./assets/lesson-covers/lesson-30-v1.webp",
+  "lesson-31": "./assets/lesson-covers/lesson-31-v1.webp",
+  "lesson-32": "./assets/lesson-covers/lesson-32-v1.webp",
+  "lesson-33": "./assets/lesson-covers/lesson-33-v1.webp",
+  "lesson-34": "./assets/lesson-covers/lesson-34-v1.webp",
+  "lesson-35": "./assets/lesson-covers/lesson-35-v1.webp",
+  "lesson-36": "./assets/lesson-covers/lesson-36-v1.webp",
+  "lesson-37": "./assets/lesson-covers/lesson-37-v1.webp",
+  "lesson-38": "./assets/lesson-covers/lesson-38-v1.webp",
+  "lesson-39": "./assets/lesson-covers/lesson-39-v1.webp",
+  "lesson-40": "./assets/lesson-covers/lesson-40-v1.webp",
+  "lesson-41": "./assets/lesson-covers/lesson-41-v1.webp",
+  "lesson-42": "./assets/lesson-covers/lesson-42-v1.webp",
+  "lesson-43": "./assets/lesson-covers/lesson-43-v1.webp",
+  "lesson-44": "./assets/lesson-covers/lesson-44-v1.webp",
+  "lesson-45": "./assets/lesson-covers/lesson-45-v1.webp",
+  "lesson-46": "./assets/lesson-covers/lesson-46-v1.webp",
+  "lesson-47": "./assets/lesson-covers/lesson-47-v1.webp",
+  "lesson-48": "./assets/lesson-covers/lesson-48-v1.webp",
+  "lesson-49": "./assets/lesson-covers/lesson-49-v1.webp",
+  "lesson-50": "./assets/lesson-covers/lesson-50-v1.webp"
+});
 const VIDEOS=[
   pex(845451),pex(1386604),'./assets/flashcards/w-r%C3%B6d.webp',pex(7092359),pex(6147369),pex(4386467),
   pex(7991579),pex(3184298),pex(5212345),pex(210182),pex(7088484),pex(5905709)
@@ -105,9 +149,22 @@ function enhanceHome(){const hero=document.querySelector('.hero');if(hero)hero.s
 }
 function enhanceTopics(){document.querySelectorAll('.topic-card').forEach(el=>{const key=el.dataset.param||el.querySelector('h3')?.textContent?.trim();tile(el,TOPIC_PHOTOS[key]||PH[CATEGORY[key]]||PH.reading)})}
 function enhanceLessons(){document.querySelectorAll('.lesson-card').forEach((el,i)=>{
- const num=el.querySelector('.lesson-cover small')?.textContent||''; const selected=(typeof routeParam==='string'&&/^[ABCD]$/.test(routeParam))?routeParam:(typeof selectedLevel!=='undefined'?selectedLevel:'A');
- const base={'A':0,'B':13,'C':26,'D':39}[selected]||0;const url=LESSONS[(base+i)%LESSONS.length];
- back(el,url);const cover=el.querySelector('.lesson-cover');back(cover,url);
+ const open=el.querySelector('.lesson-foot [data-nav="lesson"]');
+ const url=LESSON_COVERS[open?.dataset.param];
+ if(!url)return;
+ if(open&&!open.querySelector('.lesson-open-label')){
+  const label=document.createElement('span');label.className='lesson-open-label';
+  label.textContent=open.textContent.replace(/\s*→\s*$/,'').trim();
+  open.replaceChildren(label);
+  open.insertAdjacentHTML('beforeend','<svg class="lesson-open-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+ }
+ const cover=el.querySelector('.lesson-cover');
+ if(cover&&!cover.querySelector(':scope > .lesson-photo')){
+  const photo=image(url,'lesson-photo');
+  photo.width=768;photo.height=512;
+  if(i===0){photo.loading='eager';photo.fetchPriority='high'}
+  cover.prepend(photo);
+ }
  });}
 function enhanceModes(){document.querySelectorAll('.mode-card').forEach((el,i)=>{
  back(el,MODES[i%MODES.length]);if(!el.querySelector(':scope > .tile-photo'))el.appendChild(image(MODES[i%MODES.length],'tile-photo'));
