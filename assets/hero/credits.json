@@ -1,47 +1,47 @@
 [
   {
-    "name": "ekholmen",
-    "title": "Ekholmen Karlskrona.jpg",
-    "author": "Eric Luth (WMSE)",
-    "source": "https://commons.wikimedia.org/wiki/File:Ekholmen_Karlskrona.jpg",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "changes": "Resized and converted to WebP; displayed with responsive cropping. Same image license applies to both WebP sizes."
+    "name": "stortorget-evening",
+    "title": "Karlskrona main square Dec 2008.jpg",
+    "author": "Magnus Bäck",
+    "source": "https://commons.wikimedia.org/wiki/File:Karlskrona_main_square_Dec_2008.jpg",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "changes": "Resized to 800/1600 px and converted to WebP. Displayed with responsive cropping and a warm, low-contrast CSS treatment; the photographic scene is unchanged. Original image license retained."
   },
   {
-    "name": "brandaholm",
-    "title": "Brändaholm.jpg",
-    "author": "Klaus Schaedler",
-    "source": "https://commons.wikimedia.org/wiki/File:Br%C3%A4ndaholm.jpg",
+    "name": "marinmuseum-soft",
+    "title": "Karlskrona.jpg",
+    "author": "guldfisken from Russia",
+    "source": "https://commons.wikimedia.org/wiki/File:Karlskrona.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "changes": "Resized to 800/1600 px and converted to WebP. Displayed with responsive cropping and a warm, low-contrast CSS treatment; the photographic scene is unchanged. Original image license retained."
+  },
+  {
+    "name": "stortorget-pastel",
+    "title": "Karlskrona kamienica Stortorget 10 2.jpg",
+    "author": "Andrzej Otrębski",
+    "source": "https://commons.wikimedia.org/wiki/File:Karlskrona_kamienica_Stortorget_10_2.jpg",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "changes": "Resized and converted to WebP; displayed with responsive cropping. Same image license applies to both WebP sizes."
+    "changes": "Resized to 800/1600 px and converted to WebP. Displayed with responsive cropping and a warm, low-contrast CSS treatment; the photographic scene is unchanged. Original image license retained."
   },
   {
-    "name": "stumholmen",
-    "title": "Stumholmen, Karlskrona (by Pudelek).jpg",
-    "author": "Pudelek",
-    "source": "https://commons.wikimedia.org/wiki/File:Stumholmen,_Karlskrona_(by_Pudelek).jpg",
+    "name": "karlskrona-autumn",
+    "title": "Autumn in sweden.jpg",
+    "author": "Rajnandaphotography",
+    "source": "https://commons.wikimedia.org/wiki/File:Autumn_in_sweden.jpg",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "changes": "Resized and converted to WebP; displayed with responsive cropping. Same image license applies to both WebP sizes."
+    "changes": "Resized to 800/1600 px and converted to WebP. Displayed with responsive cropping and a warm, low-contrast CSS treatment; the photographic scene is unchanged. Original image license retained."
   },
   {
-    "name": "stakholmen",
-    "title": "Stakholmen, Karlskrona.jpg",
-    "author": "Jiří Komárek",
-    "source": "https://commons.wikimedia.org/wiki/File:Stakholmen,_Karlskrona.jpg",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "changes": "Resized and converted to WebP; displayed with responsive cropping. Same image license applies to both WebP sizes."
-  },
-  {
-    "name": "fiskbron",
-    "title": "Fiskbron - Karlskrona.JPG",
-    "author": "Boatbuilder",
-    "source": "https://commons.wikimedia.org/wiki/File:Fiskbron_-_Karlskrona.JPG",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "changes": "Resized and converted to WebP; displayed with responsive cropping. Same image license applies to both WebP sizes."
+    "name": "drotningskar-golden",
+    "title": "Drottningskärs kastell evening shore view.jpg",
+    "author": "Magnus Bäck",
+    "source": "https://commons.wikimedia.org/wiki/File:Drottningsk%C3%A4rs_kastell_evening_shore_view.jpg",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "changes": "Resized to 800/1600 px and converted to WebP. Displayed with responsive cropping and a warm, low-contrast CSS treatment; the photographic scene is unchanged. Original image license retained."
   }
 ]
