@@ -1,6 +1,13 @@
 /* Svenska Lätt Atelier: visual enhancement only. No changes to answers, persistence or authentication. */
 'use strict';
 (()=>{
+// Pending controls retain focus and their labels, but cannot submit twice.
+// Capture also covers controls inserted by later renders, including keyboard clicks.
+document.addEventListener?.('click',event=>{
+ const control=event.target.closest('button[aria-busy="true"],a.btn[aria-busy="true"]');
+ if(!control)return;
+ event.preventDefault();event.stopImmediatePropagation();
+},true);
 const pex=(id,w=620)=>`https://images.pexels.com/photos/${id}/${({159711:'books-bookstore-book-reading-159711.jpeg',34950:'pexels-photo.jpg'})[id]||('pexels-photo-'+id+'.jpeg')}?auto=compress&cs=tinysrgb&w=${w}`;
 const PH={
  hero:pex(37021546,1400),
@@ -156,7 +163,6 @@ function enhanceLessons(){document.querySelectorAll('.lesson-card').forEach((el,
   const label=document.createElement('span');label.className='lesson-open-label';
   label.textContent=open.textContent.replace(/\s*→\s*$/,'').trim();
   open.replaceChildren(label);
-  open.insertAdjacentHTML('beforeend','<svg class="lesson-open-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>');
  }
  const cover=el.querySelector('.lesson-cover');
  if(cover&&!cover.querySelector(':scope > .lesson-photo')){

@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-09",
+  "branch": "feature/learning-content-v2",
+  "scope": "Local structural, rendering-function, state-isolation and client/queue model checks; no real Supabase or confirmed browser test",
+  "results": [
+    {
+      "command": "node scripts/validate_learning_content.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "{\n  \"status\": \"PASS\",\n  \"lessons\": 50,\n  \"legacyQuestions\": 511,\n  \"legacyBelow20\": 50,\n  \"pilots\": [\n    {\n      \"lesson\": \"lesson-4\",\n      \"module\": \"presens-a-v2\",\n      \"questions\": 20,\n      \"choice\": 16,\n      \"cloze\": 4,\n      \"writing\": 2,\n      \"locales\": 4\n    }\n  ],\n  \"scope\": \"Structural checks, not independent linguistic certification\"\n}\n"
+    },
+    {
+      "command": "node tests/learning-content-v2.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 50 legacy lessons preserved, 20 tasks × 4 locales, 240 answer branches, invalid/empty answers, validator negative cases, delegated submit/edit, escaped writing drafts, no progress or XP writes\n"
+    },
+    {
+      "command": "node tests/lesson-localization.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 50 lessons A–D, 271 full rules, 261 examples, 182 reading lines; equal content in all 4 languages and rules reference\n"
+    },
+    {
+      "command": "node tests/quiz-localization.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 595 original questions, 14 modes, 4 languages, correct/incorrect feedback, option identity, drafts, sentence tokens, lesson/book/topic/review/video entry points\n"
+    },
+    {
+      "command": "node tests/quiz-rewards.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages\n"
+    },
+    {
+      "command": "node tests/quiz-session.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage\n"
+    },
+    {
+      "command": "node tests/quality.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "{\n  \"status\": \"PASS\",\n  \"words\": 1006,\n  \"lessons\": 50,\n  \"categories\": 42,\n  \"minWords\": 30,\n  \"books\": 12,\n  \"locales\": 4,\n  \"quizModes\": 14,\n  \"videoCards\": 12\n}\n"
+    },
+    {
+      "command": "node tests/boot-loading.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "✔ hung fetch and hung JSON body settle, abort and offer a safe reload (22.992042ms)\n✔ missing, malformed and empty learning content show a safe error without clearing progress (4.494791ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 32.933958\n"
+    },
+    {
+      "command": "node tests/service-worker.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation\n"
+    },
+    {
+      "command": "node tests/lesson-covers.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 50 distinct topic covers, stable IDs under reorder, WebP hashes/dimensions, 2.16 MiB total\n"
+    },
+    {
+      "command": "node --check app.js",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": ""
+    },
+    {
+      "command": "node --test tests/supabase-preparation.cjs",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "✔ empty configuration: no SDK/client/storage mutations (18.268625ms)\n✔ secret/legacy keys and foreign URL rejected before loading SDK (8.16725ms)\n✔ single pinned SDK and client; restored session stays separate from learning data (1.123041ms)\n✔ SDK unavailable is recoverable and never touches guest storage (0.875292ms)\n✔ failed session restore preserves caches and performs no progress calls (4.220375ms)\n✔ signup awaiting email confirmation does not import or replace progress (1.300459ms)\n✔ sign in/out and external events notify outside SDK callback without progress writes (9.798ms)\n✔ RPC requires expected owner and authenticated session; mismatch sends nothing (1.730625ms)\n✔ explicit RPC mapping retains IDs, payload and binds captured JWT; no retry (2.017666ms)\n✔ conflict SQLSTATE preserved and not retried (1.02725ms)\n✔ cached session user cannot relabel another users JWT (0.641541ms)\n✔ account change while RPC pending discards response; request retains original owner JWT (0.628292ms)\n✔ configured boot restores Auth independently, keeps guest state and all backups unchanged (38.657417ms)\n✔ guest boot works with absent configuration and with SDK outage (46.102708ms)\n✔ no legacy cloud requests; modules included in page, build, server and worker (4.013167ms)\n✔ implicit email callback is scrubbed before initialize and restores Auth without progress calls (0.834416ms)\n✔ PKCE callback removes code, preserves normal route and unrelated query (0.693625ms)\n✔ expired, incomplete and rejected callbacks leave no credentials and preserve guest data (1.589459ms)\n✔ signed-in state never writes or restores legacy local XP; signout restores guest only (38.990375ms)\n✔ existing signup handler shows confirmation persistently, clears password and resets loading (20.270958ms)\n✔ login form uses prepared Auth, displays safe errors and clears loading after failure (16.921667ms)\n✔ logout handler preserves identity and progress on failure and restores guest on success (16.572791ms)\n✔ without the cloud module account data stays unavailable instead of using legacy local XP (16.353708ms)\n✔ email return during SDK outage is scrubbed and reports callback failure (0.715625ms)\n✔ cloud read uses only sl_get_progress, validates and keeps a detached snapshot in memory (4.655083ms)\n✔ duplicate init, token refresh, repeated sign-in events and pending reads share one request (6.952292ms)\n✔ invalid cloud envelopes and state are rejected without storage writes (17.285125ms)\n✔ RPC failure has safe diagnostics, no automatic retries and one explicit recovery (7.167583ms)\n✔ account change discards pending old cloud data and reads new identity once (19.379917ms)\n✔ logout then login to same user reads a new snapshot; stale failure never notifies (12.681666ms)\n✔ guests and Auth outages send no progress RPC; debug API only exists on loopback HTTP (4.472292ms)\n✔ application boot automatically reads cloud once and profile renders never repeat it (21.968875ms)\n✔ automatic cloud reads preserve legacy data when local writer prechecks fail (23.153708ms)\n✔ preview compares account and cloud without reading guest or writing/calling RPC (14.664ms)\n✔ preview rejects incompatible raw local data without sanitizing or falling back to guest (15.618916ms)\n✔ preview checks content version and clears access immediately on identity changes (17.608792ms)\n✔ preview catalog version tracks actual static content and detects frozen manifest drift (52.366625ms)\n✔ HTTPS and loopback save account events without a hidden dev flag (44.704417ms)\n✔ ordinary loopback HTTP saves known and favorites without touching legacy flags or guest data (68.146875ms)\n✔ mark known and favorite add/remove publish server results; client sends no XP (23.030333ms)\n✔ lost ACK retries immutable event and UUID without a second XP award (22.946583ms)\n✔ offline queue survives reload and preserves account, guest and backup bytes (16.455833ms)\n✔ logout prevents sending; a different account never drains the first account queue; relogin resumes (18.726292ms)\n✔ revision conflict rebases mark_known with the same event UUID/body (15.496042ms)\n✔ favorite revision conflict stops stale intent until explicit acknowledgement and a new UI intent (16.634708ms)\n✔ two tabs share a lock and send each durable intent only once (16.143833ms)\n✔ local unsynced progress, changed baseline and content mismatch block without erasing data (48.040833ms)\n✔ missing IndexedDB or Web Locks fails closed and queues no mutation (28.098959ms)\n✔ UI handlers enqueue supported actions without local XP and block other account mutations (28.892916ms)\n✔ multiple offline intents retain order and immutable bodies across recovery (17.082083ms)\n✔ queue write failure sends nothing and existing event records are never cleared (15.3415ms)\n✔ reload while offline resumes existing queue on the online event after the initial read failed (16.791333ms)\n✔ debug export has queue and version without a session or dev flag (0.794959ms)\n✔ legacy development flags cannot disable local saving; diagnostics preserve pending data (18.586375ms)\n✔ inspection of absent, inaccessible or unsupported IDB never opens or creates a database (1.782875ms)\n✔ inspection hides other accounts and signed-out rows without enabling writes (15.875917ms)\n✔ IDB inspection reports blocked opens and aborts a disappeared database upgrade (1.56875ms)\n✔ account change during diagnostic IDB read hides the captured account events (15.572375ms)\n✔ repeated learned clicks and concurrent pending intents produce one durable mark_known (17.489292ms)\n✔ activity feedback exposes pending state, reports success only after ACK, and stays account scoped (24.129292ms)\n✔ dictionary and flashcard know actions share IDs and server XP, while repeat stays separate (19.264042ms)\n✔ guest known actions remain local and award XP once per word (2.621708ms)\n✔ explicit retry of a rejected event retains its original UUID and body (15.954291ms)\n✔ accepting current favorites retains cancelled conflict and requires a new explicit favorite intent (16.826167ms)\n✔ new word actions stay gated until the server explicitly advertises capabilities (15.285833ms)\n✔ known toggle removes the mark without confirmation, retains XP across reload and relogin (22.80575ms)\n✔ offline unmark and lost ACK preserve UUID and award history, then recover on reload (20.164042ms)\n✔ word status revision conflicts never silently overwrite a newer decision (19.523292ms)\n✔ existing review_grade events retain SRS semantics without clearing known or adding XP (17.63475ms)\n✔ guest unmark preserves history, favorites and XP after saving and rereading (2.6965ms)\n✔ learned, favorites, search, group and category filters have explicit scopes and reliable resets (22.276958ms)\n✔ a stale UI identity cannot send an unmark to the previous account (34.963208ms)\n✔ automatic SRS words cannot start manual review when manual queue is unavailable (16.682ms)\n✔ pending new events remain durable and unsent if server support is withdrawn (18.852709ms)\n✔ study RPC adapters bind all four operations to verified owner, preserve UUID and do not retry (1.026709ms)\n✔ study RPC refuses guest and mismatched account before any network mutation (0.994416ms)\n✔ in-flight study response is discarded when account changes (0.531375ms)\n✔ hung progress read times out, leaves stored progress intact and ignores a late response (12.168166ms)\n✔ HTTPS profile restores Supabase XP after reload and relogin, without importing legacy or guest data (47.981708ms)\n✔ profile SFI A → B → C → D uses settings patches, survives reload/relogin and preserves all learning fields (27.914166ms)\n✔ settings failure publishes no success; lost ACK retry retains UUID and avoids a second mutation (15.064041ms)\n✔ email change uses official Auth API, keeps pending email separate and refreshes confirmation without resetting identity (0.753083ms)\n✔ email validation, duplicate, rate limit, offline and expired session do not replace confirmed email (0.794584ms)\n✔ settings revision conflict retries the same intent; refresh receives another device level (15.203125ms)\n✔ account lesson completes real questions with mistakes, exact XP, retry reward once, reload and relogin (98.175875ms)\n✔ all 14 account modes, every topic, book and video use real content and supported session events (2938.419708ms)\n✔ offline answers and lost ACK survive reload; same answer UUID cannot award twice (58.717375ms)\n✔ storage failure retains answer intent, concurrent clicks enqueue one answer, abandoning preserves XP (56.35275ms)\n✔ stalled session RPC releases the writer lock and retries the original event after timeout (97.528583ms)\n✔ identity change during a quiz submission cannot update or unlock the next account exercise (35.402791ms)\n✔ lost finish ACK retries the same UUID and shows its original one-time reward receipt (66.419708ms)\n✔ quiz writes remain gated against pre-010 servers (22.991791ms)\nℹ tests 92\nℹ suites 0\nℹ pass 92\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 4852.188167\n"
+    },
+    {
+      "command": "python3 scripts/check_supabase_manifest.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: 202611090017_learning_content_manifest.sql: static-1750f0ad07cce4c4; all IDs/categories/question counts match migration 002\n"
+    },
+    {
+      "command": "python3 tests/learning-content-manifest-v2.py",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": "PASS: unapplied SQL changes only manifest version; signature, security mode, IDs/counts and client version match; no database connection\n"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "status": "PASS",
+      "output": ""
+    }
+  ]
+}

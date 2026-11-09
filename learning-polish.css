@@ -1,27 +1,15 @@
 /* v11: intentionally small, targeted styling layered on the approved v10 layout. */
 :root { --flash-square: min(100%, 338px); }
 /* Consistent pronunciation controls, with a centered vector icon. */
-#page button[data-action="speak"]:not(.number-item) {
- display:inline-flex!important; align-items:center!important; justify-content:center!important;
- gap:8px!important; padding:10px 14px!important; line-height:1.25!important;
- background:#eee9fc!important; color:#5b428f!important; border:1px solid #dcd2f3!important;
- border-radius:12px!important; box-shadow:0 2px 5px #5b428f0a!important;
- transition:background .18s ease,border-color .18s ease,box-shadow .18s ease;
-}
-#page button[data-action="speak"]:not(.number-item):hover:not(:disabled) {
- background:#e2d8f8!important; border-color:#bfa9e6!important; box-shadow:0 3px 8px #5b428f18!important;
-}
-#page button[data-action="speak"]:not(.number-item):active:not(:disabled) { background:#d6c7f1!important; }
-#page button[data-action="speak"]:focus-visible { outline:3px solid #9476c9!important; outline-offset:3px; }
 #page button[data-action="speak"].speak-icon-only {
- width:36px!important; height:36px!important; min-width:36px!important; padding:0!important; flex-shrink:0;
+ width:44px!important; height:44px!important; min-width:44px!important; padding:0!important; flex-shrink:0;
 }
 #page button[data-action="speak"] .speak-icon { display:block; width:20px; height:20px; flex:0 0 20px; pointer-events:none; }
 #page .example-item { min-height:62px!important; padding-right:62px!important; }
 #page .example-item button[data-action="speak"] {
  position:absolute!important; right:12px!important; top:50%!important;
  transform:translateY(-50%)!important; margin:0!important;
- width:36px!important; height:36px!important; min-width:36px!important; padding:0!important;
+ width:44px!important; height:44px!important; min-width:44px!important; padding:0!important;
 }
 /* Keep rule markers aligned with the first line and reserve space for them. */
 #page .rule-list li {
@@ -123,7 +111,7 @@
 .word-info { grid-column:2!important; grid-row:1!important; align-self:center!important; min-width:0!important; }
 .words-grid .word-info strong,.words-grid .word-info small { white-space:normal; overflow-wrap:anywhere; }
 .word-actions { grid-column:3!important; grid-row:1!important; flex-direction:row!important; justify-content:flex-end!important; align-items:center!important; gap:7px!important; }
-.word-actions button { width:34px!important; height:34px!important; min-width:34px!important; border-radius:11px!important; }
+.word-actions button { width:44px!important; height:44px!important; min-width:44px!important; border-radius:11px!important; }
 /* Two-to-four week consecutive calendar; future days show their dates without false checkins. */
 .daily-bar { display:grid!important; grid-template-columns:repeat(7,minmax(0,1fr))!important; gap:7px!important; max-width:none!important; overflow:visible!important; padding:6px 0!important; }
 .daily-bar .day-col { min-width:0!important; max-width:none!important; width:auto!important; flex:initial!important; }
@@ -201,7 +189,7 @@
 .word-panel .word-forms dd{margin:14px 0 0;color:var(--word-ink);font-size:19px;font-weight:800;line-height:1.35;overflow-wrap:anywhere}
 .word-panel .tense-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px;align-items:stretch}
 .word-panel .tense-item{
- position:relative;display:grid;grid-template-columns:minmax(0,1fr) 40px;grid-template-rows:auto auto 1fr auto;
+ position:relative;display:grid;grid-template-columns:minmax(0,1fr) 44px;grid-template-rows:auto auto 1fr auto;
  align-items:start;gap:5px 10px;padding:18px!important;
  border:1px solid #e7e3f3!important;border-radius:17px!important;background:#fcfbff!important;
 }
@@ -211,18 +199,17 @@
 .word-panel .tense-formula{grid-column:1/-1;grid-row:4;margin-top:9px;padding-top:10px;border-top:1px solid #ece9f5;color:#8b7da9;font-size:10px;line-height:1.5;letter-spacing:.15px}
 .word-panel .tense-item .circle-btn{grid-row:1/3;grid-column:2;align-self:center}
 .word-panel .tense-item>.speech-speed{grid-column:1/-1;grid-row:5;min-width:0}
-#page .word-panel button[data-action="speak"].speak-icon-only{width:40px!important;height:40px!important;min-width:40px!important;padding:0!important}
-.word-panel .circle-btn{display:inline-flex;align-items:center;justify-content:center;flex:0 0 40px;width:40px;height:40px;min-height:40px;padding:0;border:1px solid #dfd5f4!important;border-radius:12px!important;background:#eee8fa!important;color:#7357ac!important;box-shadow:none;transition:background .15s,transform .15s}
+.word-panel .circle-btn{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:0;border:1px solid #dfd5f4!important;border-radius:12px!important;background:#eee8fa!important;color:#7357ac!important;box-shadow:none;transition:background .15s,transform .15s}
 .word-panel .circle-btn:hover{background:#e4daf6!important;transform:translateY(-1px)}
-.word-panel .word-examples{display:flex;align-items:stretch;gap:12px;max-width:100%;margin-top:32px;padding-bottom:6px;overflow-x:auto}
-.word-panel .word-example{flex:0 0 auto;width:max-content;box-sizing:border-box;padding:18px 16px;border:1px solid #d9eae4;border-radius:19px;background:#f1f8f5}
+.word-panel .word-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));align-items:stretch;gap:12px;max-width:100%;margin-top:32px;padding-bottom:6px}
+.word-panel .word-example{min-width:0;width:auto;box-sizing:border-box;padding:18px 16px;border:1px solid #d9eae4;border-radius:19px;background:#f1f8f5}
 .word-panel .word-example .word-section-heading{margin-bottom:18px}
 .word-panel .word-example .word-section-number{background:#e1eee8;color:#679386}
 .word-panel .word-example .word-section-heading h2{color:#4c786e;font-size:14px;letter-spacing:0}
 .word-panel .word-example-content{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .word-panel .word-example-content>div{min-width:0;flex:1}
-.word-panel .word-example-text{margin:0;color:#2b5b52;font-size:17px;line-height:1.65;font-weight:700;white-space:nowrap;overflow-wrap:normal}
-.word-panel .word-example-translation{margin:6px 0 0;color:#7c928d;font-size:13px;line-height:1.6;white-space:nowrap}
+.word-panel .word-example-text{margin:0;color:#2b5b52;font-size:17px;line-height:1.65;font-weight:700;white-space:normal;overflow-wrap:anywhere}
+.word-panel .word-example-translation{margin:6px 0 0;color:#7c928d;font-size:13px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
 .word-panel .word-example-content>.speech-speed{flex-basis:100%}
 .word-panel .word-example-content:has(>.speech-speed){flex-wrap:wrap}
 .word-panel-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;margin-top:28px;padding-top:22px;border-top:1px solid #edf0f6}
@@ -462,7 +449,7 @@ input.form-input:focus,input.search-input:focus,input#quiz-text-input:focus,.edi
 .words-grid .word-visual{grid-column:1!important;grid-row:1!important}
 .words-grid .word-info{grid-column:2!important;grid-row:1!important;align-self:center!important}
 .words-grid .word-actions{grid-column:1 / -1!important;grid-row:2!important;display:flex!important;justify-content:flex-start!important;align-items:center!important;flex-wrap:wrap;gap:7px!important;min-width:0}
-.words-grid .word-actions button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px!important;min-width:34px!important;height:36px!important;margin:0!important;padding:0!important;white-space:nowrap!important;overflow-wrap:normal;word-break:normal;line-height:1.2!important}
+.words-grid .word-actions button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px!important;min-width:44px!important;height:44px!important;margin:0!important;padding:0!important;white-space:nowrap!important;overflow-wrap:normal;word-break:normal;line-height:1.2!important}
 .words-grid .word-actions .manual-review-add,.words-grid .word-actions .word-known-toggle{flex:0 0 auto;width:auto!important;min-width:82px!important;gap:5px;padding:0 10px!important;font-size:12px!important}
 .words-grid .word-actions .manual-review-add{min-width:112px!important}
 .words-grid .word-actions [data-action="mark-known"],[data-action="mark-known"],[data-action="flash-grade"][data-value="1"]{background:#fbe8e6!important;border-color:#edc2bc!important;color:#a4433c!important}
@@ -589,3 +576,613 @@ button.mobile-brand{padding:0}
 @media(max-width:1199px){#page .video-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px}}
 @media(max-width:620px){#page .video-grid{grid-template-columns:minmax(0,1fr)!important;gap:18px}#page .video-card-unified h3{min-height:0}#page .video-description{min-height:0}#page .video-card-unified .btn{min-height:48px!important}.video-quiz-note{min-height:0}}
 @media(prefers-reduced-motion:reduce){#page .video-card-unified,.video-preview img{transition:none}#page .video-card-unified:hover,.video-card-unified:hover .video-preview img{transform:none}}
+
+/* Svenska Lätt — Swedish storybook theme.
+ * Keep this final: the three legacy sheets contain !important declarations.
+ * Visual properties only; existing content, layout controllers and state remain authoritative.
+ * Kept in the existing offline shell stylesheet so no PWA changes are needed.
+ */
+:root {
+ --color-primary:#2b5d7e;
+ --color-secondary:#d6a43a;
+ --color-accent:#b85c5c;
+ --color-surface:#fff9f1;
+ --color-surface-alt:#f6f0e6;
+ --color-bg:#f3eee5;
+ --color-text:#24313a;
+ --color-text-soft:#59656b;
+ --color-border:#dcd4c6;
+ --color-success:#6e8b6b;
+ --color-warning:#d6a43a;
+ --color-peach:#e6b9a1;
+ --color-on-primary:#fff9f1;
+ --color-primary-hover:#234e6a;
+ --color-primary-active:#1c4058;
+ --color-primary-soft:#e7eef2;
+ --color-accent-soft:#f4e6e2;
+ --color-accent-ink:#914343;
+ --color-success-soft:#e8eee3;
+ --color-success-ink:#405e40;
+ --color-warning-soft:#f7edcf;
+ --color-warning-ink:#755516;
+ --color-peach-soft:#f6e9de;
+ --color-border-strong:#938b7b;
+ --radius-card:20px;
+ --radius-panel:24px;
+ --radius-control:12px;
+ --radius-small:10px;
+ --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;
+ --shadow-card:0 3px 12px rgb(62 51 35 / 4%);
+ --shadow-hover:0 7px 20px rgb(62 51 35 / 9%);
+ --shadow-dialog:0 20px 60px rgb(36 49 58 / 18%);
+ --focus-ring:0 0 0 3px rgb(43 93 126 / 16%);
+ /* Compatibility aliases: existing components now resolve to the same palette. */
+ --purple:var(--color-primary);--blue:var(--color-primary);--pink:var(--color-accent);
+ --mint:var(--color-success);--yellow:var(--color-secondary);--sun:var(--color-secondary);
+ --dark:var(--color-text);--ink:var(--color-text);--ink2:var(--color-text-soft);
+ --muted:var(--color-text-soft);--bg:var(--color-bg);--paper:var(--color-surface-alt);
+ --white:var(--color-surface);--panel:var(--color-surface);--line:var(--color-border);--edge:var(--color-border);
+ --radius:var(--radius-card);--r-small:var(--radius-control);
+ --shadow:var(--shadow-card);--soft:var(--shadow-card);--lift:var(--shadow-dialog);
+ --card-border:var(--color-border);--card-shadow:var(--shadow-card);
+ --studio-ink:var(--color-text);--studio-inksoft:var(--color-text-soft);
+ --studio-paper:var(--color-surface);--studio-sky:var(--color-primary-soft);
+ --studio-sea:var(--color-primary);--studio-forest:var(--color-success-ink);
+ --studio-shadow:var(--shadow-card);--studio-radius:var(--radius-card);
+}
+body,body:has(.reference-page) {
+ background:var(--color-bg)!important;color:var(--color-text)!important;
+ font-family:'Nunito',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;
+}
+h1,h2,h3,h4,.brand strong,.mobile-brand strong {color:var(--color-text)}
+h1,h2,h3 {font-weight:800;letter-spacing:-.025em}
+.page-heading p,.section-head p,.action-card p,.mode-card small,.course-tile p,
+.word-info small,.video-description,.book-content p,.reader-sub,.flash-counter,
+.flash-card-caption,.speech-speed label,.profile-settings .settings-label,
+.profile-settings .email-current b,.logo-credit {color:var(--color-text-soft)!important}
+.page-heading,.section-head,.lesson-foot,.word-info,.book-content,.video-content {min-width:0}
+.page-heading h1,.section-head h2,.lesson-body h3,.book-content h3 {overflow-wrap:anywhere}
+
+/* Quiet, continuous navigation surfaces. Icons and the flag are left intact. */
+.sidebar,.topbar,.mobile-nav {
+ background:var(--color-surface)!important;border-color:var(--color-border)!important;
+ backdrop-filter:none!important;box-shadow:none!important;
+}
+.sidebar .brand,.mobile-brand {background:transparent!important}
+.brand small,.side-label,.account-button small {color:var(--color-text-soft)!important}
+.side-separator {background:var(--color-border)}
+.nav-link {color:var(--color-text-soft);border-radius:var(--radius-control)!important}
+.nav-link:hover {background:var(--color-surface-alt)!important;color:var(--color-primary)!important;border-color:var(--color-border)!important}
+.sidebar .nav-link.active,.mobile-nav button.active {
+ background:var(--color-primary-soft)!important;color:var(--color-primary)!important;
+ border-color:transparent!important;box-shadow:inset 3px 0 var(--color-primary)!important;
+}
+.mascot {background:var(--color-warning-soft)!important;border-color:var(--color-border)!important;color:var(--color-warning-ink)}
+.account-button,.hamburger,.drawer-close,.avatar {
+ background:var(--color-surface)!important;color:var(--color-primary)!important;
+ border-color:var(--color-border)!important;box-shadow:none!important;
+}
+#menu-toggle.hamburger {background:var(--color-surface)!important;color:var(--color-primary);border-color:var(--color-border);box-shadow:none}
+#menu-toggle.hamburger:hover {border-color:var(--color-primary);box-shadow:none}
+#menu-toggle.hamburger:active {background:var(--color-primary-soft)!important;box-shadow:none}
+.streak-pill,.xp-pill {background:var(--color-warning-soft)!important;color:var(--color-warning-ink)!important;border-color:var(--color-border)!important;box-shadow:none!important}
+.xp-pill {background:var(--color-primary-soft)!important;color:var(--color-primary)!important}
+.topbar .search-wrap {background:var(--color-surface-alt)!important;border-color:var(--color-border)!important;box-shadow:none!important;border-radius:var(--radius-control)!important}
+.topbar .search-wrap:focus-within {background:var(--color-surface)!important;border-color:var(--color-primary)!important;box-shadow:var(--focus-ring)!important}
+.topbar #global-search,.topbar #global-search:focus {color:var(--color-text)!important}
+.search-results,.select-menu {background:var(--color-surface)!important;border-color:var(--color-border)!important;box-shadow:var(--shadow-dialog)!important}
+.search-result {background:var(--color-surface);border-color:var(--color-border)}
+.search-result:hover {background:var(--color-primary-soft)}
+.search-result strong {color:var(--color-text)}
+.search-result small {color:var(--color-text-soft)}
+
+/* A flat blue cover and an arched window onto the existing Stockholm photo. */
+.hero {
+ background:var(--color-primary)!important;border:1px solid var(--color-primary)!important;
+ border-radius:var(--radius-panel)!important;box-shadow:var(--shadow-card)!important;
+ padding:clamp(24px,3.5vw,44px)!important;min-height:320px!important;
+}
+.hero .hero-copy {width:62%!important;max-width:620px!important}
+.hero .hero-copy h1 {font-size:clamp(30px,3.2vw,46px)!important;line-height:1.16!important;letter-spacing:-.035em!important;color:var(--color-on-primary)!important}
+.hero .hero-copy p {color:var(--color-on-primary)!important;font-weight:500}
+.hero::after {
+ content:""!important;position:absolute;z-index:0;inset:28px 28px 28px auto;
+ width:30%;height:auto;border-radius:140px 140px 16px 16px;
+ background:var(--hero-photo,none) center/cover no-repeat,var(--color-surface-alt)!important;
+ border:6px solid var(--color-surface);box-shadow:none;pointer-events:none;
+}
+.hero .eyebrow {background:var(--color-warning-soft)!important;color:var(--color-warning-ink)!important;border-color:transparent!important;backdrop-filter:none}
+
+/* Shared card geometry. Layout and image semantics stay with the existing components. */
+.action-card,.topic-card,.course-tile,.lesson-card,.word-row,.mode-card,.book-card,
+.video-card,.cheat-card,.number-item,.stat-card,.content-panel,.profile-person,
+.profile-level,.profile-edit,.auth-teaser,.rank-panel,.quiz-card,.roadmap-step,
+.rule-card,.horizontal-card,.practice-instructions,.reference-card,.reference-feature {
+ background:var(--color-surface)!important;border-color:var(--color-border)!important;
+ border-radius:var(--radius-card)!important;box-shadow:var(--shadow-card)!important;
+}
+.content-panel,.quiz-card {border-radius:var(--radius-panel)!important}
+.photo-bg,.topic-grid.premium-topics .photo-bg {
+ background:var(--card-tint,var(--color-surface))!important;filter:none;opacity:1;
+}
+.tile-photo {border-color:var(--color-surface)!important;box-shadow:var(--shadow-card)!important}
+.tile-fallback,.word-fallback {background:var(--color-primary-soft)!important;color:var(--color-primary)!important;box-shadow:none!important}
+.action-card {--card-tint:var(--color-primary-soft);aspect-ratio:auto!important;min-height:174px!important;gap:var(--space-2)!important;padding:var(--space-4)!important}
+.action-card h3 {color:var(--color-text)!important;line-height:1.3!important}
+.action-card p {line-height:1.45!important}
+.topic-card {--card-tint:var(--color-success-soft);min-height:174px!important;aspect-ratio:auto!important;gap:var(--space-2)!important;padding:var(--space-4)!important}
+.action-card .photo-bg,.topic-card .photo-bg,.course-tile .photo-bg {background:var(--card-tint,var(--color-surface))!important}
+.course-tile {--card-tint:var(--color-success-soft);min-height:176px!important;max-height:none!important;padding:var(--space-4)!important;gap:var(--space-2)!important}
+.course-tile[data-level=B] {--card-tint:var(--color-primary-soft)}
+.course-tile[data-level=C] {--card-tint:var(--color-warning-soft)}
+.course-tile[data-level=D] {--card-tint:var(--color-accent-soft)}
+.course-tile .letter {color:var(--color-primary)!important;background:var(--color-surface)!important}
+.course-tile[data-level=A] .letter {color:var(--color-success-ink)!important}
+.course-tile[data-level=C] .letter {color:var(--color-warning-ink)!important}
+.course-tile[data-level=D] .letter {color:var(--color-accent-ink)!important}
+.stats-grid {display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-3)!important}
+.stats-grid .stat-card {width:auto;min-height:84px!important;padding:var(--space-4)!important;border-radius:var(--radius-card)!important}
+.stat-icon.purple {background:var(--color-primary-soft)}
+.stat-icon.orange {background:var(--color-warning-soft)}
+.stat-icon.mint {background:var(--color-success-soft)}
+.stat-icon.pink {background:var(--color-accent-soft)}
+.lessons-grid,.practice-modes,.book-grid {gap:var(--space-4)!important;align-items:stretch}
+.lesson-body,.book-content {padding:var(--space-4)!important}
+.lesson-cover {background:var(--color-surface-alt)!important;border-radius:19px 19px 0 0!important}
+.lesson-cover small {background:var(--color-surface)!important;color:var(--color-text)!important}
+.lesson-body p {line-height:1.6!important}
+.mode-card {--card-tint:var(--color-primary-soft)}
+.word-row:nth-child(n) {--word-tint:var(--color-surface);--word-edge:var(--color-border);background:var(--color-surface)!important;border-color:var(--color-border)!important;border-radius:var(--radius-card)!important;box-shadow:var(--shadow-card)!important}
+.word-info strong,.video-card-unified h3 {color:var(--color-text)!important}
+.book-cover,.video-preview {background:var(--color-surface-alt)!important}
+.book-cover::after {background:none}
+.video-provider {background:var(--color-surface);color:var(--color-text)}
+.play-mark {background:var(--color-surface)!important;color:var(--color-primary)!important;box-shadow:var(--shadow-card)}
+#page .video-content {padding:var(--space-4) var(--space-2) var(--space-2)}
+#page .video-grid {gap:var(--space-4)!important}
+
+/* Non-interactive labels retain the surface vocabulary. Controls live in the
+   semantic button system below, after all legacy component styling. */
+.chip,.word-panel .chip,.eyebrow,.study-steps span {
+ background:var(--color-surface-alt)!important;color:var(--color-text-soft)!important;
+ border-color:var(--color-border)!important;box-shadow:none!important;
+}
+
+/* Form fields and custom popovers share their surface, borders and focus. */
+input:not([type=checkbox]):not([type=radio]),select,textarea,button.custom-select,
+.book-reader .reader-playback .speech-speed select,.book-reader .reader-playback .speech-speed .custom-select,
+.form-select,.form-input,.search-input,.edit-inline input {
+ background-color:var(--color-surface)!important;color:var(--color-text)!important;
+ border-color:var(--color-border-strong)!important;border-radius:var(--radius-control)!important;
+ box-shadow:none!important;
+}
+input::placeholder,textarea::placeholder {color:var(--color-text-soft);opacity:1}
+input:not([type=checkbox]):not([type=radio]):focus,select:focus,textarea:focus,
+button.custom-select[aria-expanded=true] {border-color:var(--color-primary)!important;box-shadow:var(--focus-ring)!important}
+button.custom-select:hover {border-color:var(--color-primary)!important}
+button.custom-select::after {border-color:var(--color-primary)}
+.select-menu-option {color:var(--color-text)}
+.select-menu-option.is-active {background:var(--color-surface-alt)}
+.select-menu-option[aria-selected=true] {color:var(--color-primary);background:var(--color-primary-soft)}
+.select-menu-option[aria-selected=true]::after {border-color:var(--color-primary)}
+input[type=checkbox],input[type=radio] {accent-color:var(--color-primary)}
+.study-toggle input[type=checkbox] {border-color:var(--color-border-strong);background-color:var(--color-surface)}
+.study-toggle input[type=checkbox]:checked {border-color:var(--color-primary);background-color:var(--color-primary)}
+
+/* Progress and feedback: calm colours with darker, readable state labels. */
+.home-rank,.rank-panel,.profile-level,.profile-person {background:var(--color-surface)!important;border-color:var(--color-border)!important;box-shadow:var(--shadow-card)!important}
+.home-rank {border-radius:var(--radius-card)!important}
+.home-rank span,.rank-panel span {color:var(--color-primary)}
+.progress-track,.mini-progress,.course-tile .mini-progress,.home-rank .progress-track,.rank-panel .progress-track {background:var(--color-border)!important}
+.progress-fill,.course-tile .mini-progress i,.home-rank .progress-fill,.rank-panel .progress-fill {background:var(--color-primary)!important;box-shadow:none}
+.day-square {background:var(--color-surface)!important;border-color:var(--color-border)!important;box-shadow:none!important}
+.daily-bar .day-square.upcoming {background:var(--color-surface-alt)!important;opacity:1;color:var(--color-text-soft)}
+.day-square strong,.day-square span {color:var(--color-text-soft)!important}
+.day-square.done {background:var(--color-success-soft)!important;border-color:var(--color-success)!important}
+.day-square.done strong,.day-square.done span {color:var(--color-success-ink)!important}
+.day-square.done::after {color:var(--color-success-ink)}
+.daily-bar .day-square.today {border-color:var(--color-primary)!important;box-shadow:none!important}
+body[data-sfi-level=A] {--level-accent:var(--color-success-ink);--level-glow:var(--color-success-soft)}
+body[data-sfi-level=B] {--level-accent:var(--color-primary);--level-glow:var(--color-primary-soft)}
+body[data-sfi-level=C] {--level-accent:var(--color-warning-ink);--level-glow:var(--color-warning-soft)}
+body[data-sfi-level=D] {--level-accent:var(--color-accent-ink);--level-glow:var(--color-accent-soft)}
+body[data-sfi-level] .roadmap-step.active {background:var(--level-glow)!important;border-color:var(--level-accent)!important;box-shadow:none!important}
+body[data-sfi-level] .sidebar .nav-link[data-nav="lessons"],body[data-sfi-level] .streak-pill {box-shadow:none!important}
+.notice,.practice-instructions,.lesson-hero,.topic-banner {background:var(--color-primary-soft)!important;color:var(--color-text)!important;border-color:var(--color-border)!important;box-shadow:var(--shadow-card)!important}
+.topic-banner h1,.topic-banner p {color:var(--color-text)!important}
+.notice b {color:var(--color-primary)}
+.rule-list li,.example-item,.reading-line,.rule-details,.number-item,.word-panel .word-forms>div,
+.word-panel .tense-item,.word-forms>div,.tense-item {
+ background:var(--color-surface-alt)!important;border-color:var(--color-border)!important;box-shadow:none!important;
+}
+.rule-list li::before,.number-item strong,.number-item small {color:var(--color-primary)!important}
+.number-item:hover {background:var(--color-primary-soft)!important}
+.quiz-option,.quiz-word {background:var(--color-surface-alt);color:var(--color-text);border-color:var(--color-border-strong);border-radius:var(--radius-control)!important;box-shadow:none}
+.quiz-option:not(:disabled):hover {background:var(--color-primary-soft);border-color:var(--color-primary)}
+.quiz-option.correct,.quiz-feedback.success {background:var(--color-success-soft)!important;border-color:var(--color-success)!important;color:var(--color-success-ink)!important}
+.quiz-option.wrong,.quiz-feedback.failure {background:var(--color-accent-soft)!important;border-color:var(--color-accent)!important;color:var(--color-accent-ink)!important}
+.quiz-feedback {background:var(--color-primary-soft);color:var(--color-text);border-radius:var(--radius-control)}
+.quiz-count,.quiz-finished .score {color:var(--color-primary)}
+.quiz-word {color:var(--color-primary)}
+.done-chip,.lessons-grid .lesson-card .lesson-foot .done-chip,
+#page .words-grid .word-known-toggle.is-learned,#page [data-action="mark-known"].is-learned,
+#page [data-action="flash-grade"][data-value="1"].is-learned,
+.book-reader .reader-toolbar .reader-read.is-read,#page .video-watch-toggle[aria-pressed=true],
+#page .video-card-unified .mini-recommended {
+ background:var(--color-success-soft)!important;border-color:var(--color-success)!important;color:var(--color-success-ink)!important;
+}
+#page .circle-btn.selected,#page .word-panel .word-detail-tools .is-favorite {background:var(--color-warning-soft)!important;border-color:var(--color-secondary)!important;color:var(--color-warning-ink)!important}
+.video-progress {border-color:var(--color-border)}
+#page .video-watch-toggle {background:var(--color-surface-alt);color:var(--color-text-soft);border-radius:var(--radius-control)}
+.video-completion,.video-save-scope,.video-quiz-note {color:var(--color-text-soft)}
+.video-completion.is-passed {color:var(--color-success-ink)}
+
+/* Dictionary details, reading and reference sheets belong to the same family. */
+.content-panel.word-panel {--word-ink:var(--color-text);--word-muted:var(--color-text-soft);--word-accent:var(--color-primary);--word-line:var(--color-border);background:var(--color-surface)!important;border-radius:var(--radius-panel)!important}
+.word-panel .word-detail {background:var(--color-surface-alt);border-color:var(--color-border);border-radius:var(--radius-card);box-shadow:none}
+.word-panel #word-title,.word-panel .word-meaning,.word-panel .tense-item strong {color:var(--color-text)}
+.word-panel .word-forms dt,.word-panel .word-forms dt small,.word-panel .tense-hint,
+.word-panel .tense-formula,.word-panel .word-example-translation {color:var(--color-text-soft)}
+.word-panel .tense-formula,.word-panel-actions {border-color:var(--color-border)}
+.word-panel .word-section-number {background:var(--color-primary-soft);color:var(--color-primary)}
+.word-panel .word-example {background:var(--color-success-soft);border-color:var(--color-border);border-radius:var(--radius-card)}
+.word-panel .word-example .word-section-heading h2,.word-panel .word-example-text {color:var(--color-success-ink)}
+.word-panel .word-example .word-section-number {background:var(--color-surface);color:var(--color-success-ink)}
+.book-reader .reader-kicker,.book-reader .reader-toolbar {background:var(--color-surface-alt);border-color:var(--color-border);color:var(--color-text-soft);box-shadow:none}
+.book-reader .reader-heading h1 {color:var(--color-text)}
+.reference-page {--ref-ink:var(--color-text);--ref-muted:var(--color-text-soft);--ref-accent:var(--color-primary);--ref-blue:var(--color-primary);--ref-line:var(--color-border)}
+.reference-nav {border-color:var(--color-border)}
+.reference-nav button {border-radius:var(--radius-small);color:var(--color-text-soft)}
+.reference-nav button:hover,.reference-page .reference-nav button[aria-current],.reference-feature-footer button {background:var(--color-primary);color:var(--color-on-primary)}
+.reference-feature-footer button:hover {background:var(--color-primary-hover)}
+.reference-page .reference-arrival {border-color:var(--color-primary)!important;box-shadow:var(--focus-ring)!important}
+.reference-arrival::after {background:var(--color-secondary)}
+.reference-table {background:var(--color-surface)}
+.reference-table th,.reference-table td,.reference-sources {border-color:var(--color-border)!important}
+.reference-table th,.reference-table td {color:var(--color-text)}
+.reference-table tbody th,.reference-table td strong {color:var(--color-primary)}
+.reference-table tbody tr:nth-child(even) {background:var(--color-surface-alt)}
+.reference-table tbody tr:hover {background:var(--color-primary-soft)}
+.reference-card .reference-table thead th {background:var(--color-surface-alt);color:var(--color-text-soft)}
+.reference-card .reference-table tbody td:last-child:not(:nth-child(2)) {color:var(--color-text-soft)}
+.reference-kicker,.reference-hero-meta,.reference-sources p {color:var(--color-text-soft)}
+.reference-page .reference-level {background:var(--color-primary-soft);color:var(--color-primary);border-radius:var(--radius-small)}
+.reference-source-links a,.reference-back-top {color:var(--color-primary)}
+.learning-v2-option {background:var(--color-surface-alt);border-color:var(--color-border);border-radius:var(--radius-control)}
+.flash-card .flash-side {box-shadow:var(--shadow-hover)!important}
+.flash-card:not(.has-word-photo) .flash-side.front::before {background:var(--color-primary)}
+.flash-card:not(.has-word-photo) .flash-side.front::after {background:none}
+.flash-card .flash-side.back::after {background:rgb(255 249 241 / 96%)!important}
+.flash-card .flash-side.back,.flash-card .flash-side.back h2,.flash-card .flash-side.back p {color:var(--color-text)!important}
+.flash-card .flash-table {background:var(--color-surface)!important;border-color:var(--color-border)}
+
+/* Account surfaces and dialogs; no auth, consent or install behaviour changes. */
+.content-panel.profile-settings {background:var(--color-surface)!important;border-color:var(--color-border)!important;box-shadow:var(--shadow-card)!important}
+.profile-settings .settings-email {background:var(--color-surface-alt);border-color:var(--color-border)}
+.profile-settings .settings-heading-icon,.profile-settings .settings-field-icon,
+.profile-settings .settings-email-icon {background:var(--color-primary-soft);color:var(--color-primary);border-color:var(--color-border)}
+.profile-settings .email-current [data-current-email] {color:var(--color-text)}
+.profile-settings>.settings-row {border-color:var(--color-border)}
+.profile-settings [data-profile-email="edit"] {background:var(--color-surface)!important;border-color:var(--color-border)!important;color:var(--color-primary)!important}
+.profile-settings [data-profile-email="edit"]:hover {background:var(--color-primary-soft)!important;border-color:var(--color-primary)!important}
+.study-totals>.study-stat,.study-totals>.study-stat--today {
+ background:var(--color-surface-alt);border-color:var(--color-border);border-radius:var(--radius-card);box-shadow:none;
+}
+.study-totals>.study-stat--today {background:var(--color-primary-soft)}
+.study-totals strong {color:var(--color-text)}
+.study-stat--today strong {color:var(--color-primary)}
+.study-totals small,.study-stat-period,.study-message {color:var(--color-text-soft)}
+.study-tooltip {background:var(--color-surface);border-color:var(--color-border);color:var(--color-text);border-radius:var(--radius-control);box-shadow:var(--shadow-hover)}
+.activity-availability {background:var(--color-surface-alt);color:var(--color-text-soft)}
+#page .progress-filters [aria-pressed="true"] {background:var(--color-success-soft)!important;color:var(--color-success-ink)!important;border-color:var(--color-success)!important}
+.manual-review-row {border-color:var(--color-border);border-radius:var(--radius-card);box-shadow:var(--shadow-card)}
+.modal,.sv-consent {background:var(--color-surface)!important;border:1px solid var(--color-border);border-radius:var(--radius-panel);box-shadow:var(--shadow-dialog)!important;color:var(--color-text)}
+.modal-backdrop {background:rgb(36 49 58 / 45%);backdrop-filter:none}
+.pwa-dialog::backdrop {background:rgb(36 49 58 / 45%);backdrop-filter:none}
+.sv-consent {backdrop-filter:none}
+.icon-close {color:var(--color-text-soft);background:var(--color-surface-alt);border-radius:var(--radius-small)}
+.sv-consent p {color:var(--color-text-soft)}
+.toast {background:var(--color-text);color:var(--color-on-primary);box-shadow:var(--shadow-hover)}
+.site-footer {background:var(--color-surface-alt)!important;border-color:var(--color-border)!important;color:var(--color-text-soft)!important}
+.site-footer strong {color:var(--color-text)}
+.site-footer span {color:var(--color-text-soft)}
+.site-footer>div:first-child>span:first-of-type {color:var(--color-accent)}
+.footer-legal a {background:var(--color-surface);border-color:var(--color-border);color:var(--color-primary)}
+.footer-legal a:hover {background:var(--color-primary-soft);color:var(--color-primary)}
+
+/* States are visible without shifting controls. Keep flashcard flips and speech placement. */
+button,a {transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease}
+button:hover:not(:disabled),button:active:not(:disabled),.book-card:hover {transform:none}
+.action-card:hover,.topic-card:hover,.lesson-card:hover,.word-row:hover,.words-grid .word-row[data-word-link]:hover,.book-card:hover,
+.video-card:hover,.mode-card:hover,.course-tile:hover {
+ transform:none!important;border-color:var(--color-border-strong)!important;box-shadow:var(--shadow-hover)!important;
+}
+:is(a,button,input,select,textarea,summary,[tabindex]):focus-visible,
+#page :is(a,button,input,select,textarea,summary,[tabindex]):focus-visible,
+#page .video-card-unified :is(button,a):focus-visible,
+#page button[data-action="speak"]:focus-visible,
+.words-grid .word-row[data-word-link]:focus-visible {
+ outline:3px solid var(--color-primary)!important;outline-offset:3px;
+}
+#page .hero :is(a,button):focus-visible {outline-color:var(--color-secondary)!important}
+/* The search wrapper carries focus because its input is deliberately borderless. */
+.topbar #global-search:focus {background:transparent!important;box-shadow:none!important;outline:0!important}
+
+@media(max-width:1200px) {
+ .stats-grid {grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:700px) {
+ .hero {min-height:0!important;padding:var(--space-5)!important}
+ .hero .hero-copy {width:100%!important;max-width:none!important}
+ .hero::after {content:none!important}
+ .hero .hero-copy h1 {font-size:clamp(29px,6vw,38px)!important}
+ .hero .hero-copy .split {gap:var(--space-2)!important}
+ .stats-grid .stat-card {padding:var(--space-3)!important;gap:var(--space-2)!important}
+ .stat-label {line-height:1.4}
+ .page-heading {flex-wrap:wrap}
+ .section-head {flex-wrap:wrap}
+ .section-head .slider-tools {flex-shrink:0}
+ .action-card,.topic-card {min-height:156px!important;padding:var(--space-3)!important}
+ .action-card h3 {font-size:14px!important}
+ .course-tile {min-height:176px!important}
+ .modal {padding:var(--space-5) var(--space-4)}
+}
+@media(max-width:380px) {
+ .hero {padding:20px!important}
+ .hero .btn {width:100%}
+ .stat-value {font-size:21px!important}
+ .stats-grid .stat-card {flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce) {
+ *,*::before,*::after {animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+@media print {
+ body,body:has(.reference-page) {background:#fff!important;color:#000!important}
+ .reference-card,.reference-feature {background:#fff!important;box-shadow:none!important;border-radius:0!important}
+}
+
+/* Premium controls — Scandinavian storybook / editorial UI.
+   Six families, mapped to the original classes and action attributes so that
+   dynamically rendered views use the same system. No blanket button reset.
+   Only this rendering bridge needs priority over the older CSS files; family
+   and state changes below use ordinary custom properties, never !important. */
+:root {
+ --btn-primary-bg:var(--color-primary);
+ --btn-primary-text:var(--color-on-primary);
+ --btn-primary-hover:var(--color-primary-hover);
+ --btn-secondary-bg:var(--color-surface);
+ --btn-secondary-text:var(--color-primary-active);
+ --btn-secondary-hover:var(--color-surface-alt);
+ --btn-border:var(--color-border-strong);
+ --btn-radius:16px;
+ --btn-shadow:0 3px 0 var(--color-primary-active);
+ --btn-focus:var(--color-primary);
+ --btn-accent-bg:var(--color-secondary);
+ --btn-accent-text:var(--color-text);
+ --btn-accent-hover:#c7972f;
+ --btn-success-bg:var(--color-success-soft);
+ --btn-success-text:var(--color-success-ink);
+ --btn-danger-bg:var(--color-accent-ink);
+ --btn-danger-hover:#783636;
+ --btn-height:48px;
+ --btn-compact-height:44px;
+ --btn-duration:160ms;
+}
+
+/* One rendering bridge. The opt-out is for native controls, should a future
+   browser-specific control require its own appearance. */
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(
+ .btn,button.custom-select,.pill,.link-btn,.vid-link,.back-link,.auth-link,.pwa-install,.pwa-dialog-close,
+ .circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,
+ .dict-empty-reset,.hamburger,.drawer-close,.avatar,.quiz-option,.quiz-word,
+ .learning-v2-option,.reference-back-top,.reference-nav button,
+ .reference-feature-footer button,.video-watch-toggle,
+ .filter-pills button,.tabs button,.topic-chips button,
+ button[data-action="speak"]:not(.number-item)
+):not([data-native-control]) {
+ align-items:center;justify-content:center;
+ gap:8px;min-width:0;max-width:100%;min-height:var(--control-height,var(--btn-height))!important;
+ padding:var(--control-padding,12px 20px)!important;
+ border:1px solid var(--control-border,var(--btn-border))!important;
+ border-radius:var(--control-radius,var(--btn-radius))!important;
+ background:var(--control-bg,var(--btn-secondary-bg))!important;
+ color:var(--control-text,var(--btn-secondary-text))!important;
+ box-shadow:var(--control-shadow,none)!important;
+ font-family:inherit;font-size:var(--control-size,14px)!important;font-weight:650!important;
+ line-height:1.4!important;letter-spacing:.005em;text-align:center;text-decoration:none;
+ white-space:normal!important;overflow-wrap:anywhere;word-break:normal;
+ cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+ transition:background-color var(--btn-duration) ease,border-color var(--btn-duration) ease,
+  color var(--btn-duration) ease,box-shadow var(--btn-duration) ease;
+}
+
+/* 1. Primary: a sturdy blue rectangle with a small, printed lower edge. */
+.btn,.btn.white[data-action="topic-quiz"],.reference-feature-footer button {
+ --control-bg:var(--btn-primary-bg);--control-text:var(--btn-primary-text);
+ --control-border:var(--color-primary-active);--control-shadow:var(--btn-shadow);
+ --control-hover:var(--btn-primary-hover);--control-active:var(--color-primary-active);
+}
+.btn.small {--control-height:var(--btn-compact-height);--control-padding:10px 16px;--control-size:13px}
+.hero .btn.white {--control-bg:var(--color-primary-active);--control-text:var(--btn-primary-text);--control-border:var(--color-on-primary);--control-hover:#16354a;--control-active:#102b3c;--control-shadow:0 3px 0 rgb(16 43 60 / 60%)}
+
+/* 2. Secondary: warm paper and a clear ink border. Filters are oval members
+   of this family; card actions keep the rectangular editorial geometry. */
+.btn.secondary,.btn.white,button.custom-select,.pill,.filter-pills button,.tabs button,.topic-chips button,
+.pwa-install,.dict-empty-reset,.video-watch-toggle,.quiz-option,.quiz-word,
+.learning-v2-option,.reference-nav button {
+ --control-bg:var(--btn-secondary-bg);--control-text:var(--btn-secondary-text);
+ --control-border:var(--btn-border);--control-shadow:none;
+ --control-hover:var(--btn-secondary-hover);--control-active:var(--color-primary-soft);
+}
+.pill,.filter-pills button,.tabs button,.topic-chips button,.reference-nav button {
+ --control-radius:999px;--control-height:var(--btn-compact-height);--control-padding:9px 16px;--control-size:13px;
+}
+.pill.active,.filter-pills button.active,.tabs button.active,.reference-nav button[aria-current],
+.progress-filters [aria-pressed=true],.quiz-word.selected {
+ --control-bg:var(--color-primary-soft);--control-text:var(--color-primary-active);
+ --control-border:var(--color-primary);--control-hover:var(--color-primary-soft);
+}
+.quiz-option,.learning-v2-option {--control-height:56px;--control-padding:14px 18px;text-align:left;justify-content:flex-start}
+.quiz-word {--control-radius:999px;--control-padding:10px 16px;--control-height:44px}
+
+/* 3. Playful: mustard is for turning/trying; green denotes learned or saved.
+   The asymmetric corners are reserved for these learning actions. */
+.btn.pink,.btn[data-action="flip"],.btn[data-action="flash-flip"],
+.btn[data-action="quiz-restart"],.btn[data-action="review-reveal"] {
+ --control-bg:var(--btn-accent-bg);--control-text:var(--btn-accent-text);
+ --control-border:var(--color-warning-ink);--control-shadow:0 2px 0 var(--color-warning-ink);
+ --control-hover:var(--btn-accent-hover);--control-active:#b88a28;
+ --control-radius:20px 12px 20px 8px;
+}
+.btn[data-action="mark-known"],.circle-btn.word-known-toggle,.btn[data-action="flash-grade"][data-value="1"],
+.btn[data-action="review-grade"][data-value="1"] {
+ --control-bg:var(--btn-success-bg);--control-text:var(--btn-success-text);
+ --control-border:var(--color-success);--control-shadow:0 2px 0 var(--color-success);
+ --control-hover:#dce6d7;--control-active:#cedec7;--control-radius:20px 12px 20px 8px;
+}
+:is(.btn,.circle-btn).is-learned,.btn.is-queued,.btn.is-read,
+.video-watch-toggle[aria-pressed=true],.quiz-option.correct {
+ --control-bg:var(--btn-success-bg);--control-text:var(--btn-success-text);
+ --control-border:var(--color-success);--control-hover:var(--btn-success-bg);--control-shadow:none;
+}
+:is(.btn,.circle-btn)[data-action="favorite"][aria-pressed=true],.circle-btn.selected {
+ --control-bg:var(--color-warning-soft);--control-text:var(--color-warning-ink);
+ --control-border:var(--color-secondary);--control-hover:var(--color-warning-soft);
+}
+
+/* 4. Quiet: back, cancel, view-all and supplementary profile actions. */
+.btn.ghost,.link-btn,.vid-link,.back-link,.auth-link,.reference-back-top,.pwa-dialog-close {
+ --control-bg:transparent;--control-text:var(--color-primary);
+ --control-border:transparent;--control-shadow:none;
+ --control-hover:var(--color-primary-soft);--control-active:var(--color-surface-alt);
+ --control-height:var(--btn-compact-height);--control-padding:10px 12px;--control-radius:12px;
+}
+.hero .btn:not(.white) {--control-bg:transparent;--control-text:var(--color-on-primary);--control-border:var(--color-on-primary);--control-hover:var(--color-primary-hover);--control-active:var(--color-primary-active);--control-shadow:none}
+
+/* 5. Icon: generous square targets; favorites and carousel controls use ovals.
+   Text pronunciation controls share the same palette without becoming square. */
+.circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,
+.hamburger,.drawer-close,.avatar,.calendar-arrow,
+button[data-action="speak"]:not(.number-item) {
+ --control-bg:var(--color-surface);--control-text:var(--color-primary);
+ --control-border:var(--color-border);--control-shadow:none;
+ --control-hover:var(--color-primary-soft);--control-active:var(--color-surface-alt);
+ --control-radius:14px;--control-height:var(--btn-compact-height);--control-padding:10px 14px;
+}
+.circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,
+.hamburger,.drawer-close,.avatar,.calendar-arrow,button[data-action="speak"].speak-icon-only {
+ --control-padding:0;--control-size:18px;
+ width:44px!important;height:44px!important;min-width:44px!important;flex-shrink:0;
+}
+.circle-btn[data-action="favorite"],.slider-arrow,.avatar {--control-radius:50%}
+/* These controls are vertically positioned by the pronunciation layout. */
+#page .example-item button[data-action="speak"],#page .reading-line button[data-action="speak"] {width:44px!important;height:44px!important;min-width:44px!important}
+#page .example-item,#page .reading-line {min-height:72px!important;padding-right:68px!important}
+.word-actions {gap:6px}
+button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14px;--control-radius:14px;--control-size:13px}
+:root #app .dict-search-clear:hover,:root #app .dict-search-clear:active {transform:translateY(-50%)}
+:root #app .dict-search-field .search-input {padding-right:60px!important}
+
+/* 6. Danger: only irreversible account deletion. Errors reuse berry feedback. */
+.btn.account-delete,#delete-account-submit {
+ --control-bg:var(--btn-danger-bg);--control-text:var(--color-on-primary);
+ --control-border:var(--btn-danger-bg);--control-shadow:none;
+ --control-hover:var(--btn-danger-hover);--control-active:#652d2d;
+}
+.quiz-option.wrong {--control-bg:var(--color-accent-soft);--control-text:var(--color-accent-ink);--control-border:var(--color-accent);--control-hover:var(--color-accent-soft)}
+
+/* Hover uses ink/paper changes so positioned audio controls never jump. */
+@media(hover:hover) {
+ :root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(
+  .btn,button.custom-select,.pill,.link-btn,.vid-link,.back-link,.auth-link,.pwa-install,.pwa-dialog-close,
+  .circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,.dict-empty-reset,
+  .hamburger,.drawer-close,.avatar,.quiz-option,.quiz-word,.learning-v2-option,
+  .reference-back-top,.reference-nav button,.reference-feature-footer button,.video-watch-toggle,
+  .filter-pills button,.tabs button,.topic-chips button,button[data-action="speak"]:not(.number-item)
+ ):not([data-native-control]):hover:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]) {
+  background:var(--control-hover,var(--btn-secondary-hover))!important;
+  border-color:var(--control-border,var(--btn-border))!important;
+ }
+}
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(
+ .btn,button.custom-select,.pill,.link-btn,.vid-link,.back-link,.auth-link,.pwa-install,.pwa-dialog-close,
+ .circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,.dict-empty-reset,
+ .hamburger,.drawer-close,.avatar,.quiz-option,.quiz-word,.learning-v2-option,
+ .reference-back-top,.reference-nav button,.reference-feature-footer button,.video-watch-toggle,
+ .filter-pills button,.tabs button,.topic-chips button,button[data-action="speak"]:not(.number-item)
+):not([data-native-control]):active:not(:disabled):not([aria-disabled=true]):not([aria-busy=true]) {
+ background:var(--control-active,var(--color-primary-soft))!important;
+ box-shadow:none!important;
+}
+/* Disabled colors stay legible. Busy keeps its geometry, label and focus. */
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(
+ .btn,.pill,.circle-btn,.slider-arrow,.video-watch-toggle,.quiz-option,.quiz-word,
+ .learning-v2-option,.pwa-install,.link-btn,.custom-select
+):is(:disabled,[aria-disabled=true]):not([aria-busy=true]) {
+ opacity:.62;cursor:not-allowed;box-shadow:none!important;
+}
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(.btn,.circle-btn,.video-watch-toggle)[aria-busy=true],
+#auth-form[aria-busy=true] #auth-submit {position:relative;cursor:progress;opacity:.8;box-shadow:none!important}
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(.btn,.circle-btn,.video-watch-toggle)[aria-busy=true]::after,
+#auth-form[aria-busy=true] #auth-submit::after {
+ content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;
+ border-radius:2px;background:currentColor;opacity:.45;pointer-events:none;
+}
+:root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(
+ button,a,label.file-select,[role=button],summary,input,textarea,select
+):focus-visible {outline:3px solid var(--btn-focus)!important;outline-offset:3px}
+:root #app .hero :is(button,a):focus-visible {outline-color:var(--color-secondary)!important}
+
+/* Navigation and clickable cards keep their layouts and existing icons. */
+.nav-link,.mobile-nav button,.account-button,.search-result,.roadmap-step,.mode-card,
+.action-card,.topic-card,.course-tile,.number-item {
+ font-weight:650;letter-spacing:.005em;line-height:1.4;
+ transition:background-color var(--btn-duration) ease,border-color var(--btn-duration) ease,box-shadow var(--btn-duration) ease;
+}
+:root #app .nav-link {min-height:46px;padding:11px 14px;font-weight:650;border-radius:12px!important}
+:root #app .mobile-nav button {min-height:52px;min-width:44px;padding:6px 3px;border-radius:14px!important;line-height:1.3}
+:root #app .nav-link.active,:root #app .mobile-nav button.active {background:var(--color-primary-soft)!important;color:var(--color-primary-active)!important;box-shadow:inset 3px 0 var(--color-primary)!important}
+:root #app .roadmap-step.active {background:var(--color-primary-soft)!important;border-color:var(--color-primary)!important}
+:root #app :is(.action-card,.mode-card,.topic-card,.course-tile):hover {border-color:var(--color-primary)!important}
+:root #app .mode-card {background:var(--btn-secondary-bg)!important;border-radius:20px 14px 20px 10px!important}
+:root #app .mode-card:hover {background:var(--color-warning-soft)!important}
+:root #app .search-result {min-height:52px}
+
+/* Equal card bottoms and stable actions across translated copy. */
+:root #app .hero .split {justify-content:flex-start}
+.learning-v2-option:has(input:checked) {--control-bg:var(--color-primary-soft);--control-border:var(--color-primary);--control-text:var(--color-primary-active)}
+.book-grid {align-items:stretch}
+:root #app .book-card {height:100%;display:flex;flex-direction:column}
+:root #app .book-content {flex:1;display:flex;flex-direction:column;align-items:stretch}
+:root #app .book-content .btn {margin-top:auto;width:100%!important}
+:root #app .lesson-foot .btn {--control-height:44px;--control-padding:10px 12px;--control-size:13px;--control-radius:14px;align-self:stretch}
+:root #app .lesson-foot {align-items:stretch}
+:root #app .video-card-unified .btn {--control-padding:12px 16px;--control-height:48px;--control-size:14px}
+:root #app .video-watch-toggle {--control-padding:10px 12px;--control-height:44px;--control-size:13px}
+.btn>svg,.btn .review-button-icon {flex-shrink:0}
+.split,.flash-buttons,.flash-control-row,.reader-toolbar,.profile-collections,.email-actions {min-width:0;gap:12px;flex-wrap:wrap}
+:root #app .profile-collections .btn {min-width:0;white-space:normal!important}
+.modal h2 {padding-inline:24px}
+
+@media(max-width:600px) {
+ :root #app .words-grid .word-row {flex-wrap:wrap}
+ :root #app .words-grid .word-actions {margin-left:auto;flex-wrap:wrap;justify-content:flex-end}
+ :root #app .words-grid .word-info {flex:1;min-width:90px}
+ :root #app .word-panel .word-detail-tools {gap:10px}
+ :root #app .word-panel .word-detail-tools .btn {flex:1 1 130px}
+ .quiz-text-answer {grid-template-columns:minmax(0,1fr)}
+ .quiz-text-answer .btn {width:100%}
+ :root #app .profile-collections {grid-template-columns:minmax(0,1fr)}
+ :root #app .profile-collections .btn {width:100%;justify-content:flex-start}
+ :root #app .manual-review-actions {gap:8px}
+ :root #app .manual-review-actions .btn {flex:1 1 140px}
+ :root #app .book-content .btn {--control-size:13px;--control-padding:10px 12px}
+}
+@media(max-width:380px) {
+ .hero .split .btn {flex:1 1 100%;width:100%}
+ :root #app .flash-buttons .btn {flex:1 1 120px}
+ :root #app .word-actions {gap:4px}
+}
+@media(prefers-reduced-motion:reduce) {
+ :root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(button,a,label.file-select) {transition:none!important;animation:none!important}
+}
