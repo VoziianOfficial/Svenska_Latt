@@ -150,9 +150,51 @@ function back(el,url){
  backgrounds.set(el,url);photoObserver.observe(el);
 }
 function tile(el,url){if(!el)return;back(el,url);el.style.setProperty('--tone',['#e5f4ff','#eafbf5','#fff3e6','#f4efff','#fcebf2','#eaf7fa'][hash(url)%6]);let d=el.querySelector(':scope > .photo-bg');if(!d){d=document.createElement('span');d.className='photo-bg';el.prepend(d)}back(d,url);if(!el.querySelector(':scope > .tile-fallback')){const f=document.createElement('span');f.className='tile-fallback';f.textContent=(el.querySelector('h3')?.textContent.trim().charAt(0)||'S').toUpperCase();el.appendChild(f)}if(!el.querySelector(':scope > .tile-photo'))el.appendChild(image(url,'tile-photo'))}
-function enhanceHome(){const hero=document.querySelector('.hero');if(hero)hero.style.setProperty('--hero-photo',`url("${PH.hero}")`);
- document.querySelectorAll('.action-card').forEach(el=>tile(el,PH[ACTION[el.dataset.nav]]||PH.topics));
- document.querySelectorAll('.course-tile').forEach((el,i)=>tile(el,LEVELS[('ABCD'.indexOf(el.dataset.level)+4)%4]||LEVELS[i%4]));
+// Home-only crossfade. One controller per rendered hero; no progress writes.
+let homeSlideshow=null;
+function enhanceHomeSlideshow(hero){
+ if(homeSlideshow?.hero===hero)return;
+ homeSlideshow?.destroy();homeSlideshow=null;
+ const slides=Array.from(hero?.querySelectorAll('.home-hero-slide')||[]);if(slides.length<2)return;
+ const motion=window.matchMedia?.('(prefers-reduced-motion: reduce)'),pauses=new Set(),cleanups=[];
+ let timer=null,fadeTimer=null,index=0,disposed=false;
+ const listen=(target,event,fn)=>{target.addEventListener(event,fn);cleanups.push(()=>target.removeEventListener(event,fn))};
+ const stop=()=>{clearTimeout(timer);timer=null};
+ const schedule=()=>{stop();if(!disposed&&!document.hidden&&!motion?.matches&&!pauses.size)timer=setTimeout(advance,7500)};
+ function advance(){
+  if(disposed||!hero.isConnected)return;
+  if(document.hidden||motion?.matches||pauses.size){schedule();return}
+  let next=index;for(let step=1;step<slides.length;step++){const candidate=(index+step)%slides.length;if(slides[candidate].complete&&slides[candidate].naturalWidth>0){next=candidate;break}}
+  if(next!==index){
+   const previous=slides[index],incoming=slides[next];
+   incoming.style.zIndex='2';incoming.classList.add('is-active');index=next;
+   clearTimeout(fadeTimer);fadeTimer=setTimeout(()=>{if(disposed)return;previous.classList.remove('is-active');previous.style.zIndex='0';incoming.style.zIndex='1'},1850);
+  }
+  schedule();
+ }
+ const pause=reason=>{pauses.add(reason);stop()},resume=reason=>{pauses.delete(reason);schedule()};
+ listen(hero,'pointerenter',event=>{if(event.pointerType==='mouse')pause('pointer')});
+ listen(hero,'pointerleave',()=>resume('pointer'));
+ listen(hero,'focusin',()=>pause('focus'));
+ listen(hero,'focusout',event=>{if(!hero.contains(event.relatedTarget))resume('focus')});
+ listen(document,'visibilitychange',schedule);
+ if(motion?.addEventListener)listen(motion,'change',schedule);
+ // A failed current image gets a loaded fallback even when reduced motion is enabled.
+ const fallback=()=>{
+  if(!slides[index].complete||slides[index].naturalWidth)return;
+  const next=slides.findIndex(slide=>slide.complete&&slide.naturalWidth>0);if(next<0)return;
+  slides[index].classList.remove('is-active');slides[index].style.zIndex='0';
+  slides[next].classList.add('is-active');slides[next].style.zIndex='1';index=next;
+ };
+ slides.forEach(slide=>{listen(slide,'error',fallback);listen(slide,'load',fallback)});
+ fallback();
+ homeSlideshow={hero,destroy(){disposed=true;stop();clearTimeout(fadeTimer);cleanups.forEach(cleanup=>cleanup())}};
+ schedule();
+}
+function enhanceHome(){const hero=document.querySelector('.hero');if(hero)hero.style.setProperty('--hero-photo',`url("${PH.hero}")`);enhanceHomeSlideshow(hero);
+ // Home shortcuts have dedicated transparent illustrations; do not add stock photos.
+ document.querySelectorAll('.action-card:not(.home-action-card)').forEach(el=>tile(el,PH[ACTION[el.dataset.nav]]||PH.topics));
+ document.querySelectorAll('.course-tile:not(.home-course-card)').forEach((el,i)=>tile(el,LEVELS[('ABCD'.indexOf(el.dataset.level)+4)%4]||LEVELS[i%4]));
 }
 function enhanceTopics(){document.querySelectorAll('.topic-card').forEach(el=>{const key=el.dataset.param||el.querySelector('h3')?.textContent?.trim();tile(el,TOPIC_PHOTOS[key]||PH[CATEGORY[key]]||PH.reading)})}
 function enhanceLessons(){document.querySelectorAll('.lesson-card').forEach((el,i)=>{
@@ -281,7 +323,7 @@ function enhanceReference(){
  pack();
 }
 function enhance(){enhanceReference();enhanceHome();enhanceTopics();enhanceLessons();enhanceModes();enhanceVideos();enhanceCheats();enhanceBooks();enhanceNumbers();
- document.querySelectorAll('.action-grid.action-grid-4,.topic-grid.premium-topics,.course-tiles').forEach(decorateSlider);
+ document.querySelectorAll('.action-grid.action-grid-4,.topic-grid.premium-topics,.course-tiles:not(.home-course-grid)').forEach(decorateSlider);
 }
 window.svPhotoForWord=photoForWord;
 /* Existing flashcard behaviour stays unchanged; only its old SVG artwork is replaced by real stock photography. */

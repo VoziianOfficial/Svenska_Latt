@@ -1,10 +1,10 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE = '2026-11-08-lesson-covers-001';
+const RELEASE = '2026-11-09-home-illustrations-001';
 const APP_CACHE = `svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE = `svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT = 150;
-const FILES = ['./', './index.html', './style.css', './studio.css', './atelier.css', './learning-polish.css', './atelier.js', './learning-polish.js', './custom-controls.js', './flashcard-media.js', './assets/avatars/pippi-cartoon.png', './app.js', './pwa-install.js', './word-icons.js', './locale-content.js', './supabase-config.js', './supabase-client.js', './supabase-auth.js', './supabase-rpc.js', './supabase-progress.js', './study-time.js', './manual-reviews.js', './words.json', './lessons.json', './books.json', './assets/video-collection.svg', './favicon.svg', './manifest.webmanifest', './privacy.html', './terms.html', './cookies.html', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-192-v2.png', './icons/icon-512-v2.png'];
+const FILES = ['./', './index.html', './style.css', './studio.css', './atelier.css', './learning-polish.css', './atelier.js', './learning-polish.js', './custom-controls.js', './flashcard-media.js', './assets/avatars/pippi-cartoon.png', './app.js', './pwa-install.js', './word-icons.js', './locale-content.js', './supabase-config.js', './supabase-client.js', './supabase-auth.js', './supabase-rpc.js', './supabase-progress.js', './study-time.js', './manual-reviews.js', './words.json', './lessons.json', './books.json', './assets/video-collection.svg', './assets/home-icons/lessons-v1.webp', './assets/home-icons/topics-v1.webp', './assets/home-icons/dictionary-v1.webp', './assets/home-icons/practice-v1.webp', './assets/home-icons/reviews-v1.webp', './assets/home-icons/videos-v1.webp', './assets/home-icons/books-v1.webp', './assets/home-icons/rules-v1.webp', './assets/home-icons/alphabet-v1.webp', './favicon.svg', './manifest.webmanifest', './privacy.html', './terms.html', './cookies.html', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-192-v2.png', './icons/icon-512-v2.png'];
 const SHELL_URLS = new Set(FILES.map(file => new URL(file, self.registration.scope).href));
 let photoWrites = Promise.resolve();
 self.addEventListener('install', event => {

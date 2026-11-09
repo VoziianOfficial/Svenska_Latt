@@ -1,0 +1,61 @@
+{
+  "generator": "Built-in image_gen",
+  "transparent_background": true,
+  "encoding": "256 × 256 WebP, quality 88, alpha quality 100; generated alpha preserved",
+  "assets": [
+    {
+      "key": "lessons",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-8fc9142c-1d71-403d-9c6e-a3fd896dc2a1.png",
+      "file": "assets/home-icons/lessons-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a small sage-green linen hardcover study notebook, slightly open to cream paper pages, with a short warm ochre wooden pencil resting diagonally across it. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "topics",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-001f03a9-3d79-4d4b-ba46-59a7e8d94df6.png",
+      "file": "assets/home-icons/topics-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: three tactile vocabulary index cards in a small ochre tabbed file holder, muted sage, dusty blue and cream card tabs, simple unprinted cards. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "dictionary",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-69786760-18a9-4bcf-9bdb-bf0c94042d27.png",
+      "file": "assets/home-icons/dictionary-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a closed dusty blue clothbound pocket dictionary with cream page edges and a small real brass-rim magnifying glass leaning against it. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "practice",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-f5ac004b-e144-49a9-b764-e033cd7729cc.png",
+      "file": "assets/home-icons/practice-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a small terracotta and ivory archery target with one sage-green feathered arrow hitting its center. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "reviews",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-9cf2b0b0-9412-4bbc-b8ff-f3328a647c81.png",
+      "file": "assets/home-icons/reviews-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: two ivory study flashcards held together with a small satin brass binder ring, a raised sage-green circular return arrow on the foremost card. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "videos",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-636856c1-d341-4ba3-be62-72e8608fa26d.png",
+      "file": "assets/home-icons/videos-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a compact sage-green cinema clapperboard with an ivory hinged striped clapstick and an ivory inset play triangle. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "books",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-333b6a6c-5d02-4705-a228-6954d037327c.png",
+      "file": "assets/home-icons/books-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a small open miniature book with realistic ivory pages, a warm tan linen cover and a sage green ribbon bookmark. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "rules",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-d97c490b-48d9-4c91-80ff-23934912252a.png",
+      "file": "assets/home-icons/rules-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: a cream paper checklist on a small light oak clipboard, three sage-green check marks and short subtle grey rules, no written words. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    },
+    {
+      "key": "alphabet",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c1c0-698c-7e43-a8d1-2ff9ac35a5ca/exec-b09f0a9b-fcd0-44a9-90b3-6fdfc55e624e.png",
+      "file": "assets/home-icons/alphabet-v1.webp",
+      "prompt": "Use case: stylized-concept. Asset type: small premium website navigation illustration, one isolated object composition. Primary request: two small tactile ivory and sage-green wooden letter blocks bearing a simple embossed A and Ö, elegant realistic educational objects. Style: original art-directed realistic miniature product illustration, physically believable materials, finely detailed linen/paper/wood or enamel as appropriate, refined Scandinavian editorial still life, restrained colors, gentle three-quarter perspective, soft upper-left studio light, crisp silhouette, elegant and understated rather than cartoon or emoji. Composition: square, centered, entire object in frame, object occupies 82% of the canvas, consistent scale, enough edge padding. Actual transparent background with clean alpha, no floor, no backdrop, no colored panel, no enclosing tile, no cast shadow outside the object, no halo, no labels, no brand, no watermark. This is a compact 64px website accent so keep the silhouette clear and avoid tiny loose decorations."
+    }
+  ]
+}

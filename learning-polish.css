@@ -772,6 +772,29 @@ input[type=checkbox],input[type=radio] {accent-color:var(--color-primary)}
 /* Progress and feedback: calm colours with darker, readable state labels. */
 .home-rank,.rank-panel,.profile-level,.profile-person {background:var(--color-surface)!important;border-color:var(--color-border)!important;box-shadow:var(--shadow-card)!important}
 .home-rank {border-radius:var(--radius-card)!important}
+/* Move the candy texture itself: !important background rules cannot freeze it. */
+.home-rank .progress-track {height:14px!important;border-radius:999px!important;overflow:hidden;box-shadow:inset 0 1px 3px rgb(65 46 30 / 12%)}
+:root #app .home-rank .progress-fill {
+ position:relative;isolation:isolate;height:100%;border-radius:inherit;overflow:hidden;
+ background:#e8cfb2!important;box-shadow:0 1px 2px rgb(87 58 35 / 12%);
+}
+:root #app .home-rank .progress-fill::before {
+ content:"";position:absolute;inset:0 -68px 0 0;z-index:0;
+ background:repeating-linear-gradient(135deg,#cc9c95 0,#eed1c7 3px,#e5beb3 7px,#d5bd8e 8px,#f7e9c9 11px,#eddbb4 15px,#d7aa8d 16px,#f4d9bf 19px,#e8c3a8 23px,#c9a19b 24px,#ead0c8 27px,#dfbcb4 31px,#d2b48e 32px,#f2dec3 35px,#e5ceb0 39px,#d1bfa4 40px,#f4ead8 43px,#e8dac4 47px,#cc9c95 48px);
+ animation:home-xp-candy-roll 2.4s linear infinite!important;
+}
+:root #app .home-rank .progress-fill::after {
+ content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;pointer-events:none;
+ background:linear-gradient(180deg,rgb(126 90 61 / 8%) 0%,rgb(255 249 235 / 38%) 15%,rgb(255 249 235 / 18%) 35%,transparent 48%,rgb(120 83 58 / 7%) 76%,rgb(116 79 55 / 14%) 100%);
+ box-shadow:inset 0 1px 0 rgb(255 249 235 / 28%),inset 0 -1px 1px rgb(116 79 55 / 10%);
+}
+@keyframes home-xp-candy-roll {
+ from {transform:translateX(0)}
+ to {transform:translateX(-67.882251px)}
+}
+@media(prefers-reduced-motion:reduce) {
+ :root #app .home-rank .progress-fill::before {animation-duration:6s!important}
+}
 .home-rank span,.rank-panel span {color:var(--color-primary)}
 .progress-track,.mini-progress,.course-tile .mini-progress,.home-rank .progress-track,.rank-panel .progress-track {background:var(--color-border)!important}
 .progress-fill,.course-tile .mini-progress i,.home-rank .progress-fill,.rank-panel .progress-fill {background:var(--color-primary)!important;box-shadow:none}
@@ -1185,4 +1208,164 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
 }
 @media(prefers-reduced-motion:reduce) {
  :root :is(#app,#modal,#pwa-install-dialog,#sv-consent) :is(button,a,label.file-select) {transition:none!important;animation:none!important}
+}
+
+/* Photographic home hero. All overrides are scoped to these two home sections. */
+.hero.home-photo-hero {
+ display:flex!important;flex-direction:column!important;justify-content:flex-end!important;align-items:stretch!important;isolation:isolate;
+ min-height:clamp(320px,28vw,400px)!important;padding:36px!important;
+ background:var(--color-primary-active)!important;border:0!important;
+ border-radius:var(--radius-panel)!important;overflow:hidden!important;
+}
+.hero.home-photo-hero::before,.hero.home-photo-hero::after {content:none!important}
+.home-photo-hero .home-hero-slides {position:absolute;inset:0;z-index:0;overflow:hidden}
+.home-photo-hero .home-hero-slides::after {content:'';position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(180deg,rgb(16 32 42 / 0%) 25%,rgb(16 32 42 / 28%) 55%,rgb(16 32 42 / 82%) 100%)}
+.home-photo-hero .home-hero-slide {position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%;filter:blur(2px);transform:scale(1.025);opacity:0;transition:opacity 1.8s ease-in-out;pointer-events:none}
+.home-photo-hero .home-hero-slide.is-active {opacity:1}
+.hero.home-photo-hero .hero-copy {width:100%!important;max-width:none!important;position:relative!important;z-index:1!important}
+.hero.home-photo-hero .hero-copy h1 {max-width:none!important;margin:0 0 22px!important;font-size:clamp(30px,3.05vw,44px)!important;line-height:1.16!important;letter-spacing:-.035em!important;color:var(--color-on-primary)!important;text-shadow:0 2px 16px rgb(0 0 0 / 20%);text-wrap:balance}
+.home-photo-hero .hero-copy .home-hero-actions {display:flex;flex-wrap:nowrap;justify-content:flex-start;align-items:stretch;gap:12px!important;margin:0!important;padding-right:90px}
+.home-photo-hero .home-hero-actions .btn {margin:0;width:auto;flex:0 1 auto;min-width:0;--control-height:46px;--control-padding:11px 18px}
+.home-photo-hero .home-hero-actions .btn.white {--control-bg:var(--color-surface);--control-text:var(--color-primary-active);--control-border:var(--color-surface);--control-hover:var(--color-warning-soft);--control-active:var(--color-surface-alt);--control-shadow:0 2px 0 rgb(16 32 42 / 20%)}
+.home-photo-hero .home-hero-actions .btn:not(.white) {--control-bg:rgb(16 32 42 / 22%);--control-border:rgb(255 249 241 / 65%);--control-hover:var(--color-primary);--control-active:var(--color-primary-active)}
+.home-photo-hero .home-photo-credit {position:absolute;right:24px;bottom:16px;z-index:2;font-size:10px;line-height:1.5;letter-spacing:.03em;color:var(--color-on-primary);text-decoration:none;opacity:.85}
+.home-photo-hero .home-photo-credit:hover {text-decoration:underline;text-underline-offset:3px;opacity:1}
+.stats-grid.home-stats-row {display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:16px 0!important}
+.home-stats-row .stat-card.home-stat-inline {display:grid;grid-template-columns:32px auto minmax(0,1fr);align-items:center;gap:10px!important;min-height:0!important;width:auto;height:auto;padding:14px 16px!important;border-radius:16px!important;text-align:left}
+.home-stats-row .home-stat-inline .stat-icon {display:flex;align-items:center;justify-content:center;flex:none!important;width:32px!important;min-width:32px!important;height:36px!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;padding:0}
+.home-stats-row .stat-icon img {width:36px;height:36px;max-width:none;object-fit:contain;display:block}
+.home-stats-row .home-stat-inline .stat-value {font-size:25px!important;line-height:1.1!important;font-weight:800;letter-spacing:-.035em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.home-stats-row .home-stat-inline .stat-label {font-size:12px!important;line-height:1.35!important;font-weight:700;color:var(--color-text-soft)!important;letter-spacing:0;min-width:0}
+.home-stats-row button.home-stat-inline:hover {border-color:var(--color-primary)!important;box-shadow:var(--shadow-hover)!important}
+@media(max-width:1300px) and (min-width:1081px) {
+ .home-stats-row .stat-card.home-stat-inline {gap:7px!important;padding:13px 12px!important;grid-template-columns:28px auto minmax(0,1fr)}
+ .home-stats-row .home-stat-inline .stat-icon {width:28px!important;min-width:28px!important}
+ .home-stats-row .home-stat-inline .stat-value {font-size:23px!important}
+ .home-stats-row .home-stat-inline .stat-label {font-size:11px!important}
+}
+@media(max-width:900px) {
+ .hero.home-photo-hero {min-height:330px!important;padding:28px!important}
+ .stats-grid.home-stats-row {grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:600px) {
+ .hero.home-photo-hero {min-height:340px!important;padding:24px 20px 38px!important}
+ .hero.home-photo-hero .hero-copy h1 {font-size:clamp(27px,7.3vw,36px)!important;margin-bottom:20px!important}
+ .home-photo-hero .home-hero-slide {object-position:center}
+ .home-photo-hero .hero-copy .home-hero-actions {display:grid!important;grid-template-columns:1fr 1.15fr;gap:8px!important;padding:0}
+ .home-photo-hero .home-hero-actions .btn {width:100%;flex:none;--control-size:12px;--control-padding:10px 8px;--control-height:48px}
+ .home-photo-hero .home-photo-credit {right:20px;bottom:12px;font-size:9px}
+ .stats-grid.home-stats-row {gap:8px!important;margin:12px 0!important}
+ .home-stats-row .stat-card.home-stat-inline {grid-template-columns:26px auto minmax(0,1fr);gap:6px!important;padding:12px 10px!important;border-radius:14px!important;flex-wrap:nowrap}
+ .home-stats-row .home-stat-inline .stat-icon {width:26px!important;min-width:26px!important;height:30px!important}
+ .home-stats-row .stat-icon img {width:30px;height:30px}
+ .home-stats-row .home-stat-inline .stat-value {font-size:20px!important}
+ .home-stats-row .home-stat-inline .stat-label {font-size:10px!important}
+}
+@media(prefers-reduced-motion:reduce) {.home-photo-hero .home-hero-slide {transition:none!important}}
+
+/* Compact home shortcuts with transparent artwork on the right. */
+:root #app .action-grid-4 > .home-action-card {
+ --shortcut-paper:#f8f8f0;--shortcut-edge:#dce2d5;--shortcut-ink:#49695c;
+ flex-basis:calc((100% - 3 * 16px) / 4)!important;
+ --shortcut-art-size:clamp(36px,4vw,62px);
+ min-height:0!important;height:auto!important;aspect-ratio:auto!important;align-self:stretch!important;
+ padding:16px 20px!important;border-radius:24px!important;
+ border:1px solid var(--shortcut-edge)!important;background:var(--shortcut-paper)!important;
+ box-shadow:0 3px 10px rgb(49 59 48 / 3%)!important;
+ display:grid!important;grid-template-columns:minmax(0,1fr) var(--shortcut-art-size);align-items:center!important;justify-content:start!important;
+ gap:12px!important;text-align:left!important;letter-spacing:0;
+ transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+}
+:root #app .action-grid.action-grid-4 {gap:16px!important;padding:4px 2px 14px!important;align-items:stretch!important}
+:root #app .home-action-card[data-nav=topics],:root #app .home-action-card[data-nav=reviews],:root #app .home-action-card[data-nav=rules] {--shortcut-paper:#f6f3f8;--shortcut-edge:#e3dce9;--shortcut-ink:#796a8a}
+:root #app .home-action-card[data-nav=dictionary],:root #app .home-action-card[data-nav=videos] {--shortcut-paper:#f0f6f8;--shortcut-edge:#d8e4e8;--shortcut-ink:#577e8b}
+:root #app .home-action-card[data-nav=practice],:root #app .home-action-card[data-nav=books] {--shortcut-paper:#fbf3eb;--shortcut-edge:#ebded0;--shortcut-ink:#a06d51}
+.home-action-copy {display:flex;flex-direction:column;gap:7px;min-width:0;width:100%;padding-right:0}
+.home-action-illustration {display:block;width:var(--shortcut-art-size);height:var(--shortcut-art-size);object-fit:contain;pointer-events:none;user-select:none;background:none;border:0;box-shadow:none}
+.home-action-title {display:block;color:var(--color-text);font-size:clamp(16px,1.45vw,20px);font-weight:750;line-height:1.25;letter-spacing:-.025em;overflow-wrap:break-word}
+.home-action-caption {display:block;color:var(--color-text-muted,#626c70);font-size:13px;font-weight:500;line-height:1.45;letter-spacing:0}
+.home-action-heading-short {display:none}
+@media(hover:hover) {
+ :root #app .action-grid-4 > .home-action-card:hover {border-color:var(--shortcut-ink)!important;box-shadow:0 8px 20px rgb(49 59 48 / 7%)!important;transform:translateY(-2px)}
+}
+:root #app .action-grid-4 > .home-action-card:active {transform:translateY(0);box-shadow:none!important}
+@media(min-width:601px) and (max-width:1280px) {
+ :root #app .action-grid-4 > .home-action-card {--shortcut-art-size:40px;padding:20px 18px!important;gap:8px!important}
+ .home-action-title {font-size:16px}
+}
+/* Keep the heading and controls together; give tablet cards room to breathe. */
+@media(max-width:1080px) {
+ :root #app .home-action-heading {display:flex;flex-wrap:nowrap;align-items:center;gap:16px!important;margin:26px 0 12px!important}
+ :root #app .home-action-heading h2 {flex:1;min-width:0;margin:0;font-size:22px!important;line-height:1.25;letter-spacing:-.025em!important;text-wrap:balance}
+ :root #app .home-action-heading .slider-tools {flex:0 0 auto;margin:0;gap:6px}
+ :root #app .home-action-heading .slider-arrow {--control-radius:14px;--control-height:44px;--control-padding:0;--control-size:20px;width:44px!important;height:44px!important;min-width:44px!important}
+ :root #app .action-grid.action-grid-4 {gap:12px!important;padding:3px 2px 10px!important}
+ :root #app .action-grid-4 > .home-action-card {--shortcut-art-size:56px;flex-basis:calc((100% - 24px) / 3)!important;height:auto!important;min-height:0!important;padding:14px!important;border-radius:20px!important;gap:10px!important;align-content:center;align-items:center!important}
+ .home-action-card .home-action-copy {display:flex;grid-column:1;grid-row:1;gap:6px;align-self:center}
+ .home-action-card .home-action-title {line-height:1.25;white-space:nowrap;overflow-wrap:normal}
+ .home-action-card .home-action-caption {line-height:1.35}
+ .home-action-card .home-action-illustration {grid-column:2;grid-row:1;justify-self:center;align-self:center}
+}
+@media(max-width:600px) {
+ :root #app .home-action-heading {gap:12px!important;margin:22px 0 10px!important}
+ :root #app .home-action-heading h2 {font-size:18px!important;line-height:1.3}
+ .home-action-heading-full {display:none}
+ .home-action-heading-short {display:inline}
+ :root #app .action-grid.action-grid-4 {gap:10px!important}
+ :root #app .action-grid-4 > .home-action-card {--shortcut-art-size:48px;flex-basis:calc((100% - 10px) / 2)!important;height:auto!important;min-height:0!important;padding:12px!important;border-radius:18px!important;gap:8px!important}
+ .home-action-title {font-size:14px;letter-spacing:-.015em}
+ .home-action-caption {font-size:12px}
+}
+@media(min-width:360px) and (max-width:380px) {
+ :root #app .action-grid-4 > .home-action-card {--shortcut-art-size:44px;grid-template-columns:minmax(0,1fr) 40px;padding:12px!important;gap:6px!important}
+ .home-action-title {font-size:13.5px}
+}
+@media(max-width:359px) {
+ /* Leave a glimpse of the next card rather than squeeze text and art together. */
+ :root #app .action-grid-4 > .home-action-card {--shortcut-art-size:52px;flex-basis:82%!important;height:auto!important;min-height:0!important;padding:12px 16px!important;gap:12px!important}
+ .home-action-title {font-size:15px}
+}
+@media(prefers-reduced-motion:reduce) {
+ :root #app .action-grid-4 > .home-action-card {transition:none!important;transform:none!important}
+}
+
+/* All four SFI levels stay visible, without carousel clones or imagery. */
+:root #app .course-tiles.home-course-grid {
+ display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+ gap:12px!important;padding:0!important;overflow:visible!important;
+ scroll-snap-type:none!important;touch-action:auto;align-items:stretch!important;
+}
+:root #app .home-course-grid > .home-course-card {
+ min-width:0!important;min-height:0!important;max-height:none!important;height:auto!important;
+ aspect-ratio:auto!important;padding:16px!important;border-radius:20px!important;
+ display:flex!important;flex-direction:column!important;align-items:stretch!important;
+ justify-content:flex-start!important;gap:7px!important;text-align:left!important;
+ background:var(--card-tint)!important;
+}
+.home-course-level {position:absolute;right:10px;bottom:-8px;z-index:0;display:block;color:var(--color-primary);font-size:clamp(72px,8vw,104px);font-weight:850;line-height:1;letter-spacing:-.06em;opacity:.14;pointer-events:none;user-select:none}
+.home-course-card .home-course-name,.home-course-card .home-course-count,.home-course-card .mini-progress {position:relative;z-index:1}
+.home-course-card[data-level=A] .home-course-level {color:var(--color-success-ink)}
+.home-course-card[data-level=C] .home-course-level {color:var(--color-warning-ink)}
+.home-course-card[data-level=D] .home-course-level {color:var(--color-accent-ink)}
+.home-course-name {display:block;color:var(--color-text);font-size:15px;font-weight:750;line-height:1.3;letter-spacing:-.02em;overflow-wrap:normal}
+.home-course-name-short {display:none}
+.home-course-count {display:block;margin-top:auto;color:var(--color-text-muted,#626c70);font-size:12px;font-weight:550;line-height:1.3;font-variant-numeric:tabular-nums}
+:root #app .home-course-card .mini-progress {display:block;width:100%;height:4px!important;margin:0!important;border-radius:4px;overflow:hidden}
+:root #app .home-course-card .mini-progress i {display:block;height:100%;border-radius:inherit}
+@media(max-width:600px) {
+ :root #app .home-courses-heading {margin:22px 0 12px!important}
+ :root #app .home-courses-heading h2 {font-size:20px!important;line-height:1.25}
+ :root #app .course-tiles.home-course-grid {gap:8px!important}
+ :root #app .home-course-grid > .home-course-card {padding:12px 8px!important;border-radius:16px!important;gap:6px!important}
+ .home-course-level {right:6px;bottom:-5px;font-size:64px}
+ .home-course-name {font-size:11px;line-height:1.25;letter-spacing:-.025em}
+ .home-course-name-full {display:none}
+ .home-course-name-short {display:inline}
+ .home-course-count {font-size:11px}
+ :root #app .home-course-card .mini-progress {height:3px!important}
+}
+@media(max-width:359px) {
+ :root #app .course-tiles.home-course-grid {gap:6px!important}
+ :root #app .home-course-grid > .home-course-card {padding:10px 6px!important;border-radius:13px!important}
+ .home-course-name {font-size:10px}
 }
