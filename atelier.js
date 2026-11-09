@@ -243,7 +243,38 @@ function decorateSlider(track){
  const stop=()=>{down=false;clearTimeout(settleTimer);settleTimer=setTimeout(normalize,160)};track.addEventListener('pointerup',stop);track.addEventListener('pointercancel',stop);track.addEventListener('pointerleave',stop);
  track.addEventListener('click',e=>{if(dragged){e.preventDefault();e.stopImmediatePropagation();dragged=false}},true);
 }
-function enhance(){enhanceHome();enhanceTopics();enhanceLessons();enhanceModes();enhanceVideos();enhanceCheats();enhanceBooks();enhanceNumbers();
+// Pack reference cards by their actual content height, including after a language or width change.
+let referenceLayout=null;
+function enhanceReference(){
+ const grid=document.querySelector('.reference-sections');
+ if(referenceLayout?.grid===grid)return;
+ if(referenceLayout){referenceLayout.observer?.disconnect();cancelAnimationFrame(referenceLayout.frame);referenceLayout=null}
+ if(!grid)return;
+ const cards=Array.from(grid.children),layout={grid,frame:0,observer:null};referenceLayout=layout;
+ const pack=()=>{
+  layout.frame=0;if(!grid.isConnected)return;
+  const columns=getComputedStyle(grid).gridTemplateColumns.trim().split(/\s+/).length;
+  if(columns<2){
+   delete grid.dataset.masonry;
+   cards.forEach(card=>{card.style.removeProperty('grid-column');card.style.removeProperty('grid-row')});
+   return;
+  }
+  // offsetHeight excludes the entrance transform and keeps the final layout stable during animation.
+  const heights=cards.map(card=>card.offsetHeight),bottoms=Array(columns).fill(0);
+  cards.forEach((card,i)=>{
+   const col=bottoms.indexOf(Math.min(...bottoms)),height=Math.ceil(heights[i]);
+   card.style.gridColumn=String(col+1);card.style.gridRow=`${bottoms[col]+1} / span ${height}`;
+   bottoms[col]+=height+14;
+  });
+  grid.dataset.masonry='true';
+ };
+ const queue=()=>{if(!layout.frame)layout.frame=requestAnimationFrame(pack)};
+ if(typeof ResizeObserver!=='undefined'){
+  layout.observer=new ResizeObserver(queue);cards.forEach(card=>layout.observer.observe(card));
+ }
+ pack();
+}
+function enhance(){enhanceReference();enhanceHome();enhanceTopics();enhanceLessons();enhanceModes();enhanceVideos();enhanceCheats();enhanceBooks();enhanceNumbers();
  document.querySelectorAll('.action-grid.action-grid-4,.topic-grid.premium-topics,.course-tiles').forEach(decorateSlider);
 }
 window.svPhotoForWord=photoForWord;

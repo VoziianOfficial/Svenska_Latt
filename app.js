@@ -584,7 +584,7 @@ async function boot(){
     applyAuthState(window.SVAuth.getState());
     if(user?.id===userId){cloudReadError=false;state=sanitize(snapshot);refreshWordUI(true)}
    },previewCatalog:()=>({
-    version:'static-afaa62b7426e09a7',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
+    version:'static-1750f0ad07cce4c4',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
     books:BOOKS.map(x=>x.id),videos:[...VIDEOS,...MORE_VIDEOS].map(x=>x.id)
    })});
    window.SVAuth.subscribe(()=>applyAuthState(window.SVAuth.getState()));
@@ -783,10 +783,105 @@ function locLessonContent4(lesson){
  if(locale4()==='ru')return lesson;
  const localized=content4().lessonDetails?.[lesson.id]?.[locale4()];
  if(!localized)return lesson;
- return {...lesson,...localized,reading:lesson.reading?{...lesson.reading,title:localized.readingTitle,tip:localized.readingTip}:null};
+ return {...lesson,...localized,...lesson.learningV2?.locales?.[locale4()],reading:lesson.reading?{...lesson.reading,title:localized.readingTitle,tip:localized.readingTip}:null};
 }
 function locRules4(lesson){return locLessonContent4(lesson).rules}
-function renderLesson(){const l=LESSONS.find(x=>x.id===routeParam);if(!l)return renderLessons();return `<button class="back-link" data-nav="lessons" data-param="${l.level}">← ${esc(t('backTo'))}</button><div class="lesson-hero"><div class="lesson-hero-art">${esc(l.emoji)}</div><div><span class="eyebrow">SFI ${l.level} · ${esc(t('lesson'))} ${LESSONS.indexOf(l)+1}</span><h1>${esc(locLesson4(l))}</h1><p>${esc(locLessonContent4(l).description)}</p><span class="chip">📝 ${l.questions.length} ${esc(t('quizDuration'))}</span></div></div><section class="content-panel lesson-goals"><h2>🎯 ${esc(t('lessonOverview'))}</h2><ul class="rule-list">${(locLessonContent4(l).goals||[locHint4()]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></section><div class="study-steps"><span>1 · 📚 ${esc(t('rulesHub'))}</span><span>2 · 🔊 ${esc(t('examples'))}</span><span>3 · 🧠 ${esc(t('startQuiz'))}</span></div><section class="content-panel"><h2 class="panel-heading">📚 ${esc(t('sourceNotes'))}</h2><div class="rule-chapters">${locRules4(l).map((r,i)=>`<div class="rule-chapter"><span class="step-num">${i+1}</span><p>${esc(r)}</p></div>`).join('')}</div></section><section class="content-panel"><h2 class="panel-heading">🔊 ${esc(t('examples'))}</h2><div class="example-grid lesson-examples">${l.examples.map(e=>`<div class="example-item"><b lang="sv">${esc(e.sv)}</b>${e.ru?`<p>${esc(quizSourceText(e.ru))}</p>`:''}<button data-action="speak" data-text="${esc(e.sv)}">🔊 ${esc(t('pronounce'))}</button></div>`).join('')}</div></section>${readingWidget3(locLessonContent4(l).reading)}<section class="horizontal-card"><div><h3>✨ ${esc(t('testKnowledge'))}</h3>${quizStatusChip('lesson:'+l.id)}<p>${l.questions.length} ${esc(t('quizDuration'))} · ${esc(t('lessonQuizTip'))}</p></div><button class="btn" data-action="lesson-test" data-id="${l.id}">${esc(t(state.quizResults['lesson:'+l.id]?'again':'startQuiz'))} →</button></section>`}
+function renderLesson(){const l=LESSONS.find(x=>x.id===routeParam);if(!l)return renderLessons();return `<button class="back-link" data-nav="lessons" data-param="${l.level}">← ${esc(t('backTo'))}</button><div class="lesson-hero"><div class="lesson-hero-art">${esc(l.emoji)}</div><div><span class="eyebrow">SFI ${l.level} · ${esc(t('lesson'))} ${LESSONS.indexOf(l)+1}</span><h1>${esc(locLesson4(l))}</h1><p>${esc(locLessonContent4(l).description)}</p><span class="chip">📝 ${l.learningV2?l.learningV2.questions.length:l.questions.length} ${esc(t('quizDuration'))}</span></div></div>${renderLearningV2Introduction(l)}<section class="content-panel lesson-goals"><h2>🎯 ${esc(t('lessonOverview'))}</h2><ul class="rule-list">${(locLessonContent4(l).goals||[locHint4()]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></section><div class="study-steps"><span>1 · 📚 ${esc(t('rulesHub'))}</span><span>2 · 🔊 ${esc(t('examples'))}</span><span>3 · 🧠 ${esc(t('startQuiz'))}</span></div><section class="content-panel"><h2 class="panel-heading">📚 ${esc(t('sourceNotes'))}</h2><div class="rule-chapters">${locRules4(l).map((r,i)=>`<div class="rule-chapter"><span class="step-num">${i+1}</span><p>${esc(r)}</p></div>`).join('')}</div></section><section class="content-panel"><h2 class="panel-heading">🔊 ${esc(t('examples'))}</h2><div class="example-grid lesson-examples">${l.examples.map(e=>`<div class="example-item"><b lang="sv">${esc(e.sv)}</b>${e.ru?`<p>${esc(quizSourceText(e.ru))}</p>`:''}<button data-action="speak" data-text="${esc(e.sv)}">🔊 ${esc(t('pronounce'))}</button></div>`).join('')}</div></section>${readingWidget3(locLessonContent4(l).reading)}${renderLearningV2(l)}<section class="horizontal-card"><div><h3>✨ ${esc(l.learningV2?learningV2Labels().legacy:t('testKnowledge'))}</h3>${quizStatusChip('lesson:'+l.id)}<p>${l.questions.length} ${esc(t('quizDuration'))} · ${esc(l.learningV2?learningV2Labels().legacyNote:t('lessonQuizTip'))}</p></div><button class="btn" data-action="lesson-test" data-id="${l.id}">${esc(t(state.quizResults['lesson:'+l.id]?'again':'startQuiz'))} →</button></section>`}
+// Formative lesson practice is intentionally separate from the trusted XP bank.
+// Drafts live only in this tab's memory, and never enter progress/session storage.
+const learningV2Drafts = new Map();
+function learningV2Text(value){return typeof value==='string'?value:value?.[locale4()]||''}
+function learningV2Labels(){return {
+ intro:txt4('Перед началом','Before you start','Innan du börjar','Перед початком'),
+ patterns:txt4('Схемы и сравнение','Patterns and comparison','Mönster och jämförelse','Схеми й порівняння'),
+ mistakes:txt4('Типичные ошибки','Common mistakes','Vanliga fel','Типові помилки'),
+ cheat:txt4('Шпаргалка: presens','Presens reference','Snabbguide: presens','Шпаргалка: presens'),
+ meaning:txt4('Значение','Meaning','Betydelse','Значення'),
+ practice:txt4('Новая практика: 20 заданий','New practice: 20 tasks','Ny träning: 20 uppgifter','Нова практика: 20 завдань'),
+ notice:txt4('Учебная проверка без XP. Результаты и черновики остаются в памяти этой вкладки до перезагрузки и не меняют прогресс урока.','Formative practice, no XP. Answers and drafts stay in this tab’s memory until reload and do not change lesson progress.','Träning utan XP. Svar och utkast finns i flikens minne tills sidan laddas om och ändrar inte lektionsframsteg.','Навчальна перевірка без XP. Відповіді й чернетки залишаються в пам’яті цієї вкладки до перезавантаження і не змінюють прогрес уроку.'),
+ options:txt4('Почему каждый вариант подходит или не подходит','Why each option fits or does not fit','Varför alternativen passar eller inte passar','Чому кожен варіант підходить або не підходить'),
+ writing:txt4('Письменная практика','Writing practice','Skrivträning','Письмова практика'),
+ self:txt4('Автоматической оценки грамматики здесь нет. Сравни ответ с образцом и проверь каждый критерий. Образец — один из возможных ответов. Текст не получает отметку «правильно» или XP.','Grammar is not automatically assessed here. Compare your answer with the model and review every criterion. The model is one possible answer. Your text receives no correctness grade or XP.','Grammatiken bedöms inte automatiskt här. Jämför med exemplet och kontrollera varje kriterium. Exemplet är ett av flera möjliga svar. Texten får inget rätt/fel-betyg eller XP.','Автоматичного оцінювання граматики тут немає. Порівняй відповідь зі зразком і перевір кожен критерій. Зразок — одна з можливих відповідей. Текст не отримує позначки «правильно» або XP.'),
+ model:txt4('Образец и критерии','Model and checklist','Exempel och checklista','Зразок і критерії'),
+ sources:txt4('Источники и границы проверки','Sources and review scope','Källor och granskning','Джерела й межі перевірки'),
+ review:txt4('Правила сверены с указанными источниками. Независимая языковая проверка пилота ещё требуется. Это упражнение не является официальной оценкой SFI.','Rules were checked against the linked sources. Independent language review of the pilot is still pending. This practice is not an official SFI assessment.','Reglerna har kontrollerats mot källorna. En oberoende språkgranskning av pilotmaterialet återstår. Träningen är ingen officiell sfi-bedömning.','Правила звірено із зазначеними джерелами. Незалежна мовна перевірка пілота ще потрібна. Ця вправа не є офіційним оцінюванням SFI.'),
+ legacy:txt4('Предыдущий зачётный тест','Previous scored test','Tidigare poänggivande test','Попередній заліковий тест'),
+ legacyNote:txt4('Этот прежний тест сохраняет результат урока и однократную награду. Новая практика выше проверяется отдельно.','This existing test retains the lesson result and one-time reward. The new practice above is checked separately.','Det befintliga testet behåller lektionsresultatet och engångsbelöningen. Den nya träningen ovan kontrolleras separat.','Цей попередній тест зберігає результат уроку й одноразову нагороду. Нова практика вище перевіряється окремо.'),
+ checked:txt4('Проверено','Checked','Kontrollerat','Перевірено'),
+ retry:txt4('Проверь форму и попробуй ещё раз.','Check the form and try again.','Kontrollera formen och försök igen.','Перевір форму й спробуй ще раз.'),
+ prerequisites:txt4('Подготовка','Preparation','Förberedelse','Підготовка')
+}}
+function learningV2Key(lessonId,id){return (user?.id||'guest')+':'+lessonId+':'+id}
+function learningV2Check(lessonId,id,answer){
+ const q=LESSONS.find(l=>l.id===lessonId)?.learningV2?.questions.find(q=>q.id===id);
+ if(!q||!String(answer).trim())return null;
+ if(q.type==='choice'&&!q.options.some(o=>o.id===answer))return null;
+ const correct=q.type==='choice'?answer===q.answerId:normalize(answer)===normalize(q.answer);
+ const result={value:answer,checked:true,correct};
+ learningV2Drafts.set(learningV2Key(lessonId,id),result);
+ return result;
+}
+function learningV2Feedback(q,draft){
+ if(!draft?.checked)return '';
+ const labels=learningV2Labels(),why=q.type==='choice'?q.options.find(o=>o.id===draft.value)?.feedback:q.feedback;
+ return `<div class="quiz-feedback ${draft.correct?'success':'failure'}"><b>${esc(draft.correct?t('correct'):t('incorrect'))}</b><p>${esc(learningV2Text(why))}</p>${draft.correct?'':`<p>${esc(labels.retry)}</p>`}</div>`+
+ (q.type==='choice'?`<details><summary>${esc(labels.options)}</summary>${q.options.map(o=>`<p><strong lang="sv">${esc(learningV2Text(o.text))}</strong> — ${esc(learningV2Text(o.feedback))}</p>`).join('')}</details>`:'');
+}
+function learningV2Summary(v){
+ const checked=v.questions.map(q=>learningV2Drafts.get(learningV2Key(v.lessonId,q.id))).filter(d=>d?.checked);
+ return `${learningV2Labels().checked}: ${checked.length} / ${v.questions.length} · ${t('correct')}: ${checked.filter(d=>d.correct).length}`;
+}
+function renderLearningV2Introduction(l){
+ const v=l.learningV2;if(!v)return '';
+ const labels=learningV2Labels();
+ return `<section class="content-panel"><h2>${esc(labels.intro)}</h2><p>${esc(learningV2Text(v.introduction))}</p><p>${esc(labels.prerequisites)}: ${v.prerequisites.map(id=>{const lesson=LESSONS.find(x=>x.id===id);return `<button class="btn ghost small" data-nav="lesson" data-param="${esc(id)}">${esc(locLesson4(lesson))}</button>`}).join(' ')}</p></section>`;
+}
+function renderLearningV2(l){
+ const v=l.learningV2;if(!v)return '';
+ const labels=learningV2Labels();
+ const panels=`<section class="content-panel"><h2>${esc(labels.patterns)}</h2>${v.structures.map(s=>`<p><code>${esc(s.pattern)}</code><br><b lang="sv">${esc(s.example)}</b> — ${esc(learningV2Text(s.meaning))}</p>`).join('')}${v.comparison.map(c=>`<p><b>${esc(c.pair)}</b> — ${esc(learningV2Text(c.explanation))}</p>`).join('')}</section>`+
+ `<section class="content-panel"><h2>${esc(labels.mistakes)}</h2>${v.mistakes.map(m=>`<p><s lang="sv">${esc(m.wrong)}</s> → <b lang="sv">${esc(m.correct)}</b><br>${esc(learningV2Text(m.why))}</p>`).join('')}</section>`+renderLearningV2Cheat(l)+
+ `<section class="content-panel"><h2>${esc(t('vocabulary'))}</h2><dl>${v.vocabulary.map(w=>`<dt lang="sv"><b>${esc(w.sv)}</b></dt><dd>${esc(learningV2Text(w.meaning))}</dd>`).join('')}</dl></section>`;
+ const tasks=v.questions.map((q,i)=>{
+  const draft=learningV2Drafts.get(learningV2Key(l.id,q.id));
+  const answer=q.type==='choice'?q.options.map(o=>`<label class="learning-v2-option"><input type="radio" name="answer" required value="${esc(o.id)}" ${draft?.value===o.id?'checked':''}> <span>${esc(learningV2Text(o.text))}</span></label>`).join(''):
+   `<input class="form-input" name="answer" aria-label="${esc(t('writeAnswer'))}" lang="sv" required autocomplete="off" spellcheck="false" value="${esc(draft?.value||'')}">`;
+  return `<form class="content-panel learning-v2-task" data-learning-v2-form data-lesson="${esc(l.id)}" data-task="${esc(q.id)}"><fieldset><legend>${i+1}. ${esc(learningV2Text(q.prompt))}</legend>${q.context?`<p class="notice" lang="sv">${esc(q.context)}</p>`:''}${answer}</fieldset><button class="btn secondary small" type="submit">${esc(t('check'))}</button><div data-learning-v2-feedback aria-live="polite">${learningV2Feedback(q,draft)}</div></form>`;
+ }).join('');
+ const writing=v.writing.map((w,i)=>`<section class="content-panel"><h3>${i+1}. ${esc(learningV2Text(w.prompt))}</h3><label for="${esc(w.id)}">${esc(t('writeAnswer'))}</label><textarea class="form-input learning-v2-writing" rows="5" lang="sv" id="${esc(w.id)}" data-learning-v2-writing data-lesson="${esc(l.id)}" data-task="${esc(w.id)}">${esc(learningV2Drafts.get(learningV2Key(l.id,w.id))?.value||'')}</textarea><details><summary>${esc(labels.model)}</summary><p lang="sv">${esc(w.model)}</p><p>${esc(learningV2Text(w.translation))}</p><ul>${v.rubric.map(r=>`<li>${esc(learningV2Text(r))}</li>`).join('')}</ul></details></section>`).join('');
+ return `<div class="learning-v2" data-learning-v2="${esc(v.id)}">${panels}<section class="content-panel"><h2>${esc(labels.practice)}</h2><p>${esc(labels.notice)}</p><p data-learning-v2-summary role="status">${esc(learningV2Summary(v))}</p></section>${tasks}<section class="content-panel"><h2>${esc(labels.writing)}</h2><p>${esc(labels.self)}</p></section>${writing}<section class="content-panel"><h2>${esc(labels.sources)}</h2><p>${esc(labels.review)}</p><ul>${v.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)} ↗</a></li>`).join('')}</ul></section></div>`;
+}
+function renderLearningV2Cheat(l){
+ const v=l.learningV2;if(!v)return '';
+ const labels=learningV2Labels();
+ return `<section class="content-panel learning-v2-reference"><h2>${esc(labels.cheat)}</h2><div class="cheat-scroll"><table><thead><tr><th scope="col">Infinitiv</th><th scope="col">Presens</th><th scope="col">${esc(labels.meaning)}</th></tr></thead><tbody>${v.cheatSheet.map(r=>`<tr><td lang="sv">${esc(r.inf)}</td><td lang="sv"><b>${esc(r.present)}</b></td><td>${esc(learningV2Text(r.meaning))}</td></tr>`).join('')}</tbody></table></div><p><code>jag / du / hon / vi / ni / de → läser</code></p>${v.structures.map(s=>`<p><code>${esc(s.pattern)}</code> · <span lang="sv">${esc(s.example)}</span> — ${esc(learningV2Text(s.meaning))}</p>`).join('')}<p>${esc(v.locales[locale4()].rules[8])}</p><button class="btn ghost small" data-nav="lesson" data-param="${esc(l.id)}">${esc(locLesson4(l))} →</button></section>`;
+}
+function rememberLearningV2Draft(e){
+ const el=e.target,form=el.closest?.('[data-learning-v2-form]'),writing=el.matches?.('[data-learning-v2-writing]');
+ if(!form&&!writing)return;
+ if(form&&el.name!=='answer')return;
+ const holder=writing?el:form,key=learningV2Key(holder.dataset.lesson,holder.dataset.task);
+ const previous=learningV2Drafts.get(key);
+ learningV2Drafts.set(key,{value:el.value,checked:false});
+ if(previous?.checked&&form){
+  form.querySelector('[data-learning-v2-feedback]').innerHTML='';
+  const v=LESSONS.find(l=>l.id===holder.dataset.lesson)?.learningV2;
+  const summary=document.querySelector('[data-learning-v2-summary]');if(summary&&v)summary.textContent=learningV2Summary(v);
+ }
+}
+document.addEventListener('input',rememberLearningV2Draft);
+document.addEventListener('change',rememberLearningV2Draft);
+document.addEventListener('submit',e=>{
+ const form=e.target;if(!form.matches?.('[data-learning-v2-form]'))return;
+ e.preventDefault();if(!form.reportValidity())return;
+ const lesson=LESSONS.find(l=>l.id===form.dataset.lesson),q=lesson?.learningV2?.questions.find(q=>q.id===form.dataset.task);
+ if(!q)return;
+ const input=form.querySelector(q.type==='choice'?'input[name="answer"]:checked':'input[name="answer"]');
+ const result=learningV2Check(lesson.id,q.id,input?.value||'');if(!result)return;
+ form.querySelector('[data-learning-v2-feedback]').innerHTML=learningV2Feedback(q,result);
+ const summary=document.querySelector('[data-learning-v2-summary]');if(summary)summary.textContent=learningV2Summary(lesson.learningV2);
+});
+
 function renderTopics(){let cats=topicNames3();return title(t('topics'),t('aboutTopic'))+`<section class="topic-intro"><h2>🗂️ ${esc(t('allTopics'))} · ${cats.length}</h2><p>${esc(t('aboutTopic'))}</p><div class="topic-quick"><button class="btn secondary small" data-nav="rules">📜 ${esc(t('rulesHub'))}</button><button class="btn secondary small" data-nav="practice">🧠 ${esc(t('train'))}</button><button class="btn secondary small" data-nav="videos">🎬 ${esc(t('videos'))}</button></div></section><div class="topic-grid">${cats.map((name,i)=>{const count=WORDS.filter(w=>w.category===name).length;return `<button class="topic-card hue-${i%6}" data-nav="topic" data-param="${esc(name)}"><span class="topic-art">${topicIcon3(name)}</span><strong>${esc(locCategory4(name))}</strong><small>${count} ${esc(t('words'))}</small><span class="topic-open">${esc(t('open'))} →</span></button>`}).join('')}</div>`}
 function renderTopic(){let cat=routeParam,rows=WORDS.filter(w=>w.category===cat);if(!rows.length)return renderTopics();const content=TOPIC_CONTENT3[cat];return `<button class="back-link" data-nav="topics">← ${esc(t('topics'))}</button><section class="topic-banner"><div class="topic-art">${topicIcon3(cat)}</div><div><span class="eyebrow">🇸🇪 ${esc(t('vocabulary'))}</span><h1>${esc(locCategory4(cat))}</h1>${quizStatusChip('topic:'+cat)}<p>${rows.length} ${esc(t('words'))}</p><button class="btn white" data-action="topic-quiz" data-topic="${esc(cat)}">🧠 ${esc(t('topicQuiz'))}</button></div></section><section class="content-panel"><h2>📖 ${esc(t('notes'))}</h2><p>${esc(locale4()==='ru'?(content?.tip||'Учи небольшими порциями, читай и проговаривай вслух.'):t('aboutTopic'))}</p><div class="topic-chips">${rows.slice(0,9).map(w=>`<button data-action="speak" data-text="${esc(w.word)}">🔊 ${esc(w.word)}</button>`).join('')}</div></section>${content?`<section class="content-panel"><h2>💬 ${esc(t('examples'))}</h2><div class="reading-lines">${content.lines.map(([sv,ru])=>`<div class="reading-line"><div><strong lang="sv">${esc(sv)}</strong>${locale4()==='ru'?`<small>${esc(ru)}</small>`:''}</div><button class="sound-btn" data-action="speak" data-text="${esc(sv)}">🔊</button></div>`).join('')}</div><button class="btn secondary small" style="margin-top:15px" data-action="speak" data-text="${esc(content.lines.map(x=>x[0]).join(' '))}">🔊 ${esc(t('listenReading'))}</button></section>`:''}<section class="topic-words"><div class="section-head"><h2>📚 ${esc(t('wordsModule'))}</h2></div><div class="words-grid">${rows.map(wordEntry).join('')}</div></section><div class="horizontal-card"><div><h3>⭐ ${esc(t('topicQuiz'))}</h3><p>${Math.min(20,rows.length)} ${esc(t('quizDuration'))}</p></div><button class="btn" data-action="topic-quiz" data-topic="${esc(cat)}">${esc(t('startQuiz'))} →</button></div>`}
 function renderRules(){return title(t('rulesHub'),`${LESSONS.length} ${esc(t('availableLessons'))} · SFI A–D`)+`<div class="rules-tabs"><button class="pill" data-nav="alphabet">🔤 ${esc(t('alphabetHub'))}</button><button class="pill" data-nav="topics">📚 ${esc(t('topics'))}</button></div>${'ABCD'.split('').map(level=>`<section class="content-panel"><h2>📗 SFI ${level} · ${esc(levelName(level))}</h2><div class="rules-accordion">${LESSONS.filter(l=>l.level===level).map(l=>`<details class="rule-details"><summary><span class="rule-topic-title"><span class="rule-topic-icon" aria-hidden="true">${esc(l.emoji)}</span><span>${esc(locLesson4(l))}</span></span><span class="chevron">⌄</span></summary><div class="details-body"><ul>${locRules4(l).map(r=>`<li>${esc(r)}</li>`).join('')}</ul><div class="example-grid">${l.examples.slice(0,3).map(e=>`<div class="example-item"><b lang="sv">${esc(e.sv)}</b>${e.ru?`<p>${esc(quizSourceText(e.ru))}</p>`:''}<button data-action="speak" data-text="${esc(e.sv)}">🔊</button></div>`).join('')}</div><button class="btn small" data-nav="lesson" data-param="${l.id}">${esc(t('open'))} →</button></div></details>`).join('')}</div></section>`).join('')}`}
@@ -1119,9 +1214,68 @@ const CHEAT_SECTIONS=[
 {ico:'🧩',title:['Прилагательные','Adjectives','Adjektiv','Прикметники'],rows:[['en stor bil','ett stort hus','-t у ett-слов'],['två stora bilar','den stora bilen','-a во множественном и определённом употреблении']]},
 {ico:'🔀',title:['Порядок слов','Word order','Ordföljd','Порядок слів'],rows:[['Jag läser en bok.','I dag läser jag en bok.','личный глагол на второй позиции в главном предложении'],['Jag läser inte.','Jag vill inte läsa.','inte после личного глагола в главном предложении'],['… eftersom jag inte har tid','… eftersom jag är sjuk','в придаточном inte обычно перед личным глаголом']]},
 {ico:'❓',title:['Вопросы','Questions','Frågor','Запитання'],rows:[['Var bor du?','Jag bor i Malmö.','где?'],['När börjar du?','Jag börjar klockan åtta.','когда?'],['Kan du komma?','Ja, det kan jag.','да/нет: глагол в начале']]},
-{ico:'👥',title:['Местоимения','Pronouns','Pronomen','Займенники'],rows:[['jag · mig · min/mitt/mina','du · dig · din/ditt/dina','подлежащее / дополнение / принадлежность'],['han · honom · hans','hon · henne · hennes','различаем формы'],['de · dem · deras','vi · oss · vår/vårt/våra','письменные формы de/dem']]}
+{ico:'👥',title:['Местоимения','Pronouns','Pronomen','Займенники'],rows:[['jag · mig · min/mitt/mina','du · dig · din/ditt/dina','подлежащее / дополнение / принадлежность'],['han · honom · hans','hon · henne · hennes','различаем формы'],['de · dem · deras','vi · oss · vår/vårt/våra','письменные формы de/dem']]},
+{title:['Модальные глаголы','Modal verbs','Hjälpverb','Модальні дієслова'],rows:[['kan + infinitiv','Jag kan simma.','могу / умею'],['vill + infinitiv','Jag vill läsa.','хочу'],['måste + infinitiv','Jag måste arbeta.','должен / нужно']]}
 ];
-function renderCheats(){return title('🧠 '+pT('cheats'),pT('cheatIntro'))+`<div class="cheat-grid">${CHEAT_SECTIONS.map(section=>`<section class="cheat-card"><span class="cheat-emoji">${section.ico}</span><h2>${esc(section.title[{ru:0,en:1,sv:2,uk:3}[locale4()]||0])}</h2><div class="cheat-scroll"><table><tbody>${section.rows.map(([a,b,c])=>`<tr><th>${esc(a)}</th><td lang="sv">${esc(b)}</td>${locale4()==='ru'?`<td>${esc(c)}</td>`:''}</tr>`).join('')}</tbody></table></div></section>`).join('')}</div><section class="content-panel"><h2>${esc(pT('source'))}</h2><p>${esc(txt4('Правила — учебные схемы, а не исчерпывающее описание исключений. Если у конкретного слова есть особая форма, проверяй её в словаре Svenska Akademien.','These are learning summaries, not exhaustive rules. Check irregular forms in Svenska Akademien’s dictionaries.','Det här är förenklade översikter. Kontrollera undantag i Svenska Akademiens ordböcker.','Це навчальні схеми, а не всі винятки. Звіряй форми у словниках Svenska Akademien.'))}</p><div class="source-links"><a href="https://svenska.se/" target="_blank" rel="noopener noreferrer">Svenska Akademiens ordböcker ↗</a><a href="https://www.skolverket.se/undervisning/komvux/komvux-i-svenska-for-invandrare-sfi" target="_blank" rel="noopener noreferrer">Skolverket · SFI ↗</a><a href="https://www.isof.se/" target="_blank" rel="noopener noreferrer">Språkrådet / Isof ↗</a></div></section>`}
+// The reference page keeps its own layout so decorative card enhancements stay out of tables.
+function referenceCardIcon(topic){
+ const paths={
+  presens:'<circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2M5 3 3 5m16-2 2 2"/>',
+  tenses:'<path d="M3 12h18m-3-3 3 3-3 3M6 9v6m6-9v12"/>',
+  verbs:'<path d="M12 3v5m-7 8v-5h14v5M12 11v5M3 20h4m3 0h4m3 0h4"/>',
+  nouns:'<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm0 9 8-4.5M12 12 4 7.5M12 12v9M8 5.2l8 4.6"/>',
+  adjectives:'<path d="m4 19 6-15 6 15M6 14h8m4-10v5m-2.5-2.5h5M18 14l3 5m-3 0 3-5"/>',
+  order:'<path d="M4 6h15m-3-3 3 3-3 3M20 18H5m3-3-3 3 3 3M6 12h12"/>',
+  questions:'<path d="M8 20H4v-5a8 8 0 1 1 4 5Z"/><path d="M9.5 8.5a2.5 2.5 0 1 1 4 2c-1 .6-1.5 1-1.5 2.5M12 16h.01"/>',
+  modals:'<path d="m13 3-8 10h6l-1 8 9-11h-6l1-7Z"/>',
+  pronouns:'<circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-16a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 4v2"/>'
+ };
+ return `<svg class="reference-icon" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[topic]||paths.presens}</svg>`;
+}
+function renderCheatFeature(l,index){
+ const v=l.learningV2,labels=learningV2Labels();
+ const name=txt4('Настоящее время','Present tense','Presens','Теперішній час');
+ return `<section class="reference-feature" style="--reference-delay:0ms" aria-labelledby="cheat-feature-${index}">
+  <header class="reference-card-head">${referenceCardIcon('presens')}<div><span class="reference-kicker" lang="sv">PRESENS</span><h2 id="cheat-feature-${index}" tabindex="-1">${esc(name)}</h2></div><span class="reference-level">SFI A</span></header>
+  <div class="reference-feature-body"><div class="reference-verbs"><div class="reference-table-wrap"><table class="reference-table"><caption class="sr-only">${esc(labels.cheat)}</caption><thead><tr><th scope="col">Infinitiv</th><th scope="col">Presens</th><th scope="col">${esc(labels.meaning)}</th></tr></thead><tbody>${v.cheatSheet.map(r=>`<tr><td lang="sv">${esc(r.inf)}</td><td lang="sv"><strong>${esc(r.present)}</strong></td><td>${esc(learningV2Text(r.meaning))}</td></tr>`).join('')}</tbody></table></div><div class="reference-memory"><span>${esc(txt4('Запомни','Remember','Kom ihåg','Запам’ятай'))}</span><p>${esc(txt4('Одна форма для всех местоимений','One form for every pronoun','Samma form för alla pronomen','Одна форма для всіх займенників'))}</p><div lang="sv">jag · du · hon · vi · ni · de <b>→ läser</b></div></div></div>
+  <div class="reference-patterns"><h3>${esc(txt4('Как построить фразу','Build a sentence','Bygg en mening','Як побудувати фразу'))}</h3>${v.structures.map((s,i)=>`<div class="reference-pattern"><span class="reference-pattern-label">${esc([txt4('Утверждение','Statement','Påstående','Твердження'),txt4('Отрицание','Negation','Negation','Заперечення'),txt4('Вопрос','Question','Fråga','Запитання')][i]||labels.patterns)}</span><code lang="sv">${esc(s.pattern)}</code><p lang="sv">${esc(s.example)}</p><small>${esc(learningV2Text(s.meaning))}</small></div>`).join('')}</div></div>
+  <div class="reference-feature-bottom"><div class="reference-caveat"><span aria-hidden="true">i</span><p>${esc(v.locales[locale4()].rules[8])}</p></div>
+  <footer class="reference-feature-footer"><button type="button" data-nav="lesson" data-param="${esc(l.id)}">${esc(locLesson4(l))} <span aria-hidden="true">↗</span></button></footer></div>
+ </section>`;
+}
+function renderCheats(){
+ const langIndex={ru:0,en:1,sv:2,uk:3}[locale4()]||0;
+ const features=LESSONS.filter(l=>l.learningV2);
+ const navTitles=[txt4('Presens','Presens','Presens','Presens'),...CHEAT_SECTIONS.map(s=>s.title[langIndex])];
+ const sectionHeaders=[
+  [txt4('Форма','Form','Form','Форма'),txt4('Пример','Example','Exempel','Приклад')],
+  [txt4('Группа','Group','Grupp','Група'),txt4('Формы глагола','Verb forms','Verbformer','Форми дієслова')],
+  [txt4('Начальная форма','Base form','Grundform','Початкова форма'),txt4('Другие формы','Other forms','Andra former','Інші форми')],
+  [txt4('Пример','Example','Exempel','Приклад'),txt4('Сравни','Compare','Jämför','Порівняй')],
+  [txt4('Пример','Example','Exempel','Приклад'),txt4('Сравни','Compare','Jämför','Порівняй')],
+  [txt4('Вопрос','Question','Fråga','Запитання'),txt4('Ответ','Answer','Svar','Відповідь')],
+  [txt4('Формы','Forms','Former','Форми'),txt4('Сравни','Compare','Jämför','Порівняй')],
+  [txt4('Схема','Pattern','Mönster','Схема'),txt4('Пример','Example','Exempel','Приклад')]
+ ];
+ const navItems=[...features.map((l,i)=>({target:`cheat-feature-${i}`,label:navTitles[0]})),...CHEAT_SECTIONS.map((s,i)=>({target:`cheat-topic-${i}`,label:navTitles[i+1]}))];
+ return `<div class="reference-page"><header class="reference-hero"><div><h1>${esc(pT('cheats'))}</h1><p>${esc(txt4('Шведская грамматика: правила и примеры','Swedish grammar: rules and examples','Svensk grammatik: regler och exempel','Шведська граматика: правила й приклади'))}</p></div><span class="reference-hero-meta">${navItems.length} ${esc(txt4('тем','topics','teman','тем'))} <span aria-hidden="true">/</span> SFI A–D</span></header>
+ <nav class="reference-nav" aria-label="${esc(txt4('Темы шпаргалок','Reference topics','Guidernas teman','Теми шпаргалок'))}">${navItems.map(item=>`<button type="button" data-cheat-target="${item.target}">${esc(item.label)}</button>`).join('')}</nav>
+ ${features.map((l,i)=>renderCheatFeature(l,i)).join('')}
+ <div class="reference-sections">${CHEAT_SECTIONS.map((section,i)=>`<section class="reference-card reference-card--${i}" style="--reference-delay:${(i+1)*55}ms;--reference-enter-x:${i%2?8:-8}px" aria-labelledby="cheat-topic-${i}"><header class="reference-card-head">${referenceCardIcon(['tenses','verbs','nouns','adjectives','order','questions','pronouns','modals'][i])}<div><h2 id="cheat-topic-${i}" tabindex="-1">${esc(section.title[langIndex])}</h2></div></header><div class="reference-table-wrap"><table class="reference-table"><caption class="sr-only">${esc(section.title[langIndex])}</caption><thead><tr>${sectionHeaders[i].map(h=>`<th scope="col">${esc(h)}</th>`).join('')}${locale4()==='ru'?'<th scope="col">Подсказка</th>':''}</tr></thead><tbody>${section.rows.map(([a,b,c])=>`<tr><th scope="row" lang="sv">${esc(a)}</th><td lang="sv">${esc(b)}</td>${locale4()==='ru'?`<td>${esc(c)}</td>`:''}</tr>`).join('')}</tbody></table></div></section>`).join('')}</div>
+ <section class="reference-sources"><div><h2>${esc(pT('source'))}</h2><p>${esc(txt4('Это краткие учебные схемы. Особые формы и исключения проверяй в словарях и справочниках.','These are concise learning summaries. Check special forms and exceptions in dictionaries and reference guides.','Det här är korta översikter. Kontrollera särskilda former och undantag i ordböcker och handböcker.','Це короткі навчальні схеми. Особливі форми й винятки перевіряй у словниках і довідниках.'))}</p><div class="reference-source-links"><a href="https://svenska.se/" target="_blank" rel="noopener noreferrer">Svenska Akademien ↗</a><a href="https://www.skolverket.se/undervisning/komvux/komvux-i-svenska-for-invandrare-sfi" target="_blank" rel="noopener noreferrer">Skolverket · SFI ↗</a><a href="https://www.isof.se/" target="_blank" rel="noopener noreferrer">Språkrådet / Isof ↗</a></div></div></section>
+ <button class="reference-back-top" type="button" data-cheat-target="reference-top">↑ ${esc(txt4('К началу шпаргалок','Back to top','Till början','На початок шпаргалок'))}</button></div>`;
+}
+document.addEventListener('click',e=>{
+ const button=e.target.closest?.('[data-cheat-target]');if(!button)return;
+ const target=button.dataset.cheatTarget==='reference-top'?document.querySelector('.reference-hero h1'):document.getElementById(button.dataset.cheatTarget);if(!target)return;
+ const page=button.closest('.reference-page'),card=target.closest('.reference-feature,.reference-card');
+ page.querySelectorAll('.reference-nav button').forEach(item=>item.removeAttribute('aria-current'));
+ page.querySelectorAll('.reference-arrival').forEach(item=>item.classList.remove('reference-arrival'));
+ if(button.closest('.reference-nav'))button.setAttribute('aria-current','location');
+ if(card){void card.offsetWidth;card.classList.add('reference-arrival')}
+ target.setAttribute('tabindex','-1');target.focus({preventScroll:true});
+ (card||target).scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});
+});
 // Verified episode questions. Source locators use PDF page numbers (one-based).
 const VIDEO_QUIZ_BANK={
  "ur-hitta1": {
