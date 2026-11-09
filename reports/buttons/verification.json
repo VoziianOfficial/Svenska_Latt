@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-09",
+  "browser": "Chrome/157.0.8103.38",
+  "combinations": 360,
+  "widths": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "languages": [
+    "ru",
+    "uk",
+    "en",
+    "sv"
+  ],
+  "checks": [
+    "360 route/width/language layouts; 44px targets, text containment, one PWA action, no page/control overflow",
+    "Mobile hamburger, sidebar destination, bottom menu, close and SFI tabs",
+    "Lesson start, 13 answers, next/finish and return navigation",
+    "Written answer uses the existing form submit and correct feedback",
+    "Favorite toggle and learned action with existing guest progress",
+    "Flashcard next, previous and flip",
+    "Audio button reaches the existing pronunciation handler (speech output not audited)",
+    "Video external destination and video quiz start",
+    "Calendar previous month and current-month reset",
+    "Login/register modal, pending lock, error recovery, switch and close; auth transport mocked, no live account",
+    "PWA instructions and close, native-prompt event contract, repeated-click lock; actual OS install not performed",
+    "Keyboard focus ring, desktop hover/active, unchanged busy width, busy click guard and reduced motion"
+  ],
+  "exceptions": [],
+  "localFailures": [],
+  "limits": [
+    "Live Supabase login/signup and account deletion were not performed. Auth transport was mocked.",
+    "Audio dispatch was tested; Swedish speech quality requires a device with a Swedish voice.",
+    "PWA instructions and synthetic prompt lifecycle were tested; actual OS installation was not performed."
+  ]
+}

@@ -27,9 +27,10 @@ for(const source of lessons){
   assert.equal(localized.description.length>0,true);
   if(language!=='ru'){
    const data=run(`content4().lessonDetails['${source.id}']['${language}']`);
-   assert.equal(localized.description,data.description,'Description replaced with generic text');
-   assert.equal(JSON.stringify(localized.rules),JSON.stringify(data.rules),'Rules replaced with summary');
-   if(source.goals)assert.equal(JSON.stringify(localized.goals),JSON.stringify(data.goals));
+   const expected=source.learningV2?.locales?.[language]||data;
+   assert.equal(localized.description,expected.description,'Description replaced with generic text');
+   assert.equal(JSON.stringify(localized.rules),JSON.stringify(expected.rules),'Rules replaced with summary');
+   if(source.goals)assert.equal(JSON.stringify(localized.goals),JSON.stringify(expected.goals));
    assert.equal(localized.reading.title,data.readingTitle);
    assert.equal(localized.reading.tip,data.readingTip);
   }

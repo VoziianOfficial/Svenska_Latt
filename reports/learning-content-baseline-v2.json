@@ -1,0 +1,2197 @@
+{
+  "schemaVersion": 1,
+  "lessonsSha256": "e33b36ce611676d7e4da5b86e51fdb23dd401b1be593713a89c64ff08b49fb2a",
+  "totals": {
+    "lessons": 50,
+    "questions": 511,
+    "below20": 50,
+    "rules": 268,
+    "examples": 261,
+    "readingLines": 182,
+    "repeatedExamples": 379,
+    "duplicatePrompts": 0,
+    "invalidKeys": 0
+  },
+  "modules": {
+    "A": [
+      {
+        "id": "lesson-1",
+        "level": "A",
+        "title": "Алфавит и произношение",
+        "rules": 6,
+        "examples": 8,
+        "readingLines": 3,
+        "questions": 13,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "edc7fa3a1369f0b1d5c5178c110ccd4bda29db76ded8bc048a243fea0a74b687",
+        "questionsSha256": "3789e26f026966c6bf7635fa9a53382c2fded5b95c5ccf2e5f74e4ee9fa81753"
+      },
+      {
+        "id": "lesson-2",
+        "level": "A",
+        "title": "Приветствия и знакомство",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "c171b82db5409475e6fdd94e7d0e6bc5194ba346ca3dbdd4b2cb39b1a615a792",
+        "questionsSha256": "51a39a14ccfce4f2d6bf2c3f81fc718a58cb1d0baca68b010d75baef3e93b374"
+      },
+      {
+        "id": "lesson-3",
+        "level": "A",
+        "title": "Местоимения jag, du, hon",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "4eb21bcf011260f5c412d34eb83483b418fd3b0b525117c5077b8358825e13d1",
+        "questionsSha256": "b8f5173421201f8d8382dc93f342c3de686d4d1bb7ecc6b080e3393962697acc"
+      },
+      {
+        "id": "lesson-4",
+        "level": "A",
+        "title": "Настоящее время (presens)",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "b851726c2d63755e9e41648e21c41ae62bc0f2951633940c060acd81ce661017",
+        "questionsSha256": "c5579bccab82af2b2dfe72a1b60fe4403d689847cd5b26ffd107c56263ec1b70"
+      },
+      {
+        "id": "lesson-5",
+        "level": "A",
+        "title": "Существительные en / ett",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 8,
+            "previous": "lesson-1:q10"
+          }
+        ],
+        "repeatedExamples": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "4379c39b3b44185d841b19209d81a34e0bc7492ede9353050ed6fec33fc93b51",
+        "questionsSha256": "5e84043d79affc6b3febb5d40e1305251885115e295f56d8bd420421ef1a4c81"
+      },
+      {
+        "id": "lesson-6",
+        "level": "A",
+        "title": "Определённая форма",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 3,
+            "previous": "lesson-5:q4"
+          }
+        ],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "c3b0d4b6fb3b0f33bc90170312ef07450d97d3fb20e4f1182379a2cba924bac0",
+        "questionsSha256": "b4e85ff3f75f13b1500a451a42ef4a224e5d845db1fe363520cb9deca656e171"
+      },
+      {
+        "id": "lesson-7",
+        "level": "A",
+        "title": "Вопросы: vad, var, hur",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 3,
+            "previous": "lesson-2:q3"
+          }
+        ],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "2c628ab95140b799b9853b102ef44cd786206bf5da7c248a7f3e1824e3af8d19",
+        "questionsSha256": "972dcb5a4b83b0cc487f8c1b12b4b61fe3ae1b5a70dad01da1fb7896f5139b7d"
+      },
+      {
+        "id": "lesson-8",
+        "level": "A",
+        "title": "Числа и время",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "bb31277559b7bb087f1d8c02a9a96e60fcbe9bea46517a027e279522fdab1e30",
+        "questionsSha256": "f11c068d52893487dde40440477f00c9f8d5eb00eb2039e84612b2329beb0312"
+      },
+      {
+        "id": "lesson-35",
+        "level": "A",
+        "title": "Школа и класс",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "5f591f13aeed73f3b3762c0ed7f0394f41e3b216f7d6ea00783750ff87f863ee",
+        "questionsSha256": "88dac26a6adc4184a89aec575fccc912c68333d61e16aeaf69398c05e8565481"
+      },
+      {
+        "id": "lesson-36",
+        "level": "A",
+        "title": "Семья и близкие",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "0d2061675ccd190cb6d826c1e899de699253e77da961019348c47368e6c87ef9",
+        "questionsSha256": "06da9b2464856c6d8c7c0be26bc7b4f1499c2ba24944f2b777aafba9d87c3bbb"
+      },
+      {
+        "id": "lesson-37",
+        "level": "A",
+        "title": "Дни недели и месяцы",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "26b49da3cd799715eaf96b034589ab280d9a434436fb32606176cd4ad52e3026",
+        "questionsSha256": "a223d7aa5216d69163529aa532eede125c476caec6e26fb864d2261ccc62290a"
+      },
+      {
+        "id": "lesson-38",
+        "level": "A",
+        "title": "В магазине",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "0ad423d3b9151e7c91f71431c4d7608490d3f89805e52bd9b5f1d133c731aa96",
+        "questionsSha256": "327e9d292602535c0ee005e7db939e1bfcda4cf4522334b8f487ec915e6d9fee"
+      }
+    ],
+    "B": [
+      {
+        "id": "lesson-9",
+        "level": "B",
+        "title": "Глаголы группы 1",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "9e41208d0fc95928c49afa7e6aef960b78ff8eecf38e17ed00df779b38e49bd1",
+        "questionsSha256": "ae95a381e7e835ac982352b407be4f306871fc540bc2cbdc4d73a80229a13953"
+      },
+      {
+        "id": "lesson-10",
+        "level": "B",
+        "title": "Глаголы группы 2A",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "7857799fbb6495719113593e14853ea45319afd563dea5c7972756a084e2647a",
+        "questionsSha256": "bb11e686c3bec67caf550f6f426f5fed394cb6bdf9105b0a5190eb67a7a8b57a"
+      },
+      {
+        "id": "lesson-11",
+        "level": "B",
+        "title": "Глаголы группы 2B",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "6aef3683ca530d89bc646365d716fc13e3752abdf6600bbd8cb98cc93fc38692",
+        "questionsSha256": "b927704e340966a5000063c99f0099ce1a7dbce39b1aba377aab1995600f74f5"
+      },
+      {
+        "id": "lesson-12",
+        "level": "B",
+        "title": "Глаголы группы 3",
+        "rules": 6,
+        "examples": 4,
+        "readingLines": 3,
+        "questions": 9,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 2,
+            "previous": "lesson-3:q5"
+          }
+        ],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "ed5b53e15652877527b90ac84656a2505bd762e37a14cc3ed4be7ba5d9c93129",
+        "questionsSha256": "5805f266914877c12fcfc7f7d846fffefb91360a2c69425be4e59e62d41bb99f"
+      },
+      {
+        "id": "lesson-13",
+        "level": "B",
+        "title": "Глаголы группы 4",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "41241c72cb9443303ab2ac4e84c9b4b0230c10b8cff2e13b739c3ed52a329bf7",
+        "questionsSha256": "1a89025f10f4be34b21d6fe2f48dfe57fa6f8bb2f727ca7222a70bb81067b9bb"
+      },
+      {
+        "id": "lesson-14",
+        "level": "B",
+        "title": "Прошедшее время preteritum",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "463013e54ae11c9450a48f887667b212cdcaeb8bd147fc5b3f328d77a9a60555",
+        "questionsSha256": "e1b84e2a794bc11f3048861db03566489459fdeba67d59005565d8f5cf831db3"
+      },
+      {
+        "id": "lesson-15",
+        "level": "B",
+        "title": "Supinum и perfekt",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 2,
+            "previous": "lesson-9:q4"
+          }
+        ],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "968f053841be663703a3034c6705c2dff3954581fe31e5282f6fc3fabcb05741",
+        "questionsSha256": "cbed95e19adac8e38696a3f0cdc317fa32bc852237787e429a0cc5c79e54e2e2"
+      },
+      {
+        "id": "lesson-16",
+        "level": "B",
+        "title": "Множественное число",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 2,
+            "previous": "lesson-6:q2"
+          },
+          {
+            "index": 3,
+            "previous": "lesson-5:q2"
+          },
+          {
+            "index": 4,
+            "previous": "lesson-5:q6"
+          }
+        ],
+        "repeatedExamples": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "edcf894672a1a1e3e8634a492953637aafba97bbb08ed55934636901d48b10fc",
+        "questionsSha256": "485ab0b7ea2045b2b4d589628c462495048ce4b2e7421083ade83c0ede15c3ae"
+      },
+      {
+        "id": "lesson-17",
+        "level": "B",
+        "title": "Притяжательные min/mitt/mina",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "33c12deaac335c6ccfb2e69763c9c70c3d5078570d43864512c70a0f099023f8",
+        "questionsSha256": "3ef29a0bfdcc2c955d93d734a5cd266268c405d435330a327a5c3fa5288baef1"
+      },
+      {
+        "id": "lesson-18",
+        "level": "B",
+        "title": "Модальные глаголы",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "08dbf1b8c03b6ff2684c1391a91db6389636b4706c3848eaef176ea42a10dcb6",
+        "questionsSha256": "74e211f34b83d7ac20c9ea2b31cf3fd8e3820b7fb785c3537bbaf545d8b0bd4d"
+      },
+      {
+        "id": "lesson-39",
+        "level": "B",
+        "title": "У врача и здоровье",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "f8451f024094bb820fecc96929c30948312eb0dbe050e8b695ca28aece7dd708",
+        "questionsSha256": "646e064004461f416d611fa3d4fcc373603f52ad8850da187f286e35e2d78e8f"
+      },
+      {
+        "id": "lesson-40",
+        "level": "B",
+        "title": "Домашние дела",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "acc00ce3eba263ebdd117026bd76d6d0769ad682efd617694f981172460f5963",
+        "questionsSha256": "26d4788dd3ebbb08c1237ae55a5e1f732f0c959695718b63a5798953ebea9426"
+      },
+      {
+        "id": "lesson-41",
+        "level": "B",
+        "title": "Погода и времена года",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "c851c3033354441657d08243cb1b2d13570699d8478986218baf4454a144f7bf",
+        "questionsSha256": "2691d3f7aa652343347daaee13af4f41dbf56e3334ebc9352082f4709fa2ba1d"
+      },
+      {
+        "id": "lesson-42",
+        "level": "B",
+        "title": "Транспорт и маршруты",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "20c433b079532dbc47277b5c06511e350d790e2c7665435166153591b3bbbeeb",
+        "questionsSha256": "37b81d7f6c064a8b5e82f127796927d7ed5a4eda5b10528d21cfed32af960bc7"
+      }
+    ],
+    "C": [
+      {
+        "id": "lesson-19",
+        "level": "C",
+        "title": "Прилагательные: en, ett, plural",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "724274acdd75fbbc4ed5d4360901bb9896ca110200789257ecc84d565e184127",
+        "questionsSha256": "396d345ce7502e7195b0f37e6a1f92feec6009af79bd97f1030d07eff76feb24"
+      },
+      {
+        "id": "lesson-20",
+        "level": "C",
+        "title": "Определённые прилагательные",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "0b55727f7d00aec62ccb543e5469b79ee3acf5f97495660abd409d4e7c6ee1cb",
+        "questionsSha256": "08ca1a5b881716a51438ab751c6186f734003c2a7279a5028de55e7f8a7901f0"
+      },
+      {
+        "id": "lesson-21",
+        "level": "C",
+        "title": "Порядок слов: V2",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [
+          {
+            "index": 2,
+            "previous": "lesson-4:q2"
+          }
+        ],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "0e8a5c984eccac2a378674812f47039d3fbab6e9018ffacc2a55aae95d041b34",
+        "questionsSha256": "c629675446b1731e92b1536a2497f756d009da4948beb31104e153fd64de6a05"
+      },
+      {
+        "id": "lesson-22",
+        "level": "C",
+        "title": "Место inte в предложении",
+        "rules": 6,
+        "examples": 6,
+        "readingLines": 3,
+        "questions": 11,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "e4a665a3f56562402d11d40517ad9fe6bf0819e5a76f58838ef99e365dbaf2df",
+        "questionsSha256": "cf709a5243226dfb99fe0ed7a830e3c3ff28015c2be43f6441d7e6f57ba948f6"
+      },
+      {
+        "id": "lesson-23",
+        "level": "C",
+        "title": "BIFF: придаточные предложения",
+        "rules": 6,
+        "examples": 4,
+        "readingLines": 3,
+        "questions": 9,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "b3b7f79e52041f5ed311e4e3e4a9ca59feeb9ae4c428e62a75e704526efee97e",
+        "questionsSha256": "cf3027751dc515570400fd87b0c0eb12cbe8db5db04ac828c8ac0ec7e9f0826a"
+      },
+      {
+        "id": "lesson-24",
+        "level": "C",
+        "title": "Императив: просьбы и команды",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "f6e63cd3755152cdec38d6f1c9a488e38f2ad8fba72975377d0be22d9d3baeb6",
+        "questionsSha256": "c07a3abf981363901d36dd7a1a2dd439f64f7b7c5fc086f25e5cf30eefffbdc6"
+      },
+      {
+        "id": "lesson-25",
+        "level": "C",
+        "title": "Предлоги места",
+        "rules": 6,
+        "examples": 4,
+        "readingLines": 3,
+        "questions": 9,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "71b52eb35132f60232cc9726529c0637039b12b138b4b75dd32c4c7a49d12de4",
+        "questionsSha256": "8d8848816c2d74e158e9143404366b14936fd8566e5d73694da7dee9b3cc25c7"
+      },
+      {
+        "id": "lesson-26",
+        "level": "C",
+        "title": "Возвратные глаголы",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "fe0ee9dd6b9d4bcc23e10f6282f0853b636004e3c7e3c404fea07e6dffecebbf",
+        "questionsSha256": "9cd73298d73dfcaa74cf0f17a3dc07c0e4f603b88ec936af07d91f5e20394f51"
+      },
+      {
+        "id": "lesson-43",
+        "level": "C",
+        "title": "Письмо другу",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "2b6ba56f0bcb59a6ffcd1db5a055f7a216a6e73bba22faaf9717e57e3991e3dd",
+        "questionsSha256": "f55867b12be3c0fda9fa680e3f554d3908186eaf69e4b4bd36206037c62a0db8"
+      },
+      {
+        "id": "lesson-44",
+        "level": "C",
+        "title": "На собеседовании",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "5bf0e0ea2403bf0f3cb96ffc8ea3cb121295ac6df59824e7ca438305ccc1f9c9",
+        "questionsSha256": "9dd47e9abdcda59323f90118a4799444784618100fd13a82b448ddb9d71eca29"
+      },
+      {
+        "id": "lesson-45",
+        "level": "C",
+        "title": "Мнение и аргументы",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "049aafb659143a57e1da1caef32e0ad621556e9b32579760428458eb2d47cc67",
+        "questionsSha256": "72c86217bd06ec2cc5a3533f46f7dd23c4ca4eb550821266997e880a0160d74b"
+      },
+      {
+        "id": "lesson-46",
+        "level": "C",
+        "title": "В учреждениях",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "f7310b1d09b220fd9b122e5bfb7636adc45a1b1c2555318f74dcebbbc590da0b",
+        "questionsSha256": "083e545c5f9fe4826f52556f6d0b2a0a84484b0a4ac721ddf974d4f47e937718"
+      }
+    ],
+    "D": [
+      {
+        "id": "lesson-27",
+        "level": "D",
+        "title": "Условные предложения om",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "db77278467ff15ba25c4aaa4aa4fa15486ada08ee320fbbe7fe7e679dba74fe3",
+        "questionsSha256": "35d0f4a513af055a0a1e1325a8e58026f7e7b720f20dbd9a038b1e0baa258248"
+      },
+      {
+        "id": "lesson-28",
+        "level": "D",
+        "title": "Относительные предложения som",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "32ddffe2a1154ab2297a0830941afc888f6caceb1f396788eb0f901f99ab0aa0",
+        "questionsSha256": "df16b51a41470f66e5c6750d4f937c9c6afd4798a6794321b39ef4ce4fa44cc2"
+      },
+      {
+        "id": "lesson-29",
+        "level": "D",
+        "title": "Пассив: -s и bli",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "e530346e9124fe03b800e67a2c798f537aa9f57ed15a91d31ec1a4cfaf1495d7",
+        "questionsSha256": "0a84a283b8939ebf9ef85cc06c8764853d2d5c67114462a310b23b81401836c4"
+      },
+      {
+        "id": "lesson-30",
+        "level": "D",
+        "title": "Сравнение прилагательных",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "a33fdc9e2748ca3496eb174a72446eeb8ce3cbe3faa08eb1c5daab1e04e07c87",
+        "questionsSha256": "f5e16e6a35084edd2e7f8bfbbdff08e23003a6ed69ab40f53845ed965bfc41ff"
+      },
+      {
+        "id": "lesson-31",
+        "level": "D",
+        "title": "Будущее: ska, kommer att",
+        "rules": 6,
+        "examples": 4,
+        "readingLines": 3,
+        "questions": 9,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "c8342aca4ec37ca42f4de8a134ac0dbd035a5016ea86980aa5ed52b8e253437a",
+        "questionsSha256": "b27a244b42e5ac9219c399e596f42c756bb3ac54c79e8bbfe836621fa11e2fea"
+      },
+      {
+        "id": "lesson-32",
+        "level": "D",
+        "title": "Письма и сообщения",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "d3091d89746f2ddffea56e7205817b8033cd4dc43195de20357444e9792c5e48",
+        "questionsSha256": "d2e2a33aed3831ed4de5165a0f72c5dcbe31127a69c0c9500eb4ed51ee5dab7f"
+      },
+      {
+        "id": "lesson-33",
+        "level": "D",
+        "title": "Объяснение причины",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "76cfb90b07b1f509121781ac9a205777de791cab3838b1713c2936b2b5b424a2",
+        "questionsSha256": "5026a93f4a3c057a832def908d5547ccb0c943ca1cafd937585c27fb30577882"
+      },
+      {
+        "id": "lesson-34",
+        "level": "D",
+        "title": "Чтение: находить смысл",
+        "rules": 6,
+        "examples": 5,
+        "readingLines": 3,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": true,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "c8336f45632632f99ce3da298ab36b4fa39427511645d0626b83a07445c0c3b4",
+        "questionsSha256": "2d77c28d30e873f08ec8b2276e43efdf6906c53e5d75ca12855e76308645d997"
+      },
+      {
+        "id": "lesson-47",
+        "level": "D",
+        "title": "Новости и источники",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "3e2895bfaf43c78b2ae041a2d511ce5af2902cdf6ddcf2eebdea2fcef8cbeafb",
+        "questionsSha256": "30a46290f1f5d5d7a915857aae79140464d4f82068b4369c2b67b15ac000b476"
+      },
+      {
+        "id": "lesson-48",
+        "level": "D",
+        "title": "Права и обязанности",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "4d7fe7423d63b63511c59ea9b409609485281bedf2b519d017c7923b6754bbe9",
+        "questionsSha256": "43b1b9f852c4c141e3277068e0f445046df63d4d1af1c2a6afa84f45e80594d9"
+      },
+      {
+        "id": "lesson-49",
+        "level": "D",
+        "title": "Общество и окружающая среда",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "8a174f4f6ba5a0431b7b873eea8b539990929c6145af9a8f6996d82d9970c0fa",
+        "questionsSha256": "3ba6f37361589200895ae70be72ec5e7be3afeee93e52e2dd3c5944eab94076e"
+      },
+      {
+        "id": "lesson-50",
+        "level": "D",
+        "title": "Работа и образование",
+        "rules": 4,
+        "examples": 5,
+        "readingLines": 5,
+        "questions": 10,
+        "below20": true,
+        "duplicatePrompts": [],
+        "crossLessonDuplicates": [],
+        "repeatedExamples": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "invalidKeys": [],
+        "perOptionFeedback": 0,
+        "writingTasks": 0,
+        "sourceLinks": 0,
+        "genericGoals": false,
+        "localeCoverage": {
+          "en": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "sv": {
+            "details": true,
+            "missingQuizStrings": 0
+          },
+          "uk": {
+            "details": true,
+            "missingQuizStrings": 0
+          }
+        },
+        "lessonSha256": "6bc354f1ba88dc9e98b5fdefb49c7890c4e9396f839a57feea0de434db91d63e",
+        "questionsSha256": "010a64dd1947120d6bc1443ddcf0016a54fdb5e890f98bd9d9fabd03337cc367"
+      }
+    ]
+  }
+}

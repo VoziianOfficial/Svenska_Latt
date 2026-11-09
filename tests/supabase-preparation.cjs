@@ -4,6 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
+const currentContentVersion=require('node:child_process').execFileSync('python3',['-c',"import sys;sys.path.insert(0,'scripts');from check_supabase_manifest import current_manifest;print(current_manifest()['version'])"],{cwd:root,encoding:'utf8'}).trim();
 const A='10000000-0000-0000-0000-000000000001',B='10000000-0000-0000-0000-000000000002';
 const eid='20000000-0000-0000-0000-000000000001';
 const token=id=>({user:{id},access_token:'test-jwt-'+id});
@@ -218,6 +219,7 @@ function formHarness(h,mode='register'){
  const nodes={};
  for(const [selector,value] of Object.entries({'#auth-email':'person@example.test','#auth-pass':'test-password','#auth-name':'Test person','#auth-submit':'','#auth-error':'','#auth-status':''}))nodes[selector]={value,textContent:'',disabled:false};
  nodes['#auth-submit'].textContent='Submit';
+ nodes['#auth-age-16']={checked:true,reportValidity(){return true}};
  const form={dataset:{mode},querySelector:selector=>nodes[selector],busy:false,setAttribute(){this.busy=true},removeAttribute(){this.busy=false}};
  h.ctx.formNodes=nodes;h.ctx.testForm=form;
  h.ctx.document.querySelector=selector=>nodes[selector];
@@ -372,7 +374,7 @@ test('automatic cloud reads preserve legacy data when local writer prechecks fai
 });
 
 test('preview compares account and cloud without reading guest or writing/calling RPC',async()=>{
- const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['v-arbeta'],favorites:['v-prata'],completed:[],booksRead:[],answered:4,correct:3,activity:{'2026-10-16':2}},cloudSnapshot:cloudSnapshot({content_version:'static-afaa62b7426e09a7'})});
+ const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',accountState:{xp:23,known:['v-arbeta'],favorites:['v-prata'],completed:[],booksRead:[],answered:4,correct:3,activity:{'2026-10-16':2}},cloudSnapshot:cloudSnapshot({content_version:currentContentVersion})});
  await h.ctx.SVProgress.initialize();
  const before=[...h.data],calls=h.records.rpc.length,reads=[];
  const read=h.ctx.localStorage.getItem;h.ctx.localStorage.getItem=key=>{reads.push(key);return read(key)};
@@ -388,7 +390,7 @@ test('preview compares account and cloud without reading guest or writing/callin
  const g=h.ctx.SVProgressDebug.preview({includeGuest:true});assert.equal(g.guest.summary.xp,91);assert.equal(g.account.summary.xp,23);
 });
 test('preview rejects incompatible raw local data without sanitizing or falling back to guest',async()=>{
- const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',cloudSnapshot:cloudSnapshot({content_version:'static-afaa62b7426e09a7'})});
+ const {h}=await bootGuest({initial:token(A),progress:true,hostname:'localhost',cloudSnapshot:cloudSnapshot({content_version:currentContentVersion})});
  await h.ctx.SVProgress.initialize();const key='sv-account-local-v1-'+A;
  assert.equal(h.ctx.SVProgressDebug.preview().account.status,'absent');
  const invalid=[null,[],{xp:null},{xp:1000000001},{correct:2,answered:1},{known:['unknown']},{known:null},{activity:{'2026-02-30':1}},{activity:{'2026-10-17':10001}},

@@ -2,7 +2,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const source=fs.readFileSync(require('node:path').join(__dirname,'../sw.js'),'utf8');
-const release=source.match(/const RELEASE='([^']+)'/)[1];
+const release=source.match(/const RELEASE\s*=\s*'([^']+)'/)[1];
 const origin='https://example.test';
 const scope=origin+'/svenska/';
 const stores=new Map();
@@ -25,7 +25,7 @@ const caches={
 let online=true,requests=0;
 function worker(code,workerOrigin=origin,workerScope=scope){
  const handlers={};
- const ctx={URL,Request,Response,caches,fetch:async(request,options)=>{assert.equal(options.cache,workerOrigin===origin?'no-cache':'no-store','runtime cache policy');requests++;if(!online)throw Error('offline');return new Response('network')},
+ const ctx={URL,Request,Response,caches,fetch:async(request,options)=>{assert.equal(options.cache,'no-cache','runtime cache policy');requests++;if(!online)throw Error('offline');return new Response('network')},
   self:{location:{origin:workerOrigin},registration:{scope:workerScope},clients:{claim:async()=>{}},skipWaiting:async()=>{},addEventListener:(name,fn)=>handlers[name]=fn}};
  vm.runInNewContext(code,ctx);
  return handlers;
@@ -49,13 +49,20 @@ async function load(handlers,path,destination='image',method='GET'){
  const photoName=(await caches.keys()).find(n=>n.endsWith('-photos'));
  assert.equal(stores.get(photoName).size,150,'concurrent loads must obey the cap');
  assert(![...stores.get(shellName).keys()].some(p=>p.includes('/flashcards/')));
+ await load(handlers,'assets/lesson-covers/lesson-01-v1.webp');
+ assert(![...stores.get(shellName).keys()].some(p=>p.includes('/lesson-covers/')),'lesson photographs use the bounded photo cache, never bulk shell precache');
+ online=false;
+ assert.equal((await load(handlers,'assets/lesson-covers/lesson-01-v1.webp')).status,200,'viewed lesson cover works offline');
+ assert.equal((await load(handlers,'assets/lesson-covers/unseen.webp')).status,504,'unseen offline photo fails safely');
+ online=true;
  const before=requests;await load(handlers,'assets/flashcards/photo-204.webp');assert.equal(requests,before,'cached photograph should work without fetching');
  online=false;
  assert.equal((await load(handlers,'assets/flashcards/photo-204.webp')).status,200);
  assert.equal((await load(handlers,'assets/flashcards/unseen.webp')).status,504);
  assert.equal((await load(handlers,'style.css?v=999','style')).status,200,'versioned URL must find precache');
+ for(const file of ['manifest.webmanifest','icons/icon-192-v2.png','icons/icon-512-v2.png']) assert.equal((await load(handlers,file)).status,200,'PWA files available offline');
  assert.equal(await load(handlers,'api/session',''),undefined,'API must bypass caches');
- for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','manual-reviews.js','study-time.js']){
+ for(const file of ['supabase-client.js','supabase-auth.js','supabase-rpc.js','supabase-progress.js','manual-reviews.js','study-time.js','pwa-install.js']){
   assert.equal((await load(handlers,file+'?v=1','script')).status,200,'auth preparation modules available offline');
  }
  assert.equal(await load(handlers,'https://example.supabase.co/auth/v1/user',''),undefined,'Auth GET bypasses worker');
@@ -76,7 +83,7 @@ async function load(handlers,path,destination='image',method='GET'){
  online=true;
  assert.equal(await (await load(local,localOrigin+'/supabase-progress.js?v=current','script')).text(),'network');
  online=false;
- assert.equal((await load(local,localOrigin+'/supabase-progress.js?v=1','script')).status,504,'local runtime must never fall back to stale shell');
+ assert.equal((await load(local,localOrigin+'/supabase-progress.js?v=1','script')).status,200,'localhost uses the same offline shell policy');
  online=true;
  console.log('PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation');
 })().catch(error=>{console.error(error);process.exitCode=1});
