@@ -18,8 +18,10 @@ Object.assign(DICT.uk,{searchLabel:'Пошук',alphabet:'Абетка',topics:'
 Object.assign(DICT.ru, {
   pwaInstall: 'Установить приложение', pwaClose: 'Закрыть',
   pwaIntro: 'Добавьте Svenska Lätt для быстрого доступа.',
-  pwaIOSOne: 'Откройте сайт в Safari и нажмите «Поделиться» (квадрат со стрелкой вверх).',
-  pwaIOSTwo: 'Выберите «На экран Домой» и подтвердите добавление. Если есть переключатель «Открывать как веб-приложение», включите его.',
+  pwaIOSOne: 'В Safari нажмите «Поделиться».',
+  pwaIOSBrowserOne: 'Меню браузера → «Открыть в Safari». Если пункта нет, скопируйте адрес в Safari.',
+  pwaIOSBrowserTwo: 'В Safari: «Поделиться» → «На экран Домой» → «Добавить».',
+  pwaIOSTwo: '«На экран Домой» → «Добавить».',
   pwaAndroidOne: 'Откройте меню браузера (⋮) и выберите «Установить приложение» или «Добавить на главный экран».',
   pwaAndroidTwo: 'Подтвердите установку. Если пункта нет, откройте сайт в Chrome и попробуйте снова.',
   pwaSafariOne: 'В Safari на Mac откройте «Файл» или меню «Поделиться» → «Добавить в Dock».',
@@ -30,8 +32,10 @@ Object.assign(DICT.ru, {
 Object.assign(DICT.uk, {
   pwaInstall: 'Встановити застосунок', pwaClose: 'Закрити',
   pwaIntro: 'Додайте Svenska Lätt для швидкого доступу.',
-  pwaIOSOne: 'Відкрийте сайт у Safari й натисніть «Поділитися» (квадрат зі стрілкою вгору).',
-  pwaIOSTwo: 'Виберіть «На початковий екран» і підтвердьте додавання. Якщо є перемикач «Відкривати як вебзастосунок», увімкніть його.',
+  pwaIOSOne: 'У Safari натисніть «Поділитися».',
+  pwaIOSBrowserOne: 'Меню браузера → «Відкрити в Safari». Якщо пункту немає, скопіюйте адресу в Safari.',
+  pwaIOSBrowserTwo: 'У Safari: «Поділитися» → «На початковий екран» → «Додати».',
+  pwaIOSTwo: '«На початковий екран» → «Додати».',
   pwaAndroidOne: 'Відкрийте меню браузера (⋮) і виберіть «Встановити застосунок» або «Додати на головний екран».',
   pwaAndroidTwo: 'Підтвердьте встановлення. Якщо такого пункту немає, відкрийте сайт у Chrome і спробуйте знову.',
   pwaSafariOne: 'У Safari на Mac відкрийте «Файл» або меню «Поділитися» → «Додати в Dock».',
@@ -42,8 +46,10 @@ Object.assign(DICT.uk, {
 Object.assign(DICT.en, {
   pwaInstall: 'Install app', pwaClose: 'Close',
   pwaIntro: 'Add Svenska Lätt for quick access.',
-  pwaIOSOne: 'Open this site in Safari and tap Share (the square with an upward arrow).',
-  pwaIOSTwo: 'Choose Add to Home Screen and confirm. If Open as Web App is shown, turn it on.',
+  pwaIOSOne: 'In Safari, tap Share.',
+  pwaIOSBrowserOne: 'Browser menu → Open in Safari. If unavailable, copy the address into Safari.',
+  pwaIOSBrowserTwo: 'In Safari: Share → Add to Home Screen → Add.',
+  pwaIOSTwo: 'Add to Home Screen → Add.',
   pwaAndroidOne: 'Open the browser menu (⋮) and choose Install app or Add to Home screen.',
   pwaAndroidTwo: 'Confirm installation. If the option is missing, open this site in Chrome and try again.',
   pwaSafariOne: 'In Safari on Mac, open File or the Share menu → Add to Dock.',
@@ -54,8 +60,10 @@ Object.assign(DICT.en, {
 Object.assign(DICT.sv, {
   pwaInstall: 'Installera appen', pwaClose: 'Stäng',
   pwaIntro: 'Lägg till Svenska Lätt för snabb åtkomst.',
-  pwaIOSOne: 'Öppna webbplatsen i Safari och tryck på Dela (fyrkanten med en uppåtpil).',
-  pwaIOSTwo: 'Välj Lägg till på hemskärmen och bekräfta. Slå på Öppna som webbapp om alternativet visas.',
+  pwaIOSOne: 'I Safari, tryck på Dela.',
+  pwaIOSBrowserOne: 'Webbläsarens meny → Öppna i Safari. Om valet saknas, kopiera adressen till Safari.',
+  pwaIOSBrowserTwo: 'I Safari: Dela → Lägg till på hemskärmen → Lägg till.',
+  pwaIOSTwo: 'Lägg till på hemskärmen → Lägg till.',
   pwaAndroidOne: 'Öppna webbläsarens meny (⋮) och välj Installera app eller Lägg till på startskärmen.',
   pwaAndroidTwo: 'Bekräfta installationen. Om alternativet saknas, öppna webbplatsen i Chrome och försök igen.',
   pwaSafariOne: 'I Safari på Mac öppnar du Arkiv eller menyn Dela → Lägg till i Dock.',
@@ -66,18 +74,32 @@ Object.assign(DICT.sv, {
 
 // Auth and cloud state share an identity; guest learning remains local.
 let WORDS=[],LESSONS=[],user=null,state={},route='home',routeParam='',toastTimer=null;
+let localReadError=null,localWriteError=null;
 let selectedLevel='A',dictFilter={text:'',kind:'all',group:'all',category:'all',fav:false,limit:42},flashFilter={kind:'all',group:'all',category:'all'},flash={ids:[],index:0,flipped:false};
 let quiz={active:false,finished:false,mode:'mixed',lesson:null,questions:[],index:0,score:0,answered:false,selected:[],latest:null};
 const D=()=>DICT[state.settings?.language||'ru']||DICT.ru;
 const t=k=>['savedAccount','accountExplain','guestNotice'].includes(k)?authText(k==='savedAccount'?'local':'guest'):(D()[k]||DICT.ru[k]||k);
 const DAY=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
-const defaultState=()=>({known:[],learnedOnce:[],favorites:[],reviews:{},completed:[],quizResults:{},activity:{},answered:0,correct:0,xp:0,settings:{language:localStorage.getItem('sv-language')||'ru',level:'A'},videos:[],booksRead:[],profile:{name:"",avatar:""}});
+const localLanguage=()=>{try{return localStorage.getItem('sv-language')||'ru'}catch{return 'ru'}};
+const defaultState=()=>({known:[],learnedOnce:[],favorites:[],reviews:{},completed:[],quizResults:{},activity:{},answered:0,correct:0,xp:0,settings:{language:localLanguage(),level:'A'},videos:[],booksRead:[],profile:{name:"",avatar:""}});
 function sanitize(s){let v=defaultState();if(s&&typeof s==='object')for(const k of Object.keys(v))if(k in s)v[k]=s[k];v.settings=v.settings||{language:'ru',level:'A'};v.profile=(v.profile&&typeof v.profile==='object')?v.profile:{name:'',avatar:''};v.learnedOnce=[...new Set([...(Array.isArray(v.learnedOnce)?v.learnedOnce:[]),...v.known])];return v}
 function localStateKey(){return user?'sv-account-local-v1-'+user.id:'sv-guest-v2'}
-function readLocalState(){try{return sanitize(JSON.parse(localStorage.getItem(localStateKey())||'{}'))}catch{return defaultState()}}
+function readLocalState(){
+ try{const raw=localStorage.getItem(localStateKey()),value=raw===null?{}:JSON.parse(raw);
+  if(!value||typeof value!=='object'||Array.isArray(value))throw new Error('INVALID_LOCAL_PROGRESS');
+  const restored=sanitize(value);localReadError=null;return restored;
+ }catch{localReadError='LOCAL_PROGRESS_UNREADABLE';return defaultState()}
+}
 function cloudAccount(){return !!user}
 function accountDataReady(){return !user||window.SVProgress?.status?.().receivedAt!=null}
-function save(){if(cloudAccount())return;localStorage.setItem(localStateKey(),JSON.stringify(state))}
+function save(){
+ if(cloudAccount())return;
+ try{
+  // Never overwrite unreadable saved bytes with a fresh/default state.
+  if(localReadError)throw new Error(localReadError);
+  localStorage.setItem(localStateKey(),JSON.stringify(state));localWriteError=null;
+ }catch(error){localWriteError=localReadError||(error?.name==='QuotaExceededError'?'LOCAL_STORAGE_FULL':'LOCAL_STORAGE_UNAVAILABLE');renderProgressUX(true);throw error}
+}
 function applyAuthState(auth){
  const next=auth.user?{id:auth.user.id,email:auth.user.email,name:auth.user.user_metadata?.display_name||''}:null;
  if((user?.id||null)===(next?.id||null)){user=next;refreshProfileSettings();return}
@@ -483,7 +505,8 @@ async function action(btn){if(btn.dataset.nav){$('#search-results').classList.ad
  const name=btn.dataset.action||'';
  if(cloudAccount()&&unsupportedAction(name,btn))return;
  if(name==='auth-retry'){await window.SVAuth?.initialize();applyAuthState(window.SVAuth.getState());if(user)await window.SVProgress?.retry();render();return}
- if(name==='save-retry'){if(window.SVProgress)await window.SVProgress.retry();else location.reload();return}
+ if(name==='save-retry'){if(!cloudAccount()){save();render()}else if(window.SVProgress)await window.SVProgress.retry();else location.reload();return}
+ if(name==='local-read-retry'){if(!cloudAccount()){const restored=readLocalState();if(!localReadError){state=restored;localWriteError=null;render()}else renderProgressUX(true)}return}
  if(name==='accept-word-state'){await window.SVProgress.acceptCurrentWordState();return}
  if(name==='review-reveal'){if(reviewExercise){reviewExercise.revealed=true;render()}return}
  if(name==='review-grade'){await gradeWordReview(btn.dataset.value==='1');return}
@@ -2420,12 +2443,18 @@ function renderProgressUX(update=false){
  // One persistent status area avoids a stream of popups, including reconnect retries.
  const authUnavailable=window.SVAuth?.getState?.().status==='unavailable';
  if(!cloud&&!authUnavailable)page.querySelector('.save-status')?.remove();
- if(cloud||authUnavailable){
+ if(!cloud&&(localReadError||localWriteError)){
+  page.querySelector('.save-status')?.remove();
+  const message=localReadError?txt4('Не удалось прочитать прогресс в браузере. Сохранённые данные не перезаписаны.','Could not read browser progress. Saved data has not been overwritten.','Kunde inte läsa framstegen i webbläsaren. Sparade data har inte skrivits över.','Не вдалося прочитати прогрес у браузері. Збережені дані не перезаписано.'):
+   txt4('Браузер не сохранил изменения. Не закрывай эту вкладку. Освободи место и повтори сохранение.','The browser could not save changes. Keep this tab open. Free up space and retry saving.','Webbläsaren kunde inte spara ändringarna. Behåll fliken öppen. Frigör utrymme och försök igen.','Браузер не зберіг зміни. Не закривай цю вкладку. Звільни місце й повтори збереження.');
+  page.insertAdjacentHTML('afterbegin',`<div class="save-status local-save-status" role="status" aria-live="polite">${esc(message)} <button class="link-btn" data-action="${localReadError?'local-read-retry':'save-retry'}">${esc(t('repeat'))}</button></div>`);
+ }
+ if(cloud||(authUnavailable&&!(localReadError||localWriteError))){
   const error=activity.error||window.SVProgress?.writeStatus?.().error;
   const videoConflict=activity.pending.some(e=>e.status==='conflict'&&e.type==='video_set');
   const conflict=activity.pending.some(e=>e.status==='conflict'),wordConflict=activity.pending.some(e=>e.status==='conflict'&&!['favorite_set','video_set'].includes(e.type));
   const readStatus=window.SVProgress?.status?.();
-  const message=authUnavailable?authText('offline'):conflict?(videoConflict?videoText('conflict'):wordConflict?wordUX('conflict'):ux('conflict')):navigator.onLine===false&&activity.pending.length?ux('offline'):error==='SRS_INTERVAL_LIMIT'?txt4('Не удалось сохранить слово из-за ошибки расписания повторений. Следующие изменения ожидают отправки. Требуется исправление на сервере.','A review schedule error prevented saving the word. Later changes are waiting to send. A server fix is required.','Ett fel i repetitionsschemat hindrade ordet från att sparas. Senare ändringar väntar på att skickas. Servern behöver rättas.','Не вдалося зберегти слово через помилку розкладу повторень. Наступні зміни очікують надсилання. Потрібне виправлення на сервері.'):error==='FEATURE_UNAVAILABLE'?ux('waiting'):error?ux('error'):cloudReadError||!window.SVProgress||readStatus?.status==='error'?ux('readError'):!accountDataReady()?ux('loading'):activity.pending.length?ux('saving'):'';
+  const message=authUnavailable?authText('offline'):conflict?(videoConflict?videoText('conflict'):wordConflict?wordUX('conflict'):ux('conflict')):navigator.onLine===false&&activity.pending.length?ux('offline'):error==='SRS_INTERVAL_LIMIT'?txt4('Не удалось сохранить слово из-за ошибки расписания повторений. Следующие изменения ожидают отправки. Требуется исправление на сервере.','A review schedule error prevented saving the word. Later changes are waiting to send. A server fix is required.','Ett fel i repetitionsschemat hindrade ordet från att sparas. Senare ändringar väntar på att skickas. Servern behöver rättas.','Не вдалося зберегти слово через помилку розкладу повторень. Наступні зміни очікують надсилання. Потрібне виправлення на сервері.'):error==='QUEUE_STORAGE_BLOCKED'?txt4('Хранилище прогресса занято. Закрой другие вкладки приложения и повтори отправку.','Progress storage is busy. Close other app tabs and retry saving.','Lagringen är upptagen. Stäng andra appflikar och försök spara igen.','Сховище прогресу зайняте. Закрий інші вкладки застосунку й повтори надсилання.'):error==='CONTENT_VERSION_MISMATCH'?txt4('Версии учебных материалов не совпадают. Обнови страницу; если ошибка останется, нужна проверка сервера. Неотправленные результаты сохранены.','Learning content versions differ. Reload; if this persists, the server needs checking. Pending results are retained.','Versionerna av läromaterialet skiljer sig. Ladda om; om felet kvarstår behöver servern kontrolleras. Väntande resultat finns kvar.','Версії навчальних матеріалів не збігаються. Онови сторінку; якщо помилка залишиться, потрібна перевірка сервера. Ненадіслані результати збережено.'):error==='FEATURE_UNAVAILABLE'?ux('waiting'):error?ux('error'):cloudReadError||!window.SVProgress||readStatus?.status==='error'?ux('readError'):!accountDataReady()?ux('loading'):activity.pending.length?ux('saving'):'';
   const statusHTML=`<div class="save-status ${message?'':'hidden'}" role="status" aria-live="polite">${esc(message)}${conflict?` <button class="link-btn" data-action="${videoConflict?'accept-video-state':wordConflict?'accept-word-state':'accept-favorites'}">${esc(videoConflict?videoText('accept'):wordConflict?wordUX('accept'):ux('accept'))}</button>`:authUnavailable||error||cloudReadError||!window.SVProgress||readStatus?.status==='error'?` <button class="link-btn" data-action="${authUnavailable?'auth-retry':'save-retry'}">${esc(authUnavailable?t('repeat'):ux('retry'))}</button>`:''}</div>`;
   const status=page.querySelector('.save-status');if(!status)page.insertAdjacentHTML('afterbegin',statusHTML);else if(status.outerHTML!==statusHTML)status.outerHTML=statusHTML;
  }

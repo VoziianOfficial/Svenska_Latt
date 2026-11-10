@@ -25,8 +25,10 @@
     dialog.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
     const ua = navigator.userAgent;
     const ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-    const safari = /Safari/i.test(ua) && !/Chrome|Chromium|CriOS|Edg|OPR|Android/i.test(ua);
-    const platform = ios ? 'IOS' : /Android/i.test(ua) ? 'Android' : safari ? 'Safari' : 'Desktop';
+    const embedded = /FBAN|FBAV|Instagram|Telegram|Line\/|MicroMessenger|GSA\//i.test(ua);
+    const safari = /Version\/[\d.]+.*Safari/i.test(ua) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/i.test(ua) && !embedded;
+    const platform = ios ? (safari ? 'IOS' : 'IOSBrowser') : /Android/i.test(ua) ? 'Android' : safari ? 'Safari' : 'Desktop';
+    dialog.setAttribute('data-platform', platform);
     document.getElementById('pwa-install-step-one').textContent = t(`pwa${platform}One`);
     document.getElementById('pwa-install-step-two').textContent = t(`pwa${platform}Two`);
     buttons.forEach(button => { button.querySelector('[data-i18n]').textContent = t('pwaInstall'); });

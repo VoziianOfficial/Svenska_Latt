@@ -189,6 +189,8 @@ select{appearance:none!important;background-image:url('data:image/svg+xml,%3Csvg
 .cheat-card>.tile-fallback{top:18px!important;right:18px!important}
 /* Keep touch scrolling native; allow text to fit under overlay photography. */
 .action-card .tile-photo,.topic-card .tile-photo,.course-tile .tile-photo{pointer-events:none}
+/* Native horizontal scrolling must also permit page scrolling and zoom on iOS. */
+.action-grid.action-grid-4,.topic-grid.premium-topics,.course-tiles{touch-action:auto}
 
 /* Profile settings: contained rows, quiet icons and a readable email summary. */
 .content-panel.profile-settings{

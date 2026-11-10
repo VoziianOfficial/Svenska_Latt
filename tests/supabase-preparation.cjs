@@ -645,7 +645,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('debug export has queue and version without a session or dev flag',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-10-19-videos-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-11-09-mobile-qa-1');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,true);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
@@ -1155,4 +1155,30 @@ test('quiz writes remain gated against pre-010 servers',async()=>{
  w.server.account(A).snapshot.capabilities=[];await w.h.ctx.SVProgress.refresh();
  const before=w.h.records.rpc.length;await run("startQuiz('lesson','lesson-5')");
  assert.equal(run('quiz.active'),false);assert.equal(w.h.records.rpc.length,before);
+});
+
+test('safe RPC diagnostics identify session, verification and RPC failure without retaining private values',async()=>{
+ const h=harness({initial:token(A)});await h.ctx.SVAuth.initialize();
+ h.rpcResult(()=>({error:{code:'PGRST202',message:'private-token-and-email',details:{private:'payload'}}}));
+ await assert.rejects(h.ctx.SVRpc.getProgress({expectedUserId:A}));
+ let d=h.ctx.SVRpc.diagnostics();assert.equal(d.operation,'sl_get_progress');assert.equal(d.stage,'rpc');assert.equal(d.code,'PGRST202');
+ assert(!JSON.stringify(d).includes(A));assert(!JSON.stringify(d).includes('private'));assert(Object.isFrozen(d));
+ h.client.auth.getUser=async()=>({error:{code:'bad_jwt',message:'private'}});
+ await assert.rejects(h.ctx.SVRpc.applyEvent({expectedUserId:A,eventId:eid,expectedRevision:0,event:{type:'mark_known',data:{word_id:'v-arbeta'}}}));
+ d=h.ctx.SVRpc.diagnostics();assert.equal(d.stage,'verify_user');assert.equal(d.operation,'sl_apply_event');assert.equal(d.code,'bad_jwt');assert.equal(h.records.rpc.length,1);
+ h.client.auth.getSession=async()=>{throw Error('private-secret')};
+ await assert.rejects(h.ctx.SVRpc.getProgress({expectedUserId:A}));assert.equal(h.ctx.SVRpc.diagnostics().stage,'session');assert.equal(h.ctx.SVRpc.diagnostics().code,'NETWORK_OR_AUTH_ERROR');
+});
+test('blocked queue open terminates safely, preserves existing pending events and can retry',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ const before=JSON.stringify([...w.shared.stores.get('events').values()]);w.server.offline=false;
+ const normal=w.shared.environment.indexedDB;
+ w.shared.environment.indexedDB={open(){const req={};setImmediate(()=>req.onblocked?.());return req},databases:()=>normal.databases()};
+ const h=harness({initial:token(A),progress:true,hostname:'localhost',environment:w.shared.environment});h.rpcResult(()=>w.server.request(h));
+ await h.ctx.SVProgress.initialize({previewCatalog:()=>({version:'writer-test-v1',words:['v-arbeta']})});
+ assert.equal(h.ctx.SVProgress.writeStatus().error,'QUEUE_STORAGE_BLOCKED');assert.equal(h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
+ assert.equal(JSON.stringify([...w.shared.stores.get('events').values()]),before);
+ await new Promise(r=>setImmediate(r));
+ h.ctx.indexedDB=normal;await h.ctx.SVProgress.retry();await h.ctx.SVProgressDebug.flush();
+ assert.equal([...w.shared.stores.get('events').values()][0].status,'applied');assert.equal(w.server.account(A).snapshot.state.xp,8);
 });

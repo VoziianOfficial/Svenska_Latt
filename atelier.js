@@ -286,10 +286,12 @@ function decorateSlider(track){
  prev.addEventListener('click',()=>shift(-1));next.addEventListener('click',()=>shift(1));track.addEventListener('scroll',update,{passive:true});requestAnimationFrame(update);
  }
  let origin=0,base=0,dragged=false;
- track.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;origin=e.clientX;base=track.scrollLeft;dragged=false;down=true});
+ // A drag can end outside the track without a click. Reset for every new
+ // gesture, including touch/pen, so its first real tap is never swallowed.
+ track.addEventListener('pointerdown',e=>{dragged=false;down=false;if(e.pointerType!=='mouse'||e.button!==0)return;origin=e.clientX;base=track.scrollLeft;down=true});
  track.addEventListener('pointermove',e=>{if(!down||e.pointerType!=='mouse')return;const delta=e.clientX-origin;if(Math.abs(delta)>5){dragged=true;track.scrollLeft=base-delta}});
  const stop=()=>{down=false;clearTimeout(settleTimer);settleTimer=setTimeout(normalize,160)};track.addEventListener('pointerup',stop);track.addEventListener('pointercancel',stop);track.addEventListener('pointerleave',stop);
- track.addEventListener('click',e=>{if(dragged){e.preventDefault();e.stopImmediatePropagation();dragged=false}},true);
+ track.addEventListener('click',e=>{if(dragged&&e.detail!==0){e.preventDefault();e.stopImmediatePropagation();dragged=false}},true);
 }
 // Pack reference cards by their actual content height, including after a language or width change.
 let referenceLayout=null;

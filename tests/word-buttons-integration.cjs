@@ -2,6 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..'),read=n=>fs.readFileSync(path.join(root,n),'utf8');
 const domModule=process.env.SL_UX_DOM_MODULE;
+const contentVersion=require('node:child_process').execFileSync('python3',['-c',"import sys;sys.path.insert(0,'scripts');from check_supabase_manifest import current_manifest;print(current_manifest()['version'])"],{cwd:root,encoding:'utf8'}).trim();
 const A='a1000000-0000-0000-0000-000000000001',B='a1000000-0000-0000-0000-000000000002';
 const clone=x=>x===undefined?undefined:JSON.parse(JSON.stringify(x));
 function resources(){
@@ -19,7 +20,7 @@ function resources(){
 }
 function server(){
  const accounts=new Map(),calls=[];let failure=null,hold=null,capIntervals=false;
- const account=id=>{if(!accounts.has(id))accounts.set(id,{revision:0,content_version:'static-afaa62b7426e09a7',capabilities:['unmark_known','review_grade','known_reward_once','quiz_rewards_v1','video_set_v1','video_quizzes_v3'],state:{known:[],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:0,answered:0,correct:0,quizResults:{},settings:{language:'ru',level:'A',speechSpeed:'slow',timezone:'Europe/Stockholm'},profile:{name:'Tester',avatarPath:null}},receipts:new Map(),rewarded:new Set()});return accounts.get(id)};
+ const account=id=>{if(!accounts.has(id))accounts.set(id,{revision:0,content_version:contentVersion,capabilities:['unmark_known','review_grade','known_reward_once','quiz_rewards_v1','video_set_v1','video_quizzes_v3'],state:{known:[],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:0,answered:0,correct:0,quizResults:{},settings:{language:'ru',level:'A',speechSpeed:'slow',timezone:'Europe/Stockholm'},profile:{name:'Tester',avatarPath:null}},receipts:new Map(),rewarded:new Set()});return accounts.get(id)};
  return {calls,account,set failure(value){failure=value},set hold(value){hold=value},set capIntervals(value){capIntervals=value},async rpc(id,name,args){
   const a=account(id),snapshot=()=>{const {receipts,rewarded,...s}=a;return clone(s)};
   if(name==='sl_get_progress')return {data:snapshot()};

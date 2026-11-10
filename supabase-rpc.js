@@ -3,13 +3,18 @@
 (() => {
  const error=code=>Object.assign(new Error(code),{code});
  const uuid=value=>typeof value==='string'&&/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value);
+ let lastFailure=null;
+ const safeCodes=new Set(['AUTH_USER_MISMATCH','AUTH_CONTEXT_CHANGED','AUTH_UNAVAILABLE','EXPECTED_USER_ID_REQUIRED','42501','42883','40001','23505','23514','22023','P0001','PGRST202','PGRST301','PGRST302','PGRST303','session_not_found','refresh_token_not_found','refresh_token_already_used','bad_jwt']);
  async function call(name,args,expectedUserId){
+  let stage='session';
+  try{
   if(!uuid(expectedUserId))throw error('EXPECTED_USER_ID_REQUIRED');
   const body=JSON.parse(JSON.stringify(args));
   const session=await window.SVAuth.getSession();
   if(session?.user?.id!==expectedUserId)throw error('AUTH_USER_MISMATCH');
   const revision=window.SVAuth.getState().identityRevision;
   const client=await window.SVSupabase.getClient();
+  stage='verify_user';
   // Cached session.user is not a server-verified identity. Validate the exact
   // captured JWT before sending even an explicitly requested progress RPC.
   const verified=await client.auth.getUser(session.access_token);
@@ -18,11 +23,18 @@
   if(window.SVAuth.getState().identityRevision!==revision)throw error('AUTH_CONTEXT_CHANGED');
   // Bind the request to the captured user's JWT, even if another tab changes
   // the SDK session before fetch. Never expose or persist that JWT ourselves.
+  stage='rpc';
   const result=await client.rpc(name,body).setHeader('Authorization',`Bearer ${session.access_token}`).retry(false);
   const current=window.SVAuth.getState();
   if(current.identityRevision!==revision||current.user?.id!==expectedUserId)throw error('AUTH_CONTEXT_CHANGED');
   if(result.error)throw result.error; // Preserve SQLSTATE, especially 40001/23505.
   return result.data;
+  }catch(cause){
+   // Support diagnostics are deliberately public and contain no request bodies,
+   // account IDs, raw error messages, headers, email addresses or tokens.
+   lastFailure=Object.freeze({operation:name,stage,code:safeCodes.has(cause?.code)?cause.code:'NETWORK_OR_AUTH_ERROR',at:new Date().toISOString()});
+   throw cause;
+  }
  }
  function checkMutation(id,revision){
   if(!uuid(id)||!Number.isSafeInteger(revision)||revision<0)throw error('EVENT_ID_AND_REVISION_REQUIRED');
@@ -44,5 +56,5 @@
  function studyCommit({expectedUserId,id,leaseId,segments,close=false}={}){return call('sl_study_commit',{p_id:id,p_lease_id:leaseId,p_segments:segments,p_close:close},expectedUserId)}
  function reviewList({expectedUserId}={}){return call('sl_review_list',{},expectedUserId)}
  function reviewChange({expectedUserId,requestId,wordId,action,version}={}){return call('sl_review_change',{p_request_id:requestId,p_word_id:wordId,p_action:action,p_version:version},expectedUserId)}
- window.SVRpc=Object.freeze({reviewList,reviewChange,getProgress,applyEvent,importProgress,studyStatus,studySettings,studyOpen,studyCommit});
+ window.SVRpc=Object.freeze({reviewList,reviewChange,getProgress,applyEvent,importProgress,studyStatus,studySettings,studyOpen,studyCommit,diagnostics:()=>lastFailure});
 })();

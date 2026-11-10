@@ -106,9 +106,9 @@ domTest('learned counter opens the dictionary list and restores its filters, scr
  await h.run("action({dataset:{nav:'dictionary',param:'learned'}})");assert.equal(h.ctx.scrolled.at(-1),340);assert.equal(h.run('dictFilter.text'),'ar');assert.equal(h.run('dictFilter.group'),'1');assert.equal(h.run('dictFilter.category'),'Глаголы');assert.equal(h.document.activeElement.dataset.wordLink,h.ctx.targetId);assert.equal(h.document.activeElement.focusOptions.preventScroll,true);
  const before=h.page.querySelector('#dict-search');await h.run("action({dataset:{action:'show-learned'}})");assert.equal(h.page.querySelector('#dict-search'),before);assert.equal(h.ctx.scrolled.at(-1),340);
 });
-domTest('manual reviews unavailable before migration cannot mutate progress or open an exercise',async()=>{
+domTest('learned word keeps manual review disabled even when the review service is unavailable',async()=>{
  const h=ui({cloud:true,capable:false});h.run("route='word';routeParam=WORDS[0].id;state.known=[WORDS[0].id]");h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
- const review=h.page.querySelector('[data-action="mark-review"]');assert.equal(review.hidden,false);assert.equal(review.textContent,' Повторить');
+ const review=h.page.querySelector('[data-action="mark-review"]');assert.equal(review.hidden,false);assert.equal(review.textContent,'✓ Изучено');assert.equal(review.disabled,true);
  await h.run("action({dataset:{action:'mark-review',id:WORDS[0].id}})");assert.equal(h.run('route'),'word');assert.equal(h.calls.length,0);assert.equal(h.run('state.known.length'),1);assert.equal(h.notices.length,1);
  assert.doesNotMatch(h.run('renderWordReview()'),/word-recall/);
 });
@@ -121,9 +121,9 @@ domTest('programmatic hash navigation renders once; browser Back restores the le
  h.run("navigate('word',WORDS[0].id)");assert.equal(h.ctx.renderCount,1);h.handlers.hashchange();assert.equal(h.ctx.renderCount,1,'native hashchange must not replace a freshly rendered page');
  h.ctx.location.hash='#dictionary/learned';h.handlers.hashchange();assert.equal(h.run("route+'|'+routeParam"),'dictionary|learned');assert.equal(h.ctx.scrollY,275);assert.equal(h.ctx.renderCount,2);
 });
-domTest('supported repeated practice leaves the selected learning toggle intact',()=>{
+domTest('learned word cannot re-enter manual reviews until its learned mark is removed',()=>{
  const h=ui({cloud:true});h.run('route="word";routeParam=WORDS[0].id;state.known=[WORDS[0].id]');h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
- const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,false);assert.equal(review.textContent.includes(' Повторить'),true);assert.equal(h.calls.length,0);
+ const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,true);assert.equal(review.textContent,'✓ Изучено');assert.equal(h.calls.length,0);
 });
 
 async function withManualQueue(){
