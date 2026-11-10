@@ -12,8 +12,12 @@ for(const w of words){
   check(w.examples.every(e=>typeof e.sv==='string'&&e.sv.trim().length>5),'Empty example: '+w.id);
   check(w.examples.every(e=>e.sv.length<=35&&!/[\r\n]/.test(e.sv)),'Example too long: '+w.id);
   const detail=run(`routeParam=${JSON.stringify(w.id)};renderWord()`);
-  check((detail.match(/class="word-example"/g)||[]).length===3,'Missing example cards: '+w.id);
-  for(const example of w.examples){
+  const pronunciation=run(`wordPronunciationExamples(getWord(${JSON.stringify(w.id)}))`);
+  check(pronunciation.length===6&&new Set(pronunciation.map(e=>e.sv)).size===6,'Expected six distinct pronunciation examples: '+w.id);
+  check((detail.match(/class="word-example"/g)||[]).length===6,'Missing example cards: '+w.id);
+  check(!/word-example-(?:number|count)/.test(detail),'Unnecessary example numbering: '+w.id);
+  for(const example of w.examples)check(pronunciation.some(e=>e.sv===example.sv),'Original example lost: '+w.id);
+  for(const example of pronunciation){
     check(detail.includes(run(`'data-text="'+esc(${JSON.stringify(example.sv)})+'"'`)),'Missing example audio: '+w.id);
   }
 }
