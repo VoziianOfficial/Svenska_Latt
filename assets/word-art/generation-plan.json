@@ -1,0 +1,3630 @@
+{
+  "style": "Realistic Scandinavian product cutouts on transparent alpha; 5 by 5 icon atlases",
+  "sheets": [
+    {
+      "id": "atlas-01",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "recycling-symbol",
+          "meaning": "återvinningscentral = пункт переработки отходов; sortera = сортировать; återvinna = перерабатывать",
+          "words": [
+            "lex-0270",
+            "lex-0333",
+            "lex-0334"
+          ]
+        },
+        {
+          "slug": "sponge",
+          "meaning": "suddgummi = ластик; diska = мыть посуду; torka = вытирать / сушить",
+          "words": [
+            "w-suddgummi",
+            "lex-0326",
+            "lex-0330"
+          ]
+        },
+        {
+          "slug": "kitchen-knife",
+          "meaning": "skära = резать; hacka = рубить мелко",
+          "words": [
+            "lex-0336",
+            "lex-0337"
+          ]
+        },
+        {
+          "slug": "shortcake",
+          "meaning": "baka = печь; att baka = печь",
+          "words": [
+            "lex-0340",
+            "extra-34"
+          ]
+        },
+        {
+          "slug": "hammer-and-wrench",
+          "meaning": "reparera = ремонтировать",
+          "words": [
+            "lex-0346"
+          ]
+        },
+        {
+          "slug": "wastebasket",
+          "meaning": "kasta = выбрасывать",
+          "words": [
+            "lex-0332"
+          ]
+        },
+        {
+          "slug": "red-question-mark",
+          "meaning": "fråga = спрашивать; fråga = вопрос; vem = кто; vad = что / какой; varför = почему; vilken = который (en); vilket = который (ett); vilka = которые; att fråga = спрашивать; vem? = кто?; vad? = что?; var? = где?; vart? = куда?; varifrån? = откуда?; när? = когда?; varför? = почему?; hur? = как?; vilken? = какой? (en); vilket? = какое? (ett); vilka? = к",
+          "words": [
+            "v-fråga",
+            "n-fråga",
+            "w-vem",
+            "w-vad",
+            "w-varför",
+            "w-vilken",
+            "w-vilket",
+            "w-vilka",
+            "extra-76",
+            "extra-112",
+            "extra-113",
+            "extra-114",
+            "extra-115",
+            "extra-116",
+            "extra-117",
+            "extra-118",
+            "extra-119",
+            "extra-120",
+            "extra-121",
+            "extra-122",
+            "extra-123",
+            "extra-124",
+            "extra-125",
+            "extra-126"
+          ]
+        },
+        {
+          "slug": "round-pushpin",
+          "meaning": "var = где; här = здесь; i = в",
+          "words": [
+            "w-var",
+            "w-här",
+            "w-i"
+          ]
+        },
+        {
+          "slug": "calendar",
+          "meaning": "år = год; måndag = понедельник; tisdag = вторник; onsdag = среда; torsdag = четверг; när = когда; termin = семестр; månad = месяц; datum = дата",
+          "words": [
+            "n-år",
+            "w-måndag",
+            "w-tisdag",
+            "w-onsdag",
+            "w-torsdag",
+            "w-när",
+            "lex-0067",
+            "lex-0174",
+            "lex-0175"
+          ]
+        },
+        {
+          "slug": "fallen-leaf",
+          "meaning": "september = сентябрь; höst = осень; löv = лист дерева",
+          "words": [
+            "w-september",
+            "w-höst",
+            "lex-0291"
+          ]
+        },
+        {
+          "slug": "repeat-button",
+          "meaning": "ibland = иногда; tur och retur = туда и обратно; att repetera = повторять",
+          "words": [
+            "w-ibland",
+            "lex-0158",
+            "extra-77"
+          ]
+        },
+        {
+          "slug": "sunrise",
+          "meaning": "i går = вчера; morgon = утро; förmiddag = первая половина дня",
+          "words": [
+            "w-i-går",
+            "w-morgon",
+            "lex-0178"
+          ]
+        },
+        {
+          "slug": "tulip",
+          "meaning": "mars = март; maj = май; blomma = цветок",
+          "words": [
+            "w-mars",
+            "w-maj",
+            "w-blomma"
+          ]
+        },
+        {
+          "slug": "counterclockwise-arrows-button",
+          "meaning": "ofta = часто; uppdatering = обновление",
+          "words": [
+            "w-ofta",
+            "lex-0362"
+          ]
+        },
+        {
+          "slug": "crescent-moon",
+          "meaning": "sent = поздно; måne = луна",
+          "words": [
+            "w-sent",
+            "lex-0306"
+          ]
+        },
+        {
+          "slug": "milky-way",
+          "meaning": "natt = ночь; midnatt = полночь",
+          "words": [
+            "w-natt",
+            "lex-0180"
+          ]
+        },
+        {
+          "slug": "right-arrow",
+          "meaning": "sedan = потом; höger = право",
+          "words": [
+            "w-sedan",
+            "w-höger"
+          ]
+        },
+        {
+          "slug": "sun-behind-small-cloud",
+          "meaning": "i morgon = завтра; söndag = воскресенье",
+          "words": [
+            "w-i-morgon",
+            "w-söndag"
+          ]
+        },
+        {
+          "slug": "sun-with-face",
+          "meaning": "juni = июнь; sommar = лето",
+          "words": [
+            "w-juni",
+            "w-sommar"
+          ]
+        },
+        {
+          "slug": "christmas-tree",
+          "meaning": "december = декабрь",
+          "words": [
+            "w-december"
+          ]
+        },
+        {
+          "slug": "cityscape-at-dusk",
+          "meaning": "kväll = вечер",
+          "words": [
+            "w-kväll"
+          ]
+        },
+        {
+          "slug": "infinity",
+          "meaning": "alltid = всегда",
+          "words": [
+            "w-alltid"
+          ]
+        },
+        {
+          "slug": "maple-leaf",
+          "meaning": "oktober = октябрь",
+          "words": [
+            "w-oktober"
+          ]
+        },
+        {
+          "slug": "party-popper",
+          "meaning": "fredag = пятница",
+          "words": [
+            "w-fredag"
+          ]
+        },
+        {
+          "slug": "snowman-without-snow",
+          "meaning": "februari = февраль",
+          "words": [
+            "w-februari"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-02",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "sunflower",
+          "meaning": "augusti = август",
+          "words": [
+            "w-augusti"
+          ]
+        },
+        {
+          "slug": "sunrise-over-mountains",
+          "meaning": "tidigt = рано",
+          "words": [
+            "w-tidigt"
+          ]
+        },
+        {
+          "slug": "speaking-head",
+          "meaning": "prata = разговаривать; säga = сказать; språk = язык; förklara = объяснять; berätta = рассказывать; svensk = шведский / швед; svenska = шведский язык",
+          "words": [
+            "v-prata",
+            "v-säga",
+            "n-språk",
+            "lex-0396",
+            "lex-0397",
+            "lex-0400",
+            "lex-0401"
+          ]
+        },
+        {
+          "slug": "thinking-face",
+          "meaning": "tänka = думать; tycka = считать / иметь мнение; kanske = возможно; någon = кто-нибудь / какой-нибудь; förstå = понимать; att förstå = понимать",
+          "words": [
+            "v-tänka",
+            "v-tycka",
+            "w-kanske",
+            "w-någon",
+            "lex-0395",
+            "extra-73"
+          ]
+        },
+        {
+          "slug": "open-book",
+          "meaning": "studera = учиться; läsa = читать; bok = книга; ordbok = словарь; lärobok = учебник",
+          "words": [
+            "v-studera",
+            "v-läsa",
+            "n-bok",
+            "w-ordbok",
+            "lex-0079"
+          ]
+        },
+        {
+          "slug": "door",
+          "meaning": "öppna = открывать; dörr = дверь; inne = внутри; en dörr = дверь",
+          "words": [
+            "v-öppna",
+            "n-dörr",
+            "w-inne",
+            "extra-108"
+          ]
+        },
+        {
+          "slug": "open-hands",
+          "meaning": "ha = иметь; få = получать / мочь (разрешение); ta = брать; hämta = забирать / приносить",
+          "words": [
+            "v-ha",
+            "v-få",
+            "v-ta",
+            "lex-0344"
+          ]
+        },
+        {
+          "slug": "brain",
+          "meaning": "veta = знать (факт); hur = как; erfarenhet = опыт",
+          "words": [
+            "v-veta",
+            "w-hur",
+            "lex-0233"
+          ]
+        },
+        {
+          "slug": "eyes",
+          "meaning": "titta = смотреть; se = видеть; ögon = глаза",
+          "words": [
+            "v-titta",
+            "v-se",
+            "lex-0040"
+          ]
+        },
+        {
+          "slug": "hourglass-not-done",
+          "meaning": "vänta = ждать; fortfarande = всё ещё; försening = опоздание / задержка",
+          "words": [
+            "v-vänta",
+            "w-fortfarande",
+            "lex-0159"
+          ]
+        },
+        {
+          "slug": "light-bulb",
+          "meaning": "tända = зажигать / включать свет; lampa = лампа; ljus = светлый",
+          "words": [
+            "v-tända",
+            "w-lampa",
+            "lex-0314"
+          ]
+        },
+        {
+          "slug": "locked",
+          "meaning": "stänga = закрывать; lösenord = пароль; stängt = закрыто",
+          "words": [
+            "v-stänga",
+            "w-lösenord",
+            "lex-0142"
+          ]
+        },
+        {
+          "slug": "magnifying-glass-tilted-right",
+          "meaning": "söka = искать / подавать заявку; undersökning = обследование; nyfiken = любопытный",
+          "words": [
+            "v-söka",
+            "lex-0026",
+            "extra-78"
+          ]
+        },
+        {
+          "slug": "person-lifting-weights",
+          "meaning": "träna = тренироваться; gym = спортзал; att träna = тренироваться",
+          "words": [
+            "v-träna",
+            "lex-0260",
+            "extra-41"
+          ]
+        },
+        {
+          "slug": "alarm-clock",
+          "meaning": "vakna = просыпаться; nu = сейчас",
+          "words": [
+            "v-vakna",
+            "w-nu"
+          ]
+        },
+        {
+          "slug": "brick",
+          "meaning": "bygga = строить; vägg = стена",
+          "words": [
+            "v-bygga",
+            "lex-0086"
+          ]
+        },
+        {
+          "slug": "bullseye",
+          "meaning": "nå = достигать; för att = чтобы / потому что",
+          "words": [
+            "v-nå",
+            "w-för-att"
+          ]
+        },
+        {
+          "slug": "bus",
+          "meaning": "åka = ехать (на транспорте); buss = автобус",
+          "words": [
+            "v-åka",
+            "w-buss"
+          ]
+        },
+        {
+          "slug": "ear",
+          "meaning": "lyssna = слушать; öra = ухо",
+          "words": [
+            "v-lyssna",
+            "w-öra"
+          ]
+        },
+        {
+          "slug": "flexed-biceps",
+          "meaning": "kunna = мочь / уметь; arm = рука (от плеча)",
+          "words": [
+            "v-kunna",
+            "w-arm"
+          ]
+        },
+        {
+          "slug": "sleeping-face",
+          "meaning": "sova = спать; trött = уставший",
+          "words": [
+            "v-sova",
+            "w-trött"
+          ]
+        },
+        {
+          "slug": "soap",
+          "meaning": "tvätta = стирать / мыть; skölja = ополаскивать",
+          "words": [
+            "v-tvätta",
+            "lex-0335"
+          ]
+        },
+        {
+          "slug": "sparkling-heart",
+          "meaning": "vilja = хотеть; gärna = охотно",
+          "words": [
+            "v-vilja",
+            "lex-0392"
+          ]
+        },
+        {
+          "slug": "stop-button",
+          "meaning": "sluta = заканчивать; stanna = останавливаться",
+          "words": [
+            "v-sluta",
+            "v-stanna"
+          ]
+        },
+        {
+          "slug": "toolbox",
+          "meaning": "använda = использовать; göra = делать",
+          "words": [
+            "v-använda",
+            "v-göra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-03",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "wrapped-gift",
+          "meaning": "ge = давать; för = для",
+          "words": [
+            "v-ge",
+            "w-för"
+          ]
+        },
+        {
+          "slug": "person-walking-facing-right",
+          "meaning": "komma = приходить / приезжать",
+          "words": [
+            "v-komma"
+          ]
+        },
+        {
+          "slug": "play-button",
+          "meaning": "börja = начинать",
+          "words": [
+            "v-börja"
+          ]
+        },
+        {
+          "slug": "pouring-liquid",
+          "meaning": "fylla = наполнять",
+          "words": [
+            "v-fylla"
+          ]
+        },
+        {
+          "slug": "sewing-needle",
+          "meaning": "sy = шить",
+          "words": [
+            "v-sy"
+          ]
+        },
+        {
+          "slug": "teddy-bear",
+          "meaning": "leka = играть (о детях)",
+          "words": [
+            "v-leka"
+          ]
+        },
+        {
+          "slug": "telephone-receiver",
+          "meaning": "ringa = звонить",
+          "words": [
+            "v-ringa"
+          ]
+        },
+        {
+          "slug": "writing-hand",
+          "meaning": "skriva = писать",
+          "words": [
+            "v-skriva"
+          ]
+        },
+        {
+          "slug": "classical-building",
+          "meaning": "museum = музей; kommun = муниципалитет; myndighet = государственное учреждение; demokrati = демократия; samhälle = общество",
+          "words": [
+            "lex-0254",
+            "lex-0263",
+            "lex-0264",
+            "lex-0419",
+            "lex-0423"
+          ]
+        },
+        {
+          "slug": "cityscape",
+          "meaning": "stad = город; centrum = центр; torg = площадь; idrottshall = спортивный зал",
+          "words": [
+            "lex-0247",
+            "lex-0249",
+            "lex-0250",
+            "lex-0261"
+          ]
+        },
+        {
+          "slug": "person-swimming",
+          "meaning": "simhall = бассейн; simma = плавать; att simma = плавать",
+          "words": [
+            "lex-0259",
+            "lex-0368",
+            "extra-40"
+          ]
+        },
+        {
+          "slug": "bank",
+          "meaning": "bank = банк; bankkonto = банковский счёт",
+          "words": [
+            "lex-0267",
+            "lex-0415"
+          ]
+        },
+        {
+          "slug": "atm-sign",
+          "meaning": "uttagsautomat = банкомат",
+          "words": [
+            "lex-0268"
+          ]
+        },
+        {
+          "slug": "bridge-at-night",
+          "meaning": "bro = мост",
+          "words": [
+            "lex-0252"
+          ]
+        },
+        {
+          "slug": "church",
+          "meaning": "kyrka = церковь",
+          "words": [
+            "lex-0253"
+          ]
+        },
+        {
+          "slug": "houses",
+          "meaning": "by = деревня",
+          "words": [
+            "lex-0248"
+          ]
+        },
+        {
+          "slug": "oncoming-police-car",
+          "meaning": "polisstation = полицейский участок",
+          "words": [
+            "lex-0266"
+          ]
+        },
+        {
+          "slug": "performing-arts",
+          "meaning": "teater = театр",
+          "words": [
+            "lex-0256"
+          ]
+        },
+        {
+          "slug": "playground-slide",
+          "meaning": "lekplats = детская площадка",
+          "words": [
+            "lex-0262"
+          ]
+        },
+        {
+          "slug": "police-officer",
+          "meaning": "polis = полиция",
+          "words": [
+            "lex-0265"
+          ]
+        },
+        {
+          "slug": "spiral-calendar",
+          "meaning": "vecka = неделя; schema = расписание; tidtabell = расписание транспорта; vardag = будний день; helg = выходные; i övermorgon = послезавтра; i förrgår = позавчера; eftermiddag = вторая половина дня; tidig = ранний; sen = поздний; sällan = редко; ett schema = расписание",
+          "words": [
+            "n-vecka",
+            "lex-0065",
+            "lex-0162",
+            "lex-0172",
+            "lex-0173",
+            "lex-0176",
+            "lex-0177",
+            "lex-0179",
+            "lex-0181",
+            "lex-0182",
+            "lex-0183",
+            "extra-68"
+          ]
+        },
+        {
+          "slug": "cooking",
+          "meaning": "laga = готовить (еду); kök = кухня; ugn = духовка; spis = плита; laga mat = готовить еду; steka = жарить; ett kök = кухня",
+          "words": [
+            "v-laga",
+            "w-kök",
+            "w-ugn",
+            "lex-0100",
+            "lex-0327",
+            "lex-0338",
+            "extra-106"
+          ]
+        },
+        {
+          "slug": "couch-and-lamp",
+          "meaning": "rum = комната; lördag = суббота; vardagsrum = гостиная; soffa = диван; fåtölj = кресло; ett vardagsrum = гостиная",
+          "words": [
+            "n-rum",
+            "w-lördag",
+            "w-vardagsrum",
+            "w-soffa",
+            "lex-0092",
+            "extra-105"
+          ]
+        },
+        {
+          "slug": "bed",
+          "meaning": "ligga = лежать / находиться; sovrum = спальня; säng = кровать; vila = отдыхать; ett sovrum = спальня",
+          "words": [
+            "v-ligga",
+            "w-sovrum",
+            "w-säng",
+            "lex-0030",
+            "extra-103"
+          ]
+        },
+        {
+          "slug": "bathtub",
+          "meaning": "badrum = ванная; ett badrum = ванная",
+          "words": [
+            "w-badrum",
+            "extra-104"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-04",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "ice",
+          "meaning": "kylskåp = холодильник; frys = морозильная камера",
+          "words": [
+            "w-kylskåp",
+            "lex-0099"
+          ]
+        },
+        {
+          "slug": "key",
+          "meaning": "nyckel = ключ",
+          "words": [
+            "w-nyckel"
+          ]
+        },
+        {
+          "slug": "wood",
+          "meaning": "golv = пол",
+          "words": [
+            "w-golv"
+          ]
+        },
+        {
+          "slug": "house",
+          "meaning": "bo = жить (где-то); hus = дом; hemma = дома; hem = домой; tak = крыша / потолок; hall = прихожая; balkong = балкон; trappa = лестница; hiss = лифт; kudde = подушка; täcke = одеяло; filt = плед; garderob = шкаф для одежды; byrå = комод; hylla = полка; matta = ковёр; gardin = занавеска; diskmaskin = посудомоечная машина; tvättmaskin = стиральная маши",
+          "words": [
+            "v-bo",
+            "n-hus",
+            "w-hemma",
+            "w-hem",
+            "w-tak",
+            "lex-0082",
+            "lex-0083",
+            "lex-0084",
+            "lex-0085",
+            "lex-0087",
+            "lex-0088",
+            "lex-0089",
+            "lex-0090",
+            "lex-0091",
+            "lex-0093",
+            "lex-0095",
+            "lex-0096",
+            "lex-0101",
+            "lex-0102",
+            "lex-0416",
+            "lex-0418",
+            "extra-102",
+            "extra-109",
+            "extra-110",
+            "extra-111"
+          ]
+        },
+        {
+          "slug": "locked-with-key",
+          "meaning": "lås = замок",
+          "words": [
+            "lex-0097"
+          ]
+        },
+        {
+          "slug": "mirror",
+          "meaning": "spegel = зеркало",
+          "words": [
+            "lex-0094"
+          ]
+        },
+        {
+          "slug": "clapper-board",
+          "meaning": "film = фильм; bio = кинотеатр; video = видео",
+          "words": [
+            "w-film",
+            "lex-0255",
+            "lex-0361"
+          ]
+        },
+        {
+          "slug": "fishing-pole",
+          "meaning": "fiske = рыбалка; fiska = рыбачить; att fiska = рыбачить",
+          "words": [
+            "w-fiske",
+            "lex-0373",
+            "extra-32"
+          ]
+        },
+        {
+          "slug": "camping",
+          "meaning": "att campa = отдыхать с палаткой",
+          "words": [
+            "extra-46"
+          ]
+        },
+        {
+          "slug": "musical-notes",
+          "meaning": "musik = музыка",
+          "words": [
+            "w-musik"
+          ]
+        },
+        {
+          "slug": "video-game",
+          "meaning": "spel = игра",
+          "words": [
+            "w-spel"
+          ]
+        },
+        {
+          "slug": "yarn",
+          "meaning": "att sticka = вязать",
+          "words": [
+            "extra-43"
+          ]
+        },
+        {
+          "slug": "person-running",
+          "meaning": "springa = бежать; snabb = быстрый; fritid = свободное время; hobby = хобби",
+          "words": [
+            "v-springa",
+            "w-snabb",
+            "lex-0365",
+            "lex-0366"
+          ]
+        },
+        {
+          "slug": "soccer-ball",
+          "meaning": "spela = играть; idrott = спорт; fotboll = футбол",
+          "words": [
+            "v-spela",
+            "lex-0375",
+            "lex-0376"
+          ]
+        },
+        {
+          "slug": "hiking-boot",
+          "meaning": "vandring = пеший поход; att vandra = ходить в походы",
+          "words": [
+            "lex-0381",
+            "extra-31"
+          ]
+        },
+        {
+          "slug": "woman-dancing",
+          "meaning": "dansa = танцевать; att dansa = танцевать",
+          "words": [
+            "lex-0370",
+            "extra-35"
+          ]
+        },
+        {
+          "slug": "basketball",
+          "meaning": "basket = баскетбол",
+          "words": [
+            "lex-0377"
+          ]
+        },
+        {
+          "slug": "confetti-ball",
+          "meaning": "festival = фестиваль",
+          "words": [
+            "lex-0383"
+          ]
+        },
+        {
+          "slug": "guitar",
+          "meaning": "konsert = концерт",
+          "words": [
+            "lex-0382"
+          ]
+        },
+        {
+          "slug": "ice-hockey",
+          "meaning": "ishockey = хоккей",
+          "words": [
+            "lex-0379"
+          ]
+        },
+        {
+          "slug": "tennis",
+          "meaning": "tennis = теннис",
+          "words": [
+            "lex-0378"
+          ]
+        },
+        {
+          "slug": "fork-and-knife-with-plate",
+          "meaning": "äta = есть (кушать); middag = обед; hungrig = голодный; lunch = обед; mat = еда; restaurang = ресторан",
+          "words": [
+            "v-äta",
+            "w-middag",
+            "w-hungrig",
+            "w-lunch",
+            "lex-0103",
+            "lex-0257"
+          ]
+        },
+        {
+          "slug": "pot-of-food",
+          "meaning": "soppa = суп; gröt = каша; koka = варить / кипятить",
+          "words": [
+            "w-soppa",
+            "lex-0108",
+            "lex-0339"
+          ]
+        },
+        {
+          "slug": "croissant",
+          "meaning": "frukost = завтрак; frukost ingår = завтрак включён",
+          "words": [
+            "w-frukost",
+            "lex-0463"
+          ]
+        },
+        {
+          "slug": "cut-of-meat",
+          "meaning": "kött = мясо; skinka = ветчина",
+          "words": [
+            "w-kött",
+            "lex-0114"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-05",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "hot-beverage",
+          "meaning": "kaffe = кофе; kafé = кафе",
+          "words": [
+            "w-kaffe",
+            "lex-0258"
+          ]
+        },
+        {
+          "slug": "bread",
+          "meaning": "bröd = хлеб",
+          "words": [
+            "w-bröd"
+          ]
+        },
+        {
+          "slug": "butter",
+          "meaning": "smör = масло",
+          "words": [
+            "w-smör"
+          ]
+        },
+        {
+          "slug": "carrot",
+          "meaning": "morot = морковь",
+          "words": [
+            "w-morot"
+          ]
+        },
+        {
+          "slug": "cheese-wedge",
+          "meaning": "ost = сыр",
+          "words": [
+            "w-ost"
+          ]
+        },
+        {
+          "slug": "cooked-rice",
+          "meaning": "ris = рис",
+          "words": [
+            "w-ris"
+          ]
+        },
+        {
+          "slug": "cucumber",
+          "meaning": "gurka = огурец",
+          "words": [
+            "w-gurka"
+          ]
+        },
+        {
+          "slug": "egg",
+          "meaning": "ägg = яйцо",
+          "words": [
+            "w-ägg"
+          ]
+        },
+        {
+          "slug": "glass-of-milk",
+          "meaning": "mjölk = молоко",
+          "words": [
+            "w-mjölk"
+          ]
+        },
+        {
+          "slug": "onion",
+          "meaning": "lök = лук",
+          "words": [
+            "w-lök"
+          ]
+        },
+        {
+          "slug": "potato",
+          "meaning": "potatis = картофель",
+          "words": [
+            "w-potatis"
+          ]
+        },
+        {
+          "slug": "poultry-leg",
+          "meaning": "kyckling = курица",
+          "words": [
+            "w-kyckling"
+          ]
+        },
+        {
+          "slug": "teacup-without-handle",
+          "meaning": "te = чай",
+          "words": [
+            "w-te"
+          ]
+        },
+        {
+          "slug": "tomato",
+          "meaning": "tomat = помидор",
+          "words": [
+            "w-tomat"
+          ]
+        },
+        {
+          "slug": "red-apple",
+          "meaning": "äpple = яблоко; mellanmål = перекус; yoghurt = йогурт; mjöl = мука",
+          "words": [
+            "n-äpple",
+            "lex-0105",
+            "lex-0107",
+            "lex-0125"
+          ]
+        },
+        {
+          "slug": "cup-with-straw",
+          "meaning": "dricka = пить; dryck = напиток; juice = сок",
+          "words": [
+            "v-dricka",
+            "lex-0104",
+            "lex-0106"
+          ]
+        },
+        {
+          "slug": "salt",
+          "meaning": "salt = соль; peppar = перец",
+          "words": [
+            "lex-0123",
+            "lex-0124"
+          ]
+        },
+        {
+          "slug": "bell-pepper",
+          "meaning": "paprika = болгарский перец",
+          "words": [
+            "lex-0116"
+          ]
+        },
+        {
+          "slug": "candy",
+          "meaning": "socker = сахар",
+          "words": [
+            "lex-0122"
+          ]
+        },
+        {
+          "slug": "garlic",
+          "meaning": "vitlök = чеснок",
+          "words": [
+            "lex-0115"
+          ]
+        },
+        {
+          "slug": "green-salad",
+          "meaning": "sallad = салат",
+          "words": [
+            "lex-0110"
+          ]
+        },
+        {
+          "slug": "honey-pot",
+          "meaning": "honung = мёд",
+          "words": [
+            "lex-0126"
+          ]
+        },
+        {
+          "slug": "hot-dog",
+          "meaning": "korv = колбаска",
+          "words": [
+            "lex-0113"
+          ]
+        },
+        {
+          "slug": "lemon",
+          "meaning": "citron = лимон",
+          "words": [
+            "lex-0120"
+          ]
+        },
+        {
+          "slug": "mushroom",
+          "meaning": "svamp = гриб",
+          "words": [
+            "lex-0117"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-06",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "pear",
+          "meaning": "päron = груша",
+          "words": [
+            "lex-0118"
+          ]
+        },
+        {
+          "slug": "shrimp",
+          "meaning": "räkor = креветки",
+          "words": [
+            "lex-0112"
+          ]
+        },
+        {
+          "slug": "spaghetti",
+          "meaning": "pasta = макароны",
+          "words": [
+            "lex-0109"
+          ]
+        },
+        {
+          "slug": "strawberry",
+          "meaning": "jordgubbe = клубника",
+          "words": [
+            "lex-0121"
+          ]
+        },
+        {
+          "slug": "tangerine",
+          "meaning": "apelsin = апельсин",
+          "words": [
+            "lex-0119"
+          ]
+        },
+        {
+          "slug": "mouse",
+          "meaning": "liten = маленький; mus = мышь; råtta = крыса",
+          "words": [
+            "w-liten",
+            "lex-0279",
+            "lex-0280"
+          ]
+        },
+        {
+          "slug": "cow",
+          "meaning": "ko = корова; kalv = телёнок",
+          "words": [
+            "w-ko",
+            "lex-0276"
+          ]
+        },
+        {
+          "slug": "ewe",
+          "meaning": "får = овца; lamm = ягнёнок",
+          "words": [
+            "w-får",
+            "lex-0277"
+          ]
+        },
+        {
+          "slug": "ant",
+          "meaning": "myra = муравей",
+          "words": [
+            "lex-0289"
+          ]
+        },
+        {
+          "slug": "bear",
+          "meaning": "björn = медведь",
+          "words": [
+            "w-björn"
+          ]
+        },
+        {
+          "slug": "bird",
+          "meaning": "fågel = птица",
+          "words": [
+            "w-fågel"
+          ]
+        },
+        {
+          "slug": "butterfly",
+          "meaning": "fjäril = бабочка",
+          "words": [
+            "lex-0285"
+          ]
+        },
+        {
+          "slug": "chicken",
+          "meaning": "höna = курица (птица)",
+          "words": [
+            "lex-0274"
+          ]
+        },
+        {
+          "slug": "chipmunk",
+          "meaning": "ekorre = белка",
+          "words": [
+            "lex-0284"
+          ]
+        },
+        {
+          "slug": "deer",
+          "meaning": "rådjur = косуля",
+          "words": [
+            "lex-0283"
+          ]
+        },
+        {
+          "slug": "duck",
+          "meaning": "anka = утка",
+          "words": [
+            "lex-0273"
+          ]
+        },
+        {
+          "slug": "fly",
+          "meaning": "fluga = муха",
+          "words": [
+            "lex-0288"
+          ]
+        },
+        {
+          "slug": "fox",
+          "meaning": "räv = лиса",
+          "words": [
+            "lex-0281"
+          ]
+        },
+        {
+          "slug": "goat",
+          "meaning": "get = коза",
+          "words": [
+            "lex-0278"
+          ]
+        },
+        {
+          "slug": "honeybee",
+          "meaning": "bi = пчела",
+          "words": [
+            "lex-0286"
+          ]
+        },
+        {
+          "slug": "horse",
+          "meaning": "häst = лошадь",
+          "words": [
+            "w-häst"
+          ]
+        },
+        {
+          "slug": "moose",
+          "meaning": "älg = лось",
+          "words": [
+            "w-älg"
+          ]
+        },
+        {
+          "slug": "mosquito",
+          "meaning": "mygga = комар",
+          "words": [
+            "lex-0287"
+          ]
+        },
+        {
+          "slug": "pig",
+          "meaning": "gris = свинья",
+          "words": [
+            "w-gris"
+          ]
+        },
+        {
+          "slug": "rabbit",
+          "meaning": "kanin = кролик",
+          "words": [
+            "w-kanin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-07",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "rooster",
+          "meaning": "tupp = петух",
+          "words": [
+            "lex-0275"
+          ]
+        },
+        {
+          "slug": "spider",
+          "meaning": "spindel = паук",
+          "words": [
+            "lex-0290"
+          ]
+        },
+        {
+          "slug": "wolf",
+          "meaning": "varg = волк",
+          "words": [
+            "lex-0282"
+          ]
+        },
+        {
+          "slug": "face-with-head-bandage",
+          "meaning": "ont = больно; huvudvärk = головная боль; smärta = боль; skada = травма",
+          "words": [
+            "w-ont",
+            "lex-0019",
+            "lex-0033",
+            "lex-0034"
+          ]
+        },
+        {
+          "slug": "smiling-face",
+          "meaning": "må = чувствовать себя; frisk = здоровый; må bättre = чувствовать себя лучше; pigg = бодрый",
+          "words": [
+            "v-må",
+            "w-frisk",
+            "lex-0031",
+            "lex-0384"
+          ]
+        },
+        {
+          "slug": "face-with-thermometer",
+          "meaning": "sjuk = больной; feber = температура / жар; må dåligt = плохо себя чувствовать",
+          "words": [
+            "w-sjuk",
+            "w-feber",
+            "lex-0032"
+          ]
+        },
+        {
+          "slug": "pill",
+          "meaning": "apotek = аптека; medicin = лекарство; tablett = таблетка",
+          "words": [
+            "w-apotek",
+            "w-medicin",
+            "lex-0022"
+          ]
+        },
+        {
+          "slug": "stethoscope",
+          "meaning": "magont = боль в животе; recept = рецепт; tidbokning = запись на приём",
+          "words": [
+            "lex-0021",
+            "lex-0023",
+            "lex-0027"
+          ]
+        },
+        {
+          "slug": "face-with-medical-mask",
+          "meaning": "hosta = кашель; symptom = симптом",
+          "words": [
+            "w-hosta",
+            "lex-0024"
+          ]
+        },
+        {
+          "slug": "health-worker",
+          "meaning": "läkare = врач; sjuksköterska = медсестра",
+          "words": [
+            "w-läkare",
+            "w-sjuksköterska"
+          ]
+        },
+        {
+          "slug": "hospital",
+          "meaning": "sjukhus = больница; vårdcentral = поликлиника",
+          "words": [
+            "w-sjukhus",
+            "w-vårdcentral"
+          ]
+        },
+        {
+          "slug": "sneezing-face",
+          "meaning": "förkyld = простуженный; allergi = аллергия",
+          "words": [
+            "w-förkyld",
+            "lex-0025"
+          ]
+        },
+        {
+          "slug": "tooth",
+          "meaning": "tandvärk = зубная боль; tand = зуб",
+          "words": [
+            "lex-0020",
+            "lex-0042"
+          ]
+        },
+        {
+          "slug": "ambulance",
+          "meaning": "ambulans = скорая помощь",
+          "words": [
+            "lex-0028"
+          ]
+        },
+        {
+          "slug": "collision",
+          "meaning": "olycka = несчастный случай",
+          "words": [
+            "lex-0029"
+          ]
+        },
+        {
+          "slug": "syringe",
+          "meaning": "vaccination = вакцинация",
+          "words": [
+            "lex-0035"
+          ]
+        },
+        {
+          "slug": "prohibited",
+          "meaning": "aldrig = никогда; utan = без; inte = не; ingen = никто / никакой (en); inget = ничто / никакой (ett)",
+          "words": [
+            "w-aldrig",
+            "w-utan",
+            "w-inte",
+            "w-ingen",
+            "w-inget"
+          ]
+        },
+        {
+          "slug": "pinching-hand",
+          "meaning": "lite = мало / немного",
+          "words": [
+            "w-lite"
+          ]
+        },
+        {
+          "slug": "shopping-bags",
+          "meaning": "köpa = покупать; butik = магазин; affär = магазин; köpcentrum = торговый центр; en kö = очередь; en hylla = полка; en provhytt = примерочная; att välja = выбирать; att byta = обменивать",
+          "words": [
+            "v-köpa",
+            "w-butik",
+            "lex-0127",
+            "lex-0129",
+            "extra-54",
+            "extra-55",
+            "extra-57",
+            "extra-59",
+            "extra-60"
+          ]
+        },
+        {
+          "slug": "credit-card",
+          "meaning": "betala = платить; kassa = касса; kort = карта; bankkort = банковская карта; en kassa = касса; att betala = платить; ett kontokort = банковская карта",
+          "words": [
+            "v-betala",
+            "w-kassa",
+            "lex-0134",
+            "lex-0135",
+            "extra-51",
+            "extra-58",
+            "extra-62"
+          ]
+        },
+        {
+          "slug": "money-with-wings",
+          "meaning": "billigt = дёшево; rabatt = скидка; rea = распродажа; erbjudande = предложение / акция; billig = дешёвый; en rabatt = скидка; en rea = распродажа",
+          "words": [
+            "w-billigt",
+            "w-rabatt",
+            "w-rea",
+            "lex-0132",
+            "lex-0139",
+            "extra-49",
+            "extra-50"
+          ]
+        },
+        {
+          "slug": "money-bag",
+          "meaning": "pris = цена; pengar = деньги; lön = зарплата; skatt = налог; ett pris = цена",
+          "words": [
+            "w-pris",
+            "w-pengar",
+            "lex-0226",
+            "lex-0413",
+            "extra-52"
+          ]
+        },
+        {
+          "slug": "gem-stone",
+          "meaning": "dyrt = дорого; dyr = дорогой",
+          "words": [
+            "w-dyrt",
+            "lex-0140"
+          ]
+        },
+        {
+          "slug": "receipt",
+          "meaning": "kvitto = чек; ett kvitto = чек",
+          "words": [
+            "w-kvitto",
+            "extra-48"
+          ]
+        },
+        {
+          "slug": "shopping-cart",
+          "meaning": "handla = покупать продукты; mataffär = продуктовый магазин; kassör = кассир; kontanter = наличные; plånbok = кошелёк; kundvagn = тележка покупателя; öppet = открыто; prova = примерять / пробовать; byta = обменивать; beställa = заказывать",
+          "words": [
+            "v-handla",
+            "lex-0128",
+            "lex-0130",
+            "lex-0133",
+            "lex-0136",
+            "lex-0138",
+            "lex-0141",
+            "lex-0143",
+            "lex-0144",
+            "lex-0146"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-08",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "package",
+          "meaning": "mycket = много / очень; leverans = доставка; paket = посылка",
+          "words": [
+            "w-mycket",
+            "lex-0147",
+            "lex-0148"
+          ]
+        },
+        {
+          "slug": "postbox",
+          "meaning": "post = почта; postombud = пункт получения посылок",
+          "words": [
+            "lex-0149",
+            "lex-0269"
+          ]
+        },
+        {
+          "slug": "basket",
+          "meaning": "korg = корзина",
+          "words": [
+            "lex-0137"
+          ]
+        },
+        {
+          "slug": "left-arrow",
+          "meaning": "vänster = лево; lämna tillbaka = возвращать товар; att lämna tillbaka = возвращать товар",
+          "words": [
+            "w-vänster",
+            "lex-0145",
+            "extra-61"
+          ]
+        },
+        {
+          "slug": "up-arrow",
+          "meaning": "uppe = наверху; rakt fram = прямо; över = над",
+          "words": [
+            "w-uppe",
+            "w-rakt-fram",
+            "w-över"
+          ]
+        },
+        {
+          "slug": "down-arrow",
+          "meaning": "nere = внизу; under = под",
+          "words": [
+            "w-nere",
+            "w-under"
+          ]
+        },
+        {
+          "slug": "pushpin",
+          "meaning": "där = там; på = на",
+          "words": [
+            "w-där",
+            "w-på"
+          ]
+        },
+        {
+          "slug": "handshake",
+          "meaning": "hjälpa = помогать; vän = друг; oss = нас / нам; vår = наш (en); vårt = наш (ett); våra = наши; med = с; kollega = коллега; tillsammans = вместе",
+          "words": [
+            "v-hjälpa",
+            "n-vän",
+            "w-oss",
+            "w-vår",
+            "w-vårt",
+            "w-våra",
+            "w-med",
+            "lex-0222",
+            "lex-0391"
+          ]
+        },
+        {
+          "slug": "blue-heart",
+          "meaning": "förlåt = прости; min = мой (en); mitt = мой (ett); mina = мои",
+          "words": [
+            "w-förlåt",
+            "w-min",
+            "w-mitt",
+            "w-mina"
+          ]
+        },
+        {
+          "slug": "index-pointing-at-the-viewer",
+          "meaning": "din = твой (en); ditt = твой (ett); dina = твои",
+          "words": [
+            "w-din",
+            "w-ditt",
+            "w-dina"
+          ]
+        },
+        {
+          "slug": "person-raising-hand",
+          "meaning": "ursäkta = извините; jag = я; mig = меня / мне",
+          "words": [
+            "w-ursäkta",
+            "w-jag",
+            "w-mig"
+          ]
+        },
+        {
+          "slug": "backhand-index-pointing-right",
+          "meaning": "du = ты; dig = тебя / тебе",
+          "words": [
+            "w-du",
+            "w-dig"
+          ]
+        },
+        {
+          "slug": "input-latin-letters",
+          "meaning": "det = оно (ett-слово); att = что (союз) / частица инфинитива",
+          "words": [
+            "w-det",
+            "w-att"
+          ]
+        },
+        {
+          "slug": "input-latin-uppercase",
+          "meaning": "den = он/она (en-слово)",
+          "words": [
+            "w-den"
+          ]
+        },
+        {
+          "slug": "speech-balloon",
+          "meaning": "svara = отвечать; svar = ответ; ord = слово; mening = предложение; meddelande = сообщение; sms = СМС; tyvärr = к сожалению; verkligen = действительно; att svara = отвечать; tack så mycket = большое спасибо; trevligt att träffas = приятно познакомиться; hur mår du? = как дела?; vad heter du? = как тебя зовут?; jag förstår inte = я не понимаю; kan du",
+          "words": [
+            "v-svara",
+            "n-svar",
+            "w-ord",
+            "w-mening",
+            "w-meddelande",
+            "lex-0354",
+            "lex-0393",
+            "lex-0394",
+            "extra-75",
+            "extra-93",
+            "extra-95",
+            "extra-96",
+            "extra-97",
+            "extra-98",
+            "extra-99",
+            "extra-100",
+            "extra-101"
+          ]
+        },
+        {
+          "slug": "folded-hands",
+          "meaning": "tro = полагать / верить; tack = спасибо; snälla = пожалуйста; tacksam = благодарный; ingen orsak = не за что",
+          "words": [
+            "v-tro",
+            "w-tack",
+            "w-snälla",
+            "extra-80",
+            "extra-94"
+          ]
+        },
+        {
+          "slug": "check-mark-button",
+          "meaning": "ja = да; bra = хороший; redan = уже",
+          "words": [
+            "w-ja",
+            "w-bra",
+            "w-redan"
+          ]
+        },
+        {
+          "slug": "waving-hand",
+          "meaning": "hej = привет; hejdå = пока; välkommen = добро пожаловать",
+          "words": [
+            "w-hej",
+            "w-hejdå",
+            "lex-0398"
+          ]
+        },
+        {
+          "slug": "cross-mark",
+          "meaning": "nej = нет; dålig = плохой",
+          "words": [
+            "w-nej",
+            "w-dålig"
+          ]
+        },
+        {
+          "slug": "anxious-face-with-sweat",
+          "meaning": "nervös = нервный; orolig = обеспокоенный",
+          "words": [
+            "lex-0385",
+            "lex-0386"
+          ]
+        },
+        {
+          "slug": "broken-heart",
+          "meaning": "ensam = одинокий; besviken = разочарованный",
+          "words": [
+            "lex-0390",
+            "extra-79"
+          ]
+        },
+        {
+          "slug": "face-with-open-mouth",
+          "meaning": "förvånad = удивлённый",
+          "words": [
+            "lex-0387"
+          ]
+        },
+        {
+          "slug": "flushed-face",
+          "meaning": "generad = смущённый",
+          "words": [
+            "lex-0389"
+          ]
+        },
+        {
+          "slug": "balance-scale",
+          "meaning": "hur mycket = сколько (неисчисл.); medborgare = гражданин; medborgarskap = гражданство; adress = адрес; skyldighet = обязанность",
+          "words": [
+            "w-hur-mycket",
+            "lex-0403",
+            "lex-0404",
+            "lex-0406",
+            "lex-0412"
+          ]
+        },
+        {
+          "slug": "scroll",
+          "meaning": "beslut = решение; regel = правило; lag = закон; kontrakt = договор",
+          "words": [
+            "lex-0408",
+            "lex-0409",
+            "lex-0410",
+            "lex-0417"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-09",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "ballot-box-with-ballot",
+          "meaning": "val = выборы; röst = голос",
+          "words": [
+            "lex-0420",
+            "lex-0421"
+          ]
+        },
+        {
+          "slug": "shield",
+          "meaning": "rättighet = право; försäkring = страхование",
+          "words": [
+            "lex-0411",
+            "lex-0414"
+          ]
+        },
+        {
+          "slug": "globe-showing-europe-africa",
+          "meaning": "Sverige = Швеция",
+          "words": [
+            "lex-0399"
+          ]
+        },
+        {
+          "slug": "t-shirt",
+          "meaning": "tröja = кофта / свитер; kläder = одежда; skjorta = рубашка; t-shirt = футболка; blus = блузка; tofflor = тапочки; bälte = ремень; ficka = карман; knapp = пуговица; dragkedja = молния; bekväm = удобный",
+          "words": [
+            "w-tröja",
+            "lex-0184",
+            "lex-0185",
+            "lex-0186",
+            "lex-0187",
+            "lex-0195",
+            "lex-0198",
+            "lex-0200",
+            "lex-0201",
+            "lex-0202",
+            "lex-0203"
+          ]
+        },
+        {
+          "slug": "jeans",
+          "meaning": "byxor = брюки; jeans = джинсы; shorts = шорты",
+          "words": [
+            "w-byxor",
+            "lex-0189",
+            "lex-0191"
+          ]
+        },
+        {
+          "slug": "coat",
+          "meaning": "jacka = куртка; kappa = пальто",
+          "words": [
+            "w-jacka",
+            "lex-0188"
+          ]
+        },
+        {
+          "slug": "dress",
+          "meaning": "klänning = платье; kjol = юбка",
+          "words": [
+            "w-klänning",
+            "lex-0190"
+          ]
+        },
+        {
+          "slug": "gloves",
+          "meaning": "vantar = варежки; handskar = перчатки",
+          "words": [
+            "w-vantar",
+            "lex-0197"
+          ]
+        },
+        {
+          "slug": "running-shoe",
+          "meaning": "skor = обувь; sneakers = кроссовки",
+          "words": [
+            "w-skor",
+            "lex-0194"
+          ]
+        },
+        {
+          "slug": "socks",
+          "meaning": "strumpor = носки; strumpa = носок",
+          "words": [
+            "w-strumpor",
+            "lex-0192"
+          ]
+        },
+        {
+          "slug": "billed-cap",
+          "meaning": "mössa = шапка",
+          "words": [
+            "w-mössa"
+          ]
+        },
+        {
+          "slug": "handbag",
+          "meaning": "väska = сумка",
+          "words": [
+            "lex-0199"
+          ]
+        },
+        {
+          "slug": "scarf",
+          "meaning": "halsduk = шарф",
+          "words": [
+            "w-halsduk"
+          ]
+        },
+        {
+          "slug": "top-hat",
+          "meaning": "hatt = шляпа",
+          "words": [
+            "lex-0196"
+          ]
+        },
+        {
+          "slug": "womans-boot",
+          "meaning": "stövlar = сапоги",
+          "words": [
+            "lex-0193"
+          ]
+        },
+        {
+          "slug": "sun",
+          "meaning": "dag = день; i dag = сегодня; sol = солнце; skiner = светит; solig = солнечный; varmt ute = тепло на улице",
+          "words": [
+            "n-dag",
+            "w-i-dag",
+            "w-sol",
+            "w-skiner",
+            "lex-0210",
+            "lex-0215"
+          ]
+        },
+        {
+          "slug": "sun-behind-rain-cloud",
+          "meaning": "april = апрель; väder = погода; väderprognos = прогноз погоды; årstid = время года; halt = скользкий",
+          "words": [
+            "w-april",
+            "w-väder",
+            "lex-0216",
+            "lex-0217",
+            "lex-0219"
+          ]
+        },
+        {
+          "slug": "cloud-with-rain",
+          "meaning": "november = ноябрь; regn = дождь; regnar = идёт дождь; regnig = дождливый",
+          "words": [
+            "w-november",
+            "w-regn",
+            "w-regnar",
+            "lex-0212"
+          ]
+        },
+        {
+          "slug": "snowflake",
+          "meaning": "januari = январь; kall = холодный; kallt = холодно; vinter = зима",
+          "words": [
+            "w-januari",
+            "w-kall",
+            "w-kallt",
+            "w-vinter"
+          ]
+        },
+        {
+          "slug": "cloud-with-snow",
+          "meaning": "snö = снег; snöar = идёт снег; snöig = снежный",
+          "words": [
+            "w-snö",
+            "w-snöar",
+            "lex-0214"
+          ]
+        },
+        {
+          "slug": "wind-face",
+          "meaning": "vind = ветер; blåsig = ветреный; luft = воздух",
+          "words": [
+            "w-vind",
+            "lex-0213",
+            "lex-0308"
+          ]
+        },
+        {
+          "slug": "cloud-with-lightning-and-rain",
+          "meaning": "storm = буря; åska = гроза",
+          "words": [
+            "lex-0205",
+            "lex-0206"
+          ]
+        },
+        {
+          "slug": "cloud",
+          "meaning": "moln = облако; molnig = облачный",
+          "words": [
+            "w-moln",
+            "lex-0211"
+          ]
+        },
+        {
+          "slug": "thermometer",
+          "meaning": "temperatur = температура; grad = градус",
+          "words": [
+            "lex-0208",
+            "lex-0209"
+          ]
+        },
+        {
+          "slug": "high-voltage",
+          "meaning": "blixt = молния",
+          "words": [
+            "lex-0207"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-10",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "umbrella-with-rain-drops",
+          "meaning": "paraply = зонт",
+          "words": [
+            "lex-0218"
+          ]
+        },
+        {
+          "slug": "compass",
+          "meaning": "vart = куда; varifrån = откуда; till = в / к; turist = турист; sevärdhet = достопримечательность; vägvisning = указатели пути; bredvid = рядом с; genom = через;сквозь; mot = к;против; omkring = вокруг; innanför = внутри;по эту сторону; utanför = за пределами; längs = вдоль; runt = вокруг; enligt = согласно; trots = несмотря на; underifrån = снизу; ",
+          "words": [
+            "w-vart",
+            "w-varifrån",
+            "w-till",
+            "lex-0455",
+            "lex-0456",
+            "lex-0465",
+            "extra-1",
+            "extra-2",
+            "extra-3",
+            "extra-4",
+            "extra-5",
+            "extra-6",
+            "extra-7",
+            "extra-8",
+            "extra-9",
+            "extra-10",
+            "extra-11",
+            "extra-12",
+            "extra-13",
+            "extra-14",
+            "extra-prep-bland",
+            "extra-prep-intill"
+          ]
+        },
+        {
+          "slug": "left-right-arrow",
+          "meaning": "mellan = между; men = но",
+          "words": [
+            "w-mellan",
+            "w-men"
+          ]
+        },
+        {
+          "slug": "back-arrow",
+          "meaning": "bakom = позади",
+          "words": [
+            "w-bakom"
+          ]
+        },
+        {
+          "slug": "fast-forward-button",
+          "meaning": "framför = перед",
+          "words": [
+            "w-framför"
+          ]
+        },
+        {
+          "slug": "last-track-button",
+          "meaning": "före = до / перед",
+          "words": [
+            "w-före"
+          ]
+        },
+        {
+          "slug": "next-track-button",
+          "meaning": "efter = после",
+          "words": [
+            "w-efter"
+          ]
+        },
+        {
+          "slug": "right-arrow-curving-left",
+          "meaning": "från = из / от",
+          "words": [
+            "w-från"
+          ]
+        },
+        {
+          "slug": "fire",
+          "meaning": "varm = тёплый; varmt = тепло; eld = огонь; grilla = жарить на гриле",
+          "words": [
+            "w-varm",
+            "w-varmt",
+            "lex-0309",
+            "lex-0341"
+          ]
+        },
+        {
+          "slug": "puzzle-piece",
+          "meaning": "svår = трудный; uppgift = задание",
+          "words": [
+            "w-svår",
+            "lex-0063"
+          ]
+        },
+        {
+          "slug": "star",
+          "meaning": "fin = красивый; stjärna = звезда",
+          "words": [
+            "w-fin",
+            "lex-0305"
+          ]
+        },
+        {
+          "slug": "confused-face",
+          "meaning": "ful = некрасивый",
+          "words": [
+            "w-ful"
+          ]
+        },
+        {
+          "slug": "elephant",
+          "meaning": "stor = большой",
+          "words": [
+            "w-stor"
+          ]
+        },
+        {
+          "slug": "feather",
+          "meaning": "lätt = лёгкий",
+          "words": [
+            "w-lätt"
+          ]
+        },
+        {
+          "slug": "new-button",
+          "meaning": "ny = новый",
+          "words": [
+            "w-ny"
+          ]
+        },
+        {
+          "slug": "turtle",
+          "meaning": "långsam = медленный",
+          "words": [
+            "w-långsam"
+          ]
+        },
+        {
+          "slug": "evergreen-tree",
+          "meaning": "skog = лес; jord = земля / почва; sand = песок; dal = долина; himmel = небо",
+          "words": [
+            "w-skog",
+            "lex-0295",
+            "lex-0297",
+            "lex-0299",
+            "lex-0304"
+          ]
+        },
+        {
+          "slug": "deciduous-tree",
+          "meaning": "ute = снаружи; träd = дерево; gren = ветка; rot = корень",
+          "words": [
+            "w-ute",
+            "w-träd",
+            "lex-0292",
+            "lex-0293"
+          ]
+        },
+        {
+          "slug": "water-wave",
+          "meaning": "hav = море; sjö = озеро; flod = река; bäck = ручей",
+          "words": [
+            "w-hav",
+            "w-sjö",
+            "lex-0300",
+            "lex-0301"
+          ]
+        },
+        {
+          "slug": "beach-with-umbrella",
+          "meaning": "juli = июль; strand = пляж; kust = побережье",
+          "words": [
+            "w-juli",
+            "w-strand",
+            "lex-0303"
+          ]
+        },
+        {
+          "slug": "national-park",
+          "meaning": "park = парк; miljö = окружающая среда; natur = природа",
+          "words": [
+            "lex-0251",
+            "lex-0310",
+            "lex-0311"
+          ]
+        },
+        {
+          "slug": "rock",
+          "meaning": "sten = камень; berg = гора",
+          "words": [
+            "lex-0296",
+            "lex-0298"
+          ]
+        },
+        {
+          "slug": "herb",
+          "meaning": "gräs = трава",
+          "words": [
+            "lex-0294"
+          ]
+        },
+        {
+          "slug": "airplane",
+          "meaning": "resa = путешествовать; flygplan = самолёт; flygplats = аэропорт; hotellrum = номер в отеле; bokning = бронирование; utflykt = экскурсия / вылазка; incheckning = регистрация (в отеле/аэропорту); utcheckning = выезд из отеля; enkelrum = одноместный номер; dubbelrum = двухместный номер; bokningsnummer = номер бронирования; att resa = путешествовать",
+          "words": [
+            "v-resa",
+            "w-flygplan",
+            "lex-0154",
+            "lex-0449",
+            "lex-0450",
+            "lex-0457",
+            "lex-0459",
+            "lex-0460",
+            "lex-0461",
+            "lex-0462",
+            "lex-0464",
+            "extra-45"
+          ]
+        },
+        {
+          "slug": "luggage",
+          "meaning": "bagage = багаж; resväska = чемодан",
+          "words": [
+            "lex-0453",
+            "lex-0454"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-11",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "bellhop-bell",
+          "meaning": "reception = стойка регистрации",
+          "words": [
+            "lex-0451"
+          ]
+        },
+        {
+          "slug": "hotel",
+          "meaning": "hotell = отель",
+          "words": [
+            "lex-0448"
+          ]
+        },
+        {
+          "slug": "passport-control",
+          "meaning": "pass = паспорт",
+          "words": [
+            "lex-0452"
+          ]
+        },
+        {
+          "slug": "briefcase",
+          "meaning": "arbeta = работать; jobba = работать; jobb = работа; arbete = работа; arbetsplats = рабочее место; anställd = сотрудник; arbetsgivare = работодатель; arbetsdag = рабочий день; praktik = практика / стажировка; sjukskriven = на больничном; anställning = трудоустройство; ansvar = ответственность",
+          "words": [
+            "v-arbeta",
+            "v-jobba",
+            "n-jobb",
+            "lex-0220",
+            "lex-0221",
+            "lex-0224",
+            "lex-0225",
+            "lex-0228",
+            "lex-0235",
+            "lex-0239",
+            "lex-0242",
+            "lex-0245"
+          ]
+        },
+        {
+          "slug": "busts-in-silhouette",
+          "meaning": "ni = вы; er = вас / вам; alla = все; kund = покупатель; chef = начальник; möte = встреча / собрание; intervju = собеседование; invånare = житель; en kund = покупатель",
+          "words": [
+            "w-ni",
+            "w-er",
+            "w-alla",
+            "lex-0131",
+            "lex-0223",
+            "lex-0229",
+            "lex-0230",
+            "lex-0402",
+            "extra-53"
+          ]
+        },
+        {
+          "slug": "hourglass-done",
+          "meaning": "snart = скоро; timlön = почасовая оплата; arbetstid = рабочее время; heltid = полная занятость; deltid = частичная занятость; skift = смена",
+          "words": [
+            "w-snart",
+            "lex-0227",
+            "lex-0236",
+            "lex-0240",
+            "lex-0241",
+            "lex-0246"
+          ]
+        },
+        {
+          "slug": "desert-island",
+          "meaning": "semester = отпуск; ledig = свободный / в отпуске; ö = остров",
+          "words": [
+            "lex-0237",
+            "lex-0238",
+            "lex-0302"
+          ]
+        },
+        {
+          "slug": "office-building",
+          "meaning": "lägenhet = квартира; företag = компания; kontor = офис",
+          "words": [
+            "w-lägenhet",
+            "lex-0243",
+            "lex-0244"
+          ]
+        },
+        {
+          "slug": "page-facing-up",
+          "meaning": "ansökan = заявление / заявка; cv = резюме; blankett = бланк",
+          "words": [
+            "lex-0231",
+            "lex-0232",
+            "lex-0407"
+          ]
+        },
+        {
+          "slug": "link",
+          "meaning": "som = который / как; länk = ссылка; dessutom = кроме того; därför = поэтому; däremot = однако;напротив; fastän = хотя; medan = в то время как; annars = иначе; både ... och = и ... и; antingen ... eller = либо ... либо; varken ... eller = ни ... ни; först = сначала; slutligen = наконец; till exempel = например; med andra ord = иными словами",
+          "words": [
+            "w-som",
+            "lex-0364",
+            "extra-15",
+            "extra-16",
+            "extra-17",
+            "extra-18",
+            "extra-19",
+            "extra-20",
+            "extra-21",
+            "extra-22",
+            "extra-23",
+            "extra-24",
+            "extra-25",
+            "extra-26",
+            "extra-27"
+          ]
+        },
+        {
+          "slug": "plus",
+          "meaning": "också = тоже; och = и; flera = несколько",
+          "words": [
+            "w-också",
+            "w-och",
+            "w-flera"
+          ]
+        },
+        {
+          "slug": "shuffle-tracks-button",
+          "meaning": "eller = или; om = если / о",
+          "words": [
+            "w-eller",
+            "w-om"
+          ]
+        },
+        {
+          "slug": "thought-balloon",
+          "meaning": "eftersom = поскольку; något = что-нибудь",
+          "words": [
+            "w-eftersom",
+            "w-något"
+          ]
+        },
+        {
+          "slug": "index-pointing-up",
+          "meaning": "bara = только",
+          "words": [
+            "w-bara"
+          ]
+        },
+        {
+          "slug": "people-hugging",
+          "meaning": "familj = семья; de = они; dem = их / им; deras = их (принадлежность); förälder = родитель; syskon = братья и сёстры; föräldrar = родители; barnbarn = внук / внучка; kusin = двоюродный брат или сестра; släkt = родня; ogift = неженатый / незамужняя; granne = сосед; flickvän = девушка (партнёр); pojkvän = парень (партнёр)",
+          "words": [
+            "n-familj",
+            "w-de",
+            "w-dem",
+            "w-deras",
+            "w-förälder",
+            "w-syskon",
+            "lex-0001",
+            "lex-0006",
+            "lex-0007",
+            "lex-0012",
+            "lex-0014",
+            "lex-0016",
+            "lex-0017",
+            "lex-0018"
+          ]
+        },
+        {
+          "slug": "man",
+          "meaning": "man = мужчина; han = он; hans = его; pappa = папа; far = отец; morbror = дядя по матери; farbror = дядя по отцу",
+          "words": [
+            "n-man",
+            "w-han",
+            "w-hans",
+            "w-pappa",
+            "lex-0003",
+            "lex-0010",
+            "lex-0011"
+          ]
+        },
+        {
+          "slug": "woman",
+          "meaning": "kvinna = женщина; hon = она; hennes = её; mamma = мама; mor = мать; moster = тётя по матери; faster = тётя по отцу",
+          "words": [
+            "n-kvinna",
+            "w-hon",
+            "w-hennes",
+            "w-mamma",
+            "lex-0002",
+            "lex-0008",
+            "lex-0009"
+          ]
+        },
+        {
+          "slug": "two-hearts",
+          "meaning": "vi = мы; fru = жена; gift = женатый / замужняя; sambo = партнёр при совместном проживании",
+          "words": [
+            "w-vi",
+            "w-fru",
+            "lex-0013",
+            "lex-0015"
+          ]
+        },
+        {
+          "slug": "boy",
+          "meaning": "pojke = мальчик; bror = брат; son = сын",
+          "words": [
+            "n-pojke",
+            "w-bror",
+            "lex-0005"
+          ]
+        },
+        {
+          "slug": "girl",
+          "meaning": "flicka = девочка; syster = сестра; dotter = дочь",
+          "words": [
+            "n-flicka",
+            "w-syster",
+            "lex-0004"
+          ]
+        },
+        {
+          "slug": "old-man",
+          "meaning": "gammal = старый; morfar = дедушка по маме; farfar = дедушка по папе",
+          "words": [
+            "w-gammal",
+            "w-morfar",
+            "w-farfar"
+          ]
+        },
+        {
+          "slug": "old-woman",
+          "meaning": "mormor = бабушка по маме; farmor = бабушка по папе",
+          "words": [
+            "w-mormor",
+            "w-farmor"
+          ]
+        },
+        {
+          "slug": "chair",
+          "meaning": "sitta = сидеть; stol = стул; bord = стол",
+          "words": [
+            "v-sitta",
+            "n-stol",
+            "n-bord"
+          ]
+        },
+        {
+          "slug": "bicycle",
+          "meaning": "cykel = велосипед; cykla = ездить на велосипеде",
+          "words": [
+            "n-cykel",
+            "lex-0369"
+          ]
+        },
+        {
+          "slug": "cat",
+          "meaning": "katt = кот / кошка; kattunge = котёнок",
+          "words": [
+            "n-katt",
+            "lex-0272"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-12",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "dog",
+          "meaning": "hund = собака; valp = щенок",
+          "words": [
+            "n-hund",
+            "lex-0271"
+          ]
+        },
+        {
+          "slug": "fish",
+          "meaning": "fisk = рыба; lax = лосось",
+          "words": [
+            "n-fisk",
+            "lex-0111"
+          ]
+        },
+        {
+          "slug": "laptop",
+          "meaning": "dator = компьютер; skärm = экран",
+          "words": [
+            "n-dator",
+            "lex-0077"
+          ]
+        },
+        {
+          "slug": "pen",
+          "meaning": "penna = ручка / карандаш; en penna = ручка",
+          "words": [
+            "n-penna",
+            "extra-70"
+          ]
+        },
+        {
+          "slug": "teacher",
+          "meaning": "lärare = учитель; en lärare = учитель",
+          "words": [
+            "n-lärare",
+            "extra-63"
+          ]
+        },
+        {
+          "slug": "window",
+          "meaning": "fönster = окно; ett fönster = окно",
+          "words": [
+            "n-fönster",
+            "extra-107"
+          ]
+        },
+        {
+          "slug": "automobile",
+          "meaning": "bil = машина",
+          "words": [
+            "n-bil"
+          ]
+        },
+        {
+          "slug": "banana",
+          "meaning": "banan = банан",
+          "words": [
+            "n-banan"
+          ]
+        },
+        {
+          "slug": "child",
+          "meaning": "barn = ребёнок",
+          "words": [
+            "n-barn"
+          ]
+        },
+        {
+          "slug": "watch",
+          "meaning": "klocka = часы",
+          "words": [
+            "n-klocka"
+          ]
+        },
+        {
+          "slug": "input-numbers",
+          "meaning": "elva = одиннадцать; tolv = двенадцать; tjugo = двадцать; hur många = сколько (исчисл.); noll = ноль; ett = один; tretton = тринадцать; fjorton = четырнадцать; femton = пятнадцать; sexton = шестнадцать; sjutton = семнадцать; arton = восемнадцать; nitton = девятнадцать; trettio = тридцать; fyrtio = сорок; femtio = пятьдесят; sextio = шестьдесят; sjut",
+          "words": [
+            "w-elva",
+            "w-tolv",
+            "w-tjugo",
+            "w-hur-många",
+            "lex-0424",
+            "lex-0425",
+            "lex-0426",
+            "lex-0427",
+            "lex-0428",
+            "lex-0429",
+            "lex-0430",
+            "lex-0431",
+            "lex-0432",
+            "lex-0433",
+            "lex-0434",
+            "lex-0435",
+            "lex-0436",
+            "lex-0437",
+            "lex-0438",
+            "lex-0439",
+            "lex-0440",
+            "lex-0441",
+            "lex-0442",
+            "lex-0443",
+            "lex-0444",
+            "lex-0445",
+            "lex-0446",
+            "lex-0447"
+          ]
+        },
+        {
+          "slug": "person-standing",
+          "meaning": "vara = быть; stå = стоять; rygg = спина; ögonbryn = бровь; ögonfrans = ресница; haka = подбородок; hals = шея / горло; nacke = затылок / задняя часть шеи; axel = плечо; armbåge = локоть; handled = запястье; finger = палец руки; bröst = грудь; midja = талия; höft = бедро / тазобедренная область; hud = кожа",
+          "words": [
+            "v-vara",
+            "v-stå",
+            "w-rygg",
+            "lex-0038",
+            "lex-0039",
+            "lex-0044",
+            "lex-0045",
+            "lex-0046",
+            "lex-0047",
+            "lex-0048",
+            "lex-0049",
+            "lex-0050",
+            "lex-0052",
+            "lex-0053",
+            "lex-0054",
+            "lex-0059"
+          ]
+        },
+        {
+          "slug": "person",
+          "meaning": "huvud = голова; hår = волосы; panna = лоб; ansikte = лицо",
+          "words": [
+            "w-huvud",
+            "lex-0036",
+            "lex-0037",
+            "lex-0060"
+          ]
+        },
+        {
+          "slug": "foot",
+          "meaning": "fot = ступня; tå = палец ноги",
+          "words": [
+            "w-fot",
+            "lex-0056"
+          ]
+        },
+        {
+          "slug": "leg",
+          "meaning": "ben = нога; knä = колено",
+          "words": [
+            "w-ben",
+            "lex-0055"
+          ]
+        },
+        {
+          "slug": "mouth",
+          "meaning": "mun = рот; läpp = губа",
+          "words": [
+            "w-mun",
+            "lex-0041"
+          ]
+        },
+        {
+          "slug": "thumbs-up",
+          "meaning": "tumme = большой палец руки; stolt = гордый",
+          "words": [
+            "lex-0051",
+            "lex-0388"
+          ]
+        },
+        {
+          "slug": "anatomical-heart",
+          "meaning": "hjärta = сердце",
+          "words": [
+            "lex-0057"
+          ]
+        },
+        {
+          "slug": "drop-of-blood",
+          "meaning": "blod = кровь",
+          "words": [
+            "lex-0058"
+          ]
+        },
+        {
+          "slug": "eye",
+          "meaning": "öga = глаз",
+          "words": [
+            "w-öga"
+          ]
+        },
+        {
+          "slug": "nose",
+          "meaning": "näsa = нос",
+          "words": [
+            "w-näsa"
+          ]
+        },
+        {
+          "slug": "pregnant-person",
+          "meaning": "mage = живот",
+          "words": [
+            "w-mage"
+          ]
+        },
+        {
+          "slug": "raised-hand",
+          "meaning": "hand = рука (кисть)",
+          "words": [
+            "w-hand"
+          ]
+        },
+        {
+          "slug": "tongue",
+          "meaning": "tunga = язык (орган)",
+          "words": [
+            "lex-0043"
+          ]
+        },
+        {
+          "slug": "camera",
+          "meaning": "kamera = камера; fotografera = фотографировать; att fotografera = фотографировать",
+          "words": [
+            "lex-0356",
+            "lex-0374",
+            "extra-29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-13",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "electric-plug",
+          "meaning": "laddare = зарядное устройство; eluttag = розетка; sladd = провод",
+          "words": [
+            "w-laddare",
+            "lex-0098",
+            "lex-0349"
+          ]
+        },
+        {
+          "slug": "globe-with-meridians",
+          "meaning": "internet = интернет; hemsida = веб-сайт; nätverk = сеть",
+          "words": [
+            "w-internet",
+            "lex-0353",
+            "lex-0363"
+          ]
+        },
+        {
+          "slug": "microphone",
+          "meaning": "mikrofon = микрофон; sjunga = петь; att sjunga = петь",
+          "words": [
+            "lex-0358",
+            "lex-0371",
+            "extra-36"
+          ]
+        },
+        {
+          "slug": "mobile-phone",
+          "meaning": "mobil = мобильный телефон; telefon = телефон; app = приложение",
+          "words": [
+            "n-mobil",
+            "lex-0347",
+            "lex-0352"
+          ]
+        },
+        {
+          "slug": "bust-in-silhouette",
+          "meaning": "konto = аккаунт; personnummer = личный идентификационный номер",
+          "words": [
+            "lex-0351",
+            "lex-0405"
+          ]
+        },
+        {
+          "slug": "battery",
+          "meaning": "batteri = батарея",
+          "words": [
+            "lex-0348"
+          ]
+        },
+        {
+          "slug": "e-mail",
+          "meaning": "e-post = электронная почта",
+          "words": [
+            "w-e-post"
+          ]
+        },
+        {
+          "slug": "file-folder",
+          "meaning": "mapp = папка (файлы)",
+          "words": [
+            "lex-0360"
+          ]
+        },
+        {
+          "slug": "framed-picture",
+          "meaning": "bild = картинка",
+          "words": [
+            "w-bild"
+          ]
+        },
+        {
+          "slug": "headphone",
+          "meaning": "hörlurar = наушники",
+          "words": [
+            "lex-0357"
+          ]
+        },
+        {
+          "slug": "page-with-curl",
+          "meaning": "fil = файл",
+          "words": [
+            "lex-0359"
+          ]
+        },
+        {
+          "slug": "printer",
+          "meaning": "skrivare = принтер",
+          "words": [
+            "lex-0355"
+          ]
+        },
+        {
+          "slug": "wireless",
+          "meaning": "wifi = вайфай",
+          "words": [
+            "lex-0350"
+          ]
+        },
+        {
+          "slug": "person-walking",
+          "meaning": "gå = идти; gå av = выходить из транспорта; gå på = садиться в транспорт; promenera = гулять; att promenera = гулять пешком",
+          "words": [
+            "v-gå",
+            "lex-0170",
+            "lex-0171",
+            "lex-0367",
+            "extra-30"
+          ]
+        },
+        {
+          "slug": "airplane-departure",
+          "meaning": "avgång = отправление; avresa = отъезд",
+          "words": [
+            "lex-0160",
+            "lex-0458"
+          ]
+        },
+        {
+          "slug": "bus-stop",
+          "meaning": "hållplats = остановка; busshållplats = автобусная остановка",
+          "words": [
+            "w-hållplats",
+            "lex-0155"
+          ]
+        },
+        {
+          "slug": "fuel-pump",
+          "meaning": "bensin = бензин; diesel = дизель",
+          "words": [
+            "lex-0168",
+            "lex-0169"
+          ]
+        },
+        {
+          "slug": "motorway",
+          "meaning": "väg = дорога; gata = улица",
+          "words": [
+            "w-väg",
+            "w-gata"
+          ]
+        },
+        {
+          "slug": "oncoming-bus",
+          "meaning": "övergångsställe = пешеходный переход; körkort = водительские права",
+          "words": [
+            "lex-0164",
+            "lex-0166"
+          ]
+        },
+        {
+          "slug": "station",
+          "meaning": "station = станция; perrong = платформа",
+          "words": [
+            "w-station",
+            "lex-0156"
+          ]
+        },
+        {
+          "slug": "ticket",
+          "meaning": "biljett = билет; enkelbiljett = билет в одну сторону",
+          "words": [
+            "w-biljett",
+            "lex-0157"
+          ]
+        },
+        {
+          "slug": "vertical-traffic-light",
+          "meaning": "trafiken = движение транспорта; trafikljus = светофор",
+          "words": [
+            "lex-0163",
+            "lex-0165"
+          ]
+        },
+        {
+          "slug": "world-map",
+          "meaning": "karta = карта; region = регион",
+          "words": [
+            "w-karta",
+            "lex-0422"
+          ]
+        },
+        {
+          "slug": "airplane-arrival",
+          "meaning": "ankomst = прибытие",
+          "words": [
+            "lex-0161"
+          ]
+        },
+        {
+          "slug": "ferry",
+          "meaning": "färja = паром",
+          "words": [
+            "lex-0153"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-14",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "metro",
+          "meaning": "tunnelbana = метро",
+          "words": [
+            "lex-0151"
+          ]
+        },
+        {
+          "slug": "p-button",
+          "meaning": "parkering = парковка",
+          "words": [
+            "lex-0167"
+          ]
+        },
+        {
+          "slug": "sailboat",
+          "meaning": "båt = лодка",
+          "words": [
+            "w-båt"
+          ]
+        },
+        {
+          "slug": "taxi",
+          "meaning": "taxi = такси",
+          "words": [
+            "lex-0152"
+          ]
+        },
+        {
+          "slug": "train",
+          "meaning": "tåg = поезд",
+          "words": [
+            "w-tåg"
+          ]
+        },
+        {
+          "slug": "tram",
+          "meaning": "spårvagn = трамвай",
+          "words": [
+            "lex-0150"
+          ]
+        },
+        {
+          "slug": "student",
+          "meaning": "elev = ученик; student = студент; utbildning = образование / обучение; en elev = ученик",
+          "words": [
+            "w-elev",
+            "lex-0061",
+            "lex-0234",
+            "extra-64"
+          ]
+        },
+        {
+          "slug": "backpack",
+          "meaning": "läxa = домашнее задание; ryggsäck = рюкзак; en läxa = домашнее задание",
+          "words": [
+            "w-läxa",
+            "lex-0076",
+            "extra-65"
+          ]
+        },
+        {
+          "slug": "memo",
+          "meaning": "prov = экзамен / контрольная; betyg = оценка; ett prov = экзамен;тест",
+          "words": [
+            "w-prov",
+            "lex-0068",
+            "extra-72"
+          ]
+        },
+        {
+          "slug": "graduation-cap",
+          "meaning": "en tavla = доска; att öva = упражняться",
+          "words": [
+            "extra-69",
+            "extra-74"
+          ]
+        },
+        {
+          "slug": "rainbow",
+          "meaning": "regnbåge = радуга; ljusblå = светло-синий; mörkblå = тёмно-синий; ljusgrön = светло-зелёный; mörkgrön = тёмно-зелёный; beige = бежевый; turkos = бирюзовый; vinröd = бордовый; silverfärgad = серебристый; guldgul = золотисто-жёлтый",
+          "words": [
+            "lex-0307",
+            "extra-84",
+            "extra-85",
+            "extra-86",
+            "extra-87",
+            "extra-88",
+            "extra-89",
+            "extra-90",
+            "extra-91",
+            "extra-92"
+          ]
+        },
+        {
+          "slug": "fog",
+          "meaning": "grå = серый; dimma = туман",
+          "words": [
+            "w-grå",
+            "lex-0204"
+          ]
+        },
+        {
+          "slug": "black-circle",
+          "meaning": "svart = чёрный",
+          "words": [
+            "w-svart"
+          ]
+        },
+        {
+          "slug": "blue-circle",
+          "meaning": "blå = синий",
+          "words": [
+            "w-blå"
+          ]
+        },
+        {
+          "slug": "brown-circle",
+          "meaning": "brun = коричневый",
+          "words": [
+            "w-brun"
+          ]
+        },
+        {
+          "slug": "green-circle",
+          "meaning": "grön = зелёный",
+          "words": [
+            "w-grön"
+          ]
+        },
+        {
+          "slug": "pink-heart",
+          "meaning": "rosa = розовый",
+          "words": [
+            "w-rosa"
+          ]
+        },
+        {
+          "slug": "purple-circle",
+          "meaning": "lila = фиолетовый",
+          "words": [
+            "w-lila"
+          ]
+        },
+        {
+          "slug": "red-circle",
+          "meaning": "röd = красный",
+          "words": [
+            "w-röd"
+          ]
+        },
+        {
+          "slug": "white-circle",
+          "meaning": "vit = белый",
+          "words": [
+            "w-vit"
+          ]
+        },
+        {
+          "slug": "yellow-circle",
+          "meaning": "gul = жёлтый",
+          "words": [
+            "w-gul"
+          ]
+        },
+        {
+          "slug": "artist-palette",
+          "meaning": "färg = цвет; mörk = тёмный; randig = полосатый; prickig = в горошек / пятнистый; form = форма; rund = круглый; fyrkantig = четырёхугольный; hög = высокий; låg = низкий; måla = рисовать / красить; att måla = рисовать красками; att spela schack = играть в шахматы; att lyssna på musik = слушать музыку; att läsa böcker = читать книги; att gå på bio = х",
+          "words": [
+            "w-färg",
+            "lex-0313",
+            "lex-0315",
+            "lex-0316",
+            "lex-0317",
+            "lex-0318",
+            "lex-0319",
+            "lex-0323",
+            "lex-0324",
+            "lex-0372",
+            "extra-28",
+            "extra-33",
+            "extra-37",
+            "extra-38",
+            "extra-39",
+            "extra-42",
+            "extra-44",
+            "extra-47"
+          ]
+        },
+        {
+          "slug": "straight-ruler",
+          "meaning": "storlek = размер; lång = длинный; bred = широкий; smal = узкий; en storlek = размер",
+          "words": [
+            "w-storlek",
+            "lex-0320",
+            "lex-0321",
+            "lex-0322",
+            "extra-56"
+          ]
+        },
+        {
+          "slug": "orange-circle",
+          "meaning": "orange = оранжевый",
+          "words": [
+            "lex-0312"
+          ]
+        },
+        {
+          "slug": "hundred-points",
+          "meaning": "hundra = сто",
+          "words": [
+            "w-hundra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-15",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "keycap-1",
+          "meaning": "en = один",
+          "words": [
+            "w-en"
+          ]
+        },
+        {
+          "slug": "keycap-10",
+          "meaning": "tio = десять",
+          "words": [
+            "w-tio"
+          ]
+        },
+        {
+          "slug": "keycap-2",
+          "meaning": "två = два",
+          "words": [
+            "w-två"
+          ]
+        },
+        {
+          "slug": "keycap-3",
+          "meaning": "tre = три",
+          "words": [
+            "w-tre"
+          ]
+        },
+        {
+          "slug": "keycap-4",
+          "meaning": "fyra = четыре",
+          "words": [
+            "w-fyra"
+          ]
+        },
+        {
+          "slug": "keycap-5",
+          "meaning": "fem = пять",
+          "words": [
+            "w-fem"
+          ]
+        },
+        {
+          "slug": "keycap-6",
+          "meaning": "sex = шесть",
+          "words": [
+            "w-sex"
+          ]
+        },
+        {
+          "slug": "keycap-7",
+          "meaning": "sju = семь",
+          "words": [
+            "w-sju"
+          ]
+        },
+        {
+          "slug": "keycap-8",
+          "meaning": "åtta = восемь",
+          "words": [
+            "w-åtta"
+          ]
+        },
+        {
+          "slug": "keycap-9",
+          "meaning": "nio = девять",
+          "words": [
+            "w-nio"
+          ]
+        },
+        {
+          "slug": "droplet",
+          "meaning": "törstig = испытывающий жажду; vatten = вода",
+          "words": [
+            "w-törstig",
+            "w-vatten"
+          ]
+        },
+        {
+          "slug": "growing-heart",
+          "meaning": "avundsjuk = завистливый; hoppfull = полный надежды",
+          "words": [
+            "extra-81",
+            "extra-83"
+          ]
+        },
+        {
+          "slug": "person-in-lotus-position",
+          "meaning": "lugn = спокойный; yoga = йога",
+          "words": [
+            "w-lugn",
+            "lex-0380"
+          ]
+        },
+        {
+          "slug": "angry-face",
+          "meaning": "arg = злой",
+          "words": [
+            "w-arg"
+          ]
+        },
+        {
+          "slug": "crying-face",
+          "meaning": "ledsen = грустный",
+          "words": [
+            "w-ledsen"
+          ]
+        },
+        {
+          "slug": "face-screaming-in-fear",
+          "meaning": "rädd = испуганный",
+          "words": [
+            "w-rädd"
+          ]
+        },
+        {
+          "slug": "grinning-face-with-smiling-eyes",
+          "meaning": "glad = радостный",
+          "words": [
+            "w-glad"
+          ]
+        },
+        {
+          "slug": "smiling-face-with-heart-eyes",
+          "meaning": "förälskad = влюблённый",
+          "words": [
+            "extra-82"
+          ]
+        },
+        {
+          "slug": "school",
+          "meaning": "skola = школа; klassrum = классная комната; övning = упражнение; rast = перемена; nivå = уровень; klass = класс / группа; tavla = доска; kurskamrat = одногруппник; ett klassrum = классная комната",
+          "words": [
+            "n-skola",
+            "w-klassrum",
+            "lex-0064",
+            "lex-0066",
+            "lex-0069",
+            "lex-0070",
+            "lex-0072",
+            "lex-0081",
+            "extra-66"
+          ]
+        },
+        {
+          "slug": "books",
+          "meaning": "lektion = урок; kurs = курс; ämne = предмет; bibliotek = библиотека; en lektion = урок",
+          "words": [
+            "w-lektion",
+            "lex-0062",
+            "lex-0071",
+            "lex-0080",
+            "extra-67"
+          ]
+        },
+        {
+          "slug": "card-index-dividers",
+          "meaning": "pärm = папка-регистратор; en pärm = папка",
+          "words": [
+            "lex-0075",
+            "extra-71"
+          ]
+        },
+        {
+          "slug": "keyboard",
+          "meaning": "tangentbord = клавиатура",
+          "words": [
+            "lex-0078"
+          ]
+        },
+        {
+          "slug": "notebook",
+          "meaning": "anteckningsbok = тетрадь",
+          "words": [
+            "lex-0074"
+          ]
+        },
+        {
+          "slug": "pencil",
+          "meaning": "blyertspenna = карандаш",
+          "words": [
+            "lex-0073"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-16",
+      "columns": 5,
+      "rows": 5,
+      "icons": [
+        {
+          "slug": "vacuum-cleaner",
+          "meaning": "dammsuga = пылесосить",
+          "words": [
+            "lex-0328"
+          ]
+        },
+        {
+          "slug": "eraser",
+          "meaning": "suddgummi = ластик",
+          "words": [
+            "w-suddgummi"
+          ]
+        },
+        {
+          "slug": "dining-table",
+          "meaning": "bord = стол",
+          "words": [
+            "n-bord"
+          ]
+        },
+        {
+          "slug": "pillow",
+          "meaning": "kudde = подушка",
+          "words": [
+            "lex-0087"
+          ]
+        },
+        {
+          "slug": "duvet",
+          "meaning": "täcke = одеяло",
+          "words": [
+            "lex-0088"
+          ]
+        },
+        {
+          "slug": "blanket",
+          "meaning": "filt = плед",
+          "words": [
+            "lex-0089"
+          ]
+        },
+        {
+          "slug": "wardrobe",
+          "meaning": "garderob = шкаф для одежды",
+          "words": [
+            "lex-0090"
+          ]
+        },
+        {
+          "slug": "chest-of-drawers",
+          "meaning": "byrå = комод",
+          "words": [
+            "lex-0091"
+          ]
+        },
+        {
+          "slug": "shelf",
+          "meaning": "hylla = полка",
+          "words": [
+            "lex-0093"
+          ]
+        },
+        {
+          "slug": "rug",
+          "meaning": "matta = ковёр",
+          "words": [
+            "lex-0095"
+          ]
+        },
+        {
+          "slug": "curtain",
+          "meaning": "gardin = занавеска",
+          "words": [
+            "lex-0096"
+          ]
+        },
+        {
+          "slug": "dishwasher",
+          "meaning": "diskmaskin = посудомоечная машина",
+          "words": [
+            "lex-0101"
+          ]
+        },
+        {
+          "slug": "washing-machine",
+          "meaning": "tvättmaskin = стиральная машина",
+          "words": [
+            "lex-0102"
+          ]
+        },
+        {
+          "slug": "refrigerator",
+          "meaning": "kylskåp = холодильник",
+          "words": [
+            "w-kylskåp"
+          ]
+        },
+        {
+          "slug": "freezer",
+          "meaning": "frys = морозильная камера",
+          "words": [
+            "lex-0099"
+          ]
+        },
+        {
+          "slug": "stove",
+          "meaning": "spis = плита",
+          "words": [
+            "lex-0100"
+          ]
+        },
+        {
+          "slug": "oven",
+          "meaning": "ugn = духовка",
+          "words": [
+            "w-ugn"
+          ]
+        },
+        {
+          "slug": "staircase",
+          "meaning": "trappa = лестница",
+          "words": [
+            "lex-0084"
+          ]
+        },
+        {
+          "slug": "elevator",
+          "meaning": "hiss = лифт",
+          "words": [
+            "lex-0085"
+          ]
+        },
+        {
+          "slug": "balcony",
+          "meaning": "balkong = балкон",
+          "words": [
+            "lex-0083"
+          ]
+        },
+        {
+          "slug": "roof",
+          "meaning": "tak = крыша / потолок",
+          "words": [
+            "w-tak"
+          ]
+        },
+        {
+          "slug": "shopping-basket",
+          "meaning": "korg = корзина",
+          "words": [
+            "lex-0137"
+          ]
+        },
+        {
+          "slug": "identity-card",
+          "meaning": "personnummer = личный идентификационный номер",
+          "words": [
+            "lex-0405"
+          ]
+        },
+        {
+          "slug": "classroom-blackboard",
+          "meaning": "tavla = доска; en tavla = доска",
+          "words": [
+            "lex-0072",
+            "extra-69"
+          ]
+        },
+        {
+          "slug": "chess-set",
+          "meaning": "att spela schack = играть в шахматы",
+          "words": [
+            "extra-33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "atlas-17",
+      "columns": 3,
+      "rows": 3,
+      "icons": [
+        {
+          "slug": "dishwashing",
+          "subject": "washing a white ceramic plate with a sponge, isolated realistic hands and plate",
+          "meaning": "diska = мыть посуду",
+          "words": [
+            "lex-0326"
+          ]
+        },
+        {
+          "slug": "making-bed",
+          "subject": "neatly made miniature bed with a folded linen duvet, one realistic hand tucking the blanket",
+          "meaning": "bädda = застилать постель",
+          "words": [
+            "lex-0331"
+          ]
+        },
+        {
+          "slug": "frying-pan",
+          "subject": "cast iron frying pan with a fried egg, a wooden spatula",
+          "meaning": "steka = жарить",
+          "words": [
+            "lex-0338"
+          ]
+        },
+        {
+          "slug": "barbecue-grill",
+          "subject": "compact charcoal barbecue grill with a few vegetables",
+          "meaning": "grilla = жарить на гриле",
+          "words": [
+            "lex-0341"
+          ]
+        },
+        {
+          "slug": "table-setting",
+          "subject": "Scandinavian place setting: white ceramic plate, linen napkin, silver cutlery and drinking glass",
+          "meaning": "duka = накрывать на стол",
+          "words": [
+            "lex-0342"
+          ]
+        },
+        {
+          "slug": "carrying-box",
+          "subject": "adult in a sage sweater visibly carrying one cardboard box, full body cutout",
+          "meaning": "bära = нести",
+          "words": [
+            "lex-0343"
+          ]
+        },
+        {
+          "slug": "leaving-keys",
+          "subject": "realistic hand gently leaving a small brass key on a small wooden tray",
+          "meaning": "lämna = оставлять / сдавать",
+          "words": [
+            "lex-0345"
+          ]
+        },
+        {
+          "slug": "rinsing-plate",
+          "subject": "realistic hands holding a ceramic plate under a running chrome faucet, only plate, hands, faucet and water",
+          "meaning": "skölja = ополаскивать",
+          "words": [
+            "lex-0335"
+          ]
+        },
+        {
+          "slug": "picking-up-parcel",
+          "subject": "realistic pair of hands picking up a small cardboard parcel",
+          "meaning": "hämta = забирать / приносить",
+          "words": [
+            "lex-0344"
+          ]
+        }
+      ]
+    }
+  ],
+  "individuals": [
+    {
+      "slug": "broom",
+      "source": "/Users/yuliia/.codex/generated_images/01a1c726-9654-7203-9d11-78855690720a/exec-5814b217-31f5-402a-961e-2165be744e3d.png",
+      "words": [
+        "lex-0325",
+        "lex-0328",
+        "lex-0329",
+        "lex-0331",
+        "lex-0342",
+        "lex-0343",
+        "lex-0345"
+      ]
+    }
+  ]
+}

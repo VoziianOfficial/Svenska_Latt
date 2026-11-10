@@ -1,0 +1,2046 @@
+{
+  "recycling-symbol": {
+    "file": "./assets/word-art/recycling-symbol-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 0
+  },
+  "sponge": {
+    "file": "./assets/word-art/sponge-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 1
+  },
+  "kitchen-knife": {
+    "file": "./assets/word-art/kitchen-knife-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 2
+  },
+  "shortcake": {
+    "file": "./assets/word-art/shortcake-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 3
+  },
+  "hammer-and-wrench": {
+    "file": "./assets/word-art/hammer-and-wrench-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 4
+  },
+  "wastebasket": {
+    "file": "./assets/word-art/wastebasket-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 5
+  },
+  "red-question-mark": {
+    "file": "./assets/word-art/red-question-mark-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 6
+  },
+  "round-pushpin": {
+    "file": "./assets/word-art/round-pushpin-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 7
+  },
+  "calendar": {
+    "file": "./assets/word-art/calendar-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 8
+  },
+  "fallen-leaf": {
+    "file": "./assets/word-art/fallen-leaf-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 9
+  },
+  "repeat-button": {
+    "file": "./assets/word-art/repeat-button-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 10
+  },
+  "sunrise": {
+    "file": "./assets/word-art/sunrise-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 11
+  },
+  "tulip": {
+    "file": "./assets/word-art/tulip-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 12
+  },
+  "counterclockwise-arrows-button": {
+    "file": "./assets/word-art/counterclockwise-arrows-button-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 13
+  },
+  "crescent-moon": {
+    "file": "./assets/word-art/crescent-moon-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 14
+  },
+  "milky-way": {
+    "file": "./assets/word-art/milky-way-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 15
+  },
+  "right-arrow": {
+    "file": "./assets/word-art/right-arrow-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 16
+  },
+  "sun-behind-small-cloud": {
+    "file": "./assets/word-art/sun-behind-small-cloud-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 17
+  },
+  "sun-with-face": {
+    "file": "./assets/word-art/sun-with-face-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 18
+  },
+  "christmas-tree": {
+    "file": "./assets/word-art/christmas-tree-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 19
+  },
+  "cityscape-at-dusk": {
+    "file": "./assets/word-art/cityscape-at-dusk-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 20
+  },
+  "infinity": {
+    "file": "./assets/word-art/infinity-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 21
+  },
+  "maple-leaf": {
+    "file": "./assets/word-art/maple-leaf-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 22
+  },
+  "party-popper": {
+    "file": "./assets/word-art/party-popper-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 23
+  },
+  "snowman-without-snow": {
+    "file": "./assets/word-art/snowman-without-snow-v1.webp",
+    "source_atlas": "atlas-01",
+    "cell": 24
+  },
+  "sunflower": {
+    "file": "./assets/word-art/sunflower-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 0
+  },
+  "sunrise-over-mountains": {
+    "file": "./assets/word-art/sunrise-over-mountains-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 1
+  },
+  "speaking-head": {
+    "file": "./assets/word-art/speaking-head-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 2
+  },
+  "thinking-face": {
+    "file": "./assets/word-art/thinking-face-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 3
+  },
+  "open-book": {
+    "file": "./assets/word-art/open-book-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 4
+  },
+  "door": {
+    "file": "./assets/word-art/door-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 5
+  },
+  "open-hands": {
+    "file": "./assets/word-art/open-hands-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 6
+  },
+  "brain": {
+    "file": "./assets/word-art/brain-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 7
+  },
+  "eyes": {
+    "file": "./assets/word-art/eyes-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 8
+  },
+  "hourglass-not-done": {
+    "file": "./assets/word-art/hourglass-not-done-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 9
+  },
+  "light-bulb": {
+    "file": "./assets/word-art/light-bulb-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 10
+  },
+  "locked": {
+    "file": "./assets/word-art/locked-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 11
+  },
+  "magnifying-glass-tilted-right": {
+    "file": "./assets/word-art/magnifying-glass-tilted-right-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 12
+  },
+  "person-lifting-weights": {
+    "file": "./assets/word-art/person-lifting-weights-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 13
+  },
+  "alarm-clock": {
+    "file": "./assets/word-art/alarm-clock-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 14
+  },
+  "brick": {
+    "file": "./assets/word-art/brick-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 15
+  },
+  "bullseye": {
+    "file": "./assets/word-art/bullseye-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 16
+  },
+  "bus": {
+    "file": "./assets/word-art/bus-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 17
+  },
+  "ear": {
+    "file": "./assets/word-art/ear-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 18
+  },
+  "flexed-biceps": {
+    "file": "./assets/word-art/flexed-biceps-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 19
+  },
+  "sleeping-face": {
+    "file": "./assets/word-art/sleeping-face-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 20
+  },
+  "soap": {
+    "file": "./assets/word-art/soap-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 21
+  },
+  "sparkling-heart": {
+    "file": "./assets/word-art/sparkling-heart-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 22
+  },
+  "stop-button": {
+    "file": "./assets/word-art/stop-button-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 23
+  },
+  "toolbox": {
+    "file": "./assets/word-art/toolbox-v1.webp",
+    "source_atlas": "atlas-02",
+    "cell": 24
+  },
+  "wrapped-gift": {
+    "file": "./assets/word-art/wrapped-gift-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 0
+  },
+  "person-walking-facing-right": {
+    "file": "./assets/word-art/person-walking-facing-right-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 1
+  },
+  "play-button": {
+    "file": "./assets/word-art/play-button-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 2
+  },
+  "pouring-liquid": {
+    "file": "./assets/word-art/pouring-liquid-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 3
+  },
+  "sewing-needle": {
+    "file": "./assets/word-art/sewing-needle-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 4
+  },
+  "teddy-bear": {
+    "file": "./assets/word-art/teddy-bear-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 5
+  },
+  "telephone-receiver": {
+    "file": "./assets/word-art/telephone-receiver-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 6
+  },
+  "writing-hand": {
+    "file": "./assets/word-art/writing-hand-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 7
+  },
+  "classical-building": {
+    "file": "./assets/word-art/classical-building-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 8
+  },
+  "cityscape": {
+    "file": "./assets/word-art/cityscape-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 9
+  },
+  "person-swimming": {
+    "file": "./assets/word-art/person-swimming-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 10
+  },
+  "bank": {
+    "file": "./assets/word-art/bank-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 11
+  },
+  "atm-sign": {
+    "file": "./assets/word-art/atm-sign-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 12
+  },
+  "bridge-at-night": {
+    "file": "./assets/word-art/bridge-at-night-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 13
+  },
+  "church": {
+    "file": "./assets/word-art/church-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 14
+  },
+  "houses": {
+    "file": "./assets/word-art/houses-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 15
+  },
+  "oncoming-police-car": {
+    "file": "./assets/word-art/oncoming-police-car-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 16
+  },
+  "performing-arts": {
+    "file": "./assets/word-art/performing-arts-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 17
+  },
+  "playground-slide": {
+    "file": "./assets/word-art/playground-slide-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 18
+  },
+  "police-officer": {
+    "file": "./assets/word-art/police-officer-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 19
+  },
+  "spiral-calendar": {
+    "file": "./assets/word-art/spiral-calendar-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 20
+  },
+  "cooking": {
+    "file": "./assets/word-art/cooking-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 21
+  },
+  "couch-and-lamp": {
+    "file": "./assets/word-art/couch-and-lamp-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 22
+  },
+  "bed": {
+    "file": "./assets/word-art/bed-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 23
+  },
+  "bathtub": {
+    "file": "./assets/word-art/bathtub-v1.webp",
+    "source_atlas": "atlas-03",
+    "cell": 24
+  },
+  "ice": {
+    "file": "./assets/word-art/ice-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 0
+  },
+  "key": {
+    "file": "./assets/word-art/key-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 1
+  },
+  "wood": {
+    "file": "./assets/word-art/wood-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 2
+  },
+  "house": {
+    "file": "./assets/word-art/house-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 3
+  },
+  "locked-with-key": {
+    "file": "./assets/word-art/locked-with-key-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 4
+  },
+  "mirror": {
+    "file": "./assets/word-art/mirror-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 5
+  },
+  "clapper-board": {
+    "file": "./assets/word-art/clapper-board-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 6
+  },
+  "fishing-pole": {
+    "file": "./assets/word-art/fishing-pole-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 7
+  },
+  "camping": {
+    "file": "./assets/word-art/camping-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 8
+  },
+  "musical-notes": {
+    "file": "./assets/word-art/musical-notes-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 9
+  },
+  "video-game": {
+    "file": "./assets/word-art/video-game-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 10
+  },
+  "yarn": {
+    "file": "./assets/word-art/yarn-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 11
+  },
+  "person-running": {
+    "file": "./assets/word-art/person-running-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 12
+  },
+  "soccer-ball": {
+    "file": "./assets/word-art/soccer-ball-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 13
+  },
+  "hiking-boot": {
+    "file": "./assets/word-art/hiking-boot-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 14
+  },
+  "woman-dancing": {
+    "file": "./assets/word-art/woman-dancing-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 15
+  },
+  "basketball": {
+    "file": "./assets/word-art/basketball-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 16
+  },
+  "confetti-ball": {
+    "file": "./assets/word-art/confetti-ball-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 17
+  },
+  "guitar": {
+    "file": "./assets/word-art/guitar-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 18
+  },
+  "ice-hockey": {
+    "file": "./assets/word-art/ice-hockey-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 19
+  },
+  "tennis": {
+    "file": "./assets/word-art/tennis-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 20
+  },
+  "fork-and-knife-with-plate": {
+    "file": "./assets/word-art/fork-and-knife-with-plate-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 21
+  },
+  "pot-of-food": {
+    "file": "./assets/word-art/pot-of-food-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 22
+  },
+  "croissant": {
+    "file": "./assets/word-art/croissant-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 23
+  },
+  "cut-of-meat": {
+    "file": "./assets/word-art/cut-of-meat-v1.webp",
+    "source_atlas": "atlas-04",
+    "cell": 24
+  },
+  "hot-beverage": {
+    "file": "./assets/word-art/hot-beverage-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 0
+  },
+  "bread": {
+    "file": "./assets/word-art/bread-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 1
+  },
+  "butter": {
+    "file": "./assets/word-art/butter-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 2
+  },
+  "carrot": {
+    "file": "./assets/word-art/carrot-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 3
+  },
+  "cheese-wedge": {
+    "file": "./assets/word-art/cheese-wedge-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 4
+  },
+  "cooked-rice": {
+    "file": "./assets/word-art/cooked-rice-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 5
+  },
+  "cucumber": {
+    "file": "./assets/word-art/cucumber-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 6
+  },
+  "egg": {
+    "file": "./assets/word-art/egg-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 7
+  },
+  "glass-of-milk": {
+    "file": "./assets/word-art/glass-of-milk-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 8
+  },
+  "onion": {
+    "file": "./assets/word-art/onion-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 9
+  },
+  "potato": {
+    "file": "./assets/word-art/potato-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 10
+  },
+  "poultry-leg": {
+    "file": "./assets/word-art/poultry-leg-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 11
+  },
+  "teacup-without-handle": {
+    "file": "./assets/word-art/teacup-without-handle-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 12
+  },
+  "tomato": {
+    "file": "./assets/word-art/tomato-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 13
+  },
+  "red-apple": {
+    "file": "./assets/word-art/red-apple-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 14
+  },
+  "cup-with-straw": {
+    "file": "./assets/word-art/cup-with-straw-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 15
+  },
+  "salt": {
+    "file": "./assets/word-art/salt-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 16
+  },
+  "bell-pepper": {
+    "file": "./assets/word-art/bell-pepper-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 17
+  },
+  "candy": {
+    "file": "./assets/word-art/candy-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 18
+  },
+  "garlic": {
+    "file": "./assets/word-art/garlic-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 19
+  },
+  "green-salad": {
+    "file": "./assets/word-art/green-salad-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 20
+  },
+  "honey-pot": {
+    "file": "./assets/word-art/honey-pot-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 21
+  },
+  "hot-dog": {
+    "file": "./assets/word-art/hot-dog-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 22
+  },
+  "lemon": {
+    "file": "./assets/word-art/lemon-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 23
+  },
+  "mushroom": {
+    "file": "./assets/word-art/mushroom-v1.webp",
+    "source_atlas": "atlas-05",
+    "cell": 24
+  },
+  "pear": {
+    "file": "./assets/word-art/pear-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 0
+  },
+  "shrimp": {
+    "file": "./assets/word-art/shrimp-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 1
+  },
+  "spaghetti": {
+    "file": "./assets/word-art/spaghetti-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 2
+  },
+  "strawberry": {
+    "file": "./assets/word-art/strawberry-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 3
+  },
+  "tangerine": {
+    "file": "./assets/word-art/tangerine-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 4
+  },
+  "mouse": {
+    "file": "./assets/word-art/mouse-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 5
+  },
+  "cow": {
+    "file": "./assets/word-art/cow-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 6
+  },
+  "ewe": {
+    "file": "./assets/word-art/ewe-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 7
+  },
+  "ant": {
+    "file": "./assets/word-art/ant-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 8
+  },
+  "bear": {
+    "file": "./assets/word-art/bear-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 9
+  },
+  "bird": {
+    "file": "./assets/word-art/bird-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 10
+  },
+  "butterfly": {
+    "file": "./assets/word-art/butterfly-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 11
+  },
+  "chicken": {
+    "file": "./assets/word-art/chicken-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 12
+  },
+  "chipmunk": {
+    "file": "./assets/word-art/chipmunk-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 13
+  },
+  "deer": {
+    "file": "./assets/word-art/deer-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 14
+  },
+  "duck": {
+    "file": "./assets/word-art/duck-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 15
+  },
+  "fly": {
+    "file": "./assets/word-art/fly-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 16
+  },
+  "fox": {
+    "file": "./assets/word-art/fox-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 17
+  },
+  "goat": {
+    "file": "./assets/word-art/goat-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 18
+  },
+  "honeybee": {
+    "file": "./assets/word-art/honeybee-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 19
+  },
+  "horse": {
+    "file": "./assets/word-art/horse-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 20
+  },
+  "moose": {
+    "file": "./assets/word-art/moose-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 21
+  },
+  "mosquito": {
+    "file": "./assets/word-art/mosquito-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 22
+  },
+  "pig": {
+    "file": "./assets/word-art/pig-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 23
+  },
+  "rabbit": {
+    "file": "./assets/word-art/rabbit-v1.webp",
+    "source_atlas": "atlas-06",
+    "cell": 24
+  },
+  "rooster": {
+    "file": "./assets/word-art/rooster-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 0
+  },
+  "spider": {
+    "file": "./assets/word-art/spider-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 1
+  },
+  "wolf": {
+    "file": "./assets/word-art/wolf-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 2
+  },
+  "face-with-head-bandage": {
+    "file": "./assets/word-art/face-with-head-bandage-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 3
+  },
+  "smiling-face": {
+    "file": "./assets/word-art/smiling-face-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 4
+  },
+  "face-with-thermometer": {
+    "file": "./assets/word-art/face-with-thermometer-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 5
+  },
+  "pill": {
+    "file": "./assets/word-art/pill-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 6
+  },
+  "stethoscope": {
+    "file": "./assets/word-art/stethoscope-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 7
+  },
+  "face-with-medical-mask": {
+    "file": "./assets/word-art/face-with-medical-mask-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 8
+  },
+  "health-worker": {
+    "file": "./assets/word-art/health-worker-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 9
+  },
+  "hospital": {
+    "file": "./assets/word-art/hospital-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 10
+  },
+  "sneezing-face": {
+    "file": "./assets/word-art/sneezing-face-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 11
+  },
+  "tooth": {
+    "file": "./assets/word-art/tooth-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 12
+  },
+  "ambulance": {
+    "file": "./assets/word-art/ambulance-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 13
+  },
+  "collision": {
+    "file": "./assets/word-art/collision-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 14
+  },
+  "syringe": {
+    "file": "./assets/word-art/syringe-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 15
+  },
+  "prohibited": {
+    "file": "./assets/word-art/prohibited-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 16
+  },
+  "pinching-hand": {
+    "file": "./assets/word-art/pinching-hand-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 17
+  },
+  "shopping-bags": {
+    "file": "./assets/word-art/shopping-bags-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 18
+  },
+  "credit-card": {
+    "file": "./assets/word-art/credit-card-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 19
+  },
+  "money-with-wings": {
+    "file": "./assets/word-art/money-with-wings-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 20
+  },
+  "money-bag": {
+    "file": "./assets/word-art/money-bag-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 21
+  },
+  "gem-stone": {
+    "file": "./assets/word-art/gem-stone-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 22
+  },
+  "receipt": {
+    "file": "./assets/word-art/receipt-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 23
+  },
+  "shopping-cart": {
+    "file": "./assets/word-art/shopping-cart-v1.webp",
+    "source_atlas": "atlas-07",
+    "cell": 24
+  },
+  "package": {
+    "file": "./assets/word-art/package-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 0
+  },
+  "postbox": {
+    "file": "./assets/word-art/postbox-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 1
+  },
+  "basket": {
+    "file": "./assets/word-art/basket-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 2
+  },
+  "left-arrow": {
+    "file": "./assets/word-art/left-arrow-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 3
+  },
+  "up-arrow": {
+    "file": "./assets/word-art/up-arrow-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 4
+  },
+  "down-arrow": {
+    "file": "./assets/word-art/down-arrow-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 5
+  },
+  "pushpin": {
+    "file": "./assets/word-art/pushpin-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 6
+  },
+  "handshake": {
+    "file": "./assets/word-art/handshake-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 7
+  },
+  "blue-heart": {
+    "file": "./assets/word-art/blue-heart-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 8
+  },
+  "index-pointing-at-the-viewer": {
+    "file": "./assets/word-art/index-pointing-at-the-viewer-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 9
+  },
+  "person-raising-hand": {
+    "file": "./assets/word-art/person-raising-hand-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 10
+  },
+  "backhand-index-pointing-right": {
+    "file": "./assets/word-art/backhand-index-pointing-right-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 11
+  },
+  "input-latin-letters": {
+    "file": "./assets/word-art/input-latin-letters-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 12
+  },
+  "input-latin-uppercase": {
+    "file": "./assets/word-art/input-latin-uppercase-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 13
+  },
+  "speech-balloon": {
+    "file": "./assets/word-art/speech-balloon-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 14
+  },
+  "folded-hands": {
+    "file": "./assets/word-art/folded-hands-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 15
+  },
+  "check-mark-button": {
+    "file": "./assets/word-art/check-mark-button-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 16
+  },
+  "waving-hand": {
+    "file": "./assets/word-art/waving-hand-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 17
+  },
+  "cross-mark": {
+    "file": "./assets/word-art/cross-mark-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 18
+  },
+  "anxious-face-with-sweat": {
+    "file": "./assets/word-art/anxious-face-with-sweat-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 19
+  },
+  "broken-heart": {
+    "file": "./assets/word-art/broken-heart-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 20
+  },
+  "face-with-open-mouth": {
+    "file": "./assets/word-art/face-with-open-mouth-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 21
+  },
+  "flushed-face": {
+    "file": "./assets/word-art/flushed-face-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 22
+  },
+  "balance-scale": {
+    "file": "./assets/word-art/balance-scale-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 23
+  },
+  "scroll": {
+    "file": "./assets/word-art/scroll-v1.webp",
+    "source_atlas": "atlas-08",
+    "cell": 24
+  },
+  "ballot-box-with-ballot": {
+    "file": "./assets/word-art/ballot-box-with-ballot-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 0
+  },
+  "shield": {
+    "file": "./assets/word-art/shield-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 1
+  },
+  "globe-showing-europe-africa": {
+    "file": "./assets/word-art/globe-showing-europe-africa-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 2
+  },
+  "t-shirt": {
+    "file": "./assets/word-art/t-shirt-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 3
+  },
+  "jeans": {
+    "file": "./assets/word-art/jeans-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 4
+  },
+  "coat": {
+    "file": "./assets/word-art/coat-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 5
+  },
+  "dress": {
+    "file": "./assets/word-art/dress-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 6
+  },
+  "gloves": {
+    "file": "./assets/word-art/gloves-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 7
+  },
+  "running-shoe": {
+    "file": "./assets/word-art/running-shoe-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 8
+  },
+  "socks": {
+    "file": "./assets/word-art/socks-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 9
+  },
+  "billed-cap": {
+    "file": "./assets/word-art/billed-cap-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 10
+  },
+  "handbag": {
+    "file": "./assets/word-art/handbag-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 11
+  },
+  "scarf": {
+    "file": "./assets/word-art/scarf-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 12
+  },
+  "top-hat": {
+    "file": "./assets/word-art/top-hat-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 13
+  },
+  "womans-boot": {
+    "file": "./assets/word-art/womans-boot-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 14
+  },
+  "sun": {
+    "file": "./assets/word-art/sun-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 15
+  },
+  "sun-behind-rain-cloud": {
+    "file": "./assets/word-art/sun-behind-rain-cloud-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 16
+  },
+  "cloud-with-rain": {
+    "file": "./assets/word-art/cloud-with-rain-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 17
+  },
+  "snowflake": {
+    "file": "./assets/word-art/snowflake-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 18
+  },
+  "cloud-with-snow": {
+    "file": "./assets/word-art/cloud-with-snow-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 19
+  },
+  "wind-face": {
+    "file": "./assets/word-art/wind-face-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 20
+  },
+  "cloud-with-lightning-and-rain": {
+    "file": "./assets/word-art/cloud-with-lightning-and-rain-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 21
+  },
+  "cloud": {
+    "file": "./assets/word-art/cloud-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 22
+  },
+  "thermometer": {
+    "file": "./assets/word-art/thermometer-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 23
+  },
+  "high-voltage": {
+    "file": "./assets/word-art/high-voltage-v1.webp",
+    "source_atlas": "atlas-09",
+    "cell": 24
+  },
+  "umbrella-with-rain-drops": {
+    "file": "./assets/word-art/umbrella-with-rain-drops-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 0
+  },
+  "compass": {
+    "file": "./assets/word-art/compass-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 1
+  },
+  "left-right-arrow": {
+    "file": "./assets/word-art/left-right-arrow-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 2
+  },
+  "back-arrow": {
+    "file": "./assets/word-art/back-arrow-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 3
+  },
+  "fast-forward-button": {
+    "file": "./assets/word-art/fast-forward-button-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 4
+  },
+  "last-track-button": {
+    "file": "./assets/word-art/last-track-button-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 5
+  },
+  "next-track-button": {
+    "file": "./assets/word-art/next-track-button-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 6
+  },
+  "right-arrow-curving-left": {
+    "file": "./assets/word-art/right-arrow-curving-left-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 7
+  },
+  "fire": {
+    "file": "./assets/word-art/fire-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 8
+  },
+  "puzzle-piece": {
+    "file": "./assets/word-art/puzzle-piece-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 9
+  },
+  "star": {
+    "file": "./assets/word-art/star-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 10
+  },
+  "confused-face": {
+    "file": "./assets/word-art/confused-face-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 11
+  },
+  "elephant": {
+    "file": "./assets/word-art/elephant-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 12
+  },
+  "feather": {
+    "file": "./assets/word-art/feather-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 13
+  },
+  "new-button": {
+    "file": "./assets/word-art/new-button-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 14
+  },
+  "turtle": {
+    "file": "./assets/word-art/turtle-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 15
+  },
+  "evergreen-tree": {
+    "file": "./assets/word-art/evergreen-tree-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 16
+  },
+  "deciduous-tree": {
+    "file": "./assets/word-art/deciduous-tree-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 17
+  },
+  "water-wave": {
+    "file": "./assets/word-art/water-wave-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 18
+  },
+  "beach-with-umbrella": {
+    "file": "./assets/word-art/beach-with-umbrella-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 19
+  },
+  "national-park": {
+    "file": "./assets/word-art/national-park-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 20
+  },
+  "rock": {
+    "file": "./assets/word-art/rock-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 21
+  },
+  "herb": {
+    "file": "./assets/word-art/herb-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 22
+  },
+  "airplane": {
+    "file": "./assets/word-art/airplane-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 23
+  },
+  "luggage": {
+    "file": "./assets/word-art/luggage-v1.webp",
+    "source_atlas": "atlas-10",
+    "cell": 24
+  },
+  "bellhop-bell": {
+    "file": "./assets/word-art/bellhop-bell-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 0
+  },
+  "hotel": {
+    "file": "./assets/word-art/hotel-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 1
+  },
+  "passport-control": {
+    "file": "./assets/word-art/passport-control-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 2
+  },
+  "briefcase": {
+    "file": "./assets/word-art/briefcase-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 3
+  },
+  "busts-in-silhouette": {
+    "file": "./assets/word-art/busts-in-silhouette-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 4
+  },
+  "hourglass-done": {
+    "file": "./assets/word-art/hourglass-done-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 5
+  },
+  "desert-island": {
+    "file": "./assets/word-art/desert-island-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 6
+  },
+  "office-building": {
+    "file": "./assets/word-art/office-building-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 7
+  },
+  "page-facing-up": {
+    "file": "./assets/word-art/page-facing-up-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 8
+  },
+  "link": {
+    "file": "./assets/word-art/link-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 9
+  },
+  "plus": {
+    "file": "./assets/word-art/plus-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 10
+  },
+  "shuffle-tracks-button": {
+    "file": "./assets/word-art/shuffle-tracks-button-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 11
+  },
+  "thought-balloon": {
+    "file": "./assets/word-art/thought-balloon-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 12
+  },
+  "index-pointing-up": {
+    "file": "./assets/word-art/index-pointing-up-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 13
+  },
+  "people-hugging": {
+    "file": "./assets/word-art/people-hugging-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 14
+  },
+  "man": {
+    "file": "./assets/word-art/man-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 15
+  },
+  "woman": {
+    "file": "./assets/word-art/woman-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 16
+  },
+  "two-hearts": {
+    "file": "./assets/word-art/two-hearts-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 17
+  },
+  "boy": {
+    "file": "./assets/word-art/boy-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 18
+  },
+  "girl": {
+    "file": "./assets/word-art/girl-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 19
+  },
+  "old-man": {
+    "file": "./assets/word-art/old-man-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 20
+  },
+  "old-woman": {
+    "file": "./assets/word-art/old-woman-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 21
+  },
+  "chair": {
+    "file": "./assets/word-art/chair-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 22
+  },
+  "bicycle": {
+    "file": "./assets/word-art/bicycle-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 23
+  },
+  "cat": {
+    "file": "./assets/word-art/cat-v1.webp",
+    "source_atlas": "atlas-11",
+    "cell": 24
+  },
+  "dog": {
+    "file": "./assets/word-art/dog-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 0
+  },
+  "fish": {
+    "file": "./assets/word-art/fish-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 1
+  },
+  "laptop": {
+    "file": "./assets/word-art/laptop-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 2
+  },
+  "pen": {
+    "file": "./assets/word-art/pen-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 3
+  },
+  "teacher": {
+    "file": "./assets/word-art/teacher-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 4
+  },
+  "window": {
+    "file": "./assets/word-art/window-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 5
+  },
+  "automobile": {
+    "file": "./assets/word-art/automobile-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 6
+  },
+  "banana": {
+    "file": "./assets/word-art/banana-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 7
+  },
+  "child": {
+    "file": "./assets/word-art/child-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 8
+  },
+  "watch": {
+    "file": "./assets/word-art/watch-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 9
+  },
+  "input-numbers": {
+    "file": "./assets/word-art/input-numbers-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 10
+  },
+  "person-standing": {
+    "file": "./assets/word-art/person-standing-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 11
+  },
+  "person": {
+    "file": "./assets/word-art/person-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 12
+  },
+  "foot": {
+    "file": "./assets/word-art/foot-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 13
+  },
+  "leg": {
+    "file": "./assets/word-art/leg-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 14
+  },
+  "mouth": {
+    "file": "./assets/word-art/mouth-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 15
+  },
+  "thumbs-up": {
+    "file": "./assets/word-art/thumbs-up-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 16
+  },
+  "anatomical-heart": {
+    "file": "./assets/word-art/anatomical-heart-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 17
+  },
+  "drop-of-blood": {
+    "file": "./assets/word-art/drop-of-blood-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 18
+  },
+  "eye": {
+    "file": "./assets/word-art/eye-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 19
+  },
+  "nose": {
+    "file": "./assets/word-art/nose-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 20
+  },
+  "pregnant-person": {
+    "file": "./assets/word-art/pregnant-person-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 21
+  },
+  "raised-hand": {
+    "file": "./assets/word-art/raised-hand-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 22
+  },
+  "tongue": {
+    "file": "./assets/word-art/tongue-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 23
+  },
+  "camera": {
+    "file": "./assets/word-art/camera-v1.webp",
+    "source_atlas": "atlas-12",
+    "cell": 24
+  },
+  "electric-plug": {
+    "file": "./assets/word-art/electric-plug-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 0
+  },
+  "globe-with-meridians": {
+    "file": "./assets/word-art/globe-with-meridians-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 1
+  },
+  "microphone": {
+    "file": "./assets/word-art/microphone-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 2
+  },
+  "mobile-phone": {
+    "file": "./assets/word-art/mobile-phone-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 3
+  },
+  "bust-in-silhouette": {
+    "file": "./assets/word-art/bust-in-silhouette-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 4
+  },
+  "battery": {
+    "file": "./assets/word-art/battery-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 5
+  },
+  "e-mail": {
+    "file": "./assets/word-art/e-mail-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 6
+  },
+  "file-folder": {
+    "file": "./assets/word-art/file-folder-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 7
+  },
+  "framed-picture": {
+    "file": "./assets/word-art/framed-picture-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 8
+  },
+  "headphone": {
+    "file": "./assets/word-art/headphone-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 9
+  },
+  "page-with-curl": {
+    "file": "./assets/word-art/page-with-curl-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 10
+  },
+  "printer": {
+    "file": "./assets/word-art/printer-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 11
+  },
+  "wireless": {
+    "file": "./assets/word-art/wireless-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 12
+  },
+  "person-walking": {
+    "file": "./assets/word-art/person-walking-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 13
+  },
+  "airplane-departure": {
+    "file": "./assets/word-art/airplane-departure-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 14
+  },
+  "bus-stop": {
+    "file": "./assets/word-art/bus-stop-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 15
+  },
+  "fuel-pump": {
+    "file": "./assets/word-art/fuel-pump-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 16
+  },
+  "motorway": {
+    "file": "./assets/word-art/motorway-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 17
+  },
+  "oncoming-bus": {
+    "file": "./assets/word-art/oncoming-bus-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 18
+  },
+  "station": {
+    "file": "./assets/word-art/station-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 19
+  },
+  "ticket": {
+    "file": "./assets/word-art/ticket-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 20
+  },
+  "vertical-traffic-light": {
+    "file": "./assets/word-art/vertical-traffic-light-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 21
+  },
+  "world-map": {
+    "file": "./assets/word-art/world-map-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 22
+  },
+  "airplane-arrival": {
+    "file": "./assets/word-art/airplane-arrival-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 23
+  },
+  "ferry": {
+    "file": "./assets/word-art/ferry-v1.webp",
+    "source_atlas": "atlas-13",
+    "cell": 24
+  },
+  "metro": {
+    "file": "./assets/word-art/metro-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 0
+  },
+  "p-button": {
+    "file": "./assets/word-art/p-button-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 1
+  },
+  "sailboat": {
+    "file": "./assets/word-art/sailboat-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 2
+  },
+  "taxi": {
+    "file": "./assets/word-art/taxi-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 3
+  },
+  "train": {
+    "file": "./assets/word-art/train-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 4
+  },
+  "tram": {
+    "file": "./assets/word-art/tram-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 5
+  },
+  "student": {
+    "file": "./assets/word-art/student-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 6
+  },
+  "backpack": {
+    "file": "./assets/word-art/backpack-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 7
+  },
+  "memo": {
+    "file": "./assets/word-art/memo-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 8
+  },
+  "graduation-cap": {
+    "file": "./assets/word-art/graduation-cap-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 9
+  },
+  "rainbow": {
+    "file": "./assets/word-art/rainbow-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 10
+  },
+  "fog": {
+    "file": "./assets/word-art/fog-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 11
+  },
+  "black-circle": {
+    "file": "./assets/word-art/black-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 12
+  },
+  "blue-circle": {
+    "file": "./assets/word-art/blue-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 13
+  },
+  "brown-circle": {
+    "file": "./assets/word-art/brown-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 14
+  },
+  "green-circle": {
+    "file": "./assets/word-art/green-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 15
+  },
+  "pink-heart": {
+    "file": "./assets/word-art/pink-heart-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 16
+  },
+  "purple-circle": {
+    "file": "./assets/word-art/purple-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 17
+  },
+  "red-circle": {
+    "file": "./assets/word-art/red-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 18
+  },
+  "white-circle": {
+    "file": "./assets/word-art/white-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 19
+  },
+  "yellow-circle": {
+    "file": "./assets/word-art/yellow-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 20
+  },
+  "artist-palette": {
+    "file": "./assets/word-art/artist-palette-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 21
+  },
+  "straight-ruler": {
+    "file": "./assets/word-art/straight-ruler-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 22
+  },
+  "orange-circle": {
+    "file": "./assets/word-art/orange-circle-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 23
+  },
+  "hundred-points": {
+    "file": "./assets/word-art/hundred-points-v1.webp",
+    "source_atlas": "atlas-14",
+    "cell": 24
+  },
+  "keycap-1": {
+    "file": "./assets/word-art/keycap-1-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 0
+  },
+  "keycap-10": {
+    "file": "./assets/word-art/keycap-10-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 1
+  },
+  "keycap-2": {
+    "file": "./assets/word-art/keycap-2-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 2
+  },
+  "keycap-3": {
+    "file": "./assets/word-art/keycap-3-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 3
+  },
+  "keycap-4": {
+    "file": "./assets/word-art/keycap-4-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 4
+  },
+  "keycap-5": {
+    "file": "./assets/word-art/keycap-5-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 5
+  },
+  "keycap-6": {
+    "file": "./assets/word-art/keycap-6-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 6
+  },
+  "keycap-7": {
+    "file": "./assets/word-art/keycap-7-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 7
+  },
+  "keycap-8": {
+    "file": "./assets/word-art/keycap-8-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 8
+  },
+  "keycap-9": {
+    "file": "./assets/word-art/keycap-9-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 9
+  },
+  "droplet": {
+    "file": "./assets/word-art/droplet-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 10
+  },
+  "growing-heart": {
+    "file": "./assets/word-art/growing-heart-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 11
+  },
+  "person-in-lotus-position": {
+    "file": "./assets/word-art/person-in-lotus-position-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 12
+  },
+  "angry-face": {
+    "file": "./assets/word-art/angry-face-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 13
+  },
+  "crying-face": {
+    "file": "./assets/word-art/crying-face-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 14
+  },
+  "face-screaming-in-fear": {
+    "file": "./assets/word-art/face-screaming-in-fear-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 15
+  },
+  "grinning-face-with-smiling-eyes": {
+    "file": "./assets/word-art/grinning-face-with-smiling-eyes-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 16
+  },
+  "smiling-face-with-heart-eyes": {
+    "file": "./assets/word-art/smiling-face-with-heart-eyes-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 17
+  },
+  "school": {
+    "file": "./assets/word-art/school-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 18
+  },
+  "books": {
+    "file": "./assets/word-art/books-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 19
+  },
+  "card-index-dividers": {
+    "file": "./assets/word-art/card-index-dividers-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 20
+  },
+  "keyboard": {
+    "file": "./assets/word-art/keyboard-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 21
+  },
+  "notebook": {
+    "file": "./assets/word-art/notebook-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 22
+  },
+  "pencil": {
+    "file": "./assets/word-art/pencil-v1.webp",
+    "source_atlas": "atlas-15",
+    "cell": 23
+  },
+  "vacuum-cleaner": {
+    "file": "./assets/word-art/vacuum-cleaner-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 0
+  },
+  "eraser": {
+    "file": "./assets/word-art/eraser-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 1
+  },
+  "dining-table": {
+    "file": "./assets/word-art/dining-table-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 2
+  },
+  "pillow": {
+    "file": "./assets/word-art/pillow-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 3
+  },
+  "duvet": {
+    "file": "./assets/word-art/duvet-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 4
+  },
+  "blanket": {
+    "file": "./assets/word-art/blanket-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 5
+  },
+  "wardrobe": {
+    "file": "./assets/word-art/wardrobe-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 6
+  },
+  "chest-of-drawers": {
+    "file": "./assets/word-art/chest-of-drawers-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 7
+  },
+  "shelf": {
+    "file": "./assets/word-art/shelf-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 8
+  },
+  "rug": {
+    "file": "./assets/word-art/rug-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 9
+  },
+  "curtain": {
+    "file": "./assets/word-art/curtain-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 10
+  },
+  "dishwasher": {
+    "file": "./assets/word-art/dishwasher-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 11
+  },
+  "washing-machine": {
+    "file": "./assets/word-art/washing-machine-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 12
+  },
+  "refrigerator": {
+    "file": "./assets/word-art/refrigerator-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 13
+  },
+  "freezer": {
+    "file": "./assets/word-art/freezer-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 14
+  },
+  "stove": {
+    "file": "./assets/word-art/stove-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 15
+  },
+  "oven": {
+    "file": "./assets/word-art/oven-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 16
+  },
+  "staircase": {
+    "file": "./assets/word-art/staircase-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 17
+  },
+  "elevator": {
+    "file": "./assets/word-art/elevator-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 18
+  },
+  "balcony": {
+    "file": "./assets/word-art/balcony-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 19
+  },
+  "roof": {
+    "file": "./assets/word-art/roof-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 20
+  },
+  "shopping-basket": {
+    "file": "./assets/word-art/shopping-basket-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 21
+  },
+  "identity-card": {
+    "file": "./assets/word-art/identity-card-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 22
+  },
+  "classroom-blackboard": {
+    "file": "./assets/word-art/classroom-blackboard-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 23
+  },
+  "chess-set": {
+    "file": "./assets/word-art/chess-set-v1.webp",
+    "source_atlas": "atlas-16",
+    "cell": 24
+  },
+  "dishwashing": {
+    "file": "./assets/word-art/dishwashing-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 0
+  },
+  "making-bed": {
+    "file": "./assets/word-art/making-bed-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 1
+  },
+  "frying-pan": {
+    "file": "./assets/word-art/frying-pan-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 2
+  },
+  "barbecue-grill": {
+    "file": "./assets/word-art/barbecue-grill-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 3
+  },
+  "table-setting": {
+    "file": "./assets/word-art/table-setting-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 4
+  },
+  "carrying-box": {
+    "file": "./assets/word-art/carrying-box-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 5
+  },
+  "leaving-keys": {
+    "file": "./assets/word-art/leaving-keys-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 6
+  },
+  "rinsing-plate": {
+    "file": "./assets/word-art/rinsing-plate-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 7
+  },
+  "picking-up-parcel": {
+    "file": "./assets/word-art/picking-up-parcel-v1.webp",
+    "source_atlas": "atlas-17",
+    "cell": 8
+  },
+  "broom": {
+    "file": "./assets/word-art/broom-v1.webp",
+    "source": "/Users/yuliia/.codex/generated_images/01a1c726-9654-7203-9d11-78855690720a/exec-5814b217-31f5-402a-961e-2165be744e3d.png"
+  }
+}

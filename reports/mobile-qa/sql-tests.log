@@ -1,0 +1,39 @@
+Isolated cluster and logs: /private/tmp/sl-sql-tests-gf1mj_bu
+PASS: supabase/tests/bootstrap_local.sql
+PASS: supabase/migrations/202610170001_core.sql
+PASS: supabase/migrations/202610170002_manifest.sql
+PASS: supabase/migrations/202610170003_progress_rpc.sql
+PASS: supabase/migrations/202610170004_import.sql
+PASS: supabase/migrations/202610170005_avatars.sql
+PASS: supabase/tests/002_manifest_upgrade.sql
+PASS: supabase/tests/001_contract.sql
+PASS: supabase/tests/004_study_time.sql
+PASS: supabase/tests/003_word_state_upgrade.sql
+PASS: supabase/tests/005_manual_review_queue.sql
+PASS: supabase/tests/006_study_time_default.sql
+PASS: two connections retrying same UUID commit one reward
+PASS: simultaneous profile updates conflict; stale intent is not applied
+PASS: explicit append-event rebase keeps both devices and exact XP
+PASS: two devices claim concurrently; only one account-wide study lease
+PASS: overlapping parallel periods rejected, same UUID is idempotent, XP/progress unchanged
+PASS: concurrent queue UUID retries produce one durable entry
+PASS: simultaneous adds with different UUIDs cannot duplicate a word
+PASS: two devices grading same queue version commit exactly one SRS event
+PASS: supabase/tests/007_quiz_rewards.sql
+PASS: simultaneous quiz finishes on two devices: conflict, safe retry, exactly one 35 XP reward
+PASS: supabase/tests/009_srs_interval_cap.sql
+PASS: supabase/tests/008_xp_integrity.sql
+PASS: supabase/tests/helpers/srs_boundary_cases.sql
+PASS: 10 post-012 concurrent UUID/revision/word/video/book scenarios
+PASS: post-012 concurrent quiz finishes and lost ACK still pay exactly one reward
+PASS: 001-011 -> 012 -> 013 -> 013; populated queue/events preserved; public RPC signatures/ACL unchanged
+PASS: 001-011 -> manual patch -> 012 -> 013 -> 013; populated queue/events preserved; public RPC signatures/ACL unchanged
+PASS: supabase/tests/010_video_progress.sql
+PASS: supabase/migrations/202610220015_known_removes_review.sql
+PASS: supabase/migrations/202610220016_review_only_unlearned.sql
+PASS: supabase/migrations/202611090017_learning_content_manifest.sql
+PASS: supabase/tests/mobile_qa_diagnostics.sql
+PASS: migrations 015-017 and read-only mobile diagnostics after dependency upgrades
+PASS: legacy installation guard prevents accidental mixed schemas
+PASS: 1644 SQL assertions, 21 concurrency scenarios, legacy guard; no remote connection
+Test cluster stopped. Logs retained at /private/tmp/sl-sql-tests-gf1mj_bu

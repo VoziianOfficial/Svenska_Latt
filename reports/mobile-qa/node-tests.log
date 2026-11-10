@@ -1,0 +1,282 @@
+Activity calendar: month lengths, leap day, alignment, navigation, current month, locales and preserved progress passed.
+✔ tests/activity-calendar.cjs (150.216708ms)
+✔ hung fetch and hung JSON body settle, abort and offer a safe reload (49.886041ms)
+✔ missing, malformed and empty learning content show a safe error without clearing progress (7.2615ms)
+PASS: 4 locales, 9 icon headings and destinations, repeatable highlight/focus, reduced motion, back to top, dense packing, resize batching, mobile reset and observer cleanup
+✔ tests/cheats-layout.cjs (138.664375ms)
+Cookie consent: initial locale, live switching in four languages, profile locale and persisted accept/decline passed.
+✔ tests/cookie-consent.cjs (210.367209ms)
+PASS: selection events, keyboard, disabled options, typeahead, Escape, outside click and rerender cleanup
+✔ tests/custom-controls.cjs (67.588208ms)
+PASS: exact images, neutral fallback, loading state and late responses
+✔ tests/flashcard-media.cjs (106.181875ms)
+PASS: four locales, original metric/CTA bindings, asset paths, pending placeholders, no state writes; five-slide loop, pauses, reduced motion, image failure, rerender and cleanup.
+✔ tests/home-hero.cjs (162.598375ms)
+PASS: 50 legacy lessons preserved, 20 tasks × 4 locales, 240 answer branches, invalid/empty answers, validator negative cases, delegated submit/edit, escaped writing drafts, no progress or XP writes
+✔ tests/learning-content-v2.cjs (227.46925ms)
+PASS: 50 distinct topic covers, stable IDs under reorder, WebP hashes/dimensions, 2.16 MiB total
+✔ tests/lesson-covers.cjs (87.055292ms)
+PASS: 50 lessons A–D, 271 full rules, 261 examples, 182 reading lines; equal content in all 4 languages and rules reference
+✔ tests/lesson-localization.cjs (249.251333ms)
+PASS: review button toggles add/remove, stays clickable when selected, blocks duplicate requests and retains state on failure
+✔ tests/manual-review-toggle.cjs (94.800416ms)
+✔ add, duplicate requests, both grades and remove persist independently of SRS (6.282167ms)
+✔ refresh, fresh page and logout/login restore the account queue without browser storage (6.409167ms)
+✔ double clicks coalesce; no selected state before server ACK (3.269292ms)
+✔ offline clicks do not report success or remove server words (1.266542ms)
+✔ lost ACK retries the same UUID exactly once, even for a grade (1.325083ms)
+✔ stale exercise cannot delete readded word; devices reconcile on refresh (2.298542ms)
+✔ responses arriving out of order cannot revert a newer server snapshot (1.951875ms)
+✔ late ACK from a previous identity cannot leak queue into another account (2.898792ms)
+✔ invalid or unavailable RPC never marks the queue ready (2.218459ms)
+✔ actual delegated nested clicks open all SFI levels, every lesson and every topic after rerenders (1388.537792ms)
+✔ home shortcut clones retain delegated actions; mobile menu and profile routes work (134.810167ms)
+✔ word details, guest favorite/known persistence, every practice mode, number and reference controls (136.720542ms)
+✔ drag cancellation never consumes a fresh mouse, touch, pen or keyboard action (1.015ms)
+✔ guest ignores stale cloud failures and local save retry writes locally without RPC (19.858375ms)
+✔ unreadable guest bytes survive mutations; read retry restores the repaired stored progress (19.405375ms)
+✔ each book cover delegates to its own reading button; video destinations retain their URLs (62.275042ms)
+PASS: 1006 photo links, 113 Swedish filenames, 0 documented gaps
+PASS: 3 local decorative photo references
+✔ tests/photo-links.cjs (81.260916ms)
+PASS: PWA prompt lifecycle, one-shot/user activation, fallback platforms, four existing locales, focus, standalone and confirmed install
+✔ tests/pwa-install.cjs (94.862334ms)
+{
+  "status": "PASS",
+  "words": 1006,
+  "lessons": 50,
+  "categories": 42,
+  "minWords": 30,
+  "books": 12,
+  "locales": 4,
+  "quizModes": 14,
+  "videoCards": 12
+}
+✔ tests/quality.cjs (257.602542ms)
+PASS: 595 original questions, 14 modes, 4 languages, correct/incorrect feedback, option identity, drafts, sentence tokens, lesson/book/topic/review/video entry points
+✔ tests/quiz-localization.cjs (586.271041ms)
+PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages
+✔ tests/quiz-rewards.cjs (1455.333667ms)
+PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage
+✔ tests/quiz-session.cjs (1966.629917ms)
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+✔ tests/service-worker.cjs (110.060459ms)
+✔ review patch keeps the 001-011 scheduler contract with only the existing interval cap added (1.640709ms)
+✔ review helper remains private and migration 013 records the exact manual patch (0.742ms)
+✔ 012 retains capped helper calls and manual queue uses that same scheduler (0.828417ms)
+✔ all migration interval writers are accounted for and import validates the CHECK maximum (7.967ms)
+✔ disposable SQL suites cover boundary arithmetic, queue retries and installation preservation (0.902917ms)
+✔ server default-on tracks without a browser opt-in, while saved opt-out survives reload (117.462708ms)
+✔ guest makes no study RPC or queue writes (2.473166ms)
+✔ saved opt-out prevents lease acquisition; explicit enable requires a subsequent learning action (2.799916ms)
+✔ 5 second checkpoints survive lost ACK and replay with the same UUID exactly once (2.442ms)
+✔ offline is bounded by grant; records persist across reload and remain scoped to owner (23.971208ms)
+✔ two tabs share one browser lease; hiding releases ownership (4.221208ms)
+✔ account switch while lease response is in flight cannot publish into next account (1.406208ms)
+✔ production profile uses one existing activity calendar, preserves colors, has compact setting and tooltips (6.64625ms)
+✔ failed offline opt out stops local tracking immediately and keeps the switch off (4.611666ms)
+✔ menu of practice modes does not count as an active exercise (4.29275ms)
+✔ slow network requests do not block ongoing durable time checkpoints (5.535666ms)
+✔ real interval batches drive server totals and restore after reload without deleting progress (16.705042ms)
+✔ automatic timezone synchronization preserves disabled preference and old daily data (1.912ms)
+✔ calendar month change fetches matching daily status and retains current totals (14.690916ms)
+✔ failed status settles into an error and can recover instead of loading forever (5.258041ms)
+✔ tooltip shows server duration on hover, focus and mobile tap within viewport (5.2745ms)
+✔ idle stops actual commits and trusted input resumes; hidden and blurred tabs add nothing (34.804875ms)
+✔ timezone change commits old lease before changing preferences and preserves historical records (11.116292ms)
+✔ study minute formatting has exact boundaries and retains milliseconds in the tooltip (3.23675ms)
+✔ three minutes of active learning commit real milliseconds and render nonzero totals (14.145ms)
+✔ disabled study tracking explains zero without enabling tracking or changing preferences (14.567209ms)
+✔ UI opt-out preserves history through reload, sign-in and a device with empty browser storage (13.37425ms)
+✔ offline opt-out survives reload and reconnect synchronizes the saved account preference (11.148708ms)
+✔ legacy local opt-out is synchronized before opening any lease and is account-scoped (1.4245ms)
+✔ stale status arriving after an opt-out ACK cannot recheck the switch or replace statistics (4.188417ms)
+✔ remote opt-out closes an active lease on refresh and adds no further intervals (2.741541ms)
+✔ timezone update racing a remote opt-out cannot enable it using an old generation (1.486ms)
+✔ late lease response after opt-out cannot start tracking (1.455334ms)
+✔ acknowledged opt-out can be explicitly enabled on another device without a stale browser veto (14.507125ms)
+✔ older enable ACK cannot erase a newer pending opt-out from another tab (21.436875ms)
+✔ failed status cannot acknowledge a pending opt-out using an old disabled snapshot (1.113542ms)
+✔ browser storage failure pauses locally without inventing an account opt-out (1.031375ms)
+✔ study counts only visible, focused learning surfaces (1.066833ms)
+✔ ordinary idle cuts at 90 seconds and reading at five minutes (0.100167ms)
+✔ actual audio can extend idle but cannot bypass visibility, end of lease or timer suspension (0.097417ms)
+✔ civil date utilities cover leap day and month/year rollovers independent of host zone (7.378917ms)
+✔ server status validation rejects fake/negative totals and unknown zones (24.161375ms)
+✔ empty configuration: no SDK/client/storage mutations (34.438667ms)
+✔ secret/legacy keys and foreign URL rejected before loading SDK (7.634084ms)
+✔ single pinned SDK and client; restored session stays separate from learning data (1.120875ms)
+✔ SDK unavailable is recoverable and never touches guest storage (1.818125ms)
+✔ failed session restore preserves caches and performs no progress calls (3.039208ms)
+✔ signup awaiting email confirmation does not import or replace progress (0.959416ms)
+✔ sign in/out and external events notify outside SDK callback without progress writes (10.569583ms)
+✔ RPC requires expected owner and authenticated session; mismatch sends nothing (6.337875ms)
+✔ explicit RPC mapping retains IDs, payload and binds captured JWT; no retry (2.853166ms)
+✔ conflict SQLSTATE preserved and not retried (0.91775ms)
+✔ cached session user cannot relabel another users JWT (0.667375ms)
+✔ account change while RPC pending discards response; request retains original owner JWT (2.24775ms)
+✔ configured boot restores Auth independently, keeps guest state and all backups unchanged (74.315625ms)
+✔ guest boot works with absent configuration and with SDK outage (40.34475ms)
+✔ no legacy cloud requests; modules included in page, build, server and worker (2.190417ms)
+✔ implicit email callback is scrubbed before initialize and restores Auth without progress calls (0.779833ms)
+✔ PKCE callback removes code, preserves normal route and unrelated query (0.728459ms)
+✔ expired, incomplete and rejected callbacks leave no credentials and preserve guest data (1.579333ms)
+✔ signed-in state never writes or restores legacy local XP; signout restores guest only (38.903083ms)
+✔ existing signup handler shows confirmation persistently, clears password and resets loading (20.031875ms)
+✔ login form uses prepared Auth, displays safe errors and clears loading after failure (17.905458ms)
+✔ logout handler preserves identity and progress on failure and restores guest on success (24.543083ms)
+✔ without the cloud module account data stays unavailable instead of using legacy local XP (13.0585ms)
+✔ email return during SDK outage is scrubbed and reports callback failure (0.6635ms)
+✔ cloud read uses only sl_get_progress, validates and keeps a detached snapshot in memory (1.957041ms)
+✔ duplicate init, token refresh, repeated sign-in events and pending reads share one request (5.988875ms)
+✔ invalid cloud envelopes and state are rejected without storage writes (14.786458ms)
+✔ RPC failure has safe diagnostics, no automatic retries and one explicit recovery (7.69875ms)
+✔ account change discards pending old cloud data and reads new identity once (17.852125ms)
+✔ logout then login to same user reads a new snapshot; stale failure never notifies (12.988ms)
+✔ guests and Auth outages send no progress RPC; debug API only exists on loopback HTTP (5.207459ms)
+✔ application boot automatically reads cloud once and profile renders never repeat it (22.716791ms)
+✔ automatic cloud reads preserve legacy data when local writer prechecks fail (23.275334ms)
+✔ preview compares account and cloud without reading guest or writing/calling RPC (18.827292ms)
+✔ preview rejects incompatible raw local data without sanitizing or falling back to guest (17.230833ms)
+✔ preview checks content version and clears access immediately on identity changes (22.382917ms)
+✔ preview catalog version tracks actual static content and detects frozen manifest drift (64.343625ms)
+✔ HTTPS and loopback save account events without a hidden dev flag (47.474417ms)
+✔ ordinary loopback HTTP saves known and favorites without touching legacy flags or guest data (91.457834ms)
+✔ mark known and favorite add/remove publish server results; client sends no XP (43.119625ms)
+✔ lost ACK retries immutable event and UUID without a second XP award (30.330458ms)
+✔ offline queue survives reload and preserves account, guest and backup bytes (20.766542ms)
+✔ logout prevents sending; a different account never drains the first account queue; relogin resumes (28.150875ms)
+✔ revision conflict rebases mark_known with the same event UUID/body (22.186417ms)
+✔ favorite revision conflict stops stale intent until explicit acknowledgement and a new UI intent (23.327458ms)
+✔ two tabs share a lock and send each durable intent only once (24.425792ms)
+✔ local unsynced progress, changed baseline and content mismatch block without erasing data (57.584292ms)
+✔ missing IndexedDB or Web Locks fails closed and queues no mutation (30.017625ms)
+✔ UI handlers enqueue supported actions without local XP and block other account mutations (29.507583ms)
+✔ multiple offline intents retain order and immutable bodies across recovery (21.664458ms)
+✔ queue write failure sends nothing and existing event records are never cleared (17.687541ms)
+✔ reload while offline resumes existing queue on the online event after the initial read failed (20.71625ms)
+✔ debug export has queue and version without a session or dev flag (1.132583ms)
+✔ legacy development flags cannot disable local saving; diagnostics preserve pending data (23.864ms)
+✔ inspection of absent, inaccessible or unsupported IDB never opens or creates a database (1.625625ms)
+✔ inspection hides other accounts and signed-out rows without enabling writes (21.587667ms)
+✔ IDB inspection reports blocked opens and aborts a disappeared database upgrade (3.606875ms)
+✔ account change during diagnostic IDB read hides the captured account events (19.975833ms)
+✔ repeated learned clicks and concurrent pending intents produce one durable mark_known (29.289042ms)
+✔ activity feedback exposes pending state, reports success only after ACK, and stays account scoped (33.436417ms)
+✔ dictionary and flashcard know actions share IDs and server XP, while repeat stays separate (19.803666ms)
+✔ guest known actions remain local and award XP once per word (2.827625ms)
+✔ explicit retry of a rejected event retains its original UUID and body (19.286ms)
+✔ accepting current favorites retains cancelled conflict and requires a new explicit favorite intent (17.573959ms)
+✔ new word actions stay gated until the server explicitly advertises capabilities (16.164292ms)
+✔ known toggle removes the mark without confirmation, retains XP across reload and relogin (27.947541ms)
+✔ offline unmark and lost ACK preserve UUID and award history, then recover on reload (21.138125ms)
+✔ word status revision conflicts never silently overwrite a newer decision (19.902541ms)
+✔ existing review_grade events retain SRS semantics without clearing known or adding XP (17.969417ms)
+✔ guest unmark preserves history, favorites and XP after saving and rereading (3.059375ms)
+✔ learned, favorites, search, group and category filters have explicit scopes and reliable resets (19.144833ms)
+✔ a stale UI identity cannot send an unmark to the previous account (28.192458ms)
+✔ automatic SRS words cannot start manual review when manual queue is unavailable (21.990583ms)
+✔ pending new events remain durable and unsent if server support is withdrawn (19.37225ms)
+✔ study RPC adapters bind all four operations to verified owner, preserve UUID and do not retry (1.191125ms)
+✔ study RPC refuses guest and mismatched account before any network mutation (1.241666ms)
+✔ in-flight study response is discarded when account changes (0.623375ms)
+✔ hung progress read times out, leaves stored progress intact and ignores a late response (11.890458ms)
+✔ HTTPS profile restores Supabase XP after reload and relogin, without importing legacy or guest data (48.053292ms)
+✔ profile SFI A → B → C → D uses settings patches, survives reload/relogin and preserves all learning fields (27.614417ms)
+✔ settings failure publishes no success; lost ACK retry retains UUID and avoids a second mutation (15.623208ms)
+✔ email change uses official Auth API, keeps pending email separate and refreshes confirmation without resetting identity (0.922125ms)
+✔ email validation, duplicate, rate limit, offline and expired session do not replace confirmed email (0.843167ms)
+✔ settings revision conflict retries the same intent; refresh receives another device level (15.757792ms)
+✔ account lesson completes real questions with mistakes, exact XP, retry reward once, reload and relogin (103.824958ms)
+✔ all 14 account modes, every topic, book and video use real content and supported session events (3039.7715ms)
+✔ offline answers and lost ACK survive reload; same answer UUID cannot award twice (50.685125ms)
+✔ storage failure retains answer intent, concurrent clicks enqueue one answer, abandoning preserves XP (39.777417ms)
+✔ stalled session RPC releases the writer lock and retries the original event after timeout (48.398708ms)
+✔ identity change during a quiz submission cannot update or unlock the next account exercise (34.829334ms)
+✔ lost finish ACK retries the same UUID and shows its original one-time reward receipt (44.890417ms)
+✔ quiz writes remain gated against pre-010 servers (23.461667ms)
+✔ safe RPC diagnostics identify session, verification and RPC failure without retaining private values (0.99225ms)
+✔ blocked queue open terminates safely, preserves existing pending events and can retry (17.06875ms)
+COMPLETE ru
+RU TEXT IN EN topics [
+  'дела">',
+  'дела">Not passed',
+  'Вопросы">',
+  'Вопросы">Not passed',
+  'Время">',
+  'Время">Not passed',
+  'Глаголы">'
+]
+RU TEXT IN EN topic [ 'Семья">Not passed', 'Семья">🧠 Topic quiz', 'Семья">Start quiz' ]
+RU TEXT IN EN dictionary [
+  'дела" >Daily life',
+  'Вопросы" >Questions',
+  'Время" >Time',
+  'Глаголы" >Verbs',
+  'Город и места" >City and places',
+  'календарь" >Days and calendar',
+  'комнаты" >Home and rooms'
+]
+RU TEXT IN EN profile [ 'Русский', 'Українська' ]
+COMPLETE en
+COMPLETE uk
+COMPLETE sv
+DATA 50 lessons 1006 words 12 books
+✔ tests/ui_smoke.cjs (251.094459ms)
+✔ all twelve episode quizzes have traceable distinct Swedish questions; all twelve banks use five verified questions (1.402417ms)
+✔ 014 preserves existing bank at runtime and changes only the exact count check in the 012 writer (2.567375ms)
+✔ topic grading cannot resolve a distractor through an unselected synonym with a different Russian answer (21.505042ms)
+✔ licensed videos stop at Stockholm midnight and manual disabling retains all progress (3.550708ms)
+✔ replacement banks retain q0 for old events and explicitly select only five new IDs (30.390291ms)
+✔ real delegated clicks toggle known and favorites through owner RPC, reload and relogin (1170.873834ms)
+✔ guest delegated clicks stay local and do not create cloud events (117.103542ms)
+✔ server rejection never changes either selected state or pretends to save (458.392208ms)
+✔ reproduces the reported 23514 SRS overflow and recovers original queued word/favorite UUIDs after the server patch (933.487792ms)
+✔ newly rendered flashcards and word details keep delegated actions; pending double clicks coalesce (173.262584ms)
+✔ a rejected click action reports an error without an unhandled rejection or local success (384.011791ms)
+✔ every video card exposes the same elements in all four languages and verified episode quizzes (150.413333ms)
+✔ watched and undo sync across isolated devices, reload and relogin, independently of quiz and XP (637.274208ms)
+✔ offline intent is pending until ACK, survives reload and retries the same UUID (369.173958ms)
+✔ old server stays gated; denied write never becomes local success (194.323333ms)
+✔ stale second-device watch intent requires explicit conflict recovery, no silent overwrite (479.774917ms)
+✔ guest video toggles persist locally with zero XP and do not call cloud (333.802ms)
+✔ new episode quizzes wait for the reviewed bank on accounts and existing expanded quizzes (147.434167ms)
+✔ all twelve cards toggle watched and undo through production queue without XP or quiz changes (1277.261167ms)
+✔ expired or disabled videos retain history and block new quizzes and watch links (215.9125ms)
+PASS: 1006 word icons, local WebP assets, exact semantic mappings, card rendering and fallback
+✔ tests/word-icons.cjs (241.237916ms)
+✔ favorite waits for ACK, blocks double click and preserves search, nodes and focus (152.454334ms)
+✔ favorite removal retains other cards and moves focus without scrolling (9.646125ms)
+✔ last favorite produces empty state while preserving search and document height (8.431334ms)
+✔ one learning toggle preserves history, favorite and XP without a confirmation panel (16.50875ms)
+✔ server without migration shows selected read-only state with no panel, event or toast (6.851417ms)
+✔ word and topic keep their content while favorite changes (39.758959ms)
+✔ offline favorite remains unchanged and focused across repeated progress notifications (23.62525ms)
+✔ a newer snapshot cancels a retiring card instead of removing the restored favorite (13.713041ms)
+✔ authenticated read-only mode cannot report a local unmark or favorite as saved (13.394ms)
+✔ cloud unmark waits for a confirmed snapshot and excludes fast repeated clicks (15.901542ms)
+✔ all learned words are visible together with photos, names, translations and detail links (44.204916ms)
+✔ learned counter opens the dictionary list and restores its filters, scroll and focus on return (18.756458ms)
+✔ learned word keeps manual review disabled even when the review service is unavailable (12.659917ms)
+✔ offline supported toggle keeps the selected label, focus and filters while awaiting the server (30.451125ms)
+✔ programmatic hash navigation renders once; browser Back restores the learned collection (18.437167ms)
+✔ learned word cannot re-enter manual reviews until its learned mark is removed (9.491083ms)
+✔ manual add preserves dictionary search, filters, focus and nodes; ACK exposes word in common list (33.495ms)
+✔ recall requires reveal; remember removes word from the list after ACK, again keeps it (19.765917ms)
+✔ manual removal preserves other list rows and document height without navigating (14.543417ms)
+✔ flashcard review control receives the same confirmed queue state without an automatic exercise (13.7565ms)
+✔ account photo and name open the profile once and close the mobile drawer (20.192ms)
+✔ profile shows account XP, keeps email in settings and reports failed reads without a false zero (36.390333ms)
+✔ failed Auth restoration shows a compact connection notice instead of silently remaining a guest (24.703583ms)
+✔ profile level waits for server ACK, updates badge without replacing page and restores selection on failure (12.291125ms)
+✔ profile email editor keeps confirmed Auth email, labels pending state and clears stale confirmation after refresh (11.476416ms)
+✔ dictionary numeric counters depend on loaded data, never on cloud write availability (23.086042ms)
+✔ search has a small clear control and filter reset appears only in filtered empty state (14.618125ms)
+ℹ tests 220
+ℹ suites 0
+ℹ pass 220
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7665.840417

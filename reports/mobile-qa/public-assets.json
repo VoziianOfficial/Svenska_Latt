@@ -1,0 +1,122 @@
+{
+  "assets": [
+    {
+      "file": "style.css",
+      "status": 200,
+      "sha256": "84acef1fd5d295e6b5b8031d3e5b00ace07128c65464dfe807bd9c585c83dd47",
+      "bytes": 81702
+    },
+    {
+      "file": "studio.css",
+      "status": 200,
+      "sha256": "9a62b7b815cd8de7f20e01c38c7fa98e4b3bf8ce8bcb61acc04c2a0832dec9c1",
+      "bytes": 28829
+    },
+    {
+      "file": "atelier.css",
+      "status": 200,
+      "sha256": "69c39723d0624607607b60f5c06e0009516078409d8cb99da1a5be41c0ccc971",
+      "bytes": 59830
+    },
+    {
+      "file": "learning-polish.css",
+      "status": 200,
+      "sha256": "5d5410e52bcb434e3ae9733456827602724507f615e0536773399300bb6f8c88",
+      "bytes": 105226
+    },
+    {
+      "file": "supabase-config.js",
+      "status": 200,
+      "sha256": "70ace15c07bd86adce54b4040517343f993bb3cb5b7d78a3667b9f89a77e22f3",
+      "bytes": 677
+    },
+    {
+      "file": "supabase-client.js",
+      "status": 200,
+      "sha256": "ce76c3a49e151a37dff7849d6cf93e5e24750fbecf13f02c798f6d4fe0f62da2",
+      "bytes": 2269
+    },
+    {
+      "file": "supabase-auth.js",
+      "status": 200,
+      "sha256": "369874113f57dc81c58bd9e8b3451f00ecd72f8aae54fd78dde63eb6a6f8e8e7",
+      "bytes": 6962
+    },
+    {
+      "file": "supabase-rpc.js",
+      "status": 200,
+      "sha256": "952ad45f13634db8483fdd1ae18d0a6a03e79e4c1c06dd85eab7c020a0d5d672",
+      "bytes": 3760
+    },
+    {
+      "file": "supabase-progress.js",
+      "status": 200,
+      "sha256": "cf985771fcbdbbad8d1c3203f627f5700302107ca48b4edb8a788b4f32ac73a9",
+      "bytes": 33330
+    },
+    {
+      "file": "locale-content.js",
+      "status": 200,
+      "sha256": "9f889fde3d8042ad1424b9543eb6c4ebb74e3f9488b9fa8de668eb9191585457",
+      "bytes": 578733
+    },
+    {
+      "file": "word-icons.js",
+      "status": 200,
+      "sha256": "12a92dd058f9a4670cf4a30a35b38f1c824c76adc12866fac1a2226ae626c594",
+      "bytes": 53799
+    },
+    {
+      "file": "flashcard-media.js",
+      "status": 200,
+      "sha256": "172945466639b8827dd658203a9f83426acc3d625809dcd76f991d6a4b3e99e8",
+      "bytes": 51230
+    },
+    {
+      "file": "manual-reviews.js",
+      "status": 200,
+      "sha256": "710051ccdb350fa5a7d0b527497a7ed0f5266aac01701f7bc45eed7ebd7c7291",
+      "bytes": 4323
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256": "b9a4dc2ed48fbd2678c1b0188343a0d8265fb4ecbdc31f5c39dfdd32e3bfcd94",
+      "bytes": 371833
+    },
+    {
+      "file": "pwa-install.js",
+      "status": 200,
+      "sha256": "9f910a99a49a6d6bd8d0e810d3553ce05d6337233ab665905fcf7618de0e97fe",
+      "bytes": 4153
+    },
+    {
+      "file": "atelier.js",
+      "status": 200,
+      "sha256": "eed47337f6e56ed8a02695da871ba3d2807750d52fa1057f4e463ee1ad60b84b",
+      "bytes": 24399
+    },
+    {
+      "file": "learning-polish.js",
+      "status": 200,
+      "sha256": "f6340ae769ae2fad620099fe9fcde2419baeff4f3b7bc35f56c147de58feb960",
+      "bytes": 9949
+    },
+    {
+      "file": "study-time.js",
+      "status": 200,
+      "sha256": "0d1481322641dd3e3e5b80b4dc00ebe4372a8f0650759c9b68b64177565665cb",
+      "bytes": 23711
+    },
+    {
+      "file": "custom-controls.js",
+      "status": 200,
+      "sha256": "64ee4cfe4309f1dd5b7d1c50011976263b1788a300ac07f2e9611bcc22011483",
+      "bytes": 6874
+    }
+  ],
+  "sdk": {
+    "status": 200,
+    "bytes": 218252
+  }
+}
