@@ -74,18 +74,18 @@
  function audioUI(){
    const d=words[lang()]||words.ru;
    const voices=swedishVoices();
-   const voiceUI=voices.length>1?`<label>${d.voice}<select class="speech-voice-select" aria-label="${d.voice}"><option value="">${d.auto}</option>${voices.map(v=>{
+   const voiceUI=voices.length>1?`<label class="speech-voice-choice">${d.voice}<select class="speech-voice-select" aria-label="${d.voice}"><option value="">${d.auto}</option>${voices.map(v=>{
     const uri=String(v.voiceURI).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
     const name=String(v.name).replace(/&/g,'&amp;').replace(/</g,'&lt;');
     return `<option value="${uri}" ${selectedVoice===v.voiceURI?'selected':''}>${name}</option>`;
    }).join('')}</select></label>`:'';
-   return `<div class="speech-speed"><label>${d.lab}<select class="speech-speed-select" aria-label="${d.lab}">
+   return `<div class="speech-speed"><label class="speech-speed-choice">${d.lab}<select class="speech-speed-select" aria-label="${d.lab}">
     ${Object.keys(SPEEDS).map(k=>`<option value="${k}" ${saved===k?'selected':''}>${d[k]}</option>`).join('')}
-   </select></label>${voiceUI}<button type="button" class="speech-stop" data-speech-stop aria-label="${d.stop}" title="${d.stop}">■</button></div>`;
+   </select></label>${voiceUI}<button type="button" class="speech-stop" data-speech-stop aria-label="${d.stop}" title="${d.stop}"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="2" y="2" width="10" height="10" rx="2"/></svg></button></div>`;
  }
  function addSpeedControllers(){
    const buttons=[...document.querySelectorAll('#page button[data-action="speak"]')];
-   const long=buttons.filter(el=>(el.dataset.text||'').length>=55);
+   const long=buttons.filter(el=>(el.dataset.text||'').length>=55&&!el.closest('.word-example'));
    if(long.length){
      for(let btn of long){
        if(btn.nextElementSibling?.classList?.contains('speech-speed'))continue;

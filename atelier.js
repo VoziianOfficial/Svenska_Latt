@@ -121,6 +121,7 @@ const picker={
  'sol':'weather','regn':'weather','snö':'weather','träd':'nature','blomma':'nature'
 };
 const photoForWord=w=>{
+ const exact=window.svFlashPhotoForWord?.(w);if(exact)return exact;
  const key=String(w?.word||'').toLowerCase().trim();const name=picker[key];
  const cat=CATEGORY[w?.category]||'reading';
  const fallback=PH[cat]||PH.reading;
@@ -196,7 +197,10 @@ function enhanceHome(){const hero=document.querySelector('.hero');if(hero)hero.s
  document.querySelectorAll('.action-card:not(.home-action-card)').forEach(el=>tile(el,PH[ACTION[el.dataset.nav]]||PH.topics));
  document.querySelectorAll('.course-tile:not(.home-course-card)').forEach((el,i)=>tile(el,LEVELS[('ABCD'.indexOf(el.dataset.level)+4)%4]||LEVELS[i%4]));
 }
-function enhanceTopics(){document.querySelectorAll('.topic-card').forEach(el=>{const key=el.dataset.param||el.querySelector('h3')?.textContent?.trim();tile(el,TOPIC_PHOTOS[key]||PH[CATEGORY[key]]||PH.reading)})}
+function enhanceTopics(){
+ document.querySelectorAll('.topic-card').forEach(el=>{const key=el.dataset.param||el.querySelector('h3')?.textContent?.trim();tile(el,TOPIC_PHOTOS[key]||PH[CATEGORY[key]]||PH.reading)});
+ document.querySelectorAll('.topic-detail-hero').forEach(el=>{const key=el.dataset.topicCover;back(el,TOPIC_PHOTOS[key]||PH[CATEGORY[key]]||PH.reading)});
+}
 function enhanceLessons(){document.querySelectorAll('.lesson-card').forEach((el,i)=>{
  const open=el.querySelector('.lesson-foot [data-nav="lesson"]');
  const url=LESSON_COVERS[open?.dataset.param];
@@ -234,7 +238,90 @@ function enhanceBooks(){document.querySelectorAll('.book-card').forEach(el=>{
 function enhanceNumbers(){document.querySelectorAll('.number-item strong').forEach(el=>{
  const n=el.textContent.trim().length;if(n>15)el.style.setProperty('font-size','13px','important');else if(n>11)el.style.setProperty('font-size','15px','important');
  });}
+function decorateTopicsSlider(track){
+ if(track.dataset.sliderReady)return;track.dataset.sliderReady='1';
+ const cards=[...track.children],section=track.closest('.vocabulary-modules');
+ const labels=({ru:['Предыдущая тема','Следующая тема','Тема'],uk:['Попередня тема','Наступна тема','Тема'],en:['Previous topic','Next topic','Topic'],sv:['Föregående ämne','Nästa ämne','Ämne']})[document.documentElement.lang]||['Previous topic','Next topic','Topic'];
+ const holder=section.querySelector('.topics-carousel-controls');
+ const arrow=direction=>`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="${direction<0?'M19 12H5m6-6-6 6 6 6':'M5 12h14m-6-6 6 6-6 6'}" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+ holder.innerHTML=`<button class="slider-arrow" type="button" aria-label="${labels[0]}" aria-controls="${track.id}">${arrow(-1)}</button><span class="topics-position" aria-live="polite" aria-atomic="true"></span><button class="slider-arrow" type="button" aria-label="${labels[1]}" aria-controls="${track.id}">${arrow(1)}</button>`;
+ const [prev,next]=holder.querySelectorAll('button'),counter=holder.querySelector('.topics-position');
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const step=()=>cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(track).columnGap||0);
+ const wrap=value=>((value%cards.length)+cards.length)%cards.length;
+ let cycle=0,timer,down=false,dragged=false,origin=0,base=0;
+ const jump=left=>track.scrollTo({left,behavior:'instant'});
+ const index=()=>wrap(Math.round((track.scrollLeft-cycle)/step()));
+ // Matching copies on either side let native swipes cross both ends. Once
+ // scrolling settles, return to the identical position in the middle cycle.
+ const normalize=()=>{
+  if(!cycle||down)return;
+  if(track.scrollLeft<cycle-.5||track.scrollLeft>=2*cycle-.5)
+   jump(cycle+((track.scrollLeft-cycle)%cycle+cycle)%cycle);
+ };
+ const update=()=>{
+  const first=index(),visible=Math.max(1,Math.round((track.clientWidth+parseFloat(getComputedStyle(track).columnGap||0))/step()));
+  const last=wrap(first+visible-1)+1,range=visible===1?String(first+1).padStart(2,'0'):`${String(first+1).padStart(2,'0')} — ${String(last).padStart(2,'0')}`;
+  const text=`${range} / ${cards.length}`;
+  if(counter.textContent!==text)counter.textContent=text;
+  prev.disabled=next.disabled=cards.length<2;
+ };
+ const move=target=>{normalize();track.scrollTo({left:cycle+target*step(),behavior:reduced.matches?'instant':'smooth'})};
+ prev.addEventListener('click',()=>move(index()-1));next.addEventListener('click',()=>move(index()+1));
+ // Native touch scrolling preserves vertical page gestures and scroll snapping.
+ const settle=()=>{normalize();update()};
+ track.addEventListener('scroll',()=>{clearTimeout(timer);timer=setTimeout(settle,160)},{passive:true});
+ track.addEventListener('scrollend',settle);
+ cards.forEach((card,i)=>card.setAttribute('aria-label',`${[...card.querySelectorAll('h3,p,.quiz-status')].map(el=>el.textContent.trim()).join('. ')}. ${labels[2]} ${i+1} / ${cards.length}`));
+ if(cards.length>1){
+  const copy=card=>{
+   const clone=card.cloneNode(true);clone.dataset.sliderClone='1';
+   clone.setAttribute('aria-hidden','true');clone.tabIndex=-1;clone.removeAttribute('id');
+   clone.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));
+   clone.querySelectorAll('button,a,input,select,[tabindex]').forEach(el=>el.tabIndex=-1);
+   tile(clone,TOPIC_PHOTOS[clone.dataset.param]||PH.reading);
+   return clone;
+  };
+  track.prepend(...cards.map(copy));track.append(...cards.map(copy));
+  cycle=cards.length*step();jump(cycle);
+ }
+ track.addEventListener('keydown',event=>{
+  const current=cards.indexOf(event.target.closest('.topic-card'));
+  if(current<0||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+  event.preventDefault();
+  const target=event.key==='Home'?0:event.key==='End'?cards.length-1:current+(event.key==='ArrowRight'?1:-1);
+  cards[wrap(target)].focus({preventScroll:true});move(target);
+ });
+ track.addEventListener('pointerdown',event=>{
+  dragged=false;down=false;if(event.pointerType!=='mouse'||event.button!==0)return;
+  normalize();
+  down=true;origin=event.clientX;base=track.scrollLeft;
+ });
+ track.addEventListener('pointermove',event=>{
+  if(!down)return;
+  const delta=event.clientX-origin;
+  if(Math.abs(delta)>6){dragged=true;track.classList.add('is-dragging');track.scrollLeft=base-delta}
+ });
+ const stop=()=>{
+  if(!down)return;down=false;track.classList.remove('is-dragging');
+  if(dragged)move(index());
+ };
+ track.addEventListener('pointerup',stop);track.addEventListener('pointerleave',stop);track.addEventListener('pointercancel',stop);
+ track.addEventListener('click',event=>{if(dragged&&event.detail!==0){event.preventDefault();event.stopImmediatePropagation();dragged=false}},true);
+ // Observe only the active carousel; old route nodes must not be retained.
+ const observer=new ResizeObserver(()=>{
+  if(!track.isConnected){observer.disconnect();clearTimeout(timer);return}
+  const nextCycle=cards.length>1?cards.length*step():0;
+  if(cycle&&Math.abs(nextCycle-cycle)>.5){
+   const position=((track.scrollLeft-cycle)/cycle%1+1)%1;
+   cycle=nextCycle;jump(cycle*(1+position));
+  }
+  update();
+ });
+ observer.observe(track);requestAnimationFrame(update);
+}
 function decorateSlider(track){
+ if(track.closest?.('.vocabulary-modules')){decorateTopicsSlider(track);return}
  if(track.dataset.sliderReady)return;track.dataset.sliderReady='1';
  const circular=track.matches('.action-grid.action-grid-4,.topic-grid.premium-topics,.course-tiles');
  let cycle=0,settleTimer,down=false;
@@ -286,10 +373,12 @@ function decorateSlider(track){
  prev.addEventListener('click',()=>shift(-1));next.addEventListener('click',()=>shift(1));track.addEventListener('scroll',update,{passive:true});requestAnimationFrame(update);
  }
  let origin=0,base=0,dragged=false;
- track.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;origin=e.clientX;base=track.scrollLeft;dragged=false;down=true});
+ // A drag can end outside the track without a click. Reset for every new
+ // gesture, including touch/pen, so its first real tap is never swallowed.
+ track.addEventListener('pointerdown',e=>{dragged=false;down=false;if(e.pointerType!=='mouse'||e.button!==0)return;origin=e.clientX;base=track.scrollLeft;down=true});
  track.addEventListener('pointermove',e=>{if(!down||e.pointerType!=='mouse')return;const delta=e.clientX-origin;if(Math.abs(delta)>5){dragged=true;track.scrollLeft=base-delta}});
  const stop=()=>{down=false;clearTimeout(settleTimer);settleTimer=setTimeout(normalize,160)};track.addEventListener('pointerup',stop);track.addEventListener('pointercancel',stop);track.addEventListener('pointerleave',stop);
- track.addEventListener('click',e=>{if(dragged){e.preventDefault();e.stopImmediatePropagation();dragged=false}},true);
+ track.addEventListener('click',e=>{if(dragged&&e.detail!==0){e.preventDefault();e.stopImmediatePropagation();dragged=false}},true);
 }
 // Pack reference cards by their actual content height, including after a language or width change.
 let referenceLayout=null;

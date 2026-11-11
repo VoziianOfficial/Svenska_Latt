@@ -5,7 +5,7 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 const words = JSON.parse(read('words.json'));
-const manifest = JSON.parse(read('assets/word-icons/manifest.json'));
+const manifest = JSON.parse(read('assets/word-art/manifest.json'));
 const context = {
  window: {addEventListener() {}}, document: {addEventListener() {}},
  localStorage: {getItem() {return null;}, setItem() {}},
@@ -20,7 +20,7 @@ vm.runInContext(`state=defaultState(); WORDS=${JSON.stringify(words)};`, context
 assert.equal(Object.keys(manifest).length, words.length);
 for (const word of words) {
  const file = manifest[word.id];
- assert.ok(file?.startsWith('./assets/word-icons/'), word.id);
+ assert.ok(file?.startsWith('./assets/word-art/'), word.id);
  const bytes = fs.readFileSync(path.join(root, file));
  assert.equal(bytes.toString('ascii', 0, 4), 'RIFF', file);
  assert.equal(bytes.toString('ascii', 8, 12), 'WEBP', file);
@@ -33,9 +33,13 @@ assert.match(manifest['v-betala'], /credit-card/);
 assert.match(manifest['v-handla'], /shopping-cart/);
 assert.match(manifest['n-katt'], /cat/);
 assert.match(manifest['n-hund'], /dog/);
+assert.match(manifest['lex-0328'], /vacuum-cleaner/);
+assert.match(manifest['w-suddgummi'], /eraser/);
+assert.match(manifest['n-bord'], /dining-table/);
+assert.match(manifest['lex-0101'], /dishwasher/);
 vm.runInContext('window.svWordIcons=undefined;', context);
 const fallback = vm.runInContext(`wordIcon(${JSON.stringify(words[0])})`, context);
 assert.ok(fallback.includes(words[0].emoji) && !fallback.includes('<img'));
 assert.ok(read('index.html').indexOf('./word-icons.js') < read('index.html').indexOf('./app.js'));
 assert.ok(!read('atelier.js').includes('function enhanceWords'));
-console.log(`PASS: ${words.length} word icons, local WebP assets, exact semantic mappings, card rendering and fallback`);
+console.log(`PASS: ${words.length} realistic word cutouts, local WebP assets, corrected semantic mappings, card rendering and fallback`);

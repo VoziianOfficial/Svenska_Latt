@@ -8,6 +8,7 @@ class Target {
   addEventListener(name, fn) { (this.events[name] ??= []).push(fn); }
   async emit(name, event = {}) { await Promise.all((this.events[name] || []).map(fn => fn(event))); }
   querySelector() { return this.label ??= new Target(); }
+  setAttribute(name, value) { this[name] = value; }
   focus() { this.focused = true; }
   getClientRects() { return [{}]; }
 }
@@ -61,6 +62,14 @@ assert(fs.readFileSync(path.join(root, 'index.html'), 'utf8').includes('rel="app
     s = setup(nav); await s.buttons[0].emit('click');
     const text = s.elements['pwa-install-step-one'].textContent;
     assert(text.includes(expected)); assert(!text.includes(excluded));
+  }
+  const iphoneSafari = 'Mozilla/5.0 (iPhone; CPU iPhone OS 26_0 like Mac OS X) AppleWebKit/605.1.15 Version/26.0 Mobile/15E148 Safari/604.1';
+  for (const [userAgent, expected] of [[iphoneSafari, 'IOS'], [iphoneSafari+' Instagram', 'IOSBrowser'], [iphoneSafari.replace('Version/26.0', 'CriOS/141.0'), 'IOSBrowser'], ['iPhone AppleWebKit/605.1.15 Telegram', 'IOSBrowser'], [iphoneSafari.replace('Version/26.0', 'FxiOS/143.0'), 'IOSBrowser']]) {
+    s=setup({userAgent});await s.buttons[0].emit('click');assert.equal(s.dialog['data-platform'],expected);
+    for(const lang of ['ru','uk','en','sv']) {
+      vm.runInContext(`state.settings.language='${lang}'`,s.ctx);s.languageChanged();
+      for(const id of ['pwa-install-step-one','pwa-install-step-two'])assert(s.elements[id].textContent.length<160, 'compact localized step');
+    }
   }
   for (const outcome of ['accepted', 'dismissed']) {
     s = setup(); let calls = 0, prevented = false, resolve;

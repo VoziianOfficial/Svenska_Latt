@@ -24,15 +24,27 @@ function ui({cloud=false,capable=true,scope=''}={}){
  return {ctx,run,page,document,handlers,pending,calls,notices,mount,ack(){pending.length=0;release?.()},data};
 }
 const domTest=(name,fn)=>test(name,{skip:!domModule&&'Set SL_UX_DOM_MODULE to run DOM integration tests'},fn);
+function selectedKnown(button){
+ assert.equal(button.getAttribute('aria-pressed'),'true');
+ assert.equal(button.getAttribute('aria-label'),'✓ Знаю');
+ assert.ok(button.querySelector('.word-control-icon'),'Learning icon survives progress refresh');
+ assert.equal(button.querySelector('.word-control-label').textContent,'Знаю');
+}
+function favoriteState(button,selected){
+ assert.equal(button.getAttribute('aria-pressed'),String(selected));
+ assert.ok(button.querySelector('.word-control-icon'),'Favorite icon survives progress refresh');
+ assert.equal(button.classList.contains('selected'),selected);
+}
+
 domTest('favorite waits for ACK, blocks double click and preserves search, nodes and focus',async()=>{
  const h=ui({cloud:true});h.run("dictFilter.text='arbeta';dictFilter.kind='verb';dictFilter.group='1';dictFilter.category='Глаголы';dictFilter.limit=84");h.mount();
  const search=h.document.querySelector('#dict-search'),row=h.page.querySelector('[data-word-link]'),star=row.querySelector('[data-action="favorite"]'),id=star.dataset.id;
  star.focus();const before=h.run('JSON.stringify(dictFilter)');
  const saving=h.run(`setWordFavorite(${JSON.stringify(id)})`);await h.run(`setWordFavorite(${JSON.stringify(id)})`);
- assert.equal(h.calls.length,1);assert.equal(star.textContent,'☆');assert.equal(star.getAttribute('aria-busy'),'true');assert.equal(h.document.activeElement,star);
+ assert.equal(h.calls.length,1);favoriteState(star,false);assert.equal(star.getAttribute('aria-busy'),'true');assert.equal(h.document.activeElement,star);
  h.run('refreshWordUI()');assert.equal(h.document.querySelector('#dict-search'),search);assert.equal(h.page.querySelector('[data-word-link]'),row);assert.equal(h.run('JSON.stringify(dictFilter)'),before);
  h.ctx.savedId=id;h.run('state.favorites=[savedId];refreshWordUI(true)');h.ack();await saving;
- assert.equal(star.textContent,'★');assert.equal(star.getAttribute('aria-busy'),'false');assert.equal(h.document.activeElement,star);assert.equal(h.page.querySelector('[data-word-link]'),row);
+ favoriteState(star,true);assert.equal(star.getAttribute('aria-busy'),'false');assert.equal(h.document.activeElement,star);assert.equal(h.page.querySelector('[data-word-link]'),row);
 });
 domTest('favorite removal retains other cards and moves focus without scrolling',async()=>{
  const h=ui({scope:'favorites'});h.run('state.favorites=WORDS.slice(0,3).map(w=>w.id)');h.mount();
@@ -46,14 +58,14 @@ domTest('last favorite produces empty state while preserving search and document
 });
 domTest('one learning toggle preserves history, favorite and XP without a confirmation panel',async()=>{
  const h=ui({scope:'learned'});h.run('state.known=[WORDS[0].id];state.xp=8;state.favorites=[WORDS[0].id];state.reviews[WORDS[0].id]={due:123,rep:2}');h.mount();
- const row=h.page.querySelector('[data-word-link]'),btn=row.querySelector('[data-action="mark-known"]');btn.focus();assert.equal(btn.textContent,'✓ Знаю');
+ const row=h.page.querySelector('[data-word-link]'),btn=row.querySelector('[data-action="mark-known"]');btn.focus();selectedKnown(btn);
  await h.run("action({dataset:{action:'mark-known',id:WORDS[0].id}})");
  assert.equal(row.isConnected,false);assert.equal(h.page.querySelector('.known-confirm'),null);assert.equal(h.run('state.xp'),8);assert.equal(h.run('state.favorites.length'),1);assert.equal(h.run('state.reviews[WORDS[0].id].due'),123);assert.deepEqual(h.notices,['Отметка снята']);
- await h.run('learnWord(WORDS[0].id)');assert.equal(h.run('state.xp'),8);assert.equal(h.page.querySelector('[data-action="mark-known"]').textContent,'✓ Знаю');
+ await h.run('learnWord(WORDS[0].id)');assert.equal(h.run('state.xp'),8);selectedKnown(h.page.querySelector('[data-action="mark-known"]'));
 });
 domTest('server without migration shows selected read-only state with no panel, event or toast',async()=>{
  const h=ui({cloud:true,capable:false,scope:'learned'});h.run('state.known=[WORDS[0].id]');h.mount();const btn=h.page.querySelector('[data-action="mark-known"]');
- assert.equal(btn.textContent,'✓ Знаю');assert.equal(btn.disabled,true);assert.equal(btn.getAttribute('aria-pressed'),'true');
+ selectedKnown(btn);assert.equal(btn.disabled,true);assert.equal(btn.getAttribute('aria-pressed'),'true');
  await h.run("action({dataset:{action:'mark-known',id:WORDS[0].id}})");assert.equal(h.page.querySelector('.known-confirm'),null);assert.doesNotMatch(h.page.textContent,/обновления сервиса|Вернуть в изучение/);assert.equal(h.calls.length,0);assert.equal(h.run('state.known.length'),1);assert.deepEqual(h.notices,[]);
 });
 domTest('word and topic keep their content while favorite changes',async()=>{
@@ -67,8 +79,8 @@ domTest('offline favorite remains unchanged and focused across repeated progress
  const h=ui({cloud:true});h.ctx.navigator.onLine=false;
  const row=h.page.querySelector('[data-word-link]'),star=row.querySelector('[data-action="favorite"]');star.focus();
  const saving=h.run('setWordFavorite(WORDS[0].id)');h.run('refreshWordUI();refreshWordUI()');
- assert.equal(star.textContent,'☆');assert.equal(h.document.activeElement,star);assert.match(h.page.querySelector('.save-status').textContent,/подключении к интернету/);assert.equal(h.calls.length,1);
- assert.doesNotMatch(h.page.querySelector('.save-status').textContent,/RPC|IndexedDB|ревизи|очеред/);h.ack();await saving;assert.equal(star.textContent,'☆');
+ favoriteState(star,false);assert.equal(h.document.activeElement,star);assert.match(h.page.querySelector('.save-status').textContent,/подключении к интернету/);assert.equal(h.calls.length,1);
+ assert.doesNotMatch(h.page.querySelector('.save-status').textContent,/RPC|IndexedDB|ревизи|очеред/);h.ack();await saving;favoriteState(star,false);
 });
 domTest('a newer snapshot cancels a retiring card instead of removing the restored favorite',async()=>{
  const h=ui({scope:'favorites'});h.run('state.favorites=WORDS.slice(0,3).map(w=>w.id)');h.mount();h.ctx.matchMedia=()=>({matches:false});
@@ -88,14 +100,14 @@ domTest('cloud unmark waits for a confirmed snapshot and excludes fast repeated 
  const h=ui({cloud:true,scope:'learned'});h.run('state.known=WORDS.slice(0,3).map(w=>w.id);state.xp=24');h.mount();
  const rows=[...h.page.querySelectorAll('[data-word-link]')],btn=rows[1].querySelector('[data-action="mark-known"]'),search=h.document.querySelector('#dict-search');btn.focus();
  h.ctx.targetId=btn.dataset.id;const saving=h.run("action({dataset:{action:'mark-known',id:targetId}})");await h.run("action({dataset:{action:'mark-known',id:targetId}})");
- assert.equal(h.calls.length,1);assert.equal(h.calls[0].type,'unmark_known');assert.equal(btn.textContent,'✓ Знаю');assert.equal(btn.getAttribute('aria-busy'),'true');assert.equal(h.document.activeElement,btn);assert.equal(rows[1].isConnected,true);assert.deepEqual(h.notices,[]);
+ assert.equal(h.calls.length,1);assert.equal(h.calls[0].type,'unmark_known');selectedKnown(btn);assert.equal(btn.getAttribute('aria-busy'),'true');assert.equal(h.document.activeElement,btn);assert.equal(rows[1].isConnected,true);assert.deepEqual(h.notices,[]);
  h.run('state.known=state.known.filter(id=>id!==targetId);refreshWordUI(true)');h.ack();await saving;
  assert.equal(rows[1].isConnected,false);assert.equal(rows[0].isConnected,true);assert.equal(rows[2].isConnected,true);assert.equal(h.document.activeElement,rows[2]);assert.equal(h.document.querySelector('#dict-search'),search);assert.equal(h.run('state.xp'),24);
 });
 domTest('all learned words are visible together with photos, names, translations and detail links',()=>{
  const h=ui({scope:'learned'});h.ctx.moreWords=JSON.parse(fs.readFileSync(path.join(root,'words.json'),'utf8')).slice(0,70);h.run('WORDS=moreWords;state.known=WORDS.map(w=>w.id)');h.mount();
  const rows=[...h.page.querySelectorAll('[data-word-link]')];assert.equal(rows.length,70);assert.equal(h.page.querySelector('[data-action="dict-more"]'),null);assert.equal(h.page.querySelector('[data-action="show-learned"]').classList.contains('active'),true);
- for(const row of rows){assert.ok(row.querySelector('.word-info strong').textContent);assert.ok(row.querySelector('.word-info small').textContent);assert.ok(row.querySelector('img.word-list-photo').getAttribute('src').startsWith('./assets/flashcards/'));assert.equal(row.querySelector('[data-action="mark-known"]').textContent,'✓ Знаю');assert.ok(row.querySelector('[data-nav="word"]'))}
+ for(const row of rows){assert.ok(row.querySelector('.word-info strong').textContent);assert.ok(row.querySelector('.word-info small').textContent);assert.ok(row.querySelector('img.word-list-photo').getAttribute('src').startsWith('./assets/flashcards/'));selectedKnown(row.querySelector('[data-action="mark-known"]'));assert.ok(row.querySelector('[data-nav="word"]'))}
 });
 domTest('learned counter opens the dictionary list and restores its filters, scroll and focus on return',async()=>{
  const h=ui();h.ctx.scrolled=[];h.ctx.scrollTo=options=>{h.ctx.scrolled.push(options.top);h.ctx.scrollY=options.top};h.run('render=()=>{document.querySelector("#page").innerHTML=route==="dictionary"?renderDictionary():route==="word"?renderWord():"<div class=\\"flash-control-row\\"></div>";renderProgressUX()};state.known=WORDS.map(w=>w.id);route="flashcards";flash.ids=WORDS.map(w=>w.id)');h.run('render()');
@@ -106,24 +118,24 @@ domTest('learned counter opens the dictionary list and restores its filters, scr
  await h.run("action({dataset:{nav:'dictionary',param:'learned'}})");assert.equal(h.ctx.scrolled.at(-1),340);assert.equal(h.run('dictFilter.text'),'ar');assert.equal(h.run('dictFilter.group'),'1');assert.equal(h.run('dictFilter.category'),'Глаголы');assert.equal(h.document.activeElement.dataset.wordLink,h.ctx.targetId);assert.equal(h.document.activeElement.focusOptions.preventScroll,true);
  const before=h.page.querySelector('#dict-search');await h.run("action({dataset:{action:'show-learned'}})");assert.equal(h.page.querySelector('#dict-search'),before);assert.equal(h.ctx.scrolled.at(-1),340);
 });
-domTest('manual reviews unavailable before migration cannot mutate progress or open an exercise',async()=>{
+domTest('learned word keeps manual review disabled even when the review service is unavailable',async()=>{
  const h=ui({cloud:true,capable:false});h.run("route='word';routeParam=WORDS[0].id;state.known=[WORDS[0].id]");h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
- const review=h.page.querySelector('[data-action="mark-review"]');assert.equal(review.hidden,false);assert.equal(review.textContent,' Повторить');
+ const review=h.page.querySelector('[data-action="mark-review"]');assert.equal(review.hidden,false);assert.equal(review.textContent,'✓ Изучено');assert.equal(review.disabled,true);
  await h.run("action({dataset:{action:'mark-review',id:WORDS[0].id}})");assert.equal(h.run('route'),'word');assert.equal(h.calls.length,0);assert.equal(h.run('state.known.length'),1);assert.equal(h.notices.length,1);
  assert.doesNotMatch(h.run('renderWordReview()'),/word-recall/);
 });
 domTest('offline supported toggle keeps the selected label, focus and filters while awaiting the server',async()=>{
  const h=ui({cloud:true});h.ctx.navigator.onLine=false;h.run('state.known=[WORDS[0].id]');h.mount();const btn=h.page.querySelector('[data-action="mark-known"]');btn.focus();const search=h.page.querySelector('#dict-search');
- const saving=h.run('unlearnWord(WORDS[0].id)');h.run('refreshWordUI();refreshWordUI()');assert.equal(btn.textContent,'✓ Знаю');assert.equal(btn.getAttribute('aria-pressed'),'true');assert.equal(h.document.activeElement,btn);assert.equal(h.page.querySelector('#dict-search'),search);assert.equal(h.calls.length,1);assert.deepEqual(h.notices,[]);h.ack();await saving;
+ const saving=h.run('unlearnWord(WORDS[0].id)');h.run('refreshWordUI();refreshWordUI()');selectedKnown(btn);assert.equal(btn.getAttribute('aria-pressed'),'true');assert.equal(h.document.activeElement,btn);assert.equal(h.page.querySelector('#dict-search'),search);assert.equal(h.calls.length,1);assert.deepEqual(h.notices,[]);h.ack();await saving;
 });
 domTest('programmatic hash navigation renders once; browser Back restores the learned collection',()=>{
  const h=ui({scope:'learned'});h.ctx.renderCount=0;h.ctx.scrollTo=options=>h.ctx.scrollY=options.top;h.run('state.known=WORDS.map(w=>w.id);render=()=>{renderCount++;document.querySelector("#page").innerHTML=route==="dictionary"?renderDictionary():renderWord();renderProgressUX()};bindEvents()');h.mount();h.ctx.scrollY=275;
  h.run("navigate('word',WORDS[0].id)");assert.equal(h.ctx.renderCount,1);h.handlers.hashchange();assert.equal(h.ctx.renderCount,1,'native hashchange must not replace a freshly rendered page');
  h.ctx.location.hash='#dictionary/learned';h.handlers.hashchange();assert.equal(h.run("route+'|'+routeParam"),'dictionary|learned');assert.equal(h.ctx.scrollY,275);assert.equal(h.ctx.renderCount,2);
 });
-domTest('supported repeated practice leaves the selected learning toggle intact',()=>{
+domTest('learned word cannot re-enter manual reviews until its learned mark is removed',()=>{
  const h=ui({cloud:true});h.run('route="word";routeParam=WORDS[0].id;state.known=[WORDS[0].id]');h.page.innerHTML=h.run('renderWord()');h.run('renderProgressUX()');
- const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,false);assert.equal(review.textContent.includes(' Повторить'),true);assert.equal(h.calls.length,0);
+ const known=h.page.querySelector('[data-action="mark-known"]'),review=h.page.querySelector('[data-action="mark-review"]');assert.equal(known.textContent,'✓ Знаю');assert.equal(review.hidden,false);assert.equal(review.disabled,true);assert.equal(review.textContent,'✓ Изучено');assert.equal(h.calls.length,0);
 });
 
 async function withManualQueue(){
@@ -147,8 +159,8 @@ domTest('manual add preserves dictionary search, filters, focus and nodes; ACK e
  const search=h.page.querySelector('#dict-search'),row=h.page.querySelector('[data-word-link]'),btn=row.querySelector('[data-action="mark-review"]');btn.focus();
  const before=h.run('JSON.stringify(state)'),filters=h.run('JSON.stringify(dictFilter)');h.ctx.targetId=btn.dataset.id;let release;h.hold(new Promise(r=>release=r));
  const first=h.run("action({dataset:{action:'mark-review',id:targetId}})");await h.run("action({dataset:{action:'mark-review',id:targetId}})");
- assert.equal(btn.textContent,' Повторить');assert.equal(btn.disabled,true);assert.equal(h.run('manualReviewIds().length'),0);
- release();await first;assert.equal(btn.textContent,' Повторить');assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.getAttribute('aria-pressed'),'true');assert.equal(h.run('route'),'dictionary');assert.equal(h.run('JSON.stringify(state)'),before);assert.equal(h.run('JSON.stringify(dictFilter)'),filters);assert.equal(h.page.querySelector('#dict-search'),search);assert.equal(h.page.querySelector('[data-word-link]'),row);assert.equal(h.document.activeElement,btn);
+ assert.equal(btn.querySelector('.word-control-label').textContent,'Повторить');assert.ok(btn.querySelector('.word-control-icon'));assert.equal(btn.disabled,true);assert.equal(h.run('manualReviewIds().length'),0);
+ release();await first;assert.equal(btn.querySelector('.word-control-label').textContent,'Повторить');assert.ok(btn.querySelector('.word-control-icon'));assert.equal(btn.classList.contains('is-queued'),true);assert.equal(btn.getAttribute('aria-pressed'),'true');assert.equal(h.run('route'),'dictionary');assert.equal(h.run('JSON.stringify(state)'),before);assert.equal(h.run('JSON.stringify(dictFilter)'),filters);assert.equal(h.page.querySelector('#dict-search'),search);assert.equal(h.page.querySelector('[data-word-link]'),row);assert.equal(h.document.activeElement,btn);
  h.run("route='reviews'");h.page.innerHTML=h.run('renderReviews()');assert.equal(h.page.querySelectorAll('[data-review-id]').length,1);assert.match(h.page.querySelector('[data-review-count]').textContent,/1/);assert.ok(h.page.querySelector('.word-info small').textContent);assert.ok(h.page.querySelector('img.word-list-photo'));assert.ok(h.page.querySelector('[data-nav="word-review"]'));
 });
 domTest('recall requires reveal; remember removes word from the list after ACK, again keeps it',async()=>{
@@ -263,7 +275,7 @@ domTest('dictionary numeric counters depend on loaded data, never on cloud write
  assert.match(h.page.querySelector('.vocab-counter').textContent,/Не удалось/);assert.match(h.page.querySelector('.empty-state').textContent,/Не удалось/);
  h.run("routeParam=''");h.mount();assert.equal(h.page.querySelector('.vocab-counter').textContent,'Показано 12 из 12');
 });
-domTest('search has a small clear control and filter reset appears only in filtered empty state',async()=>{
+domTest('search has a small clear control and filtered empty states offer a reset',async()=>{
  const h=ui();h.mount();assert.ok(h.page.querySelector('.dict-search-clear').hasAttribute('hidden'));assert.equal(h.page.querySelector('[data-action="dict-reset"]'),null);
  h.run("dictFilter.text='not-a-real-word'");h.mount();
  assert.equal(h.page.querySelector('.dict-search-clear').hasAttribute('hidden'),false);assert.match(h.page.querySelector('.empty-state').textContent,/Очистить фильтры/);
@@ -272,4 +284,33 @@ domTest('search has a small clear control and filter reset appears only in filte
  assert.equal(h.run('dictFilter.text'),'');assert.equal(h.page.querySelector('[data-action="dict-reset"]'),null);assert.equal(h.document.activeElement.id,'dict-search');
  h.run("dictFilter.kind='noun';dictFilter.group='4';dictFilter.category='unknown'");h.mount();await h.run("action({dataset:{action:'dict-reset'}})");
  assert.equal(h.run("dictFilter.kind+'|'+dictFilter.group+'|'+dictFilter.category"),'all|all|all');
+});
+
+domTest('dictionary explains its collections and shows conjugation groups only for verbs in every locale',()=>{
+ const h=ui();
+ for(const language of ['ru','en','sv','uk']){
+  h.run(`state.settings.language=${JSON.stringify(language)};routeParam='';resetDictionaryFilters()`);h.mount();
+  assert.equal(h.page.querySelectorAll('.dictionary-heading').length,1);
+  assert.equal(h.page.querySelectorAll('.dictionary-scope button').length,3);
+  for(const id of ['dict-search','dict-category','dict-kind','dict-group'])assert.ok(h.page.querySelector(`label[for="${id}"]`).textContent.trim());
+  assert.equal(h.page.querySelector('.dictionary-verb-group').hasAttribute('hidden'),true);
+  assert.equal(h.page.querySelector('#dict-group').disabled,true);
+  assert.equal(h.page.querySelector('.dictionary-resources').hasAttribute('open'),false);
+  assert.equal(h.page.querySelectorAll('.dictionary-resource-links [data-nav]').length,3);
+  const ordinaryHint=h.page.querySelector('#dictionary-scope-hint').textContent;
+  h.run("routeParam='favorites'");h.mount();
+  assert.notEqual(h.page.querySelector('#dictionary-scope-hint').textContent,ordinaryHint);
+  assert.equal(h.page.querySelector('[data-fav="true"]').getAttribute('aria-pressed'),'true');
+  h.run("routeParam='learned'");h.mount();
+  assert.equal(h.page.querySelector('[data-action="show-learned"]').getAttribute('aria-pressed'),'true');
+  assert.equal(h.page.querySelectorAll('.section-head').length,0,'No duplicate learned heading');
+  h.run("routeParam='';dictFilter.kind='verb'");h.mount();
+  assert.equal(h.page.querySelector('.dictionary-verb-group').hasAttribute('hidden'),false);
+  assert.equal(h.page.querySelector('#dict-group').disabled,false);
+  assert.ok(h.page.querySelector('#dictionary-group-hint').textContent.trim());
+  assert.equal(h.page.querySelectorAll('[data-action="dict-reset"]').length,1);
+  h.run("dictFilter.kind='noun';dictFilter.group='4'");h.mount();
+  assert.equal(h.run('dictFilter.group'),'all','A hidden group cannot keep filtering nouns');
+  assert.equal(h.page.querySelector('.dictionary-verb-group').hasAttribute('hidden'),true);
+ }
 });

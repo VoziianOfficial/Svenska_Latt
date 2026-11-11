@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-10-19-videos-1';
+ const moduleVersion='2026-11-09-mobile-qa-1';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -132,13 +132,15 @@
  }
  function database(){
   if(!dbPromise)dbPromise=new Promise((resolve,reject)=>{
+   let blocked=false;
    const req=indexedDB.open('sv-cloud-events-v1',1);
    req.onupgradeneeded=()=>{
     const db=req.result;
     db.createObjectStore('events',{keyPath:'sequence',autoIncrement:true});
     db.createObjectStore('baselines',{keyPath:'userId'});
    };
-   req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(fail('QUEUE_STORAGE_UNAVAILABLE'));
+   req.onblocked=()=>{blocked=true;reject(fail('QUEUE_STORAGE_BLOCKED'))};
+   req.onsuccess=()=>{if(blocked){req.result.close();return}resolve(req.result)};req.onerror=()=>reject(fail('QUEUE_STORAGE_UNAVAILABLE'));
   }).catch(e=>{dbPromise=null;throw e});
   return dbPromise;
  }

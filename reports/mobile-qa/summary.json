@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Europe/Stockholm",
+  "published_site": "https://voziianofficial.github.io/Svenska_Latt/",
+  "node": {
+    "passed": 220,
+    "failed": 0,
+    "skipped": 0,
+    "browser_script_excluded": "tests/premium-buttons-browser.cjs"
+  },
+  "http_server": {
+    "passed": 11
+  },
+  "supabase_http": {
+    "auth_health": 200,
+    "guest_progress_read": {
+      "status": 401,
+      "code": "42501",
+      "expected_denial": true
+    },
+    "authenticated_tested": false,
+    "remote_sql_applied": false
+  },
+  "published_app_sha256": "b9a4dc2ed48fbd2678c1b0188343a0d8265fb4ecbdc31f5c39dfdd32e3bfcd94",
+  "local_app_sha256": "6694d30b2027e47c2a3a3dd53e358d3060eaab3efacbb384e25ca6e31e078098",
+  "sw_release": "2026-11-09-mobile-qa-001",
+  "browser_visual_verified": false,
+  "real_iphone_verified": false,
+  "deployment_performed": false,
+  "user_iphone_root_cause_confirmed": false,
+  "sql": {
+    "assertions_passed": 1644,
+    "concurrency_scenarios_passed": 21,
+    "isolated_local_postgresql": true,
+    "cluster_stopped": true,
+    "late_migrations_015_017": "PASS",
+    "read_only_diagnostics": "PASS"
+  },
+  "build": {
+    "status": "PASS",
+    "cards_with_http_200_image_webp": 1006,
+    "release_files_hash_verified": 1510,
+    "existing_asset_hashes_preserved": 1371,
+    "attribution_entries": 1006,
+    "browser_visual_check": "not performed by this HTTP verifier",
+    "release": "4c4e5cd61369312f"
+  }
+}

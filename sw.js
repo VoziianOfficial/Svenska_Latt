@@ -1,6 +1,6 @@
 /* Change RELEASE for a manual release. scripts/build_deploy.py derives it from
    the complete deployment content, so each changed publication gets new caches. */
-const RELEASE = '2026-11-09-home-illustrations-001';
+const RELEASE = '2026-11-10-word-pages-005';
 const APP_CACHE = `svenska-latt-${RELEASE}-shell`;
 const PHOTO_CACHE = `svenska-latt-${RELEASE}-photos`;
 const PHOTO_LIMIT = 150;
@@ -48,9 +48,10 @@ self.addEventListener('fetch', event => {
    // public shell resources may enter this cache; API and arbitrary files bypass it.
    url.search = ''; url.hash = '';
    const iconRoot = new URL('./assets/word-icons/', self.registration.scope).pathname;
+   const wordArtRoot = new URL('./assets/word-art/', self.registration.scope).pathname;
    const avatarRoot = new URL('./assets/avatars/', self.registration.scope).pathname;
    const staticImage = request.destination === 'image' &&
-      ((url.pathname.startsWith(iconRoot) && url.pathname.endsWith('.webp')) ||
+      (((url.pathname.startsWith(iconRoot) || url.pathname.startsWith(wordArtRoot)) && url.pathname.endsWith('.webp')) ||
          (url.pathname.startsWith(avatarRoot) && /\.(png|jpe?g|webp)$/.test(url.pathname)));
    if (!SHELL_URLS.has(url.href) && !staticImage) return;
 
