@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "resources": {
+    "/alphabet-lesson.js?v=1": "text/javascript",
+    "/alphabet-lesson.css?v=1": "text/css",
+    "/lessons.json": "application/json",
+    "/index.html": "text/html"
+  },
+  "databaseAccess": false,
+  "authAccess": false
+}

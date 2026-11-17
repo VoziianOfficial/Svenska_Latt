@@ -1,0 +1,111 @@
+{
+  "hej": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=hej",
+    "pronunciations": [
+      "hej:"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "hejsan": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=hejsan",
+    "pronunciations": [
+      "h'ej:san"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "godmorgon": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=godmorgon",
+    "pronunciations": [],
+    "found": true,
+    "status": "meaning-only; no pronunciation returned"
+  },
+  "goddag": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=goddag",
+    "pronunciations": [
+      "god'a:(g)"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "godkväll": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=godkv%C3%A4ll",
+    "pronunciations": [],
+    "found": false,
+    "status": "meaning-only; no pronunciation returned"
+  },
+  "tjena": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=tjena",
+    "pronunciations": [],
+    "found": true,
+    "status": "meaning-only; no pronunciation returned"
+  },
+  "hallå": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=hall%C3%A5",
+    "pronunciations": [
+      "hal'å:"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "godnatt": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=godnatt",
+    "pronunciations": [],
+    "found": true,
+    "status": "meaning-only; no pronunciation returned"
+  },
+  "heta": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=heta",
+    "pronunciations": [
+      "he:t",
+      "h'e:ter",
+      "h'e:ter"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "må": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=m%C3%A5",
+    "pronunciations": [
+      "må:",
+      "må:",
+      "må:",
+      "må:",
+      "må:r"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "träffas": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=tr%C3%A4ffas",
+    "pronunciations": [
+      "²tr'ef:as",
+      "²tr'ef:as"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "detsamma": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=detsamma",
+    "pronunciations": [
+      "de(:t)s'am:a"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "höras": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=h%C3%B6ras",
+    "pronunciations": [
+      "hö:r_s"
+    ],
+    "found": true,
+    "status": "checked-html"
+  },
+  "ses": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=ses",
+    "pronunciations": [],
+    "found": true,
+    "status": "meaning-only; no pronunciation returned"
+  }
+}

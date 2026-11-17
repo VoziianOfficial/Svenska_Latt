@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-16",
+  "browser": "Chrome/157.0.8103.78",
+  "layouts": 20,
+  "widths": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "languages": [
+    "ru",
+    "uk",
+    "en",
+    "sv"
+  ],
+  "checks": [
+    "29 letters and vowel/consonant filters",
+    "Icon-only letter controls in four languages",
+    "Playback icon toggle, conditional Stop audio, stop/end reset and letter rates",
+    "28 localized choice tasks and 4 dictations",
+    "Delegated submit/edit and escaped in-memory writing drafts",
+    "Model revelation disables listening score",
+    "Historical 13/13 result and XP preserved",
+    "No page overflow, clipped controls or targets below 44px",
+    "Desktop/mobile chapter, alphabet, K/G/SK, quantity, reading and practice screenshots"
+  ],
+  "exceptions": [],
+  "localFailures": [],
+  "limits": [
+    "No production Supabase or SQL connection.",
+    "TTS event sequencing and no-voice behavior are tested separately with mocks; acoustic quality requires device listening."
+  ]
+}

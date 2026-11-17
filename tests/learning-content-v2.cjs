@@ -7,7 +7,7 @@ assert.equal(validate(lessons).pilots[0].questions,20);
 for(const l of lessons){
  const old=baseline.modules[l.level].find(x=>x.id===l.id);assert(old,'Unplanned new lesson ID');
  assert.equal(sha(l.questions),old.questionsSha256,l.id+': legacy question content/order changed');
- if(l.id!=='lesson-4')assert.equal(sha(l),old.lessonSha256,l.id+': unrelated lesson changed');
+ if(!['lesson-1','lesson-2','lesson-4'].includes(l.id))assert.equal(sha(l),old.lessonSha256,l.id+': unrelated lesson changed');
 }
 // The validator must reject bad data rather than merely counting the happy path.
 function rejects(mutate,pattern){const copy=structuredClone(lessons);mutate(copy[3].learningV2,copy);assert.throws(()=>validate(copy),pattern)}

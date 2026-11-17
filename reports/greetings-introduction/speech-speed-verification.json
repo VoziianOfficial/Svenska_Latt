@@ -1,0 +1,250 @@
+{
+  "date": "2026-11-17",
+  "wiring": [
+    {
+      "language": "ru",
+      "lesson": "lesson-1",
+      "rate": 1,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "ru",
+      "lesson": "lesson-1",
+      "rate": 0.55,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "ru",
+      "lesson": "lesson-2",
+      "rate": 1,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "ru",
+      "lesson": "lesson-2",
+      "rate": 0.55,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "uk",
+      "lesson": "lesson-1",
+      "rate": 1,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "uk",
+      "lesson": "lesson-1",
+      "rate": 0.55,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "uk",
+      "lesson": "lesson-2",
+      "rate": 1,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "uk",
+      "lesson": "lesson-2",
+      "rate": 0.55,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "en",
+      "lesson": "lesson-1",
+      "rate": 1,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "en",
+      "lesson": "lesson-1",
+      "rate": 0.55,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "en",
+      "lesson": "lesson-2",
+      "rate": 1,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "en",
+      "lesson": "lesson-2",
+      "rate": 0.55,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "sv",
+      "lesson": "lesson-1",
+      "rate": 1,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "sv",
+      "lesson": "lesson-1",
+      "rate": 0.55,
+      "tokens": 146,
+      "segments": 161,
+      "progressUnchanged": true
+    },
+    {
+      "language": "sv",
+      "lesson": "lesson-2",
+      "rate": 1,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    },
+    {
+      "language": "sv",
+      "lesson": "lesson-2",
+      "rate": 0.55,
+      "tokens": 112,
+      "segments": 149,
+      "progressUnchanged": true
+    }
+  ],
+  "shared": [
+    {
+      "language": "ru",
+      "speed": "normal",
+      "rate": 1,
+      "segments": 1,
+      "saved": "normal"
+    },
+    {
+      "language": "ru",
+      "speed": "slow",
+      "rate": 0.55,
+      "segments": 1,
+      "saved": "slow"
+    },
+    {
+      "language": "ru",
+      "speed": "verySlow",
+      "rate": 0.4,
+      "segments": 1,
+      "saved": "verySlow"
+    },
+    {
+      "language": "uk",
+      "speed": "normal",
+      "rate": 1,
+      "segments": 1,
+      "saved": "normal"
+    },
+    {
+      "language": "uk",
+      "speed": "slow",
+      "rate": 0.55,
+      "segments": 1,
+      "saved": "slow"
+    },
+    {
+      "language": "uk",
+      "speed": "verySlow",
+      "rate": 0.4,
+      "segments": 1,
+      "saved": "verySlow"
+    },
+    {
+      "language": "en",
+      "speed": "normal",
+      "rate": 1,
+      "segments": 1,
+      "saved": "normal"
+    },
+    {
+      "language": "en",
+      "speed": "slow",
+      "rate": 0.55,
+      "segments": 1,
+      "saved": "slow"
+    },
+    {
+      "language": "en",
+      "speed": "verySlow",
+      "rate": 0.4,
+      "segments": 1,
+      "saved": "verySlow"
+    },
+    {
+      "language": "sv",
+      "speed": "normal",
+      "rate": 1,
+      "segments": 1,
+      "saved": "normal"
+    },
+    {
+      "language": "sv",
+      "speed": "slow",
+      "rate": 0.55,
+      "segments": 1,
+      "saved": "slow"
+    },
+    {
+      "language": "sv",
+      "speed": "verySlow",
+      "rate": 0.4,
+      "segments": 1,
+      "saved": "verySlow"
+    }
+  ],
+  "native": {
+    "voice": {
+      "name": "Алва",
+      "lang": "sv-SE",
+      "localService": true
+    },
+    "samples": [
+      {
+        "rate": 1,
+        "milliseconds": 6147
+      },
+      {
+        "rate": 0.550000011920929,
+        "milliseconds": 8000
+      },
+      {
+        "rate": 1,
+        "milliseconds": 6162
+      },
+      {
+        "rate": 0.550000011920929,
+        "milliseconds": 8000
+      }
+    ],
+    "slowToNormalRatio": 1.3
+  },
+  "errors": [],
+  "limits": [
+    "Native measurement uses muted speech events, not an acoustic pronunciation review.",
+    "No production publishing or SQL execution."
+  ]
+}

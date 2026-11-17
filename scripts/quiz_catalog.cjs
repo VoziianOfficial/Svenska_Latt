@@ -7,7 +7,7 @@ function catalog(){
  vm.runInContext(read('app.js').replace(/\nboot\(\);/g,''),context);
  vm.runInContext(`WORDS=${read('words.json')};LESSONS=${read('lessons.json')};BOOKS=${read('books.json')};state=defaultState()`,context);
  return JSON.parse(vm.runInContext(`JSON.stringify(Object.fromEntries([
- ...LESSONS.map(l=>['lesson:'+l.id,{count:l.questions.length,reward:35,questions:Object.fromEntries(l.questions.map((q,i)=>['q'+i,{answer:q.answer}]))}]),
+ ...LESSONS.map(l=>{const f=(l.pronunciationChapter||l.greetingsChapter)?.finalTest;return ['lesson:'+l.id,{count:f?f.questions.length:l.questions.length,reward:35,...(f?{start_questions:f.questions.map(q=>({question_id:q.id}))}:{}),questions:{...Object.fromEntries(l.questions.map((q,i)=>['q'+i,{answer:q.answer}])),...(f?Object.fromEntries(f.questions.map(q=>[q.id,{answer:q.answerId}])):{})}}]}),
  ...BOOKS.map(l=>['book:'+l.id,{count:l.questions.length,reward:35,questions:Object.fromEntries(l.questions.map((q,i)=>['q'+i,{answer:q.answer}]))}]),
  ...topicNames3().map(id=>{const words=topicWordsPlus(id);return ['topic:'+id,{count:Math.min(20,words.length),reward:35,questions:Object.fromEntries(words.map(w=>[w.id,{answer:w.ru,word_id:w.id}]))}]}),
  ...MORE_VIDEOS.filter(v=>v.question).map(v=>['video:'+v.id,{count:v.questions.length,reward:12,...(VIDEO_QUIZ_BANK[v.id].legacyQuestions?{start_questions:v.questions.map(q=>({question_id:q.id}))}:{}),questions:{...VIDEO_QUIZ_BANK[v.id].legacyQuestions,...Object.fromEntries(v.questions.map(q=>[q.id,{answer:q.answer}]))}}])

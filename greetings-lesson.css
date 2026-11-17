@@ -1,0 +1,120 @@
+/* lesson-2 only: warm surfaces and sage accents from the existing site. */
+#page .greetings-lesson {--greet-ink:#3c5144;--greet-muted:#667265;--greet-paper:#fffaf2;--greet-edge:#dddccd;--greet-sage:#e9eee2;min-width:0;max-width:100%}
+#page .greetings-lesson :is(p,li,td,dd,label,legend) {line-height:1.75}
+#page .greetings-lesson :is(p,h2,h3,h4,td,th,span,label,legend) {overflow-wrap:anywhere}
+#page .greetings-lesson :is(h2,h3,h4) {color:var(--greet-ink);text-wrap:balance}
+#page .greetings-lesson h3 {font-size:20px;margin-bottom:12px}
+#page .greetings-lesson h4 {font-size:16px;margin:0 0 12px}
+#page .greetings-lesson :is(.greet-toc,.greet-audio-tools,.greet-section) {border:1px solid var(--greet-edge);border-radius:20px;background:var(--greet-paper);margin:0 0 18px;min-width:0}
+#page .greetings-lesson :is(.greet-toc,.greet-audio-tools) {padding:22px}
+#page .greetings-lesson .greet-toc h2 {font-size:22px}
+#page .greetings-lesson .greet-toc ol {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 16px;margin:0;padding:0;list-style:none;counter-reset:greet-guide}
+#page .greetings-lesson .greet-toc li {display:flex;align-items:center;gap:8px;counter-increment:greet-guide;min-width:0}
+#page .greetings-lesson .greet-toc li::before {content:counter(greet-guide) ".";flex:0 0 2ch;text-align:right;color:var(--greet-muted);font-size:13px}
+#page .greetings-lesson .greet-toc .btn {flex:1;min-width:0;text-align:left;justify-content:flex-start;--control-height:44px;--control-size:13px;--control-padding:8px}
+#page .greetings-lesson .greet-goals {padding:20px!important}
+#page .greetings-lesson .greet-goals h2 {margin-bottom:14px}
+#page .greetings-lesson .greet-goals ul {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;list-style:none;margin:0;padding:0}
+#page .greetings-lesson .greet-goals li {position:relative;padding-left:18px;font-size:14px}
+#page .greetings-lesson .greet-goals li::before {content:'•';position:absolute;left:0;color:var(--greet-ink)}
+#page .greetings-lesson .greet-audio-tools {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px 24px;padding:16px 18px;background:var(--greet-sage)}
+#page .greetings-lesson .greet-audio-copy {min-width:0}
+#page .greetings-lesson .greet-audio-copy h3 {margin:0 0 4px;font-size:18px}
+#page .greetings-lesson .greet-audio-tools p {font-size:13px;color:var(--greet-muted);margin:0}
+#page .greetings-lesson .greet-audio-controls {display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;justify-content:flex-end}
+#page .greetings-lesson .greet-speed {display:grid;grid-template-columns:auto 132px;align-items:center;gap:8px;margin:0;font-size:12px;font-weight:650;color:var(--greet-ink);line-height:1.4}
+#page .greetings-lesson .greet-speed>:is(select,button.custom-select) {--control-height:44px;--control-padding:8px 30px 8px 10px;--control-radius:11px;--control-size:12px;width:132px!important;min-width:0;max-width:100%;height:44px!important;min-height:44px!important;padding:8px 30px 8px 10px!important;font-size:12px!important;box-shadow:none!important}
+#page .greetings-lesson .greet-speed .custom-select::after {right:12px;border-color:var(--greet-ink)}
+#page .greetings-lesson [data-greet-audio-status]:empty {display:none}
+#page .greetings-lesson [data-greet-audio-status]:not(:empty) {grid-column:1/-1;margin:0;font-weight:650}
+#page .greetings-lesson :is(.greet-section,.greet-rule,.greet-final) {scroll-margin-top:135px}
+#page .greetings-lesson .greet-section>summary {display:flex;justify-content:space-between;gap:20px;align-items:center;min-height:70px;padding:20px 24px;list-style:none;cursor:pointer;font-size:21px;font-weight:750;color:var(--greet-ink)}
+#page .greetings-lesson .greet-section>summary::-webkit-details-marker {display:none}
+#page .greetings-lesson .greet-section>summary::after {content:'+';font-size:24px;font-weight:400;color:var(--greet-muted);flex-shrink:0}
+#page .greetings-lesson .greet-section[open]>summary {border-bottom:1px solid var(--greet-edge)}
+#page .greetings-lesson .greet-section[open]>summary::after {content:'−'}
+#page .greetings-lesson .greet-section-body {padding:24px;min-width:0}
+#page .greetings-lesson .greet-rule {margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--greet-edge)}
+#page .greetings-lesson .greet-rule>p {font-size:15px;max-width:84ch}
+#page .greetings-lesson .greet-examples {display:grid;align-items:start;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+#page .greetings-lesson .greet-examples>div {display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:start;gap:8px;padding:12px;border:1px solid var(--greet-edge);border-radius:14px;background:#f5f3e9}
+#page .greetings-lesson .greet-example-copy {min-width:0}
+#page .greetings-lesson .greet-examples p {margin:0}
+#page .greetings-lesson .greet-examples .greet-translation {margin-top:4px}
+#page .greetings-lesson .greet-examples>div>[data-greet-audio] {align-self:start;justify-self:end}
+#page .greetings-lesson [lang=sv] {font-weight:550}
+#page .greetings-lesson .greet-translation {color:var(--greet-muted);font-size:13px;font-weight:400}
+#page .greetings-lesson .greet-references {font-size:12px;color:var(--greet-muted)}
+#page .greetings-lesson :is(.greet-references,.greet-answer-details,.greet-history)>summary {cursor:pointer;min-height:44px;padding-block:10px;line-height:1.6}
+#page .greetings-lesson a {color:var(--greet-ink);text-underline-offset:3px}
+#page .greetings-lesson .greet-table-hint {font-size:12px;color:var(--greet-muted);margin-bottom:10px}
+#page .greetings-lesson .greet-table-scroll {max-width:100%;width:100%;overflow:auto;overscroll-behavior-inline:contain;border:1px solid var(--greet-edge);border-radius:14px;margin:0 0 28px}
+#page .greetings-lesson caption.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+#page .greetings-lesson table {width:100%;min-width:640px;border-collapse:separate;border-spacing:0;margin:0;font-size:14px}
+#page .greetings-lesson :is(th,td) {padding:14px 16px;vertical-align:top;text-align:left;background:var(--greet-paper);border-bottom:1px solid var(--greet-edge);min-width:145px}
+#page .greetings-lesson th {font-weight:650}
+#page .greetings-lesson thead th {background:var(--greet-sage);color:var(--greet-ink)}
+#page .greetings-lesson th:first-child {position:sticky;left:0;z-index:1;box-shadow:1px 0 var(--greet-edge);max-width:220px}
+#page .greetings-lesson thead th:first-child {z-index:2}
+#page .greetings-lesson tr:last-child :is(th,td) {border-bottom:0}
+#page .greetings-lesson .greet-audio-icon {width:44px;height:44px;min-width:44px;--control-padding:0;--control-height:44px;justify-content:center;gap:0;flex-shrink:0}
+#page .greetings-lesson [data-greet-audio] svg,#page .greetings-lesson [data-greet-stop] svg {width:20px;height:20px;flex-shrink:0}
+#page .greetings-lesson th:has(.greet-phrase) {min-width:220px}
+#page .greetings-lesson .greet-phrase {display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:start;gap:8px}
+#page .greetings-lesson .greet-phrase>span {min-width:0;line-height:1.5}
+#page .greetings-lesson .greet-phrase>[data-greet-audio] {align-self:start;justify-self:end;margin:0}
+#page .greetings-lesson [data-greet-audio][aria-pressed=true] {background:var(--greet-sage)!important;border-color:#a4b599!important}
+#page .greetings-lesson .greet-dialogue-head {display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+#page .greetings-lesson .greet-dialogue-head>div {flex:1 1 260px}
+#page .greetings-lesson .greet-dialogue {margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--greet-edge)}
+#page .greetings-lesson .greet-lines {list-style:none;margin:20px 0;padding:0}
+#page .greetings-lesson .greet-lines>li {display:grid;grid-template-columns:70px minmax(0,1fr) 44px;gap:12px;align-items:start;padding:15px 10px;border-bottom:1px solid var(--greet-edge);border-radius:8px}
+#page .greetings-lesson .greet-lines p {margin:0 0 4px}
+#page .greetings-lesson .greet-swedish {font-size:17px;color:var(--greet-ink)}
+#page .greetings-lesson .greet-speaker {font-size:12px;font-weight:750;color:var(--greet-muted);padding-top:4px}
+#page .greetings-lesson .greet-lines .greet-speaking {background:var(--greet-sage)}
+#page .greetings-lesson .greet-reading>li {grid-template-columns:24px minmax(0,1fr) 44px}
+#page .greetings-lesson .greet-vocabulary dl {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-bottom:24px}
+#page .greetings-lesson .greet-vocabulary dl>div {display:grid;grid-template-columns:1fr 1.5fr;gap:12px;border-bottom:1px solid var(--greet-edge);padding:10px 0;font-size:13px}
+#page .greetings-lesson .greet-vocabulary dd {margin:0;color:var(--greet-muted)}
+#page .greetings-lesson :is(.greet-task,.greet-writing) {padding:22px 0;border-top:1px solid var(--greet-edge);min-width:0}
+#page .greetings-lesson .greet-task fieldset {padding:0;border:0;min-width:0;margin:0 0 14px}
+#page .greetings-lesson .greet-task legend,#page .greetings-lesson .greet-task>label {font-size:16px;font-weight:700;line-height:1.6;padding:0;margin:0 0 10px;display:block}
+#page .greetings-lesson .greet-option {display:flex;align-items:flex-start;gap:12px;padding:12px 14px;min-height:48px;border:1px solid var(--greet-edge);background:#f8f6ee;border-radius:10px;margin-top:8px;cursor:pointer}
+#page .greetings-lesson .greet-option input {width:18px;height:18px;flex:0 0 18px;margin:5px 0 0;accent-color:#677c5c}
+#page .greetings-lesson .greet-option:has(input:checked) {background:var(--greet-sage);border-color:#a4b599}
+#page .greetings-lesson :is(.greet-task>input,textarea) {display:block;width:100%;max-width:680px;font:inherit;padding:12px 14px;margin:12px 0;border:1px solid var(--greet-edge);border-radius:10px;background:var(--greet-paper);color:var(--greet-ink)}
+#page .greetings-lesson textarea {min-height:130px;resize:vertical}
+#page .greetings-lesson :is(.greet-built,.greet-tokens,.greet-rule-links) {display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+#page .greetings-lesson .greet-built {min-height:60px;padding:8px;border:1px dashed var(--greet-edge);border-radius:10px}
+#page .greetings-lesson [data-greet-feedback]:not(:empty) {margin-top:14px}
+#page .greetings-lesson .greet-answer-details p {font-size:14px;margin-top:12px}
+#page .greetings-lesson .greet-continue {border-radius:12px;padding:16px;background:var(--greet-sage);margin:20px 0}
+#page .greetings-lesson .greet-model {white-space:pre-wrap;padding:18px;background:var(--greet-sage);border-radius:12px;margin-top:16px;line-height:1.8}
+#page .greetings-lesson .greet-final {margin-top:24px;padding:24px!important}
+#page .greetings-lesson .greet-history {border-top:1px solid var(--greet-edge);margin-top:20px;padding-top:12px}
+#page .greetings-lesson [hidden] {display:none!important}
+#page .greet-final-context p {white-space:pre-line}
+@media(max-width:900px){#page .greetings-lesson .greet-toc ol{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){
+ #page .greetings-lesson .greet-audio-tools{grid-template-columns:minmax(0,1fr);gap:10px}
+ #page .greetings-lesson .greet-audio-controls{justify-content:flex-start}
+}
+@media(max-width:600px){
+ #page .greetings-lesson .greet-goals{padding:16px!important}
+ #page .greetings-lesson .greet-goals ul{grid-template-columns:minmax(0,1fr);gap:8px}
+ #page .greetings-lesson :is(.greet-toc,.greet-audio-tools,.greet-section-body){padding:16px}
+ #page .greetings-lesson .greet-toc ol,#page .greetings-lesson .greet-examples,#page .greetings-lesson .greet-vocabulary dl{grid-template-columns:minmax(0,1fr)}
+ #page .greetings-lesson .greet-section>summary{padding:17px 16px;min-height:66px;font-size:19px}
+ #page .greetings-lesson .greet-lines>li{grid-template-columns:minmax(0,1fr) 44px;gap:6px 10px;padding:12px 0}
+ #page .greetings-lesson .greet-lines .greet-speaker{grid-column:1}
+ #page .greetings-lesson .greet-lines>li>div{grid-column:1}
+ #page .greetings-lesson .greet-lines>li>button{grid-column:2;grid-row:1/3}
+ #page .greetings-lesson .greet-swedish{font-size:16px}
+ #page .greetings-lesson :is(th,td){padding:12px;min-width:130px}
+ #page .greetings-lesson th:has(.greet-phrase){width:160px;min-width:160px;max-width:180px}
+ #page .greetings-lesson :is(.greet-task>input,textarea){font-size:16px}
+ #page .greetings-lesson .greet-final{padding:16px!important}
+ #page .greetings-lesson .greet-final>.split{align-items:flex-start;gap:14px}
+ #page .greetings-lesson .greet-final>.split>button{width:100%}
+}

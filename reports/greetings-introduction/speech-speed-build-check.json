@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "release": "8089686e63284311",
+  "files": 1923,
+  "bytes": 93432703,
+  "hashesVerified": 1923,
+  "runtimeVersions": {
+    "alphabet-lesson.js": "5",
+    "greetings-lesson.js": "3",
+    "app.js": "119",
+    "learning-polish.js": "34"
+  },
+  "contentVersion": "static-1aa3eb8422e2930a",
+  "published": false,
+  "sqlExecuted": false
+}

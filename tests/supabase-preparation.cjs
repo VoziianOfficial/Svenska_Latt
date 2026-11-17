@@ -437,7 +437,7 @@ function writerEnvironment(){
 }
 function writerServer({wordState=false}={}){
  const quizBank=require('../scripts/quiz_catalog.cjs')();
- const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0;
+ const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0,legacyAlphabet=false,legacyGreetings=false;
  function account(id){if(!accounts.has(id))accounts.set(id,{history:new Set(),sessions:new Map(),quizReceipts:new Map(),snapshot:cloudSnapshot({capabilities:wordState?['unmark_known','review_grade','known_reward_once']:[],revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
  async function request(h){
   active++;maxActive=Math.max(maxActive,active);
@@ -464,8 +464,9 @@ function writerServer({wordState=false}={}){
     const d=event.data;assert.equal(d.content_version,a.snapshot.content_version);
     if(['lesson','book'].includes(d.mode)){
      const bank=JSON.parse(fs.readFileSync(path.join(root,d.mode==='lesson'?'lessons.json':'books.json')));
-     assert.equal(d.questions.length,bank.find(row=>row.id===d.context_id).questions.length);
+     const row=bank.find(row=>row.id===d.context_id);assert.equal(d.questions.length,(legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2')?row.questions.length:(row.pronunciationChapter||row.greetingsChapter)?.finalTest?.questions.length||row.questions.length);
     }
+    const trusted=quizBank[d.mode+':'+d.context_id];if(trusted?.start_questions&&!((legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2')))assert.deepEqual([...d.questions.map(q=>q.question_id)].sort(),trusted.start_questions.map(q=>q.question_id).sort());
     assert(!a.sessions.has(d.session_id));a.sessions.set(d.session_id,{...d,status:'active',answers:new Map()});
    }else if(event.type==='answer'){
     const d=event.data,session=a.sessions.get(d.session_id);assert.equal(session?.status,'active');
@@ -479,9 +480,10 @@ function writerServer({wordState=false}={}){
      assert.equal(session.answers.size,session.questions.length);session.status='completed';
      const id=session.context_id?session.mode+':'+session.context_id:'practice:'+session.mode;
      const correct=[...session.answers.values()].filter(Boolean).length,total=session.questions.length,passed=correct*5>=total*4;
-     s.quizResults??={};const old=s.quizResults[id],best=!old||correct*old.total>old.correct*total,rewarded=old?.rewarded||false;
+     s.quizResults??={};const old=s.quizResults[id],best=!old?.total||correct*old.total>old.correct*total,rewarded=old?.rewarded||false;
      const xp=passed&&!rewarded?(quizBank[id]?.reward||0):0;
      s.quizResults[id]={...(best?{correct,total}:old),rewarded:rewarded||xp>0};s.xp+=xp;
+     const finalLesson=JSON.parse(fs.readFileSync(path.join(root,'lessons.json'),'utf8')).find(l=>'lesson:'+l.id===id),finalConfig=(finalLesson?.pronunciationChapter||finalLesson?.greetingsChapter)?.finalTest;if(finalConfig&&session.questions.length===20&&session.questions.every(q=>finalConfig.questions.some(f=>f.id===q.question_id))){const k=finalConfig.resultKey,prev=s.quizResults[k],improved=!prev||correct>prev.correct;s.quizResults[k]={...(improved?{correct,total}:prev),rewarded:rewarded||xp>0};}
      quizResult={xp,already_rewarded:rewarded,new_best:best};
      if(session.mode==='lesson'&&passed&&!s.completed.includes(session.context_id))s.completed.push(session.context_id);
     }else session.status='abandoned';
@@ -493,12 +495,12 @@ function writerServer({wordState=false}={}){
    return {data:{duplicate:false,applied_revision:a.snapshot.revision,progress:JSON.parse(JSON.stringify(a.snapshot)),quiz_result:quizResult}};
   }finally{active--}
  }
- return {account,request,get maxActive(){return maxActive},set offline(v){offline=v},set loseAck(v){loseAck=v}};
+ return {account,request,set legacyAlphabet(v){legacyAlphabet=v},set legacyGreetings(v){legacyGreetings=v},get maxActive(){return maxActive},set offline(v){offline=v},set loseAck(v){loseAck=v}};
 }
 async function startWriter(shared=writerEnvironment(),server=writerServer(),id=A,extra={}){
  const h=harness({initial:token(id),progress:true,hostname:'localhost',environment:shared.environment,...extra});
  h.rpcResult(()=>server.request(h));const snapshots=[],errors=[];
- await h.ctx.SVProgress.initialize({previewCatalog:()=>({version:'writer-test-v1',words:['v-arbeta','v-prata']}),
+ await h.ctx.SVProgress.initialize({previewCatalog:()=>({version:extra.catalogVersion||'writer-test-v1',words:['v-arbeta','v-prata']}),
   onSnapshot:(s,owner)=>snapshots.push({s,owner}),onError:e=>errors.push(e)});
  await h.ctx.SVProgressDebug?.flush();return {h,shared,server,snapshots,errors};
 }
@@ -592,6 +594,19 @@ test('local unsynced progress, changed baseline and content mismatch block witho
  assert.equal(await version.h.ctx.SVProgress.enqueue('mark_known','v-arbeta'),true);await version.h.ctx.SVProgressDebug.flush();
  assert.equal(version.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
  assert.equal((await version.h.ctx.SVProgressDebug.queue()).error,'CONTENT_VERSION_MISMATCH');
+});
+test('alphabet content release retains an old offline event verbatim on version mismatch',async()=>{
+ const w=await startWriter();w.server.offline=true;await send(w,'mark_known');
+ const before=[...w.shared.stores.get('events').values()].find(r=>r.status!=='applied');
+ assert(before,'Expected durable offline event');
+ const intent={eventId:before.eventId,eventJson:before.eventJson,contentVersion:before.contentVersion};
+ w.server.offline=false;w.server.account(A).snapshot.content_version=currentContentVersion;
+ await w.h.ctx.SVProgressDebug.flush();
+ const after=[...w.shared.stores.get('events').values()].find(r=>r.eventId===intent.eventId);
+ assert(after,'Version transition discarded the pending event');
+ assert.deepEqual({eventId:after.eventId,eventJson:after.eventJson,contentVersion:after.contentVersion},intent);
+ assert.equal((await w.h.ctx.SVProgressDebug.queue()).error,'CONTENT_VERSION_MISMATCH');
+ assert.equal(w.server.account(A).snapshot.state.xp,0);
 });
 test('missing IndexedDB or Web Locks fails closed and queues no mutation',async()=>{
  for(const override of [{indexedDB:undefined},{navigator:{}}]){
@@ -738,6 +753,9 @@ test('dictionary and flashcard know actions share IDs and server XP, while repea
  const source=fs.readFileSync(path.join(root,'app.js'),'utf8').replace(/\nboot\(\);/g,'');vm.runInContext(source,h.ctx);
  h.ctx.document.querySelector=()=>null;h.ctx.scrollTo=()=>{};
  vm.runInContext("toast=()=>{};headerStats=()=>{};render=()=>{};user={id:'"+A+"'};state=defaultState();WORDS=[{id:'v-arbeta',word:'arbeta',ru:'работать',type:'verb'},{id:'v-prata',word:'prata',ru:'говорить',type:'verb'}];flash.ids=['v-arbeta'];",h.ctx);
+ // Use complete production word fixtures for the current pronunciation view.
+ const wordFixtures=JSON.parse(fs.readFileSync(path.join(root,'words.json'),'utf8')).filter(w=>['v-arbeta','v-prata'].includes(w.id));
+ vm.runInContext('WORDS='+JSON.stringify(wordFixtures),h.ctx);
  await h.ctx.SVProgress.initialize({onSnapshot:s=>{h.ctx.serverState=s;vm.runInContext('state=sanitize(serverState)',h.ctx)}});
  await h.ctx.SVProgressDebug.flush();
  await vm.runInContext("action({dataset:{action:'flash-grade',value:'1'}})",h.ctx);await h.ctx.SVProgressDebug.flush();
@@ -746,7 +764,10 @@ test('dictionary and flashcard know actions share IDs and server XP, while repea
  await vm.runInContext("action({dataset:{action:'flash-grade',value:'0'}})",h.ctx);
  await vm.runInContext("action({dataset:{action:'mark-review',id:'v-arbeta'}})",h.ctx);
  assert.equal(h.records.rpc.filter(r=>r.name==='sl_apply_event').length,1);
- assert.match(vm.runInContext("wordEntry(WORDS[0])",h.ctx),/aria-label="✓ Знаю" title="✓ Знаю">✓ Знаю<\/button>/);
+ // The current word action uses an icon and visible label; assert its semantic
+ // pressed state rather than the retired text-only/title markup.
+ const knownButton=vm.runInContext("wordEntry(WORDS[0])",h.ctx).match(/<button\b(?=[^>]*data-action="mark-known")[^>]*>[\s\S]*?<\/button>/)?.[0];
+ assert(knownButton);assert.match(knownButton,/aria-label="✓ Знаю"/);assert.match(knownButton,/aria-pressed="true"/);assert.match(knownButton,/<span class="word-control-label">Знаю<\/span>/);
  assert.match(vm.runInContext("routeParam='v-arbeta';renderWord()",h.ctx),/✓ Знаю/);
  assert.match(vm.runInContext('renderProfile()',h.ctx),/data-action="show-learned"/);
  assert.equal(vm.runInContext("routeParam='learned';filteredWords().map(w=>w.id).join(',')",h.ctx),'v-arbeta');
@@ -1036,7 +1057,7 @@ test('settings revision conflict retries the same intent; refresh receives anoth
 // Full application → durable client queue → RPC model. No live SQL or accounts.
 async function quizApp(w){
  const h=w.h,ctx=h.ctx;
- w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3');await ctx.SVProgress.refresh();
+ w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3','alphabet_final_v1','greetings_final_v1');await ctx.SVProgress.refresh();
  ctx.sessionStorage={getItem:k=>w.shared.data.get('tab:'+k)??null,setItem:(k,v)=>w.shared.data.set('tab:'+k,v),removeItem:k=>w.shared.data.delete('tab:'+k)};
  ctx.document.querySelectorAll=()=>[];
  vm.runInContext(fs.readFileSync(path.join(root,'locale-content.js'),'utf8'),ctx);
@@ -1181,4 +1202,67 @@ test('blocked queue open terminates safely, preserves existing pending events an
  await new Promise(r=>setImmediate(r));
  h.ctx.indexedDB=normal;await h.ctx.SVProgress.retry();await h.ctx.SVProgressDebug.flush();
  assert.equal([...w.shared.stores.get('events').values()][0].status,'applied');assert.equal(w.server.account(A).snapshot.state.xp,8);
+});
+
+test('alphabet final: 20 canonical responses, historical score, lost finish ACK and one reward ledger',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ s.xp=135;s.completed=['lesson-1'];s.quizResults['lesson:lesson-1']={correct:13,total:13,rewarded:true};await w.h.ctx.SVProgress.refresh();
+ const original=JSON.stringify(s.quizResults['lesson:lesson-1']);
+ for(const target of [15,16,20]){
+  await run("startQuiz('lesson','lesson-1')");assert.equal(run('quiz.questions.length'),20);
+  for(let i=0;i<20;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<19)await run("action({dataset:{action:'quiz-next'}})")}
+  if(target===16)w.server.loseAck=true;
+  await run('finishQuiz()');if(!run('quiz.finished')){await w.h.ctx.SVProgressDebug.flush();await run('finishQuiz()')}
+  assert(run('quiz.finished'));assert.equal(s.xp,135);assert.equal(JSON.stringify(s.quizResults['lesson:lesson-1']),original);
+  assert.equal(s.quizResults['assessment:alphabet-final-v1'].correct,target);assert.equal(s.quizResults['assessment:alphabet-final-v1'].total,20);
+  assert.equal(run('quiz.score'),target);assert(!run('quizResultLabel()').includes('Тест уже пройден'));
+ }
+ const responses=w.h.records.rpc.filter(r=>r.name==='sl_apply_event'&&r.args.p_event.type==='answer');
+ assert(responses.length>=60);assert(responses.every(r=>/^o[1-4]$/.test(r.args.p_event.data.response)));
+ const again=await startWriter(w.shared,w.server),r=await quizApp(again);await again.h.ctx.SVProgress.refresh();assert.equal(r("state.quizResults['assessment:alphabet-final-v1'].correct"),20);assert.equal(r('state.xp'),135);
+});
+test('alphabet final is gated without its server capability and queues no session',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.account(A).snapshot.capabilities=w.server.account(A).snapshot.capabilities.filter(c=>c!=='alphabet_final_v1');await w.h.ctx.SVProgress.refresh();
+ const before=w.server.account(A).sessions.size;await run("startQuiz('lesson','lesson-1')");assert.equal(w.server.account(A).sessions.size,before);assert(!run('quiz.active'));
+});
+test('acknowledged historical 13-question session resumes across content versions without rewriting its start receipt',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.legacyAlphabet=true;
+ run('window.savedFinal=LESSONS[0].pronunciationChapter.finalTest;delete LESSONS[0].pronunciationChapter.finalTest');
+ await run("startQuiz('lesson','lesson-1')");assert.equal(run('quiz.questions.length'),13);
+ await run('submitAnswer(quiz.questions[0].answer)');run('persistQuizSession()');
+ const sid=run('quiz.cloud.id'),startId=run('quiz.cloud.events.start.id');const oldRow=[...w.shared.stores.get('events').values()].find(r=>r.eventId===startId),bytes=JSON.stringify(oldRow);
+ w.server.legacyAlphabet=false;w.server.account(A).snapshot.content_version=currentContentVersion;
+ const next=await startWriter(w.shared,w.server,A,{catalogVersion:currentContentVersion}),r=await quizApp(next);
+ assert(r('restoreQuizSession()'));assert.equal(r('quiz.questions.length'),13);assert.equal(r('quiz.cloud.id'),sid);
+ for(let i=1;i<13;i++){await r("action({dataset:{action:'quiz-next'}})");await r('submitAnswer(quiz.questions[quiz.index].answer)')}
+ await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);
+ assert.equal(JSON.stringify([...w.shared.stores.get('events').values()].find(row=>row.eventId===startId)),bytes);
+ assert.equal(w.server.account(A).sessions.get(sid).content_version,'writer-test-v1');
+ assert.equal(w.server.account(A).snapshot.state.quizResults['assessment:alphabet-final-v1'],undefined);
+ await r("startQuiz('lesson','lesson-1')");assert.equal(r('quiz.questions.length'),20);
+ for(let i=0;i<20;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<19)await r("action({dataset:{action:'quiz-next'}})")}
+ await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35,'Old finish and new pass must share one reward');
+});
+
+test('greetings final: canonical IDs, case-sensitive answer, history, lost ACK and shared reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ s.xp=235;s.completed=['lesson-2'];s.quizResults['lesson:lesson-2']={correct:11,total:11,rewarded:true};await w.h.ctx.SVProgress.refresh();const old=JSON.stringify(s.quizResults['lesson:lesson-2']);
+ for(const target of [15,16,20]){
+  await run("startQuiz('lesson','lesson-2')");assert.equal(run('quiz.questions.length'),20);
+  for(let i=0;i<20;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':i===16?"submitAnswer('Jag talar Turkiska.')":"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<19)await run("action({dataset:{action:'quiz-next'}})")}
+  if(target===16)w.server.loseAck=true;await run('finishQuiz()');if(!run('quiz.finished')){await w.h.ctx.SVProgressDebug.flush();await run('finishQuiz()')}
+  assert(run('quiz.finished'));assert.equal(run('quiz.score'),target);assert.equal(s.quizResults['assessment:greetings-final-v1'].correct,target);assert.equal(s.xp,235);assert.equal(JSON.stringify(s.quizResults['lesson:lesson-2']),old);
+ }
+ const responses=w.h.records.rpc.filter(r=>r.name==='sl_apply_event'&&r.args.p_event.type==='answer');assert(responses.length>=60);assert(responses.every(r=>/^o[0-3]$/.test(r.args.p_event.data.response)));
+ const again=await startWriter(w.shared,w.server),r=await quizApp(again);await again.h.ctx.SVProgress.refresh();assert.equal(r("state.quizResults['assessment:greetings-final-v1'].correct"),20);assert.equal(r('state.xp'),235);
+});
+test('greetings final needs its capability without creating a pending start',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.account(A).snapshot.capabilities=w.server.account(A).snapshot.capabilities.filter(c=>c!=='greetings_final_v1');await w.h.ctx.SVProgress.refresh();const before=w.server.account(A).sessions.size;await run("startQuiz('lesson','lesson-2')");assert.equal(w.server.account(A).sessions.size,before);assert(!run('quiz.active'));
+});
+test('confirmed historical 11-question greetings session survives version transition with same receipt and one reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.legacyGreetings=true;run('delete LESSONS[1].greetingsChapter.finalTest');await run("startQuiz('lesson','lesson-2')");assert.equal(run('quiz.questions.length'),11);await run('submitAnswer(quiz.questions[0].answer)');run('persistQuizSession()');
+ const sid=run('quiz.cloud.id'),startId=run('quiz.cloud.events.start.id'),bytes=JSON.stringify([...w.shared.stores.get('events').values()].find(r=>r.eventId===startId));w.server.legacyGreetings=false;w.server.account(A).snapshot.content_version=currentContentVersion;
+ const next=await startWriter(w.shared,w.server,A,{catalogVersion:currentContentVersion}),r=await quizApp(next);assert(r('restoreQuizSession()'));assert.equal(r('quiz.cloud.id'),sid);
+ for(let i=1;i<11;i++){await r("action({dataset:{action:'quiz-next'}})");await r('submitAnswer(quiz.questions[quiz.index].answer)')}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);assert.equal(w.server.account(A).snapshot.state.quizResults['assessment:greetings-final-v1'],undefined);assert.equal(JSON.stringify([...w.shared.stores.get('events').values()].find(row=>row.eventId===startId)),bytes);
+ await r("startQuiz('lesson','lesson-2')");assert.equal(r('quiz.questions.length'),20);for(let i=0;i<20;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<19)await r("action({dataset:{action:'quiz-next'}})")}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);
 });

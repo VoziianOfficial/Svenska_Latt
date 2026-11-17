@@ -1,7 +1,8 @@
 /* Svenska Lätt v11: accessible speech-speed controls, compact flashcards and calendar. */
 'use strict';
 (() => {
- const SPEEDS={verySlow:.56,slow:.76,normal:1};
+ // Use the same distinct Normal / Slow rates as both introductory chapters.
+ const SPEEDS={verySlow:.4,slow:.55,normal:1};
  const KEY='svenska-latt-speech-speed';
  const VOICE_KEY='svenska-latt-swedish-voice';
  let selectedVoice=''; try{selectedVoice=localStorage.getItem(VOICE_KEY)||'';}catch(_){}

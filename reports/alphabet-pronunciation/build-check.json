@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "release": "b28ad990c54d8e63",
+  "files": 1921,
+  "bytes": 92911745,
+  "verifiedRuntimeFiles": [
+    "alphabet-lesson.js",
+    "alphabet-lesson.css",
+    "app.js",
+    "index.html",
+    "lessons.json",
+    "server.py"
+  ]
+}

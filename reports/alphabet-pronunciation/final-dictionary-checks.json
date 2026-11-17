@@ -1,0 +1,336 @@
+{
+  "axel": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=axel",
+    "pronunciations": [
+      "'ak:sel",
+      "'ak:sel"
+    ],
+    "excerpt": "axel axel substantiv, axle Uttal: ['ak:sel] Böjningar: axeln, axlar Definition: stång som",
+    "status": "checked"
+  },
+  "bank": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=bank",
+    "pronunciations": [
+      "bang:k",
+      "bang:k",
+      "bang:k",
+      "bang:k",
+      "bang:k"
+    ],
+    "excerpt": "bank bank substantiv, bar , (sand)bank Uttal: [bang:k] Böjningar: banken, bankar Definition:",
+    "status": "checked"
+  },
+  "butik": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=butik",
+    "pronunciations": [
+      "but'i:k"
+    ],
+    "excerpt": "butik butik substantiv, (store [US]) , shop Uttal: [but'i:k] Böjningar: butiken, butiker",
+    "status": "checked"
+  },
+  "bänk": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=b%C3%A4nk",
+    "pronunciations": [
+      "beng:k"
+    ],
+    "excerpt": "bänk bänk substantiv, bench Uttal: [beng:k] Böjningar: bänken, bänkar Synonymer: långpall Definition:",
+    "status": "checked"
+  },
+  "cykel": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=cykel",
+    "pronunciations": [
+      "s'yk:el",
+      "(²)s'y:kel"
+    ],
+    "excerpt": "cykel cykel substantiv, bicycle Uttal: [s'yk:el] Böjningar: cykeln, cyklar Synonymer: hoj, kretslopp,",
+    "status": "checked"
+  },
+  "disk": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=disk",
+    "pronunciations": [
+      "dis:k",
+      "dis:k",
+      "dis:k",
+      "dis:k"
+    ],
+    "excerpt": "disk disk substantiv, counter Uttal: [dis:k] Böjningar: disken, diskar Definition: smalt och",
+    "status": "checked"
+  },
+  "djup": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=djup",
+    "pronunciations": [
+      "ju:p",
+      "ju:p",
+      "ju:p",
+      "ju:p"
+    ],
+    "excerpt": "djup djup adjektiv, deep Uttal: [ju:p] Böjningar: djupt, djupa Synonymer: djupt, ingående",
+    "status": "checked"
+  },
+  "foto": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=foto",
+    "pronunciations": [
+      "²f'o:to el.²f'ot:o"
+    ],
+    "excerpt": "foto foto substantiv, snapshot , photograph Uttal: [²f'o:to el.²f'ot:o] Böjningar: fotot, foton,",
+    "status": "checked"
+  },
+  "gapa": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=gapa",
+    "pronunciations": [
+      "²g'a:par",
+      "²g'a:par"
+    ],
+    "excerpt": "gapa gapa verb, open one's mouth (wide) Grammatikkommentar: A & Uttal: [²g'a:par]",
+    "status": "checked"
+  },
+  "gärna": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=g%C3%A4rna",
+    "pronunciations": [
+      "²j'ä:r_na",
+      "²j'ä:r_na"
+    ],
+    "excerpt": "gärna gärna adverb, gladly , willingly Uttal: [²j'ä:r_na] Böjningar: hellre, helst Synonymer:",
+    "status": "checked"
+  },
+  "hjärta": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=hj%C3%A4rta",
+    "pronunciations": [
+      "²j'är_t:a",
+      "²j'är_t:a"
+    ],
+    "excerpt": "hjärta hjärta substantiv (bildligt \" centrum\" ; även om formen), heart [figuratively,",
+    "status": "checked"
+  },
+  "keso": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=keso",
+    "pronunciations": [
+      "initial [k], Brandel: list of K exceptions"
+    ],
+    "excerpt": "Listed among words pronounced with K before a soft vowel.",
+    "status": "checked-phonetics-source",
+    "supplement": "https://www.svenskgrammatik.com/wp-content/uploads/Brandels_grammatik.pdf#page=733"
+  },
+  "kula": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=kula",
+    "pronunciations": [
+      "²k'u:la"
+    ],
+    "excerpt": "kula kula substantiv (särskilt om projektil till eldvapen), ball [used especially of",
+    "status": "checked"
+  },
+  "kyla": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=kyla",
+    "pronunciations": [
+      "²tj'y:la",
+      "tj'y:ler"
+    ],
+    "excerpt": "kyla kyla substantiv (bildligt \" brist på känsla\"), cold [figuratively, \" lack",
+    "status": "checked"
+  },
+  "len": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=len",
+    "pronunciations": [
+      "le:n"
+    ],
+    "excerpt": "len len adjektiv, soft Uttal: [le:n] Böjningar: lent, lena Synonymer: mjuk, slät",
+    "status": "checked"
+  },
+  "lin": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=lin",
+    "pronunciations": [
+      "li:n"
+    ],
+    "excerpt": "lin lin substantiv, flax Uttal: [li:n] Böjningar: linet Definition: växt av släktet",
+    "status": "checked"
+  },
+  "ljud": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=ljud",
+    "pronunciations": [
+      "ju:d"
+    ],
+    "excerpt": "ljud ljud substantiv, sound Uttal: [ju:d] Böjningar: ljudet, ljud, ljuden Synonymer: läte",
+    "status": "checked"
+  },
+  "lån": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=l%C3%A5n",
+    "pronunciations": [
+      "lå:n"
+    ],
+    "excerpt": "lån lån substantiv (även om det man lånar (ut)), loan [also of",
+    "status": "checked"
+  },
+  "lön": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=l%C3%B6n",
+    "pronunciations": [
+      "lö:n"
+    ],
+    "excerpt": "lön lön substantiv (även bildligt \" (negativ) påföljd\"), wages , salary Uttal:",
+    "status": "checked"
+  },
+  "ord": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=ord",
+    "pronunciations": [
+      "o:r_d",
+      "o:r_d"
+    ],
+    "excerpt": "ord ord substantiv, word , dictionary Uttal: [o:r_d] Böjningar: ordet, ord, orden",
+    "status": "checked"
+  },
+  "park": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=park",
+    "pronunciations": [
+      "par:k",
+      "par:k"
+    ],
+    "excerpt": "park park substantiv, park Uttal: [par:k] Böjningar: parken, parker Synonymer: parkanläggning Definition:",
+    "status": "checked"
+  },
+  "päron": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=p%C3%A4ron",
+    "pronunciations": [
+      "²p'ä:rån"
+    ],
+    "excerpt": "päron päron substantiv, pear Uttal: [²p'ä:rån] Böjningar: päronet, päron, päronen Definition: frukt",
+    "status": "checked"
+  },
+  "ring": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=ring",
+    "pronunciations": [
+      "ring:",
+      "r'ing:er",
+      "r'ing:er"
+    ],
+    "excerpt": "ring ring substantiv (även om föremål som har denna form), ring [also",
+    "status": "checked"
+  },
+  "sjal": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=sjal",
+    "pronunciations": [
+      "sja:l"
+    ],
+    "excerpt": "sjal sjal substantiv, scarf , shawl Uttal: [sja:l] Variantform: även schal Böjningar:",
+    "status": "checked"
+  },
+  "skala": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=skala",
+    "pronunciations": [
+      "²sk'a:la",
+      "²sk'a:la",
+      "²sk'a:lar"
+    ],
+    "excerpt": "skala skala substantiv, scale Uttal: [²sk'a:la] Böjningar: skalan, skalor Synonymer: klä av",
+    "status": "checked"
+  },
+  "skylt": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=skylt",
+    "pronunciations": [
+      "sj'y:ler",
+      "sjyl:t"
+    ],
+    "excerpt": "skylt skyla verb, cover; hide, veil Grammatikkommentar: A & x Uttal: [sj'y:ler]",
+    "status": "checked"
+  },
+  "skära": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=sk%C3%A4ra",
+    "pronunciations": [
+      "sjä:r",
+      "sjä:r",
+      "²sj'ä:ra"
+    ],
+    "excerpt": "skära skär adjektiv, light red , pink Uttal: [sjä:r] Böjningar: skärt, skära",
+    "status": "checked"
+  },
+  "sport": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=sport",
+    "pronunciations": [
+      "spår_t:"
+    ],
+    "excerpt": "sport sport substantiv, sport Uttal: [spår_t:] Böjningar: sporten, sporter Synonymer: idrott Definition:",
+    "status": "checked"
+  },
+  "stopp": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=stopp",
+    "pronunciations": [
+      "ståp:",
+      "ståp:"
+    ],
+    "excerpt": "stopp stopp interjektion, stop! Uttal: [ståp:] Synonymer: uppehåll Definition: stanna! stopp substantiv",
+    "status": "checked"
+  },
+  "telefon": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=telefon",
+    "pronunciations": [
+      "telef'å:n"
+    ],
+    "excerpt": "telefon telefon substantiv, telephone Uttal: [telef'å:n] Böjningar: telefonen, telefoner, telefonerna Definition: apparat",
+    "status": "checked"
+  },
+  "tjock": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=tjock",
+    "pronunciations": [
+      "tjåk:",
+      "tjåk:"
+    ],
+    "excerpt": "tjock tjock adjektiv (om person \" fet, fyllig\"), thick [of people, \"",
+    "status": "checked"
+  },
+  "vit": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=vit",
+    "pronunciations": [
+      "vi:t"
+    ],
+    "excerpt": "vit vit adjektiv (beroende på föremål även \" ljus, ofärgad\"), white [depending",
+    "status": "checked"
+  },
+  "vitt": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=vitt",
+    "pronunciations": [
+      "vi:d",
+      "vi:t",
+      "vit:"
+    ],
+    "excerpt": "vitt vid adjektiv, wide Uttal: [vi:d] Böjningar: vitt, vida Synonymer: bred, intill,",
+    "status": "checked"
+  },
+  "zebra": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=zebra",
+    "pronunciations": [
+      "²s'e:bra"
+    ],
+    "excerpt": "zebra sebra substantiv, zebra Uttal: [²s'e:bra] Variantform: även zebra Böjningar: sebran, sebror",
+    "status": "checked"
+  },
+  "ägg": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=%C3%A4gg",
+    "pronunciations": [
+      "eg:",
+      "eg:"
+    ],
+    "excerpt": "ägg ägg substantiv (särskilt om hönsägg som matvara), egg [particularly of hens'",
+    "status": "checked"
+  },
+  "åka": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=%C3%A5ka",
+    "pronunciations": [
+      "'å:ker",
+      "'å:ker"
+    ],
+    "excerpt": "åka åka verb, go, ride, drive Grammatikkommentar: A & (med) x Uttal:",
+    "status": "checked"
+  },
+  "öppna": {
+    "url": "https://folkets-lexikon.csc.kth.se/folkets/service?word=%C3%B6ppna",
+    "pronunciations": [
+      "²'öp:en",
+      "²'öp:en",
+      "²'öp:en",
+      "²'öp:en",
+      "²'öp:nar",
+      "²'öp:nar",
+      "²'öp:nar"
+    ],
+    "excerpt": "öppna öppen adjektiv, open Uttal: [²'öp:en] Böjningar: öppet, öppna Synonymer: flexibel, mottaglig,",
+    "status": "checked"
+  }
+}

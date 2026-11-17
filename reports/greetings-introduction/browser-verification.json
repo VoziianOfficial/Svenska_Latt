@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-16",
+  "browser": "Chrome/157.0.8103.78",
+  "chapterLayouts": 20,
+  "finalLayouts": 400,
+  "practiceQuestions": 31,
+  "writtenTasks": 3,
+  "finalQuestions": 20,
+  "attempts": [
+    16,
+    20
+  ],
+  "historicalTotal": 11,
+  "xpBefore": 235,
+  "xpAfter": 235,
+  "checks": [
+    "Four locales, five widths, 44px controls and bounded table scrolling",
+    "Choice/gap/token submit and stale-feedback reset",
+    "Writing models gated by attempt, escaped drafts, no practice XP",
+    "32 dialogue turns + 10 story sentences through TTS buttons; stop/reset",
+    "20 actual final answers, wrong uppercase spelling rejected",
+    "Rule review/return, locale switch and page reload preserve attempt",
+    "Old 11/11 retained separately and no repeated reward"
+  ],
+  "screenshots": 16,
+  "errors": [],
+  "localFailures": [],
+  "limits": [
+    "Guest browser flow; account sessions tested separately using RPC models",
+    "No production writes, SQL execution or acoustic device-voice evaluation"
+  ]
+}

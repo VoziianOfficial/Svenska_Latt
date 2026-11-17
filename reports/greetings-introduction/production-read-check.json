@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-16T20:59:59.406208+00:00",
+  "readOnly": true,
+  "publicClientUrl": "https://voziianofficial.github.io/Svenska_Latt/app.js",
+  "publicClientContentVersion": [
+    "static-1750f0ad07cce4c4"
+  ],
+  "publicClientHasAlphabetFinal": false,
+  "publicClientHasGreetingsFinal": false,
+  "serverStatus": 401,
+  "serverErrorCode": "42501",
+  "backendVersionVerified": false,
+  "backendLimit": "Public key cannot read authenticated progress/manifest; no account credentials or SQL were used."
+}

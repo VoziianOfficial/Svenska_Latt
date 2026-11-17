@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-17",
+  "layouts": [
+    {
+      "width": 1920,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1920,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1920,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1920,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        70,
+        70
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1440,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 150,
+      "exampleHeights": [
+        70,
+        70
+      ]
+    },
+    {
+      "width": 1024,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 190.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1024,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 165.75,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1024,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 141.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 1024,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 83.25,
+      "goalsHeight": 141.25,
+      "exampleHeights": [
+        70,
+        70
+      ]
+    },
+    {
+      "width": 768,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 190.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 768,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 190.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 190.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 768,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 106,
+      "goalsHeight": 165.75,
+      "exampleHeights": [
+        70,
+        70
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 182.75,
+      "goalsHeight": 294.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 182.75,
+      "goalsHeight": 294.25,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 160,
+      "goalsHeight": 269.75,
+      "exampleHeights": [
+        79,
+        79
+      ]
+    },
+    {
+      "width": 390,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 182.75,
+      "goalsHeight": 220.75,
+      "exampleHeights": [
+        70,
+        70
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "ru",
+      "bad": [],
+      "audioHeight": 205.5,
+      "goalsHeight": 369.5,
+      "exampleHeights": [
+        79,
+        105.25
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "uk",
+      "bad": [],
+      "audioHeight": 205.5,
+      "goalsHeight": 343.25,
+      "exampleHeights": [
+        79,
+        128
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "en",
+      "bad": [],
+      "audioHeight": 182.75,
+      "goalsHeight": 294.25,
+      "exampleHeights": [
+        79,
+        105.25
+      ]
+    },
+    {
+      "width": 320,
+      "lang": "sv",
+      "bad": [],
+      "audioHeight": 182.75,
+      "goalsHeight": 294.25,
+      "exampleHeights": [
+        70,
+        78.5
+      ]
+    }
+  ],
+  "checks": [
+    "Every example and table audio control at top right without overlap or a separate row",
+    "Goals form two rows of two on larger screens",
+    "Tempo label and 44px combobox on the same line",
+    "No page overflow or clipped controls in all four locales",
+    "Enhanced tempo control and existing audio toggle still work"
+  ],
+  "errors": []
+}

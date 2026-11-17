@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-16",
+  "passed": true,
+  "layouts": 400,
+  "questions": 20,
+  "formativeTasks": 35,
+  "realCompletedAttempts": [
+    {
+      "score": 16,
+      "total": 20,
+      "xpBefore": 135,
+      "xpAfter": 135
+    },
+    {
+      "score": 20,
+      "total": 20,
+      "xpBefore": 135,
+      "xpAfter": 135
+    }
+  ],
+  "checks": [
+    "All 20 questions and full feedback at 5 widths × 4 locales",
+    "Final test follows all learning sections",
+    "Historical result is separate from final result",
+    "Real delegated answer/next/finish/retry clicks",
+    "Rule review and return preserve attempt",
+    "Locale switch and page reload preserve selected answer/index/score",
+    "Historical XP and 13/13 retained; no repeated reward"
+  ],
+  "limits": [
+    "Guest browser flow; account/queue paths use separate RPC-model tests",
+    "SQL proposal not applied"
+  ]
+}
