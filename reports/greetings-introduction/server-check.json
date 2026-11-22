@@ -1,0 +1,36 @@
+{
+  "dbAccessForbidden": true,
+  "authUsed": false,
+  "checks": [
+    {
+      "path": "/greetings-lesson.js?v=1",
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "bytes": 32334
+    },
+    {
+      "path": "/greetings-lesson.css?v=1",
+      "status": 200,
+      "mime": "text/css; charset=utf-8",
+      "bytes": 9733
+    },
+    {
+      "path": "/lessons.json",
+      "status": 200,
+      "mime": "application/json; charset=utf-8",
+      "bytes": 1121991
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "bytes": 9967
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "bytes": 5054
+    }
+  ]
+}

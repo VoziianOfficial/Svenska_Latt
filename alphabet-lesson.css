@@ -1,0 +1,132 @@
+/* New chapter components are confined to lesson-1; the shared shell is unchanged. */
+#page .alphabet-lesson {--alphabet-ink:#3c5144;--alphabet-muted:#667265;--alphabet-paper:#fffaf2;--alphabet-edge:#dddccd;--alphabet-sage:#e9eee2;max-width:100%;min-width:0}
+#page .alphabet-lesson :is(p,li,td,dd,label,legend) {line-height:1.7}
+#page .alphabet-lesson :is(p,td,dd,legend,span) {overflow-wrap:anywhere}
+#page .alphabet-lesson :is(h2,h3) {color:var(--alphabet-ink);text-wrap:balance}
+#page .alphabet-lesson h3 {font-size:18px;line-height:1.4;margin:0 0 10px}
+#page .alphabet-lesson .lesson-goals {padding:22px!important}
+#page .alphabet-lesson .lesson-goals ul {padding-left:22px;margin-bottom:0}
+#page .alphabet-lesson .lesson-goals li+li {margin-top:6px}
+#page .alphabet-lesson :is(.alphabet-toc,.alphabet-audio-note) {padding:22px;border:1px solid var(--alphabet-edge);border-radius:20px;background:var(--alphabet-paper);margin-bottom:18px}
+#page .alphabet-lesson .alphabet-toc h2 {font-size:21px;margin-bottom:16px}
+#page .alphabet-lesson .alphabet-toc ol {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 16px;margin:0;padding-left:24px;color:var(--alphabet-muted)}
+#page .alphabet-lesson .alphabet-toc .btn {justify-content:flex-start;text-align:left;width:100%;--control-padding:8px 6px;--control-size:13px;--control-height:44px}
+#page .alphabet-lesson .alphabet-audio-note {background:var(--alphabet-sage)}
+#page .alphabet-lesson .alphabet-audio-note p {font-size:13px;margin:0 0 12px;color:var(--alphabet-muted)}
+#page .alphabet-lesson .alphabet-audio-tools {display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#page .alphabet-lesson .alphabet-audio-tools label {display:flex;align-items:center;gap:10px;font-size:13px}
+#page .alphabet-lesson [data-alphabet-audio-status]:empty {display:none}
+#page .alphabet-lesson [data-alphabet-audio-status]:not(:empty) {margin:12px 0 0;color:var(--alphabet-ink);font-weight:650}
+#page .alphabet-lesson .alphabet-section {border:1px solid var(--alphabet-edge);border-radius:20px;margin:0 0 16px;background:var(--alphabet-paper);scroll-margin-top:110px;min-width:0;overflow:clip}
+#page .alphabet-lesson .alphabet-section>summary {display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;min-height:70px;padding:20px 24px;cursor:pointer;color:var(--alphabet-ink);font-size:21px;font-weight:750;line-height:1.4}
+#page .alphabet-lesson .alphabet-section>summary::-webkit-details-marker {display:none}
+#page .alphabet-lesson .alphabet-section>summary::after {content:'+';font-size:24px;line-height:1;flex-shrink:0;font-weight:400;color:#7c8873}
+#page .alphabet-lesson .alphabet-section[open]>summary {border-bottom:1px solid var(--alphabet-edge)}
+#page .alphabet-lesson .alphabet-section[open]>summary::after {content:'−'}
+#page .alphabet-lesson .alphabet-section-body {padding:24px;min-width:0}
+#page .alphabet-lesson .alphabet-rule+.alphabet-rule {border-top:1px solid var(--alphabet-edge);padding-top:22px;margin-top:22px}
+#page .alphabet-lesson .alphabet-rule p {margin-bottom:14px;font-size:15px;max-width:80ch}
+#page .alphabet-lesson .alphabet-rule-source {font-size:12px;color:var(--alphabet-muted);margin-top:12px}
+#page .alphabet-lesson .alphabet-rule-source summary {min-height:44px;display:flex;align-items:center;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+#page .alphabet-lesson a {text-underline-offset:3px;color:var(--alphabet-ink)}
+#page .alphabet-lesson .alphabet-filters {display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+#page .alphabet-lesson .alphabet-table-hint {font-size:12px;color:var(--alphabet-muted);margin:0 0 10px}
+#page .alphabet-lesson .alphabet-table-scroll {width:100%;max-width:100%;overflow:auto;overscroll-behavior-inline:contain;border:1px solid var(--alphabet-edge);border-radius:14px;margin:0 0 22px;background:var(--alphabet-paper)}
+#page .alphabet-lesson .alphabet-table {width:100%;min-width:620px;border-collapse:separate;border-spacing:0;font-size:14px;margin:0}
+#page .alphabet-lesson .alphabet-table caption {text-align:left;padding:12px 16px;font-size:13px;font-weight:700;color:var(--alphabet-muted);background:#f3f1e7}
+#page .alphabet-lesson .alphabet-table :is(th,td) {padding:15px 16px;vertical-align:top;text-align:left;border-bottom:1px solid var(--alphabet-edge);background:var(--alphabet-paper)}
+#page .alphabet-lesson .alphabet-table thead th {background:var(--alphabet-sage);font-weight:700;color:var(--alphabet-ink);font-size:13px}
+#page .alphabet-lesson .alphabet-table tr:last-child :is(th,td) {border-bottom:0}
+#page .alphabet-lesson .alphabet-table th:first-child {position:sticky;left:0;z-index:1;box-shadow:1px 0 var(--alphabet-edge)}
+#page .alphabet-lesson .alphabet-table thead th:first-child {z-index:2}
+#page .alphabet-lesson .alphabet-letter-table {min-width:790px}
+#page .alphabet-lesson .alphabet-letter-table th:first-child {width:82px}
+#page .alphabet-lesson .alphabet-letter-table td:nth-child(2) {width:170px}
+#page .alphabet-lesson .alphabet-letter-table td:nth-child(3) {width:160px}
+#page .alphabet-lesson .alphabet-letter-table td p {font-size:13px;margin:8px 0 0}
+#page .alphabet-lesson .alphabet-letter {display:block;font-size:30px;font-weight:750;line-height:1.3;color:var(--alphabet-ink);white-space:nowrap}
+#page .alphabet-lesson .alphabet-letter small {font-size:22px;font-weight:500}
+#page .alphabet-lesson .alphabet-ipa {display:block;font-family:'Charis SIL','Noto Sans',system-ui,sans-serif;font-size:14px;font-weight:500;line-height:1.7;letter-spacing:.01em;color:var(--alphabet-muted);margin-top:4px;white-space:normal}
+#page .alphabet-lesson h3 .alphabet-ipa {display:inline}
+#page .alphabet-lesson .alphabet-examples {display:flex;flex-wrap:wrap;gap:12px 20px}
+#page .alphabet-lesson .alphabet-word {display:grid;grid-template-columns:minmax(0,1fr);gap:2px;min-width:85px;max-width:190px}
+#page .alphabet-lesson .alphabet-word>b {font-size:16px;color:var(--alphabet-ink);line-height:1.4}
+#page .alphabet-lesson .alphabet-word>small {font-size:12px;line-height:1.5;color:var(--alphabet-muted)}
+#page .alphabet-lesson [data-alphabet-audio] {justify-self:start;justify-content:flex-start;text-align:left;--control-height:44px;--control-padding:8px 10px;--control-size:12px;--control-radius:10px;gap:7px}
+#page .alphabet-lesson [data-alphabet-audio] svg {width:18px;height:18px;flex:0 0 18px}
+#page .alphabet-lesson [data-alphabet-audio].alphabet-audio-icon {width:44px;height:44px;min-width:44px;--control-padding:0;justify-content:center;gap:0}
+#page .alphabet-lesson [data-alphabet-audio][aria-pressed="true"] {background:var(--alphabet-sage)!important;border-color:#a4b599!important;color:var(--alphabet-ink)!important}
+#page .alphabet-lesson [data-alphabet-stop] {display:inline-flex;align-items:center;gap:8px}
+#page .alphabet-lesson [data-alphabet-stop] svg {flex-shrink:0}
+#page .alphabet-lesson .alphabet-comparisons {display:grid;gap:12px;margin:16px 0 8px}
+#page .alphabet-lesson .alphabet-comparison {display:grid;grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr) auto;align-items:center;gap:14px;border:1px solid var(--alphabet-edge);border-radius:14px;padding:16px;background:#f5f3e9}
+#page .alphabet-lesson .alphabet-comparison .alphabet-word {max-width:none}
+#page .alphabet-lesson .alphabet-cheat-table {min-width:580px}
+#page .alphabet-lesson .alphabet-cheat-table th {width:34%;font-size:13px}
+#page .alphabet-lesson .alphabet-reading {counter-reset:sentence;list-style:none;padding:0;margin:22px 0}
+#page .alphabet-lesson .alphabet-reading li {padding:16px 0;border-bottom:1px solid var(--alphabet-edge)}
+#page .alphabet-lesson .alphabet-reading li:first-child {border-top:1px solid var(--alphabet-edge)}
+#page .alphabet-lesson .alphabet-sentence {display:flex;align-items:center;justify-content:space-between;gap:18px}
+#page .alphabet-lesson .alphabet-sentence p {margin:0;font-size:19px;font-weight:600;color:var(--alphabet-ink);line-height:1.7}
+#page .alphabet-lesson mark {color:inherit;background:#e5e9d3;border-radius:3px;padding:0 1px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+#page .alphabet-lesson .alphabet-translation {margin:4px 0 0;font-size:14px;color:var(--alphabet-muted)}
+#page .alphabet-lesson .alphabet-vocabulary {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:16px 0 26px}
+#page .alphabet-lesson .alphabet-vocabulary>div {display:grid;grid-template-columns:minmax(70px,1fr) minmax(0,2fr);gap:12px;border-bottom:1px solid var(--alphabet-edge);padding:10px 0}
+#page .alphabet-lesson .alphabet-vocabulary dt {font-weight:700;color:var(--alphabet-ink)}
+#page .alphabet-lesson .alphabet-vocabulary dd {margin:0;font-size:14px;color:var(--alphabet-muted)}
+#page .alphabet-lesson .alphabet-task-group {border:1px solid var(--alphabet-edge);border-radius:14px;margin:18px 0;overflow:clip}
+#page .alphabet-lesson .alphabet-task-group>summary {padding:16px;min-height:56px;cursor:pointer;background:var(--alphabet-sage);font-size:16px;font-weight:700;color:var(--alphabet-ink)}
+#page .alphabet-lesson .alphabet-task {min-width:0;margin:0;padding:20px 0;border-top:1px solid var(--alphabet-edge)}
+#page .alphabet-lesson .alphabet-task-group .alphabet-task {padding:20px}
+#page .alphabet-lesson .alphabet-task fieldset {min-width:0;margin:0 0 14px;padding:0;border:0}
+#page .alphabet-lesson .alphabet-task legend {font-size:16px;font-weight:700;color:var(--alphabet-ink);margin-bottom:12px;padding:0}
+#page .alphabet-lesson .alphabet-option {display:flex;align-items:flex-start;gap:12px;padding:12px 14px;min-height:48px;border:1px solid var(--alphabet-edge);border-radius:10px;background:#f8f6ee;margin-top:8px;cursor:pointer;font-size:14px}
+#page .alphabet-lesson .alphabet-option input {margin:5px 0 0;flex:0 0 18px;width:18px;height:18px;accent-color:#677c5c}
+#page .alphabet-lesson .alphabet-option:has(input:checked) {border-color:#a4b599;background:#e9eee2}
+#page .alphabet-lesson .alphabet-task [data-alphabet-feedback]:not(:empty) {margin-top:14px}
+#page .alphabet-lesson .alphabet-task .quiz-feedback p {margin:8px 0 0}
+#page .alphabet-lesson .alphabet-task>label {display:block;font-size:15px;font-weight:700;margin-bottom:12px}
+#page .alphabet-lesson .alphabet-task>input,#page .alphabet-lesson .alphabet-task>textarea {display:block;width:100%;max-width:640px;padding:12px 14px;margin:12px 0;border:1px solid var(--alphabet-edge);background:var(--alphabet-paper);color:var(--alphabet-ink);border-radius:10px;font:inherit}
+#page .alphabet-lesson .alphabet-task>textarea {resize:vertical;min-height:100px}
+#page .alphabet-lesson .alphabet-task details {margin-top:12px;font-size:14px}
+#page .alphabet-lesson .alphabet-task details summary {min-height:44px;padding-block:10px;cursor:pointer;color:var(--alphabet-ink)}
+#page .alphabet-lesson .alphabet-legacy {margin-top:24px}
+#page .alphabet-lesson .alphabet-legacy p {font-size:13px;max-width:72ch}
+#page .alphabet-lesson [hidden] {display:none!important}
+@media(max-width:900px){
+ #page .alphabet-lesson .alphabet-toc ol {grid-template-columns:repeat(2,minmax(0,1fr))}
+ #page .alphabet-lesson .alphabet-comparison {grid-template-columns:minmax(0,1fr) 18px minmax(0,1fr);gap:10px}
+ #page .alphabet-lesson .alphabet-comparison>[data-alphabet-audio] {grid-column:1/-1;width:100%;justify-content:center}
+ #page .alphabet-lesson .alphabet-vocabulary {grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:600px){
+ #page .alphabet-lesson :is(.alphabet-toc,.alphabet-audio-note) {padding:16px;border-radius:16px}
+ #page .alphabet-lesson .alphabet-toc ol {grid-template-columns:minmax(0,1fr);gap:0}
+ #page .alphabet-lesson .alphabet-section {border-radius:16px;scroll-margin-top:135px}
+ #page .alphabet-lesson .alphabet-section>summary {padding:17px 16px;font-size:19px;min-height:66px}
+ #page .alphabet-lesson .alphabet-section-body {padding:16px;min-width:0}
+ #page .alphabet-lesson .alphabet-rule p {font-size:14px}
+ #page .alphabet-lesson .alphabet-table :is(th,td) {padding:12px}
+ #page .alphabet-lesson .alphabet-sentence {flex-direction:column;align-items:flex-start;gap:6px}
+ #page .alphabet-lesson .alphabet-sentence p {font-size:17px}
+ #page .alphabet-lesson .alphabet-task-group .alphabet-task {padding:16px 12px}
+ #page .alphabet-lesson .alphabet-task legend {font-size:15px}
+ #page .alphabet-lesson .alphabet-task>input,#page .alphabet-lesson .alphabet-task>textarea {font-size:16px}
+ #page .alphabet-lesson .alphabet-legacy {flex-wrap:wrap}
+ #page .alphabet-lesson .alphabet-legacy>.btn {width:100%}
+}
+
+/* The scored assessment is separate from formative tasks and shared page chrome. */
+#page .alphabet-lesson .alphabet-final-test {margin-top:24px;padding:24px!important}
+#page .alphabet-lesson .alphabet-final-test h2 {font-size:24px;margin-bottom:16px}
+#page .alphabet-lesson .alphabet-final-history {border-top:1px solid var(--alphabet-edge);margin-top:20px;padding-top:12px}
+#page .alphabet-lesson .alphabet-final-history summary {min-height:44px;cursor:pointer;font-weight:650}
+#page .alphabet-lesson .alphabet-rule {scroll-margin-top:120px}
+#page :is(.alphabet-final-reading,.alphabet-final-mistake) {padding:18px;border:1px solid var(--color-border);border-radius:14px;margin:18px 0;background:var(--color-surface-alt)}
+#page .alphabet-final-reading h3 {font-size:16px;color:#465648}
+#page .alphabet-final-reading p {font-size:17px;line-height:1.8;margin:0;text-align:left;color:var(--color-text)}
+#page :is(.alphabet-final-explanations,.alphabet-final-rule-links details) {text-align:left;margin-top:12px;padding:12px 16px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface)}
+#page :is(.alphabet-final-explanations,.alphabet-final-rule-links) summary {min-height:44px;cursor:pointer;line-height:1.5;font-weight:650;color:#465648}
+#page :is(.alphabet-final-explanations,.alphabet-final-rule-links) p {font-size:14px;line-height:1.7;margin:12px 0;text-align:left}
+#page .alphabet-final-mistake h3 {font-size:17px;line-height:1.6}
+@media(max-width:600px){#page .alphabet-lesson .alphabet-final-test{padding:16px!important}#page .alphabet-final-reading{padding:14px}#page .alphabet-final-reading p{font-size:16px}#page .alphabet-lesson .alphabet-final-launch{width:100%}}

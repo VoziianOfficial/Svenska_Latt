@@ -60,7 +60,7 @@ class ServerTests(unittest.TestCase):
   self.assertEqual(err.exception.code,401)
   err.exception.close()
  def test_all_static_resources_and_photo_urls(self):
-  paths=['/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/custom-controls.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/photo-credits.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json','/assets/flashcards/photo-credits-added.json']
+  paths=['/greetings-lesson.js?v=1','/greetings-lesson.css?v=1','/alphabet-lesson.js?v=1','/alphabet-lesson.css?v=1','/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/custom-controls.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/photo-credits.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json','/assets/flashcards/photo-credits-added.json']
   urls=re.findall(r'"[^"\n]+": "(\./assets/flashcards/[^"\n]+)"',(ROOT/'flashcard-media.js').read_text())
   paths += ['/'+url.removeprefix('./') for url in urls]
   paths += ['/'+quote(str(p.relative_to(ROOT))) for p in (ROOT/'assets/word-icons').glob('*.webp')]
@@ -107,7 +107,7 @@ class ServerTests(unittest.TestCase):
 
  def test_versioned_javascript_bytes_and_mime(self):
   # Fetch the exact URL reported by the browser, not a VM or mocked fetch.
-  for name in ['supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js','manual-reviews.js','study-time.js']:
+  for name in ['greetings-lesson.js','alphabet-lesson.js','supabase-progress.js','supabase-rpc.js','supabase-auth.js','supabase-client.js','app.js','manual-reviews.js','study-time.js']:
    with self.subTest(name=name):
     with urllib.request.urlopen(self.url+'/'+name+'?v=2026-10-18-word-state-2') as response:
      self.assertEqual(response.status,200)

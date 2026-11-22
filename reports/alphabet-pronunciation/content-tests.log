@@ -1,0 +1,19 @@
+PASS: 29 letters, 33 sourced rules, 28 tasks × 4 locales / 336 branches, 9-sentence TTS contract, strict sv-SE fallback, dictation gating, escaped account-scoped drafts, unchanged historical banks/XP/storage
+PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages
+PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage
+PASS: 49 standard lesson layouts A–D + all 50 rules references, 298 full rules, 253 examples, 179 reading lines; equal content in all 4 languages and rules reference
+PASS: 50 legacy lessons preserved, 20 tasks × 4 locales, 240 answer branches, invalid/empty answers, validator negative cases, delegated submit/edit, escaped writing drafts, no progress or XP writes
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+{
+  "status": "PASS",
+  "words": 1006,
+  "lessons": 50,
+  "categories": 42,
+  "minWords": 30,
+  "books": 12,
+  "locales": 4,
+  "quizModes": 14,
+  "videoCards": 12
+}
+PASS: 202611160018_alphabet_pronunciation_manifest.sql: static-269e880adb3b4804; all IDs/categories/question counts match migration 002
+PASS: unapplied SQL changes only manifest version; signature, security mode, IDs/counts and client version match; no database connection

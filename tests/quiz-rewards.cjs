@@ -39,7 +39,11 @@ for(const [id,bank] of Object.entries(embedded)){
  if(!id.startsWith('video:'))assert.deepEqual(upgraded[id],bank,'014 must retain historical bank '+id);
  else for(const [qid,q] of Object.entries(bank.questions))assert.deepEqual(upgraded[id].questions[qid],q,'Historical response changed '+id+'/'+qid);
 }
-assert.deepEqual(upgraded,catalog,'014 trusted bank drifted from source content');
+const finalBank=JSON.parse(read('supabase/migrations/202611160019_alphabet_final_test.sql').split('$alphabet_bank$')[1]);
+for(const [qid,q] of Object.entries(upgraded['lesson:lesson-1'].questions))assert.deepEqual(finalBank.questions[qid],q,'Archived lesson answer changed');
+const greetingsBank=JSON.parse(read('supabase/migrations/202611160020_greetings_introduction.sql').split('$greetings_bank$')[1]);
+for(const [qid,q] of Object.entries(upgraded['lesson:lesson-2'].questions))assert.deepEqual(greetingsBank.questions[qid],q,'Archived lesson-2 answer changed');
+assert.deepEqual({...upgraded,'lesson:lesson-1':finalBank,'lesson:lesson-2':greetingsBank},catalog,'020 trusted bank drifted from source content');
 async function complete(p,mode,id,correct){
  await p.run(`startQuiz(${JSON.stringify(mode)},${JSON.stringify(id)})`);
  const n=p.run('quiz.questions.length'),baseline=p.run('state.xp');
@@ -52,13 +56,17 @@ async function complete(p,mode,id,correct){
 }
 (async()=>{
  let p=page();p.run('state=defaultState()');
+ assert.match(p.run("quizStatusChip('lesson:lesson-5')"),/class="chip quiz-status"/);
  await complete(p,'lesson','lesson-5',7);assert.equal(p.run('state.xp'),0);assert.equal(p.run("quizStatus('lesson:lesson-5')"),'Лучший результат: 70%');
+ assert.match(p.run("quizStatusChip('lesson:lesson-5')"),/class="chip quiz-status"/);
  await complete(p,'lesson','lesson-5',8);assert.equal(p.run('state.xp'),35);assert.equal(p.run('quiz.result.xp'),35);
  assert.equal(p.run("quizStatus('lesson:lesson-5')"),'✓ Пройден · 80%');
+ assert.match(p.run("quizStatusChip('lesson:lesson-5')"),/class="done-chip quiz-status"/);
  await p.run('finishQuiz()');assert.equal(p.run('state.xp'),35);
  await complete(p,'lesson','lesson-5',10);assert.equal(p.run('state.xp'),35);assert.equal(p.run('quiz.result.new_best'),true);
  assert.match(p.run('renderQuizFinish()'),/Тест уже пройден/);assert(!p.run('renderQuizFinish()').includes('+35 XP'));
  p=reload();assert.equal(p.run('state.xp'),35);assert.equal(p.run("quizStatus('lesson:lesson-5')"),'✓ Пройден · 100%');
+ assert.match(p.run("quizStatusChip('lesson:lesson-5')"),/class="done-chip quiz-status"/);
  await complete(p,'lesson','lesson-6',6);assert.equal(p.run('state.xp'),35);
  await complete(p,'lesson','lesson-6',9);assert.equal(p.run('state.xp'),70);
  await p.run("startQuiz('lesson','lesson-7');submitAnswer(quiz.questions[0].answer)");assert.equal(p.run('state.xp'),70);
@@ -109,7 +117,7 @@ async function complete(p,mode,id,correct){
    assert.equal(new Set(questions.map(q=>q.questionId)).size,bank.count,id);
    for(const q of questions){
     assert.equal(q.serverOptions[q.options.indexOf(q.answer)],bank.questions[q.questionId].answer,`${lang}: ${id}/${q.questionId}`);
-    for(let i=0;i<q.options.length;i++)assert.equal(p.run(`normalize(${JSON.stringify(q.options[i])})===normalize(${JSON.stringify(q.answer)})`),q.serverOptions[i]===bank.questions[q.questionId].answer,`${lang}: ${id}/${q.questionId}: grading mismatch`);
+    for(let i=0;i<q.options.length;i++)assert.equal(p.run(`${q.assessmentBank?JSON.stringify(q.options[i])+'==='+JSON.stringify(q.answer):'normalize('+JSON.stringify(q.options[i])+')===normalize('+JSON.stringify(q.answer)+')'}`),q.serverOptions[i]===bank.questions[q.questionId].answer,`${lang}: ${id}/${q.questionId}: grading mismatch`);
    }
   }
  }

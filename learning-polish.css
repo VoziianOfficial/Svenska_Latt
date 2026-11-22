@@ -763,8 +763,8 @@ button.custom-select:hover {border-color:var(--color-primary)!important}
 button.custom-select::after {border-color:var(--color-primary)}
 .select-menu-option {color:var(--color-text)}
 .select-menu-option.is-active {background:var(--color-surface-alt)}
-.select-menu-option[aria-selected=true] {color:var(--color-primary);background:var(--color-primary-soft)}
-.select-menu-option[aria-selected=true]::after {border-color:var(--color-primary)}
+.select-menu-option[aria-selected=true] {color:var(--btn-primary-text);background:var(--btn-selected-bg)}
+.select-menu-option[aria-selected=true]::after {border-color:var(--btn-focus)}
 input[type=checkbox],input[type=radio] {accent-color:var(--color-primary)}
 .study-toggle input[type=checkbox] {border-color:var(--color-border-strong);background-color:var(--color-surface)}
 .study-toggle input[type=checkbox]:checked {border-color:var(--color-primary);background-color:var(--color-primary)}
@@ -970,16 +970,20 @@ button:hover:not(:disabled),button:active:not(:disabled),.book-card:hover {trans
    Only this rendering bridge needs priority over the older CSS files; family
    and state changes below use ordinary custom properties, never !important. */
 :root {
- --btn-primary-bg:var(--color-primary);
- --btn-primary-text:var(--color-on-primary);
- --btn-primary-hover:var(--color-primary-hover);
+ --btn-primary-bg:rgb(229 234 224 / 76%);
+ --btn-primary-text:#465648;
+ --btn-primary-hover:rgb(218 226 211 / 88%);
+ --btn-primary-active:rgb(207 218 199 / 94%);
+ --btn-primary-border:rgb(147 160 139 / 42%);
+ --btn-selected-bg:#e5e9df;
+ --btn-selected-border:#a9b69f;
  --btn-secondary-bg:var(--color-surface);
- --btn-secondary-text:var(--color-primary-active);
+ --btn-secondary-text:var(--btn-primary-text);
  --btn-secondary-hover:var(--color-surface-alt);
  --btn-border:var(--color-border-strong);
  --btn-radius:16px;
- --btn-shadow:0 3px 0 var(--color-primary-active);
- --btn-focus:var(--color-primary);
+ --btn-shadow:inset 0 1px 0 rgb(255 255 255 / 75%),0 2px 6px rgb(55 64 45 / 5%);
+ --btn-focus:#667760;
  --btn-accent-bg:var(--color-secondary);
  --btn-accent-text:var(--color-text);
  --btn-accent-hover:#c7972f;
@@ -1019,14 +1023,16 @@ button:hover:not(:disabled),button:active:not(:disabled),.book-card:hover {trans
   color var(--btn-duration) ease,box-shadow var(--btn-duration) ease;
 }
 
-/* 1. Primary: a sturdy blue rectangle with a small, printed lower edge. */
+/* 1. Primary: frosted sage with a quiet edge, shared by all main actions. */
 .btn,.btn.white[data-action="topic-quiz"],.reference-feature-footer button {
  --control-bg:var(--btn-primary-bg);--control-text:var(--btn-primary-text);
- --control-border:var(--color-primary-active);--control-shadow:var(--btn-shadow);
- --control-hover:var(--btn-primary-hover);--control-active:var(--color-primary-active);
+ --control-border:var(--btn-primary-border);--control-shadow:var(--btn-shadow);
+ --control-hover:var(--btn-primary-hover);--control-active:var(--btn-primary-active);
+ -webkit-backdrop-filter:blur(12px) saturate(110%);
+ backdrop-filter:blur(12px) saturate(110%);
 }
 .btn.small {--control-height:var(--btn-compact-height);--control-padding:10px 16px;--control-size:13px}
-.hero .btn.white {--control-bg:var(--color-primary-active);--control-text:var(--btn-primary-text);--control-border:var(--color-on-primary);--control-hover:#16354a;--control-active:#102b3c;--control-shadow:0 3px 0 rgb(16 43 60 / 60%)}
+.hero .btn.white {--control-bg:rgb(246 240 230 / 94%);--control-text:var(--btn-primary-text);--control-border:rgb(255 249 241 / 65%);--control-hover:#eeeade;--control-active:#e1dfd0;--control-shadow:var(--btn-shadow)}
 
 /* 2. Secondary: warm paper and a clear ink border. Filters are oval members
    of this family; card actions keep the rectangular editorial geometry. */
@@ -1035,15 +1041,15 @@ button:hover:not(:disabled),button:active:not(:disabled),.book-card:hover {trans
 .learning-v2-option,.reference-nav button {
  --control-bg:var(--btn-secondary-bg);--control-text:var(--btn-secondary-text);
  --control-border:var(--btn-border);--control-shadow:none;
- --control-hover:var(--btn-secondary-hover);--control-active:var(--color-primary-soft);
+ --control-hover:var(--btn-secondary-hover);--control-active:var(--btn-selected-bg);
 }
 .pill,.filter-pills button,.tabs button,.topic-chips button,.reference-nav button {
  --control-radius:999px;--control-height:var(--btn-compact-height);--control-padding:9px 16px;--control-size:13px;
 }
 .pill.active,.filter-pills button.active,.tabs button.active,.reference-nav button[aria-current],
 .progress-filters [aria-pressed=true],.quiz-word.selected {
- --control-bg:var(--color-primary-soft);--control-text:var(--color-primary-active);
- --control-border:var(--color-primary);--control-hover:var(--color-primary-soft);
+ --control-bg:var(--btn-selected-bg);--control-text:var(--btn-primary-text);
+ --control-border:var(--btn-selected-border);--control-hover:var(--btn-selected-bg);
 }
 .quiz-option,.learning-v2-option {--control-height:56px;--control-padding:14px 18px;text-align:left;justify-content:flex-start}
 .quiz-word {--control-radius:999px;--control-padding:10px 16px;--control-height:44px}
@@ -1075,21 +1081,21 @@ button:hover:not(:disabled),button:active:not(:disabled),.book-card:hover {trans
 
 /* 4. Quiet: back, cancel, view-all and supplementary profile actions. */
 .btn.ghost,.link-btn,.vid-link,.back-link,.auth-link,.reference-back-top,.pwa-dialog-close {
- --control-bg:transparent;--control-text:var(--color-primary);
+ --control-bg:transparent;--control-text:var(--btn-primary-text);
  --control-border:transparent;--control-shadow:none;
- --control-hover:var(--color-primary-soft);--control-active:var(--color-surface-alt);
+ --control-hover:var(--btn-selected-bg);--control-active:var(--color-surface-alt);
  --control-height:var(--btn-compact-height);--control-padding:10px 12px;--control-radius:12px;
 }
-.hero .btn:not(.white) {--control-bg:transparent;--control-text:var(--color-on-primary);--control-border:var(--color-on-primary);--control-hover:var(--color-primary-hover);--control-active:var(--color-primary-active);--control-shadow:none}
+.hero .btn:not(.white) {--control-bg:rgb(49 56 42 / 28%);--control-text:var(--color-on-primary);--control-border:rgb(255 249 241 / 65%);--control-hover:rgb(68 78 58 / 72%);--control-active:rgb(52 62 43 / 86%);--control-shadow:none}
 
 /* 5. Icon: generous square targets; favorites and carousel controls use ovals.
    Text pronunciation controls share the same palette without becoming square. */
 .circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,
 .hamburger,.drawer-close,.avatar,.calendar-arrow,
 button[data-action="speak"]:not(.number-item) {
- --control-bg:var(--color-surface);--control-text:var(--color-primary);
+ --control-bg:var(--color-surface);--control-text:var(--btn-primary-text);
  --control-border:var(--color-border);--control-shadow:none;
- --control-hover:var(--color-primary-soft);--control-active:var(--color-surface-alt);
+ --control-hover:var(--btn-selected-bg);--control-active:var(--color-surface-alt);
  --control-radius:14px;--control-height:var(--btn-compact-height);--control-padding:10px 14px;
 }
 .circle-btn,.sound-btn,.slider-arrow,.speech-stop,.icon-close,.dict-search-clear,
@@ -1164,22 +1170,35 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
 }
 :root #app .nav-link {min-height:46px;padding:11px 14px;font-weight:650;border-radius:12px!important}
 :root #app .mobile-nav button {min-height:52px;min-width:44px;padding:6px 3px;border-radius:14px!important;line-height:1.3}
-:root #app .nav-link.active,:root #app .mobile-nav button.active {background:var(--color-primary-soft)!important;color:var(--color-primary-active)!important;box-shadow:inset 3px 0 var(--color-primary)!important}
-:root #app .roadmap-step.active {background:var(--color-primary-soft)!important;border-color:var(--color-primary)!important}
-:root #app :is(.action-card,.mode-card,.topic-card,.course-tile):hover {border-color:var(--color-primary)!important}
+:root #app .nav-link.active,:root #app .mobile-nav button.active {background:var(--btn-selected-bg)!important;color:var(--btn-primary-text)!important;box-shadow:inset 3px 0 var(--btn-focus)!important}
+:root #app .roadmap-step.active {background:var(--btn-selected-bg)!important;border-color:var(--btn-selected-border)!important}
+:root #app :is(.action-card,.mode-card,.topic-card,.course-tile):hover {border-color:var(--btn-selected-border)!important}
 :root #app .mode-card {background:var(--btn-secondary-bg)!important;border-radius:20px 14px 20px 10px!important}
 :root #app .mode-card:hover {background:var(--color-warning-soft)!important}
 :root #app .search-result {min-height:52px}
 
 /* Equal card bottoms and stable actions across translated copy. */
 :root #app .hero .split {justify-content:flex-start}
-.learning-v2-option:has(input:checked) {--control-bg:var(--color-primary-soft);--control-border:var(--color-primary);--control-text:var(--color-primary-active)}
+.learning-v2-option:has(input:checked) {--control-bg:var(--btn-selected-bg);--control-border:var(--btn-selected-border);--control-text:var(--btn-primary-text)}
 .book-grid {align-items:stretch}
 :root #app .book-card {height:100%;display:flex;flex-direction:column}
 :root #app .book-content {flex:1;display:flex;flex-direction:column;align-items:stretch}
 :root #app .book-content .btn {margin-top:auto;width:100%!important}
 :root #app .lesson-foot .btn {--control-height:44px;--control-padding:10px 12px;--control-size:13px;--control-radius:14px;align-self:stretch}
 :root #app .lesson-foot {align-items:stretch}
+:root #app .lessons-grid .lesson-foot [data-quiz-status] {
+ border-color:var(--color-border)!important;
+ background:rgb(246 240 230 / 70%)!important;
+ color:var(--color-text-soft)!important;
+}
+/* The same completed state applies on first render and after progress sync. */
+:root #app #page [data-quiz-status].done-chip {
+ border:1px solid #a8b99d!important;
+ background:#dfe9d8!important;
+ color:#3c563c!important;
+ font-weight:700!important;
+ box-shadow:inset 0 1px 0 rgb(255 255 255 / 60%);
+}
 :root #app .video-card-unified .btn {--control-padding:12px 16px;--control-height:48px;--control-size:14px}
 :root #app .video-watch-toggle {--control-padding:10px 12px;--control-height:44px;--control-size:13px}
 .btn>svg,.btn .review-button-icon {flex-shrink:0}
@@ -1227,8 +1246,8 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
 .hero.home-photo-hero .hero-copy h1 {max-width:none!important;margin:0 0 22px!important;font-size:clamp(30px,3.05vw,44px)!important;line-height:1.16!important;letter-spacing:-.035em!important;color:var(--color-on-primary)!important;text-shadow:0 2px 16px rgb(0 0 0 / 20%);text-wrap:balance}
 .home-photo-hero .hero-copy .home-hero-actions {display:flex;flex-wrap:nowrap;justify-content:flex-start;align-items:stretch;gap:12px!important;margin:0!important;padding-right:90px}
 .home-photo-hero .home-hero-actions .btn {margin:0;width:auto;flex:0 1 auto;min-width:0;--control-height:46px;--control-padding:11px 18px}
-.home-photo-hero .home-hero-actions .btn.white {--control-bg:var(--color-surface);--control-text:var(--color-primary-active);--control-border:var(--color-surface);--control-hover:var(--color-warning-soft);--control-active:var(--color-surface-alt);--control-shadow:0 2px 0 rgb(16 32 42 / 20%)}
-.home-photo-hero .home-hero-actions .btn:not(.white) {--control-bg:rgb(16 32 42 / 22%);--control-border:rgb(255 249 241 / 65%);--control-hover:var(--color-primary);--control-active:var(--color-primary-active)}
+.home-photo-hero .home-hero-actions .btn.white {--control-bg:rgb(246 240 230 / 94%);--control-text:var(--btn-primary-text);--control-border:rgb(255 249 241 / 65%);--control-hover:#eeeade;--control-active:#e1dfd0;--control-shadow:var(--btn-shadow)}
+.home-photo-hero .home-hero-actions .btn:not(.white) {--control-bg:rgb(49 56 42 / 28%);--control-border:rgb(255 249 241 / 65%);--control-hover:rgb(68 78 58 / 72%);--control-active:rgb(52 62 43 / 86%)}
 .home-photo-hero .home-photo-credit {position:absolute;right:24px;bottom:16px;z-index:2;font-size:10px;line-height:1.5;letter-spacing:.03em;color:var(--color-on-primary);text-decoration:none;opacity:.85}
 .home-photo-hero .home-photo-credit:hover {text-decoration:underline;text-underline-offset:3px;opacity:1}
 .stats-grid.home-stats-row {display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:16px 0!important}
@@ -1391,7 +1410,7 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
  --control-border:var(--color-border);
  --control-hover:var(--color-warning-soft);
 }
-.resource-bar--home .resource-link > span:last-child {white-space:nowrap;overflow-wrap:normal;word-break:normal}
+.resource-bar--home .resource-link > span:last-child {min-width:0;white-space:normal;overflow-wrap:anywhere;word-break:normal}
 .resource-link-icon {
  display:grid;place-items:center;flex:0 0 32px;width:32px;height:32px;
  border-radius:9px;background:var(--color-warning-soft);color:var(--color-warning-ink);
@@ -1423,7 +1442,7 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
 .alphabet-panel .alpha-letter {font-size:40px;font-weight:800;line-height:1;color:var(--color-primary)}
 .alphabet-panel .alpha-ipa {display:block;min-height:20px;margin-top:6px;color:var(--color-text-soft);font-size:12px;font-weight:500;line-height:1.5;white-space:nowrap}
 :root #app .alphabet-panel .alpha-letter-sound {
- --control-bg:var(--color-primary-soft);--control-border:transparent;--control-radius:50%;
+ --control-bg:var(--btn-selected-bg);--control-border:transparent;--control-radius:50%;
  --control-height:44px;--control-padding:0;
  display:grid;place-items:center;flex:0 0 44px;width:44px!important;height:44px!important;padding:0!important;
 }
@@ -1527,7 +1546,7 @@ button.custom-select {--control-height:44px;--control-padding:10px 36px 10px 14p
 .topics-carousel-controls {display:flex;align-items:center;justify-content:center;gap:22px}
 :root #app .vocabulary-modules .slider-arrow {
  --control-bg:var(--color-surface);--control-border:var(--color-border-strong);
- --control-text:var(--color-primary);--control-height:52px;--control-radius:50%;
+ --control-text:var(--btn-primary-text);--control-height:52px;--control-radius:50%;
  width:52px!important;height:52px!important;min-width:52px!important;
 }
 :root #app .vocabulary-modules .slider-arrow:disabled {opacity:.35!important;cursor:default}

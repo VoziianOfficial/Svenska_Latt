@@ -1,0 +1,100 @@
+$ node tests/alphabet-pronunciation.cjs
+PASS: 29 letters, 33 sourced rules, 28 tasks × 4 locales / 336 branches, 9-sentence TTS contract, strict sv-SE fallback, dictation gating, escaped account-scoped drafts, unchanged historical banks/XP/storage
+
+$ node tests/alphabet-final-test.cjs
+PASS: final 20 + formative 35; 3/5/4/3/3/2 distribution; 320 option/locale branches; canonical IDs, all explanations/rule links, 15/16/20 thresholds, retries/history/XP and archived 13-question restore
+
+$ node tests/quiz-rewards.cjs
+PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages
+
+$ node tests/quiz-session.cjs
+PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage
+
+$ node tests/lesson-localization.cjs
+PASS: 49 standard lesson layouts A–D + all 50 rules references, 298 full rules, 253 examples, 179 reading lines; equal content in all 4 languages and rules reference
+
+$ node tests/learning-content-v2.cjs
+PASS: 50 legacy lessons preserved, 20 tasks × 4 locales, 240 answer branches, invalid/empty answers, validator negative cases, delegated submit/edit, escaped writing drafts, no progress or XP writes
+
+$ node tests/service-worker.cjs
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+
+$ node tests/quality.cjs
+{
+  "status": "PASS",
+  "words": 1006,
+  "lessons": 50,
+  "categories": 42,
+  "minWords": 30,
+  "books": 12,
+  "locales": 4,
+  "quizModes": 14,
+  "videoCards": 12
+}
+
+$ python3 scripts/check_supabase_manifest.py
+PASS: 202611160019_alphabet_final_test.sql: static-5e8f29c4d0bd02fe; all IDs/categories retained; only active lesson-1 count changes 13 → 20
+
+$ python3 tests/alphabet-final-release.py
+PASS: prepared 019 bank/reader/manifest; 20 active + 13 unchanged archived IDs; 35-XP ledger retained; exact source guards, scoped read-only final result, no user DML; SQL NOT executed
+
+$ python3 tests/learning-content-manifest-v2.py
+PASS: prepared 019 bank/reader/manifest; 20 active + 13 unchanged archived IDs; 35-XP ledger retained; exact source guards, scoped read-only final result, no user DML; SQL NOT executed
+
+$ node --check app.js
+
+$ node --check alphabet-lesson.js
+
+$ git diff --check
+
+
+Final rule-position fix and runtime version checks:
+$ node tests/alphabet-pronunciation.cjs
+PASS: 29 letters, 33 sourced rules, 28 tasks × 4 locales / 336 branches, 9-sentence TTS contract, strict sv-SE fallback, dictation gating, escaped account-scoped drafts, unchanged historical banks/XP/storage
+
+$ node tests/alphabet-final-test.cjs
+PASS: final 20 + formative 35; 3/5/4/3/3/2 distribution; 320 option/locale branches; canonical IDs, all explanations/rule links, 15/16/20 thresholds, retries/history/XP and archived 13-question restore
+
+$ node tests/service-worker.cjs
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+
+$ node --check alphabet-lesson.js
+
+$ git diff --check
+
+
+Final assessment labels and manifest:
+$ node tests/alphabet-final-test.cjs
+PASS: final 20 + formative 35; 3/5/4/3/3/2 distribution; 320 option/locale branches; canonical IDs, all explanations/rule links, 15/16/20 thresholds, retries/history/XP and archived 13-question restore
+
+$ node tests/service-worker.cjs
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+
+$ python3 scripts/check_supabase_manifest.py
+PASS: 202611160019_alphabet_final_test.sql: static-5e8f29c4d0bd02fe; all IDs/categories retained; only active lesson-1 count changes 13 → 20
+
+$ python3 tests/alphabet-final-release.py
+PASS: prepared 019 bank/reader/manifest; 20 active + 13 unchanged archived IDs; 35-XP ledger retained; exact source guards, scoped read-only final result, no user DML; SQL NOT executed
+
+$ node --check app.js
+
+$ git diff --check
+
+
+Letter audio UI refinement:
+$ node tests/alphabet-pronunciation.cjs
+PASS: 29 letters, 33 sourced rules, 28 tasks × 4 locales / 336 branches, 9-sentence TTS contract, 29 isolated letter names, icon/stop states, strict sv-SE fallback, dictation gating, escaped account-scoped drafts, unchanged historical banks/XP/storage
+
+$ node tests/alphabet-final-test.cjs
+PASS: final 20 + formative 35; 3/5/4/3/3/2 distribution; 320 option/locale branches; canonical IDs, all explanations/rule links, 15/16/20 thresholds, retries/history/XP and archived 13-question restore
+
+$ node tests/service-worker.cjs
+PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation
+
+$ python3 scripts/check_supabase_manifest.py
+PASS: 202611160019_alphabet_final_test.sql: static-5e8f29c4d0bd02fe; all IDs/categories retained; only active lesson-1 count changes 13 → 20
+
+$ node --check alphabet-lesson.js
+
+$ git diff --check
+

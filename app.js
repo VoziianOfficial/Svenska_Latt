@@ -210,10 +210,10 @@ function startQuiz(mode='mixed',lesson=null,forReview=false){
  else{questions=Array.from({length:10},()=>getQuestion(mode))}
  quiz={active:true,finished:false,mode,lesson,questions,index:0,score:0,answered:false,selected:[],latest:null};navigate('practice')}
 function renderPractice(){if(quiz.active){if(quiz.finished)return renderQuizFinish();return renderQuiz()}return title(t('train'),t('chooseMode'))+`<div class="practice-modes">${[['mixed','🎲'],['translation','🌍'],['verbForms','⚡'],['articles','🧩'],['listening','🎧'],['sentences','🧱'],['writeWord','✍️'],['fixMistake','🛠️']].map(([m,e])=>`<button class="mode-card" data-action="start-mode" data-mode="${m}"><span class="e">${e}</span><b>${esc(t(m))}</b><small>${m==='mixed'?'10':m==='listening'?'10':'10'} ${esc(t('step'))} · 0 XP</small></button>`).join('')}</div><div class="notice" style="margin-top:24px">🧠 ${esc(t('quizTip'))}</div>`}
-function renderQuiz(){let q=quiz.questions[quiz.index];if(!q)return renderQuizFinish();let pct=quiz.index/quiz.questions.length*100;let feedback=quiz.answered?`<div class="quiz-feedback ${quiz.latest?'success':'failure'}">${quiz.latest?'✅ '+t('correct'):'🔎 '+t('incorrect')+' '+esc(q.answer)}<div style="margin-top:5px">${esc(q.why||'')}</div></div>`:'';let answerUi='';if(q.type==='choice')answerUi=`<div class="quiz-options">${q.options.map((o,i)=>`<button class="quiz-option ${quiz.answered?(o===q.answer?'correct':quiz.selected===o?'wrong':''):''}" data-action="quiz-choice" data-choice="${esc(o)}" ${quiz.answered?'disabled':''}>${String.fromCharCode(65+i)}. ${esc(o)}</button>`).join('')}</div>`;
+function renderQuiz(){let q=quiz.questions[quiz.index];if(!q)return renderQuizFinish();let pct=quiz.index/quiz.questions.length*100;let feedback=quiz.answered?`<div class="quiz-feedback ${quiz.latest?'success':'failure'}">${quiz.latest?'✅ '+t('correct'):'🔎 '+t('incorrect')+' '+esc(q.answer)}<div style="margin-top:5px">${esc(q.why||'')}</div></div>`:'';if(quiz.answered&&q.assessmentBank)feedback=alphabetFinalFeedback(q,quiz.selected,quiz.latest);let answerUi='';if(q.type==='choice')answerUi=`<div class="quiz-options">${q.options.map((o,i)=>`<button class="quiz-option ${quiz.answered?(o===q.answer?'correct':quiz.selected===o?'wrong':''):''}" data-action="quiz-choice" data-choice="${esc(o)}" ${quiz.answered?'disabled':''}>${String.fromCharCode(65+i)}. ${esc(o)}</button>`).join('')}</div>`;
  else if(q.type==='listen'||q.type==='type')answerUi=`<div style="display:grid;gap:13px">${q.type==='listen'?`<button class="btn secondary" style="width:fit-content" data-action="speak" data-text="${esc(q.speak)}">🔊 ${esc(t('pronounce'))} ▶</button>`:''}<form id="quiz-input-form" class="quiz-text-answer"><input id="quiz-text-input" autocomplete="off" spellcheck="false" value="${esc(typeof quiz.selected==='string'?quiz.selected:'')}" placeholder="${esc(t('writeAnswer'))}" ${quiz.answered?'disabled':''} aria-label="${esc(t('writeAnswer'))}"><button class="btn" type="submit" ${quiz.answered?'disabled':''}>${esc(t('check'))}</button></form></div>`;
  else if(q.type==='arrange'){let selection=Array.isArray(quiz.selected)?quiz.selected:[];answerUi=`<div class="built-sentence">${selection.length?selection.map((a,i)=>`<button class="quiz-word" data-action="remove-token" data-index="${i}" ${quiz.answered?'disabled':''}>${esc(a.v)} ×</button>`).join(''):`<span class="small-muted">${esc(t('tapOrder'))}</span>`}</div><div class="quiz-words">${q.tokens.filter(x=>!selection.some(y=>y.id===x.id)).map(x=>`<button class="quiz-word" data-action="add-token" data-id="${x.id}" ${quiz.answered?'disabled':''}>${esc(x.v)}</button>`).join('')}</div><div class="split" style="margin-top:19px"><button class="btn ghost small" data-action="reset-tokens" ${quiz.answered?'disabled':''}>↺ ${esc(t('reset'))}</button><button class="btn" data-action="check-tokens" ${quiz.answered?'disabled':''}>${esc(t('check'))}</button></div>`}
- return `<button class="back-link" data-action="stop-quiz">← ${esc(t('back'))}</button><section class="quiz-card"><div class="split"><div class="quiz-count">${t('step')} ${quiz.index+1} ${t('of')} ${quiz.questions.length}</div><span class="chip">🏆 ${quiz.score} ${esc(t('correct'))}</span></div><div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div><h2 class="quiz-prompt">${esc(q.question)}</h2>${answerUi}${feedback}${quiz.answered?`<button style="margin-top:18px" class="btn wide" data-action="quiz-next">${quiz.index===quiz.questions.length-1?t('finished'):t('continue')}</button>`:''}</section>`}
+ return `<button class="back-link" data-action="stop-quiz">← ${esc(t('back'))}</button><section class="quiz-card"><div class="split"><div class="quiz-count">${t('step')} ${quiz.index+1} ${t('of')} ${quiz.questions.length}</div><span class="chip">🏆 ${quiz.score} ${esc(t('correct'))}</span></div><div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div><h2 class="quiz-prompt">${esc(q.question)}</h2>${q.testContext?`<section class="alphabet-final-reading${q.reviewLesson==='lesson-2'?' greet-final-context':''}" aria-label="${esc(q.testContextTitle)}"><h3>${esc(q.testContextTitle)}</h3><p lang="sv">${esc(q.testContext)}</p></section>`:''}${answerUi}${feedback}${quiz.answered?`<button style="margin-top:18px" class="btn wide" data-action="quiz-next">${quiz.index===quiz.questions.length-1?(q.assessmentBank?txt4('Завершить тест','Finish test','Avsluta testet','Завершити тест'):t('finished')):t('continue')}</button>`:''}</section>`}
 function normalize(str){return String(str||'').trim().toLocaleLowerCase('sv').replace(/[\s\t\n]+/g,' ').replace(/[.!?。]+$/,'').normalize('NFC')}
 let quizBusy=false;
 function quizStorage(){return sessionStorage}
@@ -243,7 +243,7 @@ function quizLoading(value){
 }
 async function submitAnswer(answer){
  if(!quiz.active||quiz.finished||quiz.answered||quizBusy||!String(answer).trim())return;
- const current=quiz,q=quiz.questions[quiz.index],correct=normalize(answer)===normalize(q.answer);
+ const current=quiz,q=quiz.questions[quiz.index],correct=q.assessmentBank?answer===q.answer:normalize(answer)===normalize(q.answer);
  if(quiz.cloud){
   const key='answer-'+quiz.index;
   // Preserve the first submitted answer and timestamp if queue storage fails.
@@ -273,12 +273,13 @@ async function finishQuiz(){
   if(quiz.answerCount!==quiz.questions.length)return;
   mutate(()=>{
    const id=quizIdentity(),old=state.quizResults[id],n=quiz.questions.length,passed=quiz.score*5>=n*4;
-   const best=!old||quiz.score*old.total>old.correct*n;
+   const best=!old?.total||quiz.score*old.total>old.correct*n;
    // Existing lesson completion is evidence of a historical bonus, never a new reward.
    const rewarded=!!old?.rewarded||(!['book','topic','video'].includes(quiz.mode)&&state.completed.includes(quiz.lesson));
    const xp=passed&&!rewarded?quizReward():0;
    quiz.result={xp,already_rewarded:rewarded,new_best:best};
    state.quizResults[id]={...(best?{correct:quiz.score,total:n}:old),rewarded:rewarded||xp>0};
+   if(!!quiz.bank&&quiz.bank===alphabetFinalConfig(quiz.lesson)?.id){const key=alphabetFinalConfig(quiz.lesson).resultKey,previous=state.quizResults[key],improved=!previous?.total||quiz.score*previous.total>previous.correct*n;state.quizResults[key]={...(improved?{correct:quiz.score,total:n}:previous),rewarded:rewarded||xp>0};quiz.result.new_best=improved}
    state.xp+=xp;
    if(passed&&quiz.lesson&&!['book','topic','video'].includes(quiz.mode)&&!state.completed.includes(quiz.lesson))state.completed.push(quiz.lesson);
   });
@@ -292,8 +293,9 @@ function quizSaveLabel(){
 }
 function renderQuizFinish(){
  const passed=quiz.score*5>=quiz.questions.length*4;
- const mistakes=(quiz.mistakes||[]).map(m=>{const q=quiz.questions[m.index];return `<div class="quiz-feedback failure"><b>${esc(q.question)}</b><p>${esc(m.answer)} → <strong>${esc(q.answer)}</strong></p><small>${esc(q.why||'')}</small></div>`}).join('');
- return `<section class="quiz-card quiz-finished"><div class="big">${passed?'🏆':'💪'}</div><h1>${esc(t('finished'))}</h1><div class="score">${quiz.score} / ${quiz.questions.length}</div><p>${esc(t('accuracy'))}: ${Math.floor(quiz.score*100/quiz.questions.length)}%</p>${quizSaveLabel()}${quizResultLabel()}${quiz.lesson&&passed&&!['book','topic','video'].includes(quiz.mode)?`<p class="badge-verified">✓ ${esc(t('practiceDone'))}</p>`:''}<div class="split" style="justify-content:center;margin-top:25px"><button class="btn secondary" data-action="quiz-retry">↻ ${esc(t('again'))}</button><button class="btn" data-action="quiz-lessons">${esc(t('next'))}</button></div>${mistakes?`<details style="text-align:left;margin-top:20px;overflow-wrap:anywhere"><summary>${esc(t('bad'))} · ${quiz.mistakes.length}</summary>${mistakes}</details>`:''}</section>`;
+ const finishTitle=quiz.questions[0]?.assessmentBank?txt4('Итоговый тест завершён!','Final test completed!','Sluttestet är klart!','Підсумковий тест завершено!'):t('finished');
+ const mistakes=(quiz.mistakes||[]).map(m=>{const q=quiz.questions[m.index];if(q.assessmentBank)return `<article class="alphabet-final-mistake"><h3>${esc(q.question)}</h3>${alphabetFinalFeedback(q,m.answer,false)}</article>`;return `<div class="quiz-feedback failure"><b>${esc(q.question)}</b><p>${esc(m.answer)} → <strong>${esc(q.answer)}</strong></p><small>${esc(q.why||'')}</small></div>`}).join('');
+ return `<section class="quiz-card quiz-finished"><div class="big">${passed?'🏆':'💪'}</div><h1>${esc(finishTitle)}</h1><div class="score">${quiz.score} / ${quiz.questions.length}</div><p>${esc(t('accuracy'))}: ${Math.floor(quiz.score*100/quiz.questions.length)}%</p>${quizSaveLabel()}${quizResultLabel()}${quiz.lesson&&passed&&!['book','topic','video'].includes(quiz.mode)?`<p class="badge-verified">✓ ${esc(t('practiceDone'))}</p>`:''}<div class="split" style="justify-content:center;margin-top:25px"><button class="btn secondary" data-action="quiz-retry">↻ ${esc(t('again'))}</button><button class="btn" data-action="quiz-lessons">${esc(t('next'))}</button></div>${mistakes?`<details style="text-align:left;margin-top:20px;overflow-wrap:anywhere"><summary>${esc(t('bad'))} · ${quiz.mistakes.length}</summary>${mistakes}</details>`:''}</section>`;
 }
 async function leaveQuiz(destination=null){
  if(quizBusy)return;
@@ -607,7 +609,7 @@ async function boot(){
     applyAuthState(window.SVAuth.getState());
     if(user?.id===userId){cloudReadError=false;state=sanitize(snapshot);refreshWordUI(true)}
    },previewCatalog:()=>({
-    version:'static-1750f0ad07cce4c4',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
+    version:'static-1aa3eb8422e2930a',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
     books:BOOKS.map(x=>x.id),videos:[...VIDEOS,...MORE_VIDEOS].map(x=>x.id)
    })});
    window.SVAuth.subscribe(()=>applyAuthState(window.SVAuth.getState()));
@@ -700,7 +702,7 @@ function renderBook(){const b=BOOKS.find(x=>x.id===routeParam);if(!b)return rend
 function speakLetter3(letter){const a=ALPHABET3.find(x=>x[0]===letter);if(!a)return;const names={'W':'dubbel-ve','Z':'säta'};speak(names[letter]||letter.toLowerCase())}
 function getMoreQuestion3(mode){
  if(mode==='fillBlank'||mode==='dialogues'){const db=mode==='dialogues'?DIALOGUES3:CLOZE3;const [sentence,answer,options,why]=shuffle(db)[0];return choice(`🧩 ${sentence}`,answer,options.filter(x=>x!==answer),null,why)}
- if(mode==='weekdays'||mode==='months'){const list=mode==='weekdays'?DAYS3:MONTHS3;let k=Math.floor(Math.random()*list.length),row=list[k],target=Math.random()<.5;let answer=target?row[0]:row[1];let others=shuffle(list.filter(x=>x[0]!==row[0])).slice(0,3).map(x=>x[target?0:1]);return choice(`${target?'🇸🇪':'🇷🇺'} ${target?row[1]:row[0]} → ?`,answer,others,null,`Пара: ${row[0]} — ${row[1]}. ${mode==='weekdays'?'В шведском названия дней недели пишутся со строчной буквы.':'Названия месяцев в шведском обычно со строчной буквы.'}`)}
+ if(mode==='weekdays'||mode==='months'){const list=mode==='weekdays'?DAYS3:MONTHS3;let k=Math.floor(Math.random()*list.length),row=list[k],target=Math.random()<.5;let answer=target?row[0]:row[1];let others=shuffle(list.filter(x=>x[0]!==row[0])).slice(0,3).map(x=>x[target?0:1]);return choice(`${target?'SV':'RU'} ${target?row[1]:row[0]} → ?`,answer,others,null,`Пара: ${row[0]} — ${row[1]}. ${mode==='weekdays'?'В шведском названия дней недели пишутся со строчной буквы.':'Названия месяцев в шведском обычно со строчной буквы.'}`)}
  if(mode==='alphabet'){const [letter,ipa,word,ru]=shuffle(ALPHABET3)[0];const variant=Math.random();if(variant<.5){const wrong=shuffle(ALPHABET3.filter(x=>x[0]!==letter)).slice(0,3).map(x=>x[0]);return choice(`🔤 Какой первой буквой пишется «${word}» (${ru})?`,letter,wrong,null,`${word} начинается на ${letter}. Название буквы: ${ipa}.`)}const wrong=shuffle(ALPHABET3.filter(x=>x[0]!==letter)).slice(0,3).map(x=>x[2]);return choice(`🔤 Выбери слово на букву ${letter}`,word,wrong,null,`Буква ${letter}: ${word} — ${ru}. ${ipa}.`)}
  if(mode==='readText'){const b=shuffle(BOOKS)[0],q=shuffle(b.questions)[0];return choice(`📖 ${b.title}: ${q.question}`,q.answer,q.options.filter(x=>x!==q.answer),null,`${b.text} — ${q.why}`)}
  return null;
@@ -822,13 +824,21 @@ function wordEntry(w){
 }
 function renderLessons(){const selected=routeParam&&'ABCD'.includes(routeParam)?routeParam:selectedLevel;selectedLevel=selected;return title(t('learnByLevel'),t('courseExplain'))+`<div class="level-roadmap" aria-label="SFI levels">${'ABCD'.split('').map((l,i)=>`<button class="roadmap-step ${selected===l?'active':''}" data-action="level" data-level="${l}"><span class="roadmap-icon">${['🌱','🌿','🌻','🏆'][i]}</span><b>SFI ${l}</b><small>${LESSONS.filter(x=>x.level===l).length} ${esc(t('availableLessons'))}</small></button>`).join('')}</div><div class="lessons-grid">${LESSONS.filter(l=>l.level===selected).map((l,i)=>`<article class="lesson-card" data-lesson-link="${esc(l.id)}" tabindex="0" role="link" aria-label="${esc(t('open'))}: ${esc(locLesson4(l))}"><div class="lesson-cover ${l.level.toLowerCase()}"><span>${esc(l.emoji)}</span><small>${esc(t('lesson'))} ${i+1}</small></div><div class="lesson-body"><h3>${esc(locLesson4(l))}</h3><p>${esc(locLessonContent4(l).description)}</p><div class="lesson-foot"><span data-quiz-status="lesson:${esc(l.id)}" class="${quizPassed('lesson:'+l.id)?'done-chip':'chip'}">${quizStatus('lesson:'+l.id)}</span><button class="btn small" data-nav="lesson" data-param="${l.id}">${esc(t('open'))}</button></div></div></article>`).join('')}</div>`}
 function locLessonContent4(lesson){
+ if(lesson.greetingsChapter){const c=lesson.greetingsChapter,loc=value=>typeof value==='string'?value:value[locale4()];return {...lesson,description:loc(c.description),goals:c.goals.map(loc),rules:c.sections.flatMap(s=>s.rules.map(r=>loc(r.text))),reading:{...c.reading,title:loc(c.reading.title),tip:loc(c.reading.tip)}}}
+
+ if(lesson.pronunciationChapter){
+  const c=lesson.pronunciationChapter,language=locale4(),localized=language==='ru'?{}:content4().lessonDetails?.[lesson.id]?.[language]||{};
+  return {...lesson,...localized,description:localized.description||lesson.description,
+   rules:c.sections.flatMap(s=>s.rules.map(r=>r.text[language])),goals:c.goals.map(g=>g[language]),
+   reading:{...lesson.reading,title:c.reading.title[language],tip:c.reading.tip[language],lines:c.reading.lines}};
+ }
  if(locale4()==='ru')return lesson;
  const localized=content4().lessonDetails?.[lesson.id]?.[locale4()];
  if(!localized)return lesson;
  return {...lesson,...localized,...lesson.learningV2?.locales?.[locale4()],reading:lesson.reading?{...lesson.reading,title:localized.readingTitle,tip:localized.readingTip}:null};
 }
 function locRules4(lesson){return locLessonContent4(lesson).rules}
-function renderLesson(){const l=LESSONS.find(x=>x.id===routeParam);if(!l)return renderLessons();return `<button class="back-link" data-nav="lessons" data-param="${l.level}">← ${esc(t('backTo'))}</button><div class="lesson-hero"><div class="lesson-hero-art">${esc(l.emoji)}</div><div><span class="eyebrow">SFI ${l.level} · ${esc(t('lesson'))} ${LESSONS.indexOf(l)+1}</span><h1>${esc(locLesson4(l))}</h1><p>${esc(locLessonContent4(l).description)}</p><span class="chip">📝 ${l.learningV2?l.learningV2.questions.length:l.questions.length} ${esc(t('quizDuration'))}</span></div></div>${renderLearningV2Introduction(l)}<section class="content-panel lesson-goals"><h2>🎯 ${esc(t('lessonOverview'))}</h2><ul class="rule-list">${(locLessonContent4(l).goals||[locHint4()]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></section><div class="study-steps"><span>1 · 📚 ${esc(t('rulesHub'))}</span><span>2 · 🔊 ${esc(t('examples'))}</span><span>3 · 🧠 ${esc(t('startQuiz'))}</span></div><section class="content-panel"><h2 class="panel-heading">📚 ${esc(t('sourceNotes'))}</h2><div class="rule-chapters">${locRules4(l).map((r,i)=>`<div class="rule-chapter"><span class="step-num">${i+1}</span><p>${esc(r)}</p></div>`).join('')}</div></section><section class="content-panel"><h2 class="panel-heading">🔊 ${esc(t('examples'))}</h2><div class="example-grid lesson-examples">${l.examples.map(e=>`<div class="example-item"><b lang="sv">${esc(e.sv)}</b>${e.ru?`<p>${esc(quizSourceText(e.ru))}</p>`:''}<button data-action="speak" data-text="${esc(e.sv)}">🔊 ${esc(t('pronounce'))}</button></div>`).join('')}</div></section>${readingWidget3(locLessonContent4(l).reading)}${renderLearningV2(l)}<section class="horizontal-card"><div><h3>✨ ${esc(l.learningV2?learningV2Labels().legacy:t('testKnowledge'))}</h3>${quizStatusChip('lesson:'+l.id)}<p>${l.questions.length} ${esc(t('quizDuration'))} · ${esc(l.learningV2?learningV2Labels().legacyNote:t('lessonQuizTip'))}</p></div><button class="btn" data-action="lesson-test" data-id="${l.id}">${esc(t(state.quizResults['lesson:'+l.id]?'again':'startQuiz'))}</button></section>`}
+function renderLesson(){const l=LESSONS.find(x=>x.id===routeParam);if(!l)return renderLessons();if(l.greetingsChapter&&window.SVGreetingsLesson)return window.SVGreetingsLesson.render(l);if(l.pronunciationChapter&&window.SVAlphabetLesson)return window.SVAlphabetLesson.render(l);return `<button class="back-link" data-nav="lessons" data-param="${l.level}">← ${esc(t('backTo'))}</button><div class="lesson-hero"><div class="lesson-hero-art">${esc(l.emoji)}</div><div><span class="eyebrow">SFI ${l.level} · ${esc(t('lesson'))} ${LESSONS.indexOf(l)+1}</span><h1>${esc(locLesson4(l))}</h1><p>${esc(locLessonContent4(l).description)}</p><span class="chip">📝 ${l.learningV2?l.learningV2.questions.length:l.questions.length} ${esc(t('quizDuration'))}</span></div></div>${renderLearningV2Introduction(l)}<section class="content-panel lesson-goals"><h2>🎯 ${esc(t('lessonOverview'))}</h2><ul class="rule-list">${(locLessonContent4(l).goals||[locHint4()]).map(g=>`<li>${esc(g)}</li>`).join('')}</ul></section><div class="study-steps"><span>1 · 📚 ${esc(t('rulesHub'))}</span><span>2 · 🔊 ${esc(t('examples'))}</span><span>3 · 🧠 ${esc(t('startQuiz'))}</span></div><section class="content-panel"><h2 class="panel-heading">📚 ${esc(t('sourceNotes'))}</h2><div class="rule-chapters">${locRules4(l).map((r,i)=>`<div class="rule-chapter"><span class="step-num">${i+1}</span><p>${esc(r)}</p></div>`).join('')}</div></section><section class="content-panel"><h2 class="panel-heading">🔊 ${esc(t('examples'))}</h2><div class="example-grid lesson-examples">${l.examples.map(e=>`<div class="example-item"><b lang="sv">${esc(e.sv)}</b>${e.ru?`<p>${esc(quizSourceText(e.ru))}</p>`:''}<button data-action="speak" data-text="${esc(e.sv)}">🔊 ${esc(t('pronounce'))}</button></div>`).join('')}</div></section>${readingWidget3(locLessonContent4(l).reading)}${renderLearningV2(l)}<section class="horizontal-card"><div><h3>✨ ${esc(l.learningV2?learningV2Labels().legacy:t('testKnowledge'))}</h3>${quizStatusChip('lesson:'+l.id)}<p>${l.questions.length} ${esc(t('quizDuration'))} · ${esc(l.learningV2?learningV2Labels().legacyNote:t('lessonQuizTip'))}</p></div><button class="btn" data-action="lesson-test" data-id="${l.id}">${esc(t(state.quizResults['lesson:'+l.id]?'again':'startQuiz'))}</button></section>`}
 // Formative lesson practice is intentionally separate from the trusted XP bank.
 // Drafts live only in this tab's memory, and never enter progress/session storage.
 const learningV2Drafts = new Map();
@@ -1107,6 +1117,24 @@ function quizBankQuestion(source,prefix='',questionId=null){
  if(questionId)Object.defineProperties(q,{questionId:{enumerable:true,value:questionId},serverOptions:{enumerable:true,get:()=>q.options.map(value=>normalize(value)===normalize(quizSourceText(source.answer))?source.answer:source.options.find(option=>quizSourceText(option)===value)||'')}});
  return q;
 }
+// Versioned scored bank: keep lesson identity/reward ledger, freeze legacy q0…q12.
+function alphabetFinalConfig(lessonId){const l=LESSONS.find(l=>l.id===lessonId);return (l?.pronunciationChapter||l?.greetingsChapter)?.finalTest||null}
+function alphabetFinalQuestion(source,final,lessonId='lesson-1'){
+ const lesson=LESSONS.find(l=>l.id===lessonId),chapter=lesson.pronunciationChapter||lesson.greetingsChapter,choices=shuffle(source.options),context=source.context?(final.contexts?.[source.context]||final.reading):null;
+ const loc=value=>typeof value==='string'?value:value[locale4()];
+ const refs=source.ruleRefs.map(id=>id==='reading'?{id,title:chapter.reading.title,text:chapter.reading.tip}:chapter.sections.flatMap(s=>s.rules).find(r=>r.id===id));
+ return localizedQuizQuestion({type:'choice',question:()=>loc(source.prompt),answer:()=>loc(source.options.find(o=>o.id===source.answerId).text),options:()=>choices.map(o=>loc(o.text)),wordId:null,
+  why:()=>loc(source.options.find(o=>o.id===source.answerId).feedback),questionId:source.id,serverOptions:()=>choices.map(o=>o.id),assessmentBank:final.id,reviewLesson:lessonId,
+  testContext:context?()=>context.text:'',testContextTitle:context?()=>loc(context.title):'',
+  answerDetails:()=>choices.map(o=>({id:o.id,text:loc(o.text),feedback:loc(o.feedback),correct:o.id===source.answerId})),
+  reviewRules:()=>refs.map(r=>({id:r.id,title:loc(r.title),text:loc(r.text)}))});
+}
+function alphabetFinalFeedback(q,selected,correct=selected===q.answer){
+ if(!q.assessmentBank)return '';
+ const detail=q.answerDetails.find(o=>o.text===selected),why=detail?.feedback||q.why;
+ return `<div class="quiz-feedback ${correct?'success':'failure'}"><strong>${esc(correct?t('correct'):t('incorrect'))}</strong><p>${esc(why)}</p></div><details class="alphabet-final-explanations"><summary>${esc(txt4('Разбор каждого варианта','Every option explained','Alla alternativ förklarade','Розбір кожного варіанта'))}</summary>${q.answerDetails.map(o=>`<p><strong>${esc(o.text)}</strong> — ${esc(o.feedback)}</p>`).join('')}</details><div class="alphabet-final-rule-links">${q.reviewRules.map(r=>`<details><summary>${esc(txt4('Повторить правило: ','Review rule: ','Repetera regeln: ','Повторити правило: ')+r.title)}</summary><p>${esc(r.text)}</p><button class="btn ghost small" type="button" ${q.reviewLesson==='lesson-2'?'data-greetings-review-rule':'data-alphabet-review-rule'}="${esc(r.id)}">${esc(txt4('Открыть правило в уроке','Open rule in lesson','Öppna regeln i lektionen','Відкрити правило в уроці'))}</button></details>`).join('')}</div>`;
+}
+
 function quizBookQuestion(book){
  return quizBankQuestion(shuffle(book.questions)[0],`📖 ${book.title}: `);
 }
@@ -1163,6 +1191,7 @@ function getQuestion(mode){
 async function startQuiz(mode='mixed',lesson=null,forReview=false){
  if(quizBusy)return;
  if(cloudAccount()&&(!window.SVProgress?.writeStatus().ready||!window.SVProgress.supports('quiz_rewards_v1'))){toast(t('saveError'));return}
+ if(lesson&&alphabetFinalConfig(lesson)&&cloudAccount()&&!window.SVProgress?.supports(alphabetFinalConfig(lesson).capability||'alphabet_final_v1')){toast(txt4('Итоговый тест ожидает согласованного обновления сервера. История и очередь сохранены.','The final test is waiting for the coordinated server update. History and pending events are preserved.','Sluttestet väntar på den samordnade serveruppdateringen. Historik och väntande händelser finns kvar.','Підсумковий тест очікує узгодженого оновлення сервера. Історію й чергу збережено.'));return}
  const origin=quiz.finished&&quiz.origin?quiz.origin:{route, param:routeParam};
  if(quiz.cloud&&!quiz.finished){
   const previous=quiz;quiz.cloud.events.abandon??=quizEvent('session_abandon',{});
@@ -1183,7 +1212,7 @@ async function startQuiz(mode='mixed',lesson=null,forReview=false){
   questions=words.slice(0,20).map(w=>{const q=quizWordQuestion(w,'translation',words);Object.defineProperties(q,{questionId:{enumerable:true,value:w.id},serverOptions:{enumerable:true,get:()=>q.canonicalOptions}});return q});
  }else if(lesson){
   const l=LESSONS.find(x=>x.id===lesson);if(!l)return;
-  questions=shuffle(l.questions.map((source,i)=>quizBankQuestion(source,'','q'+i)));
+  const final=alphabetFinalConfig(l.id);questions=final?final.questions.map(source=>alphabetFinalQuestion(source,final,l.id)):shuffle(l.questions.map((source,i)=>quizBankQuestion(source,'','q'+i)));
  }else if(forReview){
   questions=shuffle(reviewDeck()).slice(0,20).map(w=>{
    if(w.type==='verb')return localizedQuizChoice(`${w.inf} → Preteritum`,w.past,shuffle(WORDS.filter(x=>x.type==='verb'&&x.past&&x.past!==w.past)).slice(0,3).map(x=>x.past),w.id,()=>`${w.inf} → ${w.pre} → ${w.past} → ${w.sup} · ${locMeaning4(w)}`);
@@ -1194,6 +1223,7 @@ async function startQuiz(mode='mixed',lesson=null,forReview=false){
  if(mode==='video')questions.forEach((q,i)=>Object.defineProperties(q,{questionId:{enumerable:true,value:MORE_VIDEOS.find(v=>v.id===lesson).questions[i].id},serverOptions:{enumerable:true,get:()=>q.options.map(value=>normalize(value)===normalize(q.answer)?q.answer:value)}}));
  if(!questions.length){toast(t('noDue'));return}
  quiz={active:true,finished:false,mode,lesson,questions,index:0,score:0,answered:false,selected:[],latest:null,origin,mistakes:[],answerCount:0};
+ if(questions[0]?.assessmentBank)quiz.bank=questions[0].assessmentBank;
  if(cloudAccount()){
   quiz.cloud={owner:user.id,id:crypto.randomUUID(),events:{},version:window.SVProgress.status().content_version};
   quiz.cloud.events.start=quizEvent('session_start',{mode:lesson&&!['book','topic','video'].includes(mode)?'lesson':mode,...(lesson?{context_id:lesson}:{}),content_version:quiz.cloud.version,questions:questions.map(q=>q.questionId?{question_id:q.questionId}:q.wordId?{word_id:q.wordId}:{})});
@@ -2437,7 +2467,7 @@ function renderProfile(){const name=state.profile?.name||user?.name||t('guest'),
 const SWEDISH_LETTER_NAMES={A:'a',B:'be',C:'se',D:'de',E:'e',F:'eff',G:'ge',H:'hå',I:'i',J:'ji',K:'kå',L:'ell',M:'emm',N:'enn',O:'o',P:'pe',Q:'ku',R:'err',S:'ess',T:'te',U:'u',V:'ve',W:'dubbelve',X:'eks',Y:'y',Z:'säta','Å':'å','Ä':'ä','Ö':'ö'};
 let svVoices=[];
 if('speechSynthesis' in window){svVoices=speechSynthesis.getVoices();speechSynthesis.addEventListener?.('voiceschanged',()=>{svVoices=speechSynthesis.getVoices()})}
-function speak(text){if(!('speechSynthesis' in window)){toast(pT('audioError'));return}try{const api=speechSynthesis;api.cancel();const u=new SpeechSynthesisUtterance(String(text));u.lang='sv-SE';u.rate=.8;u.pitch=1;const voices=api.getVoices();const sv=voices.find(x=>x.lang.toLowerCase()==='sv-se')||voices.find(x=>x.lang.toLowerCase().startsWith('sv'));if(sv)u.voice=sv;else if(voices.length){toast(pT('audioError'));return}u.onerror=()=>toast(pT('audioError'));api.speak(u)}catch(_){toast(pT('audioError'))}}
+function speak(text){if(!('speechSynthesis' in window)){toast(pT('audioError'));return}try{const api=speechSynthesis;api.cancel();const u=new SpeechSynthesisUtterance(String(text));u.lang='sv-SE';u.rate=1;u.pitch=1;const voices=api.getVoices();const sv=voices.find(x=>x.lang.toLowerCase()==='sv-se')||voices.find(x=>x.lang.toLowerCase().startsWith('sv'));if(sv)u.voice=sv;else if(voices.length){toast(pT('audioError'));return}u.onerror=()=>toast(pT('audioError'));api.speak(u)}catch(_){toast(pT('audioError'))}}
 function speakLetter3(letter){speak(SWEDISH_LETTER_NAMES[letter]||letter)}
 function profilePhotoChange(file){if(cloudAccount()||!file)return;if(!/^image\/(jpeg|png|webp)$/.test(file.type)||file.size>6*1024*1024){toast(pT('avatarError'));return}const ownerState=state;const reader=new FileReader();reader.onload=()=>{if(state!==ownerState)return;const img=new Image();img.onload=()=>{if(state!==ownerState)return;const size=240,c=document.createElement('canvas');c.width=size;c.height=size;const ctx=c.getContext('2d');const crop=Math.min(img.width,img.height),x=(img.width-crop)/2,y=(img.height-crop)/2;ctx.drawImage(img,x,y,crop,crop,0,0,size,size);const val=c.toDataURL('image/jpeg',.78);mutate(()=>{state.profile=state.profile||{};state.profile.avatar=val});render();toast(pT('profileSave'))};img.onerror=()=>toast(pT('avatarError'));img.src=reader.result};reader.onerror=()=>toast(pT('avatarError'));reader.readAsDataURL(file)}
 document.addEventListener('change',event=>{if(event.target?.id==='profile-photo-file')profilePhotoChange(event.target.files?.[0])});
@@ -2542,12 +2572,14 @@ function refreshWordUI(snapshotChanged=false){
  const page=$('#page');if(!page?.querySelectorAll)return;
  headerStats();
  if(snapshotChanged){
+  window.SVAlphabetLesson?.syncFinal();window.SVGreetingsLesson?.syncFinal();
   for(const chip of page.querySelectorAll('[data-quiz-status]')){
    const id=chip.dataset.quizStatus,label=quizStatus(id);
    if(chip.textContent!==label)chip.textContent=label;
    chip.classList.toggle('done-chip',quizPassed(id));chip.classList.toggle('chip',!quizPassed(id));
   }
   for(const button of page.querySelectorAll('[data-action="lesson-test"]')){
+   if(button.dataset.alphabetFinalLaunch!==undefined||button.dataset.greetFinalLaunch!==undefined)continue;
    const label=t(state.quizResults['lesson:'+button.dataset.id]?'again':'startQuiz');
    if(button.textContent!==label)button.textContent=label;
   }
@@ -2828,12 +2860,12 @@ function quizStatus(id){
  const pct=Math.floor(r.correct*100/r.total),passed=r.correct*5>=r.total*4;
  return passed?txt4(`✓ Пройден · ${pct}%`,`✓ Passed · ${pct}%`,`✓ Godkänd · ${pct}%`,`✓ Пройдено · ${pct}%`):txt4(`Лучший результат: ${pct}%`,`Best result: ${pct}%`,`Bästa resultat: ${pct}%`,`Найкращий результат: ${pct}%`);
 }
-function quizStatusChip(id){return `<small class="chip quiz-status" data-quiz-status="${esc(id)}">${esc(quizStatus(id))}</small>`}
+function quizStatusChip(id){return `<small class="${quizPassed(id)?'done-chip':'chip'} quiz-status" data-quiz-status="${esc(id)}">${esc(quizStatus(id))}</small>`}
 function quizResultLabel(){
  const r=quiz.result;
  if(!r)return '';
- const reward=r.xp>0?`+${r.xp} XP`:r.already_rewarded?txt4('Тест уже пройден','Quiz already completed','Testet är redan genomfört','Тест уже пройдено'):'0 XP';
- return `<p class="badge-verified">${esc(reward)}</p>${r.new_best?`<p class="micro-note">${esc(txt4('Новый лучший результат','New best result','Nytt bästa resultat','Новий найкращий результат'))}</p>`:''}${quizStatusChip(quizIdentity())}`;
+ const reward=r.xp>0?`+${r.xp} XP`:r.already_rewarded?(!!quiz.bank&&quiz.bank===alphabetFinalConfig(quiz.lesson)?.id?txt4('Награда урока уже получена','The lesson reward was already received','Lektionsbelöningen har redan erhållits','Нагороду уроку вже отримано'):txt4('Тест уже пройден','Quiz already completed','Testet är redan genomfört','Тест уже пройдено')):'0 XP';
+ return `<p class="badge-verified">${esc(reward)}</p>${r.new_best?`<p class="micro-note">${esc(txt4('Новый лучший результат','New best result','Nytt bästa resultat','Новий найкращий результат'))}</p>`:''}${quizStatusChip(!!quiz.bank&&quiz.bank===alphabetFinalConfig(quiz.lesson)?.id?alphabetFinalConfig(quiz.lesson).resultKey:quizIdentity())}`;
 }
 
 function quizPassed(id){const r=state.quizResults?.[id];return !!r?.total&&r.correct*5>=r.total*4}

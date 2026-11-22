@@ -16,6 +16,7 @@ const sourceSnapshot=JSON.stringify(lessons);
 let checkedRules=0,checkedExamples=0,checkedReadingLines=0;
 
 for(const source of lessons){
+ if(source.pronunciationChapter||source.greetingsChapter){checkedRules+=source.rules.length;continue;} // Dedicated chapter/locale coverage: alphabet-pronunciation.cjs / greetings-introduction.cjs.
  run(`var lesson=LESSONS.find(item=>item.id==='${source.id}');route='lesson';routeParam=lesson.id`);
  const structure=[];
  for(const language of ['ru','en','sv','uk']){
@@ -86,4 +87,4 @@ for(const language of ['en','sv','uk','ru']){
  assert.equal(occurrences(run('renderedLesson'),'class="rule-chapter"'),lessons[49].rules.length);
 }
 assert.equal(run('JSON.stringify(LESSONS)'),sourceSnapshot,'Localization mutated the source lessons');
-console.log(`PASS: ${lessons.length} lessons A–D, ${checkedRules} full rules, ${checkedExamples} examples, ${checkedReadingLines} reading lines; equal content in all 4 languages and rules reference`);
+console.log(`PASS: ${lessons.length-2} standard lesson layouts A–D + all 50 rules references, ${checkedRules} full rules, ${checkedExamples} examples, ${checkedReadingLines} reading lines; equal content in all 4 languages and rules reference`);

@@ -40,7 +40,7 @@ def current_manifest():
         videos.extend(re.findall(r"\bid:'([^']+)'", block))
     manifest = {
         'words': sorted(w['id'] for w in words),
-        'lessons': {l['id']: len(l['questions']) for l in lessons},
+        'lessons': {l['id']: len((l.get('pronunciationChapter') or l.get('greetingsChapter') or {}).get('finalTest', {}).get('questions', l['questions'])) for l in lessons},
         'books': {b['id']: len(b['questions']) for b in books},
         'videos': sorted(set(videos)),
         'topics': sorted(set(w['category'] for w in words)),
@@ -58,9 +58,12 @@ if __name__ == '__main__':
     frozen = read_manifest(target)
     if frozen != current:
         raise SystemExit('FAIL: SQL manifest differs from static content; prepare a NEW migration')
-    # This release is version-only. Future ID/count changes need an explicit
-    # compatibility review and an intentional update of this release guard.
+    # Preserve baseline identities/counts except the reviewed versioned lesson-1 bank.
+    # Further changes require a compatibility review and an intentional guard update.
     baseline = read_manifest(BASELINE)
+    # Reviewed transition 019: active lesson-1 bank is 20; archived q0..q12 stay in quiz_catalog.
+    baseline['lessons']['lesson-1'] = 20
+    baseline['lessons']['lesson-2'] = 20
     if {k: v for k, v in current.items() if k != 'version'} != {k: v for k, v in baseline.items() if k != 'version'}:
         raise SystemExit('FAIL: IDs/categories/question counts changed since migration 002')
-    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories/question counts match migration 002')
+    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; only active lesson-1/2 counts change 13/11 → 20/20')
