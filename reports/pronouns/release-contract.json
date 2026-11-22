@@ -1,0 +1,30 @@
+{
+  "baseMigration": "020",
+  "declaredInstalledByUser": true,
+  "installedFingerprintsVerified": true,
+  "verificationSource": "User-provided verified read-only report from production Supabase",
+  "baselineReport": "supabase/baselines/020_installed_20261122.json",
+  "expectedBaseVersion": "static-1aa3eb8422e2930a",
+  "expectedBaseMD5": {
+    "manifest": "23f966adf86b8986dea5e8e194bad3d7",
+    "catalog": "d76527fc03b194aa9a32f7a564e39138",
+    "reader": "5748e3372fac0764e9a14d8879aea361",
+    "writer": "67e980064af15b0073227139518b42ac"
+  },
+  "preparedVersion": "static-57b40b608d91091d",
+  "expectedPostMD5": {
+    "manifest": "8175977d178067352ad8b0df697de019",
+    "catalog": "0108ee37590e52b64c3cce928aacb7ef",
+    "reader": "b54fea7e908720a36177e2a6f91d03d6",
+    "writer": "04a117be1ffcdae4e71fafd405f38534"
+  },
+  "activeQuestions": 24,
+  "archivedQuestions": 11,
+  "reward": 35,
+  "replayFromVersion": "static-1aa3eb8422e2930a",
+  "replayCapability": "event_replay:static-1aa3eb8422e2930a",
+  "generatorSqlExecuted": false,
+  "productionSqlExecuted": false,
+  "generatorExecutesSql": false,
+  "published": false
+}

@@ -1,0 +1,32 @@
+{
+  "rules": 14,
+  "tables": 10,
+  "dialogues": 4,
+  "turns": 32,
+  "readingSentences": 12,
+  "corePractice": 26,
+  "dialogueComprehension": 8,
+  "readingComprehension": 4,
+  "autoPractice": 38,
+  "writtenTasks": 3,
+  "oralContinuations": 4,
+  "finalQuestions": 24,
+  "finalDistribution": {
+    "forms": 19,
+    "correction": 1,
+    "reading": 4
+  },
+  "practiceBranches": 384,
+  "finalBranches": 384,
+  "audioSegments": 1008,
+  "locales": [
+    "ru",
+    "uk",
+    "en",
+    "sv"
+  ],
+  "legacyQuestionsRetained": 11,
+  "testsPassed": true,
+  "acousticReviewPerformed": false,
+  "independentLanguageReviewPerformed": false
+}

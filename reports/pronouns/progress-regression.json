@@ -1,0 +1,52 @@
+[
+  {
+    "test": "supabase-preparation",
+    "exit": 0,
+    "output": "ks enqueue one answer, abandoning preserves XP (53.837917ms)\n✔ stalled session RPC releases the writer lock and retries the original event after timeout (49.207292ms)\n✔ identity change during a quiz submission cannot update or unlock the next account exercise (47.058ms)\n✔ lost finish ACK retries the same UUID and shows its original one-time reward receipt (77.8625ms)\n✔ quiz writes remain gated against pre-010 servers (34.383834ms)\n✔ safe RPC diagnostics identify session, verification and RPC failure without retaining private values (1.044708ms)\n✔ blocked queue open terminates safely, preserves existing pending events and can retry (23.423708ms)\n✔ alphabet final: 20 canonical responses, historical score, lost finish ACK and one reward ledger (347.029416ms)\n✔ alphabet final is gated without its server capability and queues no session (34.311375ms)\n✔ acknowledged historical 13-question session resumes across content versions without rewriting its start receipt (186.5225ms)\n✔ greetings final: canonical IDs, case-sensitive answer, history, lost ACK and shared reward (355.020708ms)\n✔ greetings final needs its capability without creating a pending start (32.565084ms)\n✔ confirmed historical 11-question greetings session survives version transition with same receipt and one reward (171.0625ms)\n✔ pronouns final: canonical IDs, history, lost ACK and shared reward (425.90675ms)\n✔ pronouns final needs its capability without creating a pending start (36.148083ms)\n✔ confirmed historical 11-question pronouns session survives version transition with same receipt and one reward (206.157125ms)\n✔ pronouns offline answers and lost ACK survive reload; same answer UUID cannot award twice (75.590708ms)\n✔ pronouns new account: 19 fails, 20 passes and retry shares one 35 XP reward (389.548584ms)\n✔ 021 replays pending 020 word events with unchanged UUID, JSON and contentVersion (22.98775ms)\n✔ 021 replays an unacknowledged 020 11-question start and completes it without a second reward (209.195ms)\n✔ 021 accepts a restored immutable 020 start that was not yet inserted into IndexedDB (28.582208ms)\n✔ 021 requires an explicit server replay capability and preserves pending bytes until it arrives (23.231583ms)\n✔ 021 does not replay or rewrite events from an unreviewed version (22.076459ms)\nℹ tests 111\nℹ suites 0\nℹ pass 111\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 8717.541958\n"
+  },
+  {
+    "test": "quiz-rewards",
+    "exit": 0,
+    "output": "PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages\n"
+  },
+  {
+    "test": "quiz-session",
+    "exit": 0,
+    "output": "PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage\n"
+  },
+  {
+    "test": "srs-interval-contract",
+    "exit": 0,
+    "output": "✔ review patch keeps the 001-011 scheduler contract with only the existing interval cap added (1.252916ms)\n✔ review helper remains private and migration 013 records the exact manual patch (0.405458ms)\n✔ 012 retains capped helper calls and manual queue uses that same scheduler (0.367417ms)\n✔ all migration interval writers are accounted for and import validates the CHECK maximum (2.884125ms)\n✔ disposable SQL suites cover boundary arithmetic, queue retries and installation preservation (1.841167ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 10.6145\n"
+  },
+  {
+    "test": "study-time",
+    "exit": 0,
+    "output": "✔ study counts only visible, focused learning surfaces (1.214209ms)\n✔ ordinary idle cuts at 90 seconds and reading at five minutes (0.0995ms)\n✔ actual audio can extend idle but cannot bypass visibility, end of lease or timer suspension (0.106084ms)\n✔ civil date utilities cover leap day and month/year rollovers independent of host zone (1.102ms)\n✔ server status validation rejects fake/negative totals and unknown zones (17.024458ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 23.569125\n"
+  },
+  {
+    "test": "study-time-dom",
+    "exit": 0,
+    "output": "t SL_UX_DOM_MODULE for DOM integration\n﹣ idle stops actual commits and trusted input resumes; hidden and blurred tabs add nothing (0.0475ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ timezone change commits old lease before changing preferences and preserves historical records (0.028209ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ study minute formatting has exact boundaries and retains milliseconds in the tooltip (0.043417ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ three minutes of active learning commit real milliseconds and render nonzero totals (0.023542ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ disabled study tracking explains zero without enabling tracking or changing preferences (0.024209ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ UI opt-out preserves history through reload, sign-in and a device with empty browser storage (0.024542ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ offline opt-out survives reload and reconnect synchronizes the saved account preference (0.023417ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ legacy local opt-out is synchronized before opening any lease and is account-scoped (0.05425ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ stale status arriving after an opt-out ACK cannot recheck the switch or replace statistics (0.023708ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ remote opt-out closes an active lease on refresh and adds no further intervals (0.022917ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ timezone update racing a remote opt-out cannot enable it using an old generation (0.036875ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ late lease response after opt-out cannot start tracking (0.022792ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ acknowledged opt-out can be explicitly enabled on another device without a stale browser veto (0.024667ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ older enable ACK cannot erase a newer pending opt-out from another tab (0.023875ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ failed status cannot acknowledge a pending opt-out using an old disabled snapshot (0.024708ms) # Set SL_UX_DOM_MODULE for DOM integration\n﹣ browser storage failure pauses locally without inventing an account opt-out (0.028667ms) # Set SL_UX_DOM_MODULE for DOM integration\nℹ tests 32\nℹ suites 0\nℹ pass 0\nℹ fail 0\nℹ cancelled 0\nℹ skipped 32\nℹ todo 0\nℹ duration_ms 12.797458\n"
+  },
+  {
+    "test": "manual-reviews",
+    "exit": 0,
+    "output": "✔ add, duplicate requests, both grades and remove persist independently of SRS (3.455333ms)\n✔ refresh, fresh page and logout/login restore the account queue without browser storage (2.047542ms)\n✔ double clicks coalesce; no selected state before server ACK (0.723959ms)\n✔ offline clicks do not report success or remove server words (0.729625ms)\n✔ lost ACK retries the same UUID exactly once, even for a grade (0.934458ms)\n✔ stale exercise cannot delete readded word; devices reconcile on refresh (2.345958ms)\n✔ responses arriving out of order cannot revert a newer server snapshot (1.092417ms)\n✔ late ACK from a previous identity cannot leak queue into another account (2.110833ms)\n✔ invalid or unavailable RPC never marks the queue ready (1.502208ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 18.998\n"
+  },
+  {
+    "test": "manual-review-toggle",
+    "exit": 0,
+    "output": "PASS: review button toggles add/remove, stays clickable when selected, blocks duplicate requests and retains state on failure\n"
+  },
+  {
+    "test": "boot-loading",
+    "exit": 0,
+    "output": "✔ hung fetch and hung JSON body settle, abort and offer a safe reload (21.609ms)\n✔ missing, malformed and empty learning content show a safe error without clearing progress (3.604875ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 28.672583\n"
+  },
+  {
+    "test": "service-worker",
+    "exit": 0,
+    "output": "PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation\n"
+  }
+]

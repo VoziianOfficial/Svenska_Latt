@@ -1,0 +1,13 @@
+{
+  "migration": "020",
+  "reportDate": "2026-11-22",
+  "timezone": "Europe/Stockholm",
+  "source": "User-provided verified read-only report from production Supabase",
+  "content_version": "static-1aa3eb8422e2930a",
+  "function_md5": {
+    "manifest": "23f966adf86b8986dea5e8e194bad3d7",
+    "catalog": "d76527fc03b194aa9a32f7a564e39138",
+    "reader": "5748e3372fac0764e9a14d8879aea361",
+    "writer": "67e980064af15b0073227139518b42ac"
+  }
+}

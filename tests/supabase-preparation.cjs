@@ -437,7 +437,8 @@ function writerEnvironment(){
 }
 function writerServer({wordState=false}={}){
  const quizBank=require('../scripts/quiz_catalog.cjs')();
- const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0,legacyAlphabet=false,legacyGreetings=false;
+ const accounts=new Map();let offline=false,loseAck=false,active=0,maxActive=0,legacyAlphabet=false,legacyGreetings=false,legacyPronouns=false,replayFromVersion=null;
+ const frozen020=JSON.parse(JSON.stringify(quizBank));delete frozen020['lesson:lesson-3'].start_questions;frozen020['lesson:lesson-3'].count=11;frozen020['lesson:lesson-3'].questions=Object.fromEntries(Object.entries(quizBank['lesson:lesson-3'].questions).filter(([id])=>/^q\d+$/.test(id)));
  function account(id){if(!accounts.has(id))accounts.set(id,{history:new Set(),sessions:new Map(),quizReceipts:new Map(),snapshot:cloudSnapshot({capabilities:wordState?['unmark_known','review_grade','known_reward_once']:[],revision:0,content_version:'writer-test-v1',state:{...cloudSnapshot().state,known:[],favorites:[],xp:0,answered:0,correct:0}}),receipts:new Map()});return accounts.get(id)}
  async function request(h){
   active++;maxActive=Math.max(maxActive,active);
@@ -461,12 +462,12 @@ function writerServer({wordState=false}={}){
     s.reviews[w]={rep:ok?previous.rep+1:0,interval:ok?(previous.rep===0?1:3):0,ease:previous.ease,due:Date.parse(event.occurred_at)+(ok?86400000:600000)};
    }
    else if(event.type==='session_start'){
-    const d=event.data;assert.equal(d.content_version,a.snapshot.content_version);
+    const d=event.data,isReplay=d.content_version!==a.snapshot.content_version&&d.content_version===replayFromVersion;assert(d.content_version===a.snapshot.content_version||isReplay);
     if(['lesson','book'].includes(d.mode)){
      const bank=JSON.parse(fs.readFileSync(path.join(root,d.mode==='lesson'?'lessons.json':'books.json')));
-     const row=bank.find(row=>row.id===d.context_id);assert.equal(d.questions.length,(legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2')?row.questions.length:(row.pronunciationChapter||row.greetingsChapter)?.finalTest?.questions.length||row.questions.length);
+     const row=bank.find(row=>row.id===d.context_id);assert.equal(d.questions.length,(legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2'||legacyPronouns&&d.context_id==='lesson-3'||isReplay&&d.context_id==='lesson-3')?row.questions.length:(row.pronunciationChapter||row.greetingsChapter||row.pronounsChapter)?.finalTest?.questions.length||row.questions.length);
     }
-    const trusted=quizBank[d.mode+':'+d.context_id];if(trusted?.start_questions&&!((legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2')))assert.deepEqual([...d.questions.map(q=>q.question_id)].sort(),trusted.start_questions.map(q=>q.question_id).sort());
+    const trusted=(isReplay?frozen020:quizBank)[d.mode+':'+d.context_id];if(trusted?.start_questions&&!((legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2'||legacyPronouns&&d.context_id==='lesson-3')))assert.deepEqual([...d.questions.map(q=>q.question_id)].sort(),trusted.start_questions.map(q=>q.question_id).sort());
     assert(!a.sessions.has(d.session_id));a.sessions.set(d.session_id,{...d,status:'active',answers:new Map()});
    }else if(event.type==='answer'){
     const d=event.data,session=a.sessions.get(d.session_id);assert.equal(session?.status,'active');
@@ -483,7 +484,7 @@ function writerServer({wordState=false}={}){
      s.quizResults??={};const old=s.quizResults[id],best=!old?.total||correct*old.total>old.correct*total,rewarded=old?.rewarded||false;
      const xp=passed&&!rewarded?(quizBank[id]?.reward||0):0;
      s.quizResults[id]={...(best?{correct,total}:old),rewarded:rewarded||xp>0};s.xp+=xp;
-     const finalLesson=JSON.parse(fs.readFileSync(path.join(root,'lessons.json'),'utf8')).find(l=>'lesson:'+l.id===id),finalConfig=(finalLesson?.pronunciationChapter||finalLesson?.greetingsChapter)?.finalTest;if(finalConfig&&session.questions.length===20&&session.questions.every(q=>finalConfig.questions.some(f=>f.id===q.question_id))){const k=finalConfig.resultKey,prev=s.quizResults[k],improved=!prev||correct>prev.correct;s.quizResults[k]={...(improved?{correct,total}:prev),rewarded:rewarded||xp>0};}
+     const finalLesson=JSON.parse(fs.readFileSync(path.join(root,'lessons.json'),'utf8')).find(l=>'lesson:'+l.id===id),finalConfig=(finalLesson?.pronunciationChapter||finalLesson?.greetingsChapter||finalLesson?.pronounsChapter)?.finalTest;if(finalConfig&&session.questions.length===finalConfig.questions.length&&session.questions.every(q=>finalConfig.questions.some(f=>f.id===q.question_id))){const k=finalConfig.resultKey,prev=s.quizResults[k],improved=!prev||correct>prev.correct;s.quizResults[k]={...(improved?{correct,total}:prev),rewarded:rewarded||xp>0};}
      quizResult={xp,already_rewarded:rewarded,new_best:best};
      if(session.mode==='lesson'&&passed&&!s.completed.includes(session.context_id))s.completed.push(session.context_id);
     }else session.status='abandoned';
@@ -495,7 +496,7 @@ function writerServer({wordState=false}={}){
    return {data:{duplicate:false,applied_revision:a.snapshot.revision,progress:JSON.parse(JSON.stringify(a.snapshot)),quiz_result:quizResult}};
   }finally{active--}
  }
- return {account,request,set legacyAlphabet(v){legacyAlphabet=v},set legacyGreetings(v){legacyGreetings=v},get maxActive(){return maxActive},set offline(v){offline=v},set loseAck(v){loseAck=v}};
+ return {account,request,set legacyAlphabet(v){legacyAlphabet=v},set legacyGreetings(v){legacyGreetings=v},set legacyPronouns(v){legacyPronouns=v},set replayFromVersion(v){replayFromVersion=v},get maxActive(){return maxActive},set offline(v){offline=v},set loseAck(v){loseAck=v}};
 }
 async function startWriter(shared=writerEnvironment(),server=writerServer(),id=A,extra={}){
  const h=harness({initial:token(id),progress:true,hostname:'localhost',environment:shared.environment,...extra});
@@ -660,7 +661,7 @@ test('reload while offline resumes existing queue on the online event after the 
 test('debug export has queue and version without a session or dev flag',async()=>{
  const h=harness({progress:true,hostname:'localhost'});
  for(const name of ['status','retry','preview','queue','diagnostics'])assert.equal(typeof h.ctx.SVProgressDebug[name],'function');
- assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-11-09-mobile-qa-1');
+ assert.equal(h.ctx.SVProgressDebug.moduleVersion,'2026-11-22-pronouns-021');
  const d=await h.ctx.SVProgressDebug.diagnostics();
  assert.equal(d.writeEnabled,true);assert.equal(d.queue.ready,false);
  assert.equal(d.queue.storage.status,'unavailable');assert.equal(d.queue.events.length,0);
@@ -1057,7 +1058,7 @@ test('settings revision conflict retries the same intent; refresh receives anoth
 // Full application → durable client queue → RPC model. No live SQL or accounts.
 async function quizApp(w){
  const h=w.h,ctx=h.ctx;
- w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3','alphabet_final_v1','greetings_final_v1');await ctx.SVProgress.refresh();
+ w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3','alphabet_final_v1','greetings_final_v1','pronouns_final_v1');await ctx.SVProgress.refresh();
  ctx.sessionStorage={getItem:k=>w.shared.data.get('tab:'+k)??null,setItem:(k,v)=>w.shared.data.set('tab:'+k,v),removeItem:k=>w.shared.data.delete('tab:'+k)};
  ctx.document.querySelectorAll=()=>[];
  vm.runInContext(fs.readFileSync(path.join(root,'locale-content.js'),'utf8'),ctx);
@@ -1265,4 +1266,86 @@ test('confirmed historical 11-question greetings session survives version transi
  const next=await startWriter(w.shared,w.server,A,{catalogVersion:currentContentVersion}),r=await quizApp(next);assert(r('restoreQuizSession()'));assert.equal(r('quiz.cloud.id'),sid);
  for(let i=1;i<11;i++){await r("action({dataset:{action:'quiz-next'}})");await r('submitAnswer(quiz.questions[quiz.index].answer)')}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);assert.equal(w.server.account(A).snapshot.state.quizResults['assessment:greetings-final-v1'],undefined);assert.equal(JSON.stringify([...w.shared.stores.get('events').values()].find(row=>row.eventId===startId)),bytes);
  await r("startQuiz('lesson','lesson-2')");assert.equal(r('quiz.questions.length'),20);for(let i=0;i<20;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<19)await r("action({dataset:{action:'quiz-next'}})")}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);
+});
+
+test('pronouns final: canonical IDs, history, lost ACK and shared reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ s.xp=235;s.completed=['lesson-3'];s.quizResults['lesson:lesson-3']={correct:11,total:11,rewarded:true};await w.h.ctx.SVProgress.refresh();const old=JSON.stringify(s.quizResults['lesson:lesson-3']);
+ for(const target of [19,20,24]){
+  await run("startQuiz('lesson','lesson-3')");assert.equal(run('quiz.questions.length'),24);
+  for(let i=0;i<24;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<23)await run("action({dataset:{action:'quiz-next'}})")}
+  if(target===20)w.server.loseAck=true;await run('finishQuiz()');if(!run('quiz.finished')){await w.h.ctx.SVProgressDebug.flush();await run('finishQuiz()')}
+  assert(run('quiz.finished'));assert.equal(run('quiz.score'),target);assert.equal(s.quizResults['assessment:pronouns-final-v1'].correct,target);assert.equal(s.xp,235);assert.equal(JSON.stringify(s.quizResults['lesson:lesson-3']),old);
+ }
+ const responses=w.h.records.rpc.filter(r=>r.name==='sl_apply_event'&&r.args.p_event.type==='answer');assert(responses.length>=72);assert(responses.every(r=>/^o[0-3]$/.test(r.args.p_event.data.response)));
+ const again=await startWriter(w.shared,w.server),r=await quizApp(again);await again.h.ctx.SVProgress.refresh();assert.equal(r("state.quizResults['assessment:pronouns-final-v1'].correct"),24);assert.equal(r('state.xp'),235);
+});
+test('pronouns final needs its capability without creating a pending start',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.account(A).snapshot.capabilities=w.server.account(A).snapshot.capabilities.filter(c=>c!=='pronouns_final_v1');await w.h.ctx.SVProgress.refresh();const before=w.server.account(A).sessions.size;await run("startQuiz('lesson','lesson-3')");assert.equal(w.server.account(A).sessions.size,before);assert(!run('quiz.active'));
+});
+test('confirmed historical 11-question pronouns session survives version transition with same receipt and one reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.legacyPronouns=true;run('delete LESSONS[2].pronounsChapter.finalTest');await run("startQuiz('lesson','lesson-3')");assert.equal(run('quiz.questions.length'),11);await run('submitAnswer(quiz.questions[0].answer)');run('persistQuizSession()');
+ const sid=run('quiz.cloud.id'),startId=run('quiz.cloud.events.start.id'),bytes=JSON.stringify([...w.shared.stores.get('events').values()].find(r=>r.eventId===startId));w.server.legacyPronouns=false;w.server.account(A).snapshot.content_version=currentContentVersion;
+ const next=await startWriter(w.shared,w.server,A,{catalogVersion:currentContentVersion}),r=await quizApp(next);assert(r('restoreQuizSession()'));assert.equal(r('quiz.cloud.id'),sid);
+ for(let i=1;i<11;i++){await r("action({dataset:{action:'quiz-next'}})");await r('submitAnswer(quiz.questions[quiz.index].answer)')}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);assert.equal(w.server.account(A).snapshot.state.quizResults['assessment:pronouns-final-v1'],undefined);assert.equal(JSON.stringify([...w.shared.stores.get('events').values()].find(row=>row.eventId===startId)),bytes);
+ await r("startQuiz('lesson','lesson-3')");assert.equal(r('quiz.questions.length'),24);for(let i=0;i<24;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<23)await r("action({dataset:{action:'quiz-next'}})")}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(w.server.account(A).snapshot.state.xp,35);
+});
+
+test('pronouns offline answers and lost ACK survive reload; same answer UUID cannot award twice',async()=>{
+ const w=await startWriter(),run=await quizApp(w);await run("startQuiz('lesson','lesson-3')");await w.h.ctx.SVProgressDebug.flush();
+ w.server.offline=true;await run('submitAnswer(quiz.questions[0].answer)');await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(run('quiz.answered'),false);assert.equal(w.server.account(A).snapshot.state.answered,0);
+ assert.match(run('quizSaveLabel()'),/сохранить|синхронизации/);
+ const old=[...w.shared.stores.get('events').values()].find(r=>JSON.parse(r.eventJson).type==='answer');
+ w.server.offline=false;w.server.loseAck=true;await w.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,0);
+ const reloaded=await startWriter(w.shared,w.server),r=await quizApp(reloaded);assert.equal(r('restoreQuizSession()'),true);
+ await r('submitAnswer(quiz.questions[0].answer)');await reloaded.h.ctx.SVProgressDebug.flush();
+ assert.equal(w.server.account(A).snapshot.state.xp,0);assert.equal(w.server.account(A).snapshot.state.answered,1);
+ const row=[...w.shared.stores.get('events').values()].find(r=>r.eventId===old.eventId);assert.equal(row.eventJson,old.eventJson);assert.equal(row.status,'applied');
+});
+
+test('pronouns new account: 19 fails, 20 passes and retry shares one 35 XP reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ for(const target of [19,20,24]){await run("startQuiz('lesson','lesson-3')");for(let i=0;i<24;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<23)await run("action({dataset:{action:'quiz-next'}})")}await run('finishQuiz()');assert(run('quiz.finished'));assert.equal(s.xp,target===19?0:35);assert.equal(s.quizResults['assessment:pronouns-final-v1'].correct,target)}
+});
+
+// The approved 020 generation can be replayed without editing IndexedDB requests.
+const verified020='static-1aa3eb8422e2930a',replay020='event_replay:'+verified020;
+const immutableEvent=row=>JSON.stringify({userId:row.userId,eventId:row.eventId,eventJson:row.eventJson,contentVersion:row.contentVersion});
+function upgrade021(server,{advertise=true}={}){server.replayFromVersion=verified020;server.account(A).snapshot.content_version=currentContentVersion;if(advertise)server.account(A).snapshot.capabilities.push(replay020)}
+test('021 replays pending 020 word events with unchanged UUID, JSON and contentVersion',async()=>{
+ const shared=writerEnvironment(),server=writerServer();server.account(A).snapshot.content_version=verified020;
+ const old=await startWriter(shared,server,A,{catalogVersion:verified020});server.offline=true;await old.h.ctx.SVProgress.enqueue('mark_known','v-arbeta');await old.h.ctx.SVProgressDebug.flush();
+ const row=[...shared.stores.get('events').values()][0],bytes=immutableEvent(row);assert.equal(row.status,'pending');
+ server.offline=false;upgrade021(server);server.loseAck=true;
+ const next=await startWriter(shared,server,A,{catalogVersion:currentContentVersion});await next.h.ctx.SVProgress.retry();await next.h.ctx.SVProgressDebug.flush();
+ const after=[...shared.stores.get('events').values()].find(r=>r.eventId===row.eventId);assert.equal(immutableEvent(after),bytes);assert.equal(after.status,'applied');assert.equal(server.account(A).snapshot.state.xp,8);assert.equal(server.account(A).snapshot.state.known.length,1);
+ const calls=next.h.records.rpc.filter(r=>r.name==='sl_apply_event');assert(calls.length>=2);assert(calls.every(r=>r.args.p_event_id===row.eventId));assert(calls.every(r=>JSON.stringify(r.args.p_event)===row.eventJson));
+});
+test('021 replays an unacknowledged 020 11-question start and completes it without a second reward',async()=>{
+ const shared=writerEnvironment(),server=writerServer();server.account(A).snapshot.content_version=verified020;server.legacyPronouns=true;
+ const old=await startWriter(shared,server,A,{catalogVersion:verified020}),run=await quizApp(old);run('delete LESSONS[2].pronounsChapter.finalTest');server.offline=true;await run("startQuiz('lesson','lesson-3')");run('persistQuizSession()');
+ const original=[...shared.stores.get('events').values()].find(r=>JSON.parse(r.eventJson).type==='session_start'),bytes=immutableEvent(original),sid=run('quiz.cloud.id');assert.equal(server.account(A).sessions.size,0);
+ server.offline=false;server.legacyPronouns=false;upgrade021(server);
+ const next=await startWriter(shared,server,A,{catalogVersion:currentContentVersion}),r=await quizApp(next);assert(r('restoreQuizSession()'));assert.equal(r('quiz.questions.length'),11);assert.equal(r('quiz.cloud.id'),sid);
+ for(let i=0;i<11;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<10)await r("action({dataset:{action:'quiz-next'}})")}await r('finishQuiz()');assert(r('quiz.finished'));
+ assert.equal(server.account(A).snapshot.state.xp,35);assert.equal(server.account(A).snapshot.state.quizResults['assessment:pronouns-final-v1'],undefined);
+ const after=[...shared.stores.get('events').values()].find(row=>row.eventId===original.eventId);assert.equal(immutableEvent(after),bytes);assert.equal(after.status,'applied');assert.equal(server.account(A).sessions.get(sid).content_version,verified020);
+ await r("startQuiz('lesson','lesson-3')");assert.equal(r('quiz.questions.length'),24);for(let i=0;i<24;i++){await r('submitAnswer(quiz.questions[quiz.index].answer)');if(i<23)await r("action({dataset:{action:'quiz-next'}})")}await r('finishQuiz()');assert(r('quiz.finished'));assert.equal(server.account(A).snapshot.state.xp,35);
+});
+test('021 accepts a restored immutable 020 start that was not yet inserted into IndexedDB',async()=>{
+ const server=writerServer();upgrade021(server);const w=await startWriter(writerEnvironment(),server,A,{catalogVersion:currentContentVersion});
+ const id=require('node:crypto').randomUUID(),sid=require('node:crypto').randomUUID();
+ const e={type:'session_start',occurred_at:'2026-11-20T10:00:00Z',timezone:'Europe/Stockholm',data:{session_id:sid,mode:'lesson',context_id:'lesson-3',content_version:verified020,questions:Array.from({length:11},(_,i)=>({question_id:'q'+i}))}},bytes=JSON.stringify(e);
+ const receipt=await w.h.ctx.SVProgress.enqueueSession(id,e);assert(receipt);const row=[...w.shared.stores.get('events').values()].find(r=>r.eventId===id);assert.equal(row.eventJson,bytes);assert.equal(row.contentVersion,verified020);assert.equal(row.status,'applied');assert.equal(server.account(A).sessions.get(sid).questions.length,11);
+});
+test('021 requires an explicit server replay capability and preserves pending bytes until it arrives',async()=>{
+ const server=writerServer(),shared=writerEnvironment();server.account(A).snapshot.content_version=verified020;const old=await startWriter(shared,server,A,{catalogVersion:verified020});server.offline=true;await old.h.ctx.SVProgress.enqueue('mark_known','v-prata');await old.h.ctx.SVProgressDebug.flush();const before=JSON.stringify([...shared.stores.get('events').values()]);
+ server.offline=false;upgrade021(server,{advertise:false});const next=await startWriter(shared,server,A,{catalogVersion:currentContentVersion});await next.h.ctx.SVProgressDebug.flush();assert.equal(next.h.ctx.SVProgress.writeStatus().error,'CONTENT_VERSION_MISMATCH');assert.equal(JSON.stringify([...shared.stores.get('events').values()]),before);assert.equal(next.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
+ server.account(A).snapshot.capabilities.push(replay020);await next.h.ctx.SVProgress.retry();await next.h.ctx.SVProgressDebug.flush();assert.equal(server.account(A).snapshot.state.xp,8);assert.equal([...shared.stores.get('events').values()][0].status,'applied');
+});
+test('021 does not replay or rewrite events from an unreviewed version',async()=>{
+ const shared=writerEnvironment(),server=writerServer();server.account(A).snapshot.content_version='static-unreviewed';const old=await startWriter(shared,server,A,{catalogVersion:'static-unreviewed'});server.offline=true;await old.h.ctx.SVProgress.enqueue('mark_known','v-arbeta');await old.h.ctx.SVProgressDebug.flush();const before=JSON.stringify([...shared.stores.get('events').values()]);
+ server.offline=false;upgrade021(server);const next=await startWriter(shared,server,A,{catalogVersion:currentContentVersion});await next.h.ctx.SVProgressDebug.flush();assert.equal(JSON.stringify([...shared.stores.get('events').values()]),before);assert.equal(next.h.ctx.SVProgress.writeStatus().error,'CONTENT_VERSION_MISMATCH');assert.equal(server.account(A).snapshot.state.xp,0);assert.equal(next.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
 });

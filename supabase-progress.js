@@ -1,7 +1,7 @@
 /* Validated account progress and durable event queue; RPC only. */
 'use strict';
 (() => {
- const moduleVersion='2026-11-09-mobile-qa-1';
+ const moduleVersion='2026-11-22-pronouns-021';
  const scriptUrl=document.currentScript?.src??null;
  let started=false,initializing=null,onError=null,context=null,previewCatalog=null;
  const record=value=>value!==null&&typeof value==='object'&&!Array.isArray(value);
@@ -162,6 +162,9 @@
  }
  const learningFields=['known','favorites','reviews','completed','activity','answered','correct','xp','videos','booksRead'];
  function stable(v){return JSON.stringify(v,(_k,x)=>record(x)?Object.fromEntries(Object.keys(x).sort().map(k=>[k,x[k]])):x)}
+ // Only server-advertised versions may drain unchanged stored requests.
+ // compatible() still requires the current client/server manifest to match.
+ function replayVersion(snapshot,version){return typeof version==='string'&&(version===snapshot.content_version||snapshot.capabilities.includes('event_replay:'+version))}
  async function compatible(c){
   const catalog=previewCatalog?.();
   if(catalog?.version!==c.snapshot?.content_version)throw fail('CONTENT_VERSION_MISMATCH');
@@ -218,7 +221,7 @@
     requireCurrent(c);
     if(row.status==='conflict')throw fail(JSON.parse(row.eventJson).type==='video_set'?'VIDEO_STATE_CONFLICT':JSON.parse(row.eventJson).type==='favorite_set'?'FAVORITE_CONFLICT':'WORD_STATE_CONFLICT');
     if(row.status==='blocked')throw fail('EVENT_REJECTED');
-    if(row.contentVersion!==c.snapshot.content_version)throw fail('CONTENT_VERSION_MISMATCH');
+    if(!replayVersion(c.snapshot,row.contentVersion))throw fail('CONTENT_VERSION_MISMATCH');
     const eventType=JSON.parse(row.eventJson).type;
     if((['unmark_known','review_grade'].includes(eventType)&&!c.snapshot.capabilities.includes(eventType)||eventType==='video_set'&&!c.snapshot.capabilities.includes('video_set_v1')))throw fail('FEATURE_UNAVAILABLE');
     for(let attempt=0;attempt<2;attempt++){
@@ -230,7 +233,7 @@
       const snapshot=validate(result?.progress);
       if(typeof result.duplicate!=='boolean'||!count(result.applied_revision)||
        result.applied_revision===0||result.applied_revision>snapshot.revision)throw fail('INVALID_PROGRESS_RESPONSE');
-      if(snapshot.content_version!==row.contentVersion)throw fail('CONTENT_VERSION_MISMATCH');
+      if(!replayVersion(snapshot,row.contentVersion))throw fail('CONTENT_VERSION_MISMATCH');
       // Record ACK before publishing; a crash before this commit retries the same UUID.
       row.status='applied';row.appliedRevision=result.applied_revision;row.quizResult=result.quiz_result??null;await put(row);
       requireCurrent(c);c.snapshot=snapshot;await compatible(c);publish(c);await reportActivity(c,JSON.parse(row.eventJson));break;
@@ -304,9 +307,9 @@
     if(existing){if(existing.eventJson!==body)throw fail('EVENT_ID_REUSED');if(['blocked','conflict','cancelled'].includes(existing.status))throw fail('QUEUE_REQUIRES_REVIEW');return}
     const pending=stored.filter(r=>!['applied','cancelled'].includes(r.status));
     if(pending.some(r=>['conflict','blocked'].includes(r.status)))throw fail('QUEUE_REQUIRES_REVIEW');
-    if(event.type==='session_start'&&event.data.content_version!==c.snapshot.content_version)throw fail('CONTENT_VERSION_MISMATCH');
+    if(event.type==='session_start'&&!replayVersion(c.snapshot,event.data.content_version))throw fail('CONTENT_VERSION_MISMATCH');
     await storage('events','readwrite',store=>store.add({userId:c.userId,eventId,eventJson:body,
-     contentVersion:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
+     contentVersion:event.type==='session_start'?event.data.content_version:c.snapshot.content_version,expectedRevision:Math.max(c.snapshot.revision,...pending.map(r=>r.expectedRevision+1)),status:'pending'}));
     requireCurrent(c);
    });
    await reportActivity(c);await flush();requireCurrent(c);

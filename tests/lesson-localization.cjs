@@ -16,7 +16,7 @@ const sourceSnapshot=JSON.stringify(lessons);
 let checkedRules=0,checkedExamples=0,checkedReadingLines=0;
 
 for(const source of lessons){
- if(source.pronunciationChapter||source.greetingsChapter){checkedRules+=source.rules.length;continue;} // Dedicated chapter/locale coverage: alphabet-pronunciation.cjs / greetings-introduction.cjs.
+ if(source.pronunciationChapter||source.greetingsChapter||source.pronounsChapter){checkedRules+=(source.pronounsChapter?source.pronounsChapter.sections.flatMap(s=>s.rules).length:source.rules.length);continue;} // Dedicated chapter/locale coverage: alphabet-pronunciation.cjs / greetings-introduction.cjs.
  run(`var lesson=LESSONS.find(item=>item.id==='${source.id}');route='lesson';routeParam=lesson.id`);
  const structure=[];
  for(const language of ['ru','en','sv','uk']){

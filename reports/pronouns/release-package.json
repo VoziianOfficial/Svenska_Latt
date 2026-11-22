@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-22",
+  "contentVersion": "static-57b40b608d91091d",
+  "verifiedBaseVersion": "static-1aa3eb8422e2930a",
+  "clientDirectory": "/private/tmp/sv-pronouns-publication-audit-oaycsjh9/client",
+  "runtimeRelease": "f33ff1cfe8abfec5",
+  "productionChanged": false,
+  "published": false,
+  "gitCommitPushMergePerformed": false,
+  "sqlAssertions": 94,
+  "clientProgressTests": 111,
+  "sha256": {
+    "supabase/migrations/202611220021_pronouns.sql": "0ba6b093890c40301013edcbee25e3fe5177ac69ad8e3b6edab03cc69ff3f77d",
+    "supabase/checks/021_pronouns_preflight.sql": "5f4686464632214d16d006bf3c831da7006f05dce9cfc99b1ace57f3eb716d60",
+    "supabase/checks/021_pronouns_postflight.sql": "e05e727699eee55ffe1f3bd7d078110dbaebec6b944140f503effe021bae23c8",
+    "supabase/baselines/020_installed_20261122.json": "9c5de075e044319b8e5f83d1b3f13bd5bb1be219a2b1e7412474fe1e883c338f",
+    "index.html": "f6ff9560ddfa3127c5785b4ddca70e45c64c0d708f0c3a6f50f93535c89559dc",
+    "app.js": "e8167b2863cdebde724997e25a45d0760be1543cda873b85aa242daf30a026a7",
+    "supabase-progress.js": "1d362efae2c0737ab4a73ac1862b5aa55ecc2156f26a2cbd3cf4e6fa231b95a2",
+    "lessons.json": "be7da335ae70cd81fe4900f70d835ad5d82fec45eca06f347724931cbfc9c3c2",
+    "pronouns-lesson.js": "93e5ea95ec5e6de8440ed0330443358de3bdc8e339f7de71b48828a0401b7307",
+    "pronouns-lesson.css": "207f725dae74ac3108c8b6e0c365eae5e31868f2ab68766a3b941d1a0d8a2ebf",
+    "sw.js": "631c97bdb8666a9fa2cafede5b81de789f388cdd6116a52cefe58ce2bbd36c93",
+    "supabase/checks/021_pronouns_data_audit.sql": "4c3f6205feda6d614643406b6058d4688edbe8e3631c5c90eaa601a29e0ecde6"
+  },
+  "sourceServiceWorkerRelease": "2026-11-22-pronouns-021"
+}

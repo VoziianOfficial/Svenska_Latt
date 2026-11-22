@@ -1,0 +1,811 @@
+{
+  "date": "2026-11-22",
+  "questions": [
+    {
+      "id": "pronouns-final-v1-q01",
+      "answer": "henne",
+      "rules": [
+        "objects"
+      ],
+      "prompt": "Eva (hon) is waiting outside. Fetch her: Kan du hämta ___?",
+      "constraint": "Henne is the object form of hon. Eva is the object, so use henne.",
+      "options": [
+        {
+          "text": "henne",
+          "reason": "Henne is the object form of hon. Eva is the object, so use henne.",
+          "correct": true
+        },
+        {
+          "text": "hon",
+          "reason": "Hon is subject she. Eva is the object, so use henne.",
+          "correct": false
+        },
+        {
+          "text": "hennes",
+          "reason": "Hennes marks ownership by hon and stays unchanged. Eva is the object, so use henne.",
+          "correct": false
+        },
+        {
+          "text": "honom",
+          "reason": "Honom is the object form of han. Eva is the object, so use henne.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q02",
+      "answer": "du",
+      "rules": [
+        "subjects",
+        "order"
+      ],
+      "prompt": "Insert singular you as subject: Hör ___ fåglarna?",
+      "constraint": "Du is subject you for one listener. Question word order does not turn subject du into an object.",
+      "options": [
+        {
+          "text": "dina",
+          "reason": "Dina is your for one listener and plural things. Question word order does not turn subject du into an object.",
+          "correct": false
+        },
+        {
+          "text": "du",
+          "reason": "Du is subject you for one listener. Question word order does not turn subject du into an object.",
+          "correct": true
+        },
+        {
+          "text": "dig",
+          "reason": "Dig is the object form of du. Question word order does not turn subject du into an object.",
+          "correct": false
+        },
+        {
+          "text": "din",
+          "reason": "Din is your for one listener and an en noun. Question word order does not turn subject du into an object.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q03",
+      "answer": "hen",
+      "rules": [
+        "hen"
+      ],
+      "prompt": "Oli uses hen. Choose Isof’s recommended form after the preposition: Jag sitter bakom ___.",
+      "constraint": "Hen is gender-neutral singular, with the same object form. Bakom takes an object form; Isof recommends hen. Henom exists, but the question explicitly asks for the recommended form.",
+      "options": [
+        {
+          "text": "henom",
+          "reason": "Henom occurs rarely; the recommended object form is hen. Bakom takes an object form; Isof recommends hen. Henom exists, but the question explicitly asks for the recommended form.",
+          "correct": false
+        },
+        {
+          "text": "de",
+          "reason": "De is a plural subject form; it can also be an article before a noun. Bakom takes an object form; Isof recommends hen. Henom exists, but the question explicitly asks for the recommended form.",
+          "correct": false
+        },
+        {
+          "text": "hen",
+          "reason": "Hen is gender-neutral singular, with the same object form. Bakom takes an object form; Isof recommends hen. Henom exists, but the question explicitly asks for the recommended form.",
+          "correct": true
+        },
+        {
+          "text": "hens",
+          "reason": "Hens is possessive, not the object form of hen. Bakom takes an object form; Isof recommends hen. Henom exists, but the question explicitly asks for the recommended form.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q04",
+      "answer": "oss",
+      "rules": [
+        "objects"
+      ],
+      "prompt": "We describe the two of us receiving help: Grannen hjälper ___.",
+      "constraint": "Oss is the object form of vi. We receive help, so use object vi→oss.",
+      "options": [
+        {
+          "text": "vi",
+          "reason": "Vi is subject we, including the speaker. We receive help, so use object vi→oss.",
+          "correct": false
+        },
+        {
+          "text": "vår",
+          "reason": "Vår is our with a singular en noun. We receive help, so use object vi→oss.",
+          "correct": false
+        },
+        {
+          "text": "våra",
+          "reason": "Våra is our with plural nouns. We receive help, so use object vi→oss.",
+          "correct": false
+        },
+        {
+          "text": "oss",
+          "reason": "Oss is the object form of vi. We receive help, so use object vi→oss.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q05",
+      "answer": "mitt",
+      "rules": [
+        "min"
+      ],
+      "prompt": "My single museum pass: ___ museumskort ligger i fickan. (ett)",
+      "constraint": "Mitt is my with a singular ett noun. The speaker owns one ett museumskort, so use mitt.",
+      "options": [
+        {
+          "text": "mitt",
+          "reason": "Mitt is my with a singular ett noun. The speaker owns one ett museumskort, so use mitt.",
+          "correct": true
+        },
+        {
+          "text": "min",
+          "reason": "Min is my with a singular en noun. The speaker owns one ett museumskort, so use mitt.",
+          "correct": false
+        },
+        {
+          "text": "mina",
+          "reason": "Mina is my with plural nouns. The speaker owns one ett museumskort, so use mitt.",
+          "correct": false
+        },
+        {
+          "text": "mig",
+          "reason": "Mig is the object form of jag. The speaker owns one ett museumskort, so use mitt.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q06",
+      "answer": "dina",
+      "rules": [
+        "din"
+      ],
+      "prompt": "One listener owns several photos: Är det ___ foton?",
+      "constraint": "Dina is your for one listener and plural things. One owner du and plural foton require dina. Era would address ni instead in this situation.",
+      "options": [
+        {
+          "text": "era",
+          "reason": "Era is your for several listeners and plural nouns. One owner du and plural foton require dina. Era would address ni instead in this situation.",
+          "correct": false
+        },
+        {
+          "text": "dina",
+          "reason": "Dina is your for one listener and plural things. One owner du and plural foton require dina. Era would address ni instead in this situation.",
+          "correct": true
+        },
+        {
+          "text": "din",
+          "reason": "Din is your for one listener and an en noun. One owner du and plural foton require dina. Era would address ni instead in this situation.",
+          "correct": false
+        },
+        {
+          "text": "ditt",
+          "reason": "Ditt is your for one listener and an ett noun. One owner du and plural foton require dina. Era would address ni instead in this situation.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q07",
+      "answer": "ert",
+      "rules": [
+        "shared"
+      ],
+      "prompt": "Address two residents about their shared single kitchen: ___ kök är nyrenoverat. (ett)",
+      "constraint": "Ert is your for several listeners and an ett noun. The owners are ni, and ett kök is singular: ert.",
+      "options": [
+        {
+          "text": "era",
+          "reason": "Era is your for several listeners and plural nouns. The owners are ni, and ett kök is singular: ert.",
+          "correct": false
+        },
+        {
+          "text": "ditt",
+          "reason": "Ditt is your for one listener and an ett noun. The owners are ni, and ett kök is singular: ert.",
+          "correct": false
+        },
+        {
+          "text": "ert",
+          "reason": "Ert is your for several listeners and an ett noun. The owners are ni, and ett kök is singular: ert.",
+          "correct": true
+        },
+        {
+          "text": "er",
+          "reason": "Er is object you (plural) or your before an en noun. The owners are ni, and ett kök is singular: ert.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q08",
+      "answer": "våra",
+      "rules": [
+        "shared"
+      ],
+      "prompt": "We jointly own several plants: ___ växter behöver vatten.",
+      "constraint": "Våra is our with plural nouns. Owner vi plus plural things → våra.",
+      "options": [
+        {
+          "text": "vår",
+          "reason": "Vår is our with a singular en noun. Owner vi plus plural things → våra.",
+          "correct": false
+        },
+        {
+          "text": "vårt",
+          "reason": "Vårt is our with a singular ett noun. Owner vi plus plural things → våra.",
+          "correct": false
+        },
+        {
+          "text": "oss",
+          "reason": "Oss is the object form of vi. Owner vi plus plural things → våra.",
+          "correct": false
+        },
+        {
+          "text": "våra",
+          "reason": "Våra is our with plural nouns. Owner vi plus plural things → våra.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q09",
+      "answer": "hennes",
+      "rules": [
+        "shared",
+        "sin"
+      ],
+      "prompt": "Frida uses hon and owns this single piano: Det är ___ piano.",
+      "constraint": "Hennes marks ownership by hon and stays unchanged. Owner Frida is not the subject det. Hennes is unchanged before ett piano; sitt cannot link to Frida here.",
+      "options": [
+        {
+          "text": "hennes",
+          "reason": "Hennes marks ownership by hon and stays unchanged. Owner Frida is not the subject det. Hennes is unchanged before ett piano; sitt cannot link to Frida here.",
+          "correct": true
+        },
+        {
+          "text": "henne",
+          "reason": "Henne is the object form of hon. Owner Frida is not the subject det. Hennes is unchanged before ett piano; sitt cannot link to Frida here.",
+          "correct": false
+        },
+        {
+          "text": "sitt",
+          "reason": "Sitt marks an ett noun owned by the third-person subject. Owner Frida is not the subject det. Hennes is unchanged before ett piano; sitt cannot link to Frida here.",
+          "correct": false
+        },
+        {
+          "text": "deras",
+          "reason": "Deras marks ownership by de and does not change. Owner Frida is not the subject det. Hennes is unchanged before ett piano; sitt cannot link to Frida here.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q10",
+      "answer": "den",
+      "rules": [
+        "den"
+      ],
+      "prompt": "One bottle has been mentioned: Flaskan står på hyllan. Take that bottle: Kan du ta ___?",
+      "constraint": "Den replaces an en noun and has the same subject and object form. En flaska is a singular en noun; its object form remains den.",
+      "options": [
+        {
+          "text": "dem",
+          "reason": "Dem is the plural object form. En flaska is a singular en noun; its object form remains den.",
+          "correct": false
+        },
+        {
+          "text": "den",
+          "reason": "Den replaces an en noun and has the same subject and object form. En flaska is a singular en noun; its object form remains den.",
+          "correct": true
+        },
+        {
+          "text": "det",
+          "reason": "Det replaces an ett noun or has a presentational/formal function. En flaska is a singular en noun; its object form remains den.",
+          "correct": false
+        },
+        {
+          "text": "de",
+          "reason": "De is a plural subject form; it can also be an article before a noun. En flaska is a singular en noun; its object form remains den.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q11",
+      "answer": "det",
+      "rules": [
+        "den",
+        "det"
+      ],
+      "prompt": "Replace the known window as subject: Ett fönster är trasigt. ___ måste bytas.",
+      "constraint": "Det replaces an ett noun or has a presentational/formal function. Ett fönster is replaced by det; this det refers back rather than introduces something new.",
+      "options": [
+        {
+          "text": "de",
+          "reason": "De is a plural subject form; it can also be an article before a noun. Ett fönster is replaced by det; this det refers back rather than introduces something new.",
+          "correct": false
+        },
+        {
+          "text": "dem",
+          "reason": "Dem is the plural object form. Ett fönster is replaced by det; this det refers back rather than introduces something new.",
+          "correct": false
+        },
+        {
+          "text": "det",
+          "reason": "Det replaces an ett noun or has a presentational/formal function. Ett fönster is replaced by det; this det refers back rather than introduces something new.",
+          "correct": true
+        },
+        {
+          "text": "den",
+          "reason": "Den replaces an en noun and has the same subject and object form. Ett fönster is replaced by det; this det refers back rather than introduces something new.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q12",
+      "answer": "dem",
+      "rules": [
+        "de-dem"
+      ],
+      "prompt": "Use neutral standard writing: Jag ger biljetterna till ___. (they receive them)",
+      "constraint": "Dem is the plural object form. After till use plural object dem. Spoken dom does not change this written choice.",
+      "options": [
+        {
+          "text": "de",
+          "reason": "De is a plural subject form; it can also be an article before a noun. After till use plural object dem. Spoken dom does not change this written choice.",
+          "correct": false
+        },
+        {
+          "text": "deras",
+          "reason": "Deras marks ownership by de and does not change. After till use plural object dem. Spoken dom does not change this written choice.",
+          "correct": false
+        },
+        {
+          "text": "den",
+          "reason": "Den replaces an en noun and has the same subject and object form. After till use plural object dem. Spoken dom does not change this written choice.",
+          "correct": false
+        },
+        {
+          "text": "dem",
+          "reason": "Dem is the plural object form. After till use plural object dem. Spoken dom does not change this written choice.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q13",
+      "answer": "de",
+      "rules": [
+        "subjects",
+        "de-dem"
+      ],
+      "prompt": "Two school nurses both use hon. Replace both as the subject: ___ kommer efter lunch.",
+      "constraint": "De is a plural subject form; it can also be an article before a noun. Two people as subject take de regardless of each individual’s singular pronoun.",
+      "options": [
+        {
+          "text": "de",
+          "reason": "De is a plural subject form; it can also be an article before a noun. Two people as subject take de regardless of each individual’s singular pronoun.",
+          "correct": true
+        },
+        {
+          "text": "dem",
+          "reason": "Dem is the plural object form. Two people as subject take de regardless of each individual’s singular pronoun.",
+          "correct": false
+        },
+        {
+          "text": "deras",
+          "reason": "Deras marks ownership by de and does not change. Two people as subject take de regardless of each individual’s singular pronoun.",
+          "correct": false
+        },
+        {
+          "text": "hon",
+          "reason": "Hon is subject she. Two people as subject take de regardless of each individual’s singular pronoun.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q14",
+      "answer": "det",
+      "rules": [
+        "det"
+      ],
+      "prompt": "Someone points at an unfamiliar person in a photo and asks Vem är det? Answer This is our new doctor: ___ är vår nya läkare.",
+      "constraint": "Det replaces an ett noun or has a presentational/formal function. This identifies a person using Det är…; en läkare does not require den in this use.",
+      "options": [
+        {
+          "text": "deras",
+          "reason": "Deras marks ownership by de and does not change. This identifies a person using Det är…; en läkare does not require den in this use.",
+          "correct": false
+        },
+        {
+          "text": "det",
+          "reason": "Det replaces an ett noun or has a presentational/formal function. This identifies a person using Det är…; en läkare does not require den in this use.",
+          "correct": true
+        },
+        {
+          "text": "den",
+          "reason": "Den replaces an en noun and has the same subject and object form. This identifies a person using Det är…; en läkare does not require den in this use.",
+          "correct": false
+        },
+        {
+          "text": "dem",
+          "reason": "Dem is the plural object form. This identifies a person using Det är…; en läkare does not require den in this use.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q15",
+      "answer": "sitt",
+      "rules": [
+        "sin"
+      ],
+      "prompt": "Ali puts his own apple on the plate: Ali lägger ___ äpple på tallriken. (ett)",
+      "constraint": "Sitt marks an ett noun owned by the third-person subject. Ali is subject and owner; ett äpple requires sitt. Hans would change the owner in this simple context.",
+      "options": [
+        {
+          "text": "sina",
+          "reason": "Sina marks plural things owned by the third-person subject. Ali is subject and owner; ett äpple requires sitt. Hans would change the owner in this simple context.",
+          "correct": false
+        },
+        {
+          "text": "hans",
+          "reason": "Hans marks ownership by han and does not agree with the thing. Ali is subject and owner; ett äpple requires sitt. Hans would change the owner in this simple context.",
+          "correct": false
+        },
+        {
+          "text": "sitt",
+          "reason": "Sitt marks an ett noun owned by the third-person subject. Ali is subject and owner; ett äpple requires sitt. Hans would change the owner in this simple context.",
+          "correct": true
+        },
+        {
+          "text": "sin",
+          "reason": "Sin marks an en noun owned by the third-person subject. Ali is subject and owner; ett äpple requires sitt. Hans would change the owner in this simple context.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q16",
+      "answer": "sina",
+      "rules": [
+        "sin"
+      ],
+      "prompt": "The brothers carry their own boxes: Bröderna bär ___ lådor.",
+      "constraint": "Sina marks plural things owned by the third-person subject. A third-person subject with its own plural boxes takes sina.",
+      "options": [
+        {
+          "text": "sin",
+          "reason": "Sin marks an en noun owned by the third-person subject. A third-person subject with its own plural boxes takes sina.",
+          "correct": false
+        },
+        {
+          "text": "sitt",
+          "reason": "Sitt marks an ett noun owned by the third-person subject. A third-person subject with its own plural boxes takes sina.",
+          "correct": false
+        },
+        {
+          "text": "deras",
+          "reason": "Deras marks ownership by de and does not change. A third-person subject with its own plural boxes takes sina.",
+          "correct": false
+        },
+        {
+          "text": "sina",
+          "reason": "Sina marks plural things owned by the third-person subject. A third-person subject with its own plural boxes takes sina.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q17",
+      "answer": "hans",
+      "rules": [
+        "sin",
+        "shared"
+      ],
+      "prompt": "Boris uses han and owns the dog. Lena walks Boris’s dog: Lena går ut med ___ hund.",
+      "constraint": "Hans marks ownership by han and does not agree with the thing. Owner Boris differs from subject Lena. His dog takes hans; sin would mean Lena’s own dog.",
+      "options": [
+        {
+          "text": "hans",
+          "reason": "Hans marks ownership by han and does not agree with the thing. Owner Boris differs from subject Lena. His dog takes hans; sin would mean Lena’s own dog.",
+          "correct": true
+        },
+        {
+          "text": "sin",
+          "reason": "Sin marks an en noun owned by the third-person subject. Owner Boris differs from subject Lena. His dog takes hans; sin would mean Lena’s own dog.",
+          "correct": false
+        },
+        {
+          "text": "sitt",
+          "reason": "Sitt marks an ett noun owned by the third-person subject. Owner Boris differs from subject Lena. His dog takes hans; sin would mean Lena’s own dog.",
+          "correct": false
+        },
+        {
+          "text": "hennes",
+          "reason": "Hennes marks ownership by hon and stays unchanged. Owner Boris differs from subject Lena. His dog takes hans; sin would mean Lena’s own dog.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q18",
+      "answer": "hennes",
+      "rules": [
+        "clause"
+      ],
+      "prompt": "The jacket belongs to Mila (hon), not Robin (han): Mila berättar att Robin lagar ___ jacka.",
+      "constraint": "Hennes marks ownership by hon and stays unchanged. Robin is the subordinate subject. Sin would refer to Robin; Mila’s ownership requires hennes.",
+      "options": [
+        {
+          "text": "sina",
+          "reason": "Sina marks plural things owned by the third-person subject. Robin is the subordinate subject. Sin would refer to Robin; Mila’s ownership requires hennes.",
+          "correct": false
+        },
+        {
+          "text": "hennes",
+          "reason": "Hennes marks ownership by hon and stays unchanged. Robin is the subordinate subject. Sin would refer to Robin; Mila’s ownership requires hennes.",
+          "correct": true
+        },
+        {
+          "text": "sin",
+          "reason": "Sin marks an en noun owned by the third-person subject. Robin is the subordinate subject. Sin would refer to Robin; Mila’s ownership requires hennes.",
+          "correct": false
+        },
+        {
+          "text": "hans",
+          "reason": "Hans marks ownership by han and does not agree with the thing. Robin is the subordinate subject. Sin would refer to Robin; Mila’s ownership requires hennes.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q19",
+      "answer": "Nu hjälper jag dig.",
+      "rules": [
+        "order",
+        "objects"
+      ],
+      "prompt": "Correct only the wrong form in Nu hjälper mig dig to mean now I help you.",
+      "constraint": "Jag supplies the required subject. After Nu and the verb, subject jag is needed; object dig stays.",
+      "options": [
+        {
+          "text": "Nu hjälper jag din.",
+          "reason": "Din is possessive; the recipient you needs dig. After Nu and the verb, subject jag is needed; object dig stays.",
+          "correct": false
+        },
+        {
+          "text": "Nu hjälper du mig.",
+          "reason": "This is grammatical but reverses helper and recipient. After Nu and the verb, subject jag is needed; object dig stays.",
+          "correct": false
+        },
+        {
+          "text": "Nu hjälper jag dig.",
+          "reason": "Jag supplies the required subject. After Nu and the verb, subject jag is needed; object dig stays.",
+          "correct": true
+        },
+        {
+          "text": "Nu hjälper mig du.",
+          "reason": "Mig cannot serve as subject and du is not the object form. After Nu and the verb, subject jag is needed; object dig stays.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q20",
+      "answer": "sig",
+      "rules": [
+        "extras"
+      ],
+      "prompt": "Isa washes herself: Isa tvättar ___.",
+      "constraint": "Sig is a third-person reflexive object, not a possessive. The action returns to subject Isa; use reflexive object sig. Henne would normally identify someone else.",
+      "options": [
+        {
+          "text": "sin",
+          "reason": "Sin marks an en noun owned by the third-person subject. The action returns to subject Isa; use reflexive object sig. Henne would normally identify someone else.",
+          "correct": false
+        },
+        {
+          "text": "sina",
+          "reason": "Sina marks plural things owned by the third-person subject. The action returns to subject Isa; use reflexive object sig. Henne would normally identify someone else.",
+          "correct": false
+        },
+        {
+          "text": "henne",
+          "reason": "Henne is the object form of hon. The action returns to subject Isa; use reflexive object sig. Henne would normally identify someone else.",
+          "correct": false
+        },
+        {
+          "text": "sig",
+          "reason": "Sig is a third-person reflexive object, not a possessive. The action returns to subject Isa; use reflexive object sig. Henne would normally identify someone else.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q21",
+      "answer": "Amir",
+      "rules": [
+        "sin"
+      ],
+      "prompt": "In the new text, who is the referent of sin in sin lägenhet?",
+      "constraint": "The apartment belongs with Amir. Han is Amir and sin lägenhet links to that subject.",
+      "options": [
+        {
+          "text": "Amir",
+          "reason": "The apartment belongs with Amir. Han is Amir and sin lägenhet links to that subject.",
+          "correct": true
+        },
+        {
+          "text": "Tove",
+          "reason": "Tove is object henne, not subject Han in this clause. Han is Amir and sin lägenhet links to that subject.",
+          "correct": false
+        },
+        {
+          "text": "Tove och Amir",
+          "reason": "The text does not state a shared apartment. Han is Amir and sin lägenhet links to that subject.",
+          "correct": false
+        },
+        {
+          "text": "Biblioteket",
+          "reason": "Biblioteket is the meeting place, not the apartment’s owner. Han is Amir and sin lägenhet links to that subject.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q22",
+      "answer": "Tove",
+      "rules": [
+        "objects"
+      ],
+      "prompt": "Who does henne replace in sentence two?",
+      "constraint": "Tove is the person shown the photo. Han shows Tove a photo: she is the recipient represented by henne.",
+      "options": [
+        {
+          "text": "Lägenheten",
+          "reason": "Henne refers to Tove, not an en lägenhet. Han shows Tove a photo: she is the recipient represented by henne.",
+          "correct": false
+        },
+        {
+          "text": "Tove",
+          "reason": "Tove is the person shown the photo. Han shows Tove a photo: she is the recipient represented by henne.",
+          "correct": true
+        },
+        {
+          "text": "Amir",
+          "reason": "Amir is already subject Han. Han shows Tove a photo: she is the recipient represented by henne.",
+          "correct": false
+        },
+        {
+          "text": "Tove och Amir",
+          "reason": "Henne is singular, not both people. Han shows Tove a photo: she is the recipient represented by henne.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q23",
+      "answer": "Tidningarna",
+      "rules": [
+        "den",
+        "de-dem"
+      ],
+      "prompt": "What does De replace in the final sentence?",
+      "constraint": "The newspapers are subject of De är på svenska. The two newspapers are described as being in Swedish; dem then replaces the same newspapers as object of läser.",
+      "options": [
+        {
+          "text": "Tove och Amir",
+          "reason": "The people are not texts in a language; Amir reads the newspapers. The two newspapers are described as being in Swedish; dem then replaces the same newspapers as object of läser.",
+          "correct": false
+        },
+        {
+          "text": "Boken",
+          "reason": "Boken is singular and belongs to Amir. The two newspapers are described as being in Swedish; dem then replaces the same newspapers as object of läser.",
+          "correct": false
+        },
+        {
+          "text": "Tidningarna",
+          "reason": "The newspapers are subject of De är på svenska. The two newspapers are described as being in Swedish; dem then replaces the same newspapers as object of läser.",
+          "correct": true
+        },
+        {
+          "text": "Handskarna",
+          "reason": "Gloves are plural too but are not texts in Swedish. The two newspapers are described as being in Swedish; dem then replaces the same newspapers as object of läser.",
+          "correct": false
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    },
+    {
+      "id": "pronouns-final-v1-q24",
+      "answer": "Amir läser dem.",
+      "rules": [
+        "de-dem"
+      ],
+      "prompt": "Replace the newspapers to say Amir reads them.",
+      "constraint": "Dem is the plural object form. The newspapers are plural objects: dem. De is subject, deras possessive and den a singular en referent.",
+      "options": [
+        {
+          "text": "Amir läser de.",
+          "reason": "De is a plural subject form; it can also be an article before a noun. The newspapers are plural objects: dem. De is subject, deras possessive and den a singular en referent.",
+          "correct": false
+        },
+        {
+          "text": "Amir läser deras.",
+          "reason": "Deras marks ownership by de and does not change. The newspapers are plural objects: dem. De is subject, deras possessive and den a singular en referent.",
+          "correct": false
+        },
+        {
+          "text": "Amir läser den.",
+          "reason": "Den replaces an en noun and has the same subject and object form. The newspapers are plural objects: dem. De is subject, deras possessive and den a singular en referent.",
+          "correct": false
+        },
+        {
+          "text": "Amir läser dem.",
+          "reason": "Dem is the plural object form. The newspapers are plural objects: dem. De is subject, deras possessive and den a singular en referent.",
+          "correct": true
+        }
+      ],
+      "authorReviewed": true,
+      "independentReviewer": false
+    }
+  ],
+  "excludedAmbiguities": [
+    "de/dem som variation",
+    "infinitive reflexive reference",
+    "unmarked pronoun choice from a person name",
+    "unqualified singular/plural barn",
+    "unqualified henom as wrong rather than asking for the recommended form"
+  ]
+}

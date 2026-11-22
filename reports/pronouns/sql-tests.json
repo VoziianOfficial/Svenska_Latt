@@ -1,0 +1,434 @@
+{
+  "date": "2026-11-22",
+  "localOnly": true,
+  "tcpListener": false,
+  "productionConnected": false,
+  "productionSqlExecuted": false,
+  "migrations018019020Executed": false,
+  "workDirectory": "/private/tmp/sl-pronouns-sql-qvrpa353",
+  "cases": [
+    {
+      "name": "Reconstructed 020 matches all four production-report MD5",
+      "passed": true,
+      "detail": {
+        "reader": "5748e3372fac0764e9a14d8879aea361",
+        "writer": "67e980064af15b0073227139518b42ac",
+        "catalog": "d76527fc03b194aa9a32f7a564e39138",
+        "manifest": "23f966adf86b8986dea5e8e194bad3d7"
+      }
+    },
+    {
+      "name": "Reconstructed 020 content_version matches report",
+      "passed": true
+    },
+    {
+      "name": "020 lesson-1 fixture awards its original 35 XP",
+      "passed": true
+    },
+    {
+      "name": "020 lesson-2 fixture awards its original 35 XP",
+      "passed": true
+    },
+    {
+      "name": "020 lesson-3 fixture awards its original 35 XP",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: manifest raises expected error",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: manifest rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: catalog raises expected error",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: catalog rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: reader raises expected error",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: reader rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: writer raises expected error",
+      "passed": true
+    },
+    {
+      "name": "MD5 drift: writer rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version actual guard raises expected error",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version actual guard rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version explicit predicate raises expected error",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version explicit predicate rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest actual guard raises expected error",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest actual guard rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest explicit predicate raises expected error",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest explicit predicate rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Missing historical reward reservation raises expected error",
+      "passed": true
+    },
+    {
+      "name": "Missing historical reward reservation rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Existing backup / accidental reapply raises expected error",
+      "passed": true
+    },
+    {
+      "name": "Existing backup / accidental reapply rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Historical answer modified in candidate raises expected error",
+      "passed": true
+    },
+    {
+      "name": "Historical answer modified in candidate rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Unrelated bank modified in candidate raises expected error",
+      "passed": true
+    },
+    {
+      "name": "Unrelated bank modified in candidate rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Failure after catalog, reader and manifest replacement raises expected error",
+      "passed": true
+    },
+    {
+      "name": "Failure after catalog, reader and manifest replacement rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "All negative tests restore exact original 020 and all fixture rows",
+      "passed": true
+    },
+    {
+      "name": "Successful 021 changes no user/Auth/Storage rows",
+      "passed": true
+    },
+    {
+      "name": "Post-021 bodies match generated fingerprints",
+      "passed": true
+    },
+    {
+      "name": "reader keeps ACL, owner, SECURITY DEFINER and search_path",
+      "passed": true
+    },
+    {
+      "name": "writer keeps ACL, owner, SECURITY DEFINER and search_path",
+      "passed": true
+    },
+    {
+      "name": "Frozen 020 manifest and catalog match exact pre-upgrade values",
+      "passed": true
+    },
+    {
+      "name": "Writer grading, receipt, ownership and XP logic remains byte-identical",
+      "passed": true
+    },
+    {
+      "name": "New manifest exactly matches static client",
+      "passed": true
+    },
+    {
+      "name": "Reader advertises both the new bank and verified-020 replay",
+      "passed": true
+    },
+    {
+      "name": "Entire server catalog equals the client-generated trusted bank",
+      "passed": true
+    },
+    {
+      "name": "Every other bank, including lesson-1/2, is unchanged",
+      "passed": true
+    },
+    {
+      "name": "Every historical lesson-3 ID and answer is unchanged",
+      "passed": true
+    },
+    {
+      "name": "Lesson-3 has 24 active and 11 archived questions",
+      "passed": true
+    },
+    {
+      "name": "Old XP, completions, SRS/favorites and all derived results are unchanged",
+      "passed": true
+    },
+    {
+      "name": "A second real 021 application raises expected error",
+      "passed": true
+    },
+    {
+      "name": "A second real 021 application rolls back all functions, backup and user rows",
+      "passed": true
+    },
+    {
+      "name": "Manual read-only postflight reports all checks true",
+      "passed": true
+    },
+    {
+      "name": "Old finish receipt remains idempotent 255a8d",
+      "passed": true
+    },
+    {
+      "name": "Old finish receipt remains idempotent aebb2c",
+      "passed": true
+    },
+    {
+      "name": "Old finish receipt remains idempotent b115b9",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-1 start ACK replay keeps the same session",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-1 attempt finishes under 021 and awards once",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-1 start request is never rewritten",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-1 finish retry adds no XP",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-2 start ACK replay keeps the same session",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-2 attempt finishes under 021 and awards once",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-2 start request is never rewritten",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-2 finish retry adds no XP",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-3 start ACK replay keeps the same session",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-3 attempt finishes under 021 and awards once",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-3 start request is never rewritten",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-3 finish retry adds no XP",
+      "passed": true
+    },
+    {
+      "name": "An old 11-question session does not create a new-bank result",
+      "passed": true
+    },
+    {
+      "name": "19/24 threshold and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "19/24 gets a separate versioned result",
+      "passed": true
+    },
+    {
+      "name": "19/24 concurrent lost-ACK retries reuse one receipt",
+      "passed": true
+    },
+    {
+      "name": "20/24 threshold and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "20/24 gets a separate versioned result",
+      "passed": true
+    },
+    {
+      "name": "20/24 concurrent lost-ACK retries reuse one receipt",
+      "passed": true
+    },
+    {
+      "name": "24/24 threshold and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "24/24 gets a separate versioned result",
+      "passed": true
+    },
+    {
+      "name": "24/24 concurrent lost-ACK retries reuse one receipt",
+      "passed": true
+    },
+    {
+      "name": "New perfect pass never rewards an already rewarded old user",
+      "passed": true
+    },
+    {
+      "name": "Historical 11/11 aggregate is preserved beside new 24/24",
+      "passed": true
+    },
+    {
+      "name": "lesson-1 historical result is unchanged after new lesson-3",
+      "passed": true
+    },
+    {
+      "name": "lesson-2 historical result is unchanged after new lesson-3",
+      "passed": true
+    },
+    {
+      "name": "Previously unacknowledged 020 start replays its 11-question bank unchanged",
+      "passed": true
+    },
+    {
+      "name": "Accepted old request JSON equals original payload",
+      "passed": true
+    },
+    {
+      "name": "Unacknowledged old-bank replay finishes and awards only its lifetime 35 XP",
+      "passed": true
+    },
+    {
+      "name": "Old queued finish lost ACK is deduplicated",
+      "passed": true
+    },
+    {
+      "name": "New 24-question pass after replayed 11-question pass awards no extra XP",
+      "passed": true
+    },
+    {
+      "name": "Unknown content version rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "New bank forged under old 020 version rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "11 old IDs in a new-version start rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "Mixed archive and new IDs rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "Duplicate question IDs rejects atomically",
+      "passed": true
+    },
+    {
+      "name": "Spoofed correct:true is rejected before the first answer",
+      "passed": true
+    },
+    {
+      "name": "An incomplete attempt cannot finish or reserve XP",
+      "passed": true
+    },
+    {
+      "name": "A client boolean cannot bypass trusted scoring",
+      "passed": true
+    },
+    {
+      "name": "A repeated answer with another UUID changes nothing",
+      "passed": true
+    },
+    {
+      "name": "Another account cannot finish a session or claim XP",
+      "passed": true
+    },
+    {
+      "name": "Two concurrent first finishes commit exactly one 35-XP reward",
+      "passed": true
+    },
+    {
+      "name": "Answer catalog is inaccessible to authenticated clients",
+      "passed": true
+    }
+  ],
+  "bootstrapMigrations": [
+    "202610170001_core.sql",
+    "202610170002_manifest.sql",
+    "202610170003_progress_rpc.sql",
+    "202610170004_import.sql",
+    "202610170005_avatars.sql",
+    "202610170006_manifest_version.sql",
+    "202610180007_word_state.sql",
+    "202610180008_study_time.sql",
+    "202610180009_manual_review_queue.sql",
+    "202610180010_quiz_rewards.sql",
+    "202610180011_study_time_default.sql",
+    "202610180012_xp_integrity.sql",
+    "202610180013_srs_interval_cap.sql",
+    "202610190014_video_progress.sql",
+    "202610220015_known_removes_review.sql",
+    "202610220016_review_only_unlearned.sql",
+    "202611090017_learning_content_manifest.sql"
+  ],
+  "verified020": {
+    "contentVersion": "static-1aa3eb8422e2930a",
+    "functionMD5": {
+      "reader": "5748e3372fac0764e9a14d8879aea361",
+      "writer": "67e980064af15b0073227139518b42ac",
+      "catalog": "d76527fc03b194aa9a32f7a564e39138",
+      "manifest": "23f966adf86b8986dea5e8e194bad3d7"
+    },
+    "source": "User-provided verified read-only report from production Supabase"
+  },
+  "passed": true,
+  "assertions": 94,
+  "newContentVersion": "static-57b40b608d91091d",
+  "expectedPostMD5": {
+    "manifest": "8175977d178067352ad8b0df697de019",
+    "catalog": "0108ee37590e52b64c3cce928aacb7ef",
+    "reader": "b54fea7e908720a36177e2a6f91d03d6",
+    "writer": "04a117be1ffcdae4e71fafd405f38534"
+  },
+  "sql021ExecutedOnlyInDisposableCluster": true,
+  "queueBoundary": "Acknowledged and unacknowledged verified 020 requests replay unchanged against the frozen 020 bank. Unknown versions and mixed generations fail closed; IndexedDB bytes/UUIDs tested separately.",
+  "clusterStopped": true
+}

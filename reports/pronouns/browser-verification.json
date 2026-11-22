@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-22",
+  "browser": "Chrome/158.0.8127.36",
+  "chapterLayouts": 20,
+  "finalLayouts": 480,
+  "practiceQuestions": 38,
+  "writtenTasks": 3,
+  "finalQuestions": 24,
+  "attempts": [
+    20,
+    24
+  ],
+  "historicalTotal": 11,
+  "xpBefore": 235,
+  "xpAfter": 235,
+  "audioChecks": [
+    {
+      "rate": "1",
+      "commands": 87,
+      "segments": 126
+    },
+    {
+      "rate": "0.55",
+      "commands": 87,
+      "segments": 126
+    }
+  ],
+  "checks": [
+    "RU/UK/EN/SV at 1440/1024/768/390/320px",
+    "38 forms, self-review models, stale-feedback reset and unchanged XP",
+    "All audio buttons at two speeds through enhanced combobox",
+    "24-question attempts, explanations, rule review/return, locale/reload",
+    "11/11 history retained, lifetime XP unchanged, capability gate"
+  ],
+  "screenshots": 20,
+  "errors": [],
+  "localFailures": [],
+  "limits": [
+    "Guest browser flow; account progress tested with RPC models",
+    "No production writes, SQL execution or acoustic language evaluation"
+  ]
+}

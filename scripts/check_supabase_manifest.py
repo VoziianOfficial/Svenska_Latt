@@ -40,7 +40,7 @@ def current_manifest():
         videos.extend(re.findall(r"\bid:'([^']+)'", block))
     manifest = {
         'words': sorted(w['id'] for w in words),
-        'lessons': {l['id']: len((l.get('pronunciationChapter') or l.get('greetingsChapter') or {}).get('finalTest', {}).get('questions', l['questions'])) for l in lessons},
+        'lessons': {l['id']: len((l.get('pronunciationChapter') or l.get('greetingsChapter') or l.get('pronounsChapter') or {}).get('finalTest', {}).get('questions', l['questions'])) for l in lessons},
         'books': {b['id']: len(b['questions']) for b in books},
         'videos': sorted(set(videos)),
         'topics': sorted(set(w['category'] for w in words)),
@@ -64,6 +64,7 @@ if __name__ == '__main__':
     # Reviewed transition 019: active lesson-1 bank is 20; archived q0..q12 stay in quiz_catalog.
     baseline['lessons']['lesson-1'] = 20
     baseline['lessons']['lesson-2'] = 20
+    baseline['lessons']['lesson-3'] = 24
     if {k: v for k, v in current.items() if k != 'version'} != {k: v for k, v in baseline.items() if k != 'version'}:
         raise SystemExit('FAIL: IDs/categories/question counts changed since migration 002')
-    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; only active lesson-1/2 counts change 13/11 → 20/20')
+    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; only active lesson-1/2/3 counts change 13/11/11 → 20/20/24')
