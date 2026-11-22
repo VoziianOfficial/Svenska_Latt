@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-22",
+  "voice": {
+    "name": "Алва",
+    "lang": "sv-SE",
+    "localService": true
+  },
+  "samples": [
+    {
+      "rate": 1,
+      "text": "Han väntar på mig i trappan på morgonen.",
+      "milliseconds": 2487
+    },
+    {
+      "rate": 0.550000011920929,
+      "text": "Han väntar på mig i trappan på morgonen.",
+      "milliseconds": 3234
+    },
+    {
+      "rate": 1,
+      "text": "Han väntar på mig i trappan på morgonen.",
+      "milliseconds": 2497
+    },
+    {
+      "rate": 0.550000011920929,
+      "text": "Han väntar på mig i trappan på morgonen.",
+      "milliseconds": 3233
+    }
+  ],
+  "muted": true,
+  "acousticReviewPerformed": false,
+  "independentLanguageReviewPerformed": false,
+  "slowToNormalRatio": 1.29
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-22",
+  "cached": [
+    {
+      "name": "pronouns-lesson.js",
+      "cached": true
+    },
+    {
+      "name": "pronouns-lesson.css",
+      "cached": true
+    },
+    {
+      "name": "lessons.json",
+      "cached": true
+    },
+    {
+      "name": "app.js",
+      "cached": true
+    }
+  ],
+  "offlineReload": true,
+  "offlineFinalQuestions": 24,
+  "guestReward": 35,
+  "limit": "Guest offline browser; durable account queue and lost ACK covered by RPC models. TTS voices depend on the device."
+}

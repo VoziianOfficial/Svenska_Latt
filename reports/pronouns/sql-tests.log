@@ -1,0 +1,96 @@
+PASS: Reconstructed 020 matches all four production-report MD5
+PASS: Reconstructed 020 content_version matches report
+PASS: 020 lesson-1 fixture awards its original 35 XP
+PASS: 020 lesson-2 fixture awards its original 35 XP
+PASS: 020 lesson-3 fixture awards its original 35 XP
+PASS: MD5 drift: manifest raises expected error
+PASS: MD5 drift: manifest rolls back all functions, backup and user rows
+PASS: MD5 drift: catalog raises expected error
+PASS: MD5 drift: catalog rolls back all functions, backup and user rows
+PASS: MD5 drift: reader raises expected error
+PASS: MD5 drift: reader rolls back all functions, backup and user rows
+PASS: MD5 drift: writer raises expected error
+PASS: MD5 drift: writer rolls back all functions, backup and user rows
+PASS: wrong content_version actual guard raises expected error
+PASS: wrong content_version actual guard rolls back all functions, backup and user rows
+PASS: wrong content_version explicit predicate raises expected error
+PASS: wrong content_version explicit predicate rolls back all functions, backup and user rows
+PASS: wrong full manifest actual guard raises expected error
+PASS: wrong full manifest actual guard rolls back all functions, backup and user rows
+PASS: wrong full manifest explicit predicate raises expected error
+PASS: wrong full manifest explicit predicate rolls back all functions, backup and user rows
+PASS: Missing historical reward reservation raises expected error
+PASS: Missing historical reward reservation rolls back all functions, backup and user rows
+PASS: Existing backup / accidental reapply raises expected error
+PASS: Existing backup / accidental reapply rolls back all functions, backup and user rows
+PASS: Historical answer modified in candidate raises expected error
+PASS: Historical answer modified in candidate rolls back all functions, backup and user rows
+PASS: Unrelated bank modified in candidate raises expected error
+PASS: Unrelated bank modified in candidate rolls back all functions, backup and user rows
+PASS: Failure after catalog, reader and manifest replacement raises expected error
+PASS: Failure after catalog, reader and manifest replacement rolls back all functions, backup and user rows
+PASS: All negative tests restore exact original 020 and all fixture rows
+PASS: Successful 021 changes no user/Auth/Storage rows
+PASS: Post-021 bodies match generated fingerprints
+PASS: reader keeps ACL, owner, SECURITY DEFINER and search_path
+PASS: writer keeps ACL, owner, SECURITY DEFINER and search_path
+PASS: Frozen 020 manifest and catalog match exact pre-upgrade values
+PASS: Writer grading, receipt, ownership and XP logic remains byte-identical
+PASS: New manifest exactly matches static client
+PASS: Reader advertises both the new bank and verified-020 replay
+PASS: Entire server catalog equals the client-generated trusted bank
+PASS: Every other bank, including lesson-1/2, is unchanged
+PASS: Every historical lesson-3 ID and answer is unchanged
+PASS: Lesson-3 has 24 active and 11 archived questions
+PASS: Old XP, completions, SRS/favorites and all derived results are unchanged
+PASS: A second real 021 application raises expected error
+PASS: A second real 021 application rolls back all functions, backup and user rows
+PASS: Manual read-only postflight reports all checks true
+PASS: Old finish receipt remains idempotent 255a8d
+PASS: Old finish receipt remains idempotent aebb2c
+PASS: Old finish receipt remains idempotent b115b9
+PASS: Historical lesson-1 start ACK replay keeps the same session
+PASS: Historical lesson-1 attempt finishes under 021 and awards once
+PASS: Historical lesson-1 start request is never rewritten
+PASS: Historical lesson-1 finish retry adds no XP
+PASS: Historical lesson-2 start ACK replay keeps the same session
+PASS: Historical lesson-2 attempt finishes under 021 and awards once
+PASS: Historical lesson-2 start request is never rewritten
+PASS: Historical lesson-2 finish retry adds no XP
+PASS: Historical lesson-3 start ACK replay keeps the same session
+PASS: Historical lesson-3 attempt finishes under 021 and awards once
+PASS: Historical lesson-3 start request is never rewritten
+PASS: Historical lesson-3 finish retry adds no XP
+PASS: An old 11-question session does not create a new-bank result
+PASS: 19/24 threshold and lifetime XP
+PASS: 19/24 gets a separate versioned result
+PASS: 19/24 concurrent lost-ACK retries reuse one receipt
+PASS: 20/24 threshold and lifetime XP
+PASS: 20/24 gets a separate versioned result
+PASS: 20/24 concurrent lost-ACK retries reuse one receipt
+PASS: 24/24 threshold and lifetime XP
+PASS: 24/24 gets a separate versioned result
+PASS: 24/24 concurrent lost-ACK retries reuse one receipt
+PASS: New perfect pass never rewards an already rewarded old user
+PASS: Historical 11/11 aggregate is preserved beside new 24/24
+PASS: lesson-1 historical result is unchanged after new lesson-3
+PASS: lesson-2 historical result is unchanged after new lesson-3
+PASS: Previously unacknowledged 020 start replays its 11-question bank unchanged
+PASS: Accepted old request JSON equals original payload
+PASS: Unacknowledged old-bank replay finishes and awards only its lifetime 35 XP
+PASS: Old queued finish lost ACK is deduplicated
+PASS: New 24-question pass after replayed 11-question pass awards no extra XP
+PASS: Unknown content version rejects atomically
+PASS: New bank forged under old 020 version rejects atomically
+PASS: 11 old IDs in a new-version start rejects atomically
+PASS: Mixed archive and new IDs rejects atomically
+PASS: Duplicate question IDs rejects atomically
+PASS: Spoofed correct:true is rejected before the first answer
+PASS: An incomplete attempt cannot finish or reserve XP
+PASS: A client boolean cannot bypass trusted scoring
+PASS: A repeated answer with another UUID changes nothing
+PASS: Another account cannot finish a session or claim XP
+PASS: Two concurrent first finishes commit exactly one 35-XP reward
+PASS: Answer catalog is inaccessible to authenticated clients
+Report: /Users/yuliia/Documents/GitHub/Svenska_Latt/reports/pronouns/sql-tests.json
+PASS: 94 real PostgreSQL assertions; no production connection; 018/019/020 migration files never executed

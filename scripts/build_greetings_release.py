@@ -5,6 +5,8 @@ import hashlib,json,re,subprocess
 from pathlib import Path
 from check_supabase_manifest import current_manifest
 ROOT=Path(__file__).resolve().parents[1]
+if any(l.get('pronounsChapter') for l in json.loads((ROOT/'lessons.json').read_text())):
+    raise SystemExit('020 is archived. Use scripts/build_pronouns_release.py for independent 021; never rewrite installed 020.')
 def body(source,name,delim):return re.search(r'create or replace function '+re.escape(name)+r'.*?as '+re.escape(delim)+r'(.*?)'+re.escape(delim)+r';',source,re.S|re.I)[1]
 s14=(ROOT/'supabase/migrations/202610190014_video_progress.sql').read_text();s12=(ROOT/'supabase/migrations/202610180012_xp_integrity.sql').read_text();s19=(ROOT/'supabase/migrations/202611160019_alphabet_final_test.sql').read_text()
 reader14=body(s14,'public.sl_get_progress()','$$');reader19=reader14

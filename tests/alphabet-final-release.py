@@ -10,7 +10,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from check_supabase_manifest import current_manifest,read_manifest,latest_manifest_path
 proposal=ROOT/'supabase/migrations/202611160019_alphabet_final_test.sql'
 sql=proposal.read_text();old=read_manifest(ROOT/'supabase/migrations/202611160018_alphabet_pronunciation_manifest.sql');new=read_manifest(proposal)
-current=current_manifest(); archived_current=json.loads(json.dumps(current));archived_current['lessons']['lesson-2']=11;archived_current['version']=new['version'];assert new==archived_current;assert new['version']!=old['version']
+current=current_manifest(); archived_current=json.loads(json.dumps(current));archived_current['lessons']['lesson-2']=11;archived_current['lessons']['lesson-3']=11;archived_current['version']=new['version'];assert new==archived_current;assert new['version']!=old['version']
 expected=json.loads(json.dumps(old));expected['lessons']['lesson-1']=20;expected['version']=new['version'];assert expected==new
 assert "version:'"+current['version']+"'" in (ROOT/'app.js').read_text()
 bank=json.loads(sql.split('$alphabet_bank$')[1]);assert bank['count']==20 and bank['reward']==35

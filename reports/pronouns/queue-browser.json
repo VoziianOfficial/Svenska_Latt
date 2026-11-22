@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-22",
+  "realIndexedDB": true,
+  "realWebLocks": true,
+  "remoteRpcUsed": false,
+  "fixtureRpc": true,
+  "requestsUnchanged": true,
+  "noRowsDeleted": true,
+  "unknownVersionUnchanged": true,
+  "otherAccountUnchanged": true,
+  "legacy11StartAccepted": true,
+  "lostAckDuplicateCalls": 2,
+  "xp": 8,
+  "answered": 1,
+  "unknownVersionError": "CONTENT_VERSION_MISMATCH"
+}

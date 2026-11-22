@@ -3,8 +3,8 @@ import hashlib,json,re,subprocess,sys,runpy
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from check_supabase_manifest import current_manifest,read_manifest,latest_manifest_path
-p=latest_manifest_path();assert p.name=='202611160020_greetings_introduction.sql';sql=p.read_text();current=current_manifest();assert read_manifest(p)==current
-old=read_manifest(ROOT/'supabase/migrations/202611160019_alphabet_final_test.sql');expected=json.loads(json.dumps(old));expected['lessons']['lesson-2']=20;expected['version']=current['version'];assert expected==current
+p=ROOT/'supabase/migrations/202611160020_greetings_introduction.sql';sql=p.read_text();current=current_manifest();archived=json.loads(json.dumps(current));archived['lessons']['lesson-3']=11;archived['version']=read_manifest(p)['version'];assert read_manifest(p)==archived
+old=read_manifest(ROOT/'supabase/migrations/202611160019_alphabet_final_test.sql');expected=json.loads(json.dumps(old));expected['lessons']['lesson-2']=20;expected['version']=archived['version'];assert expected==archived
 assert "version:'"+current['version']+"'" in (ROOT/'app.js').read_text()
 catalog=json.loads(subprocess.check_output(['node',str(ROOT/'scripts/quiz_catalog.cjs')],text=True));archive=json.loads((ROOT/'supabase/migrations/202610180010_quiz_rewards.sql').read_text().split('$quizbank$')[1])
 for n,tag,total in [(1,'alphabet',33),(2,'greetings',31)]:

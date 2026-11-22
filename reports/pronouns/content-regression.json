@@ -1,0 +1,62 @@
+[
+  {
+    "test": "pronouns",
+    "exit": 0,
+    "output": "PASS: 38 practice + 3 written + 24 final; 384 practice / 384 final branches; 1008 TTS segments; 14 rules, 10 tables, strict locales, unchanged archives/other lessons, 19/20/24 thresholds, history and lifetime XP\n"
+  },
+  {
+    "test": "alphabet-pronunciation",
+    "exit": 0,
+    "output": "PASS: 29 letters, 33 sourced rules, 28 tasks × 4 locales / 336 branches, 9-sentence TTS contract, 29 isolated letter names, icon/stop states, strict sv-SE fallback, dictation gating, escaped account-scoped drafts, unchanged historical banks/XP/storage\n"
+  },
+  {
+    "test": "alphabet-final-test",
+    "exit": 0,
+    "output": "PASS: final 20 + formative 35; 3/5/4/3/3/2 distribution; 320 option/locale branches; canonical IDs, all explanations/rule links, 15/16/20 thresholds, retries/history/XP and archived 13-question restore\n"
+  },
+  {
+    "test": "greetings-introduction",
+    "exit": 0,
+    "output": "PASS: 31 practice + 3 written + 20 final; 348 practice and 320 final branches; 15 rules/7 tables/4 dialogues/10 sentences, strict locales, originality, 15/16/20 thresholds, history/XP and 42 ordered TTS segments\n"
+  },
+  {
+    "test": "lesson-localization",
+    "exit": 0,
+    "output": "PASS: 48 standard lesson layouts A–D + all 50 rules references, 315 full rules, 241 examples, 173 reading lines; equal content in all 4 languages and rules reference\n"
+  },
+  {
+    "test": "learning-content-v2",
+    "exit": 0,
+    "output": "PASS: 50 legacy lessons preserved, 20 tasks × 4 locales, 240 answer branches, invalid/empty answers, validator negative cases, delegated submit/edit, escaped writing drafts, no progress or XP writes\n"
+  },
+  {
+    "test": "quiz-localization",
+    "exit": 0,
+    "output": "PASS: 595 original questions, 14 modes, 4 languages, correct/incorrect feedback, option identity, drafts, sentence tokens, lesson/book/topic/review/video entry points\n"
+  },
+  {
+    "test": "quiz-session",
+    "exit": 0,
+    "output": "PASS: boot/refresh preserves 14 modes, 4 languages, answers, drafts, tokens, question order, results and XP; account isolation, clearing and invalid/unavailable storage\n"
+  },
+  {
+    "test": "quiz-rewards",
+    "exit": 0,
+    "output": "PASS: 70/80/100%, best scores, one-time rewards, retries, refresh, unfinished/random sessions and 116 trusted quizzes × 4 languages\n"
+  },
+  {
+    "test": "service-worker",
+    "exit": 0,
+    "output": "PASS: bounded local photos, concurrent eviction, no bulk precache, offline versioned shell, cache upgrade and API isolation\n"
+  },
+  {
+    "test": "boot-loading",
+    "exit": 0,
+    "output": "✔ hung fetch and hung JSON body settle, abort and offer a safe reload (23.265584ms)\n✔ missing, malformed and empty learning content show a safe error without clearing progress (3.505792ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 31.290334\n"
+  },
+  {
+    "test": "quality",
+    "exit": 0,
+    "output": "{\n  \"status\": \"PASS\",\n  \"words\": 1006,\n  \"lessons\": 50,\n  \"categories\": 42,\n  \"minWords\": 30,\n  \"books\": 12,\n  \"locales\": 4,\n  \"quizModes\": 14,\n  \"videoCards\": 12\n}\n"
+  }
+]
