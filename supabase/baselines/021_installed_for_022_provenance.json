@@ -1,0 +1,11 @@
+{
+  "reportDate": "2026-11-23",
+  "timezone": "Europe/Stockholm",
+  "source": "User-provided actual read-only preflight from installed production Supabase; agent made no production connection",
+  "sourceAttachmentSha256": "68355fe0ab8b92b65faae2a4f0c40f31f1435b5ca18d075c090cde3646b9bf2e",
+  "decodedBaselineSha256": "52bc3415087fc6ae4a1968a372b5c4919e8985c2e907061dc0ad3bb00a2b98b4",
+  "contentVersionVerified": true,
+  "allFourFunctionMd5Verified": true,
+  "fullManifestVerified": true,
+  "productionSqlExecutedByAgent": false
+}

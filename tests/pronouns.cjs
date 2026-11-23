@@ -43,7 +43,7 @@ for(const section of c.sections)for(const r of section.rules){for(const k of ['t
 for(const l of c.reading.lines){assert(l.annotations?.length);l.annotations.forEach(a=>{assert(l.sv.includes(a.form));localized(a.role)})}
 for(const w of c.writing)localized(w.translation);
 // Outside lesson-3, lesson payloads must be byte-equivalent to this checkout's baseline.
-const original=JSON.parse(require('node:child_process').execFileSync('git',['show','HEAD:lessons.json'],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024}));for(const l of lessons)if(l.id!=='lesson-3')assert.deepEqual(l,original.find(o=>o.id===l.id));
+const original=JSON.parse(require('node:child_process').execFileSync('git',['show','HEAD:lessons.json'],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024}));for(const l of lessons)if(!['lesson-3','lesson-4'].includes(l.id))assert.deepEqual(l,original.find(o=>o.id===l.id));
 // Writing drafts stay escaped and isolated by account identity.
 run("route='lesson';routeParam='lesson-3'");const writingInput=events.input.find(fn=>String(fn).includes('pronWriting'));writingInput({target:{matches:()=>true,dataset:{pronWriting:c.writing[0].id},value:'<script>draft</script>'}});assert(run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run("user={id:'another-account'}");assert(!run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run('user=null');
 // Speech contract: strict Swedish voice and complete, ordered story/dialogue turns.

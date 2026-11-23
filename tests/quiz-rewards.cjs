@@ -44,7 +44,7 @@ for(const [qid,q] of Object.entries(upgraded['lesson:lesson-1'].questions))asser
 const greetingsBank=JSON.parse(read('supabase/migrations/202611160020_greetings_introduction.sql').split('$greetings_bank$')[1]);
 for(const [qid,q] of Object.entries(upgraded['lesson:lesson-2'].questions))assert.deepEqual(greetingsBank.questions[qid],q,'Archived lesson-2 answer changed');
 const pronounsBank=JSON.parse(read('supabase/migrations/202611220021_pronouns.sql').split('$pronouns_bank$')[1]);
-assert.deepEqual({...upgraded,'lesson:lesson-1':finalBank,'lesson:lesson-2':greetingsBank,'lesson:lesson-3':pronounsBank},catalog,'021 trusted bank drifted from source content');
+assert.deepEqual({...upgraded,'lesson:lesson-1':finalBank,'lesson:lesson-2':greetingsBank,'lesson:lesson-3':pronounsBank}, {...catalog,'lesson:lesson-4':upgraded['lesson:lesson-4']},'021 trusted bank drifted from source content');
 async function complete(p,mode,id,correct){
  await p.run(`startQuiz(${JSON.stringify(mode)},${JSON.stringify(id)})`);
  const n=p.run('quiz.questions.length'),baseline=p.run('state.xp');

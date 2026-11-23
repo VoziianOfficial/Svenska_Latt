@@ -25,6 +25,13 @@ def build(destination):
     destination = destination.resolve()
     if destination.exists():
         raise SystemExit(f'Refusing to overwrite existing directory: {destination}')
+    # A lesson bank and its server manifest must be prepared together. This is
+    # read-only and stops before creating even a partial publishable directory.
+    from check_supabase_manifest import current_manifest, read_manifest, latest_manifest_path
+    contract = current_manifest()
+    if read_manifest(latest_manifest_path()) != contract or not re.search(
+            r"version:'" + re.escape(contract['version']) + "'", (ROOT/'app.js').read_text()):
+        raise SystemExit('Release blocked: static curriculum/client and SQL manifest differ. Obtain the installed baseline and prepare the coordinated migration before packaging.')
     files = [ROOT / name for name in RUNTIME]
     files += [p for p in (ROOT / 'assets').rglob('*') if p.is_file() and
               (p.suffix.lower() in IMAGE_EXTENSIONS or p.relative_to(ROOT).as_posix() in ASSET_METADATA)]

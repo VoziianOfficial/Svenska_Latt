@@ -1,0 +1,32 @@
+{
+  "localOnly": true,
+  "productionConnected": false,
+  "sqlExecuted": false,
+  "candidateReproducedByteForByte": true,
+  "cases": [
+    {
+      "name": "observed",
+      "passed": true
+    },
+    {
+      "name": "missing",
+      "passed": true
+    },
+    {
+      "name": "wrong-md5",
+      "passed": true
+    },
+    {
+      "name": "wrong-bank",
+      "passed": true
+    },
+    {
+      "name": "existing-backup",
+      "passed": true
+    },
+    {
+      "name": "wrong-version",
+      "passed": true
+    }
+  ]
+}
