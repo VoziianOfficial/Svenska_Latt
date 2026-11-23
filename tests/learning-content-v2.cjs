@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f
 const lessons=JSON.parse(read('lessons.json')),baseline=JSON.parse(read('reports/learning-content-baseline-v2.json'));
 const validate=require('../scripts/validate_learning_content.cjs');
 const sha=data=>crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-assert.equal(validate(lessons).pilots[0].questions,20);
+assert.equal(validate(lessons).pilots[0].questions,40);
 for(const l of lessons){
  const old=baseline.modules[l.level].find(x=>x.id===l.id);assert(old,'Unplanned new lesson ID');
  assert.equal(sha(l.questions),old.questionsSha256,l.id+': legacy question content/order changed');
@@ -11,7 +11,7 @@ for(const l of lessons){
 }
 // The validator must reject bad data rather than merely counting the happy path.
 function rejects(mutate,pattern){const copy=structuredClone(lessons);mutate(copy[3].learningV2,copy);assert.throws(()=>validate(copy),pattern)}
-rejects(v=>v.questions.pop(),/fewer than 20/);
+rejects(v=>v.questions.splice(19),/fewer than 20/);
 rejects(v=>v.questions[1].id=v.questions[0].id,/Duplicate question/);
 rejects(v=>v.questions[0].answerId='missing',/invalid answer/);
 rejects(v=>delete v.questions[0].prompt.uk,/missing uk/);
@@ -40,13 +40,13 @@ let branches=0;
 for(const lang of ['ru','en','sv','uk']){
  run(`state.settings.language='${lang}';learningV2Drafts.clear()`);
  const snapshot=run('JSON.stringify(state)');
- const html=run('renderLesson()');
- assert.equal((html.match(/data-learning-v2-form /g)||[]).length,20);
- assert.equal((html.match(/<textarea /g)||[]).length,2);
- assert(html.includes('data-action="lesson-test" data-id="lesson-4"'),'Legacy scored test inaccessible');
+ const html=run('renderLearningV2(LESSONS[3])');
+ assert.equal((html.match(/data-learning-v2-form /g)||[]).length,40);
+ assert.equal((html.match(/<textarea /g)||[]).length,5);
+ assert.equal(lessons[3].questions.length,11,'Legacy scored questions must remain archived');
  assert(html.includes('data-learning-v2-summary role="status"'));
  if(['en','sv'].includes(lang))assert(!/[А-Яа-яЁёІіЇїЄєҐґ]/.test(html.replace(/<[^>]*>/g,'')));
- for(const q of v.questions){
+ for(const q of v.questions.slice(0,20)){
   assert(html.includes(run(`esc(${JSON.stringify(q.prompt[lang])})`)),q.id+': prompt missing');
   const check=answer=>JSON.parse(run(`JSON.stringify(learningV2Check('lesson-4',${JSON.stringify(q.id)},${JSON.stringify(answer)}))`));
   assert.equal(check(''),null);assert.equal(check('  '),null);
@@ -86,11 +86,11 @@ const form={dataset:{lesson:'lesson-4',task:q.id},matches:s=>s==='[data-learning
 const handler=events.submit.find(fn=>String(fn).includes('learningV2Check'));
 assert(handler,'Submit handler not bound');let prevented=0;
 handler({target:form,preventDefault(){prevented++}});
-assert.equal(prevented,1);assert(output.innerHTML.includes('success'));assert(summary.textContent.includes('20 / 20'));
+assert.equal(prevented,1);assert(output.innerHTML.includes('success'));assert(summary.textContent.includes('20 / 40'));
 const draftHandler=events.input.find(fn=>String(fn).includes('learningV2Key'));
 draftHandler({target:{name:'answer',value:'o2',closest:()=>form,matches:()=>false}});
 assert.equal(output.innerHTML,'','Editing must invalidate stale feedback');
-assert(summary.textContent.includes('19 / 20'),'Summary retained a stale checked answer');
+assert(summary.textContent.includes('19 / 40'),'Summary retained a stale checked answer');
 input.value='o2';handler({target:form,preventDefault(){}});assert(output.innerHTML.includes('failure'));
 form.reportValidity=()=>false;const oldOutput=output.innerHTML;handler({target:form,preventDefault(){}});assert.equal(output.innerHTML,oldOutput);
 assert.equal(run('JSON.stringify(state)'),originalState);

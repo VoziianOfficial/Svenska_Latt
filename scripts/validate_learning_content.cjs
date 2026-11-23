@@ -68,8 +68,9 @@ function validate(lessons){
   const prompts=Object.fromEntries(langs.map(lang=>[lang,new Set()]));
   for(const q of v.questions){
    assert(q.id&&!questionIds.has(q.id),'Duplicate question ID');questionIds.add(q.id);
-   assert(['choice','cloze'].includes(q.type),'Unknown task type');assert(q.skill);
-   assert(q.ruleRefs?.length);for(const i of q.ruleRefs)assert(Number.isInteger(i)&&i>=0&&i<l.rules.length,'Broken rule link');
+   assert((v.chapterVersion?['choice','cloze','arrange']:['choice','cloze']).includes(q.type),'Unknown task type');assert(q.skill);
+   const chapterRefs=new Set(['reading',...(v.sections||[]).flatMap(s=>s.rules.map(r=>r.id))]);
+   assert(q.ruleRefs?.length);for(const i of q.ruleRefs)assert(typeof i==='number'?Number.isInteger(i)&&i>=0&&i<l.rules.length:v.chapterVersion&&chapterRefs.has(i),'Broken rule link');
    localized(q.prompt,q.id);
    for(const lang of langs){const key=normalize(q.prompt[lang]);assert(!prompts[lang].has(key),q.id+': duplicate prompt');prompts[lang].add(key)}
    const text=[q.context||'',...langs.map(lang=>q.prompt[lang])];
@@ -84,7 +85,8 @@ function validate(lessons){
     }
     for(const o of q.options){assert(o.id&&o.text);localized(o.feedback,q.id+': feedback')}
    }else{
-    assert(typeof q.answer==='string'&&q.answer.trim()&&!/\s/.test(q.answer),q.id+': cloze requires one word');
+    assert(typeof q.answer==='string'&&q.answer.trim()&&(v.chapterVersion||!/\s/.test(q.answer)),q.id+': cloze requires one word');
+    if(q.type==='arrange')assert.deepEqual(q.tokens.slice().sort(),q.answer.split(' ').sort(),q.id+': invalid token scaffold');
     localized(q.feedback,q.id+': feedback');text.push(q.answer);
    }
    for(const example of teaching)for(const tested of text)assert(!normalize(tested).includes(example),q.id+': repeats theory example '+example);

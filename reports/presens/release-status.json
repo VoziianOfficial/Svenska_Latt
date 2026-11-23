@@ -1,0 +1,43 @@
+{
+  "status": "prepared-and-tested-not-applied",
+  "installedBaselineVerified": true,
+  "baseline": "supabase/baselines/021_installed_for_022.json",
+  "expectedBaseVersion": "static-57b40b608d91091d",
+  "expectedBaseMD5": {
+    "manifest": "8175977d178067352ad8b0df697de019",
+    "catalog": "0108ee37590e52b64c3cce928aacb7ef",
+    "reader": "b54fea7e908720a36177e2a6f91d03d6",
+    "writer": "04a117be1ffcdae4e71fafd405f38534"
+  },
+  "preparedVersion": "static-18bd9e23b62c3382",
+  "expectedPostMD5": {
+    "manifest": "0a625c1bfee5c4458e4e6b7a6da161c1",
+    "catalog": "c2913150b7f6e4451410cfdf300d4bea",
+    "reader": "2a54002f56a0230fa2f03a89fab871b9",
+    "writer": "82ffbac7b24326523ca60c888c1538c7"
+  },
+  "replayVersions": [
+    "static-1aa3eb8422e2930a",
+    "static-57b40b608d91091d"
+  ],
+  "activeQuestions": 24,
+  "archivedQuestions": 11,
+  "reward": 35,
+  "productionSqlExecuted": false,
+  "published": false,
+  "releaseReady": false,
+  "baselineObserved": true,
+  "sql022Generated": true,
+  "clientPublished": false,
+  "preparationComplete": true,
+  "readyForOperatorReview": true,
+  "localSqlAcceptancePassed": true,
+  "localSqlAssertions": 62,
+  "historyAuditIdentical": true,
+  "generatorCasesPassed": 6,
+  "clientPackageVerified": true,
+  "productionReleaseAuthorized": false,
+  "productionPostflightPerformed": false,
+  "sqlSha256": "35c30ae20fc442c487eb58b8b76700b6e1dd854279ec113b28635516f562dd84",
+  "baselineSha256": "52bc3415087fc6ae4a1968a372b5c4919e8985c2e907061dc0ad3bb00a2b98b4"
+}

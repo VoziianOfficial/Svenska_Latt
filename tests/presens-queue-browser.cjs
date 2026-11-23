@@ -1,0 +1,41 @@
+/* Real Chrome IndexedDB/Web Locks; isolated fake Auth/RPC inside an iframe.
+   No network RPC, real users, production writes or queue deletion. */
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const base=process.env.SL_ALPHABET_URL||'http://127.0.0.1:8767/',port=process.env.SL_BROWSER_PORT||9224;
+const source=fs.readFileSync(path.resolve(__dirname,'../supabase-progress.js'),'utf8'),version=require('node:child_process').execFileSync('python3',['-c',"import sys;sys.path.insert(0,'scripts');from check_supabase_manifest import current_manifest;print(current_manifest()['version'])"],{cwd:path.resolve(__dirname,'..'),encoding:'utf8'}).trim();
+assert(['127.0.0.1','localhost'].includes(new URL(base).hostname),'Only local preview URLs are allowed');
+(async()=>{const tab=await(await fetch(`http://127.0.0.1:${port}/json/new?about:blank`,{method:'PUT'})).json(),ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});let id=0;const pending=new Map();ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result)}};const send=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});ws.send(JSON.stringify({id,method,params}))});const run=async expression=>{const r=await send('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true,userGesture:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value};
+try{await send('Page.enable');await send('Runtime.enable');await send('Network.enable');await send('Network.setBypassServiceWorker',{bypass:true});await send('Page.navigate',{url:base});await run(`new Promise((r,j)=>{let n=0;const t=setInterval(()=>{if(document.querySelector('.hero')){clearInterval(t);r()}else if(++n>200){clearInterval(t);j(Error('boot timeout'))}},30)})`);
+const reports=[];for(const previous of ['static-1aa3eb8422e2930a','static-57b40b608d91091d']){const report=await run(`(async()=>{
+ const old=${JSON.stringify(previous)},current=${JSON.stringify(version)},actor=crypto.randomUUID(),other=crypto.randomUUID();
+ const f=document.createElement('iframe');f.src=new URL('cookies.html',location.href).href;await new Promise((resolve,reject)=>{f.onload=resolve;f.onerror=reject;document.body.append(f)});const w=f.contentWindow;w.document.body.replaceChildren();w.__source=${JSON.stringify(source)};
+ const snapshot={revision:0,content_version:current,capabilities:['quiz_rewards_v1','event_replay:'+old],state:{known:[],favorites:[],completed:[],videos:[],booksRead:[],reviews:{},activity:{},xp:0,answered:0,correct:0,quizResults:{},settings:{language:'ru',level:'A',speechSpeed:'normal',timezone:'Europe/Stockholm'},profile:{name:'',avatarPath:null}}};
+ const db=await new Promise((resolve,reject)=>{const r=indexedDB.open('sv-cloud-events-v1',1);r.onupgradeneeded=()=>{r.result.createObjectStore('events',{keyPath:'sequence',autoIncrement:true});r.result.createObjectStore('baselines',{keyPath:'userId'})};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});
+ const stored=(mode,fn)=>new Promise((resolve,reject)=>{const tx=db.transaction('events',mode),r=fn(tx.objectStore('events'));let result;r.onsuccess=()=>result=r.result;tx.oncomplete=()=>resolve(result);tx.onerror=()=>reject(tx.error)});
+ const sid=crypto.randomUUID(),make=(type,data,contentVersion=old,userId=actor,expectedRevision=0)=>({userId,eventId:crypto.randomUUID(),eventJson:JSON.stringify({type,occurred_at:'2026-11-20T10:00:00Z',timezone:'Europe/Stockholm',data}),contentVersion,expectedRevision,status:'pending'});
+ const originals=[make('mark_known',{word_id:'v-arbeta'}),make('session_start',{session_id:sid,mode:'lesson',context_id:'lesson-4',content_version:old,questions:Array.from({length:11},(_,i)=>({question_id:'q'+i}))},old,actor,1),make('answer',{session_id:sid,question_index:0,response:'bor'},old,actor,2)];
+ const unknown=make('mark_known',{word_id:'v-prata'},'static-unreviewed',actor,3),otherRow=make('mark_known',{word_id:'v-prata'},old,other,0);
+ for(const row of [...originals,unknown,otherRow])await stored('readwrite',s=>s.add(row));
+ const before=(await stored('readonly',s=>s.getAll())).filter(r=>r.userId===actor||r.userId===other),immutable=r=>JSON.stringify({userId:r.userId,eventId:r.eventId,eventJson:r.eventJson,contentVersion:r.contentVersion});
+ const calls=[],receipts=new Map();let loseAck=true,legacyStart=false;
+ w.SVAuth={initialize:async()=>{},subscribe(){},getState:()=>({user:{id:actor},identityRevision:1,status:'signed_in'})};
+ w.SVRpc={getProgress:async()=>JSON.parse(JSON.stringify(snapshot)),applyEvent:async request=>{
+  if(request.expectedUserId!==actor)throw Error('wrong owner');calls.push(JSON.parse(JSON.stringify(request)));
+  if(receipts.has(request.eventId))return {duplicate:true,applied_revision:receipts.get(request.eventId),progress:JSON.parse(JSON.stringify(snapshot)),quiz_result:null};
+  if(request.expectedRevision!==snapshot.revision)throw Object.assign(Error('conflict'),{code:'40001'});
+  const row=originals.find(r=>r.eventId===request.eventId);if(!row)throw Error('unreviewed event reached RPC');if(JSON.stringify(request.event)!==row.eventJson)throw Error('request rewritten');
+  if(request.event.type==='mark_known'){snapshot.state.known.push('v-arbeta');snapshot.state.xp+=8}
+  if(request.event.type==='session_start'){if(request.event.data.questions.length!==11||request.event.data.content_version!==old)throw Error('wrong generation');legacyStart=true}
+  if(request.event.type==='answer'){snapshot.state.answered++;snapshot.state.correct++}
+  snapshot.revision++;receipts.set(request.eventId,snapshot.revision);if(loseAck){loseAck=false;throw Error('lost ACK')}
+  return {duplicate:false,applied_revision:snapshot.revision,progress:JSON.parse(JSON.stringify(snapshot)),quiz_result:null};
+ }};
+ w.eval(w.__source);await w.SVProgress.initialize({previewCatalog:()=>({version:current})});
+ for(let i=0;i<4;i++){await w.SVProgress.retry();await new Promise(r=>setTimeout(r,30))}
+ const after=(await stored('readonly',s=>s.getAll())).filter(r=>r.userId===actor||r.userId===other);
+ const preserved=originals.every(o=>{const a=after.find(r=>r.eventId===o.eventId),b=before.find(r=>r.eventId===o.eventId);return a?.status==='applied'&&immutable(a)===immutable(b)});
+ const result={date:'2026-11-23',replayedVersion:old,realIndexedDB:true,realWebLocks:!!navigator.locks,remoteRpcUsed:false,fixtureRpc:true,requestsUnchanged:preserved,noRowsDeleted:after.length===before.length,unknownVersionUnchanged:JSON.stringify(after.find(r=>r.eventId===unknown.eventId))===JSON.stringify(before.find(r=>r.eventId===unknown.eventId)),otherAccountUnchanged:JSON.stringify(after.find(r=>r.eventId===otherRow.eventId))===JSON.stringify(before.find(r=>r.eventId===otherRow.eventId)),legacy11StartAccepted:legacyStart,lostAckDuplicateCalls:calls.filter(c=>c.eventId===originals[0].eventId).length,xp:snapshot.state.xp,answered:snapshot.state.answered,unknownVersionError:w.SVProgress.writeStatus().error};
+ db.close();f.remove();return result;
+})()`);
+assert(report.requestsUnchanged,JSON.stringify(report));assert(report.noRowsDeleted);assert(report.unknownVersionUnchanged);assert(report.otherAccountUnchanged);assert(report.legacy11StartAccepted);assert(report.lostAckDuplicateCalls>=2);assert.equal(report.xp,8);assert.equal(report.answered,1);assert.equal(report.unknownVersionError,'CONTENT_VERSION_MISMATCH');reports.push(report)}fs.writeFileSync(path.resolve(__dirname,'../reports/presens/queue-browser.json'),JSON.stringify({simulatedServer:true,productionContractVerified:false,cases:reports},null,2)+'\n');console.log('PASS: 020 and 021 replay with real IndexedDB/Web Locks, lost ACK and unchanged UUID/JSON/version; unknown versions and other owner preserved (RPC model)');
+}finally{ws.close();await fetch(`http://127.0.0.1:${port}/json/close/${tab.id}`)}})().catch(e=>{console.error(e);process.exitCode=1});

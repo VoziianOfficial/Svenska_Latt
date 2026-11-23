@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-23",
+  "localOnly": true,
+  "tcpListener": false,
+  "productionConnected": false,
+  "productionSqlExecuted": false,
+  "migrations018Through021Executed": false,
+  "sourceFixtureIsProductionBaseline": false,
+  "cases": [
+    {
+      "name": "021 source fixture reproduces four archived MD5; not a live baseline",
+      "passed": true
+    },
+    {
+      "name": "021 fixture version remains static-57b40b608d91091d",
+      "passed": true
+    },
+    {
+      "name": "021 fixture matches actual user-provided baseline MD5, full manifest and four banks",
+      "passed": true
+    },
+    {
+      "name": "Historical lesson-4 earns exactly its original 35 XP",
+      "passed": true
+    },
+    {
+      "name": "Acknowledged historical receipt is idempotent",
+      "passed": true
+    },
+    {
+      "name": "MD5 guard and atomic rollback: manifest",
+      "passed": true
+    },
+    {
+      "name": "MD5 guard and atomic rollback: catalog",
+      "passed": true
+    },
+    {
+      "name": "MD5 guard and atomic rollback: reader",
+      "passed": true
+    },
+    {
+      "name": "MD5 guard and atomic rollback: writer",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version production guard",
+      "passed": true
+    },
+    {
+      "name": "wrong content_version explicit state predicate",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest production guard",
+      "passed": true
+    },
+    {
+      "name": "wrong full manifest explicit state predicate",
+      "passed": true
+    },
+    {
+      "name": "Observed bank-state guard catches backing-function drift",
+      "passed": true
+    },
+    {
+      "name": "Frozen replay manifest drift fails closed",
+      "passed": true
+    },
+    {
+      "name": "Existing 022 backup is never overwritten",
+      "passed": true
+    },
+    {
+      "name": "Completed legacy lesson without reward reservation aborts",
+      "passed": true
+    },
+    {
+      "name": "Failure after every function change rolls back all data/functions",
+      "passed": true
+    },
+    {
+      "name": "Historical answer corruption is rejected",
+      "passed": true
+    },
+    {
+      "name": "An unrelated lesson bank change is rejected",
+      "passed": true
+    },
+    {
+      "name": "Read-only history/XP audit is executable and identical before/after",
+      "passed": true
+    },
+    {
+      "name": "022 rewrites no user/session/event/XP/result rows",
+      "passed": true
+    },
+    {
+      "name": "All four post-022 MD5 match generated contract",
+      "passed": true
+    },
+    {
+      "name": "Reader/writer ACL, owner, definer and configuration retained",
+      "passed": true
+    },
+    {
+      "name": "Manifest matches candidate client exactly",
+      "passed": true
+    },
+    {
+      "name": "Trusted catalog matches client exactly",
+      "passed": true
+    },
+    {
+      "name": "Reader retains lesson capabilities and advertises both replay generations",
+      "passed": true
+    },
+    {
+      "name": "Reapplication fails atomically",
+      "passed": true
+    },
+    {
+      "name": "Acknowledged 021 finish receipt survives 022 without data or XP changes",
+      "passed": true
+    },
+    {
+      "name": "An acknowledged UUID cannot be reused for changed JSON",
+      "passed": true
+    },
+    {
+      "name": "19/24 threshold, separate result and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "19/24 concurrent receipt retries add no XP",
+      "passed": true
+    },
+    {
+      "name": "20/24 threshold, separate result and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "20/24 concurrent receipt retries add no XP",
+      "passed": true
+    },
+    {
+      "name": "24/24 threshold, separate result and lifetime XP",
+      "passed": true
+    },
+    {
+      "name": "24/24 concurrent receipt retries add no XP",
+      "passed": true
+    },
+    {
+      "name": "Previously rewarded lesson-4 gets no second XP",
+      "passed": true
+    },
+    {
+      "name": "Historical 11/11 result and lessons 1\u20133 remain intact",
+      "passed": true
+    },
+    {
+      "name": "Unfinished 021 session completes without new-bank projection",
+      "passed": true
+    },
+    {
+      "name": "Historical acknowledged start UUID/JSON preserved",
+      "passed": true
+    },
+    {
+      "name": "Unfinished 021 lesson-1 survives and finishes once",
+      "passed": true
+    },
+    {
+      "name": "Unfinished 021 lesson-2 survives and finishes once",
+      "passed": true
+    },
+    {
+      "name": "Unfinished 021 lesson-3 survives and finishes once",
+      "passed": true
+    },
+    {
+      "name": "Unacknowledged historical start replays unchanged static-1aa3eb8422e2930a",
+      "passed": true
+    },
+    {
+      "name": "Unacknowledged historical start replays unchanged static-57b40b608d91091d",
+      "passed": true
+    },
+    {
+      "name": "020/021 offline replay shares one 35-XP reward",
+      "passed": true
+    },
+    {
+      "name": "A new-bank pass after offline historical replay adds no XP",
+      "passed": true
+    },
+    {
+      "name": "Start rejects atomically: unknown version",
+      "passed": true
+    },
+    {
+      "name": "Start rejects atomically: new bank with 021 version",
+      "passed": true
+    },
+    {
+      "name": "Start rejects atomically: legacy bank with 022 version",
+      "passed": true
+    },
+    {
+      "name": "Start rejects atomically: mixed archive/new IDs",
+      "passed": true
+    },
+    {
+      "name": "Start rejects atomically: duplicate IDs",
+      "passed": true
+    },
+    {
+      "name": "Forged client correctness is rejected",
+      "passed": true
+    },
+    {
+      "name": "Incomplete attempts cannot finish or reserve XP",
+      "passed": true
+    },
+    {
+      "name": "Other account cannot claim session or XP",
+      "passed": true
+    },
+    {
+      "name": "Concurrent lost-ACK finishes never duplicate the reward",
+      "passed": true
+    },
+    {
+      "name": "Two simultaneous first finishes commit one reward and one duplicate",
+      "passed": true
+    },
+    {
+      "name": "Concurrent passing attempts serialize by account revision",
+      "passed": true
+    },
+    {
+      "name": "Rebased second passing attempt earns no additional XP",
+      "passed": true
+    },
+    {
+      "name": "Answer catalog remains inaccessible to application roles",
+      "passed": true
+    },
+    {
+      "name": "022_presens_postflight.sql reports no false checks",
+      "passed": true
+    },
+    {
+      "name": "022_presens_fingerprints.sql reports no false checks",
+      "passed": true
+    }
+  ],
+  "workDirectory": "/private/tmp/sl-presens-sql-cf3k6ypq",
+  "baselineVerified": true,
+  "baselineSha256": "52bc3415087fc6ae4a1968a372b5c4919e8985c2e907061dc0ad3bb00a2b98b4",
+  "status": "PASS",
+  "migration022Tested": true,
+  "releaseReady": false,
+  "fixtureChecksPassed": true,
+  "assertions": 62,
+  "clusterStopped": true
+}

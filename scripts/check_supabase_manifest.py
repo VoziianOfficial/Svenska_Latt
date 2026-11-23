@@ -40,7 +40,7 @@ def current_manifest():
         videos.extend(re.findall(r"\bid:'([^']+)'", block))
     manifest = {
         'words': sorted(w['id'] for w in words),
-        'lessons': {l['id']: len((l.get('pronunciationChapter') or l.get('greetingsChapter') or l.get('pronounsChapter') or {}).get('finalTest', {}).get('questions', l['questions'])) for l in lessons},
+        'lessons': {l['id']: len((l.get('pronunciationChapter') or l.get('greetingsChapter') or l.get('pronounsChapter') or l.get('learningV2') or {}).get('finalTest', {}).get('questions', l['questions'])) for l in lessons},
         'books': {b['id']: len(b['questions']) for b in books},
         'videos': sorted(set(videos)),
         'topics': sorted(set(w['category'] for w in words)),
@@ -57,6 +57,9 @@ if __name__ == '__main__':
     current = current_manifest()
     frozen = read_manifest(target)
     if frozen != current:
+        if (target.name == '202611220021_pronouns.sql' and
+            not (ROOT/'supabase/baselines/021_installed_for_022.json').exists()):
+            raise SystemExit('NOT RELEASE READY: lesson-4 is local; obtain the installed 021 read-only baseline before generating 022. Do not publish this client.')
         raise SystemExit('FAIL: SQL manifest differs from static content; prepare a NEW migration')
     # Preserve baseline identities/counts except the reviewed versioned lesson-1 bank.
     # Further changes require a compatibility review and an intentional guard update.
@@ -65,6 +68,9 @@ if __name__ == '__main__':
     baseline['lessons']['lesson-1'] = 20
     baseline['lessons']['lesson-2'] = 20
     baseline['lessons']['lesson-3'] = 24
+    if target.name == '202611230022_presens.sql':
+        baseline['lessons']['lesson-4'] = 24
     if {k: v for k, v in current.items() if k != 'version'} != {k: v for k, v in baseline.items() if k != 'version'}:
         raise SystemExit('FAIL: IDs/categories/question counts changed since migration 002')
-    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; only active lesson-1/2/3 counts change 13/11/11 → 20/20/24')
+    counts = '13/11/11/11 → 20/20/24/24' if baseline['lessons']['lesson-4'] == 24 else '13/11/11 → 20/20/24'
+    print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; reviewed active lesson counts {counts}')

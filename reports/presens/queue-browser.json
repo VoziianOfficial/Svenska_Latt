@@ -1,0 +1,40 @@
+{
+  "simulatedServer": true,
+  "productionContractVerified": false,
+  "cases": [
+    {
+      "date": "2026-11-23",
+      "replayedVersion": "static-1aa3eb8422e2930a",
+      "realIndexedDB": true,
+      "realWebLocks": true,
+      "remoteRpcUsed": false,
+      "fixtureRpc": true,
+      "requestsUnchanged": true,
+      "noRowsDeleted": true,
+      "unknownVersionUnchanged": true,
+      "otherAccountUnchanged": true,
+      "legacy11StartAccepted": true,
+      "lostAckDuplicateCalls": 2,
+      "xp": 8,
+      "answered": 1,
+      "unknownVersionError": "CONTENT_VERSION_MISMATCH"
+    },
+    {
+      "date": "2026-11-23",
+      "replayedVersion": "static-57b40b608d91091d",
+      "realIndexedDB": true,
+      "realWebLocks": true,
+      "remoteRpcUsed": false,
+      "fixtureRpc": true,
+      "requestsUnchanged": true,
+      "noRowsDeleted": true,
+      "unknownVersionUnchanged": true,
+      "otherAccountUnchanged": true,
+      "legacy11StartAccepted": true,
+      "lostAckDuplicateCalls": 2,
+      "xp": 8,
+      "answered": 1,
+      "unknownVersionError": "CONTENT_VERSION_MISMATCH"
+    }
+  ]
+}
