@@ -1,0 +1,16 @@
+-- READ ONLY. Expected post-023 sources and properties, verified in isolated PostgreSQL.
+begin transaction read only;
+set local statement_timeout='20s';
+select sl_private.manifest()->>'version'='static-bb3e3ddf1c5daf12' as content_version_ok;
+select (select jsonb_object_agg(v.name,jsonb_build_object(
+      'md5',md5(p.prosrc),'definition_md5',md5(pg_get_functiondef(p.oid)),
+      'owner',pg_get_userbyid(p.proowner),'acl',p.proacl,
+      'config',p.proconfig,'security_definer',p.prosecdef))
+      from (values ('manifest','sl_private.manifest()'),('catalog','sl_private.quiz_catalog()'),('reader','public.sl_get_progress()'),('writer','public.sl_apply_event(uuid,bigint,jsonb)')) v(name,sig) left join pg_proc p on p.oid=to_regprocedure(v.sig)) = $expected${"reader":{"md5":"da315179151a87bf3ef65d29853a5cb1","owner":"postgres","acl":["postgres=X/postgres","authenticated=X/postgres"],"config":["search_path=\"\""],"security_definer":true,"definition_md5":"84cc70c3d8d687433d0166f59ece1406"},"writer":{"md5":"716c0abbb2ba64ded03208d48e9ddc95","owner":"postgres","acl":["postgres=X/postgres","authenticated=X/postgres"],"config":["search_path=\"\""],"security_definer":true,"definition_md5":"45ded0a707c7afb3a0f5ebc8b22a730d"},"catalog":{"md5":"0025ed48bee7255bd7bac515d94324b9","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"0a1508fc57275c321b7163c82be5bc2e"},"manifest":{"md5":"497a7d88ae6509e51dd7cd26b22e5e80","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"df19b0162616dfe0ce506bff55816dc6"}}$expected$::jsonb as all_functions_md5_owner_acl_config_definer_ok;
+select (select coalesce(jsonb_object_agg(p.proname,jsonb_build_object(
+      'md5',md5(p.prosrc),'definition_md5',md5(pg_get_functiondef(p.oid)),
+      'owner',pg_get_userbyid(p.proowner),'acl',p.proacl,
+      'config',p.proconfig,'security_definer',p.prosecdef)),'{}'::jsonb)
+      from pg_proc p join pg_namespace n on n.oid=p.pronamespace
+      where n.nspname='sl_private' and p.proname ~ '^(manifest|quiz_catalog)_before_0(18|19|20|21|22)$') = $expected${"manifest_before_021":{"md5":"403ce93926cb464c309858138ca9596b","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"d58168eeffda3eb0aa9602d182e4b155"},"manifest_before_022":{"md5":"c414177b861e8e9871be4ceb811ca38a","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"c47c935ef43216aade036d663c185ba9"},"quiz_catalog_before_020":{"md5":"2c44acc6ab5f99bca18a46495269a4f4","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"8900adc5d2d4ecf17a6e706c0416d4ac"},"quiz_catalog_before_021":{"md5":"f5df12b82749eda17a450f1622701a7c","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"28a8a849d9bded4c0c577b777b1b27dd"},"quiz_catalog_before_022":{"md5":"104dfa947eef31cc6d551f12e78acdef","owner":"postgres","acl":["postgres=X/postgres"],"config":["search_path=\"\""],"security_definer":false,"definition_md5":"c6b02246f57af265ce74cc623e69bdd0"}}$expected$::jsonb as all_prior_archives_unchanged;
+commit;

@@ -67,7 +67,7 @@ for(const lang of languages){
  switchTo(lang);
  for(const lesson of lessons){
   run(`startQuiz('mixed','${lesson.id}')`);
-  assert.equal(run('quiz.questions.length'),(lesson.pronunciationChapter||lesson.greetingsChapter||lesson.pronounsChapter)?.finalTest?.questions.length||lesson.questions.length,'Lesson questions removed');
+  assert.equal(run('quiz.questions.length'),(lesson.pronunciationChapter||lesson.greetingsChapter||lesson.pronounsChapter||lesson.nounsChapter||lesson.learningV2)?.finalTest?.questions.length||lesson.questions.length,'Lesson questions removed');
  }
  for(const book of books){
   run(`startQuiz('book','${book.id}')`);

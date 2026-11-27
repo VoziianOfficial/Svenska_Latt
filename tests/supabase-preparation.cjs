@@ -465,7 +465,7 @@ function writerServer({wordState=false}={}){
     const d=event.data,isReplay=d.content_version!==a.snapshot.content_version&&d.content_version===replayFromVersion;assert(d.content_version===a.snapshot.content_version||isReplay);
     if(['lesson','book'].includes(d.mode)){
      const bank=JSON.parse(fs.readFileSync(path.join(root,d.mode==='lesson'?'lessons.json':'books.json')));
-     const row=bank.find(row=>row.id===d.context_id);assert.equal(d.questions.length,(legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2'||legacyPronouns&&d.context_id==='lesson-3'||isReplay&&d.context_id==='lesson-3')?row.questions.length:(row.pronunciationChapter||row.greetingsChapter||row.pronounsChapter)?.finalTest?.questions.length||row.questions.length);
+     const row=bank.find(row=>row.id===d.context_id);assert.equal(d.questions.length,(legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2'||legacyPronouns&&d.context_id==='lesson-3'||isReplay&&d.context_id==='lesson-3')?row.questions.length:(row.pronunciationChapter||row.greetingsChapter||row.pronounsChapter||row.nounsChapter||row.learningV2)?.finalTest?.questions.length||row.questions.length);
     }
     const trusted=(isReplay?frozen020:quizBank)[d.mode+':'+d.context_id];if(trusted?.start_questions&&!((legacyAlphabet&&d.context_id==='lesson-1'||legacyGreetings&&d.context_id==='lesson-2'||legacyPronouns&&d.context_id==='lesson-3')))assert.deepEqual([...d.questions.map(q=>q.question_id)].sort(),trusted.start_questions.map(q=>q.question_id).sort());
     assert(!a.sessions.has(d.session_id));a.sessions.set(d.session_id,{...d,status:'active',answers:new Map()});
@@ -484,7 +484,7 @@ function writerServer({wordState=false}={}){
      s.quizResults??={};const old=s.quizResults[id],best=!old?.total||correct*old.total>old.correct*total,rewarded=old?.rewarded||false;
      const xp=passed&&!rewarded?(quizBank[id]?.reward||0):0;
      s.quizResults[id]={...(best?{correct,total}:old),rewarded:rewarded||xp>0};s.xp+=xp;
-     const finalLesson=JSON.parse(fs.readFileSync(path.join(root,'lessons.json'),'utf8')).find(l=>'lesson:'+l.id===id),finalConfig=(finalLesson?.pronunciationChapter||finalLesson?.greetingsChapter||finalLesson?.pronounsChapter)?.finalTest;if(finalConfig&&session.questions.length===finalConfig.questions.length&&session.questions.every(q=>finalConfig.questions.some(f=>f.id===q.question_id))){const k=finalConfig.resultKey,prev=s.quizResults[k],improved=!prev||correct>prev.correct;s.quizResults[k]={...(improved?{correct,total}:prev),rewarded:rewarded||xp>0};}
+     const finalLesson=JSON.parse(fs.readFileSync(path.join(root,'lessons.json'),'utf8')).find(l=>'lesson:'+l.id===id),finalConfig=(finalLesson?.pronunciationChapter||finalLesson?.greetingsChapter||finalLesson?.pronounsChapter||finalLesson?.nounsChapter||finalLesson?.learningV2)?.finalTest;if(finalConfig&&session.questions.length===finalConfig.questions.length&&session.questions.every(q=>finalConfig.questions.some(f=>f.id===q.question_id))){const k=finalConfig.resultKey,prev=s.quizResults[k],improved=!prev||correct>prev.correct;s.quizResults[k]={...(improved?{correct,total}:prev),rewarded:rewarded||xp>0};}
      quizResult={xp,already_rewarded:rewarded,new_best:best};
      if(session.mode==='lesson'&&passed&&!s.completed.includes(session.context_id))s.completed.push(session.context_id);
     }else session.status='abandoned';
@@ -1058,7 +1058,7 @@ test('settings revision conflict retries the same intent; refresh receives anoth
 // Full application → durable client queue → RPC model. No live SQL or accounts.
 async function quizApp(w){
  const h=w.h,ctx=h.ctx;
- w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3','alphabet_final_v1','greetings_final_v1','pronouns_final_v1');await ctx.SVProgress.refresh();
+ w.server.account(A).snapshot.state.quizResults??={};w.server.account(A).snapshot.capabilities.push('quiz_rewards_v1','video_quizzes_v3','alphabet_final_v1','greetings_final_v1','pronouns_final_v1','presens_final_v1','nouns_final_v1');await ctx.SVProgress.refresh();
  ctx.sessionStorage={getItem:k=>w.shared.data.get('tab:'+k)??null,setItem:(k,v)=>w.shared.data.set('tab:'+k,v),removeItem:k=>w.shared.data.delete('tab:'+k)};
  ctx.document.querySelectorAll=()=>[];
  vm.runInContext(fs.readFileSync(path.join(root,'locale-content.js'),'utf8'),ctx);
@@ -1348,4 +1348,29 @@ test('021 requires an explicit server replay capability and preserves pending by
 test('021 does not replay or rewrite events from an unreviewed version',async()=>{
  const shared=writerEnvironment(),server=writerServer();server.account(A).snapshot.content_version='static-unreviewed';const old=await startWriter(shared,server,A,{catalogVersion:'static-unreviewed'});server.offline=true;await old.h.ctx.SVProgress.enqueue('mark_known','v-arbeta');await old.h.ctx.SVProgressDebug.flush();const before=JSON.stringify([...shared.stores.get('events').values()]);
  server.offline=false;upgrade021(server);const next=await startWriter(shared,server,A,{catalogVersion:currentContentVersion});await next.h.ctx.SVProgressDebug.flush();assert.equal(JSON.stringify([...shared.stores.get('events').values()]),before);assert.equal(next.h.ctx.SVProgress.writeStatus().error,'CONTENT_VERSION_MISMATCH');assert.equal(server.account(A).snapshot.state.xp,0);assert.equal(next.h.records.rpc.filter(r=>r.name==='sl_apply_event').length,0);
+});
+
+// Candidate RPC model only; installed-023 PostgreSQL acceptance awaits the baseline.
+test('nouns final: canonical IDs, history, lost ACK and shared reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ s.xp=235;s.completed=['lesson-5'];s.quizResults['lesson:lesson-5']={correct:10,total:10,rewarded:true};await w.h.ctx.SVProgress.refresh();const old=JSON.stringify(s.quizResults['lesson:lesson-5']);
+ for(const target of [19,20,24]){
+  await run("startQuiz('lesson','lesson-5')");assert.equal(run('quiz.questions.length'),24);
+  for(let i=0;i<24;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<23)await run("action({dataset:{action:'quiz-next'}})")}
+  if(target===20)w.server.loseAck=true;await run('finishQuiz()');if(!run('quiz.finished')){await w.h.ctx.SVProgressDebug.flush();await run('finishQuiz()')}
+  assert(run('quiz.finished'));assert.equal(run('quiz.score'),target);assert.equal(s.quizResults['assessment:nouns-final-v1'].correct,target);assert.equal(s.xp,235);assert.equal(JSON.stringify(s.quizResults['lesson:lesson-5']),old);
+ }
+ const responses=w.h.records.rpc.filter(r=>r.name==='sl_apply_event'&&r.args.p_event.type==='answer');assert(responses.length>=72);assert(responses.every(r=>/^o[0-3]$/.test(r.args.p_event.data.response)));
+ const again=await startWriter(w.shared,w.server),r=await quizApp(again);await again.h.ctx.SVProgress.refresh();assert.equal(r("state.quizResults['assessment:nouns-final-v1'].correct"),24);assert.equal(r('state.xp'),235);
+});
+test('nouns final needs its capability without creating a pending start',async()=>{
+ const w=await startWriter(),run=await quizApp(w);w.server.account(A).snapshot.capabilities=w.server.account(A).snapshot.capabilities.filter(c=>c!=='nouns_final_v1');await w.h.ctx.SVProgress.refresh();const before=w.server.account(A).sessions.size;await run("startQuiz('lesson','lesson-5')");assert.equal(w.server.account(A).sessions.size,before);assert(!run('quiz.active'));
+});
+test('nouns candidate model: 19 fails, 20 passes and repeat shares one reward',async()=>{
+ const w=await startWriter(),run=await quizApp(w),s=w.server.account(A).snapshot.state;
+ for(const target of [19,20,24]){
+  await run("startQuiz('lesson','lesson-5')");
+  for(let i=0;i<24;i++){await run(i<target?'submitAnswer(quiz.questions[quiz.index].answer)':"submitAnswer(quiz.questions[quiz.index].options.find(o=>o!==quiz.questions[quiz.index].answer))");if(i<23)await run("action({dataset:{action:'quiz-next'}})")}
+  await run('finishQuiz()');assert(run('quiz.finished'));assert.equal(s.xp,target===19?0:35);assert.equal(s.quizResults['assessment:nouns-final-v1'].correct,target);
+ }
 });

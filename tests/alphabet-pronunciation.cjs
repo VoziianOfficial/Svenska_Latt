@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f
 const lessons=JSON.parse(read('lessons.json')),lesson=lessons.find(l=>l.id==='lesson-1'),c=lesson.pronunciationChapter;
 const baseline=JSON.parse(read('reports/learning-content-baseline-v2.json'));
 const sha=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
-for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+': historical bank changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4'].includes(l.id))assert.equal(sha(l),old.lessonSha256,l.id+': unrelated content changed')}
+for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+': historical bank changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4','lesson-5'].includes(l.id))assert.equal(sha(l),old.lessonSha256,l.id+': unrelated content changed')}
 assert.equal(c.letters.map(l=>l.upper).join(''),'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ');
 assert.equal(new Set(c.letters.map(l=>l.lower)).size,29);assert.equal(c.letters.filter(l=>l.kind==='vowel').length,9);
 assert.equal(lesson.questions.length,13);assert.equal(c.questions.length,28);assert.equal(c.dictation.length,4);assert.equal(c.writing.length,3);

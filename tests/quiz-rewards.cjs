@@ -6,6 +6,8 @@ const root=path.resolve(__dirname,'..');
 const read=name=>fs.readFileSync(path.join(root,name),'utf8');
 const app=read('app.js').replace(/\nboot\(\);/g,'');
 const lessons=JSON.parse(read('lessons.json'));
+// This suite exercises the historical ten-question lesson-5; the new bank is tested in nouns.cjs.
+delete lessons[4].nounsChapter;
 function storage(map=new Map()){
  return {getItem:key=>map.get(key)??null,setItem:(key,value)=>map.set(key,String(value)),removeItem:key=>map.delete(key),map};
 }
@@ -32,6 +34,7 @@ function reload(lang){
 const catalog=require('../scripts/quiz_catalog.cjs')();
 const migration=read('supabase/migrations/202610180010_quiz_rewards.sql');
 const embedded=JSON.parse(migration.split('$quizbank$')[1]);
+catalog['lesson:lesson-5']=embedded['lesson:lesson-5'];
 const migration014=read('supabase/migrations/202610190014_video_progress.sql');
 const videoBank=JSON.parse(migration014.split('$video_bank$')[1]);
 const upgraded={...embedded,...videoBank};
@@ -44,7 +47,7 @@ for(const [qid,q] of Object.entries(upgraded['lesson:lesson-1'].questions))asser
 const greetingsBank=JSON.parse(read('supabase/migrations/202611160020_greetings_introduction.sql').split('$greetings_bank$')[1]);
 for(const [qid,q] of Object.entries(upgraded['lesson:lesson-2'].questions))assert.deepEqual(greetingsBank.questions[qid],q,'Archived lesson-2 answer changed');
 const pronounsBank=JSON.parse(read('supabase/migrations/202611220021_pronouns.sql').split('$pronouns_bank$')[1]);
-assert.deepEqual({...upgraded,'lesson:lesson-1':finalBank,'lesson:lesson-2':greetingsBank,'lesson:lesson-3':pronounsBank}, {...catalog,'lesson:lesson-4':upgraded['lesson:lesson-4']},'021 trusted bank drifted from source content');
+assert.deepEqual({...upgraded,'lesson:lesson-1':finalBank,'lesson:lesson-2':greetingsBank,'lesson:lesson-3':pronounsBank}, {...catalog,'lesson:lesson-4':upgraded['lesson:lesson-4'],'lesson:lesson-5':upgraded['lesson:lesson-5']},'021 trusted bank drifted from source content');
 async function complete(p,mode,id,correct){
  await p.run(`startQuiz(${JSON.stringify(mode)},${JSON.stringify(id)})`);
  const n=p.run('quiz.questions.length'),baseline=p.run('state.xp');
