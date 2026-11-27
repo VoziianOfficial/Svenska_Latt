@@ -60,7 +60,7 @@ class ServerTests(unittest.TestCase):
   self.assertEqual(err.exception.code,401)
   err.exception.close()
  def test_all_static_resources_and_photo_urls(self):
-  paths=['/greetings-lesson.js?v=1','/greetings-lesson.css?v=1','/alphabet-lesson.js?v=1','/alphabet-lesson.css?v=1','/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/custom-controls.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/photo-credits.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json','/assets/flashcards/photo-credits-added.json']
+  paths=['/pronouns-lesson.js?v=3','/pronouns-lesson.css?v=1','/pwa-install.js?v=2','/icons/icon-192-v2.png','/icons/icon-512-v2.png','/greetings-lesson.js?v=1','/greetings-lesson.css?v=1','/alphabet-lesson.js?v=1','/alphabet-lesson.css?v=1','/','/sw.js','/style.css?v=43','/studio.css','/atelier.css','/learning-polish.css','/atelier.js','/learning-polish.js','/custom-controls.js','/flashcard-media.js','/locale-content.js','/word-icons.js','/privacy.html','/terms.html','/cookies.html','/photo-credits.html','/assets/avatars/pippi-cartoon.png','/assets/flashcards/photo-credits-imported.json','/assets/flashcards/photo-credits-added.json']
   urls=re.findall(r'"[^"\n]+": "(\./assets/flashcards/[^"\n]+)"',(ROOT/'flashcard-media.js').read_text())
   paths += ['/'+url.removeprefix('./') for url in urls]
   paths += ['/'+quote(str(p.relative_to(ROOT))) for p in (ROOT/'assets/word-icons').glob('*.webp')]
@@ -130,7 +130,7 @@ const source=require('node:fs').readFileSync(0,'utf8');
 const scope={window:{addEventListener(){}},document:{},location:{hostname:'127.0.0.1',protocol:'http:'}};
 vm.runInNewContext(source,scope,{filename:'supabase-progress.js from HTTP'});
 for(const method of ['status','queue','diagnostics'])assert.equal(typeof scope.window.SVProgressDebug[method],'function');
-assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-11-09-mobile-qa-1');
+assert.equal(scope.window.SVProgressDebug.moduleVersion,'2026-11-22-pronouns-021');
 assert.equal(scope.window.SVProgressDebug.status().status,'idle');
 """
   result=subprocess.run(['node','-e',script],input=source,text=True,capture_output=True,timeout=10)

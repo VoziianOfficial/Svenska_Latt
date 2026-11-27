@@ -30561,16 +30561,16 @@
                 "sv": "Uppslagsformen är normalt obestämd singular: bok, hus, äpple. Lägg till artikel på ditt eget ordkort: en bok, ett hus, ett äpple."
               },
               "theory": {
-                "ru": "На svenska.se смотри род и формы: bok — boken — böcker. Читай карточку вслух и добавляй предложение. Словарь может показывать окончания сокращённо: ~en означает boken.",
-                "uk": "На svenska.se дивись рід і форми: bok — boken — böcker. Читай картку вголос і додавай речення. Словник може скорочувати закінчення: ~en означає boken.",
-                "en": "On svenska.se check gender and inflections: bok — boken — böcker. Read your card aloud and add a sentence. A dictionary may abbreviate endings: ~en stands for boken.",
-                "sv": "Kontrollera genus och böjning på svenska.se: bok — boken — böcker. Läs kortet högt och lägg till en mening. Ordboken kan förkorta ändelsen: ~en står för boken."
+                "ru": "На svenska.se смотри род и формы: bok — boken — böcker — böckerna. Читай карточку вслух и добавляй предложение. Словарь может показывать окончания сокращённо: ~en означает boken.",
+                "uk": "На svenska.se дивись рід і форми: bok — boken — böcker — böckerna. Читай картку вголос і додавай речення. Словник може скорочувати закінчення: ~en означає boken.",
+                "en": "On svenska.se check gender and inflections: bok — boken — böcker — böckerna. Read your card aloud and add a sentence. A dictionary may abbreviate endings: ~en stands for boken.",
+                "sv": "Kontrollera genus och böjning på svenska.se: bok — boken — böcker — böckerna. Läs kortet högt och lägg till en mening. Ordboken kan förkorta ändelsen: ~en står för boken."
               },
               "pattern": {
-                "ru": "en bok → boken → böcker → Jag läser en bok.",
-                "uk": "en bok → boken → böcker → Jag läser en bok.",
-                "en": "en bok → boken → böcker → Jag läser en bok.",
-                "sv": "en bok → boken → böcker → Jag läser en bok."
+                "ru": "en bok → boken → böcker → böckerna → Jag läser en bok.",
+                "uk": "en bok → boken → böcker → böckerna → Jag läser en bok.",
+                "en": "en bok → boken → böcker → böckerna → Jag läser en bok.",
+                "sv": "en bok → boken → böcker → böckerna → Jag läser en bok."
               },
               "examples": [
                 {
@@ -32133,6 +32133,7 @@
             "en": "In class: en and ett",
             "sv": "I klassrummet: en och ett"
           },
+          "kind": "noun-forms",
           "headers": [
             {
               "ru": "Слово с артиклем",
@@ -32141,22 +32142,34 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Значение",
-              "uk": "Значення",
-              "en": "Meaning",
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
+            },
+            {
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
               "sv": "Betydelse"
-            },
-            {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
-            },
-            {
-              "ru": "Несколько",
-              "uk": "Кілька",
-              "en": "Several",
-              "sv": "Flera"
             }
           ],
           "rows": [
@@ -32169,10 +32182,10 @@
                   "sv": "en bok"
                 },
                 {
-                  "ru": "книга",
-                  "uk": "книжка",
-                  "en": "book",
-                  "sv": "en bok"
+                  "ru": "bok",
+                  "uk": "bok",
+                  "en": "bok",
+                  "sv": "bok"
                 },
                 {
                   "ru": "boken",
@@ -32185,9 +32198,39 @@
                   "uk": "böcker",
                   "en": "böcker",
                   "sv": "böcker"
+                },
+                {
+                  "ru": "böckerna",
+                  "uk": "böckerna",
+                  "en": "böckerna",
+                  "sv": "böckerna"
+                },
+                {
+                  "ru": "книга",
+                  "uk": "книжка",
+                  "en": "book",
+                  "sv": "bok"
                 }
               ],
-              "sv": "en bok"
+              "sv": "en bok",
+              "formParts": [
+                [
+                  "bok",
+                  ""
+                ],
+                [
+                  "bok",
+                  "en"
+                ],
+                [
+                  "böck",
+                  "er"
+                ],
+                [
+                  "böck",
+                  "erna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32198,10 +32241,10 @@
                   "sv": "en penna"
                 },
                 {
-                  "ru": "ручка",
-                  "uk": "ручка",
-                  "en": "pen",
-                  "sv": "en penna"
+                  "ru": "penna",
+                  "uk": "penna",
+                  "en": "penna",
+                  "sv": "penna"
                 },
                 {
                   "ru": "pennan",
@@ -32214,9 +32257,39 @@
                   "uk": "pennor",
                   "en": "pennor",
                   "sv": "pennor"
+                },
+                {
+                  "ru": "pennorna",
+                  "uk": "pennorna",
+                  "en": "pennorna",
+                  "sv": "pennorna"
+                },
+                {
+                  "ru": "ручка",
+                  "uk": "ручка",
+                  "en": "pen",
+                  "sv": "penna"
                 }
               ],
-              "sv": "en penna"
+              "sv": "en penna",
+              "formParts": [
+                [
+                  "penna",
+                  ""
+                ],
+                [
+                  "penna",
+                  "n"
+                ],
+                [
+                  "penn",
+                  "or"
+                ],
+                [
+                  "penn",
+                  "orna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32227,10 +32300,10 @@
                   "sv": "en stol"
                 },
                 {
-                  "ru": "стул",
-                  "uk": "стілець",
-                  "en": "chair",
-                  "sv": "en stol"
+                  "ru": "stol",
+                  "uk": "stol",
+                  "en": "stol",
+                  "sv": "stol"
                 },
                 {
                   "ru": "stolen",
@@ -32243,9 +32316,39 @@
                   "uk": "stolar",
                   "en": "stolar",
                   "sv": "stolar"
+                },
+                {
+                  "ru": "stolarna",
+                  "uk": "stolarna",
+                  "en": "stolarna",
+                  "sv": "stolarna"
+                },
+                {
+                  "ru": "стул",
+                  "uk": "стілець",
+                  "en": "chair",
+                  "sv": "stol"
                 }
               ],
-              "sv": "en stol"
+              "sv": "en stol",
+              "formParts": [
+                [
+                  "stol",
+                  ""
+                ],
+                [
+                  "stol",
+                  "en"
+                ],
+                [
+                  "stol",
+                  "ar"
+                ],
+                [
+                  "stol",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32256,10 +32359,10 @@
                   "sv": "ett bord"
                 },
                 {
-                  "ru": "стол",
-                  "uk": "стіл",
-                  "en": "table",
-                  "sv": "ett bord"
+                  "ru": "bord",
+                  "uk": "bord",
+                  "en": "bord",
+                  "sv": "bord"
                 },
                 {
                   "ru": "bordet",
@@ -32272,9 +32375,39 @@
                   "uk": "bord",
                   "en": "bord",
                   "sv": "bord"
+                },
+                {
+                  "ru": "borden",
+                  "uk": "borden",
+                  "en": "borden",
+                  "sv": "borden"
+                },
+                {
+                  "ru": "стол",
+                  "uk": "стіл",
+                  "en": "table",
+                  "sv": "bord"
                 }
               ],
-              "sv": "ett bord"
+              "sv": "ett bord",
+              "formParts": [
+                [
+                  "bord",
+                  ""
+                ],
+                [
+                  "bord",
+                  "et"
+                ],
+                [
+                  "bord",
+                  ""
+                ],
+                [
+                  "bord",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32285,10 +32418,10 @@
                   "sv": "ett fönster"
                 },
                 {
-                  "ru": "окно",
-                  "uk": "вікно",
-                  "en": "window",
-                  "sv": "ett fönster"
+                  "ru": "fönster",
+                  "uk": "fönster",
+                  "en": "fönster",
+                  "sv": "fönster"
                 },
                 {
                   "ru": "fönstret",
@@ -32301,9 +32434,39 @@
                   "uk": "fönster",
                   "en": "fönster",
                   "sv": "fönster"
+                },
+                {
+                  "ru": "fönstren",
+                  "uk": "fönstren",
+                  "en": "fönstren",
+                  "sv": "fönstren"
+                },
+                {
+                  "ru": "окно",
+                  "uk": "вікно",
+                  "en": "window",
+                  "sv": "fönster"
                 }
               ],
-              "sv": "ett fönster"
+              "sv": "ett fönster",
+              "formParts": [
+                [
+                  "fönster",
+                  ""
+                ],
+                [
+                  "fönstr",
+                  "et"
+                ],
+                [
+                  "fönster",
+                  ""
+                ],
+                [
+                  "fönstr",
+                  "en"
+                ]
+              ]
             }
           ]
         },
@@ -32316,6 +32479,7 @@
             "en": "At home: furniture and rooms",
             "sv": "Hemma: möbler och rum"
           },
+          "kind": "noun-forms",
           "headers": [
             {
               "ru": "Слово с артиклем",
@@ -32324,22 +32488,34 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Значение",
-              "uk": "Значення",
-              "en": "Meaning",
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
+            },
+            {
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
               "sv": "Betydelse"
-            },
-            {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
-            },
-            {
-              "ru": "Несколько",
-              "uk": "Кілька",
-              "en": "Several",
-              "sv": "Flera"
             }
           ],
           "rows": [
@@ -32352,10 +32528,10 @@
                   "sv": "en lampa"
                 },
                 {
-                  "ru": "лампа",
-                  "uk": "лампа",
-                  "en": "lamp",
-                  "sv": "en lampa"
+                  "ru": "lampa",
+                  "uk": "lampa",
+                  "en": "lampa",
+                  "sv": "lampa"
                 },
                 {
                   "ru": "lampan",
@@ -32368,9 +32544,39 @@
                   "uk": "lampor",
                   "en": "lampor",
                   "sv": "lampor"
+                },
+                {
+                  "ru": "lamporna",
+                  "uk": "lamporna",
+                  "en": "lamporna",
+                  "sv": "lamporna"
+                },
+                {
+                  "ru": "лампа",
+                  "uk": "лампа",
+                  "en": "lamp",
+                  "sv": "lampa"
                 }
               ],
-              "sv": "en lampa"
+              "sv": "en lampa",
+              "formParts": [
+                [
+                  "lampa",
+                  ""
+                ],
+                [
+                  "lampa",
+                  "n"
+                ],
+                [
+                  "lamp",
+                  "or"
+                ],
+                [
+                  "lamp",
+                  "orna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32381,10 +32587,10 @@
                   "sv": "en soffa"
                 },
                 {
-                  "ru": "диван",
-                  "uk": "диван",
-                  "en": "sofa",
-                  "sv": "en soffa"
+                  "ru": "soffa",
+                  "uk": "soffa",
+                  "en": "soffa",
+                  "sv": "soffa"
                 },
                 {
                   "ru": "soffan",
@@ -32397,9 +32603,39 @@
                   "uk": "soffor",
                   "en": "soffor",
                   "sv": "soffor"
+                },
+                {
+                  "ru": "sofforna",
+                  "uk": "sofforna",
+                  "en": "sofforna",
+                  "sv": "sofforna"
+                },
+                {
+                  "ru": "диван",
+                  "uk": "диван",
+                  "en": "sofa",
+                  "sv": "soffa"
                 }
               ],
-              "sv": "en soffa"
+              "sv": "en soffa",
+              "formParts": [
+                [
+                  "soffa",
+                  ""
+                ],
+                [
+                  "soffa",
+                  "n"
+                ],
+                [
+                  "soff",
+                  "or"
+                ],
+                [
+                  "soff",
+                  "orna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32410,10 +32646,10 @@
                   "sv": "en lägenhet"
                 },
                 {
-                  "ru": "квартира",
-                  "uk": "квартира",
-                  "en": "apartment",
-                  "sv": "en lägenhet"
+                  "ru": "lägenhet",
+                  "uk": "lägenhet",
+                  "en": "lägenhet",
+                  "sv": "lägenhet"
                 },
                 {
                   "ru": "lägenheten",
@@ -32426,9 +32662,39 @@
                   "uk": "lägenheter",
                   "en": "lägenheter",
                   "sv": "lägenheter"
+                },
+                {
+                  "ru": "lägenheterna",
+                  "uk": "lägenheterna",
+                  "en": "lägenheterna",
+                  "sv": "lägenheterna"
+                },
+                {
+                  "ru": "квартира",
+                  "uk": "квартира",
+                  "en": "apartment",
+                  "sv": "lägenhet"
                 }
               ],
-              "sv": "en lägenhet"
+              "sv": "en lägenhet",
+              "formParts": [
+                [
+                  "lägenhet",
+                  ""
+                ],
+                [
+                  "lägenhet",
+                  "en"
+                ],
+                [
+                  "lägenhet",
+                  "er"
+                ],
+                [
+                  "lägenhet",
+                  "erna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32439,10 +32705,10 @@
                   "sv": "ett rum"
                 },
                 {
-                  "ru": "комната",
-                  "uk": "кімната",
-                  "en": "room",
-                  "sv": "ett rum"
+                  "ru": "rum",
+                  "uk": "rum",
+                  "en": "rum",
+                  "sv": "rum"
                 },
                 {
                   "ru": "rummet",
@@ -32455,9 +32721,39 @@
                   "uk": "rum",
                   "en": "rum",
                   "sv": "rum"
+                },
+                {
+                  "ru": "rummen",
+                  "uk": "rummen",
+                  "en": "rummen",
+                  "sv": "rummen"
+                },
+                {
+                  "ru": "комната",
+                  "uk": "кімната",
+                  "en": "room",
+                  "sv": "rum"
                 }
               ],
-              "sv": "ett rum"
+              "sv": "ett rum",
+              "formParts": [
+                [
+                  "rum",
+                  ""
+                ],
+                [
+                  "rumm",
+                  "et"
+                ],
+                [
+                  "rum",
+                  ""
+                ],
+                [
+                  "rumm",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32468,10 +32764,10 @@
                   "sv": "ett kök"
                 },
                 {
-                  "ru": "кухня",
-                  "uk": "кухня",
-                  "en": "kitchen",
-                  "sv": "ett kök"
+                  "ru": "kök",
+                  "uk": "kök",
+                  "en": "kök",
+                  "sv": "kök"
                 },
                 {
                   "ru": "köket",
@@ -32484,9 +32780,39 @@
                   "uk": "kök",
                   "en": "kök",
                   "sv": "kök"
+                },
+                {
+                  "ru": "köken",
+                  "uk": "köken",
+                  "en": "köken",
+                  "sv": "köken"
+                },
+                {
+                  "ru": "кухня",
+                  "uk": "кухня",
+                  "en": "kitchen",
+                  "sv": "kök"
                 }
               ],
-              "sv": "ett kök"
+              "sv": "ett kök",
+              "formParts": [
+                [
+                  "kök",
+                  ""
+                ],
+                [
+                  "kök",
+                  "et"
+                ],
+                [
+                  "kök",
+                  ""
+                ],
+                [
+                  "kök",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32497,10 +32823,10 @@
                   "sv": "ett hus"
                 },
                 {
-                  "ru": "дом",
-                  "uk": "будинок",
-                  "en": "house",
-                  "sv": "ett hus"
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
                 },
                 {
                   "ru": "huset",
@@ -32513,9 +32839,39 @@
                   "uk": "hus",
                   "en": "hus",
                   "sv": "hus"
+                },
+                {
+                  "ru": "husen",
+                  "uk": "husen",
+                  "en": "husen",
+                  "sv": "husen"
+                },
+                {
+                  "ru": "дом",
+                  "uk": "будинок",
+                  "en": "house",
+                  "sv": "hus"
                 }
               ],
-              "sv": "ett hus"
+              "sv": "ett hus",
+              "formParts": [
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "et"
+                ],
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "en"
+                ]
+              ]
             }
           ]
         },
@@ -32528,6 +32884,7 @@
             "en": "People and animals: both genders",
             "sv": "Människor och djur: båda genus"
           },
+          "kind": "noun-forms",
           "headers": [
             {
               "ru": "Слово с артиклем",
@@ -32536,22 +32893,34 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Значение",
-              "uk": "Значення",
-              "en": "Meaning",
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
+            },
+            {
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
               "sv": "Betydelse"
-            },
-            {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
-            },
-            {
-              "ru": "Несколько",
-              "uk": "Кілька",
-              "en": "Several",
-              "sv": "Flera"
             }
           ],
           "rows": [
@@ -32564,10 +32933,10 @@
                   "sv": "en lärare"
                 },
                 {
-                  "ru": "преподаватель",
-                  "uk": "викладач",
-                  "en": "teacher",
-                  "sv": "en lärare"
+                  "ru": "lärare",
+                  "uk": "lärare",
+                  "en": "lärare",
+                  "sv": "lärare"
                 },
                 {
                   "ru": "läraren",
@@ -32580,9 +32949,39 @@
                   "uk": "lärare",
                   "en": "lärare",
                   "sv": "lärare"
+                },
+                {
+                  "ru": "lärarna",
+                  "uk": "lärarna",
+                  "en": "lärarna",
+                  "sv": "lärarna"
+                },
+                {
+                  "ru": "преподаватель",
+                  "uk": "викладач",
+                  "en": "teacher",
+                  "sv": "lärare"
                 }
               ],
-              "sv": "en lärare"
+              "sv": "en lärare",
+              "formParts": [
+                [
+                  "lärare",
+                  ""
+                ],
+                [
+                  "lärare",
+                  "n"
+                ],
+                [
+                  "lärare",
+                  ""
+                ],
+                [
+                  "lärar",
+                  "na"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32593,10 +32992,10 @@
                   "sv": "en granne"
                 },
                 {
-                  "ru": "сосед",
-                  "uk": "сусід",
-                  "en": "neighbour",
-                  "sv": "en granne"
+                  "ru": "granne",
+                  "uk": "granne",
+                  "en": "granne",
+                  "sv": "granne"
                 },
                 {
                   "ru": "grannen",
@@ -32609,9 +33008,39 @@
                   "uk": "grannar",
                   "en": "grannar",
                   "sv": "grannar"
+                },
+                {
+                  "ru": "grannarna",
+                  "uk": "grannarna",
+                  "en": "grannarna",
+                  "sv": "grannarna"
+                },
+                {
+                  "ru": "сосед",
+                  "uk": "сусід",
+                  "en": "neighbour",
+                  "sv": "granne"
                 }
               ],
-              "sv": "en granne"
+              "sv": "en granne",
+              "formParts": [
+                [
+                  "granne",
+                  ""
+                ],
+                [
+                  "granne",
+                  "n"
+                ],
+                [
+                  "grann",
+                  "ar"
+                ],
+                [
+                  "grann",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32622,10 +33051,10 @@
                   "sv": "en katt"
                 },
                 {
-                  "ru": "кошка",
-                  "uk": "кішка",
-                  "en": "cat",
-                  "sv": "en katt"
+                  "ru": "katt",
+                  "uk": "katt",
+                  "en": "katt",
+                  "sv": "katt"
                 },
                 {
                   "ru": "katten",
@@ -32638,9 +33067,39 @@
                   "uk": "katter",
                   "en": "katter",
                   "sv": "katter"
+                },
+                {
+                  "ru": "katterna",
+                  "uk": "katterna",
+                  "en": "katterna",
+                  "sv": "katterna"
+                },
+                {
+                  "ru": "кошка",
+                  "uk": "кішка",
+                  "en": "cat",
+                  "sv": "katt"
                 }
               ],
-              "sv": "en katt"
+              "sv": "en katt",
+              "formParts": [
+                [
+                  "katt",
+                  ""
+                ],
+                [
+                  "katt",
+                  "en"
+                ],
+                [
+                  "katt",
+                  "er"
+                ],
+                [
+                  "katt",
+                  "erna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32651,10 +33110,10 @@
                   "sv": "ett barn"
                 },
                 {
-                  "ru": "ребёнок",
-                  "uk": "дитина",
-                  "en": "child",
-                  "sv": "ett barn"
+                  "ru": "barn",
+                  "uk": "barn",
+                  "en": "barn",
+                  "sv": "barn"
                 },
                 {
                   "ru": "barnet",
@@ -32667,9 +33126,39 @@
                   "uk": "barn",
                   "en": "barn",
                   "sv": "barn"
+                },
+                {
+                  "ru": "barnen",
+                  "uk": "barnen",
+                  "en": "barnen",
+                  "sv": "barnen"
+                },
+                {
+                  "ru": "ребёнок",
+                  "uk": "дитина",
+                  "en": "child",
+                  "sv": "barn"
                 }
               ],
-              "sv": "ett barn"
+              "sv": "ett barn",
+              "formParts": [
+                [
+                  "barn",
+                  ""
+                ],
+                [
+                  "barn",
+                  "et"
+                ],
+                [
+                  "barn",
+                  ""
+                ],
+                [
+                  "barn",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32680,10 +33169,10 @@
                   "sv": "ett djur"
                 },
                 {
-                  "ru": "животное",
-                  "uk": "тварина",
-                  "en": "animal",
-                  "sv": "ett djur"
+                  "ru": "djur",
+                  "uk": "djur",
+                  "en": "djur",
+                  "sv": "djur"
                 },
                 {
                   "ru": "djuret",
@@ -32696,9 +33185,39 @@
                   "uk": "djur",
                   "en": "djur",
                   "sv": "djur"
+                },
+                {
+                  "ru": "djuren",
+                  "uk": "djuren",
+                  "en": "djuren",
+                  "sv": "djuren"
+                },
+                {
+                  "ru": "животное",
+                  "uk": "тварина",
+                  "en": "animal",
+                  "sv": "djur"
                 }
               ],
-              "sv": "ett djur"
+              "sv": "ett djur",
+              "formParts": [
+                [
+                  "djur",
+                  ""
+                ],
+                [
+                  "djur",
+                  "et"
+                ],
+                [
+                  "djur",
+                  ""
+                ],
+                [
+                  "djur",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32709,10 +33228,10 @@
                   "sv": "ett syskon"
                 },
                 {
-                  "ru": "брат или сестра",
-                  "uk": "брат або сестра",
-                  "en": "sibling",
-                  "sv": "ett syskon"
+                  "ru": "syskon",
+                  "uk": "syskon",
+                  "en": "syskon",
+                  "sv": "syskon"
                 },
                 {
                   "ru": "syskonet",
@@ -32725,9 +33244,39 @@
                   "uk": "syskon",
                   "en": "syskon",
                   "sv": "syskon"
+                },
+                {
+                  "ru": "syskonen",
+                  "uk": "syskonen",
+                  "en": "syskonen",
+                  "sv": "syskonen"
+                },
+                {
+                  "ru": "брат или сестра",
+                  "uk": "брат або сестра",
+                  "en": "sibling",
+                  "sv": "syskon"
                 }
               ],
-              "sv": "ett syskon"
+              "sv": "ett syskon",
+              "formParts": [
+                [
+                  "syskon",
+                  ""
+                ],
+                [
+                  "syskon",
+                  "et"
+                ],
+                [
+                  "syskon",
+                  ""
+                ],
+                [
+                  "syskon",
+                  "en"
+                ]
+              ]
             }
           ]
         },
@@ -32740,6 +33289,7 @@
             "en": "At the café: food and servings",
             "sv": "På kafé: mat och portioner"
           },
+          "kind": "noun-forms",
           "headers": [
             {
               "ru": "Слово с артиклем",
@@ -32748,22 +33298,34 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Значение",
-              "uk": "Значення",
-              "en": "Meaning",
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
+            },
+            {
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
               "sv": "Betydelse"
-            },
-            {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
-            },
-            {
-              "ru": "Несколько",
-              "uk": "Кілька",
-              "en": "Several",
-              "sv": "Flera"
             }
           ],
           "rows": [
@@ -32776,10 +33338,10 @@
                   "sv": "en kopp"
                 },
                 {
-                  "ru": "чашка",
-                  "uk": "чашка",
-                  "en": "cup",
-                  "sv": "en kopp"
+                  "ru": "kopp",
+                  "uk": "kopp",
+                  "en": "kopp",
+                  "sv": "kopp"
                 },
                 {
                   "ru": "koppen",
@@ -32792,9 +33354,39 @@
                   "uk": "koppar",
                   "en": "koppar",
                   "sv": "koppar"
+                },
+                {
+                  "ru": "kopparna",
+                  "uk": "kopparna",
+                  "en": "kopparna",
+                  "sv": "kopparna"
+                },
+                {
+                  "ru": "чашка",
+                  "uk": "чашка",
+                  "en": "cup",
+                  "sv": "kopp"
                 }
               ],
-              "sv": "en kopp"
+              "sv": "en kopp",
+              "formParts": [
+                [
+                  "kopp",
+                  ""
+                ],
+                [
+                  "kopp",
+                  "en"
+                ],
+                [
+                  "kopp",
+                  "ar"
+                ],
+                [
+                  "kopp",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32805,10 +33397,10 @@
                   "sv": "en smörgås"
                 },
                 {
-                  "ru": "бутерброд",
-                  "uk": "бутерброд",
-                  "en": "sandwich",
-                  "sv": "en smörgås"
+                  "ru": "smörgås",
+                  "uk": "smörgås",
+                  "en": "smörgås",
+                  "sv": "smörgås"
                 },
                 {
                   "ru": "smörgåsen",
@@ -32821,9 +33413,39 @@
                   "uk": "smörgåsar",
                   "en": "smörgåsar",
                   "sv": "smörgåsar"
+                },
+                {
+                  "ru": "smörgåsarna",
+                  "uk": "smörgåsarna",
+                  "en": "smörgåsarna",
+                  "sv": "smörgåsarna"
+                },
+                {
+                  "ru": "бутерброд",
+                  "uk": "бутерброд",
+                  "en": "sandwich",
+                  "sv": "smörgås"
                 }
               ],
-              "sv": "en smörgås"
+              "sv": "en smörgås",
+              "formParts": [
+                [
+                  "smörgås",
+                  ""
+                ],
+                [
+                  "smörgås",
+                  "en"
+                ],
+                [
+                  "smörgås",
+                  "ar"
+                ],
+                [
+                  "smörgås",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32834,10 +33456,10 @@
                   "sv": "en bulle"
                 },
                 {
-                  "ru": "булочка",
-                  "uk": "булочка",
-                  "en": "bun",
-                  "sv": "en bulle"
+                  "ru": "bulle",
+                  "uk": "bulle",
+                  "en": "bulle",
+                  "sv": "bulle"
                 },
                 {
                   "ru": "bullen",
@@ -32850,9 +33472,39 @@
                   "uk": "bullar",
                   "en": "bullar",
                   "sv": "bullar"
+                },
+                {
+                  "ru": "bullarna",
+                  "uk": "bullarna",
+                  "en": "bullarna",
+                  "sv": "bullarna"
+                },
+                {
+                  "ru": "булочка",
+                  "uk": "булочка",
+                  "en": "bun",
+                  "sv": "bulle"
                 }
               ],
-              "sv": "en bulle"
+              "sv": "en bulle",
+              "formParts": [
+                [
+                  "bulle",
+                  ""
+                ],
+                [
+                  "bulle",
+                  "n"
+                ],
+                [
+                  "bull",
+                  "ar"
+                ],
+                [
+                  "bull",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32863,10 +33515,10 @@
                   "sv": "ett glas"
                 },
                 {
-                  "ru": "стакан",
-                  "uk": "склянка",
-                  "en": "glass",
-                  "sv": "ett glas"
+                  "ru": "glas",
+                  "uk": "glas",
+                  "en": "glas",
+                  "sv": "glas"
                 },
                 {
                   "ru": "glaset",
@@ -32879,9 +33531,39 @@
                   "uk": "glas",
                   "en": "glas",
                   "sv": "glas"
+                },
+                {
+                  "ru": "glasen",
+                  "uk": "glasen",
+                  "en": "glasen",
+                  "sv": "glasen"
+                },
+                {
+                  "ru": "стакан",
+                  "uk": "склянка",
+                  "en": "glass",
+                  "sv": "glas"
                 }
               ],
-              "sv": "ett glas"
+              "sv": "ett glas",
+              "formParts": [
+                [
+                  "glas",
+                  ""
+                ],
+                [
+                  "glas",
+                  "et"
+                ],
+                [
+                  "glas",
+                  ""
+                ],
+                [
+                  "glas",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32892,10 +33574,10 @@
                   "sv": "ett äpple"
                 },
                 {
-                  "ru": "яблоко",
-                  "uk": "яблуко",
-                  "en": "apple",
-                  "sv": "ett äpple"
+                  "ru": "äpple",
+                  "uk": "äpple",
+                  "en": "äpple",
+                  "sv": "äpple"
                 },
                 {
                   "ru": "äpplet",
@@ -32908,9 +33590,39 @@
                   "uk": "äpplen",
                   "en": "äpplen",
                   "sv": "äpplen"
+                },
+                {
+                  "ru": "äpplena",
+                  "uk": "äpplena",
+                  "en": "äpplena",
+                  "sv": "äpplena"
+                },
+                {
+                  "ru": "яблоко",
+                  "uk": "яблуко",
+                  "en": "apple",
+                  "sv": "äpple"
                 }
               ],
-              "sv": "ett äpple"
+              "sv": "ett äpple",
+              "formParts": [
+                [
+                  "äpple",
+                  ""
+                ],
+                [
+                  "äpple",
+                  "t"
+                ],
+                [
+                  "äpple",
+                  "n"
+                ],
+                [
+                  "äpple",
+                  "na"
+                ]
+              ]
             },
             {
               "cells": [
@@ -32921,10 +33633,10 @@
                   "sv": "ett ägg"
                 },
                 {
-                  "ru": "яйцо",
-                  "uk": "яйце",
-                  "en": "egg",
-                  "sv": "ett ägg"
+                  "ru": "ägg",
+                  "uk": "ägg",
+                  "en": "ägg",
+                  "sv": "ägg"
                 },
                 {
                   "ru": "ägget",
@@ -32937,9 +33649,39 @@
                   "uk": "ägg",
                   "en": "ägg",
                   "sv": "ägg"
+                },
+                {
+                  "ru": "äggen",
+                  "uk": "äggen",
+                  "en": "äggen",
+                  "sv": "äggen"
+                },
+                {
+                  "ru": "яйцо",
+                  "uk": "яйце",
+                  "en": "egg",
+                  "sv": "ägg"
                 }
               ],
-              "sv": "ett ägg"
+              "sv": "ett ägg",
+              "formParts": [
+                [
+                  "ägg",
+                  ""
+                ],
+                [
+                  "ägg",
+                  "et"
+                ],
+                [
+                  "ägg",
+                  ""
+                ],
+                [
+                  "ägg",
+                  "en"
+                ]
+              ]
             }
           ]
         },
@@ -32947,18 +33689,13 @@
           "id": "gender-map",
           "section": "gender",
           "title": {
-            "ru": "Что меняется вместе с родом",
-            "uk": "Що змінюється разом із родом",
-            "en": "What gender affects",
-            "sv": "Vad genus påverkar"
+            "ru": "Род и четыре формы",
+            "uk": "Рід і чотири форми",
+            "en": "Gender and four forms",
+            "sv": "Genus och fyra former"
           },
+          "kind": "noun-forms",
           "headers": [
-            {
-              "ru": "Род",
-              "uk": "Рід",
-              "en": "Gender",
-              "sv": "Genus"
-            },
             {
               "ru": "Слово с артиклем",
               "uk": "Слово з артиклем",
@@ -32966,32 +33703,50 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
             },
             {
-              "ru": "Описание",
-              "uk": "Опис",
-              "en": "Description",
-              "sv": "Beskrivning"
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
+              "sv": "Betydelse"
             }
           ],
           "rows": [
             {
               "cells": [
                 {
-                  "ru": "utrum",
-                  "uk": "utrum",
-                  "en": "utrum",
-                  "sv": "utrum"
-                },
-                {
                   "ru": "en bil",
                   "uk": "en bil",
                   "en": "en bil",
                   "sv": "en bil"
+                },
+                {
+                  "ru": "bil",
+                  "uk": "bil",
+                  "en": "bil",
+                  "sv": "bil"
                 },
                 {
                   "ru": "bilen",
@@ -33000,27 +33755,57 @@
                   "sv": "bilen"
                 },
                 {
-                  "ru": "en stor bil",
-                  "uk": "en stor bil",
-                  "en": "en stor bil",
-                  "sv": "en stor bil"
+                  "ru": "bilar",
+                  "uk": "bilar",
+                  "en": "bilar",
+                  "sv": "bilar"
+                },
+                {
+                  "ru": "bilarna",
+                  "uk": "bilarna",
+                  "en": "bilarna",
+                  "sv": "bilarna"
+                },
+                {
+                  "ru": "машина",
+                  "uk": "автомобіль",
+                  "en": "car",
+                  "sv": "bil"
                 }
               ],
-              "sv": "en stor bil"
+              "sv": "en bil",
+              "formParts": [
+                [
+                  "bil",
+                  ""
+                ],
+                [
+                  "bil",
+                  "en"
+                ],
+                [
+                  "bil",
+                  "ar"
+                ],
+                [
+                  "bil",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
-                {
-                  "ru": "neutrum",
-                  "uk": "neutrum",
-                  "en": "neutrum",
-                  "sv": "neutrum"
-                },
                 {
                   "ru": "ett hus",
                   "uk": "ett hus",
                   "en": "ett hus",
                   "sv": "ett hus"
+                },
+                {
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
                 },
                 {
                   "ru": "huset",
@@ -33029,27 +33814,57 @@
                   "sv": "huset"
                 },
                 {
-                  "ru": "ett stort hus",
-                  "uk": "ett stort hus",
-                  "en": "ett stort hus",
-                  "sv": "ett stort hus"
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
+                },
+                {
+                  "ru": "husen",
+                  "uk": "husen",
+                  "en": "husen",
+                  "sv": "husen"
+                },
+                {
+                  "ru": "дом",
+                  "uk": "будинок",
+                  "en": "house",
+                  "sv": "hus"
                 }
               ],
-              "sv": "ett stort hus"
+              "sv": "ett hus",
+              "formParts": [
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "et"
+                ],
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
-                {
-                  "ru": "utrum",
-                  "uk": "utrum",
-                  "en": "utrum",
-                  "sv": "utrum"
-                },
                 {
                   "ru": "en stol",
                   "uk": "en stol",
                   "en": "en stol",
                   "sv": "en stol"
+                },
+                {
+                  "ru": "stol",
+                  "uk": "stol",
+                  "en": "stol",
+                  "sv": "stol"
                 },
                 {
                   "ru": "stolen",
@@ -33058,27 +33873,57 @@
                   "sv": "stolen"
                 },
                 {
-                  "ru": "en röd stol",
-                  "uk": "en röd stol",
-                  "en": "en röd stol",
-                  "sv": "en röd stol"
+                  "ru": "stolar",
+                  "uk": "stolar",
+                  "en": "stolar",
+                  "sv": "stolar"
+                },
+                {
+                  "ru": "stolarna",
+                  "uk": "stolarna",
+                  "en": "stolarna",
+                  "sv": "stolarna"
+                },
+                {
+                  "ru": "стул",
+                  "uk": "стілець",
+                  "en": "chair",
+                  "sv": "stol"
                 }
               ],
-              "sv": "en röd stol"
+              "sv": "en stol",
+              "formParts": [
+                [
+                  "stol",
+                  ""
+                ],
+                [
+                  "stol",
+                  "en"
+                ],
+                [
+                  "stol",
+                  "ar"
+                ],
+                [
+                  "stol",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
-                {
-                  "ru": "neutrum",
-                  "uk": "neutrum",
-                  "en": "neutrum",
-                  "sv": "neutrum"
-                },
                 {
                   "ru": "ett äpple",
                   "uk": "ett äpple",
                   "en": "ett äpple",
                   "sv": "ett äpple"
+                },
+                {
+                  "ru": "äpple",
+                  "uk": "äpple",
+                  "en": "äpple",
+                  "sv": "äpple"
                 },
                 {
                   "ru": "äpplet",
@@ -33087,15 +33932,51 @@
                   "sv": "äpplet"
                 },
                 {
-                  "ru": "ett rött äpple",
-                  "uk": "ett rött äpple",
-                  "en": "ett rött äpple",
-                  "sv": "ett rött äpple"
+                  "ru": "äpplen",
+                  "uk": "äpplen",
+                  "en": "äpplen",
+                  "sv": "äpplen"
+                },
+                {
+                  "ru": "äpplena",
+                  "uk": "äpplena",
+                  "en": "äpplena",
+                  "sv": "äpplena"
+                },
+                {
+                  "ru": "яблоко",
+                  "uk": "яблуко",
+                  "en": "apple",
+                  "sv": "äpple"
                 }
               ],
-              "sv": "ett rött äpple"
+              "sv": "ett äpple",
+              "formParts": [
+                [
+                  "äpple",
+                  ""
+                ],
+                [
+                  "äpple",
+                  "t"
+                ],
+                [
+                  "äpple",
+                  "n"
+                ],
+                [
+                  "äpple",
+                  "na"
+                ]
+              ]
             }
-          ]
+          ],
+          "note": {
+            "ru": "En — utrum; ett — neutrum. Сравни: en stor bil / ett stort hus, en röd stol / ett rött äpple.",
+            "uk": "En — utrum; ett — neutrum. Порівняй: en stor bil / ett stort hus, en röd stol / ett rött äpple.",
+            "en": "En marks utrum; ett marks neutrum. Compare: en stor bil / ett stort hus, en röd stol / ett rött äpple.",
+            "sv": "En anger utrum; ett anger neutrum. Jämför: en stor bil / ett stort hus, en röd stol / ett rött äpple."
+          }
         },
         {
           "id": "clues",
@@ -33496,11 +34377,12 @@
           "id": "definite-map",
           "section": "forms",
           "title": {
-            "ru": "Связь с определённой формой",
-            "uk": "Зв’язок з означеною формою",
-            "en": "Link to the definite form",
-            "sv": "Samband med bestämd form"
+            "ru": "Четыре формы: сравни один и несколько",
+            "uk": "Чотири форми: порівняй один і кілька",
+            "en": "Four forms: compare one and several",
+            "sv": "Fyra former: jämför en och flera"
           },
+          "kind": "noun-forms",
           "headers": [
             {
               "ru": "Слово с артиклем",
@@ -33509,16 +34391,34 @@
               "sv": "Ord med artikel"
             },
             {
-              "ru": "Известный предмет",
-              "uk": "Відомий предмет",
-              "en": "Known item",
-              "sv": "Känd sak"
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
             },
             {
-              "ru": "Изменение",
-              "uk": "Зміна",
-              "en": "Change",
-              "sv": "Ändring"
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
+              "sv": "Betydelse"
             }
           ],
           "rows": [
@@ -33529,6 +34429,12 @@
                   "uk": "en bok",
                   "en": "en bok",
                   "sv": "en bok"
+                },
+                {
+                  "ru": "bok",
+                  "uk": "bok",
+                  "en": "bok",
+                  "sv": "bok"
                 },
                 {
                   "ru": "boken",
@@ -33537,13 +34443,43 @@
                   "sv": "boken"
                 },
                 {
-                  "ru": "+ en",
-                  "uk": "+ en",
-                  "en": "+ en",
-                  "sv": "+ en"
+                  "ru": "böcker",
+                  "uk": "böcker",
+                  "en": "böcker",
+                  "sv": "böcker"
+                },
+                {
+                  "ru": "böckerna",
+                  "uk": "böckerna",
+                  "en": "böckerna",
+                  "sv": "böckerna"
+                },
+                {
+                  "ru": "книга",
+                  "uk": "книжка",
+                  "en": "book",
+                  "sv": "bok"
                 }
               ],
-              "sv": "boken"
+              "sv": "en bok",
+              "formParts": [
+                [
+                  "bok",
+                  ""
+                ],
+                [
+                  "bok",
+                  "en"
+                ],
+                [
+                  "böck",
+                  "er"
+                ],
+                [
+                  "böck",
+                  "erna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -33552,6 +34488,12 @@
                   "uk": "en stol",
                   "en": "en stol",
                   "sv": "en stol"
+                },
+                {
+                  "ru": "stol",
+                  "uk": "stol",
+                  "en": "stol",
+                  "sv": "stol"
                 },
                 {
                   "ru": "stolen",
@@ -33560,13 +34502,43 @@
                   "sv": "stolen"
                 },
                 {
-                  "ru": "+ en",
-                  "uk": "+ en",
-                  "en": "+ en",
-                  "sv": "+ en"
+                  "ru": "stolar",
+                  "uk": "stolar",
+                  "en": "stolar",
+                  "sv": "stolar"
+                },
+                {
+                  "ru": "stolarna",
+                  "uk": "stolarna",
+                  "en": "stolarna",
+                  "sv": "stolarna"
+                },
+                {
+                  "ru": "стул",
+                  "uk": "стілець",
+                  "en": "chair",
+                  "sv": "stol"
                 }
               ],
-              "sv": "stolen"
+              "sv": "en stol",
+              "formParts": [
+                [
+                  "stol",
+                  ""
+                ],
+                [
+                  "stol",
+                  "en"
+                ],
+                [
+                  "stol",
+                  "ar"
+                ],
+                [
+                  "stol",
+                  "arna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -33575,6 +34547,12 @@
                   "uk": "en lampa",
                   "en": "en lampa",
                   "sv": "en lampa"
+                },
+                {
+                  "ru": "lampa",
+                  "uk": "lampa",
+                  "en": "lampa",
+                  "sv": "lampa"
                 },
                 {
                   "ru": "lampan",
@@ -33583,229 +34561,43 @@
                   "sv": "lampan"
                 },
                 {
-                  "ru": "+ n",
-                  "uk": "+ n",
-                  "en": "+ n",
-                  "sv": "+ n"
-                }
-              ],
-              "sv": "lampan"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "ett hus",
-                  "uk": "ett hus",
-                  "en": "ett hus",
-                  "sv": "ett hus"
-                },
-                {
-                  "ru": "huset",
-                  "uk": "huset",
-                  "en": "huset",
-                  "sv": "huset"
-                },
-                {
-                  "ru": "+ et",
-                  "uk": "+ et",
-                  "en": "+ et",
-                  "sv": "+ et"
-                }
-              ],
-              "sv": "huset"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "ett äpple",
-                  "uk": "ett äpple",
-                  "en": "ett äpple",
-                  "sv": "ett äpple"
-                },
-                {
-                  "ru": "äpplet",
-                  "uk": "äpplet",
-                  "en": "äpplet",
-                  "sv": "äpplet"
-                },
-                {
-                  "ru": "Сокращение до -t",
-                  "uk": "Скорочення до -t",
-                  "en": "Short ending -t",
-                  "sv": "Kort ändelse -t"
-                }
-              ],
-              "sv": "äpplet"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "ett fönster",
-                  "uk": "ett fönster",
-                  "en": "ett fönster",
-                  "sv": "ett fönster"
-                },
-                {
-                  "ru": "fönstret",
-                  "uk": "fönstret",
-                  "en": "fönstret",
-                  "sv": "fönstret"
-                },
-                {
-                  "ru": "Выпадает e",
-                  "uk": "Випадає e",
-                  "en": "An e drops",
-                  "sv": "E faller bort"
-                }
-              ],
-              "sv": "fönstret"
-            }
-          ]
-        },
-        {
-          "id": "plural-map",
-          "section": "forms",
-          "title": {
-            "ru": "Обзор plural: учи пары",
-            "uk": "Огляд plural: учи пари",
-            "en": "Plural overview: learn pairs",
-            "sv": "Pluralöversikt: lär in par"
-          },
-          "headers": [
-            {
-              "ru": "Слово с артиклем",
-              "uk": "Слово з артиклем",
-              "en": "Word with article",
-              "sv": "Ord med artikel"
-            },
-            {
-              "ru": "Несколько",
-              "uk": "Кілька",
-              "en": "Several",
-              "sv": "Flera"
-            },
-            {
-              "ru": "Подсказка",
-              "uk": "Підказка",
-              "en": "Clue",
-              "sv": "Ledtråd"
-            }
-          ],
-          "rows": [
-            {
-              "cells": [
-                {
-                  "ru": "en lampa",
-                  "uk": "en lampa",
-                  "en": "en lampa",
-                  "sv": "en lampa"
-                },
-                {
                   "ru": "lampor",
                   "uk": "lampor",
                   "en": "lampor",
                   "sv": "lampor"
                 },
                 {
-                  "ru": "-or",
-                  "uk": "-or",
-                  "en": "-or",
-                  "sv": "-or"
+                  "ru": "lamporna",
+                  "uk": "lamporna",
+                  "en": "lamporna",
+                  "sv": "lamporna"
+                },
+                {
+                  "ru": "лампа",
+                  "uk": "лампа",
+                  "en": "lamp",
+                  "sv": "lampa"
                 }
               ],
-              "sv": "lampor"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "en stol",
-                  "uk": "en stol",
-                  "en": "en stol",
-                  "sv": "en stol"
-                },
-                {
-                  "ru": "stolar",
-                  "uk": "stolar",
-                  "en": "stolar",
-                  "sv": "stolar"
-                },
-                {
-                  "ru": "-ar",
-                  "uk": "-ar",
-                  "en": "-ar",
-                  "sv": "-ar"
-                }
-              ],
-              "sv": "stolar"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "en bok",
-                  "uk": "en bok",
-                  "en": "en bok",
-                  "sv": "en bok"
-                },
-                {
-                  "ru": "böcker",
-                  "uk": "böcker",
-                  "en": "böcker",
-                  "sv": "böcker"
-                },
-                {
-                  "ru": "-er и смена гласной",
-                  "uk": "-er та зміна голосної",
-                  "en": "-er and vowel change",
-                  "sv": "-er och vokalbyte"
-                }
-              ],
-              "sv": "böcker"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "en sko",
-                  "uk": "en sko",
-                  "en": "en sko",
-                  "sv": "en sko"
-                },
-                {
-                  "ru": "skor",
-                  "uk": "skor",
-                  "en": "skor",
-                  "sv": "skor"
-                },
-                {
-                  "ru": "-r",
-                  "uk": "-r",
-                  "en": "-r",
-                  "sv": "-r"
-                }
-              ],
-              "sv": "skor"
-            },
-            {
-              "cells": [
-                {
-                  "ru": "ett äpple",
-                  "uk": "ett äpple",
-                  "en": "ett äpple",
-                  "sv": "ett äpple"
-                },
-                {
-                  "ru": "äpplen",
-                  "uk": "äpplen",
-                  "en": "äpplen",
-                  "sv": "äpplen"
-                },
-                {
-                  "ru": "-n",
-                  "uk": "-n",
-                  "en": "-n",
-                  "sv": "-n"
-                }
-              ],
-              "sv": "äpplen"
+              "sv": "en lampa",
+              "formParts": [
+                [
+                  "lampa",
+                  ""
+                ],
+                [
+                  "lampa",
+                  "n"
+                ],
+                [
+                  "lamp",
+                  "or"
+                ],
+                [
+                  "lamp",
+                  "orna"
+                ]
+              ]
             },
             {
               "cells": [
@@ -33822,13 +34614,572 @@
                   "sv": "hus"
                 },
                 {
-                  "ru": "Без окончания",
-                  "uk": "Без закінчення",
-                  "en": "No ending",
-                  "sv": "Ingen ändelse"
+                  "ru": "huset",
+                  "uk": "huset",
+                  "en": "huset",
+                  "sv": "huset"
+                },
+                {
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
+                },
+                {
+                  "ru": "husen",
+                  "uk": "husen",
+                  "en": "husen",
+                  "sv": "husen"
+                },
+                {
+                  "ru": "дом",
+                  "uk": "будинок",
+                  "en": "house",
+                  "sv": "hus"
                 }
               ],
-              "sv": "två hus"
+              "sv": "ett hus",
+              "formParts": [
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "et"
+                ],
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "en"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "ett äpple",
+                  "uk": "ett äpple",
+                  "en": "ett äpple",
+                  "sv": "ett äpple"
+                },
+                {
+                  "ru": "äpple",
+                  "uk": "äpple",
+                  "en": "äpple",
+                  "sv": "äpple"
+                },
+                {
+                  "ru": "äpplet",
+                  "uk": "äpplet",
+                  "en": "äpplet",
+                  "sv": "äpplet"
+                },
+                {
+                  "ru": "äpplen",
+                  "uk": "äpplen",
+                  "en": "äpplen",
+                  "sv": "äpplen"
+                },
+                {
+                  "ru": "äpplena",
+                  "uk": "äpplena",
+                  "en": "äpplena",
+                  "sv": "äpplena"
+                },
+                {
+                  "ru": "яблоко",
+                  "uk": "яблуко",
+                  "en": "apple",
+                  "sv": "äpple"
+                }
+              ],
+              "sv": "ett äpple",
+              "formParts": [
+                [
+                  "äpple",
+                  ""
+                ],
+                [
+                  "äpple",
+                  "t"
+                ],
+                [
+                  "äpple",
+                  "n"
+                ],
+                [
+                  "äpple",
+                  "na"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "ett fönster",
+                  "uk": "ett fönster",
+                  "en": "ett fönster",
+                  "sv": "ett fönster"
+                },
+                {
+                  "ru": "fönster",
+                  "uk": "fönster",
+                  "en": "fönster",
+                  "sv": "fönster"
+                },
+                {
+                  "ru": "fönstret",
+                  "uk": "fönstret",
+                  "en": "fönstret",
+                  "sv": "fönstret"
+                },
+                {
+                  "ru": "fönster",
+                  "uk": "fönster",
+                  "en": "fönster",
+                  "sv": "fönster"
+                },
+                {
+                  "ru": "fönstren",
+                  "uk": "fönstren",
+                  "en": "fönstren",
+                  "sv": "fönstren"
+                },
+                {
+                  "ru": "окно",
+                  "uk": "вікно",
+                  "en": "window",
+                  "sv": "fönster"
+                }
+              ],
+              "sv": "ett fönster",
+              "formParts": [
+                [
+                  "fönster",
+                  ""
+                ],
+                [
+                  "fönstr",
+                  "et"
+                ],
+                [
+                  "fönster",
+                  ""
+                ],
+                [
+                  "fönstr",
+                  "en"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "plural-map",
+          "section": "forms",
+          "title": {
+            "ru": "Plural: разные способы образования",
+            "uk": "Plural: різні способи утворення",
+            "en": "Plural: different patterns",
+            "sv": "Plural: olika mönster"
+          },
+          "kind": "noun-forms",
+          "headers": [
+            {
+              "ru": "Слово с артиклем",
+              "uk": "Слово з артиклем",
+              "en": "Word with article",
+              "sv": "Ord med artikel"
+            },
+            {
+              "ru": "Singular obestämd — единственное число, неопределённая форма",
+              "uk": "Singular obestämd — однина, неозначена форма",
+              "en": "Singular obestämd — singular, indefinite",
+              "sv": "Singular obestämd"
+            },
+            {
+              "ru": "Singular bestämd — единственное число, определённая форма",
+              "uk": "Singular bestämd — однина, означена форма",
+              "en": "Singular bestämd — singular, definite",
+              "sv": "Singular bestämd"
+            },
+            {
+              "ru": "Plural obestämd — множественное число, неопределённая форма",
+              "uk": "Plural obestämd — множина, неозначена форма",
+              "en": "Plural obestämd — plural, indefinite",
+              "sv": "Plural obestämd"
+            },
+            {
+              "ru": "Plural bestämd — множественное число, определённая форма",
+              "uk": "Plural bestämd — множина, означена форма",
+              "en": "Plural bestämd — plural, definite",
+              "sv": "Plural bestämd"
+            },
+            {
+              "ru": "Перевод",
+              "uk": "Переклад",
+              "en": "Translation",
+              "sv": "Betydelse"
+            }
+          ],
+          "rows": [
+            {
+              "cells": [
+                {
+                  "ru": "en lampa",
+                  "uk": "en lampa",
+                  "en": "en lampa",
+                  "sv": "en lampa"
+                },
+                {
+                  "ru": "lampa",
+                  "uk": "lampa",
+                  "en": "lampa",
+                  "sv": "lampa"
+                },
+                {
+                  "ru": "lampan",
+                  "uk": "lampan",
+                  "en": "lampan",
+                  "sv": "lampan"
+                },
+                {
+                  "ru": "lampor",
+                  "uk": "lampor",
+                  "en": "lampor",
+                  "sv": "lampor"
+                },
+                {
+                  "ru": "lamporna",
+                  "uk": "lamporna",
+                  "en": "lamporna",
+                  "sv": "lamporna"
+                },
+                {
+                  "ru": "лампа",
+                  "uk": "лампа",
+                  "en": "lamp",
+                  "sv": "lampa"
+                }
+              ],
+              "sv": "en lampa",
+              "formParts": [
+                [
+                  "lampa",
+                  ""
+                ],
+                [
+                  "lampa",
+                  "n"
+                ],
+                [
+                  "lamp",
+                  "or"
+                ],
+                [
+                  "lamp",
+                  "orna"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "en stol",
+                  "uk": "en stol",
+                  "en": "en stol",
+                  "sv": "en stol"
+                },
+                {
+                  "ru": "stol",
+                  "uk": "stol",
+                  "en": "stol",
+                  "sv": "stol"
+                },
+                {
+                  "ru": "stolen",
+                  "uk": "stolen",
+                  "en": "stolen",
+                  "sv": "stolen"
+                },
+                {
+                  "ru": "stolar",
+                  "uk": "stolar",
+                  "en": "stolar",
+                  "sv": "stolar"
+                },
+                {
+                  "ru": "stolarna",
+                  "uk": "stolarna",
+                  "en": "stolarna",
+                  "sv": "stolarna"
+                },
+                {
+                  "ru": "стул",
+                  "uk": "стілець",
+                  "en": "chair",
+                  "sv": "stol"
+                }
+              ],
+              "sv": "en stol",
+              "formParts": [
+                [
+                  "stol",
+                  ""
+                ],
+                [
+                  "stol",
+                  "en"
+                ],
+                [
+                  "stol",
+                  "ar"
+                ],
+                [
+                  "stol",
+                  "arna"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "en bok",
+                  "uk": "en bok",
+                  "en": "en bok",
+                  "sv": "en bok"
+                },
+                {
+                  "ru": "bok",
+                  "uk": "bok",
+                  "en": "bok",
+                  "sv": "bok"
+                },
+                {
+                  "ru": "boken",
+                  "uk": "boken",
+                  "en": "boken",
+                  "sv": "boken"
+                },
+                {
+                  "ru": "böcker",
+                  "uk": "böcker",
+                  "en": "böcker",
+                  "sv": "böcker"
+                },
+                {
+                  "ru": "böckerna",
+                  "uk": "böckerna",
+                  "en": "böckerna",
+                  "sv": "böckerna"
+                },
+                {
+                  "ru": "книга",
+                  "uk": "книжка",
+                  "en": "book",
+                  "sv": "bok"
+                }
+              ],
+              "sv": "en bok",
+              "formParts": [
+                [
+                  "bok",
+                  ""
+                ],
+                [
+                  "bok",
+                  "en"
+                ],
+                [
+                  "böck",
+                  "er"
+                ],
+                [
+                  "böck",
+                  "erna"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "en sko",
+                  "uk": "en sko",
+                  "en": "en sko",
+                  "sv": "en sko"
+                },
+                {
+                  "ru": "sko",
+                  "uk": "sko",
+                  "en": "sko",
+                  "sv": "sko"
+                },
+                {
+                  "ru": "skon",
+                  "uk": "skon",
+                  "en": "skon",
+                  "sv": "skon"
+                },
+                {
+                  "ru": "skor",
+                  "uk": "skor",
+                  "en": "skor",
+                  "sv": "skor"
+                },
+                {
+                  "ru": "skorna",
+                  "uk": "skorna",
+                  "en": "skorna",
+                  "sv": "skorna"
+                },
+                {
+                  "ru": "туфля",
+                  "uk": "туфля",
+                  "en": "shoe",
+                  "sv": "sko"
+                }
+              ],
+              "sv": "en sko",
+              "formParts": [
+                [
+                  "sko",
+                  ""
+                ],
+                [
+                  "sko",
+                  "n"
+                ],
+                [
+                  "sko",
+                  "r"
+                ],
+                [
+                  "sko",
+                  "rna"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "ett äpple",
+                  "uk": "ett äpple",
+                  "en": "ett äpple",
+                  "sv": "ett äpple"
+                },
+                {
+                  "ru": "äpple",
+                  "uk": "äpple",
+                  "en": "äpple",
+                  "sv": "äpple"
+                },
+                {
+                  "ru": "äpplet",
+                  "uk": "äpplet",
+                  "en": "äpplet",
+                  "sv": "äpplet"
+                },
+                {
+                  "ru": "äpplen",
+                  "uk": "äpplen",
+                  "en": "äpplen",
+                  "sv": "äpplen"
+                },
+                {
+                  "ru": "äpplena",
+                  "uk": "äpplena",
+                  "en": "äpplena",
+                  "sv": "äpplena"
+                },
+                {
+                  "ru": "яблоко",
+                  "uk": "яблуко",
+                  "en": "apple",
+                  "sv": "äpple"
+                }
+              ],
+              "sv": "ett äpple",
+              "formParts": [
+                [
+                  "äpple",
+                  ""
+                ],
+                [
+                  "äpple",
+                  "t"
+                ],
+                [
+                  "äpple",
+                  "n"
+                ],
+                [
+                  "äpple",
+                  "na"
+                ]
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "ru": "ett hus",
+                  "uk": "ett hus",
+                  "en": "ett hus",
+                  "sv": "ett hus"
+                },
+                {
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
+                },
+                {
+                  "ru": "huset",
+                  "uk": "huset",
+                  "en": "huset",
+                  "sv": "huset"
+                },
+                {
+                  "ru": "hus",
+                  "uk": "hus",
+                  "en": "hus",
+                  "sv": "hus"
+                },
+                {
+                  "ru": "husen",
+                  "uk": "husen",
+                  "en": "husen",
+                  "sv": "husen"
+                },
+                {
+                  "ru": "дом",
+                  "uk": "будинок",
+                  "en": "house",
+                  "sv": "hus"
+                }
+              ],
+              "sv": "ett hus",
+              "formParts": [
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "et"
+                ],
+                [
+                  "hus",
+                  ""
+                ],
+                [
+                  "hus",
+                  "en"
+                ]
+              ]
             },
             {
               "cells": [
@@ -33845,13 +35196,49 @@
                   "sv": "barn"
                 },
                 {
-                  "ru": "Без окончания",
-                  "uk": "Без закінчення",
-                  "en": "No ending",
-                  "sv": "Ingen ändelse"
+                  "ru": "barnet",
+                  "uk": "barnet",
+                  "en": "barnet",
+                  "sv": "barnet"
+                },
+                {
+                  "ru": "barn",
+                  "uk": "barn",
+                  "en": "barn",
+                  "sv": "barn"
+                },
+                {
+                  "ru": "barnen",
+                  "uk": "barnen",
+                  "en": "barnen",
+                  "sv": "barnen"
+                },
+                {
+                  "ru": "ребёнок",
+                  "uk": "дитина",
+                  "en": "child",
+                  "sv": "barn"
                 }
               ],
-              "sv": "två barn"
+              "sv": "ett barn",
+              "formParts": [
+                [
+                  "barn",
+                  ""
+                ],
+                [
+                  "barn",
+                  "et"
+                ],
+                [
+                  "barn",
+                  ""
+                ],
+                [
+                  "barn",
+                  "en"
+                ]
+              ]
             }
           ]
         },
@@ -36286,6 +37673,62 @@
           }
         }
       ],
+      "nounTableLabels": {
+        "word": {
+          "ru": "Слово с артиклем",
+          "uk": "Слово з артиклем",
+          "en": "Word with article",
+          "sv": "Ord med artikel"
+        },
+        "singular": {
+          "ru": "Единственное число",
+          "uk": "Однина",
+          "en": "Singular",
+          "sv": "Singular"
+        },
+        "plural": {
+          "ru": "Множественное число",
+          "uk": "Множина",
+          "en": "Plural",
+          "sv": "Plural"
+        },
+        "indefinite": {
+          "ru": "Неопределённая",
+          "uk": "Неозначена",
+          "en": "Indefinite",
+          "sv": "Obestämd"
+        },
+        "definite": {
+          "ru": "Определённая",
+          "uk": "Означена",
+          "en": "Definite",
+          "sv": "Bestämd"
+        },
+        "translation": {
+          "ru": "Перевод",
+          "uk": "Переклад",
+          "en": "Translation",
+          "sv": "Betydelse"
+        },
+        "indefiniteLegend": {
+          "ru": "Неопределённая: называем предметы, не уточняя какие.",
+          "uk": "Неозначена: називаємо предмети, не уточнюючи які.",
+          "en": "Indefinite: name items without identifying which ones.",
+          "sv": "Obestämd: vi nämner saker utan att ange vilka."
+        },
+        "definiteLegend": {
+          "ru": "Определённая: понятно, о каком предмете или каких предметах идёт речь.",
+          "uk": "Означена: зрозуміло, про який предмет або які предмети йдеться.",
+          "en": "Definite: it is clear which item or items we mean.",
+          "sv": "Bestämd: det är tydligt vilken sak eller vilka saker vi menar."
+        },
+        "overview": {
+          "ru": "Это обзор форм. Сейчас запоминай слово с en/ett; определённую форму подробно разберём в уроке №6. Окончания выделены цветом. Гласные тоже могут меняться, а plural бывает без окончания.",
+          "uk": "Це огляд форм. Зараз запам’ятовуй слово з en/ett; означену форму докладно розглянемо в уроці №6. Закінчення виділено кольором. Голосні теж можуть змінюватися, а plural буває без закінчення.",
+          "en": "This is an overview. Learn each word with en/ett now; lesson 6 explains the definite form in detail. Endings are highlighted. Vowels can also change, and some plurals have no ending.",
+          "sv": "Det här är en översikt. Lär in orden med en/ett nu; lektion 6 förklarar bestämd form närmare. Ändelser är markerade. Vokaler kan också ändras, och vissa pluralformer saknar ändelse."
+        }
+      },
       "sources": [
         {
           "id": "skolverket",
@@ -39169,7 +40612,7 @@
       },
       "schemaVersion": 1,
       "id": "nouns-en-ett-v1",
-      "chapterVersion": 1,
+      "chapterVersion": 2,
       "lessonId": "lesson-5",
       "level": "A",
       "locales": [

@@ -9,6 +9,25 @@ function localized(x){if(typeof x==='string'){assert(x.trim());return;}for(const
 for(const goal of c.goals)localized(goal);localized(c.description);
 for(const s of c.sections){localized(s.title);for(const r of s.rules){localized(r.title);localized(r.text);assert(r.examples.length>=2);assert(r.sources.every(s=>sources.has(s)));r.examples.forEach(e=>{assert(e.sv);localized(e.meaning)})}}
 for(const t of c.tables){localized(t.title);t.headers.forEach(localized);for(const r of t.rows){assert.equal(r.cells.length,t.headers.length);r.cells.forEach(localized)}}
+// Reviewed inflections: vowel change, e loss, consonant doubling and zero plurals.
+const nounTables=c.tables.filter(t=>t.kind==='noun-forms');
+assert.deepEqual(nounTables.map(t=>t.id),['classroom','home','living','cafe','gender-map','definite-map','plural-map']);
+Object.values(c.nounTableLabels).forEach(localized);
+const expectedForms={
+ 'en bok':['bok','boken','böcker','böckerna'],
+ 'ett fönster':['fönster','fönstret','fönster','fönstren'],
+ 'en lärare':['lärare','läraren','lärare','lärarna'],
+ 'ett äpple':['äpple','äpplet','äpplen','äpplena'],
+ 'ett rum':['rum','rummet','rum','rummen'],
+ 'ett barn':['barn','barnet','barn','barnen'],
+ 'ett ägg':['ägg','ägget','ägg','äggen'],
+ 'ett syskon':['syskon','syskonet','syskon','syskonen'],
+ 'en smörgås':['smörgås','smörgåsen','smörgåsar','smörgåsarna'],
+ 'en sko':['sko','skon','skor','skorna']
+};
+const paradigms=new Map();let formRows=0;
+for(const t of nounTables){assert.equal(t.headers.length,6);for(const r of t.rows){formRows++;const forms=r.cells.slice(1,5).map(c=>c.sv);assert.equal(r.formParts.length,4);assert.deepEqual(r.formParts.map(p=>p.join('')),forms);assert.equal(r.sv.split(' ').slice(1).join(' '),forms[0]);for(const cell of r.cells.slice(0,5))assert(langs.every(l=>cell[l]===cell.sv));if(paradigms.has(r.sv))assert.deepEqual(paradigms.get(r.sv),forms);paradigms.set(r.sv,forms);if(expectedForms[r.sv])assert.deepEqual(forms,expectedForms[r.sv]);}}
+assert.equal(formRows,40);assert.equal(paradigms.size,25);
 for(const d of c.dialogues){localized(d.title);localized(d.situation);localized(d.continuation);d.lines.forEach(l=>{for(const lang of langs)assert(l[lang]);assert(l.speaker)});d.vocabulary.forEach(w=>localized(w.meaning));assert.equal(c.questions.filter(q=>q.context===d.id).length,2)}
 localized(c.reading.title);localized(c.reading.tip);for(const line of c.reading.lines)for(const lang of langs)assert(line[lang]);
 for(const w of c.writing){[w.title,w.prompt,w.requirements,w.criteria].forEach(localized);assert(w.model.length>40)}
@@ -44,13 +63,16 @@ for(const l of c.reading.lines){assert(l.annotations?.length);l.annotations.forE
 for(const w of c.writing)localized(w.translation);
 // Outside lesson-5, lesson payloads must be byte-equivalent to this checkout's baseline.
 const original=JSON.parse(require('node:child_process').execFileSync('git',['show','HEAD:lessons.json'],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024}));for(const l of lessons)if(l.id!=='lesson-5')assert.deepEqual(l,original.find(o=>o.id===l.id));
+const oldNouns=original.find(l=>l.id==='lesson-5').nounsChapter;
+for(const key of ['questions','writing','finalTest','dialogues','reading'])assert.deepEqual(c[key],oldNouns[key],key+' changed');
+for(const table of c.tables.filter(t=>t.kind!=='noun-forms'))assert.deepEqual(table,oldNouns.tables.find(t=>t.id===table.id));
 // Writing drafts stay escaped and isolated by account identity.
 run("route='lesson';routeParam='lesson-5'");const writingInput=events.input.filter(fn=>String(fn).includes('pronWriting'))[2];writingInput({target:{matches:()=>true,dataset:{pronWriting:c.writing[0].id},value:'<script>draft</script>'}});assert(run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run("user={id:'another-account'}");assert(!run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run('user=null');
 // Speech contract: strict Swedish voice and complete, ordered story/dialogue turns.
 const audioStatus={textContent:''};nodes['[data-pron-audio-status]']=audioStatus;spoken.length=0;voices=[{lang:'en-US'}];await run("window.SVNounsLesson.play('reading')");assert.equal(spoken.length,0);assert(audioStatus.textContent.includes('sv-SE'));voices=[{lang:'sv-SE',name:'Swedish'}];let audioSegments=0;
-const tokens=[...c.tables.flatMap(t=>t.rows.map((r,i)=>'phrase:'+t.id+':'+i)), 'reading',...c.reading.lines.map((l,i)=>'sentence:'+i),...c.dialogues.flatMap(d=>['dialogue:'+d.id,...d.lines.map((l,i)=>'line:'+d.id+':'+i)]),...c.sections.flatMap(s=>s.rules.flatMap(r=>r.examples.map((e,i)=>'example:'+r.id+':'+i)))];
+const tokens=[...c.tables.flatMap(t=>t.rows.map((r,i)=>'phrase:'+t.id+':'+i)),...nounTables.flatMap(t=>t.rows.flatMap((r,i)=>r.formParts.map((_,j)=>'noun-form:'+t.id+':'+i+':'+j))), 'reading',...c.reading.lines.map((l,i)=>'sentence:'+i),...c.dialogues.flatMap(d=>['dialogue:'+d.id,...d.lines.map((l,i)=>'line:'+d.id+':'+i)]),...c.sections.flatMap(s=>s.rules.flatMap(r=>r.examples.map((e,i)=>'example:'+r.id+':'+i)))];
 for(const lang of langs)for(const rate of [1,.55]){run(`state.settings.language='${lang}'`);events.change.filter(fn=>String(fn).includes('pron-rate'))[2]({target:{matches:()=>true,value:String(rate)}});for(const token of tokens){const expected=run(`window.SVNounsLesson.audioItems('${token}').map(i=>i.text)`);assert(expected.length);spoken.length=0;await run(`window.SVNounsLesson.play('${token}')`);let i=0;while(spoken[i]){const u=spoken[i++];assert.equal(u.lang,'sv-SE');assert.equal(u.voice.lang,'sv-SE');assert.equal(u.rate,rate);u.onend();audioSegments++}assert.deepEqual(spoken.map(u=>u.text),Array.from(expected))}}
 spoken.length=0;await run("window.SVNounsLesson.play('reading')");run('window.SVNounsLesson.stop()');spoken[0].onend();assert.equal(spoken.length,1);assert(cancelled>0);
 voices=[];spoken.length=0;const delayed=run("window.SVNounsLesson.play('reading')");events['window:hashchange'].filter(fn=>String(fn).includes('utterance||pending')).forEach(fn=>fn());voices=[{lang:'sv-SE'}];await delayed;assert.equal(spoken.length,0);
-const report={rules:20,tables:13,dialogues:4,turns:32,readingSentences:14,corePractice:28,dialogueComprehension:8,readingComprehension:4,autoPractice:40,writtenTasks:4,oralContinuations:4,finalQuestions:24,finalDistribution:counts,practiceBranches,finalBranches,audioSegments,locales:langs,legacyQuestionsRetained:10,testsPassed:true,acousticReviewPerformed:false,independentLanguageReviewPerformed:false};fs.mkdirSync(path.join(root,'reports/nouns'),{recursive:true});fs.writeFileSync(path.join(root,'reports/nouns/content-check.json'),JSON.stringify(report,null,2)+'\n');console.log('PASS: 40 practice + 4 written + 24 final; '+practiceBranches+' practice / '+finalBranches+' final branches; '+audioSegments+' TTS segments; 20 rules, 13 tables, strict locales, unchanged archives/other lessons, 19/20/24 thresholds, history and lifetime XP');
+const report={rules:20,tables:13,dialogues:4,turns:32,readingSentences:14,corePractice:28,dialogueComprehension:8,readingComprehension:4,autoPractice:40,writtenTasks:4,oralContinuations:4,finalQuestions:24,finalDistribution:counts,practiceBranches,finalBranches,audioSegments,locales:langs,legacyQuestionsRetained:10,testsPassed:true,acousticReviewPerformed:false,independentLanguageReviewPerformed:false};fs.mkdirSync(path.join(root,'reports/noun-tables'),{recursive:true});fs.writeFileSync(path.join(root,'reports/noun-tables/content-check.json'),JSON.stringify(report,null,2)+'\n');console.log('PASS: 40 practice + 4 written + 24 final; '+practiceBranches+' practice / '+finalBranches+' final branches; '+audioSegments+' TTS segments; 20 rules, 13 tables, strict locales, unchanged archives/other lessons, 19/20/24 thresholds, history and lifetime XP');
 })().catch(e=>{console.error(e);process.exitCode=1});

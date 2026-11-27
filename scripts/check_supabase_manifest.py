@@ -70,12 +70,12 @@ if __name__ == '__main__':
     baseline['lessons']['lesson-1'] = 20
     baseline['lessons']['lesson-2'] = 20
     baseline['lessons']['lesson-3'] = 24
-    if target.name in ('202611230022_presens.sql', '202611270023_nouns.sql'):
+    if target.name in ('202611230022_presens.sql', '202611270023_nouns.sql', '202611270024_noun_tables.sql'):
         baseline['lessons']['lesson-4'] = 24
-    if target.name == '202611270023_nouns.sql':
+    if target.name in ('202611270023_nouns.sql', '202611270024_noun_tables.sql'):
         baseline['lessons']['lesson-5'] = 24
     if {k: v for k, v in current.items() if k != 'version'} != {k: v for k, v in baseline.items() if k != 'version'}:
         raise SystemExit('FAIL: IDs/categories/question counts changed since migration 002')
-    counts = ('13/11/11/11/10 → 20/20/24/24/24' if target.name == '202611270023_nouns.sql' else
+    counts = ('13/11/11/11/10 → 20/20/24/24/24' if target.name in ('202611270023_nouns.sql', '202611270024_noun_tables.sql') else
               '13/11/11/11 → 20/20/24/24' if baseline['lessons']['lesson-4'] == 24 else '13/11/11 → 20/20/24')
     print(f'PASS: {target.name}: {current["version"]}; all IDs/categories retained; reviewed active lesson counts {counts}')

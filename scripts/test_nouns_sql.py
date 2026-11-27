@@ -22,6 +22,9 @@ from check_supabase_manifest import current_manifest,read_manifest
 
 def Q(s):return "'"+str(s).replace("'","''")+"'"
 def main():
+ if (ROOT/'supabase/migrations/202611270024_noun_tables.sql').exists():
+  from test_noun_tables_sql import main as test_024
+  return test_024()
  if len(sys.argv)>1:raise SystemExit('No external connection arguments accepted')
  for name in ['initdb','pg_ctl','psql']:
   if not shutil.which(name):raise SystemExit('Missing local dependency: '+name)

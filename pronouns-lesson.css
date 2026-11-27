@@ -133,3 +133,52 @@
 #page .pronouns-lesson .pron-roles dt {font-weight:700}
 #page .pronouns-lesson .pron-roles dd {margin:0;color:var(--pron-muted)}
 #page .pronouns-lesson .pron-model {white-space:pre-line}
+
+/* Lesson 5: explicit four-form noun tables. Other grammar tables keep their layout. */
+#page [data-grammar-lesson="lesson-5"] .noun-paradigms {max-width:920px;margin:24px auto 30px;min-width:0;scroll-margin-top:140px}
+#page .pronouns-lesson .noun-paradigms h3 {font-size:18px;margin:0 0 10px}
+#page .pronouns-lesson .noun-legend {display:flex;flex-wrap:wrap;gap:4px 20px;margin:0 0 12px;color:var(--pron-muted);font-size:12px}
+#page .pronouns-lesson .noun-legend p {margin:0;line-height:1.5;flex:1 1 260px}
+#page .pronouns-lesson :is(.noun-overview,.noun-note) {font-size:13px;line-height:1.6;color:var(--pron-muted);margin:10px 0}
+#page .pronouns-lesson .noun-table-wrap {border:1px solid var(--pron-edge);border-radius:12px;overflow:hidden;min-width:0}
+#page .pronouns-lesson .noun-paradigms table {width:100%;min-width:0;font-size:14px;table-layout:auto}
+#page .pronouns-lesson .noun-paradigms :is(th,td) {min-width:0;max-width:none;width:auto;padding:6px 8px;vertical-align:middle;line-height:1.4;position:static;box-shadow:none}
+#page .pronouns-lesson .noun-paradigms thead th {font-size:12px;font-weight:600;line-height:1.4;padding:9px 10px}
+#page .pronouns-lesson .noun-paradigms thead tr:first-child th[colspan] {text-align:center;border-bottom:1px solid #cdd4c4}
+#page .pronouns-lesson .noun-paradigms :is(td:nth-child(2),td:nth-child(4),thead tr:nth-child(2) th:nth-child(odd)) {border-left:1px solid var(--pron-edge)}
+#page .pronouns-lesson .noun-paradigms .noun-word {min-width:158px}
+#page .pronouns-lesson .noun-word>div {display:flex;align-items:center;justify-content:space-between;gap:6px}
+#page .pronouns-lesson .noun-word [lang="sv"] {white-space:nowrap;font-weight:650}
+#page .pronouns-lesson .noun-article {display:inline-block;padding:2px 5px;border-radius:5px;font-size:12px;line-height:1.4;background:#e3ecdf;color:#31513b}
+#page .pronouns-lesson .noun-article-ett {background:#f0e4d5;color:#78532f}
+#page .pronouns-lesson .noun-ending {color:#83542c;background:#f3e9d9;border-radius:3px;padding:0 1px;font-weight:700}
+#page .pronouns-lesson .noun-form-audio {display:flex;align-items:center;justify-content:space-between;width:100%;min-width:0;min-height:44px;--control-height:44px;--control-padding:4px 3px;gap:5px;font-size:14px;font-weight:500;text-align:left;border-color:transparent;border-radius:6px;box-shadow:none;white-space:nowrap}
+#page .pronouns-lesson .noun-form-audio :is(span,svg) {pointer-events:none}
+#page .pronouns-lesson .noun-form-audio svg {width:14px;height:14px;color:var(--pron-muted)}
+#page .pronouns-lesson .noun-form-audio:hover {background:var(--pron-sage)}
+#page .pronouns-lesson .noun-form-word {white-space:nowrap;overflow-wrap:normal}
+#page .pronouns-lesson .noun-meaning {color:var(--pron-muted);min-width:70px}
+#page .pronouns-lesson .noun-mobile-label {display:none}
+@media(max-width:1050px) {
+ #page .pronouns-lesson .noun-table-wrap {border:0;border-radius:0;overflow:visible}
+ #page .pronouns-lesson .noun-paradigms :is(table,tbody) {display:block}
+ #page .pronouns-lesson .noun-paradigms thead {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ #page .pronouns-lesson .noun-paradigms tbody {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ #page .pronouns-lesson .noun-paradigms tbody tr {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--pron-edge);border-radius:12px;overflow:hidden;background:var(--pron-paper)}
+ #page .pronouns-lesson .noun-paradigms tbody :is(th,td) {display:block;min-width:0;max-width:none;padding:8px 10px;border:0;border-bottom:1px solid var(--pron-edge)}
+ #page .pronouns-lesson .noun-paradigms .noun-word {grid-column:1/-1;min-width:0;padding:6px 10px;background:var(--pron-sage)}
+ #page .pronouns-lesson .noun-paradigms tbody .noun-form:nth-child(odd) {border-left:1px solid var(--pron-edge)}
+ #page .pronouns-lesson .noun-paradigms tr:last-child .noun-form {border-bottom:1px solid var(--pron-edge)}
+ #page .pronouns-lesson .noun-paradigms tbody .noun-meaning {grid-column:1/-1;border:0;font-size:14px}
+ #page .pronouns-lesson .noun-mobile-label {display:block;font-size:10px;line-height:1.5;color:var(--pron-muted);font-weight:400}
+ #page .pronouns-lesson .noun-meaning .noun-mobile-label {display:inline;margin-right:8px}
+ #page .pronouns-lesson .noun-form-audio {--control-padding:4px 0;gap:3px}
+}
+@media(max-width:639px) {
+ #page .pronouns-lesson .noun-paradigms tbody {grid-template-columns:minmax(0,1fr);gap:10px}
+ #page [data-grammar-lesson="lesson-5"] .noun-paradigms {margin:20px 0 24px}
+}
+@media(max-width:359px) {
+ #page .pronouns-lesson .noun-paradigms tbody .noun-form {padding:7px 6px}
+ #page .pronouns-lesson .noun-form-audio {flex-wrap:wrap;justify-content:flex-start;column-gap:6px;row-gap:2px}
+}
