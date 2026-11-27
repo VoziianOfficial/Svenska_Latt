@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),lessons=JSON.parse(read('lessons.json')),c=lessons[1].greetingsChapter,f=c.finalTest,langs=['ru','uk','en','sv'];
 const baseline=JSON.parse(read('reports/learning-content-baseline-v2.json')),sha=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
-for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+' archive changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4'].includes(l.id))assert.equal(sha(l),old.lessonSha256)}
+for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+' archive changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4','lesson-5'].includes(l.id))assert.equal(sha(l),old.lessonSha256)}
 assert.equal(lessons[1].questions.length,11);assert.equal(c.sections.flatMap(s=>s.rules).length,15);assert.equal(c.tables.length,7);assert.equal(c.dialogues.length,4);assert(c.dialogues.every(d=>d.lines.length>=6&&d.lines.length<=10));assert.equal(c.reading.lines.length,10);assert.equal(c.questions.length,31);assert.equal(c.writing.length,3);assert.equal(f.questions.length,20);
 const counts={};f.questions.forEach(q=>counts[q.category]=(counts[q.category]||0)+1);assert.deepEqual(counts,{situation:4,'word-order':4,forms:3,dialogue:3,correction:3,reading:3});
 const refs=new Set([...c.sections.flatMap(s=>s.rules.map(r=>r.id)),'reading']),sources=new Set(c.sources.map(s=>s.id));

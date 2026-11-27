@@ -1,4 +1,4 @@
-/* Shared lesson-3/4 chapter component. Practice and writing are tab-local and account-scoped; never XP events. */
+/* Shared lesson-3/4/5 chapter component. Practice and writing are tab-local and account-scoped; never XP events. */
 'use strict';
 (() => {
  function createGrammarLesson(lessonId, field, namespace, firstSection) {
@@ -12,7 +12,7 @@
    good:q.good||q.feedback,bad:q.bad||q.feedback,
    context:q.contextId,passage:q.context}))};
  };
- const reviewAttribute=lessonId==='lesson-3'?'data-pronouns-review-rule':'data-presens-review-rule';
+ const reviewAttribute=lessonId==='lesson-5'?'data-nouns-review-rule':lessonId==='lesson-3'?'data-pronouns-review-rule':'data-presens-review-rule';
  const ownEvent=el=>!el.closest||el.closest('[data-grammar-lesson="'+lessonId+'"]');
  const owner=()=>typeof user!=='undefined'&&user?.id?user.id:'guest';
  const key=id=>owner()+':'+namespace+':'+id;
@@ -55,7 +55,7 @@
   final:txt4('Итоговый тест','Final test','Sluttest','Підсумковий тест'),start:txt4('Начать итоговый тест','Start final test','Starta sluttestet','Почати підсумковий тест'),resume:txt4('Продолжить тест','Resume test','Fortsätt testet','Продовжити тест'),
   finalNote:txt4('24 новых вопроса: формы, контекст, исправление ошибок и новый текст. Порог — 80% (20 из 24). Прежняя награда — 35 XP один раз за всю историю урока.','24 new questions: forms, context, error correction and a new text. Pass at 80% (20/24). The existing 35 XP lesson reward is given once across all versions.','24 nya frågor: former, sammanhang, rättning och ny text. Godkänt är 80% (20/24). Samma lektionsbelöning på 35 XP ges en gång över alla versioner.','24 нові запитання: форми, контекст, виправлення помилок і новий текст. Поріг — 80% (20 із 24). Попередня нагорода — 35 XP один раз за всю історію уроку.'),
   unavailable:txt4('Итоговый тест для аккаунта ожидает согласованного обновления сервера. История и очередь сохранены.','The account final test awaits the coordinated server update. History and pending events are preserved.','Sluttestet för kontot väntar på samordnad serveruppdatering. Historik och väntande händelser finns kvar.','Підсумковий тест для акаунта очікує узгодженого оновлення сервера. Історію й чергу збережено.'),
-  history:txt4('История результатов урока','Lesson result history','Lektionens resultathistorik','Історія результатів уроку'),historyNote:txt4('Здесь сохранён прежний лучший результат, включая старый тест из 11 вопросов. Освоение новой главы отражает отдельный статус выше.','The earlier best result, including the old 11-question test, is retained here. The separate status above reflects the new chapter.','Här finns det tidigare bästa resultatet, även från det gamla testet med 11 frågor. Statusen ovan gäller det nya kapitlet.','Тут збережено попередній найкращий результат, зокрема старий тест із 11 запитань. Окремий статус вище відображає новий розділ.')
+  history:txt4('История результатов урока','Lesson result history','Lektionens resultathistorik','Історія результатів уроку'),historyNote:txt4(`Здесь сохранён прежний лучший результат, включая старый тест из ${LESSONS.find(l=>l.id===lessonId).questions.length} вопросов. Освоение новой главы отражает отдельный статус выше.`,`The earlier best result, including the old ${LESSONS.find(l=>l.id===lessonId).questions.length}-question test, is retained here. The separate status above reflects the new chapter.`,`Här finns det tidigare bästa resultatet, även från det gamla testet med ${LESSONS.find(l=>l.id===lessonId).questions.length} frågor. Statusen ovan gäller det nya kapitlet.`,`Тут збережено попередній найкращий результат, зокрема старий тест із ${LESSONS.find(l=>l.id===lessonId).questions.length} запитань. Окремий статус вище відображає новий розділ.`)
  });
  const ruleLabels=()=>({theory:txt4('Подробно','In detail','Fördjupning','Докладно'),pattern:txt4('Схема','Pattern','Mönster','Схема'),comparison:txt4('Сравни','Compare','Jämför','Порівняй'),mistakes:txt4('Типичная ошибка','Common error','Vanligt fel','Типова помилка'),limits:txt4('Ограничения','Limits','Begränsningar','Обмеження'),mini:txt4('Закрепи правило','Try the rule','Prova regeln','Закріпи правило'),solution:txt4('Открыть ответ','Reveal answer','Visa svar','Відкрити відповідь')});
  const icons={play:'<path d="m11 5-6 4H2v6h3l6 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',stop:'<rect x="6" y="6" width="12" height="12" rx="2"/>'};
@@ -112,4 +112,5 @@
  }
  window.SVPronounsLesson=createGrammarLesson('lesson-3','pronounsChapter','pronouns-v1','roles');
  window.SVPresensLesson=createGrammarLesson('lesson-4','learningV2','presens-v1','meaning');
+ window.SVNounsLesson=createGrammarLesson('lesson-5','nounsChapter','nouns-v1','basics');
 })();

@@ -16,7 +16,7 @@ const sourceSnapshot=JSON.stringify(lessons);
 let checkedRules=0,checkedExamples=0,checkedReadingLines=0;
 
 for(const source of lessons){
- if(source.pronunciationChapter||source.greetingsChapter||source.pronounsChapter||source.learningV2?.sections){checkedRules+=(source.learningV2?.sections?source.learningV2.sections.flatMap(s=>s.rules).length:source.pronounsChapter?source.pronounsChapter.sections.flatMap(s=>s.rules).length:source.rules.length);continue;} // Dedicated chapter/locale coverage: alphabet-pronunciation.cjs / greetings-introduction.cjs.
+ if(source.nounsChapter||source.pronunciationChapter||source.greetingsChapter||source.pronounsChapter||source.learningV2?.sections){checkedRules+=(source.nounsChapter?source.nounsChapter.sections.flatMap(s=>s.rules).length:source.learningV2?.sections?source.learningV2.sections.flatMap(s=>s.rules).length:source.pronounsChapter?source.pronounsChapter.sections.flatMap(s=>s.rules).length:source.rules.length);continue;} // Dedicated chapter/locale coverage: alphabet-pronunciation.cjs / greetings-introduction.cjs.
  run(`var lesson=LESSONS.find(item=>item.id==='${source.id}');route='lesson';routeParam=lesson.id`);
  const structure=[];
  for(const language of ['ru','en','sv','uk']){

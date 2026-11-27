@@ -22,3 +22,8 @@ python3 scripts/test_supabase_local.py
 `tests/bootstrap_local.sql` — только заглушки для такого кластера. Нельзя выполнять
 их в Supabase. SQL-тесты не проверяют доставку писем, JWT через HTTP, работу файлового
 backend Storage, подписанные URL или фактическую загрузку с телефона.
+
+Урок 5 en/ett, 023: [инструкция безопасного ручного выпуска](../docs/NOUNS_023_RELEASE.md).
+Фактический baseline установленной 022 сохранён; 023 проверяется командой
+`python3 scripts/test_nouns_sql.py` в отдельном локальном PostgreSQL без TCP.
+SQL 023 к рабочей Supabase агентом не применялся.

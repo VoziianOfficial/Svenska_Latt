@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path'),crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),lessons=JSON.parse(read('lessons.json')),c=lessons[2].pronounsChapter,f=c.finalTest,langs=['ru','uk','en','sv'];
 const baseline=JSON.parse(read('reports/learning-content-baseline-v2.json')),sha=x=>crypto.createHash('sha256').update(JSON.stringify(x)).digest('hex');
-for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+' archive changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4'].includes(l.id))assert.equal(sha(l),old.lessonSha256)}
+for(const l of lessons){const old=baseline.modules[l.level].find(x=>x.id===l.id);assert.equal(sha(l.questions),old.questionsSha256,l.id+' archive changed');if(!['lesson-1','lesson-2','lesson-3','lesson-4','lesson-5'].includes(l.id))assert.equal(sha(l),old.lessonSha256)}
 assert.equal(lessons[2].questions.length,11);assert.equal(c.sections.flatMap(s=>s.rules).length,14);assert.equal(c.tables.length,10);assert.equal(c.dialogues.length,4);assert(c.dialogues.every(d=>d.lines.length>=8&&d.lines.length<=10));assert.equal(c.reading.lines.length,12);assert.equal(c.questions.length,38);assert.equal(c.writing.length,3);assert.equal(f.questions.length,24);
 const counts={};f.questions.forEach(q=>counts[q.category]=(counts[q.category]||0)+1);assert.deepEqual(counts,{forms:19,correction:1,reading:4});
 const refs=new Set([...c.sections.flatMap(s=>s.rules.map(r=>r.id)),'reading']),sources=new Set(c.sources.map(s=>s.id));
@@ -43,7 +43,7 @@ for(const section of c.sections)for(const r of section.rules){for(const k of ['t
 for(const l of c.reading.lines){assert(l.annotations?.length);l.annotations.forEach(a=>{assert(l.sv.includes(a.form));localized(a.role)})}
 for(const w of c.writing)localized(w.translation);
 // Outside lesson-3, lesson payloads must be byte-equivalent to this checkout's baseline.
-const original=JSON.parse(require('node:child_process').execFileSync('git',['show','HEAD:lessons.json'],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024}));for(const l of lessons)if(!['lesson-3','lesson-4'].includes(l.id))assert.deepEqual(l,original.find(o=>o.id===l.id));
+const original=JSON.parse(require('node:child_process').execFileSync('git',['show','HEAD:lessons.json'],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024}));for(const l of lessons)if(!['lesson-3','lesson-4','lesson-5'].includes(l.id))assert.deepEqual(l,original.find(o=>o.id===l.id));
 // Writing drafts stay escaped and isolated by account identity.
 run("route='lesson';routeParam='lesson-3'");const writingInput=events.input.find(fn=>String(fn).includes('pronWriting'));writingInput({target:{matches:()=>true,dataset:{pronWriting:c.writing[0].id},value:'<script>draft</script>'}});assert(run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run("user={id:'another-account'}");assert(!run('renderLesson()').includes('&lt;script&gt;draft&lt;/script&gt;'));run('user=null');
 // Speech contract: strict Swedish voice and complete, ordered story/dialogue turns.
