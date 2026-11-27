@@ -11,7 +11,7 @@ def main():
  from nouns_texts import add_texts
  add_texts(c)
  build_tasks(c)
- c.update(schemaVersion=1,id='nouns-en-ett-v1',chapterVersion=1,lessonId='lesson-5',level='A',locales=['ru','uk','en','sv'])
+ c.update(schemaVersion=1,id='nouns-en-ett-v1',chapterVersion=2,lessonId='lesson-5',level='A',locales=['ru','uk','en','sv'])
  lesson['nounsChapter']=c
  (ROOT/'lessons.json').write_text(json.dumps(lessons,ensure_ascii=False,indent=2)+'\n')
  print('lesson-5: original questions retained; '+str(sum(len(s['rules']) for s in c['sections']))+' rules, '+str(len(c['tables']))+' tables, '+str(len(c['questions']))+' practice, 24 final')

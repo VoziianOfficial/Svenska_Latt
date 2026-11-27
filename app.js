@@ -609,7 +609,7 @@ async function boot(){
     applyAuthState(window.SVAuth.getState());
     if(user?.id===userId){cloudReadError=false;state=sanitize(snapshot);refreshWordUI(true)}
    },previewCatalog:()=>({
-    version:'static-bb3e3ddf1c5daf12',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
+    version:'static-349bdcbccac30b33',words:WORDS.map(x=>x.id),lessons:LESSONS.map(x=>x.id),
     books:BOOKS.map(x=>x.id),videos:[...VIDEOS,...MORE_VIDEOS].map(x=>x.id)
    })});
    window.SVAuth.subscribe(()=>applyAuthState(window.SVAuth.getState()));
